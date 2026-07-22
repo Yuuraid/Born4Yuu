@@ -60,5 +60,3 @@ Master, staging, production branching system
 
 - [GitHub - Wargavi48/KTPVisualNovel · GitHub](https://github.com/Wargavi48/KTPVisualNovel)
 
-...
-///
