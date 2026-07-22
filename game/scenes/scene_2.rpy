@@ -1,6 +1,6 @@
 # label start:
 
-label scene2:
+label scene_2:
     # scene lorong #sementara
     scene lorong with Dissolve(2.0)
     $ quick_menu = True
@@ -33,7 +33,5 @@ label scene2:
     "Kutembakkan segera grappling ku dan melesat menuju jalan keluar. Mendarat dan berlari sekencang-kencangnya."
     y "(Semoga tak ada yang mengejarku, pagi ku sudah cukup sial untuk membuatku menggerutu.)"
     $ quick_menu = False
-    jump scene3
-
 
     return

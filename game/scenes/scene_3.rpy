@@ -1,6 +1,6 @@
 # label start:
 
-label scene3:
+label scene_3:
     # scene hutan # sementara
     scene hutan with Dissolve(2.0)
     $ quick_menu = True
