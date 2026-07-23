@@ -57,7 +57,6 @@ label scene_3:
     y "Apa maksud...mu ??? Kemana orang itu pergi ?"
     "Aku menoleh ke belakang dan terdiam sejenak, bertanya-tanya kemana pria itu pergi, tapi aku langsung mengalihkan perhatianku saat ini, aku sudah tidak peduli lagi, dan langsung pergi mencari jalan keluar dari sini."
     $ quick_menu = False
-    jump scene4
 
 
     # play music "audio/bgm/hutan.ogg" fadeout 1.0

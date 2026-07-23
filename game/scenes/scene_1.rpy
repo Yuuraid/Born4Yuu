@@ -5,13 +5,16 @@
 
 define y = Character("Yuura")
 define u = Character("???")
+define h = Character("Haruto")
+define taro = Character("Taro")
+define shark = Character("Shark")
+define seiya = Character("seiya")
 
 label scene_1:
-
     scene black
 
     $ quick_menu = True
-
+    # play music start with fadein 1.0 -> define dulu
     # play sound "audio/sfx/knock_door.ogg"
     "Terdengar seperti ketukan pintu" 
     $ quick_menu = False
@@ -21,7 +24,7 @@ label scene_1:
     pause 1.0
     $ quick_menu = True
     show yuura normal animated at center
-    with Dissolve(1.0)
+    with moveinbottom
     # with nongol_dari_bawah # <-- blm jadi :""
     y "Iya iya... Hooam..." 
     "Aku terbangun dari tidurku,{w} duduk sebentar sebelum benar-benar beranjak dari kasurku."
