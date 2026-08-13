@@ -22,3 +22,6 @@ label start:
 
 
     return
+
+define dityo_route = ""
+define shark_route = ""

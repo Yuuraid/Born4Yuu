@@ -9,6 +9,15 @@ define h = Character("Haruto")
 define taro = Character("Taro")
 define shark = Character("Shark")
 define seiya = Character("seiya")
+define akasyah = Character("Akasyah")
+define dityo = Character("Dityo")
+define axia = Character("Axiaregis")
+define josua = Character("Josua")
+define ibe = Character("Ibe")
+define nicholas = Character("Nicholas")
+define lark = Character("Lark")
+define yc = Character("Yc")
+define aergia = Character("Aergia")
 
 label scene_1:
     scene black
