@@ -18,6 +18,8 @@ define nicholas = Character("Nicholas")
 define lark = Character("Lark")
 define yc = Character("Yc")
 define aergia = Character("Aergia")
+define dawam = Character("Dawam")
+define pria = Character("Pria Itu")
 
 label scene_1:
     scene black

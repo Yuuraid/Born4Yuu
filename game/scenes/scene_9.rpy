@@ -21,7 +21,7 @@ label scene_9:
     "Seiya muncul dari belakang Akasyah dan langsung menahan pergerakannya."
     seiya "Sudah lama tidak bertemu Akasyah, apa kamu rindu denganku ?"
     akasyah "Brens*k ! LEPASKAN AKU SEKARANG JUGA !"
-    seiya "Coba saja, itupun jika kamu benar-benar ingin dipermalukan olehku~"
+    seiya "Coba saja, itu pun jika kamu benar-benar ingin dipermalukan olehku~"
     akasyah "SIALAN ! AKU BILANG LEPAS !!!"
     "Akasyah berhasil lepas dengan kecepatannya yang luar biasa, dia langsung melompat ke arahku dengan penuh kemarahan."
     "Tapi, Seiya langsung memindahkannya lagi dengan menggunakan manipulasi bayangan."

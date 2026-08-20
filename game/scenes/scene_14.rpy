@@ -82,7 +82,7 @@ label scene_14:
     y "T-tapi..."
     seiya "Serahkan urusan ini padaku dan Shark !"
     "Meski enggan, aku berbalik dan lari meninggalkan mereka berdua."
-    akasyah "WOI MAU KEMANA LU NENEK TUA !"
+    akasyah "WOI MAU KE MANA LU NENEK TUA !"
     "Akasyah berusaha menyerangku tapi Seiya langsung menghentikan gerakannya dengan bayangannya."
     seiya "Lawanmu adalah aku."
 

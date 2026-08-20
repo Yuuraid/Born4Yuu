@@ -54,8 +54,8 @@ label scene_3:
     u "Coba saja, jika kamu memang bisa keluar."
     hide Unknown
     with fade
-    y "Apa maksud...mu ??? Kemana orang itu pergi ?"
-    "Aku menoleh ke belakang dan terdiam sejenak, bertanya-tanya kemana pria itu pergi, tapi aku langsung mengalihkan perhatianku saat ini, aku sudah tidak peduli lagi, dan langsung pergi mencari jalan keluar dari sini."
+    y "Apa maksud...mu ??? Ke mana orang itu pergi ?"
+    "Aku menoleh ke belakang dan terdiam sejenak, bertanya-tanya ke mana pria itu pergi, tapi aku langsung mengalihkan perhatianku saat ini, aku sudah tidak peduli lagi, dan langsung pergi mencari jalan keluar dari sini."
     $ quick_menu = False
 
 

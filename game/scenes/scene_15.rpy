@@ -140,7 +140,7 @@ label scene_15:
             rian "Tidak bisa... Aku harus menghentikan manusia NPD itu."
             rian "Tenang saja, aku akan baik-baik saja."
             rian "Selama dirimu bisa tersenyum, semuanya akan baik-baik saja."
-            rian "Jadi... Tersenyumlah ! Dan pergi kemanapun yang kamu mau."
+            rian "Jadi... Tersenyumlah ! Dan pergi ke mana pun yang kamu mau."
             rian "Karena Yuura yang aku kenal selalu tersenyum."
             y "B-baiklah… Tapi kamu hati-hati, oke ? Dia terlalu berbahaya."
             rian "Tenang saja... Aku dan pasukan hewanku tak akan kalah !"
