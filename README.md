@@ -17,13 +17,13 @@ The deadline for this project is 18 September 2026, and every team work parallel
 *This list can change based on request or situation*
 
 - June
-	- [ ] Study RenPy
+	- [x] Study RenPy
 		- [ ] Figure out how to make a point and click interaction on RenPy
 		- [ ] How to use conditional variable into the game
 		- [ ] Research ways to animate or use animation overlay into the game
-	- [ ] Give guideline to other team on what can works inside the game engine
-		- [ ] Art
-		- [ ] Sound
+	- [x] Give guideline to other team on what can works inside the game engine
+		- [x] Art
+		- [x] Sound
 	- [ ] Build a UI guideline
 		- [ ] Textbox
 		- [ ] Menu
