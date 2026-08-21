@@ -5,7 +5,7 @@
 
 define y = Character("Yuura")
 define u = Character("???")
-define h = Character("Haruto")
+define haruto = Character("Haruto")
 define taro = Character("Taro")
 define shark = Character("Shark")
 define seiya = Character("seiya")

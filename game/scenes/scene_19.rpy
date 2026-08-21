@@ -1,7 +1,53 @@
 # label start:
 
 label scene_19:
-
-    y "scene_19"
+    # show meja resepsionis with Dissolve(1.0)
+    # play sound barang ditaruh
+    y "Phiuu... Akhirnya beres juga bagian resepsionis."
+    haruto "Otsukare, sisanya biar aku yang lanjutkan."
+    y "Tolong yah..."
+    "Tepat ketika baru duduk di kursi resepsionis untuk istirahat, aku melihat sebuah kotak yang tersempil di kolong meja, aku mengambil dan meletakkannya di meja."
+    y "Kotak apa ini ?"
+    haruto "Oh... Itu Time Capsule milikmu, Aneeki."
+    y "Time Capsule milikku ?"
+    "Aku membukanya tanpa ragu dan melihatnya begitu banyak barang, foto, dan surat-surat di dalamnya. Aku mengambil satu per satu barang yang ada di dalamnya dan saat itu juga kenangan-kenangan hangat kembali mengalir di benakku."
+    "Aku hanya tersenyum, ternyata sudah banyak hal yang kulewati selama ini, tak terasa semua kenangan itu telah lama terjadi dan mungkin saja terlupakan jika aku tak pernah menyimpan mereka di suatu tempat."
+    "Aku melihat surat-surat yang nampaknya ditulis oleh para penghuni penginapan, aku membaca satu per satu hingga terdapat beberapa nama yang tak terdengar lagi sekarang."
+    y "Si ini kemana yah ? Kok gak pernah keliatan lagi."
+    haruto "Bukannya sudah lama pindah yah..."
+    y "Iyakah ?"
+    y "Eh, buku tamuku dimana yah..."
+    haruto "Itu kutaruh di atas meja."
+    "Aku segera mengambil buku tamu dan membalik-balik halaman untuk mencari tahu orang-orang yang pernah menulis surat untukku, ada yang pindah bahkan ada yang tak terdaftar di sini."
+    y "Kenapa dia pindah yah ?"
+    haruto "Kamu kelamaan menjarain nya dulu, Anee..."
+    "Tiba-tiba suasana berubah menjadi canggung..."
+    haruto "Hehe, bercanda kok."
+    "Haruto mendekat ke meja."
+    haruto "Kalau Aneeki kesusahan, sini kubantu untuk merekap buku tamu."
+    y "Biar aku sendiri aja."
+    y "Lagian aku juga masih punya banyak utang."
+    haruto "Dasar penghutang handal."
+    "Tiba-tiba saja terdengar sebuah ledakan besar di taman, membuatku langsung berlari dengan sangat kencang."
+    # play sound start
+    y "Apa sih yang kalian lakukan ?"
+    aergia "Hehe"
+    axia "Eh Aneee..."
+    rian "Loh Anee ?"
+    shark "A-aduh Anee."
+    dityo "Waduh..."
+    dawam "Mati kita."
+    akasyah "Waduh..."
+    seiya "..."
+    y "Oi ! Apa yang kalian lakukan ? Kenapa ada ledakan tadi ?"
+    "Aku berusaha mendekat, tapi tiba-tiba saja muncul sebuah kembang api di langit. Membuatku terkejut dengan semua ini."
+    # screen shake
+    "SELAMAT ULANG TAHUN YUURA !!!"
+    y "..."
+    y "Kalian ini..."
+    y "TAPI TADI SUARA LEDAKAN APA OI !"
+    "Mereka semua lari dengan sangat cepat, membuatku harus mengejar mereka satu per satu. Begitulah setiap hari di penginapan. Tak ada hari yang damai seperti di anime slice of life, isinya hanyalah aksi-aksi yang melelahkan."
+    "Kami adalah keluarga, keluarga Yuuraid yang akan selalu melindungi penginapan dan pemiliknya dengan sepenuh hati. Meskipun banyak orang yang sudah pergi, tapi orang baru datang dan mengisi kekosongan dalam penginapan."
+    "Meskipun begitu, kami tetap menjadi diri kami. Menjadi Yuuraid yang selalu mencintai Yuura sepenuh hati."
 
     return
