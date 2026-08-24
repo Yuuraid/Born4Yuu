@@ -1,26 +1,22 @@
-# label start:
-
 label scene_3:
-    # scene hutan # sementara
-    scene hutan with Dissolve(2.0)
-    $ quick_menu = True
-    "Aku berlari, terus berlari. Tanpa sekalipun melihat ke belakangku, aku berlari tanpa henti berharap mereka semua tidak mengejar diriku lagi."
-    show yuura normal animated at center
-    with Dissolve(2.0)
-    y "*huft huft..."
-    # play music "audio/bgm/hutan.ogg" fadein 1.0
-    y "Argghhh... Ini gila ! Bisa-bisanya aku terbangun di tempat kayak gini ?! Huah..."
+
+    scene hutan pohon with dissolve
+
+    b_narrator "Aku berlari, terus berlari. Tanpa sekalipun melihat ke belakangku, aku berlari tanpa henti berharap mereka semua tidak mengejar diriku lagi."
+
+    show sprite yuura_angry at center, speak with easeinright
+
+    b_yuura "*huft huft..."
+    b_yuura "Argghhh... Ini gila ! Bisa-bisanya aku terbangun di tempat kayak gini ?! Huah..."
     "Nafasku tersengal-sengal karena berlarian terus sepannjang waktu."
     "Aku melanjutkan perjalananku dengan rasa lelah yang luar biasa, sebelum akhirnya aku memutuskan untuk duduk di dekat sebuah pohon besar."
     "Aku berusaha menenangkan diriku, menarik nafas secara perlahan dan mulai memikirkan segalanya."
-    y "(Bagaimana aku tiba-tiba berada di tempat ini ? APa yang telah terjadi ? Mengapa ini semua terjadi ? Dan kenapa hanya aku saja yang muncul di sini ?)"
-    hide yuura normal animated
-    with fade
-    show yuura normal animated at left # harusnya cuma geser, tapi ga ngerti maenin x y nya
-    with Dissolve(1.0)
-    show Unknown at right # karakter terlalu kanan dan terlalu kiri
-    with Dissolve(1.0)
-    u "Capek kan lari-lari ?"
+    b_yuura "(Bagaimana aku tiba-tiba berada di tempat ini ? APa yang telah terjadi ? Mengapa ini semua terjadi ? Dan kenapa hanya aku saja yang muncul di sini ?)"
+
+    stop music fadeout 3.0
+
+    b_unknown "Capek kan lari-lari ?"
+
     "Aku terkejut mendengar suara yang entah dari mana asalnya. Aku melihat sekitar dan merasakan adanya seseoarng di balik pohon yang kusandari."
     u "Jangan takut, aku tidak menggigit."
     "Aku merasa terkejut, bingung, sekaligus bertanya-tanya dari mana orang ini berasal. Aku tidak tahu apapun tentangnya, yang aku tahu suara ini adalah suara laki-laki."
@@ -52,13 +48,8 @@ label scene_3:
     y "Ga, ga masuk akal. Mustahil, lebih baik aku pergi keluar dan menjual botol ini."
     "Aku berjalan melewati pria misterius itu"
     u "Coba saja, jika kamu memang bisa keluar."
-    hide Unknown
-    with fade
+
     y "Apa maksud...mu ??? Kemana orang itu pergi ?"
     "Aku menoleh ke belakang dan terdiam sejenak, bertanya-tanya kemana pria itu pergi, tapi aku langsung mengalihkan perhatianku saat ini, aku sudah tidak peduli lagi, dan langsung pergi mencari jalan keluar dari sini."
-    $ quick_menu = False
-
-
-    # play music "audio/bgm/hutan.ogg" fadeout 1.0
 
     return
