@@ -8,7 +8,7 @@ label scene_12:
     # Aergia
     u "Halo anee... Tidak. {w}Yuura... Apa kabar ?"
     "Aku terdiam sejenak, mencoba mencari tahu orang ini dari buku tamu yang kubawa."
-    "Sayangnya, di dalamnya tidak ada informasi apapun mengenai orang ini."
+    "Sayangnya, di dalamnya tidak ada informasi apa pun mengenai orang ini."
     y "Ah... H-halo {w}eh...mh..."
     u "Loh ? Kamu cari aku di buku tamu? Padahal gua gapernah ditulis di sana sama lu loh... Lu tahukan gua siapa Yuur ?"
     # Ga konsisten gua gua, aku aku

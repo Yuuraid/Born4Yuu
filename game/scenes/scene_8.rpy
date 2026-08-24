@@ -16,7 +16,7 @@ label scene_8:
     y "O-oh..."
     "Suasana menjadi sangat canggung dan awkward"
     # cek lagi docs nya
-    y "Ya udah makasih ya udah bantuin  aku, aku udah ga denger suara apapun dari luar. Jadi, sampai jumpa, Shark !"
+    y "Ya udah makasih ya udah bantuin  aku, aku udah ga denger suara apa pun dari luar. Jadi, sampai jumpa, Shark !"
     shark "T-tunggu anee a-aku..."
     "Aku langsung lari tanpa memikirkan orang itu. Dia tampak ingin memanggilku, tapi aku sudah menghilang dari sudut pandangnya."
     # stop music 

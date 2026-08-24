@@ -9,7 +9,7 @@ label scene_11:
     josua "Bukannya itu Yuura yang dibilang sama Axiaregis ya ?"
     ibe "Ihh iya tuh, keknya emang dia deh."
     "Mendengar itu aku hanya bisa diam, tak peduli. Aku rasa ini semua hanya kesalahan dan akan segera selesai."
-    "Sementara itu di tempat lain, Axiaregis bertemu dengan seseorang yang misterius. Wajahnya yang terlihat sangat lelah dengan semua ini membuatnya semakin suram. Dia berdiri diam menatap lukisan tak bergeming sedikitpun."
+    "Sementara itu di tempat lain, Axiaregis bertemu dengan seseorang yang misterius. Wajahnya yang terlihat sangat lelah dengan semua ini membuatnya semakin suram. Dia berdiri diam menatap lukisan tak bergeming sedikit pun."
     # Aergia
     u "Ha... Lu lagi lu lagi, kenapa sih harus selalu lu yang ke tempat gua ?"
     axia "Kira-kira kenapa ya ? Apa jangan-jangan aku suka kamu kyahh."
@@ -32,6 +32,6 @@ label scene_11:
     yc "Udah-udah, kalian berdua sesama china ngapain berantem..."
     "Aku benar-benar bingung dengan situasi di tempat ini, terkadang mereka terlihat santai dan tenang."
     "Tapi terkadang mereka terlihat sangat ricuh."
-    "Aku terus bergerak, tanpa mempedulikan apapun di sekitarku. Aku hanya ingin beristirahat dari semua keanehan ini."
+    "Aku terus bergerak, tanpa mempedulikan apa pun di sekitarku. Aku hanya ingin beristirahat dari semua keanehan ini."
 
     return

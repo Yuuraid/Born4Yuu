@@ -5,7 +5,7 @@
 
 define y = Character("Yuura")
 define u = Character("???")
-define h = Character("Haruto")
+define haruto = Character("Haruto")
 define taro = Character("Taro")
 define shark = Character("Shark")
 define seiya = Character("seiya")
@@ -18,6 +18,8 @@ define nicholas = Character("Nicholas")
 define lark = Character("Lark")
 define yc = Character("Yc")
 define aergia = Character("Aergia")
+define dawam = Character("Dawam")
+define pria = Character("Pria Itu")
 
 label scene_1:
     scene black

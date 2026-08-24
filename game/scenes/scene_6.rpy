@@ -30,10 +30,10 @@ label scene_6:
     "Setelah mandi, aku terkejut karena mendengar ketukan di pintu. Membuatku sedikit panik karena melupakan bahwa aku masih di tempat antah berantah."
     # play music fotokenangan fadein 1.0 -> define music dulu
     taro "Ane... Ini aku Tarochips, aku bawa makanan buat ane..."
-    "Aku diam saja, tak membalas satupun ucapannya."
+    "Aku diam saja, tak membalas satu pun ucapannya."
     taro "Ane ? Kamu masih tidur ? Aku taruh di depan aja ya... Maaf sudah mengganggu istirahat ane."
     "Dia berjalan untuk pergi, tapi sebelum terlalu jauh dia menatap ke kamarku sekali lagi."
-    taro "Ane... Apapun yang terjadi, tolong... {w} jaga kesehatanmu, aku ga mau ngeliat ane pingsan lagi."
+    taro "Ane... Apa pun yang terjadi, tolong... {w} jaga kesehatanmu, aku ga mau ngeliat ane pingsan lagi."
     taro "Apa ane kira aku tidak sedih melihatnya ? Aku sedih ane, melihat orang yang selalu menemaniku di penginapan ini tak berdaya di hadapanku."
     taro "(Suaranya sedikit gemetar, menahan perasaan sedih dalam batinnya.)" 
     # aku bingung nulisnya gmn yg atas ini

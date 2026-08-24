@@ -3,7 +3,7 @@
 label scene_13:
 
     # show pintu dekat receptionist with Dissolve(1.0)
-    "Haripun mulai gelap, rasanya kepalaku lebih baik dibanding sebelumnya. Aku berjalan menuju kamarku untuk berleha-leha."
+    "Hari pun mulai gelap, rasanya kepalaku lebih baik dibanding sebelumnya. Aku berjalan menuju kamarku untuk berleha-leha."
     "Tapi entah mengapa aku banyak sekali mendengar hal-hal aneh di sekitar, mereka tampak seperti sedang membicarakanku."
     "Aku bingung bagaimana berita ini bisa sangat cepat menyebar dalam waktu beberapa jam saja ? Aku tidak mengerti lagi dengan tempat ini."
     "Tepat ketika aku sedang melamun, aku mendengar suara langkah kaki yang cepat menghampiriku."

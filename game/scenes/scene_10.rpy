@@ -7,7 +7,7 @@ label scene_10:
     # play music jade bottle fadein
     "Aku berlari tanpa melihat ke belakang, tak peduli dengan pertengkaran mereka berdua. Saat ini yang paling penting adalah keselamatanku."
     "Meskipun aku sudah lolos dari mereka berdua. Nyatanya, dunia tidak seindah itu. Aku menabrak om-om yang tadi mengejarku. Ternyata dia sudah memperhitungkan jalur pelarianku dengan alatnya."
-    u "Mau kemana kamu Anee ?"
+    u "Mau ke mana kamu Anee ?"
     u "Aku kan udah bilang kamu ga bakal bisa pergi dariku..."
     y "Apasih ! Minggir ! Aku sudah muak banget ya sama kalian semua ! Dari pagi dikejar-kejar mulu"
     u "T-tapi Anee, bukannya--"
@@ -72,7 +72,7 @@ label scene_10:
     y "DIEM ANJENG KUPUKUL-PUKULIN JUGA YA KAMU !"
     axia "Kyaahhh anyeee kasarrr, tolonggg ah~ anyeeki mau mukul akyuhhh"
     "Semua orang menatapku, membuatku panik dengan orang yang sangat banyak, aku berusaha untuk lari, tapi sayangnya aku terkepung oleh banyak orang."
-    "Aku yang sudah terpojok dan tidak bisa melakukan apapun hanya bisa pasrah, sebelum akhirnya aku melihat ekor ikan hiu muncul. Dia menerobos banyak orang dengan kecepatan yang cukup tinggi."
+    "Aku yang sudah terpojok dan tidak bisa melakukan apa pun hanya bisa pasrah, sebelum akhirnya aku melihat ekor ikan hiu muncul. Dia menerobos banyak orang dengan kecepatan yang cukup tinggi."
     shark "Aneee !!!"
     shark "Pegangan yang erat !"
     y "Oi !!! Pelan-pelan !!"

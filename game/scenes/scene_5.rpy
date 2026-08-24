@@ -22,7 +22,7 @@ label scene_5:
     show Unknown at center with Dissolve(1.0)
     u "Anee ? ANEEE !?"
     "Orang itu langsung berlari menghampiriku, dengan tangannya yang lembut dia berusaha membangunkanku."
-    y "Anee, bangun anee ! Siapapun tolong ! Anee tidak sadarkan diri !"
+    y "Anee, bangun anee ! Siapa pun tolong ! Anee tidak sadarkan diri !"
     "Mendengar teriakan orang itu, anak penginapan langsung berlari ke arahku, membantu mengangkatku untuk masuk ke dalam penginapan."
     
     $ quick_menu = False
