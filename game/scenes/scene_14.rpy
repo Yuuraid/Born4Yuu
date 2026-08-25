@@ -74,8 +74,8 @@ label scene_14:
     # show lorong teras penginapan with Dissolve(1.0)
     "Aku terkejut mendapati Shark yang tiba-tiba berda di depanku, sembari menahan alat Dityo dengan giginya."
     shark "Aw... Aw... sakit juga nahan rudal pake gigi."
-    y "Shark !" (multiple=2)
-    seiya "Shark !" (multiple=2)
+    y "Shark !"
+    seiya "Shark !"
     shark "Ah... Anu... Maaf membuat kalian menunggu."
     "Kini situasi imbang, dua lawan dua. Meski begitu, melihat dari raut wajah Seiya, aku tahu bahwa perkara ini belum usai."
     seiya "Aneki, pergilah !"
