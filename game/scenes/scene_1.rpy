@@ -20,6 +20,9 @@ define yc = Character("Yc")
 define aergia = Character("Aergia")
 define dawam = Character("Dawam")
 define pria = Character("Pria Itu")
+define rian = Character("Rian")
+define da = Character("Dityo & Akasyah")
+define ad = Character("Aergia & Dawam")
 
 label scene_1:
     scene black
