@@ -40,11 +40,30 @@ image axia_summon_action = "images/sprite/Axia/axia_main_action-summon.png"
 image axia_sassy = "images/sprite/Axia/axia_main_tengil.png"
 image axia_hurt = "images/sprite/Axia/axia_main_terluka.png"
 
-image dawam sad = "images/sprite/Dawam/dawam_main_murung.png"
-image dawam happy = "images/sprite/Dawam/dawam_main_senang.png"
-image dawam laugh = "images/sprite/Dawam/dawam_main_tertawa.png"
-image dawam serious = "images/sprite/Dawam/dawam_main_serius.png"
-image dawam hurt = "images/sprite/Dawam/dawam_main_terluka.png"
+# image dawam sad = "images/sprite/Dawam/dawam_main_murung.png"
+# image dawam happy = "images/sprite/Dawam/dawam_main_senang.png"
+# image dawam laugh = "images/sprite/Dawam/dawam_main_tertawa.png"
+# image dawam serious = "images/sprite/Dawam/dawam_main_serius.png"
+# image dawam hurt = "images/sprite/Dawam/dawam_main_terluka.png"
+
+layeredimage dawam:
+    # Always present base body/outfit
+    always "images/sprite/Dawam/dawam_main_senang.png"
+
+    # Dynamic facial expression layer
+    group expression:
+        attribute angry "images/sprite/Dawam/dawam_main_serius.png"
+        attribute laugh "images/sprite/Dawam/dawam_main_tertawa.png"
+        attribute sad "images/sprite/Dawam/dawam_main_murung.png"
+        attribute hurt "images/sprite/Dawam/dawam_main_terluka.png"
+
+    # Optional aura/effect overlay layer
+    group effect:
+        attribute angry_aura:
+            Transform(
+                Movie(play="images/effects/anger02.webm", mask="images/effects/anger02.webm"),
+                zoom=0.35, xpos=0.25, ypos=0.0
+            )
 
 image dityo_serious = "images/sprite/Dityo/dityo_main_serius.png"
 
@@ -75,27 +94,22 @@ image shark_sassy = "images/sprite/Seiya/shark_main_tengil.png"
 
 # TODO: Add Tarochips
 
-image yuura netral = "images/sprite/Yuura/yuura_main_netral.png"
-image yuura happy = "images/sprite/Yuura/yuura_main_happy.png"
-image yuura scared = "images/sprite/Yuura/yuura_main_scared.png"
-image yuura hurt = "images/sprite/Yuura/yuura_main_hurt.png"
-image yuura sad = "images/sprite/Yuura/yuura_main_sad.png"
-# image yuura angry = "images/sprite/Yuura/yuura_main_angry.png"
+layeredimage yuura:
+    # Always present base body/outfit
+    always "images/sprite/Yuura/yuura_main_netral.png"
 
-image yuura angry:
-    "images/sprite/Yuura/yuura_main_angry.png"
-    parallel:
-        Movie(play="images/effects/output.webm", mask="images/effects/output.webm")
-        zoom 0.3
-        xanchor 0 yanchor 0
-        xpos 0.35 ypos 0.15
+    # Dynamic facial expression layer
+    group expression:
+        attribute angry "images/sprite/Yuura/yuura_main_angry.png"
+        attribute happy "images/sprite/Yuura/yuura_main_happy.png"
+        attribute scared "images/sprite/Yuura/yuura_main_scared.png"
+        attribute hurt "images/sprite/Yuura/yuura_main_hurt.png"
+        attribute sad "images/sprite/Yuura/yuura_main_sad.png"
 
-transform yuura_height:
-    xanchor 0 yanchor 0
-    xpos 0.35 ypos 0.15
-
-image angry_emotes:
-    Movie(play="images/effects/output.webm", mask="images/effects/output.webm")
-    zoom 0.3
-
-# image angry_emotes = Movie(play="images/effects/output.webm")
+    # Optional aura/effect overlay layer
+    group effect:
+        attribute angry_aura:
+            Transform(
+                Movie(play="images/effects/anger02.webm", mask="images/effects/anger02.webm"),
+                zoom=0.35, xpos=0.1, ypos=0.15
+            )

@@ -11,20 +11,23 @@ label scene_1:
 
     b_yuura "Iya iya.. Hooam.." 
 
-    show yuura netral at center, idle
+    show yuura at center, idle
 
     b_narrator "Aku terbangun dari tidurku, duduk sebentar sebelum benar-benar beranjak dari dari kasurku. Rasanya benar-benar malas untuk beranjak dari kas-"
 
     b_narrator "..."
     
-    show angry_emotes at yuura_height
-    show yuura angry at center, shake_custom, speaking
+    # show angry_emotes at yuura_height
+    show yuura angry angry_aura at center, shake_custom, speaking
+
 
     b_yuura "(MANA DASARNYA !?)"
 
     hide angry_emotes
 
-    show yuura netral at center, idle
+    show yuura at center, idle
+
+    show dawam angry angry_aura at left, speaking
 
     b_narrator "Aku langsung sadar ketika menyadari ada yang janggal,{w} dan mendapati bahwa aku tidur di kasur yang dibentangkan di lantai?..."
     b_narrator "Aku segera melihat sekitar." 
@@ -32,20 +35,20 @@ label scene_1:
     show yuura scared at center, idle
     b_narrator "Ini bukan kamarku."
 
-    show yuura netral at center, speaking
+    show yuura at center, speaking
 
     b_yuura "Kemarin aku salah masuk kamar apa gimana dah?{w} Kok bisa-bisanya kebangun di sini?"
 
-    show yuura netral at center, idle
+    show yuura at center, idle
 
     b_narrator "Aku meminggirkan selimut yang selama ini menutupi setengah badanku dan berdiri melihat sekitar."
     b_narrator "Aku melihat cermin, cermin itu memantulkan rupaku yang sama persis sebelum aku tertidur karena kelelahan."
 
-    show yuura netral at center, speaking
+    show yuura at center, speaking
 
     b_yuura "Nggak ada yang aneh sih..."
 
-    show yuura netral at center, idle
+    show yuura at center, idle
 
     b_narrator "Aku berjalan kecil, mengelilingi kamar nan asing ini yang entah kenapa... terasa familiar bagiku."
     b_narrator "Lukisan-lukisan aneh yang tergantung di dinding kamar, juga topeng-topeng yang bergantung di dinding agak membuat suasana agak seram"
@@ -58,7 +61,7 @@ label scene_1:
 
     b_yuura "Aduh..."
 
-    show yuura netral at center, idle
+    show yuura at center, idle
 
     b_narrator "(Aku benar-benar udah kebangun nih... Tapi kok bisa yah aku tidur di sini !?...)"
     b_narrator "Aku terus keliling melihat sekitar, mana tau menemukan hal yang menarik."
@@ -95,11 +98,11 @@ label scene_1:
     b_narrator "Aku mengamati beberapa foto lainnya. Benar saja, perempuan yang mirip denganku itu nampaknya merupakan pemilik kamar ini."
     b_narrator "Aku meletakkan kembali foto-foto itu ke tempatnya semula."
 
-    show yuura netral at center, speaking
+    show yuura at center, speaking
 
     b_yuura "Kok bisa yah, ada orang yang beneran mirip sama aku...?"
 
-    show yuura netral at center, idle
+    show yuura at center, idle
 
     # stop music fadeout 3.0
     play music bgm_jade_bottle fadein 3.0 loop
