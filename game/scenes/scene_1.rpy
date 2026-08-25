@@ -7,42 +7,45 @@ label scene_1:
 
     b_narrator "Aku mendengar suara berisik dari luar, membuatku terbangun dari mimpi indahku."
 
-    show sprite yuura_happy at center, speaking
+    show yuura happy at center, speaking
 
     b_yuura "Iya iya.. Hooam.." 
 
-    show sprite yuura_netral at center, idle
+    show yuura netral at center, idle
 
     b_narrator "Aku terbangun dari tidurku, duduk sebentar sebelum benar-benar beranjak dari dari kasurku. Rasanya benar-benar malas untuk beranjak dari kas-"
 
     b_narrator "..."
     
-    show sprite yuura_angry at center, shake_custom, speaking
+    show angry_emotes at yuura_height
+    show yuura angry at center, shake_custom, speaking
 
     b_yuura "(MANA DASARNYA !?)"
 
-    show sprite yuura_netral at center, idle
+    hide angry_emotes
+
+    show yuura netral at center, idle
 
     b_narrator "Aku langsung sadar ketika menyadari ada yang janggal,{w} dan mendapati bahwa aku tidur di kasur yang dibentangkan di lantai?..."
     b_narrator "Aku segera melihat sekitar." 
     b_narrator "Dan benar saja." 
-    show sprite yuura_scared at center, idle
+    show yuura scared at center, idle
     b_narrator "Ini bukan kamarku."
 
-    show sprite yuura_netral at center, speaking
+    show yuura netral at center, speaking
 
     b_yuura "Kemarin aku salah masuk kamar apa gimana dah?{w} Kok bisa-bisanya kebangun di sini?"
 
-    show sprite yuura_netral at center, idle
+    show yuura netral at center, idle
 
     b_narrator "Aku meminggirkan selimut yang selama ini menutupi setengah badanku dan berdiri melihat sekitar."
     b_narrator "Aku melihat cermin, cermin itu memantulkan rupaku yang sama persis sebelum aku tertidur karena kelelahan."
 
-    show sprite yuura_netral at center, speaking
+    show yuura netral at center, speaking
 
     b_yuura "Nggak ada yang aneh sih..."
 
-    show sprite yuura_netral at center, idle
+    show yuura netral at center, idle
 
     b_narrator "Aku berjalan kecil, mengelilingi kamar nan asing ini yang entah kenapa... terasa familiar bagiku."
     b_narrator "Lukisan-lukisan aneh yang tergantung di dinding kamar, juga topeng-topeng yang bergantung di dinding agak membuat suasana agak seram"
@@ -51,29 +54,29 @@ label scene_1:
     # play sound sfx_cubit_pipi
     b_narrator "*Sfx cubit pipi"
 
-    show sprite yuura_sad at center, shake_custom, speaking
+    show yuura sad at center, shake_custom, speaking
 
     b_yuura "Aduh..."
 
-    show sprite yuura_netral at center, idle
+    show yuura netral at center, idle
 
     b_narrator "(Aku benar-benar udah kebangun nih... Tapi kok bisa yah aku tidur di sini !?...)"
     b_narrator "Aku terus keliling melihat sekitar, mana tau menemukan hal yang menarik."
     b_narrator "Aku mendekati sebuah zirah yang terpajang gagah beserta pedang dengan sarungnya yang berwarna merah muda."
 
-    show sprite yuura_scared at center, speaking
+    show yuura scared at center, speaking
 
     b_yuura "Uh... Kayaknya pemilik kamar ini adalah orang yang menakutkan..."
     
-    show sprite yuura_scared at center, idle
+    show yuura scared at center, idle
     
     b_narrator "Didekat zirah itu, terdapat meja kecil yang di atasnya terdapat alat penghisap tembakau dan topeng berbentuk hewan."
     
-    show sprite yuura_scared at center, speaking
+    show yuura scared at center, speaking
     
     b_yuura "Beneran kriminal ini mah..."
     
-    show sprite yuura_scared at center, idle
+    show yuura scared at center, idle
     
     stop music fadeout 3.0
     play music bgm_foto_kenangan fadein 3.0 loop
@@ -82,21 +85,21 @@ label scene_1:
     b_narrator "Ketika kudekati, terlihat jelas foto-foto itu adalah momen kebersamaan si pemilik kamar dengan teman maupun keluarganya."
     b_narrator "Aku mengambil sebuah foto dan mengamati lebih jelas."
 
-    show sprite yuura_scared at center, shake_custom, speaking
+    show yuura scared at center, shake_custom, speaking
 
     b_yuura "ANJIR!!"
     b_yuura "NIH ORANG MIRIP BANGET SAMA GUE COK !"
 
-    show sprite yuura_scared at center, idle
+    show yuura scared at center, idle
 
     b_narrator "Aku mengamati beberapa foto lainnya. Benar saja, perempuan yang mirip denganku itu nampaknya merupakan pemilik kamar ini."
     b_narrator "Aku meletakkan kembali foto-foto itu ke tempatnya semula."
 
-    show sprite yuura_netral at center, speaking
+    show yuura netral at center, speaking
 
     b_yuura "Kok bisa yah, ada orang yang beneran mirip sama aku...?"
 
-    show sprite yuura_netral at center, idle
+    show yuura netral at center, idle
 
     # stop music fadeout 3.0
     play music bgm_jade_bottle fadein 3.0 loop
@@ -110,27 +113,27 @@ label scene_1:
 
     b_unknown "Anee, waktunya bangun."
 
-    show sprite yuura_scared at center, shake_custom, speaking
+    show yuura scared at center, shake_custom, speaking
 
     play music bgm_scene_2_rock loop
 
     b_yuura "(ANJIR, TERNYATA ADA ORANG LAIN JUGA DI SINI)"
 
-    show sprite yuura_scared at center, idle
+    show yuura scared at center, idle
 
     b_narrator "Aku segera memutar otakku, dan menemukan jawaban..."
     b_narrator "LARI SEBELUM KETAHUAN !!"
     b_narrator "Tepat ketika pintu kamar terbuka sempurna, aku menerjang keluar dan melesat bagai kilat."
     b_narrator "Tak menyadari bahwa orang yang membukakan pintu terjatuh karenaku, tapi peduli apa aku."
 
-    show sprite yuura_scared at center, speaking
+    show yuura scared at center, speaking
 
     b_yuura "Argh dimana sih... Ah ini dia !"
 
-    show sprite yuura_scared at center, idle
+    show yuura scared at center, idle
 
     b_narrator "Setelah kutembakan grappling gun ku dan melesat tanpa melihat ke belakang."
     
-    hide sprite yuura_scared with easeoutleft
+    hide yuura scared with easeoutleft
 
     return
