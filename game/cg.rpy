@@ -1,0 +1,1 @@
+image cg meja_kamar_yuura = "assets/cg/cg_arc-1_scene-1_primary_taro_foto-meja.png"
