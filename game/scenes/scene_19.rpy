@@ -117,14 +117,13 @@ label scene_19:
     nd_yuura_brown "Oi ! Apa yang kalian lakukan ? Kenapa ada ledakan tadi ?"
     show yuura at idle
     nd_narrator_brown "Aku berusaha mendekat, tapi tiba-tiba saja muncul sebuah kembang api di langit. Membuatku terkejut dengan semua ini."
-    # screen shake
 
     scene black
 
     show yuura netral at center, idle
     with Dissolve(1.0)
     voice voice_4_19_711_semua_orang
-    
+    show layer master at shake
     nd_narrator_brown "{size=+30}SELAMAT ULANG TAHUN YUURA !!!{/size}"
     show yuura at speaking
     nd_yuura_brown "..."
