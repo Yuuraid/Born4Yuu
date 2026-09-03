@@ -1,5 +1,5 @@
-image shark = "assets/sprite/Shark/shark_main_netral.png"
-image hiu = "assets/sprite/Shark/shark_main_hiu.png"
+# image shark = "assets/sprite/Shark/shark_main_netral.png"
+# image hiu = "assets/sprite/Shark/shark_main_hiu.png"
 
 
 label shark_transform_01:
