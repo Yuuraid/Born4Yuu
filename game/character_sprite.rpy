@@ -137,3 +137,8 @@ layeredimage yuura:
                 Movie(play="assets/effects/sleep02-w.webm", mask="assets/effects/sleep02-w.webm"),
                 zoom=0.25, xpos=0.2, ypos=0.1
             )
+        attribute eff_snot:
+            Transform(
+                Movie(play="assets/effects/snot-bubble01.webm", mask="assets/effects/snot-bubble01.webm"),
+                zoom=0.4, xpos=0.145, ypos=0.3
+            )
