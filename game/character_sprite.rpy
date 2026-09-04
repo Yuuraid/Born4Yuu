@@ -88,7 +88,14 @@ layeredimage shark:
         attribute sad "assets/sprite/Shark/shark_main_worried.png"
         attribute beast "assets/sprite/Shark/shark_main_beast.png"
 
-# TODO: Tarochips
+layeredimage taro:
+
+    group expression:
+        attribute netral "assets/sprite/Taro/taro_main_netral.png"
+        attribute disgusted "assets/sprite/Taro/taro_main_disgusted.png"
+        attribute happy "assets/sprite/Taro/taro_main_smile.png"
+        attribute sad "assets/sprite/Taro/taro_main_sad.png"
+        attribute huh "assets/sprite/Taro/taro_main_speak.png"
 
 layeredimage yuura:
 
