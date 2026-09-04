@@ -3,12 +3,12 @@
 label scene_18:
     scene inn backyard with Dissolve(1.0)
     # play music trigger
-    nd_narrator_brown "Aku terbangun dan mendengar suara samar, ketika aku mencoba untuk duduk, aku melihat Dawam dan Aergia yang masing-masing diantara mereka telah menyiapkan kuda-kuda, sudah jelas itu merupakan serangan pengakhiran untuk mengakhiri pertempuran panjang mereka."
-    show aergia angry at right, shake, speaking
+    nd_narrator_brown "Aku terbangun dan mendengar suara samar, ketika aku mencoba untuk duduk, aku melihat Dawam dan Aergia yang masing-masing di antara mereka telah menyiapkan kuda-kuda, sudah jelas itu merupakan serangan pengakhiran untuk mengakhiri pertempuran panjang mereka."
+    show aergia hurt at right, shake, speaking
     voice voice_3_18_584_aergia
     nd_aergia_brown "Mati aja lu."
     show aergia at idle
-    show dawam angry at left, speaking
+    show dawam hurt at left, speaking
     voice voice_3_18_585_dawam
     nd_dawam_brown "Sesuai dengan permintaanmu !"
     show dawam at idle
@@ -72,7 +72,7 @@ label scene_18:
     
     nd_yuura_brown "Maaf yah, kalo aku selalu lupa akan dirimu."
     show yuura at idle
-    show aergia at speaking
+    show aergia angry at speaking
     voice voice_3_18_599_aergia
     nd_aergia_brown "A-apaan sih !"
     
