@@ -10,31 +10,32 @@ label scene_17:
     show yuura hurt at left, speaking
     nd_yuura_brown "Di mana aku ? Kenapa aku di sini ?"
     show yuura at idle
+    
     show pria netral at right, speaking
     # voice voice_3_17_411_pria_misterius
-    
     nd_pria_brown "Ah... Sang putri tidur sudah bangun."
-    # voice voice_3_17_412_pria_misterius
     
+    # voice voice_3_17_412_pria_misterius
     nd_pria_brown "Selamat datang kembali di rumah."
     show pria at idle
 
     nd_narrator_brown "Aku mundur beberapa langkah setelah mendengar suara itu."
 
     show pria at speaking
-    # voice voice_3_17_413_pria_misterius
-        
+    # voice voice_3_17_413_pria_misterius 
     nd_pria_brown "Ada apa ? kenapa kamu terlihat sangat terkejut melihatku ?"
-    # voice voice_3_17_414_pria_misterius
     
+    # voice voice_3_17_414_pria_misterius
     nd_pria_brown "Bukankah kau yang mengajakku untuk minum teh bersama ?"
     show pria at idle
+
     show yuura netral at speaking
     nd_yuura_brown "Minum teh ?"
     show yuura at idle
     nd_narrator_brown "Aku melihat sekeliling dan mendapati diriku berada di kamar tempat pertama kali aku bangun, tapi suasananya jauh berbeda dari sebelumnya."
     
     nd_narrator_brown "Belum lagi peralatan minum serta pria asing yang tiba-tiba ada di kamar ini membuatnya jadi lebih membingungkan."
+    
     show yuura at speaking
     nd_yuura_brown "(Tunggu... Bukannya aku sebelumnya berada di halaman belakang tempat ini...)"
     
@@ -42,6 +43,7 @@ label scene_17:
     
     nd_yuura_brown "Apa yang terjadi ? Bukankah tadi ada pertarungan ?"
     show yuura at idle
+
     nd_narrator_brown "Pria itu tertawa kecil."
 
     show pria netral at speaking
@@ -50,19 +52,21 @@ label scene_17:
     
     # voice voice_3_17_420_pria_misterius
     nd_pria_brown "Bukankah kita di sini untuk membicarakan dirimu ?"
-
     show pria at idle
+
     show yuura at speaking
     nd_yuura_brown "Diri...ku ???"
     show yuura at idle
+    
     show pria at speaking
     # voice voice_3_17_422_pria_misterius
-    
     nd_pria_brown "Ya... Aku ingin membicarakan soal dirimu."
     show pria at idle
+
     show yuura at speaking
     nd_yuura_brown "Hah ?"
     show yuura at idle
+
     nd_narrator_brown "Yuura menggelengkan kepala ke samping."
     
     nd_narrator_brown "Aku sedikit bingung melihat tingkah pria asing itu, membuatku semakin mempertanyakan apa maksud dari semua ini."
@@ -70,37 +74,44 @@ label scene_17:
     show pria at speaking
     # voice voice_3_17_424_pria_misterius
     nd_pria_brown "Langit benar-benar sudah menentukan takdirnya sendiri."
+    
     # voice voice_3_17_425_pria_misterius
-    
     nd_pria_brown "Sudah banyak sekali takdir yang tertulis, namun hanya satu yang benar."
-    # voice voice_3_17_426_pria_misterius
     
+    # voice voice_3_17_426_pria_misterius
     nd_pria_brown "Sekarang giliranmu, Aneeki."
     show pria at idle
+
     nd_narrator_brown "Yuura menyemburkan teh yang baru ia teguk."
     
     nd_narrator_brown "..."
+
     show yuura at speaking
     nd_yuura_brown "Ah maaf..."
     show yuura at idle
+
     # voice voice_3_17_428_pria_misterius
     show pria at speaking
     nd_pria_brown "Hahahaha... Sungguh suatu hal yang tak terduga bukan ?"
     show pria at idle
+
     nd_narrator_brown "Pria itu menjentikkan jari nya dan seketika sisa-sisa teh yang ada di tubuhnya lenyap seperti tak terjadi apa-apa."
+
     show yuura at speaking
     nd_yuura_brown "Bagaimana..."
     show yuura at idle
+
     # voice voice_3_17_430_pria_misterius
     show pria at speaking
     nd_pria_brown "Ssttt kita tidak akan berfokus pada itu sekarang."
+    
     # voice voice_3_17_431_pria_misterius
-    
     nd_pria_brown "Takdirmu sudah ditentukan sejak awal."
-    # voice voice_3_17_432_pria_misterius
     
+    # voice voice_3_17_432_pria_misterius
     nd_pria_brown "Sekarang ini adalah waktunya untukmu memilih."
     show pria at idle
+
     # stop music
     menu siap:
         "Aku belum siap":
@@ -108,6 +119,7 @@ label scene_17:
             show yuura at speaking
             nd_yuura_brown "Aku belum siap."
             show yuura at idle
+
             show pria at speaking
             nd_pria_brown "Tidak apa, biar aku tunjukkan sesuatu untukmu."
             show pria at idle
@@ -118,9 +130,11 @@ label scene_17:
             show yuura at speaking
             nd_yuura_brown "D-di mana kita sekarang ?"
             show yuura at idle
+
             show pria at speaking
             nd_pria_brown "Kita ada di dalam pusat alam bawah sadarmu."
             show pria at idle
+
             show yuura at speaking
             nd_yuura_brown "!?"
             show yuura at idle
@@ -130,6 +144,7 @@ label scene_17:
             show pria at speaking
             nd_pria_brown "Semakin aku lihat kamu semakin imut saja"
             show pria at idle
+
             show yuura at speaking
             nd_yuura_brown "Berhenti bercanda sekarang juga ! Apa sih yang ingin kamu sampaikan ?"
             show yuura at idle
@@ -139,6 +154,7 @@ label scene_17:
 
             nd_pria_brown "Apa kamu tidak nyaman berbicara denganku ?"
             show pria at idle
+
             show yuura at speaking
             nd_yuura_brown "DIEM !"
             show yuura at idle
@@ -160,6 +176,7 @@ label scene_17:
             
             nd_pria_brown "Rasanya sangat menyenangkan bukan ? Melihat mereka tertawa dan tersenyum."
             show pria at idle
+
             show yuura at speaking
             nd_yuura_brown "Aku... Tidak mengerti..."
             show yuura at idle
@@ -169,6 +186,7 @@ label scene_17:
             
             nd_pria_brown "Tapi rasakanlah kenangannya dalam benakmu."
             show pria at idle
+
             show yuura at speaking
             nd_yuura_brown "..."
             
@@ -205,6 +223,7 @@ label scene_17:
             show pria at speaking
             nd_pria_brown "Mengapa demikian ?"
             show pria at idle
+
             show yuura at speaking
             nd_yuura_brown "Aku... Aku tak pernah melakukan yang kamu sebutkan..."
             show yuura at idle
@@ -217,6 +236,7 @@ label scene_17:
             show pria at speaking
             nd_pria_brown "Jadi... Kamu Yuura yang mana ?"
             show pria at idle
+
             show yuura at speaking
             nd_yuura_brown "Apa maksudmu ?"
             show yuura at idle
@@ -230,6 +250,7 @@ label scene_17:
             
             nd_pria_brown "Atau Yuura yang akan selalu tertawa bersama kami ?"
             show pria at idle
+
             show yuura at speaking
             nd_yuura_brown "Aku tidak mengerti apa yang kamu ingin sampaikan ?"
             
@@ -243,6 +264,7 @@ label scene_17:
             show pria at speaking
             nd_pria_brown "Apa kamu pernah terpikirkan perasaan mereka yang menyerangmu ?"
             show pria at idle
+
             show yuura at speaking
             nd_yuura_brown "Tidak ! Mana mungkin aku mau memikirkan orang-orang aneh seperti mereka ?"
             show yuura at idle
@@ -250,6 +272,7 @@ label scene_17:
             show pria at speaking
             nd_pria_brown "Kenapa ?"
             show pria at idle
+
             show yuura at speaking
             nd_yuura_brown "Ya... Buat apa? Kenapa aku harus peduli sama kalian ?"
             
@@ -259,6 +282,7 @@ label scene_17:
             show pria at speaking
             nd_pria_brown "Apakah kamu yakin dengan itu ?"
             show pria at idle
+
             show yuura at speaking
             nd_yuura_brown "Iyalah..."
             show yuura at idle
@@ -274,6 +298,7 @@ label scene_17:
             show pria at speaking
             nd_pria_brown "Bagaimana ? Apa ada sesuatu yang berbeda ?"
             show pria at idle
+
             show yuura at speaking
             nd_yuura_brown "Aku... Aku tak bisa..."
             
@@ -339,6 +364,7 @@ label scene_17:
                     show pria at speaking
                     nd_pria_brown "Mengapa ?"
                     show pria at idle
+
                     show yuura at speaking
                     nd_yuura_brown "Aku rasa... Aku bukan lah orang yang cocok."
                     show yuura at idle
@@ -348,6 +374,7 @@ label scene_17:
                     
                     nd_pria_brown "Mengapa kamu berbicara seperti itu ?"
                     show pria at idle
+
                     show yuura at speaking
                     nd_yuura_brown "Aku... Hanya tidak mengerti mengapa aku harus di sini..."
                     
@@ -379,6 +406,7 @@ label scene_17:
                     
                     nd_pria_brown "Hahaha... Rasanya sangat menyakitkan yah..."
                     show pria at idle
+
                     show yuura at speaking
                     nd_yuura_brown "Maaf... Aku tidak punya pilihan lagi."
                     show yuura at idle
@@ -400,6 +428,7 @@ label scene_17:
                     
                     nd_pria_brown "Semoga takdir dunia ini mempertemukan kami denganmu kembali."
                     show pria at idle
+
                     show yuura at speaking
                     nd_yuura_brown "Terimakasih... {w}Yuuraid."
                     show yuura at idle
@@ -426,6 +455,7 @@ label scene_17:
                     nd_narrator_brown "Air mataku turun perlahan, tidak mengerti mengapa semuanya terjadi. Mengapa semua orang mengejarku dan mengapa ada orang yang ingin melindungiku. Aku sungguh tidak mengerti apa-apa."
                     
                     nd_narrator_brown "Sampai sekarang pun aku hanya melarikan diri, tanpa memahami apa-apa."
+
                     show yuura at speaking
                     nd_yuura_brown "Apa sih yang kalian lakukan..."
                     
@@ -445,6 +475,7 @@ label scene_17:
                     
                     nd_pria_brown "Karena mereka peduli padamu, pada Yuura." # kasih pause setelah jeda koma?
                     show pria at idle
+
                     show yuura at speaking
                     nd_yuura_brown "Tapi aku bukan Yuura yang kalian kenal !"
                     
@@ -454,6 +485,7 @@ label scene_17:
                     show pria at speaking
                     nd_pria_brown "Karena kamu Yuura."
                     show pria at idle
+
                     show yuura at speaking
                     nd_yuura_brown "Bagaimana bisa ? Hanya karena aku mirip dengan orang yang kalian kenal, kalian langsung melakukan apapun demiku !" # demiku atau demi aku?
                     
@@ -465,6 +497,7 @@ label scene_17:
                     
                     nd_pria_brown "Hahaha"
                     show pria at idle
+
                     show yuura at speaking
                     nd_yuura_brown "Apanya yang lucu dari itu ?"
                     show yuura at idle
@@ -472,6 +505,7 @@ label scene_17:
                     show pria at speaking
                     nd_pria_brown "Tidak... Hanya saja itu adalah hal yang paling sering kamu katakan."
                     show pria at idle
+                    
                     show yuura at speaking
                     nd_yuura_brown "Maksudmu ?"
                     show yuura at idle
@@ -493,6 +527,7 @@ label scene_17:
                     show pria at speaking
                     nd_pria_brown "Biar aku tunjukkan padamu."
                     show pria at idle
+
                     # stop music
                     # play misic credit scene
                     
@@ -522,9 +557,11 @@ label scene_17:
                     show yuura at speaking
                     nd_yuura_brown "Terima kasih... Risol."
                     show yuura at idle
+                    
                     show pria at speaking
                     nd_pria_brown "Kau salah... Aku adalah Yuuraid." # kasih pause setelah jeda titik-titik?
                     show pria at idle
+                    
                     show yuura at speaking
                     nd_yuura_brown "Ya ! Terimakasih, Yuuraid."
                     show yuura at idle
@@ -536,27 +573,32 @@ label scene_17:
             show yuura at speaking
             nd_yuura_brown "Aku ingin pergi dari sini."
             show yuura at idle
+
             # voice voice_3_17_530_pria_misterius 
             show pria at speaking
             nd_pria_brown "Apa kamu yakin dengan pilihan mu ?"
             show pria at idle
+
             show yuura at speaking
             nd_yuura_brown "Maaf... Aku tidak bisa di sini..."
             show yuura at idle
+
             # voice voice_3_17_532_pria_misterius
             show pria at speaking
             nd_pria_brown "kamu orang yang seperti itu ya."
             show pria at idle
+
             show yuura at speaking
             nd_yuura_brown "Maaf..."
             show yuura at idle
 
-            show pria at speaking
             # voice voice_3_17_533_pria_misterius
+            show pria at speaking
             nd_pria_brown "Untuk apa minta maaf ?"
             # voice voice_3_17_534_pria_misterius
             nd_pria_brown "Tidak ada yang salah dalam pilihan mu."
             show pria at idle
+
             show yuura at speaking
             nd_yuura_brown "Maaf… aku bukan orang yang baik."
             show yuura at idle
@@ -586,6 +628,7 @@ label scene_17:
             
             nd_pria_brown "Semoga takdir dunia ini mempertemukan kami denganmu kembali."
             show pria at idle
+            
             show yuura at speaking
             nd_yuura_brown "Terimakasih...{w} Yuuraid."
             show yuura at idle
