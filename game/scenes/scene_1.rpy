@@ -1,11 +1,12 @@
 # The script of the game goes in this file.
 
 label scene_1:
-        # scene black
+    # scene black
 
-        # $ quick_menu = True
-        # play music start with fadein 1.0 -> define dulu
-        # play sound "audio/sfx/knock_door.ogg"
+    # $ quick_menu = True
+    # play music start with fadein 1.0 -> define dulu
+    # play sound "audio/sfx/knock_door.ogg"
+    scene black
     nd_narrator_black "Aku mendengar suara berisik dari luar"
     
     nd_narrator_black "membuatku terbangun dari mimpi indahku."
@@ -149,7 +150,7 @@ label scene_1:
 
     nd_narrator_brown "Aku mengambil botol hijau zamrud itu dan memandangi keindahan nya. Hingga.."
     
-    nd_unknown_brown "Anee, waktu nya bangun"
+    wd_unknown_brown "Anee, waktu nya bangun"
 
     # BGM rock
 
