@@ -29,3 +29,6 @@ transform idle:
 
 transform silhouette:
     matrixcolor TintMatrix("#000000")
+
+transform reveal_character:
+    matrixcolor None

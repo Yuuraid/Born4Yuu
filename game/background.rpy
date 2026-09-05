@@ -22,7 +22,8 @@ image inn resepsionis = "assets/bg/Resepsionis.png"
 image inn ruang_kerja = "assets/bg/Ruang-kerja.png"
 image inn ruang_tamu_1 = "assets/bg/Ruang-Tamu-1.png"
 image inn ruang_tamu_2 = "assets/bg/Ruang-Tamu-2.png"
-image inn rooftop = "assets/bg/Rooftop.png"
+# image inn rooftop = "assets/bg/Rooftop.png"
+image inn rooftop = "assets/bg/Lorong-Penginapan-ala-Jepang-Pagi.png"
 image inn toilet = "assets/bg/WC-duduk.png"
 image hutan kuil entrance = "assets/bg/Pintu-masuk-kuil-dari-hutan.png"
 image hutan taman = "assets/bg/Hutan-1.png"
@@ -33,9 +34,24 @@ image garden_2 = "assets/bg/Taman-2.png"
 image arena = "assets/bg/Arena.png"
 image whiteroom = "assets/bg/Whiteroom.png"
 
-# image transition concentration_line_1 = ""
+# Concentration transition
+image transition_screen black concentrationline01_w = Movie(play="assets/effects/video effects/black/concentrationline01_w.webm")
+image transition_screen black concentrationline01_b = Movie(play="assets/effects/video effects/black/concentrationline01_b.webm")
+image transition_screen black concentrationline02_w = Movie(play="assets/effects/video effects/black/concentrationline02_w.webm")
+image transition_screen black concentrationline02_b = Movie(play="assets/effects/video effects/black/concentrationline02_b.webm")
 
-image transition_eff black_concentrationline01_w = Movie(play="assets/effects/video_effects/black/concentrationline01_w.webm")
-image transition_eff black_concentrationline01_b = Movie(play="assets/effects/video_effects/black/concentrationline01_b.webm")
-image transition_eff black_concentrationline02_w = Movie(play="assets/effects/video_effects/black/concentrationline02_w.webm")
-image transition_eff black_concentrationline02_b = Movie(play="assets/effects/video_effects/black/concentrationline02_b.webm")
+image transition_screen orange concentrationline01_w = Movie(play="assets/effects/video effects/orange/concentrationline01_w.webm")
+image transition_screen orange concentrationline01_b = Movie(play="assets/effects/video effects/orange/concentrationline01_b.webm")
+image transition_screen orange concentrationline02_w = Movie(play="assets/effects/video effects/orange/concentrationline02_w.webm")
+image transition_screen orange concentrationline02_b = Movie(play="assets/effects/video effects/orange/concentrationline02_b.webm")
+
+image transition_screen white concentrationline01_w = Movie(play="assets/effects/video effects/white/concentrationline01_w.webm")
+image transition_screen white concentrationline01_b = Movie(play="assets/effects/video effects/white/concentrationline01_b.webm")
+image transition_screen white concentrationline02_w = Movie(play="assets/effects/video effects/white/concentrationline02_w.webm")
+image transition_screen white concentrationline02_b = Movie(play="assets/effects/video effects/white/concentrationline02_b.webm")
+
+# image video_with_bg = Fixed(
+#     Solid("#336699"), # Solid background color (Hex or RGB)
+#     Movie(play="assets/effects/momentum01.webm", mask="assets/effects/momentum01.webm"), # Transparent video
+#     fit_first=True
+# )
