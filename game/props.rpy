@@ -1,3 +1,14 @@
+image jade_bottle = "assets/props/jade_bottle.png"
+# image jade_bottle closeup = im.Composite(None, (0, 0), "assets/props/jade_bottle.png") 
+
+image dark_overlay = Solid("#000000aa") # 'aa' sets transparency in hex, or use Color("#000node", alpha=0.5)
+
+transform pos(x=0.5, y=1.0, z=1.0, r=0):
+    xalign x
+    yalign y
+    zoom z
+    rotate r
+
 image card_zoo_hunter = "assets/props/Cards/Card_Zoo_Hunter.png"
 image card_cyber_dragon = "assets/props/Cards/Card_Cyber_Dragon.png"
 image card_dragon_kanna = "assets/props/Cards/Card_Dragon_Kanna.png"
