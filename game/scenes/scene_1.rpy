@@ -145,8 +145,6 @@ label scene_1:
     nd_narrator_brown "Di tengah kebingungan itu, aku melihat sebuah benda yang bersinar. Pandanganku langsung tertuju pada benda itu dan melesat mendekatinya."
     
     nd_narrator_brown "Sebuah botol berwarna Jade yang sejuk dan cerah, tidak salah lagi kalau botol ini terbuat dari batu Jade yang berharga!"
-    
-    show screen show_item("assets/props/jade_bottle.png", "Botol sake") with Dissolve(0.2)
 
     nd_narrator_brown "Aku mengambil botol hijau zamrud itu dan memandangi keindahan nya. Hingga.."
     
@@ -175,4 +173,4 @@ label scene_1:
     nd_narrator_brown "Segera kutembakkan Grappling Gun ku dan melesat tanpa melihat ke belakang."
         # $ quick_menu = False
 
-    return
+    jump scene_2
