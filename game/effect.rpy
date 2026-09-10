@@ -23,3 +23,17 @@
 #     "eileen",
 #     fit_first=True
 # )
+
+# A static blur (change 6 to a higher/lower number for more/less blur)
+transform blurred:
+    blur 30
+
+# An animated transition that goes from clear to blurry over 1.0 second
+transform enblur:
+    blur 0
+    linear 1.0 blur 30
+
+# An animated transition that goes from blurry back to clear over 1.0 second
+transform deblur:
+    blur 30
+    linear 1.0 blur 0

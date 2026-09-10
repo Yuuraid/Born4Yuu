@@ -54,6 +54,14 @@ layeredimage haruto:
         attribute angry "assets/sprite/Haruto/haruto_main_serious.png"
         attribute exhausted "assets/sprite/Haruto/haruto_main_exhausted.png"
 
+    group effect:
+        attribute none default Null() # Default state (nothing rendered)
+        attribute eff_exclamation:
+            Transform(
+                Movie(play="assets/effects/exclamation-mark01-r.webm", mask="assets/effects/exclamation-mark01-r.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.14, ypos=0.1, rotate=-20
+            )
+
 layeredimage pria:
 
     group expression:
