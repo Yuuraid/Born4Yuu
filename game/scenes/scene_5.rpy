@@ -30,7 +30,7 @@ label scene_5:
         # # bgm stop
         # hide yuura normal animated with moveoutbottom
         # show layer master at shake_custom
-    nd_narrator_brown "Perlahan tubuhku mulai tersungkur tak berdaya, aku melihat seorang sedang berdiri diam di kejauhan."
+    nd_narrator_brown "Tiba tiba tubuhku tersungkur tak berdaya, aku melihat seorang sedang berdiri diam di kejauhan."
     
     nd_narrator_brown "Tanganku berusaha menggapainya, suaraku yang sudah serak berusaha berteriak ke arahnya."
     
