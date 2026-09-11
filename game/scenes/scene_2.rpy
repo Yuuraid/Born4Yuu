@@ -21,7 +21,7 @@ label scene_2:
 
     nd_narrator_black "Aku berlari, melompat, dan melesat sambil menyusuri lorong ini. Terlihat dari dinding dan lantainya, jelas ini menggunakan kayu yang berkualitas."
 
-    nd_narrator_black "Meski begitu, tetap akan kujadikan dinding-dinding di lorong ini sebagai target dari grappling ku."
+    nd_narrator_black "Meski begitu, tetap akan kujadikan dinding-dinding di lorong ini sebagai target dari Grappling ku."
 
     show yuura at speaking
     nd_yuura_black "(Peduli apa aku dengan kerusakan di tempat ini)"
@@ -33,9 +33,9 @@ label scene_2:
 
     hide yuura with easeoutleft
 
-    nd_narrator_black "Pelarian tidak lah mulus, aku harus menghindari orang-orang yang berlalu lalang di lorong ini, belum lagi aku sempat menimpuk wajah seseorang yang berpakaian serba cokelat dengan lututku."
+    nd_narrator_black "Pelarian ini tidaklah mulus, aku harus menghindari orang-orang yang berlalu lalang di lorong ini, belum lagi aku sempat menimpuk wajah seseorang yang berpakaian serba coklat dengan lututku."
 
-    nd_narrator_black "Melesat di tempat sempit nan ramai ini membuatku kesulitan dalam melaju. Akhirnya setelah cukup panjang menyusuri lorong ini, aku menemukan titik terang di ujung sana."
+    nd_narrator_black "Melesat ditempat sempit nan ramai ini membuatku kesulitan dalam melaju. Akhirnya setelah cukup panjang menyusuri lorong ini, aku melihat sebuah pintu yang dibuka di ujung sana. Nampaknya, itu adalah jalan keluar yang ku cari-cari"
     
         # show yuura normal animated at center
         # with Dissolve(2.0)
@@ -46,21 +46,21 @@ label scene_2:
     # BG inn ruang_tamu_1
     
     show yuura at idle
-    nd_narrator_brown "Tapi aku salah kira, bukannya jalan keluar, aku malah mendarat di tempat yang penuh dengan banyak orang di sini."
+    nd_narrator_brown "Tapi aku salah kira, bukannya jalan keluar, aku malah mendarat di tempat yang penuh dengan banyak orang."
 
     show yuura scared eff_sweat_w at pacing_left_right
-    nd_narrator_brown "Aku langsung panik, bisa-bisa aku malah pergi ke ruangan utama di tempat ini. Segera aku tembak grappling ku."
+    nd_narrator_brown "Aku langsung panik, bisa-bisanya aku malah pergi ke tempat yang lebih ramai. Segera aku tembak Grappling ku."
 
-    nd_narrator_brown "Tapi karena panik, arah tembaknya jadi tak karuan. Tertembak menyamping, tidak mengenai target yang menyebabkan harus melompat secara manual, dan membuatku menabrak beberapa orang yang tentu itu menyakitkan."
+    nd_narrator_brown "Tapi karena panik, arah tembak nya jadi tak karuan. Tertembak menyamping, tidak mengenai target yang menyebabkan harus melompat secara manual, dan membuatku menabrak beberapa orang yang tentu itu menyakitkan."
 
     hide yuura with easeoutleft
     
     scene inn rooftop with dissolve
     show yuura netral at center, idle with easeinright
 
-    nd_narrator_brown "Akhirnya setelah 2 menit berlalu, aku berhasil mencapai atap dari tempat terbuka nan luas itu."
+    nd_narrator_brown "Akhirnya setelah 2 menit berlalu, aku berhasil mencapai atap dari tempat terbuka nan luas ini."
 
-    nd_narrator_brown "Orang-orang di bawah menatapku dengan tatapan bingung, seperti melihat orang gila yang sehabis berbuat kericuhan, tapi peduli apa aku."
+    nd_narrator_brown "Orang-orang dibawah menatapku dengan tatapan bingung, seperti melihat orang gila sehabis berbuat kericuhan, tapi peduli apa aku."
     
     show yuura at pacing_left_right
 
@@ -88,16 +88,16 @@ label scene_2:
         yalign 0.0
     with fade
 
-    nd_yuura_brown "Finally !"
+    nd_yuura_brown "Finally!"
     
     # BG hutan kuil entrance
 
     show yuura at idle
-    nd_narrator_brown "Kutembakkan segera grappling ku dan melesat menuju jalan keluar. Mendarat dan berlari sekencang-kencangnya."
+    nd_narrator_brown "Kutembakkan segera Grappling ku dan melesat menuju gerbang tori. Mendarat dan berlari sekencang-kencangnya."
     
     hide yuura with easeoutleft
 
     nd_yuura_brown "(Semoga tak ada yang mengejarku, pagi ku sudah cukup sial untuk membuatku menggerutu.)"
         # $ quick_menu = False
 
-    return
+    jump scene_3
