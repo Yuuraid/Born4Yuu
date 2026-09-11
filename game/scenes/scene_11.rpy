@@ -20,27 +20,47 @@ label scene_11:
     
         # Aergia
     
+    show aergia netral at left, speaking
     nd_unknown_brown "Ha... Lu lagi lu lagi, kenapa sih harus selalu lu yang ke tempat gua ?"
+    show aergia at idle
     
+    show axia netral at right, speaking
     nd_axiaregis_brown "Kira-kira kenapa ya ? Apa jangan-jangan aku suka kamu kyahh."
+    show axia at idle
     
     nd_narrator_brown "Api langsung membakar Axiaregis."
     
+    show aergia at speaking
     nd_unknown_brown "Bangsat ! Jijik banget anjing. Kenapa sih lu tiap dateng selalu bikin gua kesel ?"
+    show aergia at idle
     
+    show axia at speaking
     nd_axiaregis_brown "T-tolonggg ahhh panassss...hehe..."
+    show axia at idle
     
+    show aergia at speaking
     nd_unknown_brown "Cukup ! Jelaskan alasan lu dan pergi dari sini !"
-    
+    show aergia at idle
+        
+    show axia at speaking
     nd_axiaregis_brown "Dinginnya... Apa kau tak bisa lembut pada orang seimut diriku ini ?"
+    show axia at idle
     
+    show aergia at speaking
     nd_unknown_brown "Bicara atau lu beneran gua jadiin femboy bakar."
-    
+    show aergia at idle
+        
+    show axia at speaking
     nd_axiaregis_brown "Baiklah-baiklah... Ini semua tentang Yuura."
+    show axia at idle
     
+    show aergia at speaking
     nd_unknown_brown "Yuura ? Ada apa dengannya ?"
-    
+    show aergia at idle
+        
+    show axia at speaking
     nd_axiaregis_brown "Sebenarnya..."
+    show axia at idle
     
     nd_narrator_brown "Aku berjalan melewati lorong yang semakin banyak anomali di dalamnya, ada seseorang yang sangat menyukai gundam bernama Ivan."
     

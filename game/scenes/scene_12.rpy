@@ -4,7 +4,7 @@ label scene_12:
 
     scene inn entrance_2 with Dissolve(2.0) 
     
-    show yuura netral at left, idle
+    show yuura netral at left, idle, flip_image
     nd_narrator_brown "Tepat ketika aku tiba di dekat pintu depan, aku melihat seorang laki-laki berwajah masam."
     
     nd_narrator_brown "Kantung matanya sangat tebal, wajahnya terlihat sudah sangat lelah dan tidak karuan. Dia menghampiriku dan mencoba menyapaku."
