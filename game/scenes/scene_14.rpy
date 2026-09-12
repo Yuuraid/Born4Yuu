@@ -31,6 +31,10 @@ label scene_14:
     nd_yuura_brown "Kenapa emangnya ?"
     show yuura at idle
 
+    transform flip_image(horizontal=True, vertical=False):
+        xzoom (-1.0 if horizontal else 1.0)
+        yzoom (-1.0 if vertical else 1.0)
+
     transform movetoright(xalign_pos=0.5, duration=0.5):
         xalign 0.0
         linear 0.15 xalign 0.8
