@@ -33,6 +33,7 @@ image garden_1 = "assets/bg/Taman-1.png"
 image garden_2 = "assets/bg/Taman-2.png"
 image arena = "assets/bg/Arena.png"
 image whiteroom = "assets/bg/Whiteroom.png"
+image game_over = "assets/bg/Game_Over_Screen.png"
 
 # Concentration transition
 image transition_screen black concentrationline01_w = Movie(play="assets/effects/video effects/black/concentrationline01_w.webm")

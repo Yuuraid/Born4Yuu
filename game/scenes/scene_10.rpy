@@ -3,42 +3,67 @@
 
 label scene_10:
 
-        # show ruang tamu with Dissolve(1.0)
-        # # play music jade bottle fadein
+    # show ruang tamu with Dissolve(1.0)
+    # # play music jade bottle fadein
     
+    scene transition_screen orange concentrationline02_w with fade
+    show yuura scared at ease_custom(offscreenright, center, 0.5), speaking
+
     nd_narrator_brown "Aku berlari tanpa melihat ke belakang, tak peduli dengan pertengkaran mereka berdua. Saat ini yang paling penting adalah keselamatanku."
     
-    pause
+    # pause
 
-    call evolve_sequence from _evolve_sequence
+    # call evolve_sequence from _evolve_sequence
 
-    pause
+    # pause
 
+    hide yuura with easeoutleft
+    scene inn ruang_tamu_2
+    show dityo netra netral at left, silhouette
+    with fade
+
+    show yuura scared at ease_custom(offscreenright, left, 0.5), idle
+    pause 0.5
+    show yuura at ease_custom(left, center, 0.2), idle
     nd_narrator_brown "Meskipun aku sudah lolos dari mereka berdua. Nyatanya, dunia tidak seindah itu. Aku menabrak om-om yang tadi mengejarku. Ternyata dia sudah memperhitungkan jalur pelarianku dengan alatnya."
     
+    show dityo at speaking, silhouette
     nd_unknown_brown "Mau ke mana kamu Anee ?"
     
     nd_unknown_brown "Aku kan udah bilang kamu ga bakal bisa pergi dariku..."
     
+    show yuura angry at speaking
+    show dityo at idle, silhouette
     nd_yuura_brown "Apasih ! Minggir ! Aku sudah muak banget ya sama kalian semua ! Dari pagi dikejar-kejar mulu"
     
+    show dityo at speaking, silhouette
+    show yuura at idle
     nd_unknown_brown "T-tapi Anee, bukannya--"
         # show yuura shake ??
     
+    show yuura angry at speaking
+    show dityo at idle, silhouette
+    show layer master at shake
     nd_yuura_brown "DIEM !"
     
+    show yuura at idle
     nd_narrator_brown "Aku memukul tangan Dityo dan bikin mahakaryanya jatuh."
         # nd_yuura_brown "DIEM ! (Aku memukul tangan Dityo dan bikin mahakaryanya jatuh.)"
     
+    show yuura netral at speaking
     nd_yuura_brown "Ah..."
     
+    show dityo at speaking, silhouette
+    show yuura at idle
     nd_unknown_brown "..."
     
     nd_unknown_brown "Kenapa ne ?{w} Kenapa kamu jadi seperti ini ?{w} Ini bukan seperti Anee yang kukenal..."
     
     nd_unknown_brown "Yuura yang kukenal tidak akan langsung merusak barang orang lain ! Dia orang yang baik, penyayang."
         # show dityo marah with shake ??
-    
+
+    $ renpy.run(QuickSave())
+
     nd_unknown_brown "BUKAN ORANG YANG KASAR KAYAK GINI !"
         # show yuura with shake ??
         # stop music
@@ -47,10 +72,14 @@ label scene_10:
         "APA SIH ! ORANG DARI AWAL JUGA KAMU YANG NGEJAR-NGEJAR AKU ! KENAPA SEMUA MALAH JADI AKU YANG SALAH !":
             $ dityo_route = "Bad end"
             
+            show yuura angry at speaking
+            show dityo at idle, silhouette
             nd_yuura_brown "APA SIH ! ORANG DARI AWAL JUGA KAMU YANG NGEJAR-NGEJAR AKU ! KENAPA SEMUA MALAH JADI AKU YANG SALAH !"
                 # show yuura panik
                 # show dityo serius
             
+            show dityo at speaking, silhouette
+            show yuura at idle
             nd_unknown_brown "Jadi menurut kamu ini salah aku ? SALAHKU ? APA ANEE KIRA BIKIN KAYAK GINI GAMPANG ?"
                 # show dityo marah with shake
             
@@ -58,7 +87,15 @@ label scene_10:
             
             nd_unknown_brown "Kalo bukan kamu yang minta juga aku ga mungkin bikin alat ini !"
             
-            nd_narrator_brown "Dityo pergi tanpa berkata-kata. Dia meninggalkan semua barangnya dan tidak pernah kembali lagi ke penginapan."
+            # show dityo at idle, silhouette
+            # nd_narrator_brown "Orang itu pergi tanpa berkata-kata. Dia meninggalkan semua barangnya dan tidak pernah kembali lagi ke penginapan."
+
+            # Disable the quick menu for this specific scene/cutscene
+            $ quick_menu = False
+
+            $ renpy.call_screen("game_over_screen", reason_text="Orang itu pergi tanpa berkata-kata. Dia meninggalkan semua barangnya dan tidak pernah kembali lagi ke penginapan.")
+            
+            return
 
         "A-aku beneran ga sengaja… sumpah, aku tadi niatnya cuma mau bikin kamu ngejauh bukan buat ngancurin karya yang kamu buat.":
             $ dityo_route = "Good end"
