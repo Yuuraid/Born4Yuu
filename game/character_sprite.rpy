@@ -62,6 +62,16 @@ layeredimage haruto:
                 xzoom=-1.0, zoom=0.25, xpos=0.14, ypos=0.1, rotate=-20
             )
 
+layeredimage ibe:
+
+    group expression:
+        attribute netral "assets/sprite/Ibe/ibe_main_netral.png"
+
+layeredimage josua:
+
+    group expression:
+        attribute netral "assets/sprite/Josua/josua_main_netral.png"
+
 layeredimage pria:
 
     group expression:

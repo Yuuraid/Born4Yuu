@@ -45,9 +45,9 @@ image pe swing dawam transparent = "assets/effects/partial_effects/Swing/Revisi/
 # image pe swing "assets/effects/partial_effects/Swing/Arc3_Scene16_Dawam_Menghantam.png"
 # image pe swing "assets/effects/partial_effects/Swing/Arc3_Scene16_Dawam_Menghantam_Transparent.png"
 
-image pe purple_flame front = "assets/effects/partial_effects/Fire/Arc2_Scene11_Api_kemudian_membakar_Axiaregis_Front.png"
-image pe purple_flame behind = "assets/effects/partial_effects/Fire/Arc2_Scene11_Api_kemudian_membakar_Axiaregis_Behind.png"
-image pe purple_flame full = "assets/effects/partial_effects/Fire/Arc2_Scene11_Api_kemudian_membakar_Axiaregis_Full.png"
+image pe purple_flame flame_front = "assets/effects/partial_effects/Fire/Arc2_Scene11_Api_kemudian_membakar_Axiaregis_Front.png"
+image pe purple_flame flame_behind = "assets/effects/partial_effects/Fire/Arc2_Scene11_Api_kemudian_membakar_Axiaregis_Behind.png"
+image pe purple_flame flame_full = "assets/effects/partial_effects/Fire/Arc2_Scene11_Api_kemudian_membakar_Axiaregis_Full.png"
 
 # "assets/effects/partial_effects/Punch/Punch_1/Arc2_Scene9_Tangan_melesat_kepadaku.png"
 # "assets/effects/partial_effects/Punch/Punch_1/Arc2_Scene9_Tangan_melesat_kepadaku_Transparent.png"
