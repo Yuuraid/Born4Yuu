@@ -1,4 +1,5 @@
 image jade_bottle = "assets/props/jade_bottle.png"
+image guest_book = "assets/props/guest_book.png"
 # image jade_bottle closeup = im.Composite(None, (0, 0), "assets/props/jade_bottle.png") 
 
 image dark_overlay = Solid("#000000aa") # 'aa' sets transparency in hex, or use Color("#000node", alpha=0.5)

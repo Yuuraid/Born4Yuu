@@ -95,6 +95,14 @@ layeredimage shark:
         attribute hurt "assets/sprite/Shark/shark_main_hurt.png"
         attribute sad "assets/sprite/Shark/shark_main_worried.png"
         attribute beast "assets/sprite/Shark/shark_main_beast.png"
+    
+    group effect:
+        attribute none default Null() # Default state (nothing rendered)
+        attribute eff_sweat_w:
+            Transform(
+                Movie(play="assets/effects/sweat02-w.webm", mask="assets/effects/sweat02-w.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.1, ypos=0.1 # Flip
+            )
 
 layeredimage taro:
 
