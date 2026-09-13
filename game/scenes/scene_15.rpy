@@ -94,7 +94,7 @@ label scene_15:
     show axia at idle
 
     show yuura at speaking
-    show yuura at shake
+    show yuura scared at shake
     # show yuura takut shake 
     nd_yuura_brown "*Tersentak"
     show yuura at idle

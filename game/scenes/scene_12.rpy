@@ -4,12 +4,16 @@ label scene_12:
 
     scene inn entrance_2 with Dissolve(2.0) 
     
-    show yuura netral at left, idle, flip_image
+    show yuura netral at center, idle
     nd_narrator_brown "Tepat ketika aku tiba di dekat pintu depan, aku melihat seorang laki-laki berwajah masam."
     
     nd_narrator_brown "Kantung matanya sangat tebal, wajahnya terlihat sudah sangat lelah dan tidak karuan. Dia menghampiriku dan mencoba menyapaku."
+
+    show yuura at right
+    with move
         # Aergia
-    show aergia netral at right, speaking
+    show aergia netral at left, speaking, flip_image
+    with dissolve
     nd_unknown_brown "Halo anee... Tidak. {w=0.5}Yuura... Apa kabar ?"
     show aergia at idle
 
@@ -17,7 +21,7 @@ label scene_12:
     
     nd_narrator_brown "Sayangnya, di dalamnya tidak ada informasi apa pun mengenai orang ini."
         
-    show yuura at speaking
+    show yuura scared at speaking
     nd_yuura_brown "Ah... H-halo {w}eh...mh..."
     show yuura at idle
 
@@ -80,7 +84,7 @@ label scene_12:
     show aergia at idle
 
     nd_narrator_brown "Aergia langsung pergi dari sana, membuatku semakin bertanya-tanya dengan apa yang terjadi dan mengapa Yuura yang dulu sangat disayang oleh mereka."
-    hide aergia 
+    hide aergia with dissolve
     
     nd_narrator_brown "Aku sudah tidak peduli, aku lelah dan hanya ingin beristirahat sejenak. Pada akhirnya aku duduk di teras dan menikmati waktuku berdiam diri."
 
