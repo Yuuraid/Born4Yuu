@@ -11,10 +11,16 @@ label scene_11:
     
     nd_narrator_brown "Entah seperti ada dua sejoli yang selalu menyebarkan informasi palsu di penginapan."
     
+    show josua netral at left with dissolve
     nd_josua_brown "Bukannya itu Yuura yang dibilang sama Axiaregis ya ?"
     
+    show ibe netral at right with dissolve
     nd_ibe_brown "Ihh iya tuh, keknya emang dia deh."
     
+    hide ibe
+    hide josua
+    with dissolve
+
     nd_narrator_brown "Mendengar itu aku hanya bisa diam, tak peduli. Aku rasa ini semua hanya kesalahan dan akan segera selesai."
     
     show aergia netral at left, idle

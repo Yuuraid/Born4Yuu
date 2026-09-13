@@ -150,7 +150,7 @@ define config.save_directory = "Born4Yuu-1782112212"
 ##
 ## The icon displayed on the taskbar or dock.
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "gui/game_icon.png"
 
 
 ## Build configuration #########################################################
@@ -207,3 +207,9 @@ init python:
 ## by a slash.
 
 # define build.itch_project = "renpytom/test-project"
+
+# Mouse Cursor
+
+define config.mouse = { 
+    'default' : [ ('gui/cursor.png', 0, 0)],
+    }

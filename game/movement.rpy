@@ -58,3 +58,21 @@ transform fall_down:
     ypos 0.0
     # Smoothly moves the sprite completely below the screen (ypos 1.5) over 0.6 seconds
     easein 0.6 ypos 1.5
+
+# Moves sprite 300 pixels to the right, then rebounds back 40 pixels
+transform collide_rightward:
+    easein 0.20 xoffset 300   # Move relative right from current spot
+    easeout 0.15 xoffset 260  # Rebound slightly
+
+# Moves sprite 300 pixels to the left, then rebounds back 40 pixels
+transform collide_leftward:
+    easein 0.20 xoffset -300  # Move relative left from current spot
+    easeout 0.15 xoffset -260 # Rebound slightly
+
+transform reset_xoffset:
+    xoffset 0
+
+transform custom_sprite_pos(x=0.5, y=1.0, offset=0):
+    xalign x
+    yalign y
+    xoffset offset

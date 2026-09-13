@@ -62,6 +62,16 @@ layeredimage haruto:
                 xzoom=-1.0, zoom=0.25, xpos=0.14, ypos=0.1, rotate=-20
             )
 
+layeredimage ibe:
+
+    group expression:
+        attribute netral "assets/sprite/Ibe/ibe_main_netral.png"
+
+layeredimage josua:
+
+    group expression:
+        attribute netral "assets/sprite/Josua/josua_main_netral.png"
+
 layeredimage pria:
 
     group expression:
@@ -86,6 +96,9 @@ layeredimage seiya:
         attribute hurt "assets/sprite/Seiya/seiya_main_hurt.png"
         attribute sassy "assets/sprite/Seiya/seiya_main_sassy.png"
 
+image shark_n_sequence = "assets/sprite/Shark/shark_main_netral.png"
+image shark_b_sequence = "assets/sprite/Shark/shark_main_beast.png"
+
 layeredimage shark:
 
     group expression:
@@ -95,6 +108,14 @@ layeredimage shark:
         attribute hurt "assets/sprite/Shark/shark_main_hurt.png"
         attribute sad "assets/sprite/Shark/shark_main_worried.png"
         attribute beast "assets/sprite/Shark/shark_main_beast.png"
+    
+    group effect:
+        attribute none default Null() # Default state (nothing rendered)
+        attribute eff_sweat_w:
+            Transform(
+                Movie(play="assets/effects/sweat02-w.webm", mask="assets/effects/sweat02-w.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.1, ypos=0.1 # Flip
+            )
 
 layeredimage taro:
 

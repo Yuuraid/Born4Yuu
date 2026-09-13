@@ -20,8 +20,8 @@ transform jump_in_right(xalign_pos=0.75, duration=0.5):
 transform speaking:
     matrixcolor None
     parallel:
-        easein 1.5 yoffset 20
-        easeout 1 yoffset 0
+        easein 0.8 yoffset 20
+        easeout 0.5 yoffset 0
         repeat
 
 transform idle:

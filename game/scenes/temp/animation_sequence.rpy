@@ -30,6 +30,36 @@ transform silhouette_white:
     matrixcolor BrightnessMatrix(1.0)
 
 label evolve_sequence:
+    show shark_b_sequence at right
+    # "What? shark_b_sequence is evolving!"
+
+    # 1. Turn into white silhouette
+    show shark_b_sequence at silhouette_white, right
+    with Dissolve(0.4)
+
+    # 2. Rapid flicker loop
+    $ count = 0
+    while count < 5:
+        show shark_b_sequence at silhouette_white, right
+        hide shark_n_sequence
+        pause 0.12 - (count * 0.015)
+        
+        show shark_n_sequence at silhouette_white, right
+        hide shark_b_sequence
+        pause 0.12 - (count * 0.015)
+        
+        $ count += 1
+
+    # 3. Flash to reveal full color final form
+    hide shark_b_sequence
+    show shark_n_sequence at right
+    with Flash
+
+    # "Congratulations! Your hiu evolved into shark_n_sequence!"
+
+    return
+
+label evolve_sequence_:
     show hiu at right
     "What? hiu is evolving!"
 
