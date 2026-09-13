@@ -7,6 +7,13 @@ layeredimage aergia:
         attribute hurt "assets/sprite/Aergia/aergia_main_hurt.png"
         attribute psycho "assets/sprite/Aergia/aergia_main_psycho.png"
         attribute furious "assets/sprite/Aergia/aergia_main_furious.png"
+        
+        attribute full_netral "assets/sprite/Aergia/aergia_full_neutral.png"
+        attribute full_angry "assets/sprite/Aergia/aergia_full_angry.png"
+        attribute full_sad "assets/sprite/Aergia/aergia_full_sad.png"
+        attribute full_hurt "assets/sprite/Aergia/aergia_full_hurt.png"
+        attribute full_psycho "assets/sprite/Aergia/aergia_full_psycho.png"
+        attribute full_furious "assets/sprite/Aergia/aergia_full_furious.png"
 
 layeredimage akasyah:
 
@@ -16,6 +23,12 @@ layeredimage akasyah:
         attribute smug "assets/sprite/Akasyah/akasyah_main_smug.png"
         attribute angry "assets/sprite/Akasyah/akasyah_main_angry.png"
         attribute hurt "assets/sprite/Akasyah/akasyah_main_hurt.png"
+
+        attribute full_netral "assets/sprite/Akasyah/akasyah_full_happy.png"
+        attribute full_hurt "assets/sprite/Akasyah/akasyah_full_hurt.png"
+        attribute full_smug "assets/sprite/Akasyah/akasyah_full_smug.png"
+        attribute full_angry "assets/sprite/Akasyah/akasyah_full_angry.png"
+        attribute full_hurt "assets/sprite/Akasyah/akasyah_full_hurt.png"
 
 layeredimage axia:
 
@@ -35,6 +48,12 @@ layeredimage dawam:
         attribute happy "assets/sprite/Dawam/dawam_main_laugh.png"
         attribute angry "assets/sprite/Dawam/dawam_main_angry.png"
         attribute hurt "assets/sprite/Dawam/dawam_main_hurt.png"
+
+        attribute full_netral "assets/sprite/Dawam/dawam_full_happy.png"
+        attribute full_sad "assets/sprite/Dawam/dawam_full_sad.png"
+        attribute full_happy "assets/sprite/Dawam/dawam_full_laugh.png"
+        attribute full_angry "assets/sprite/Dawam/dawam_full_angry.png"
+        attribute full_hurt "assets/sprite/Dawam/dawam_full_hurt.png"
 
 layeredimage dityo:
 
@@ -108,6 +127,13 @@ layeredimage shark:
         attribute hurt "assets/sprite/Shark/shark_main_hurt.png"
         attribute sad "assets/sprite/Shark/shark_main_worried.png"
         attribute beast "assets/sprite/Shark/shark_main_beast.png"
+
+        attribute full_netral "assets/sprite/Shark/shark_full_netral.png"
+        attribute full_happy "assets/sprite/Shark/shark_full_happy.png"
+        attribute full_scared "assets/sprite/Shark/shark_full_scared.png"
+        attribute full_hurt "assets/sprite/Shark/shark_full_hurt.png"
+        attribute full_sad "assets/sprite/Shark/shark_full_worried.png"
+        attribute full_beast "assets/sprite/Shark/shark_full_beast.png"
     
     group effect:
         attribute none default Null() # Default state (nothing rendered)
@@ -135,6 +161,13 @@ layeredimage yuura:
         attribute happy "assets/sprite/Yuura/yuura_main_happy.png"
         attribute scared "assets/sprite/Yuura/yuura_main_scared.png"
         attribute hurt "assets/sprite/Yuura/yuura_main_hurt.png"
+
+        attribute full_netral "assets/sprite/Yuura/yuura_full_netral.png"
+        attribute full_angry "assets/sprite/Yuura/yuura_full_angry.png"
+        attribute full_sad "assets/sprite/Yuura/yuura_full_sad.png"
+        attribute full_happy "assets/sprite/Yuura/yuura_full_happy.png"
+        attribute full_scared "assets/sprite/Yuura/yuura_full_scared.png"
+        attribute full_hurt "assets/sprite/Yuura/yuura_full_hurt.png"
 
     group effect:
         attribute none default Null() # Default state (nothing rendered)

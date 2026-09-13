@@ -72,6 +72,9 @@ transform collide_leftward:
 transform reset_xoffset:
     xoffset 0
 
+transform reset_yoffset:
+    yanchor 0.461
+
 transform custom_sprite_pos(x=0.5, y=1.0, offset=0):
     xalign x
     yalign y
