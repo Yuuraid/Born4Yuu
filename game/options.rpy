@@ -195,6 +195,14 @@ init python:
     build.documentation('*.html')
     build.documentation('*.txt')
 
+    # Modify screenshot notification
+    # Custom callback function that replaces the full path notification
+    def safe_screenshot_callback(filename):
+        renpy.notify("Screenshot saved!")
+
+    # Override the default screenshot callback
+    config.screenshot_callback = safe_screenshot_callback
+
 
 ## A Google Play license key is required to perform in-app purchases. It can be
 ## found in the Google Play developer console, under "Monetize" > "Monetization
