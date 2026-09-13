@@ -20,6 +20,7 @@ image pe continuous_attack attack_left transparent = "assets/effects/partial_eff
 image pe continuous_attack attack_right transparent = "assets/effects/partial_effects/Continuous_Attack/Arc3_Scene14_Akasyah_mulai_menghantam_Seiya_dengan_tinju_dan_tendangan_3.png"
 image pe continuous_attack full_CG = "assets/effects/partial_effects/Continuous_Attack/Arc3_Scene14_Akasyah_mulai_menghantam_Seiya_dengan_tinju_dan_tendangan_Full_Effect.png"
 
+image pe blue_projectile ball_0 transparent = "assets/effects/partial_effects/bola_biru.png"
 image pe blue_projectile ball_1 transparent = "assets/effects/partial_effects/Projectile_BALLS_Blue/Arc3_Scene15_Dia_melempar_banyak_sekali_bola_1.png"
 image pe blue_projectile ball_2 transparent = "assets/effects/partial_effects/Projectile_BALLS_Blue/Arc3_Scene15_Dia_melempar_banyak_sekali_bola_2.png"
 image pe blue_projectile ball_3 transparent = "assets/effects/partial_effects/Projectile_BALLS_Blue/Arc3_Scene15_Dia_melempar_banyak_sekali_bola_3.png"
@@ -30,6 +31,7 @@ image pe blue_projectile all_balls transparent = "assets/effects/partial_effects
 image pe dash blue = "assets/effects/partial_effects/Dash-Blue_or_Roar.png"
 image pe blue_projectile full_CG = "assets/effects/partial_effects/Projectile_BALLS_Blue/Arc3_Scene15_Dia_melempar_banyak_sekali_bola_Full_CG.png"
 
+image pe red_projectile ball_0 transparent = "assets/effects/partial_effects/bola_merah.png"
 image pe red_projectile ball_1 transparent = "assets/effects/partial_effects/Projectile_Balls_BLACK/Arc3_Scene16_Serangan_proyektil_hitam_1.png"
 image pe red_projectile ball_2 transparent = "assets/effects/partial_effects/Projectile_Balls_BLACK/Arc3_Scene16_Serangan_proyektil_hitam_5.png"
 image pe red_projectile ball_3 transparent = "assets/effects/partial_effects/Projectile_Balls_BLACK/Arc3_Scene16_Serangan_proyektil_hitam_3.png"
