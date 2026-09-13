@@ -21,7 +21,7 @@ image inn resepsionis = "assets/bg/Resepsionis.png"
 image inn ruang_kerja = "assets/bg/Ruang-kerja.png"
 image inn ruang_tamu_1 = "assets/bg/Ruang-Tamu-1.png"
 image inn ruang_tamu_2 = "assets/bg/Ruang-Tamu-2.png"
-# image inn rooftop = "assets/bg/Rooftop.png"
+image inn rooftop_2 = "assets/bg/Rooftop.png"
 image inn rooftop = "assets/bg/Lorong-Penginapan-ala-Jepang-Pagi.png"
 image inn toilet = "assets/bg/WC-duduk.png"
 image hutan kuil entrance = "assets/bg/Pintu-masuk-kuil-dari-hutan.png"
@@ -34,6 +34,7 @@ image garden_2 = "assets/bg/Taman-2.png"
 image arena = "assets/bg/Arena.png"
 image whiteroom = "assets/bg/Whiteroom.png"
 image game_over = "assets/bg/Game_Over_Screen.png"
+image mading = "assets/bg/mading_after_1.webp"
 
 # Concentration transition
 image transition_screen black concentrationline01_w = Movie(play="assets/effects/video effects/black/concentrationline01_w.webm")

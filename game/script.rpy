@@ -1,7 +1,8 @@
 ﻿
 label start:
 
-    jump scene_1
+    # jump scene_1
+    jump scene_10
 
     # call scene_1 from _call_scene_1
     # call scene_2 from _call_scene_2

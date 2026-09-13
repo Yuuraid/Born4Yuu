@@ -96,6 +96,9 @@ layeredimage seiya:
         attribute hurt "assets/sprite/Seiya/seiya_main_hurt.png"
         attribute sassy "assets/sprite/Seiya/seiya_main_sassy.png"
 
+image shark_n_sequence = "assets/sprite/Shark/shark_main_netral.png"
+image shark_b_sequence = "assets/sprite/Shark/shark_main_beast.png"
+
 layeredimage shark:
 
     group expression:
