@@ -53,6 +53,39 @@ label scene_14:
         xalign 0.25
         linear 0.15 xalign 0.0
 
+    transform akasyah_sat_set:
+        xalign 0 yoffset 0
+        easein 0.1 xalign 0.7 yoffset -200
+        pause .75
+        easeout 0.2 xalign 0.3 yoffset -100
+        pause .75
+        easeout 0.2 xalign 0.6 yoffset -300
+        pause .75
+        ease 0.2 xalign 0 yoffset 0
+
+    transform biji_melayang:
+        yalign 0.0 zoom 0.5
+        linear 0.1 xoffset -2000 
+    transform biji_melayang2:
+        yalign 0.1 zoom 0.5
+        linear 0.1 xoffset -5000 
+    transform biji_melayang3:
+        yalign 0.5 zoom 0.5
+        linear 0.1 xoffset 800
+        pause .5
+        rotate 210
+        linear 0.5 xoffset 4000 yoffset -4000
+    
+    # show pe blue_projectile ball_0 transparent as p1 at biji_melayang, flip_image
+    # with moveinright
+    # pause .5
+    # show pe blue_projectile ball_0 transparent as p2 at biji_melayang2, flip_image
+    # with moveinright
+    # pause .5
+    # show pe blue_projectile ball_0 transparent as p3 at biji_melayang3, flip_image
+    # with moveinright
+    # pause .5
+
     show seiya at speaking
     nd_seiya_brown "Tempat ini sudah tidak aman, sebaik-"
     show seiya at idle
@@ -214,7 +247,7 @@ label scene_14:
     nd_yuura_brown "!!" # improvisasi? Wkwkwkwk hapus aja kalo ga butuh
     
     nd_yuura_brown "*Membuka mata"
-    
+
     show yuura at idle
 
     # show lorong teras penginapan with Dissolve(1.0)
@@ -262,6 +295,8 @@ label scene_14:
     show seiya at speaking, flip_image
     nd_seiya_brown "Lawanmu adalah aku."
     show seiya at idle, flip_image
+
+    jump scene_15
 
     return
 

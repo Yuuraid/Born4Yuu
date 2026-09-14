@@ -116,4 +116,6 @@ label scene_11:
     
     nd_narrator_brown "Aku terus bergerak, tanpa mempedulikan apa pun di sekitarku. Aku hanya ingin beristirahat dari semua keanehan ini."
 
+    jump scene_12
+
     return

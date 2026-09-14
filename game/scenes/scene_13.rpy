@@ -55,4 +55,6 @@ label scene_13:
     nd_dityo_brown "WOI ! TUNGGU, EMANGNYA LU TAU DIA LARI KE... {w=0.5}Ah sudahlah, tidak ada untungnya mengharapkan dia untuk bekerja sama."
     show dityo at idle
 
+    jump scene_14
+
     return

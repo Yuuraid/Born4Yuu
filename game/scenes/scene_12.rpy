@@ -88,4 +88,6 @@ label scene_12:
     
     nd_narrator_brown "Aku sudah tidak peduli, aku lelah dan hanya ingin beristirahat sejenak. Pada akhirnya aku duduk di teras dan menikmati waktuku berdiam diri."
 
+    jump scene_13
+    
     return

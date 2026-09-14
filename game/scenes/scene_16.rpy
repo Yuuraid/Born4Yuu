@@ -274,5 +274,6 @@ label scene_16:
     
     # play sound kretek tangan
     # stop music
+    jump scene_17
     
     return

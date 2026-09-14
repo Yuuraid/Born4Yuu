@@ -3,16 +3,16 @@
 label scene_15:
 
     scene inn ruang_kerja with Dissolve(1.0)
-    # show lorong penginapan with Dissolve(1.0)
+
     show yuura scared at left, speaking
     nd_yuura_brown "Ah... Ah..."
     show yuura at idle
-    
+     
     nd_narrator_brown "Aku sudah berlari lumayan jauh dari lorong tempat mereka bertarung satu sama lain, aku sedikit heran, mengapa mereka berani untuk bertarung satu sama lain... Karena aku ?"
     
     nd_narrator_brown "Tapi sebelum sempat berpikir lebih jauh, aku merasa ada seorang yang mendekat ke arahku."
     
-    show yuura at speaking
+    show yuura scared at speaking
     nd_yuura_brown "Ahh... Aku capek..."
     show yuura at idle
 
