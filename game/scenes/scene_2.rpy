@@ -25,6 +25,7 @@ label scene_2:
 
     show yuura at speaking
     nd_yuura_black "(Peduli apa aku dengan kerusakan di tempat ini)"
+    play sound sfx_action_grappling_gun_scene2
 
         # hide yuura normal animated
         # with Dissolve(2.0)
@@ -41,6 +42,7 @@ label scene_2:
         # with Dissolve(2.0)
     scene inn ruang_tamu_1 with fade
     show yuura netral at center, speaking with easeinright
+    play sound sfx_action_fall_down_scene5_14
     nd_yuura_brown "Akhirnya..."
     
     # BG inn ruang_tamu_1
@@ -53,12 +55,13 @@ label scene_2:
 
     nd_narrator_brown "Tapi karena panik, arah tembak nya jadi tak karuan. Tertembak menyamping, tidak mengenai target yang menyebabkan harus melompat secara manual, dan membuatku menabrak beberapa orang yang tentu itu menyakitkan."
 
+    play sound sfx_action_grappling_gun_scene2
     hide yuura with easeoutleft
     
     scene inn rooftop with dissolve
     show yuura netral at center, idle with easeinright
 
-    nd_narrator_brown "Akhirnya setelah 2 menit berlalu, aku berhasil mencapai atap dari tempat terbuka nan luas ini."
+    nd_narrator_brown "Akhirnya setelah dua menit berlalu, aku berhasil mencapai atap dari tempat terbuka nan luas ini."
 
     nd_narrator_brown "Orang-orang dibawah menatapku dengan tatapan bingung, seperti melihat orang gila sehabis berbuat kericuhan, tapi peduli apa aku."
     
@@ -88,6 +91,7 @@ label scene_2:
         yalign 0.0
     with fade
 
+    play sound sfx_expression_surprised
     nd_yuura_brown "Finally!"
     
     # BG hutan kuil entrance
@@ -95,9 +99,11 @@ label scene_2:
     show yuura at idle
     nd_narrator_brown "Kutembakkan segera Grappling ku dan melesat menuju gerbang tori. Mendarat dan berlari sekencang-kencangnya."
     
+    play sound sfx_action_grappling_gun_scene2
     hide yuura with easeoutleft
 
     nd_yuura_brown "(Semoga tak ada yang mengejarku, pagi ku sudah cukup sial untuk membuatku menggerutu.)"
         # $ quick_menu = False
 
+    stop music fadeout 2.0
     jump scene_3
