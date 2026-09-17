@@ -39,10 +39,12 @@ label scene_5:
     nd_yuura_black "Tolong..."
         # show Unknown at center with Dissolve(1.0)
     
+    voice voice_1_5_59_taro
     wd_unknown_black "Anee ? ANEEE !?"
     
     nd_narrator_black "Orang itu langsung berlari menghampiriku, dengan tangannya yang lembut dia berusaha membangunkanku."
     
+    voice voice_1_5_60_taro
     wd_unknown_black "Anee, bangun anee ! Siapa pun tolong ! Anee tidak sadarkan diri !"
     
     nd_narrator_black "Mendengar teriakan orang itu, anak penginapan langsung berlari ke arahku, membantu mengangkatku untuk masuk ke dalam penginapan."

@@ -65,24 +65,30 @@ label scene_6:
     
     show yuura at face_flip with dissolve
     
+    voice voice_2_6_68_taro
     wd_unknown_brown "Ane... Ini aku Tarochips, aku bawa makanan buat ane..."
     
     nd_narrator_brown "Aku diam saja, tak membalas satu pun ucapannya."
     
     show yuura at idle
+    voice voice_2_6_69_taro
     wd_taro_brown "Ane ? Kamu masih tidur ? Aku taruh di depan aja ya... Maaf sudah mengganggu istirahat ane."
     
     nd_narrator_brown "Dia berjalan untuk pergi, tapi sebelum terlalu jauh dia menatap ke kamarku sekali lagi."
     
-    wd_taro_brown "Ane... Apa pun yang terjadi, tolong... {w} jaga kesehatanmu, aku ga mau ngeliat ane pingsan lagi."
+    voice voice_2_6_70_taro
+    wd_taro_brown "Ane... Apa pun yang terjadi, tolong... jaga kesehatanmu, aku ga mau ngeliat ane pingsan lagi."
     
+    voice voice_2_6_71_taro
     wd_taro_brown "Apa ane kira aku tidak sedih melihatnya ? Aku sedih ane, melihat orang yang selalu menemaniku di penginapan ini tak berdaya di hadapanku."
     
-    wd_taro_brown "(Suaranya sedikit gemetar, menahan perasaan sedih dalam batinnya.)" 
+    nd_narrator_brown "(Suaranya sedikit gemetar, menahan perasaan sedih dalam batinnya.)" 
         # aku bingung nulisnya gmn yg atas ini
     
+    voice voice_2_6_72_taro
     wd_taro_brown "Aku emang yang paling tidak menonjol, aku emang yang paling ga mau diliat sama orang..."
     
+    voice voice_2_6_73_taro
     wd_taro_brown "Tapi yang ane harus tau, aku senang melihat ane bahagia... Jadi jangan sampai dirimu terluka lagi."
     
     nd_narrator_brown "Dia berjalan pergi meninggalkan lorong. Suara langkah kakinya tidak terdedngar lagi."

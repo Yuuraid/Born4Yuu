@@ -33,6 +33,7 @@ label scene_9:
 
     show yuura at idle, face_flip
     show akasyah angry at right, speaking
+    voice voice_2_9_87_akasyah
     wd_unknown_brown "Dasar saus tartar ! Siapa yang berani bikin Yoyu gue jatoh !?"
     
     show yuura at left, face_flip with ease
@@ -44,6 +45,7 @@ label scene_9:
     
     show akasyah at speaking
     show yuura at idle
+    voice voice_2_9_89_akasyah
     wd_unknown_brown "Oh ! Jadi elu Yur ! Lu kalo jalan pake mata dong bang*** udah pendek, tua, nyusahin lagi."
     
     show akasyah at idle
@@ -57,6 +59,7 @@ label scene_9:
     
     show akasyah at speaking
     show yuura at idle
+    voice voice_2_9_91_akasyah
     wd_unknown_brown "Lu bukannya ngalah sama yang muda ! Liat nih baju gue jadi kotor gara-gar lu !"
     
     show akasyah at idle
@@ -65,6 +68,7 @@ label scene_9:
     
     show akasyah at speaking
     show yuura at idle
+    voice voice_2_9_93_akasyah
     wd_unknown_brown "Ah berisik lu, Yur !"
     
     show akasyah at idle
@@ -78,24 +82,29 @@ label scene_9:
     nd_narrator_brown "Sebuah tangan melesat ke arahku dengan sangat cepat, tapi beruntung aku tiba-tiba terteleporasi agak jauh dari Akasyah."
     
     show akasyah at speaking
+    voice voice_2_9_94_akasyah
     wd_unknown_brown "HM !? SEIYAAAAA !!!"
     
     show akasyah at idle
     nd_narrator_brown "Seiya muncul dari belakang orang itu dan langsung menahan pergerakannya."
     
     show seiya at speaking
+    voice voice_2_9_95_seiya
     nd_seiya_brown "Sudah lama tidak bertemu Akasyah, apa kamu rindu denganku ?"
     
     show akasyah at speaking
     show seiya at idle
+    voice voice_2_9_96_akasyah
     wd_akasyah_brown "Brens*k ! LEPASKAN AKU SEKARANG JUGA !"
     
     show akasyah at idle
     show seiya at speaking
+    voice voice_2_9_97_seiya
     nd_seiya_brown "Coba saja, itu pun jika kamu benar-benar ingin dipermalukan olehku~"
     
     show akasyah at speaking
     show seiya at idle
+    voice voice_2_9_98_akasyah
     wd_akasyah_brown "SIALAN ! AKU BILANG LEPAS !!!"
     
     show akasyah at center, idle with ease
@@ -106,11 +115,13 @@ label scene_9:
     
     show seiya at speaking
     with hpunch
+    voice voice_2_9_99_seiya
     nd_seiya_brown "PERGI SEKARANG JUGA ! AKU TAK BISA MENAHANNYA TERLALU LAMA !"
         # show layer master at shake_custom
     
     show akasyah at speaking
     show seiya at idle
+    voice voice_2_9_100_akasyah
     wd_akasyah_brown "SEIYAAAAAA !!!!"
     
     hide yuura at face_flip with easeoutleft
