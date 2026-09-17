@@ -14,6 +14,7 @@ label scene_14:
     
     show seiya netral at left, speaking, flip_image
     with moveinleft
+    voice voice_3_14_205_seiya
     nd_unknown_brown "Ane gapapa ?"
     show seiya at idle
     
@@ -30,6 +31,7 @@ label scene_14:
     show yuura at idle
         
     show seiya at speaking
+    voice voice_3_14_208_seiya
     nd_seiya_brown "Aman aja, Anee. Tapi saranku sekarang kamu lari."
     show seiya at idle
         
@@ -87,6 +89,7 @@ label scene_14:
     # pause .5
 
     show seiya at speaking
+    voice voice_3_14_210_seiya
     nd_seiya_brown "Tempat ini sudah tidak aman, sebaik-"
     show seiya at idle
     
@@ -106,46 +109,58 @@ label scene_14:
 
     show seiya hurt 
     show akasyah angry at left, speaking
+    voice voice_3_14_211_akasyah
     nd_akasyah_brown "KETEMU LU BANGSAT !"
     show akasyah at idle
         
     show seiya angry at flip_image, speaking
+    voice voice_3_14_212_seiya
     nd_seiya_brown "FAHH"
     
+    voice voice_3_14_213_seiya
     nd_seiya_brown "Apa yang kau coba lakukan !?"
     
+    voice voice_3_14_214_seiya
     nd_seiya_brown "Apa kau ga capek bikin masalah terus buat Yuura ?"
     show seiya at idle, flip_image
             
     show akasyah at speaking
+    voice voice_3_14_215_akasyah
     nd_akasyah_brown "MASALAH ??? LU PIKIR APA YANG LU LAKUIN SEKARANG ?"
     
+    voice voice_3_14_216_akasyah
     nd_akasyah_brown "MINGGIR ! JANGAN GANGGU RENCANA GUA !"
     show akasyah at idle
         
     show seiya at speaking, flip_image
+    voice voice_3_14_217_seiya
     nd_seiya_brown "Rencana ? Maksudmu dengan mau menghajar Yuura ? APA ITU YANG KAU SEBUT RENCANA !?"
     show seiya at idle, flip_image
             
     show akasyah at speaking
+    voice voice_3_14_218_akasyah
     nd_akasyah_brown "Mata lu buta apa gimana ?"
     
+    voice voice_3_14_219_akasyah
     nd_akasyah_brown "Apa emang lu gabisa bedain Yuura yang asli sama yang palsu ?"
     show akasyah at idle
         
     show seiya at speaking, flip_image
+    voice voice_3_14_220_seiya
     nd_seiya_brown "Apa sih maksudmu ? Apa kamu kebanyakan minum sake siang-siang ?"
     show seiya at idle, flip_image
     
     nd_narrator_brown "Akasyah melempar sebuah linting."
             
     show akasyah at speaking
+    voice voice_3_14_221_akasyah
     nd_akasyah_brown "OI YUUR ! Lu tau ga benda apa ini ?"
     show akasyah at idle
     
     nd_narrator_brown "Aku kaget melihat benda yang dia lempar, aku tidak mengerti untuk apa benda itu dan mengapa dia menanyakan padaku."
             
     show akasyah at speaking
+    voice voice_3_14_222_akasyah
     nd_akasyah_brown "Kok diem ? Jawab bangsat !"
     show akasyah at idle
         
@@ -156,8 +171,10 @@ label scene_14:
     show yuura at idle
         
     show akasyah at speaking
+    voice voice_3_14_225_akasyah
     nd_akasyah_brown "Hahaha... Udah gua duga lu pasti gabisa jawab pertanyaan gua."
     
+    voice voice_3_14_226_akasyah
     nd_akasyah_brown "Sekarang minggir dan biar gua hajar si palsu ini !"
     show akasyah at idle
     
@@ -166,17 +183,23 @@ label scene_14:
     nd_narrator_brown "Meski begitu, ia langsung menyiapkan kuda-kuda untuk menyerang, tetap inign melindungiku."
             
     show akasyah at speaking
+    voice voice_3_14_227_akasyah
     nd_akasyah_brown "Lu goblok apa gimana ?"
     
+    voice voice_3_14_228_akasyah
     nd_akasyah_brown "Masih mau ngelindungin si peniru sialan ini ? Seiya Seiya..."
     show akasyah at idle
         
     show seiya at speaking, flip_image
+    voice voice_3_14_229_seiya
     nd_seiya_brown "Mau palsu atau bukan, itu bukan urusanmu !"
     show seiya at idle, flip_image
             
     show akasyah at speaking
-    nd_akasyah_brown "Oh jelas... {w}ITU URUSAN GUA !!!"
+    voice voice_3_14_230_akasyah
+    nd_akasyah_brown "Oh jelas..."
+    voice voice_3_14_231_akasyah
+    nd_akasyah_brown "ITU URUSAN GUA !!!"
     show akasyah at idle
     
     # Use CG here
@@ -192,6 +215,7 @@ label scene_14:
     nd_narrator_brown "Seiya berhasil memberikan serangan telak, tapi nampaknya itu tak terlalu berefek karena ketika kepulan debu memudar, terlihat Akasyah yang berdiri dengan darah yang mengalir dari mulutnya."
             
     show akasyah at speaking
+    voice voice_3_14_232_akasyah
     nd_akasyah_brown "Segitu doang serangan lu ? GUA JUGA BISA !"
     show akasyah at idle
     
@@ -199,6 +223,7 @@ label scene_14:
     nd_narrator_brown "Baru menutup bicaranya, Seiya muncul dari portal bayangan dan melancarkan tinju yang diselimuti energi hitam. Akasyah yang sudah memprediksi serangannya langsung menahan serangan Seiya. Akasyah menyeringai membuat Seiya mundur karena merasakan sesuatu yang salah pada Akasyah."
             
     show akasyah at speaking
+    voice voice_3_14_233_akasyah
     nd_akasyah_brown "Udah puas ? Now, it's my turn..."
     show akasyah at idle
     
@@ -207,6 +232,7 @@ label scene_14:
     nd_narrator_brown "Akasyah menendang kaki Seiya."
         
     show seiya at speaking, flip_image
+    voice voice_3_14_234_seiya
     nd_seiya_brown "Urghhh !!!"
     show seiya at idle, flip_image
     
@@ -218,8 +244,10 @@ label scene_14:
     
         # play sound lantai kayu patah
     show seiya at speaking, flip_image
+    voice voice_3_14_235_akasyah
     nd_seiya_brown "Lu pikir serangan lemah kayak gitu bisa menghentikan gua ? Seiya Seiya..."
     
+    voice voice_3_14_236_akasyah
     nd_seiya_brown "SEKARANG LAH AKHIRNYA ! SELAMAT TINGGAL PAHLAWAN KESIANGAN !"
     show seiya at idle, flip_image
     
@@ -229,18 +257,22 @@ label scene_14:
     nd_narrator_brown "Energi hitam melilit kaki Akasyah yang membuatnya terpaksa terhenti. Disaat kepulan debu mulai memudar, Seiya muncul dalam keadaan terduduk dengan posisi tangan sedang mengikat suatu. Kondisinya buruk, mungkin karena sempat menghantam lantai kayu yang langsung mengenai tubuhnya."
         
     show seiya at speaking, flip_image
+    voice voice_3_14_237_seiya
     nd_seiya_brown "Ha... Hah.. Hah" # kasih jeda
     show seiya at idle, flip_image
             
     show akasyah at speaking
+    voice voice_3_14_238_akasyah
     nd_akasyah_brown "Kau pikir bisa menghentikanku hanya dengan mengikat kakiku ?"
     
+    voice voice_3_14_239_akasyah
     nd_akasyah_brown "DITYO !!" # shake
     show akasyah at idle
     
     nd_narrator_brown "Seiya tak menyadari bahwa Dityo telah tiba dan segera menembakkan serangan proyektil tepat ke arahku."
         
     show seiya at speaking, flip_image
+    voice voice_3_14_240_seiya
     nd_seiya_brown "SIALAN ! ANEEEE !!!!"
     show seiya at idle, flip_image
     
@@ -267,6 +299,7 @@ label scene_14:
     nd_narrator_brown "Aku terkejut mendapati Shark yang tiba-tiba berda di depanku, sembari menahan alat Dityo dengan giginya."
     
     show shark at speaking
+    voice voice_3_14_241_shark
     nd_shark_brown "Aw... Aw... sakit juga nahan rudal pake gigi."
     show shark at idle
     
@@ -275,17 +308,20 @@ label scene_14:
     show yuura at speaking    
     show seiya at speaking
     nd_yuura_brown "Shark !"
+    voice voice_3_14_242_seiya
     nd_seiya_brown "Shark !"
     show yuura at idle
     show seiya at idle
 
     show shark at speaking
+    voice voice_3_14_243_shark
     nd_shark_brown "Ah... Anu... Maaf membuat kalian menunggu."
     show shark at idle
     
     nd_narrator_brown "Kini situasi imbang, dua lawan dua. Meski begitu, melihat dari raut wajah Seiya, aku tahu bahwa perkara ini belum usai."
         
     show seiya at speaking, flip_image
+    voice voice_3_14_244_seiya
     nd_seiya_brown "Aneki, pergilah !"
     show seiya at idle, flip_image
         
@@ -294,18 +330,21 @@ label scene_14:
     show yuura at idle
     
     show seiya at speaking, flip_image
+    voice voice_3_14_246_seiya
     nd_seiya_brown "Serahkan urusan ini padaku dan Shark !"
     show seiya at idle, flip_image
     
     nd_narrator_brown "Meski enggan, aku berbalik dan lari meninggalkan mereka berdua."
         
     show akasyah at speaking
+    voice voice_3_14_247_akasyah
     nd_akasyah_brown "WOI MAU KE MANA LU NENEK TUA !"
     show akasyah at idle
     
     nd_narrator_brown "Akasyah berusaha menyerangku tapi Seiya langsung menghentikan gerakannya dengan bayangannya."
         
     show seiya at speaking, flip_image
+    voice voice_3_14_248_seiya
     nd_seiya_brown "Lawanmu adalah aku."
     show seiya at idle, flip_image
 

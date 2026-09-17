@@ -22,26 +22,32 @@ label scene_13:
 
     show akasyah angry at left, speaking
     show dityo angry at right, idle
+    voice voice_3_13_197_akasyah
     nd_akasyah_brown "BRENGSEK SEIYA !!!"
     show akasyah at idle
     
     show dityo at speaking
+    voice voice_3_13_198_dityo
     nd_dityo_brown "Berhasil kabur lagi ?"
     show dityo at idle
             
     show akasyah at speaking
+    voice voice_3_13_199_akasyah
     nd_akasyah_brown "Hah ? Kabur ? Dari hadapan gue ? Ga mungkin ! Ga bakal gua biarin si tua itu kabur dari gua."
     show akasyah at idle
     
     show akasyah at speaking
+    voice voice_3_13_200_akasyah
     nd_akasyah_brown "Gimana Dit ? Lu udah nemu belum kelemahannya si Seiya ?"
     show akasyah at idle
     
     show dityo at speaking
+    voice voice_3_13_201_dityo
     nd_dityo_brown "Udah. Menurut pengamatanku, Seiya hanya dapat berpindah dari radius 20 meter dari tempat ia terakhir berdiri."
     show dityo at idle
             
     show akasyah at speaking
+    voice voice_3_13_202_akasyah
     nd_akasyah_brown "20 meter ? Segitu doang mah bisa gua kejar ! Beraninya si Seiya itu merusak semua rencana gua !"
     hide akasyah 
     with moveoutright
@@ -52,6 +58,7 @@ label scene_13:
     
         # play krik krik
     show dityo at speaking
+    voice voice_3_13_203_dityo
     nd_dityo_brown "WOI ! TUNGGU, EMANGNYA LU TAU DIA LARI KE... {w=0.5}Ah sudahlah, tidak ada untungnya mengharapkan dia untuk bekerja sama."
     show dityo at idle
 

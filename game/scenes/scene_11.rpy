@@ -30,10 +30,12 @@ label scene_11:
         # Aergia
     
     show aergia at speaking
+    voice voice_2_11_165_aergia
     nd_unknown_brown "Ha... Lu lagi lu lagi, kenapa sih harus selalu lu yang ke tempat gua ?"
     show aergia at idle
     
     show axia sassy at speaking
+    voice voice_2_11_166_axiaregis
     nd_axiaregis_brown "Kira-kira kenapa ya ? Apa jangan-jangan aku suka kamu kyahh."
     show axia at idle
     
@@ -42,36 +44,47 @@ label scene_11:
     extend "."
     
     show aergia at speaking
-    nd_unknown_brown "Bangsat ! Jijik banget anjing. Kenapa sih lu tiap dateng selalu bikin gua kesel ?"
+    voice voice_2_11_167_aergia
+    nd_unknown_brown "Bangsat ! Jijik banget anjing." 
+    
+    voice voice_2_11_168_aergia
+    nd_unknown_brown "Kenapa sih lu tiap dateng selalu bikin gua kesel ?"
     show aergia at idle
     
     show axia at speaking
+    voice voice_2_11_169_axiaregis
     nd_axiaregis_brown "T-tolonggg ahhh panassss...{nw=0.3}"
     show axia netral
     extend "hehe..."
     show axia at idle
     
     show aergia at speaking
+    voice voice_2_11_170_aergia
     nd_unknown_brown "Cukup ! Jelaskan alasan lu dan pergi dari sini !"
     show aergia at idle
         
     show axia cute at speaking
+    voice voice_2_11_171_axiaregis
     nd_axiaregis_brown "Dinginnya... Apa kau tak bisa lembut pada orang seimut diriku ini ?"
     show axia at idle
     
     show aergia angry at speaking
+    voice voice_2_11_172_aergia
     nd_unknown_brown "Bicara atau lu beneran gua jadiin femboy bakar."
     show aergia at idle
         
     show axia netral at speaking
+    voice voice_2_11_173_axiaregis
     nd_axiaregis_brown "Baiklah-baiklah... Ini semua tentang Yuura."
     show axia at idle
     
     show aergia at speaking
+    voice voice_2_11_174_aergia
     nd_unknown_brown "Yuura ? Ada apa dengannya ?"
     show aergia at idle
         
     show axia at speaking
+    voice voice_2_11_175_axiaregis
     nd_axiaregis_brown "Sebenarnya..."
     show axia at idle
     
@@ -81,33 +94,33 @@ label scene_11:
     
     nd_narrator_brown "Ada juga seseorang om-om berbaju batik putih yang sedang berkebun. Terus ada seseorang anak laki-laki yang sedang berbicara dengan kuda nil ? Ah entahlah aku tidak mengerti lagi."
     
-    nd_narrator_brown "Dari jauh terdengar suara orang sedang bertengkar dari dalam kamar. Mereka bertengkar karena bermain kartu."
+    # nd_narrator_brown "Dari jauh terdengar suara orang sedang bertengkar dari dalam kamar. Mereka bertengkar karena bermain kartu."
     
-    camera:
-        # Initial position (zoomed out at the right side)
-        zoom 2.2
-        xalign 0.0
-        yalign 0.5
+    # camera:
+    #     # Initial position (zoomed out at the right side)
+    #     zoom 2.2
+    #     xalign 0.0
+    #     yalign 0.5
         
-        # Pan across to the left over 5 seconds
-        ease 15.0 xalign 0.0
-    with dissolve
+    #     # Pan across to the left over 5 seconds
+    #     ease 15.0 xalign 0.0
+    # with dissolve
     
-    nd_nicholas_brown "Oi Lark ! Cepet jalan."
+    # nd_nicholas_brown "Oi Lark ! Cepet jalan."
     
-    nd_lark_brown "Sabar, China !"
+    # nd_lark_brown "Sabar, China !"
     
-    nd_nicholas_brown "Kau juga China, anjeng !"
+    # nd_nicholas_brown "Kau juga China, anjeng !"
     
-    nd_lark_brown "Mana ada aku orang China, anjeng !"
+    # nd_lark_brown "Mana ada aku orang China, anjeng !"
     
-    nd_yc_brown "Udah-udah, kalian berdua sesama china ngapain berantem..."
+    # nd_yc_brown "Udah-udah, kalian berdua sesama china ngapain berantem..."
 
-    camera:
-        zoom 1.0
-        xalign 0.0
-        yalign 0.0
-    with dissolve
+    # camera:
+    #     zoom 1.0
+    #     xalign 0.0
+    #     yalign 0.0
+    # with dissolve
 
     show yuura netral at center, idle
     nd_narrator_brown "Aku benar-benar bingung dengan situasi di tempat ini, terkadang mereka terlihat santai dan tenang."

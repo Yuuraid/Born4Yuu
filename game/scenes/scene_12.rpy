@@ -14,6 +14,7 @@ label scene_12:
         # Aergia
     show aergia netral at left, speaking, flip_image
     with dissolve
+    voice voice_2_12_181_aergia
     nd_unknown_brown "Halo anee... Tidak. {w=0.5}Yuura... Apa kabar ?"
     show aergia at idle
 
@@ -26,9 +27,11 @@ label scene_12:
     show yuura at idle
 
     show aergia at speaking
-    nd_unknown_brown "Loh ? Kamu cari aku di buku tamu? Padahal gua gapernah ditulis di sana sama lu loh... Lu tahukan gua siapa, Yuur ?"
+    # voice voice_2_12_183_aergia
+    # nd_unknown_brown "Loh ? Kamu cari aku di buku tamu? Padahal gua gapernah ditulis di sana sama lu loh... Lu tahukan gua siapa, Yuur ?"
         # Ga konsisten gua gua, aku aku
     
+    voice voice_2_12_183_aergia
     nd_unknown_brown "Loh ? Lu cari gua di buku tamu ? Padahal gua ga pernah ditulis di sana sama lu loh... Lu tahukan gua siapa, Yuur ?"
     show aergia at idle
         
@@ -39,18 +42,21 @@ label scene_12:
     show yuura at idle
 
     show aergia at speaking
+    voice voice_2_12_185_aergia
     nd_unknown_brown "Beneran ??? Yuura inget sama gua kan ? KAN ? KAN ?"
     show aergia at idle
     
     nd_narrator_brown "Dia menatapku dengan sangat tajam, membuatku merinding melihatnya. Dia sepertinya sudah sangat curiga padaku, tapi tiba-tiba saja dia tertawa."
     
     show aergia at speaking
+    voice voice_2_12_186_aergia
     nd_aergia_brown "Hahaha... Bercanda kok, Yuur. Gua tahu pasti lu lagi capek banget. Lu ga mungkin lupa sama gua kan ? {nw=0.5}"
     show aergia angry at shake
     extend "KAN !?"
     show aergia at idle
             
     show aergia at speaking
+    voice voice_2_12_187_aergia
     nd_aergia_brown "Ini gua loh Yuur... Aergia !"
     show aergia at idle
         
@@ -59,6 +65,7 @@ label scene_12:
     show yuura at idle
 
     show aergia at speaking
+    voice voice_2_12_189_aergia
     nd_aergia_brown "Ohhh lu inget toh, Yuur ? Tapi...gua rasa nih...lu tuh bukan Yuura !"
         
     show yuura at speaking
@@ -68,8 +75,10 @@ label scene_12:
     show yuura at idle
         
     show aergia at speaking
+    voice voice_2_12_192_aergia
     nd_aergia_brown "Kenapa, Yuur ? Kenapa lu marah begitu ?"
     
+    voice voice_2_12_193_aergia
     nd_aergia_brown "Apa emang gua ga pantes nanya itu sama lu ?"
     show aergia at idle
         
@@ -78,8 +87,10 @@ label scene_12:
     show yuura at idle
 
     show aergia at speaking
+    voice voice_2_12_195_aergia
     nd_aergia_brown "Oh... Gitu ya..."
     
+    voice voice_2_12_196_aergia
     nd_aergia_brown "Maaf ya... Kalo gua terlalu aneh buat lu... Maaf ya."
     show aergia at idle
 
