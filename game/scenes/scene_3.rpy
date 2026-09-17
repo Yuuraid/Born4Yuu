@@ -20,7 +20,7 @@ label scene_3:
     stop sound
     # play music "audio/bgm/hutan.ogg" fadein 1.0
     
-    play music bgm_scene3_forest_w_ambience fadeout 1.0 loop
+    play music bgm_scene3_forest_w_ambience fadeout 1.0 volume 0.75 loop
     scene hutan taman with dissolve
     show yuura netral at center, speaking with easeinright
     

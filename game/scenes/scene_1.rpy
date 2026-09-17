@@ -6,7 +6,7 @@ label scene_1:
     # $ quick_menu = True
     # play music start with fadein 1.0 -> define dulu
     # play sound "audio/sfx/knock_door.ogg"
-    play music bgm_scene1_start loop
+    play music bgm_scene1_start volume 0.75 loop
     scene black
     nd_narrator_black "Aku mendengar suara berisik dari luar"
     
@@ -100,7 +100,7 @@ label scene_1:
     nd_yuura_brown "Beneran kriminal ini mah.."
 
     stop music
-    play music bgm_scene1_foto_foto_kenangan fadeout 1.0 fadein 1.0 loop
+    play music bgm_scene1_foto_foto_kenangan fadeout 1.0 fadein 1.0 volume 0.75 loop
     # Start CG
 
     scene cg meja_kamar_yuura with dissolve
@@ -153,7 +153,7 @@ label scene_1:
 
     # BGM jade bottle
     stop music fadeout 2.5
-    play music bgm_scene1_jade_bottle fadeout 1.0 fadein 1.0 loop
+    play music bgm_scene1_jade_bottle fadeout 1.0 fadein 1.0 volume 0.75 loop
     show yuura netral none at center, idle
     nd_narrator_brown "Di tengah kebingungan itu, aku melihat sebuah benda yang bersinar. Pandanganku langsung tertuju pada benda itu dan melesat mendekatinya."
     
@@ -168,7 +168,7 @@ label scene_1:
 
     # BGM rock
     play sound sfx_expression_shocked
-    play music bgm_scene1_rock fadeout 1.0 loop
+    play music bgm_scene1_rock fadeout 1.0 volume 0.75 loop
     show yuura scared eff_exclamation at center, shake, speaking
     nd_yuura_brown "ANJIR,TERNYATA ADA ORANG LAIN JUGA DISINI"
     
