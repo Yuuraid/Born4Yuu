@@ -15,13 +15,17 @@ label scene_2:
     scene transition_screen orange concentrationline02_w with dissolve
     show yuura scared eff_sweat_w at center, speaking with easeinright
 
+    play sound sfx_ambience_angin_berhembus_sepoi_sepoi_scene18 loop
     nd_yuura_black "*huft huft..."
+    stop sound
 
     show yuura at idle
 
     nd_narrator_black "Aku berlari, melompat, dan melesat sambil menyusuri lorong ini. Terlihat dari dinding dan lantainya, jelas ini menggunakan kayu yang berkualitas."
 
+    play sound sfx_ambience_heavy_wind_scene3 loop
     nd_narrator_black "Meski begitu, tetap akan kujadikan dinding-dinding di lorong ini sebagai target dari Grappling ku."
+    stop sound
 
     show yuura at speaking
     nd_yuura_black "(Peduli apa aku dengan kerusakan di tempat ini)"
