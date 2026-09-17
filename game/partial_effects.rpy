@@ -52,7 +52,7 @@ image pe purple_flame flame_behind = "assets/effects/partial_effects/Fire/Arc2_S
 image pe purple_flame flame_full = "assets/effects/partial_effects/Fire/Arc2_Scene11_Api_kemudian_membakar_Axiaregis_Full.png"
 
 # "assets/effects/partial_effects/Punch/Punch_1/Arc2_Scene9_Tangan_melesat_kepadaku.png"
-# "assets/effects/partial_effects/Punch/Punch_1/Arc2_Scene9_Tangan_melesat_kepadaku_Transparent.png"
+image pe punch yellow 0 transparent = "assets/effects/partial_effects/Punch/Punch_1/Arc2_Scene9_Tangan_melesat_kepadaku_Transparent.png"
 image pe punch yellow = "assets/effects/partial_effects/Punch/Revision/Arc2_Scene9_Sebuah_tangan_melesat_ke_arahku.png"
 image pe punch yellow transparent = "assets/effects/partial_effects/Punch/Revision/Arc2_Scene9_Sebuah_tangan_melesat_ke_arahku_Transparent.png"
 image pe punch swipe = "assets/effects/partial_effects/Punch/Punch_2/Arc2_Scene9_Tangan_melesat_kepadaku_Alternative.png"

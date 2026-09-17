@@ -93,7 +93,13 @@ label scene_14:
     nd_narrator_brown "Belum sempat menyelesaikan bicaranya, Seiya mendengar suara yang sangat keras mengarah padanya."
     
     # Start CG
-    show seiya at flip_image, movetoright, shake
+# ----------recheck
+    show seiya:
+        linear .5 xzoom -1.0 yzoom 1.0
+        movetoright
+        shake
+# -----------recheck
+
     show yuura at slightright
     nd_narrator_brown "Dia berbalik dan menangkis tendangan mendadak dari pria yang berpakaian serba coklat yang membuat pria itu mundur beberapa langkah, sedangkan lengan Seiya sedikit berasap akibat tendangan tersebut."
     show layer master at shake
@@ -237,8 +243,15 @@ label scene_14:
     show seiya at speaking, flip_image
     nd_seiya_brown "SIALAN ! ANEEEE !!!!"
     show seiya at idle, flip_image
+    
+    define eye_close2 = ImageDissolve(
+        "assets/effects/eye_mask.png", 
+        5.0, 
+        ramplen=64, 
+        reverse=True,
 
-    scene black with eye_close
+        )
+    scene black with eye_close2
     show yuura netral at slightright, idle
     nd_yuura_brown "*Menutup mata"
     
