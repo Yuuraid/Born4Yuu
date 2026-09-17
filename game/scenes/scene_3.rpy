@@ -7,6 +7,7 @@ label scene_3:
     
     # BG hutan taman
 
+    play sound sfx_ambience_grasak_grusuk_daun_scene3
     scene transition_screen orange concentrationline02_w with dissolve
     show yuura scared at center, speaking with easeinright
     nd_narrator_brown "Aku berlari, terus berlari. Tanpa sekalipun melihat ke belakangku, aku berlari tanpa henti berharap mereka semua tidak mengejar diriku lagi."
@@ -16,8 +17,10 @@ label scene_3:
     show yuura at speaking
     nd_yuura_brown "*huft huft..."
     hide yuura with easeoutleft
+    stop sound
     # play music "audio/bgm/hutan.ogg" fadein 1.0
     
+    play music bgm_scene3_forest_w_ambience fadeout 1.0 loop
     scene hutan taman with dissolve
     show yuura netral at center, speaking with easeinright
     
@@ -30,6 +33,7 @@ label scene_3:
     
     nd_narrator_brown "Aku berusaha menenangkan diriku, menarik nafas secara perlahan dan mulai memikirkan segalanya."
     
+    play sound sfx_expression_angry
     show yuura angry eff_angry at speaking
     nd_yuura_brown "(Bagaimana aku bisa tiba-tiba berada di tempat ini. Apa yang telah terjadi? Mengapa ini semua terjadi? Dan kenapa aku bisa ada disini?)"
 
@@ -41,20 +45,25 @@ label scene_3:
         # with Dissolve(1.0)
     show yuura at right, idle with ease
     show pria netral at left, silhouette, speaking with moveinleft
+    pause 0.2
+    voice voice_1_3_19_pria_misterius
     nd_unknown_brown "Capek kan? lari-lari"
     
     show pria at silhouette, idle
     show yuura netral eff_exclamation at shake
+    play sound sfx_expression_surprised
     nd_narrator_brown "Aku terkejut mendengar suara yang entah dari mana asalnya. Aku melihat sekitar dan merasakan adanya seseorang di balik pohon yang ku sandari."
     
     show pria at reveal_character, speaking with dissolve
     show yuura none at idle
+    voice voice_1_3_20_pria_misterius
     wd_pria_brown "Jangan takut, aku gak gigit."
     
     show pria at idle
     nd_narrator_brown "Aku merasa terkejut, bingung, sekaligus bertanya-tanya dari mana orang ini berasal. Aku tidak tahu apapun tentangnya, yang aku tahu suara ini adalah suara laki-laki."
 
     show pria at speaking
+    voice voice_1_3_21_pria_misterius
     wd_pria_brown "Kamu... bukan berasal dari dunia ini kan?"
 
     show yuura at speaking
@@ -63,6 +72,7 @@ label scene_3:
     
     show yuura at idle
     show pria at speaking
+    voice voice_1_3_23_pria_misterius
     wd_pria_brown "Intuisiku saja"
     
     show yuura at speaking
@@ -81,6 +91,7 @@ label scene_3:
     
     show yuura at idle
     show pria at speaking
+    voice voice_1_3_27_pria_misterius
     wd_pria_brown "Hey… jangan menangis, aku gak sanggup melihat cewek nangis di hadapanku"
     
     # CG hugging start here
@@ -129,6 +140,7 @@ label scene_3:
     nd_narrator_brown "Tapi mana mungkin aku mampu membeli botol semahal itu, makan saja sudah sangat sulit. Mana mungkin aku punya uang untuk beli botol mewah."
 
     show pria at speaking
+    voice voice_1_3_28_pria_misterius
     wd_pria_brown "Oh? Kamu membawa benda yang menarik~"
     
     show pria at idle
@@ -137,6 +149,7 @@ label scene_3:
     
     show yuura at idle
     show pria at speaking
+    voice voice_1_3_30_pria_misterius
     wd_pria_brown "Lalu bagaimana benda itu bisa di sini?"
     
     show pria at idle
@@ -145,6 +158,7 @@ label scene_3:
     
     show yuura at idle
     show pria at speaking
+    voice voice_1_3_32_pria_misterius
     wd_pria_brown "Mungkin saja takdir"
     
     show pria at idle
@@ -153,6 +167,7 @@ label scene_3:
     
     show yuura at idle
     show pria at speaking
+    voice voice_1_3_34_pria_misterius
     wd_pria_brown "Mungkin saja kan~"
     
     show pria at idle
@@ -164,6 +179,7 @@ label scene_3:
     
     show yuura at idle
     show pria at speaking
+    voice voice_1_3_36_pria_misterius
     wd_pria_brown "Coba saja, kalau bisa"
         # hide Unknown
         # with fade
