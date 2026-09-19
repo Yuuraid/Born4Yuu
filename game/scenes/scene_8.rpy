@@ -20,7 +20,7 @@ label scene_8:
     show yuura at idle
     show shark at face_flip, speaking
     voice voice_2_8_79_shark
-    wd_unknown_brown "A-anee lupa sama kami ?"
+    wd_unknown_brown "A-anee lupa sama kami?"
     
     show yuura at speaking
     show shark at face_flip, idle
@@ -29,7 +29,7 @@ label scene_8:
     show yuura at idle
     show shark at face_flip, speaking
     voice voice_2_8_81_shark
-    wd_unknown_brown "O-oh begitu, i-ini anee waktu pertama kali gabung, kamu ngasih aku buku yang isinya nama-nama anak penginapan di sini."
+    wd_unknown_brown "O-oh begitu, i-ini anee waktu pertama kali gabung, kamu ngasih aku buku yang isinya nama-nama anak penginapan disini"
         # play sound memberi barang ??
     
     show dark_overlay
@@ -53,7 +53,7 @@ label scene_8:
     show yuura at idle
     show shark at face_flip, speaking
     voice voice_2_8_83_shark
-    wd_shark_brown "Y-ya kan buku tamunya emang ga pernah kamu selesaiin anee..."
+    wd_shark_brown "Y-ya kan buku tamunya emang ga pernah kamu selesaiin Ane.." 
     
     show yuura at speaking
     show shark at face_flip, idle
@@ -73,7 +73,7 @@ label scene_8:
     pause 1.0
     show shark at speaking
     voice voice_2_8_86_shark
-    wd_shark_brown "T-tunggu anee a-aku..."
+    wd_shark_brown "T-tunggu anee a-aku.."
     
     show shark at idle
     nd_narrator_brown "Aku langsung lari tanpa memikirkan orang itu. Dia tampak ingin memanggilku, tapi aku sudah menghilang dari sudut pandangnya."

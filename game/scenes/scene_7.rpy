@@ -18,7 +18,7 @@ label scene_7:
     show dityo netral at ease_custom(offscreenright, offscreenleft, 1.0), silhouette
 
     voice voice_2_7_74_dityo
-    nd_unknown_brown "ANEE ! TUNGGU ! INI AKU BAWA SESUATU YANG BAKAL BIKIN KAMU SENANG !"
+    nd_unknown_brown "ANEE! TUNGGU! INI AKU BAWA SESUATU YANG BAKAL BIKIN KAMU SENANG!"
 
     scene transition_screen orange concentrationline02_b with fade    
 
@@ -33,7 +33,7 @@ label scene_7:
     show dityo netral at ease_custom(offscreenright, right, 0.8), speaking, silhouette
     
     voice voice_2_7_75_dityo
-    nd_unknown_brown "Ane !!! Stop !!!"
+    nd_unknown_brown "Ane!!! Stop!!!"
     
     show dityo at idle, silhouette
 
@@ -42,7 +42,7 @@ label scene_7:
     show dityo at speaking, silhouette
     
     voice voice_2_7_76_dityo
-    nd_unknown_brown "Ane !!! Berhenti di sana !"
+    nd_unknown_brown "Anee!!! Berhenti disana!."
     
     show yuura at speaking
     show dityo at idle, silhouette

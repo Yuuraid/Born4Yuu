@@ -44,7 +44,7 @@ label scene_4:
     show haruto eff_exclamation at speaking
     show yuura at idle
     voice voice_1_4_39_haruto
-    wd_unknown_brown "Aneeki ?? Kenapa kamu bisa ada di sini ?"
+    wd_unknown_brown "Aneeki? Kenapa kamu bisa ada disini?" 
     
     show haruto none at idle
     show yuura at speaking
@@ -55,7 +55,7 @@ label scene_4:
     show haruto at speaking
     show yuura at idle
     voice voice_1_4_41_haruto
-    wd_unknown_brown "Oh begitukah ? Bukannya jam segini harusnya kamu masih di penginapan ?"
+    wd_unknown_brown "Oh begitukah? bukannya jam segini harusnya kamu masih di penginapan?"
     
     show haruto at idle
     show yuura at speaking
@@ -64,7 +64,7 @@ label scene_4:
     show haruto at speaking
     show yuura at idle
     voice voice_1_4_43_haruto
-    wd_unknown_brown "Kenapa kamu terlihat sangat berantakan ? Apa kamu baik-baik saja ?"
+    wd_unknown_brown "Kenapa kamu terlihat sangat berantakan? apa kamu baik-baik saja?"
     
     show haruto at idle
     show yuura at speaking
@@ -73,7 +73,7 @@ label scene_4:
     show haruto at speaking
     show yuura at idle
     voice voice_1_4_45_haruto
-    wd_unknown_brown "Tentu ? Tapi tumben banget kamu ingin ditemani seperti ini. Biasanya juga kamu pergi sendiri."
+    wd_unknown_brown "Tentu? tapi tumben banget kamu ingin ditemani seperti ini. Biasanya juga kamu pergi sendiri" 
     
     show haruto at idle
     show yuura at speaking
@@ -86,7 +86,7 @@ label scene_4:
     show haruto at speaking
     show yuura at idle
     voice voice_1_4_47_haruto
-    wd_unknown_brown "Baiklah biar aku antarkan kamu kembali ke penginapan."
+    wd_unknown_brown "Baiklah biar aku antarkan kamu kembali ke penginapan" 
     
     show haruto at idle
     show yuura at speaking
@@ -95,19 +95,19 @@ label scene_4:
     show haruto at speaking
     show yuura at idle
     voice voice_1_4_50_haruto
-    wd_unknown_brown "Loh ? Bukannya jalan keluar dari hutan ini memang di penginapan ?"
+    wd_unknown_brown "Loh? Bukannya jalan keluar dari hutan ini memang di penginapan?" 
     
     voice voice_1_4_51_haruto
-    wd_unknown_brown "Anee kamu yakin baik-baik saja ?"
+    wd_unknown_brown "Anee kamu yakin baik-baik saja?"
     
     show haruto at idle
     show yuura at speaking
-    nd_yuura_brown "Y-ya… aku baik-baik saja, um…"
+    nd_yuura_brown "Y-ya.. aku baik-baik saja, um.."
     
     show haruto at speaking
     show yuura at idle
     voice voice_1_4_53_haruto
-    wd_haruto_brown "Haruto anee, namaku Haruto."
+    wd_haruto_brown "Haruto anee, namaku Haruto" 
     
     show haruto at idle
     show yuura at idle
@@ -122,7 +122,7 @@ label scene_4:
     show haruto at speaking
     show yuura at idle
     voice voice_1_4_56_haruto
-    wd_haruto_brown "Hahaha... Pertanyaan macam apa itu Anee ? Tentu saja aku membantumu karena kamu selalu membantuku."
+    wd_haruto_brown "Hahaha.. pertanyaan macam apa itu Anee? tentu saja aku membantumu karena kamu selalu membantuku"
     
     show haruto at idle
     show yuura at speaking

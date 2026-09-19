@@ -24,7 +24,7 @@ label scene_3:
     scene hutan taman with dissolve
     show yuura netral at center, speaking with easeinright
     
-    nd_yuura_brown "Arghhh… Ini gila! bisa-bisanya aku terbangun di tempat kayak gini? huah…"
+    nd_yuura_brown "Arghhh.. Ini gila! bisa-bisanya aku terbangun di tempat kayak gini? huah.."
     
     show yuura at idle
     nd_narrator_brown "Nafasku tersengal-sengal karena berlarian terus sepanjang waktu."
@@ -47,7 +47,7 @@ label scene_3:
     show pria netral at left, silhouette, speaking with moveinleft
     pause 0.2
     voice voice_1_3_19_pria_misterius
-    nd_unknown_brown "Capek kan? lari-lari"
+    nd_unknown_brown "Capek kan? Lari-lari"
     
     show pria at silhouette, idle
     show yuura netral eff_exclamation at shake
@@ -57,14 +57,14 @@ label scene_3:
     show pria at reveal_character, speaking with dissolve
     show yuura none at idle
     voice voice_1_3_20_pria_misterius
-    wd_pria_brown "Jangan takut, aku gak gigit."
+    wd_pria_brown "Gausah takut, aku gak gigit"
     
     show pria at idle
     nd_narrator_brown "Aku merasa terkejut, bingung, sekaligus bertanya-tanya dari mana orang ini berasal. Aku tidak tahu apapun tentangnya, yang aku tahu suara ini adalah suara laki-laki."
 
     show pria at speaking
     voice voice_1_3_21_pria_misterius
-    wd_pria_brown "Kamu... bukan berasal dari dunia ini kan?"
+    wd_pria_brown "Kamu.. bukan dari dunia ini kan?"
 
     show yuura at speaking
     show pria at idle
@@ -87,12 +87,12 @@ label scene_3:
 
     show yuura at speaking
     show pria at idle
-    nd_yuura_brown "Aku capek… aku mau pulang… tidak seharusnya aku disini…"
+    nd_yuura_brown "Aku capek.. aku mau pulang.. tidak seharusnya aku disini.."
     
     show yuura at idle
     show pria at speaking
     voice voice_1_3_27_pria_misterius
-    wd_pria_brown "Hey… jangan menangis, aku gak sanggup melihat cewek nangis di hadapanku"
+    wd_pria_brown "Hey.. jangan menangis, aku gak sanggup melihat cewek nangis di hadapanku"
     
     # CG hugging start here
 
@@ -154,7 +154,7 @@ label scene_3:
     
     show pria at idle
     show yuura at speaking
-    nd_yuura_brown "Entahlah… Jika botol ini ku bawa di dalam bajuku, sudah pasti akan sangat sulit membawanya sambil dikejar oleh banyak orang"
+    nd_yuura_brown "Entahlah.. Jika botol ini ku bawa di dalam bajuku, sudah pasti akan sangat sulit membawanya sambil dikejar oleh banyak orang"
     
     show yuura at idle
     show pria at speaking
@@ -180,7 +180,7 @@ label scene_3:
     show yuura at idle
     show pria at speaking
     voice voice_1_3_36_pria_misterius
-    wd_pria_brown "Coba saja, kalau bisa"
+    wd_pria_brown "Coba saja, kalau bisa" 
         # hide Unknown
         # with fade
     
