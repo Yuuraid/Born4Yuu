@@ -55,7 +55,7 @@ label scene_4:
     show haruto at speaking
     show yuura at idle
     voice voice_1_4_41_haruto
-    wd_unknown_brown "Oh begitukah? bukannya jam segini harusnya kamu masih di penginapan?"
+    wd_unknown_brown "Oh begitukah? bukannya jam segini harusnya kamu masih di penginapan ya?"
     
     show haruto at idle
     show yuura at speaking
@@ -95,10 +95,10 @@ label scene_4:
     show haruto at speaking
     show yuura at idle
     voice voice_1_4_50_haruto
-    wd_unknown_brown "Loh? Bukannya jalan keluar dari hutan ini memang di penginapan?" 
+    wd_unknown_brown "Loh? Bukannya jalan keluar dari hutan ini memang di penginapan ya?" 
     
     voice voice_1_4_51_haruto
-    wd_unknown_brown "Anee kamu yakin baik-baik saja?"
+    wd_unknown_brown "Anee.. kamu yakin baik-baik saja?"
     
     show haruto at idle
     show yuura at speaking
