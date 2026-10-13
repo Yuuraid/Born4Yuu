@@ -14,7 +14,7 @@ label scene_13:
         # Use CG here
     nd_narrator_brown "Untuk sekilas, aku melihat persis seseorang melancarkan tendangan yang mengarah tepat ke arahku." 
     
-    nd_narrator_brown "Tapi sebelum sempat bereaksi, pijakanku tiba-tiba menghilang, membuat keseimbanganku tumbang dan terjatuh sebelum akhrinya tenggelam ke dalam kegelapan..."
+    nd_narrator_brown "Tapi sebelum sempat bereaksi, pijakanku tiba-tiba menghilang yang membuat keseimbanganku tumbang dan terjatuh sebelum akhirnya tenggelam ke dalam kegelapan.."
     
         # play sound wind blow
     scene inn resepsionis

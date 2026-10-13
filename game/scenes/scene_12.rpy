@@ -15,7 +15,8 @@ label scene_12:
     show aergia netral at left, speaking, flip_image
     with dissolve
     voice voice_2_12_181_aergia
-    nd_unknown_brown "Halo anee... Tidak. {w=0.5}Yuura... Apa kabar ?"
+    # nd_unknown_brown "Halo anee... Tidak. {w=0.5}Yuura... Apa kabar ?"
+    nd_unknown_brown "ehh halo~, eh.. maksudnya Yuura, apa kabar yuur? hehe"
     show aergia at idle
 
     nd_narrator_brown "Aku terdiam sejenak, mencoba mencari tahu orang ini dari buku tamu yang kubawa."
@@ -31,8 +32,10 @@ label scene_12:
     # nd_unknown_brown "Loh ? Kamu cari aku di buku tamu? Padahal gua gapernah ditulis di sana sama lu loh... Lu tahukan gua siapa, Yuur ?"
         # Ga konsisten gua gua, aku aku
     
+    # TODO: find out how to implement the timing for textbox and audio
+
     voice voice_2_12_183_aergia
-    nd_unknown_brown "Loh ? Lu cari gua di buku tamu ? Padahal gua ga pernah ditulis di sana sama lu loh... Lu tahukan gua siapa, Yuur ?"
+    nd_unknown_brown "Loh? kamu cari aku dibuku tamu? padahal gua ga pernah ditulis disana sama lu loh… lu tahukan gua siapa Yur?"
     show aergia at idle
         
     show yuura at speaking
@@ -43,21 +46,21 @@ label scene_12:
 
     show aergia at speaking
     voice voice_2_12_185_aergia
-    nd_unknown_brown "Beneran ??? Yuura inget sama gua kan ? KAN ? KAN ?"
+    nd_unknown_brown "ehh..Beneran??? Yuura, inget kan sama gua iya kan? KAN? kan~?"
     show aergia at idle
     
     nd_narrator_brown "Dia menatapku dengan sangat tajam, membuatku merinding melihatnya. Dia sepertinya sudah sangat curiga padaku, tapi tiba-tiba saja dia tertawa."
     
     show aergia at speaking
     voice voice_2_12_186_aergia
-    nd_aergia_brown "Hahaha... Bercanda kok, Yuur. Gua tahu pasti lu lagi capek banget. Lu ga mungkin lupa sama gua kan ? {nw=0.5}"
+    nd_unknown_brown "Hahaha... Bercanda kok, Yuur. Gua tahu pasti lu lagi capek banget. Lu ga mungkin lupa sama gua, iya kan ? {nw=0.5}"
     show aergia angry at shake
     extend "KAN !?"
     show aergia at idle
             
     show aergia at speaking
     voice voice_2_12_187_aergia
-    nd_aergia_brown "Ini gua loh Yuur... Aergia !"
+    nd_aergia_brown "Ehh, ini gua loh Yuur... gua Aergia, ingat kan?"
     show aergia at idle
         
     show yuura at speaking
@@ -66,7 +69,7 @@ label scene_12:
 
     show aergia at speaking
     voice voice_2_12_189_aergia
-    nd_aergia_brown "Ohhh lu inget toh, Yuur ? Tapi...gua rasa nih...lu tuh bukan Yuura !"
+    nd_aergia_brown "nahhhh kan inget, eh tapi....kok. hmm kok rasanya ada yang aneh..lu beneran yuura kan?"
         
     show yuura at speaking
     nd_yuura_brown "!!!"
@@ -76,10 +79,10 @@ label scene_12:
         
     show aergia at speaking
     voice voice_2_12_192_aergia
-    nd_aergia_brown "Kenapa, Yuur ? Kenapa lu marah begitu ?"
+    nd_aergia_brown "Lah lah, lah ko marah??" 
     
     voice voice_2_12_193_aergia
-    nd_aergia_brown "Apa emang gua ga pantes nanya itu sama lu ?"
+    nd_aergia_brown "emngnya gw salah kah? kok marah gitu sih?"
     show aergia at idle
         
     show aergia at speaking
@@ -88,16 +91,16 @@ label scene_12:
 
     show aergia at speaking
     voice voice_2_12_195_aergia
-    nd_aergia_brown "Oh... Gitu ya..."
+    nd_aergia_brown "Oh... Gitu..."
     
     voice voice_2_12_196_aergia
-    nd_aergia_brown "Maaf ya... Kalo gua terlalu aneh buat lu... Maaf ya."
+    nd_aergia_brown "Maaf ya… kalo gua agak terlalu aneh buat lu… maaf ya Yur haha"
     show aergia at idle
 
     nd_narrator_brown "Aergia langsung pergi dari sana, membuatku semakin bertanya-tanya dengan apa yang terjadi dan mengapa Yuura yang dulu sangat disayang oleh mereka."
     hide aergia with dissolve
     
-    nd_narrator_brown "Aku sudah tidak peduli, aku lelah dan hanya ingin beristirahat sejenak. Pada akhirnya aku duduk di teras dan menikmati waktuku berdiam diri."
+    nd_narrator_brown "Aku sudah tidak peduli, aku lelah dan hanya ingin beristirahat sejenak. Pada akhirnya aku duduk di teras dan menikmati waktu ku berdiam diri."
 
     jump scene_13
     

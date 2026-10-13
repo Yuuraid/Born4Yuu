@@ -86,12 +86,12 @@ label scene_6:
         # aku bingung nulisnya gmn yg atas ini
     
     voice voice_2_6_72_taro
-    wd_taro_brown "Aku emang yang paling tidak menonjol, aku emang yang paling ga mau diliat sama orang.."
+    wd_taro_brown "Aku emang yang tidak dari yang lain, aku emang yang paling ga mau diliat sama orang.."
     
     voice voice_2_6_73_taro
     wd_taro_brown "Tapi yang ane harus tau, aku senang melihat ane bahagia… jadi jangan sampai dirimu terluka lagi"
     
-    nd_narrator_brown "Dia berjalan pergi meninggalkan lorong. Suara langkah kakinya tidak terdedngar lagi."
+    nd_narrator_brown "Dia berjalan pergi meninggalkan lorong. Suara langkah kakinya tidak terdengar lagi."
     
     show yuura at ease_custom(center, offscreenright, 1.8)
     nd_narrator_brown "Aku keluar dari kamar, mengambil makanan yang dia buat."

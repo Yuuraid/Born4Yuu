@@ -23,7 +23,7 @@ label scene_10:
     
     show dityo at speaking, silhouette
     voice voice_2_10_101_dityo
-    nd_unknown_brown "Mau kemana kamu Anee?"
+    nd_unknown_brown "Huhuhu mau kemana kamu Anee?"
     
     voice voice_2_10_102_dityo
     nd_unknown_brown "Aku kan udah bilang kamu ga bakal bisa pergi dariku.." 
@@ -44,7 +44,7 @@ label scene_10:
     nd_yuura_brown "DIEM !"
     
     show yuura at idle
-    nd_narrator_brown "Aku memukul tangan Dityo dan bikin mahakaryanya jatuh."
+    nd_narrator_brown "Aku memukul tangan orang itu dan bikin mahakaryanya jatuh."
         # nd_yuura_brown "DIEM ! (Aku memukul tangan Dityo dan bikin mahakaryanya jatuh.)"
     
     show yuura netral at speaking

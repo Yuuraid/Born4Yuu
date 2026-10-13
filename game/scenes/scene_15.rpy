@@ -8,7 +8,7 @@ label scene_15:
     nd_yuura_brown "Ah... Ah..."
     show yuura at idle
      
-    nd_narrator_brown "Aku sudah berlari lumayan jauh dari lorong tempat mereka bertarung satu sama lain, aku sedikit heran, mengapa mereka berani untuk bertarung satu sama lain... Karena aku ?"
+    nd_narrator_brown "Aku sudah berlari lumayan jauh dari lorong tempat mereka bertarung satu sama lain, aku sedikit heran, mengapa mereka berani untuk bertarung satu sama lain.. Karena aku ?"
     
     nd_narrator_brown "Tapi sebelum sempat berpikir lebih jauh, aku merasa ada seorang yang mendekat ke arahku."
     
@@ -81,7 +81,7 @@ label scene_15:
     show axia at idle
 
     show yuura at speaking
-    nd_yuura_brown "Sial ! Keknya aku salah ngomong lagi."
+    nd_yuura_brown "(Sial ! Keknya aku salah ngomong lagi.)"
     show yuura at idle
     
     nd_narrator_brown "Gadis itu tiba-tiba tersenyum dan mulai mendekatiku kembali. Dan ketika ia mendekat, suasana di sepanjang lorong ini makin terasa sesak."
@@ -122,6 +122,8 @@ label scene_15:
     voice voice_3_15_272_axiaregis
     nd_axiaregis_brown "Bagaimana jika kamu menyerah saja ?"
     
+    $ renpy.run(QuickSave())
+
     voice voice_3_15_273_axiaregis
     nd_axiaregis_brown "Jika kamu menyerah semuanya akan menjadi lebih baik loh~"
     show axia at idle
@@ -152,6 +154,12 @@ label scene_15:
             # show black with Dissolve(1.0)
             nd_narrator_brown "Axiaregis menjentikkan jarinya dan membuatku mematung tak bisa bergerak, mataku menjadi blur dan semuanya menjadi tak terlihat lagi. Aku mematung untuk selamanya."
             
+            $ quick_menu = False
+
+            $ renpy.call_screen("game_over_screen", reason_text="Yuura berubah menjadi standee, menambahkan koleksi my bini Axiaregis.")
+            
+            return
+
             # end?
         "Berontak sekuat tenaga":
             show yuura at speaking
@@ -169,7 +177,7 @@ label scene_15:
             hide yuura 
             show rian angry at left, silhouette
             voice voice_3_15_282_rian
-            nd_unknown_brown "Tidak jika aku membantu ! Aku keluarkan kartuku, {w}Fathanil !!!!"
+            nd_unknown_brown "Tidak jika aku membantu ! Aku keluarkan kartuku Fathanil !!!!"
             
             show axia at speaking
             voice voice_3_15_283_axiaregis
@@ -187,7 +195,7 @@ label scene_15:
             show rian at left, speaking
             with dissolve
             voice voice_3_15_285_rian
-            nd_rian_brown "Aku bukan penjaga hewan, aku adalah sang petualang yang hanya numpang lewat. Ingat itu !"
+            nd_unknown_brown "Aku bukan penjaga hewan, aku adalah sang petualang yang hanya numpang lewat. Ingat itu !"
             
             voice voice_3_15_286_rian
             nd_rian_brown "Namaku, Rian !"
@@ -231,12 +239,17 @@ label scene_15:
             nd_narrator_brown "Axiaregis menggunakan kekuatannya untuk merubah tempat ini jadi arena battle."
             
             # BG: show duel arena yugioh
-            show axia at speaking
+            scene arena
+            show axia netral at right, idle
+            show rian netral at left, idle
+            with Flash
+            pause 1.0
+            show axia netral at right, speaking
             voice voice_3_15_296_axiaregis
             nd_axiaregis_brown "Sekarang giliranku."
             
             voice voice_3_15_297_axiaregis
-            nd_axiaregis_brown "Aku Summon Renge dengan attack 300 ke arena !"
+            nd_axiaregis_brown "Aku Summon Ilya dengan attack 300 ke arena !"
             
             voice voice_3_15_298_axiaregis
             nd_axiaregis_brown "Aku aktifkan efeknya! Mengikat kuda nil mu ke posisi bertahan."
@@ -255,7 +268,7 @@ label scene_15:
             nd_axiaregis_brown "Tch, aku spesial summon,  Ultimate  Lolibaba, Kanna Kamui !!!!"
             
             voice voice_3_15_302_axiaregis
-            nd_axiaregis_brown "Lalu aku akan korbankan Renge dengan menggunakan skill Kanna."
+            nd_axiaregis_brown "Lalu aku akan korbankan Ilya dengan menggunakan skill Kanna."
             
             voice voice_3_15_303_axiaregis
             nd_axiaregis_brown "Aku summon, Dragon Kanna ke battlefield !"
@@ -280,7 +293,7 @@ label scene_15:
 
             show axia at speaking
             voice voice_3_15_309_axiaregis
-            nd_axiaregis_brown "Sialan! Kau selamat kali ini."
+            nd_axiaregis_brown "Sialan! Kau selamat kali ini ya."
             
             voice voice_3_15_310_axiaregis
             nd_axiaregis_brown "Tapi di giliran berikutnya adalah kemenangan ku !"
@@ -323,7 +336,7 @@ label scene_15:
             nd_axiaregis_brown "Ckckck... Tidak secepat itu anak muda."
             
             voice voice_3_15_322_axiaregis
-            nd_axiaregis_brown "Aku lakukan Chain Card, dan mengaktifkan{w} Zoo Hunter !"
+            nd_axiaregis_brown "Aku lakukan Chain Card, dan mengaktifkan Zoo Hunter !"
             
             voice voice_3_15_323_axiaregis
             nd_axiaregis_brown "Dengan begitu semua tipe binatang milikmu akan hancur dan dikirim ke kuburan."
@@ -382,7 +395,7 @@ label scene_15:
 
             show rian at speaking
             voice voice_3_15_339_rian
-            nd_rian_brown "Kata siapa ?"
+            nd_rian_brown "Humu humu kata siapa ?"
             show rian at idle
 
             show axia at speaking

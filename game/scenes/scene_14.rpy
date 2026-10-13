@@ -178,9 +178,11 @@ label scene_14:
     nd_akasyah_brown "Sekarang minggir dan biar gua hajar si palsu ini !"
     show akasyah at idle
     
-    nd_narrator_brown "Aku melihat senyum lebar di wajah Akasyah yang berhasil mengungkap fakta yang selama ini kututupi. Badanku gemetar karena merasa takut bahwa aku tidak akan bisa jekuar dari sini hidup-hidup, aku menoleh ke arah Seiya dan mulai melihat raut wajah ragu padanya."
+    nd_narrator_brown "Aku melihat senyum lebar di wajah Akasyah yang berhasil mengungkap fakta yang selama ini kututupi."
     
-    nd_narrator_brown "Meski begitu, ia langsung menyiapkan kuda-kuda untuk menyerang, tetap inign melindungiku."
+    nd_narrator_brown "Badanku gemetar karena merasa takut bahwa aku tidak akan bisa keluar dari sini hidup-hidup, aku menoleh ke arah Seiya dan mulai melihat raut wajah ragu padanya."
+    
+    nd_narrator_brown "Meski begitu ia langsung menyiapkan kuda-kuda untuk menyerang, tetap ingin melindungiku."
             
     show akasyah at speaking
     voice voice_3_14_227_akasyah
@@ -212,7 +214,7 @@ label scene_14:
     nd_narrator_brown "Sayangnya, Akasyah berpindah dan memberikan tendangan telak ke belakang Seiya. Meski terpental, Seiya berhasil mengikat kaki Akasyah dan memanfaatkan momentum untuk menarik kakinya dan membantingkan tubuhnya ke lantai."
     
     # play sound lantai kayu patah
-    nd_narrator_brown "Seiya berhasil memberikan serangan telak, tapi nampaknya itu tak terlalu berefek karena ketika kepulan debu memudar, terlihat Akasyah yang berdiri dengan darah yang mengalir dari mulutnya."
+    nd_narrator_brown "Seiya berhasil memberikan serangan telak, tapi nampaknya itu tak terlalu berefek karena ketika kepulan debu memudar, terlihat Akasyah yang masih berdiri meski dengan darah yang mengalir dari mulutnya."
             
     show akasyah at speaking
     voice voice_3_14_232_akasyah
@@ -220,14 +222,18 @@ label scene_14:
     show akasyah at idle
     
     # Another CG?
-    nd_narrator_brown "Baru menutup bicaranya, Seiya muncul dari portal bayangan dan melancarkan tinju yang diselimuti energi hitam. Akasyah yang sudah memprediksi serangannya langsung menahan serangan Seiya. Akasyah menyeringai membuat Seiya mundur karena merasakan sesuatu yang salah pada Akasyah."
+    nd_narrator_brown "Baru menutup bicaranya, Seiya muncul dari portal bayangan dan melancarkan tinju yang diselimuti energi hitam." 
+    
+    nd_narrator_brown "Akasyah yang sudah memprediksi serangannya langsung menahan serangan Seiya. Akasyah menyeringai membuat Seiya mundur karena merasakan sesuatu yang salah pada Akasyah."
             
     show akasyah at speaking
     voice voice_3_14_233_akasyah
     nd_akasyah_brown "Udah puas ? Now, it's my turn..."
     show akasyah at idle
     
-    nd_narrator_brown "Akasyah berpindah dan melancarkan serangan pada Seiya, berpindah dan menyerang secara berulang. Seiya lumayan dapat mengikuti alur pertarungan. Namun, nampaknya itu memang rencananya Akasyah supaya Seiya terpancing dalam jebakannya."
+    nd_narrator_brown "Akasyah berpindah dan melancarkan serangan pada Seiya, berpindah dan menyerang secara berulang. Seiya lumayan dapat mengikuti alur pertarungan." 
+
+    nd_narrator_brown "Namun, nampaknya itu memang rencananya Akasyah supaya Seiya terpancing dalam jebakannya."
     
     nd_narrator_brown "Akasyah menendang kaki Seiya."
         
@@ -243,18 +249,20 @@ label scene_14:
     nd_narrator_brown "Seiya belum sempat berkutik, sedangkan Akasyah berpindah ke atasnya dan menendang Seiya ke bawah."
     
         # play sound lantai kayu patah
-    show seiya at speaking, flip_image
+    show akasyah at speaking
     voice voice_3_14_235_akasyah
-    nd_seiya_brown "Lu pikir serangan lemah kayak gitu bisa menghentikan gua ? Seiya Seiya..."
+    nd_akasyah_brown "Udah nih? Seiya-Seiya"
     
     voice voice_3_14_236_akasyah
-    nd_seiya_brown "SEKARANG LAH AKHIRNYA ! SELAMAT TINGGAL PAHLAWAN KESIANGAN !"
-    show seiya at idle, flip_image
+    nd_akasyah_brown "SEKARANG LAH AKHIRNYA ! SELAMAT TINGGAL PAHLAWAN KESIANGAN !"
+    show akasyah at idle
     
     nd_narrator_brown "Akasyah yang sedari tadi melayang di udara mengangkat satu kakinya tinggi-tinggi dan berpindah tepat di tempat jatuh Seiya, melancarkan serangan."
     
         # play sound serangan lilitan
-    nd_narrator_brown "Energi hitam melilit kaki Akasyah yang membuatnya terpaksa terhenti. Disaat kepulan debu mulai memudar, Seiya muncul dalam keadaan terduduk dengan posisi tangan sedang mengikat suatu. Kondisinya buruk, mungkin karena sempat menghantam lantai kayu yang langsung mengenai tubuhnya."
+    nd_narrator_brown "Energi hitam melilit kaki Akasyah yang membuatnya terpaksa terhenti. Disaat kepulan debu mulai memudar, Seiya muncul dalam keadaan terduduk dengan posisi tangan sedang mengikat suatu."
+    
+    nd_narrator_brown "Kondisinya buruk, mungkin karena sempat menghantam lantai kayu yang langsung mengenai tubuhnya."
         
     show seiya at speaking, flip_image
     voice voice_3_14_237_seiya
@@ -296,7 +304,7 @@ label scene_14:
     show yuura at idle
 
     # show lorong teras penginapan with Dissolve(1.0)
-    nd_narrator_brown "Aku terkejut mendapati Shark yang tiba-tiba berda di depanku, sembari menahan alat Dityo dengan giginya."
+    nd_narrator_brown "Aku terkejut mendapati Shark yang tiba-tiba berada didepanku, sembari menahan alat Dityo dengan giginya"
     
     show shark at speaking
     voice voice_3_14_241_shark
@@ -331,14 +339,14 @@ label scene_14:
     
     show seiya at speaking, flip_image
     voice voice_3_14_246_seiya
-    nd_seiya_brown "Serahkan urusan ini padaku dan Shark !"
+    nd_seiya_brown "Serahkan urusan ini padaku dan Shark! Oke"
     show seiya at idle, flip_image
     
     nd_narrator_brown "Meski enggan, aku berbalik dan lari meninggalkan mereka berdua."
         
     show akasyah at speaking
     voice voice_3_14_247_akasyah
-    nd_akasyah_brown "WOI MAU KE MANA LU NENEK TUA !"
+    nd_akasyah_brown "WOI MAU KE MANA LU NENEK !!!"
     show akasyah at idle
     
     nd_narrator_brown "Akasyah berusaha menyerangku tapi Seiya langsung menghentikan gerakannya dengan bayangannya."
