@@ -896,6 +896,56 @@ label scene_16:
 
     nd_narrator_brown "Belum sempat menyentuh tanah, Aergia muncul dari kepulan debu, memberikan pukulan telak yang segera ditahan oleh Dawam dengan kedua lengannya sebelum terpental beberapa kaki dari tempat ia pertama kali mendarat."
     
+    # TODO: marker do switch place
+
+    scene inn gudang outside:
+        truecenter
+        zoom 1.65 xoffset 250
+        # ease 5.0 xoffset 400
+    with Dissolve(.25)
+
+    scene pe red_blast full_CG:
+        truecenter 
+        flip_image
+        zoom 1.75 xoffset -720 yoffset -405
+    with wipe_kanan(1.0)
+
+    pause 1.0
+
+    show pe red_blast full_CG:
+        linear .75 zoom 1.0 xoffset 0 yoffset 0
+
+    nd_narrator_brown "Tepat ketika mendarat, sebuah pusaran energi melesat mengarah tepat padanya."
+
+    scene black with fade
+
+    show pe punch yellow 0 transparent as s1 with wipe_kiri(.15):
+        truecenter rotate 12 yoffset -200
+    show pe punch yellow 0 transparent as s2 with wipe_kanan(.15):
+        truecenter
+        flip_image rotate 22 yoffset -200
+
+    pause
+
+    nd_narrator_brown "Sebelum sempat mengenai tubuhnya, Dawam menepuk kedua tangannya, menghasilkan gelombang angin yang sanggup memecah pusaran energi."
+
+    # scene pe red_blast full_CG at flip_image
+    # with Dissolve(1.0)
+
+    # pause 
+
+    # scene inn gudang outside:
+    #     truecenter zoom 1.75 xoffset -650 yoffset 175
+    # show dawam angry at right
+    
+    # show inn gudang outside:
+    #     linear .5 xoffset -600 yoffset 150
+    #     linear .5 xoffset -600 yoffset 150
+    #     linear .5 xoffset -600 yoffset 150
+    #     linear .5 xoffset -600 yoffset 150
+
+    # ---
+
     show aergia at speaking
     voice voice_3_16_403_aergia
     nd_aergia_brown "BAJINGAN ! Berhenti ganggu gw sat !"
@@ -921,22 +971,30 @@ label scene_16:
     
     nd_narrator_brown "Dawam segera membalikkan badan sembari melancarkan serangan pada Aergia. Tetapi diluar dugaan, lengan dan kaki Dawam terikat oleh energi hitam itu dengan kuatnya, sedangkan Aergia masih jauh beberapa meter dari tempat Dawam terikat."
 
-    # TODO: marker do switch place
+    
+    # show dawam at speaking
+    voice voice_3_16_404_dawam
+    nd_dawam_brown "Keuugh..."
+    # show dawam at idle
+    
+    show aergia at speaking
+    voice voice_3_16_405_aergia # TODO: find out the issue here
+    nd_aergia_brown "Bahkan pas lu lawan orang bodo kaya gua aja lu kalah ya?  hah~"
+    
+    voice voice_3_16_406_aergia
+    nd_aergia_brown "Atau lu nya aja yg lebih bodo daripada gw ?"
+    show aergia at idle
 
-    scene inn gudang outside:
-        truecenter
-        zoom 1.65 xoffset 250
-        # ease 5.0 xoffset 400
-    with Dissolve(.25)
-
+    hide dawam
     show aergia full_psycho:
         zoom .75
         center 
         flip_image
         yoffset 400
         truecenter
+    with dissolve
 
-    pause 
+    # pause 
 
     init python:
         renpy.add_layer("effects", above="master")
@@ -973,64 +1031,61 @@ label scene_16:
         with { "effects": wipe_atas(5.0) }
         pause 5.0
 
-    pause 
+    # pause 
     hide z1
     hide z2
     hide z3
-    scene pe red_blast full_CG:
-        truecenter 
-        flip_image
-        zoom 1.75 xoffset -720 yoffset -405
-    with wipe_kanan(1.0)
-
-    pause 1.0
-
-    show pe red_blast full_CG:
-        linear .75 zoom 1.0 xoffset 0 yoffset 0
-
-    nd_narrator_brown "Tepat ketika mendarat, sebuah pusaran energi melesat mengarah tepat padanya."
 
     scene black with fade
 
-    show pe punch yellow 0 transparent as s1 with wipe_kiri(.15):
-        truecenter rotate 12 yoffset -200
-    show pe punch yellow 0 transparent as s2 with wipe_kanan(.15):
-        truecenter
-        flip_image rotate 22 yoffset -200
+    show pe punch purple transparent as p1:
+        rotate 50
+        yoffset -750
+        xoffset -200
+    with wipe_kiri(.15)
+    hide p1
+    with Fade(.1, .0, .0)
 
-    pause
+    show pe punch purple transparent as p2:
+        rotate 215
+        center
+        yoffset 300
+        xoffset 0
+        zoom 0.7
+        flip_image
+    with wipe_atas(.15)
+    hide p2
+    with Fade(.1, .0, .0)
 
-    scene pe red_blast full_CG at flip_image
-    with Dissolve(1.0)
-
-    pause 
-
-    scene inn gudang outside:
-        truecenter zoom 1.75 xoffset -650 yoffset 175
-    show dawam angry at right
+    show pe punch purple transparent as p3:
+        rotate 105
+        center
+        yoffset 300
+        xoffset 0
+        zoom 0.7
+        flip_image
+    with wipe_bawah(.15)
+    hide p3
+    with Fade(.1, .0, .0)
     
-    show inn gudang outside:
-        linear .5 xoffset -600 yoffset 150
-        linear .5 xoffset -600 yoffset 150
-        linear .5 xoffset -600 yoffset 150
-        linear .5 xoffset -600 yoffset 150
+    show pe punch purple transparent as p4:
+        rotate 0
+        center
+        yoffset 250
+        xoffset 100
+        zoom 0.6
+    with wipe_kiri(.15)
 
-    nd_narrator_brown "Sebelum sempat mengenai tubuhnya, Dawam menepuk kedua tangannya, menghasilkan gelombang angin yang sanggup memecah pusaran energi."
-    
-    show dawam at speaking
-    voice voice_3_16_404_dawam
-    nd_dawam_brown "Keuugh..."
-    show dawam at idle
-    
-    show aergia at speaking
-    voice voice_3_16_405_aergia
-    nd_aergia_brown "Bahkan pas lu lawan orang bodo kaya gua aja lu kalah ?"
-    
-    voice voice_3_16_406_aergia
-    nd_aergia_brown "Atau lu nya aja yg lebih bodo ?"
-    show aergia at idle
+    show pe punch purple transparent as p5:
+        rotate 10
+        center
+        yoffset 300
+        xoffset -100
+        zoom 0.75
+        flip_image
+    with wipe_kanan(.15)
 
-    nd_narrator_brown "Aergia menghentakkan kakinya, energi hitam mulai mengalir seperti air ke arah Dawam. Tepat ketika sudah berada di dekatnya, gundukan tanah yang sudah dialiri oleh energi melesat tepat ke ulu hati Dawam yang membuatnya sontak terkejut akibat serangan tersebut."
+    nd_narrator_brown "Dengan seluruh kekuatannya, Aergia menembakkan beberapa energi pekat dengan kecepatan yang tidak terduga . meski dengan usaha Dawam untuk menangkisnya, sebuah tembakan tetap melesat tepat ke ulu hati Dawam yang membuatnya sontak terkejut akibat serangan tersebut. "
     
     nd_narrator_brown "Tak berhenti di sana, gundukan tanah kedua melesat tepat ke arah dagu Dawam yang membuat dia terpental jauh saking kuatnya."
     
@@ -1042,14 +1097,14 @@ label scene_16:
     # nd_aergia_brown "Tch"
     
     voice voice_3_16_407_aergia
-    nd_aergia_brown "Haa... Udahlah, nyerah aja. Buat apa sih bangkit lagi kalau endingnya sama aja."
+    nd_aergia_brown "Haa... Udahlah, nyerah aja. Lagian buat apa sih bangkit bangkit terus kalau endingnya terus sama kayak gini terus ha?! Udahlah."
     show aergia at idle
 
     nd_narrator_brown "Dawam berdiri sembari menyeka luka di wajah."
                 
     show dawam at speaking
     voice voice_3_16_409_dawam
-    nd_dawam_brown "Maaf saja... Tapi kupastikan kali ini akan jauh lebih menyenangkan !"
+    nd_dawam_brown "Waruni na... Tapi kali ini kupastikan lebih menyenangkan!"
     show dawam at idle
     
     # play sound kretek tangan
