@@ -13,7 +13,7 @@ label scene_17:
     
     show pria netral at right, speaking
     voice voice_3_17_411_pria_misterius
-    nd_pria_brown "Ah... Sang putri tidur sudah bangun."
+    nd_pria_brown "Ah.. sang putri tidur sudah bangun"
     
     voice voice_3_17_412_pria_misterius
     nd_pria_brown "Selamat datang kembali di rumah."
@@ -23,10 +23,10 @@ label scene_17:
 
     show pria at speaking
     voice voice_3_17_413_pria_misterius
-    nd_pria_brown "Ada apa ? kenapa kamu terlihat sangat terkejut melihatku ?"
+    nd_pria_brown "Kenapa? Kaget banget lihat aku"
     
     voice voice_3_17_414_pria_misterius
-    nd_pria_brown "Bukankah kau yang mengajakku untuk minum teh bersama ?"
+    nd_pria_brown "Bukannya kamu yang ngajak? Untuk minum teh bersama?"
     show pria at idle
 
     show yuura netral at speaking
@@ -48,10 +48,10 @@ label scene_17:
 
     show pria netral at speaking
     voice voice_3_17_419_pria_misterius
-    nd_pria_brown "Pertarungan ? Apa maksudmu ?"
+    nd_pria_brown "Pertarungan? Yang mana?" 
     
     voice voice_3_17_420_pria_misterius
-    nd_pria_brown "Bukankah kita di sini untuk membicarakan dirimu ?"
+    nd_pria_brown "Bukankah kita disini untuk membicarakan dirimu?"
     show pria at idle
 
     show yuura at speaking
@@ -60,7 +60,7 @@ label scene_17:
     
     show pria at speaking
     voice voice_3_17_422_pria_misterius
-    nd_pria_brown "Ya... Aku ingin membicarakan soal dirimu."
+    nd_pria_brown "Iya… aku ingin membicarakan soal dirimu"
     show pria at idle
 
     show yuura at speaking
@@ -92,7 +92,7 @@ label scene_17:
 
     show pria at speaking
     voice voice_3_17_428_pria_misterius
-    nd_pria_brown "Hahahaha... Sungguh suatu hal yang tak terduga bukan ?"
+    nd_pria_brown "Hahahaha… tidak terduga bukan?"
     show pria at idle
 
     nd_narrator_brown "Pria itu menjentikkan jari nya dan seketika sisa-sisa teh yang ada di tubuhnya lenyap seperti tak terjadi apa-apa."
@@ -103,13 +103,15 @@ label scene_17:
 
     show pria at speaking
     voice voice_3_17_430_pria_misterius
-    nd_pria_brown "Ssttt kita tidak akan berfokus pada itu sekarang."
+    nd_pria_brown "Kita tidak fokus kesana sekarang"
     
     voice voice_3_17_431_pria_misterius
-    nd_pria_brown "Takdirmu sudah ditentukan sejak awal."
+    nd_pria_brown "Takdirmu sudah ditentukan dari awal"
     
+    $ renpy.run(QuickSave())
+
     voice voice_3_17_432_pria_misterius
-    nd_pria_brown "Sekarang ini adalah waktunya untukmu memilih."
+    nd_pria_brown "Sekarang ini adalah waktunya untuk kamu memilih"
     show pria at idle
 
     # stop music
@@ -169,7 +171,7 @@ label scene_17:
             nd_pria_brown "Hahaha memang dirimu tidak pernah berubah ya, Aneeki."
             
             voice voice_3_17_461_pria_misterius
-            nd_pria_brown "Selalu saja terburu-buru, apalagi jika kita bahas soal sake."
+            nd_pria_brown "Selalu saja terburu-buru, apalagi soal sake"
             
             voice voice_3_17_462_pria_misterius
             nd_pria_brown "Apa kamu ingat ? Ketika hari itu kamu pulang dengan satu buah box berisi sake ?"
@@ -208,10 +210,10 @@ label scene_17:
 
             show pria at speaking
             voice voice_3_17_471_pria_misterius
-            nd_pria_brown "Tidak perlu memaksakan dirimu, ada aku yang siap membantumu selalu."
+            nd_pria_brown "Tidak perlu memaksakan dirimu, aku.. tidak— KITA akan siap membantumu selalu"
             
             voice voice_3_17_472_pria_misterius
-            nd_pria_brown "Bagaimana jika kita lanjutkan saja ?"
+            nd_pria_brown "Bagaimana jika kita lanjut saja?"
             show pria at idle
             # CG here
             nd_narrator_brown "Pria itu menampilkan sebuah momen ketika aku membacakan sebuah cerita pada mereka, pembawaanku yang tadinya kasar dan beringas menjadi sangat lembut."
@@ -229,7 +231,7 @@ label scene_17:
             nd_pria_brown "Dongeng yang selalu dibuat oleh teman-teman."
             
             voice voice_3_17_476_pria_misterius
-            nd_pria_brown "Dan dibacakan oleh sang dewi."
+            nd_pria_brown "Dan dibacakan oleh panda merah yang mereka sayangi"
             
             voice voice_3_17_477_pria_misterius
             nd_pria_brown "Sungguh perpaduan yang indah, bukan ?"
@@ -355,7 +357,7 @@ label scene_17:
             
             show pria at speaking
             voice voice_3_17_501_pria_misterius
-            nd_pria_brown "Yuura perlu waktu yang lama untuk bisa di tempat ini."
+            nd_pria_brown "Yuura perlu waktu yang lama untuk bisa mencapai tempat nya sekarang ini"
             
             voice voice_3_17_502_pria_misterius
             nd_pria_brown "Dia tidak pernah menyerah, selalu berusaha yang terbaik."
@@ -367,7 +369,7 @@ label scene_17:
             nd_pria_brown "Apakah kamu pikir dia berubah karena orang-orang ingin dia berubah ?"
             
             voice voice_3_17_505_pria_misterius
-            nd_pria_brown "Tidak... Dia berubah karena dirinya sendiri, dia selalu menjadi dirinya sendiri."
+            nd_pria_brown "Tidak.. dia berubah karena dirinya mau, dia selalu berusaha menjadi dirinya sendiri"
             
             voice voice_3_17_506_pria_misterius
             nd_pria_brown "Untuk apa dirimu berusaha menjadi Yuura yang dulu ?"
@@ -376,7 +378,7 @@ label scene_17:
             nd_pria_brown "Untuk siapa ? Dan kenapa kamu harus ?"
             
             voice voice_3_17_508_pria_misterius
-            nd_pria_brown "Demi kebahagiaan kita ? PPFFTT HAHAHAHA !"
+            nd_pria_brown "Demi kita? PPFFTT HAHAHAHA! YAKALI PANDA TUA ITU MIRIKIRIN KITA" 
             
             voice voice_3_17_509_pria_misterius
             nd_pria_brown "Melihatmu tersenyum saja sudah sangat membahagiakan bagi kami."
@@ -403,6 +405,8 @@ label scene_17:
             voice voice_3_17_515_pria_misterius
             nd_pria_brown "Yang kau bisa lakukan adalah memilih."
             
+            $ renpy.run(QuickSave())
+
             voice voice_3_17_516_pria_misterius
             nd_pria_brown "Jadilah Yuura yang kamu inginkan atau pergi dan tak pernah kembali."
             show pria at idle
@@ -497,15 +501,23 @@ label scene_17:
                     show pria at idle
 
                     show yuura at speaking
-                    nd_yuura_brown "Terimakasih... {w}Yuuraid."
+                    nd_yuura_brown "Terimakasih..."
                     show yuura at idle
                     
-                    nd_narrator_brown "Aku terbangun tepat di hadapan orang-orang yang sudah tidak sadarkan diri, hujan mulai turun menutupi langit yang cerah."
+                    scene black with dissolve
+
+                    nd_narrator_black "Aku terbangun tepat di hadapan orang-orang yang sudah tidak sadarkan diri, hujan mulai turun menutupi langit yang cerah."
                     
-                    nd_narrator_brown "Semuanya menjadi sangat kelabu dan menyakitkan, aku berjalan melewati semua orang dan pergi keluar penginapan ini."
+                    nd_narrator_black "Semuanya menjadi sangat kelabu dan menyakitkan, aku berjalan melewati semua orang dan pergi keluar penginapan ini."
                     
-                    nd_narrator_brown "Tanpa melihat ke belakang dan tanpa menyesali semuanya. Aku harap aku tak akan kembali kesini, meskipun hatiku masih menginginkannya."
+                    nd_narrator_black "Tanpa melihat ke belakang dan tanpa menyesali semuanya. Aku harap aku tak akan kembali kesini, meskipun hatiku masih menginginkannya."
                     # ------------ END ------------
+
+                    $ quick_menu = False
+
+                    $ renpy.call_screen("game_over_screen", reason_text="Yuura Pergi.")
+                    
+                    return
                 "Yuuraid adalah segalanya bagiku":
                     # play music two chords
                     show yuura at speaking
@@ -540,7 +552,7 @@ label scene_17:
                     nd_pria_brown "Jika kamu bertanya padaku."
                     
                     voice voice_3_17_555_pria_misterius
-                    nd_pria_brown "Alasannya simple, karena kamu Yuura." # kasih pause setelah jeda koma?
+                    nd_pria_brown "Alasannya Sederhana, karena kamu Yuura" # kasih pause setelah jeda koma?
                     
                     voice voice_3_17_556_pria_misterius
                     nd_pria_brown "Karena mereka peduli padamu, pada Yuura." # kasih pause setelah jeda koma?
@@ -595,7 +607,7 @@ label scene_17:
                     nd_pria_brown "Terus kita ketawa bareng-bareng."
                     
                     voice voice_3_17_570_pria_misterius
-                    nd_pria_brown "Lagian, untuk apa kamu bertanya hal itu ?"
+                    nd_pria_brown "Lagian buat apa tanya begituan juga?"
                     
                     voice voice_3_17_571_pria_misterius
                     nd_pria_brown "Kami ngelakuin semua ini, ya karena kamu !"
@@ -642,11 +654,12 @@ label scene_17:
                     
                     nd_narrator_brown "Perlahan aku mulai menghilang, melihat pria itu tersenyum bahagia membuatku merasa sangat bahagia. Apakah ini adalah jalan yang benar untukku? Entahlah, aku hanya perlu menjadi diriku sendiri."
                     show yuura at speaking
-                    nd_yuura_brown "Terima kasih... Risol."
+                    nd_yuura_brown "Terima kasih... {w}ermm..."
                     show yuura at idle
                     
                     show pria at speaking
                     voice voice_3_17_582_pria_misterius
+                    # TODO: please redo this part
                     nd_pria_brown "Kau salah... Aku adalah Yuuraid." # kasih pause setelah jeda titik-titik?
                     show pria at idle
                     
@@ -684,7 +697,7 @@ label scene_17:
     
             show pria at speaking
             voice voice_3_17_438_pria_misterius
-            nd_pria_brown "Untuk apa minta maaf ?"
+            nd_pria_brown "Hm, untuk apa minta maaf ?"
     
             voice voice_3_17_439_pria_misterius
             nd_pria_brown "Tidak ada yang salah dalam pilihan mu."
@@ -729,13 +742,21 @@ label scene_17:
             show pria at idle
             
             show yuura at speaking
-            nd_yuura_brown "Terimakasih...{w} Yuuraid."
+            nd_yuura_brown "Terimakasih..."
             show yuura at idle
             
-            nd_narrator_brown "Aku terbangun tepat di hadapan orang-orang yang sudah tidak sadarkan diri, hujan mulai turun menutupi langit yang cerah."
+            scene black with fade
+
+            nd_narrator_black "Aku terbangun tepat di hadapan orang-orang yang sudah tidak sadarkan diri, hujan mulai turun menutupi langit yang cerah."
             
-            nd_narrator_brown "Semuanya menjadi sangat kelabu dan menyakitkan, aku berjalan melewati semua orang dan pergi keluar penginapan ini."
+            nd_narrator_black "Semuanya menjadi sangat kelabu dan menyakitkan, aku berjalan melewati semua orang dan pergi keluar penginapan ini."
             
-            nd_narrator_brown "Tanpa melihat ke belakang dan tanpa menyesali semuanya. Aku harap aku tak akan kembali ke sini, meskipun hatiku masih menginginkannya."
+            nd_narrator_black "Tanpa melihat ke belakang dan tanpa menyesali semuanya. Aku harap aku tak akan kembali ke sini, meskipun hatiku masih menginginkannya."
             # ------------ END ------------
+
+            $ quick_menu = False
+
+            $ renpy.call_screen("game_over_screen", reason_text="Yuura Pergi.")
+            
+            return
     return
