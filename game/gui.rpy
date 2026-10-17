@@ -28,18 +28,18 @@ define config.check_conflicting_properties = True
 define gui.accent_color = '#cc6600'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#888888'
+define gui.idle_color = '#707070'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
-define gui.idle_small_color = '#FDE08B80'
+define gui.idle_small_color = '#606060'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#e0a366'
+define gui.hover_color = '#cc6600'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
-define gui.selected_color = '#ffffff'
+define gui.selected_color = '#555555'
 
 ## The color used for a text button when it cannot be selected.
 define gui.insensitive_color = '#8888887f'
@@ -51,18 +51,21 @@ define gui.hover_muted_color = '#7a3d00'
 
 ## The colors used for dialogue and menu choice text.
 define gui.text_color = '#FDE08B'
-define gui.interface_text_color = '#ffffff'
+define gui.interface_text_color = '#404040'
 
 
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
+# define gui.text_font = "DejaVuSans.ttf"
 define gui.text_font = "fonts/arial.ttf"
 
 ## The font used for character names.
+# define gui.name_text_font = "DejaVuSans.ttf"
 define gui.name_text_font = "fonts/FOT-SlumpStd-DB.ttf"
 
 ## The font used for out-of-game text.
+# define gui.interface_text_font = "DejaVuSans.ttf"
 define gui.interface_text_font = "fonts/FOT-SlumpStd-DB.ttf"
 
 ## The size of normal dialogue text.
@@ -88,7 +91,7 @@ define gui.title_text_size = 75
 
 ## The images used for the main and game menus.
 # define gui.main_menu_background = "gui/main_menu.png"
-define gui.main_menu_background = "gui/main_menu_temp.png"
+define gui.main_menu_background = "gui/main_menu_1.png"
 define gui.game_menu_background = "gui/game_menu.png"
 
 
