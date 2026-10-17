@@ -36,25 +36,56 @@ label scene_6:
         # stop music softjazz fadeout 1.0
         # play audio byur -> define audio dulu
     
-    scene black
+    # scene black
     # Start CG here
-    nd_narrator_brown "sfx *byuurrr"
+    # nd_narrator_brown "sfx *byuurrr"
         # show layer master at shake_custom
         # # scene onsen with Dissolve(2.0) ???
     
-    nd_narrator_brown "Suara percikan air yang membasahi tubuhku, aku mengelap seluruh bagian tubuhku. Bahkan bagian kaki yang paling bisa aku banggakan. Aku mengelap sela-sela jari kaki dengan sabun."
+    play music bgm_scene6_ver2 volume 1.0 loop
+    scene cg_arc_1_scene_06_shoot_1:
+        xpos 0.0
+
+        linear 20.0 yalign 1.0
+    with dissolve
+
+    nd_narrator_brown "Suara percikan air yang membasahi tubuhku, aku mengelap seluruh bagian tubuhku. Bahkan bagian kaki yang paling bisa aku banggakan. Aku mengelap sela-sela jari kaki dengan sabun.{w=5.0}{nw}"
         # koreksi lagi docsnya
     
-    nd_narrator_brown "Baunya harum seperti bunga sakura yang mungkin bisa membuat laki-laki tergoda padaku."
+    scene cg_arc_1_scene_06_shoot_2:
+        xpos 0.0
+        linear 40.0 xalign 1.0
+    with dissolve
+    # 10s
+    nd_narrator_brown "Baunya harum seperti bunga sakura yang mungkin bisa membuat laki-laki tergoda padaku.{w=5.0}{nw}" 
     
-    nd_narrator_brown "Aku membersihkan bagian punggungku dengan sabun yang sama, membilas tiap keringat yang aku keluarkan sepanjang perjalanan."
+    # 11s
+    nd_narrator_brown "Aku membersihkan bagian punggungku dengan sabun yang sama, membilas tiap keringat yang aku keluarkan sepanjang perjalanan.{w=5.0}{nw}"
     
-    nd_yuura_brown "Ah~ enaknya..."
+    # 6s
+    nd_yuura_brown "Ah~ enaknya...{w=5.0}{nw}"
     
-    nd_yuura_brown "Rasanya benar-benar puas dengan pemandian di gedung ini."
+    scene cg_arc_1_scene_06_shoot_3:
+        xpos 0.0
+        yalign 1.0
+        linear 25.0 yalign 0.0
+    with dissolve
     
-    nd_narrator_brown "Aku mengambil air dan membilas sisa-sisa sabun dari tubuhku, dan mengeringkan sela-sela jari kakiku"
+    # 10s
+    nd_narrator_brown "Aku mengambil air dan membilas sisa-sisa sabun dari tubuhku, dan mengeringkan sela-sela jari kakiku{w=5.0}{nw}"
     
+    scene cg_arc_1_scene_06_shoot_4:
+        zoom 1.5
+        xalign 0.5
+        yalign 0.5
+        linear 15.0 zoom 1.0
+    with Flash
+
+    # 8s
+    nd_yuura_brown "Rasanya benar-benar puas dengan pemandian di gedung ini.{w=10.0}{nw}"
+
+    stop music
+
     scene inn kamar_yuura morning with fade
     show yuura happy at ease_custom(offscreenright, center, 1.8)
     pause 1.8

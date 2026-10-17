@@ -98,23 +98,23 @@ label scene_3:
 
     # show pria at idle
     # scene black
-    scene cg_arc_1_scene_3_shoot_1:
+    scene cg_arc_1_scene_03_shoot_1:
         xpos 0.0
         linear 10.0 xalign 1.0
     with dissolve
     pause 9.0
-    scene cg_arc_1_scene_3_shoot_2:
+    scene cg_arc_1_scene_03_shoot_2:
         xpos -1.0
         linear 10.0 xalign 0.0
     with dissolve
     pause 9.0
-    scene cg_arc_1_scene_3_shoot_3:
+    scene cg_arc_1_scene_03_shoot_3:
         xalign 0.5
         ypos -0.5
         linear 5.0 ypos -0.4
     with dissolve
     pause 4.0
-    scene cg_arc_1_scene_3_shoot_4:
+    scene cg_arc_1_scene_03_shoot_4:
         zoom 1.05
         xalign 0.5
         yalign 0.5
@@ -125,7 +125,7 @@ label scene_3:
 
     nd_narrator_brown "Aku mengangkat kepalaku dan melihat seseorang berdiri di hadapanku, dengan jubah panjang dan topi fedora yang menutupi wajahnya."
     
-    scene cg_arc_1_scene_3_shoot_5:
+    scene cg_arc_1_scene_03_shoot_5:
         zoom 1.03
         xalign 0.5
         yalign 0.5
@@ -134,13 +134,19 @@ label scene_3:
 
     nd_narrator_brown "Melihat sosoknya yang tinggi itu, membuatku tanpa sadar memeluknya dan langsung menangis."
     
+    scene cg_arc_1_scene_03_shoot_5:
+        # zoom 1.03
+        xalign 0.5
+        yalign 0.5
+        linear 5.0 zoom 1.8
+
     nd_narrator_brown "Aku menceritakan semuanya tanpa ku sadari, orang itu hanya diam membiarkan ku mengeluarkan semuanya."
     
     # CG end here
-    scene hutan taman
+    scene hutan taman 
     show yuura sad at right, idle
     show pria netral at left, idle
-    with dissolve
+    with fade
     # Start BGM Jade
 
     nd_narrator_brown "Setelah cukup puas bercerita, aku menyadari sesuatu yang janggal."
