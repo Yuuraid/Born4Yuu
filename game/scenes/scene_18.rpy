@@ -6,7 +6,7 @@ label scene_18:
     nd_narrator_brown "Aku terbangun dan mendengar suara samar, ketika aku mencoba untuk duduk, aku melihat Dawam dan Aergia yang masing-masing di antara mereka telah menyiapkan kuda-kuda, sudah jelas itu merupakan serangan pengakhiran untuk mengakhiri pertempuran panjang mereka."
     show aergia hurt at right, shake, speaking
     voice voice_3_18_584_aergia
-    nd_aergia_brown "Mati aja lu."
+    nd_aergia_brown "Uhuk uhuk... Mati aja lu!!"
     show aergia at idle
     show dawam hurt at left, speaking
     voice voice_3_18_585_dawam
@@ -74,7 +74,7 @@ label scene_18:
     show yuura at idle
     show aergia angry at speaking
     voice voice_3_18_599_aergia
-    nd_aergia_brown "A-apaan sih !"
+    nd_aergia_brown "A-apaan sih, huft!"
     
     voice voice_3_18_600_aergia
     nd_aergia_brown "Lagian siapa gua sampe bisa diinget orang-orang."
@@ -102,7 +102,7 @@ label scene_18:
     show yuura at idle
     show dawam at speaking
     voice voice_3_18_608_dawam
-    nd_dawam_brown "Gapapa Anee, ini semua adalah tugas yang diperintahkan oleh pak bos."
+    nd_dawam_brown "Gapapa Nona, ini semua adalah tugas yang diperintahkan oleh pak bos."
     show dawam at idle
     show yuura at speaking
     nd_yuura_brown "Ga... Itu adalah keinginanmu sendiri."
@@ -111,11 +111,11 @@ label scene_18:
     show yuura at idle
     show dawam sad at speaking
     voice voice_3_18_611_dawam
-    nd_dawam_brown "Anee..."
+    nd_dawam_brown "Nona..."
     show dawam at idle
     hide aergia with dissolve
     hide dawam with dissolve
-    nd_narrator_brown "Aku mengelus kepalanya dengan lembut, sebelum meninggalkan mereka berdua. Aku berlari menuju tempat pertarungan lainnya."
+    nd_narrator_brown "Aku mengelus kepala mereka dengan lembut, sebelum meninggalkan mereka berdua. Aku berlari menuju tempat pertarungan lainnya."
 
     show yuura at speaking
     show yuura at shake
@@ -328,7 +328,7 @@ label scene_18:
     hide aergia
     show dawam netral at left, speaking
     voice voice_3_18_662_dawam
-    nd_dawam_brown "Anee gapapa ?"
+    nd_dawam_brown "Nona gapapa ?"
     show dawam at idle
     hide axia
     show rian netral at right, speaking
@@ -365,7 +365,7 @@ label scene_18:
     nd_axiaregis_brown "Apaan, ini semua salahku, Anee."
     
     voice voice_3_18_674_axiaregis
-    nd_axiaregis_brown "Karena aku semuanya jadi kayak gini."
+    nd_axiaregis_brown "Karena aku semuanya jadi gini."
     show axia at idle
     hide aergia
     show dityo sad at left, speaking
@@ -381,10 +381,11 @@ label scene_18:
     show akasyah at idle
     show dityo at speaking
     show dityo at shake
-    voice voice_3_18_678_dityo
+    # voice voice_3_18_678_dityo
     show axia at speaking
     show axia at shake
-    voice voice_3_18_679_axiaregis
+    # voice voice_3_18_679_axiaregis
+    voice voice_3_18_678_9_Dityo_Axia
     
     nd_narrator_brown "{size=+20}Kamu juga.{/size}" # dityo dan aergia
     hide dityo

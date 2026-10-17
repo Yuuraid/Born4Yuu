@@ -103,7 +103,7 @@ label scene_19:
     hide dityo
     show dawam sad at right, speaking
     voice voice_4_19_707_dawam
-    nd_dawam_brown "Mati kita."
+    nd_dawam_brown "Mazui."
     hide dawam
     show akasyah netral at right, speaking
     voice voice_4_19_708_akasyah
