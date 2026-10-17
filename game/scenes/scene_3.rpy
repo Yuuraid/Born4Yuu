@@ -97,9 +97,41 @@ label scene_3:
     # CG hugging start here
 
     # show pria at idle
-    scene black
+    # scene black
+    scene cg_arc_1_scene_3_shoot_1:
+        xpos 0.0
+        linear 10.0 xalign 1.0
+    with dissolve
+    pause 9.0
+    scene cg_arc_1_scene_3_shoot_2:
+        xpos -1.0
+        linear 10.0 xalign 0.0
+    with dissolve
+    pause 9.0
+    scene cg_arc_1_scene_3_shoot_3:
+        xalign 0.5
+        ypos -0.5
+        linear 5.0 ypos -0.4
+    with dissolve
+    pause 4.0
+    scene cg_arc_1_scene_3_shoot_4:
+        zoom 1.05
+        xalign 0.5
+        yalign 0.5
+        linear 2.0 zoom 1.0
+    with Flash
+
+    pause 1.5
+
     nd_narrator_brown "Aku mengangkat kepalaku dan melihat seseorang berdiri di hadapanku, dengan jubah panjang dan topi fedora yang menutupi wajahnya."
     
+    scene cg_arc_1_scene_3_shoot_5:
+        zoom 1.03
+        xalign 0.5
+        yalign 0.5
+        linear 2.0 zoom 1.0
+    with Flash
+
     nd_narrator_brown "Melihat sosoknya yang tinggi itu, membuatku tanpa sadar memeluknya dan langsung menangis."
     
     nd_narrator_brown "Aku menceritakan semuanya tanpa ku sadari, orang itu hanya diam membiarkan ku mengeluarkan semuanya."
