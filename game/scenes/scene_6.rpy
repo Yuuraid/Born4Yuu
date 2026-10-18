@@ -43,16 +43,17 @@ label scene_6:
         # # scene onsen with Dissolve(2.0) ???
     
     play music bgm_scene6_ver2 volume 1.0 loop
-    scene cg_arc_1_scene_06_shoot_1:
-        xpos 0.0
-
+    scene cg_arc_2_scene_06_shoot_1:
+        # xpos 0.0
+        # y_align 0.0
+        xalign 0.5
         linear 20.0 yalign 1.0
     with dissolve
 
     nd_narrator_brown "Suara percikan air yang membasahi tubuhku, aku mengelap seluruh bagian tubuhku. Bahkan bagian kaki yang paling bisa aku banggakan. Aku mengelap sela-sela jari kaki dengan sabun.{w=5.0}{nw}"
         # koreksi lagi docsnya
     
-    scene cg_arc_1_scene_06_shoot_2:
+    scene cg_arc_2_scene_06_shoot_2:
         xpos 0.0
         linear 40.0 xalign 1.0
     with dissolve
@@ -65,7 +66,7 @@ label scene_6:
     # 6s
     nd_yuura_brown "Ah~ enaknya...{w=5.0}{nw}"
     
-    scene cg_arc_1_scene_06_shoot_3:
+    scene cg_arc_2_scene_06_shoot_3:
         xpos 0.0
         yalign 1.0
         linear 25.0 yalign 0.0
@@ -74,7 +75,7 @@ label scene_6:
     # 10s
     nd_narrator_brown "Aku mengambil air dan membilas sisa-sisa sabun dari tubuhku, dan mengeringkan sela-sela jari kakiku{w=5.0}{nw}"
     
-    scene cg_arc_1_scene_06_shoot_4:
+    scene cg_arc_2_scene_06_shoot_4:
         zoom 1.5
         xalign 0.5
         yalign 0.5

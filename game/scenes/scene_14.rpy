@@ -2,12 +2,12 @@
 
 label scene_14:
 
-    scene inn lorong malam
+    scene inn lorong malam with fade
     # play sound buk
-    nd_narrator_brown "Pantatku menghantam tanah duluan."
+    # nd_narrator_brown "Pantatku menghantam tanah duluan."
     
     show yuura scared at center, speaking
-    with moveintop
+    with easeinleft
     show yuura scared at center, shake
     nd_yuura_brown "ADUH..."
     show yuura at idle
@@ -90,39 +90,58 @@ label scene_14:
 
     show seiya at speaking
     voice voice_3_14_210_seiya
-    nd_seiya_brown "Tempat ini sudah tidak aman, sebaik-"
-    show seiya at idle
+    nd_seiya_brown "Tempat ini sudah tidak aman, sebaik-{nw}"
+    # show seiya at idle
+    scene cg_arc_3_scene_14_shoot_1:
+        zoom 1.0
+        xalign 0.5
+        linear 0.2 xalign 1.0 zoom 1.05
+    pause 0.3
+    scene pe dash blue with Flash
+    show layer master at shake
     
-    nd_narrator_brown "Belum sempat menyelesaikan bicaranya, Seiya mendengar suara yang sangat keras mengarah padanya."
+    nd_narrator_brown "Belum sempat menyelesaikan bicaranya, Seiya mendengar suara yang sangat keras mengarah padanya.{w=3.0}{nw}"
     
+    scene cg_arc_3_scene_14_shoot_2:
+        xalign 0.7
+        yalign 0.9
+        linear 7.0 xalign 0.0 yalign 0.0
+    with Flash
+    pause 6.0
     # Start CG
 # ----------recheck
-    show seiya:
-        linear .5 xzoom -1.0 yzoom 1.0
-        movetoright
-        shake
+    # show seiya:
+    #     linear .5 xzoom -1.0 yzoom 1.0
+    #     movetoright
+    #     shake
 # -----------recheck
+    scene cg_arc_3_scene_14_shoot_3 with Flash
 
-    show yuura at slightright
+    
     nd_narrator_brown "Dia berbalik dan menangkis tendangan mendadak dari pria yang berpakaian serba coklat yang membuat pria itu mundur beberapa langkah, sedangkan lengan Seiya sedikit berasap akibat tendangan tersebut."
-    show layer master at shake
 
-    show seiya hurt 
+
+    scene inn lorong malam
+    show yuura sad at idle, custom_sprite_pos(x=0.8)
+    show seiya hurt at idle, right
     show akasyah angry at left, speaking
+    with fade
+    
     voice voice_3_14_211_akasyah
     nd_akasyah_brown "KETEMU LU BANGSAT !"
     show akasyah at idle
         
-    show seiya angry at flip_image, speaking
-    voice voice_3_14_212_seiya
-    nd_seiya_brown "FAHH"
+    # show seiya angry at flip_image, speaking
+    # voice voice_3_14_212_seiya
+    # nd_seiya_brown "FAHH"
     
     voice voice_3_14_213_seiya
+    show seiya at speaking
     nd_seiya_brown "Apa yang kau coba lakukan !?"
     
     voice voice_3_14_214_seiya
     nd_seiya_brown "Apa kau ga capek bikin masalah terus buat Yuura ?"
-    show seiya at idle, flip_image
+    show seiya at idle
             
     show akasyah at speaking
     voice voice_3_14_215_akasyah
@@ -132,10 +151,10 @@ label scene_14:
     nd_akasyah_brown "MINGGIR ! JANGAN GANGGU RENCANA GUA !"
     show akasyah at idle
         
-    show seiya at speaking, flip_image
+    show seiya at speaking
     voice voice_3_14_217_seiya
     nd_seiya_brown "Rencana ? Maksudmu dengan mau menghajar Yuura ? APA ITU YANG KAU SEBUT RENCANA !?"
-    show seiya at idle, flip_image
+    show seiya at idle
             
     show akasyah at speaking
     voice voice_3_14_218_akasyah
@@ -145,10 +164,10 @@ label scene_14:
     nd_akasyah_brown "Apa emang lu gabisa bedain Yuura yang asli sama yang palsu ?"
     show akasyah at idle
         
-    show seiya at speaking, flip_image
+    show seiya at speaking
     voice voice_3_14_220_seiya
     nd_seiya_brown "Apa sih maksudmu ? Apa kamu kebanyakan minum sake siang-siang ?"
-    show seiya at idle, flip_image
+    show seiya at idle
     
     nd_narrator_brown "Akasyah melempar sebuah linting."
             
@@ -182,7 +201,10 @@ label scene_14:
     
     nd_narrator_brown "Badanku gemetar karena merasa takut bahwa aku tidak akan bisa keluar dari sini hidup-hidup, aku menoleh ke arah Seiya dan mulai melihat raut wajah ragu padanya."
     
-    nd_narrator_brown "Meski begitu ia langsung menyiapkan kuda-kuda untuk menyerang, tetap ingin melindungiku."
+    show seiya at custom_sprite_pos(x=0.6)
+    show yuura at custom_sprite_pos(x=0.9) 
+    with ease
+    nd_narrator_brown "Meski begitu Seiya berdiri depan untuk melindungiku."
             
     show akasyah at speaking
     voice voice_3_14_227_akasyah
@@ -191,11 +213,12 @@ label scene_14:
     voice voice_3_14_228_akasyah
     nd_akasyah_brown "Masih mau ngelindungin si peniru sialan ini ? Seiya Seiya..."
     show akasyah at idle
-        
-    show seiya at speaking, flip_image
+    
+    # TODO: im here
+    show seiya at speaking
     voice voice_3_14_229_seiya
     nd_seiya_brown "Mau palsu atau bukan, itu bukan urusanmu !"
-    show seiya at idle, flip_image
+    show seiya at idle
             
     show akasyah at speaking
     voice voice_3_14_230_akasyah
@@ -237,10 +260,10 @@ label scene_14:
     
     nd_narrator_brown "Akasyah menendang kaki Seiya."
         
-    show seiya at speaking, flip_image
+    show seiya at speaking
     voice voice_3_14_234_seiya
     nd_seiya_brown "Urghhh !!!"
-    show seiya at idle, flip_image
+    show seiya at idle
     
     nd_narrator_brown "Seiya kehilangan keseimbangannya karena tak menyadari serangan dadakan itu dan Akasyah segera memanfaatkan kesempatan itu."
     
@@ -264,10 +287,10 @@ label scene_14:
     
     nd_narrator_brown "Kondisinya buruk, mungkin karena sempat menghantam lantai kayu yang langsung mengenai tubuhnya."
         
-    show seiya at speaking, flip_image
+    show seiya at speaking
     voice voice_3_14_237_seiya
     nd_seiya_brown "Ha... Hah.. Hah" # kasih jeda
-    show seiya at idle, flip_image
+    show seiya at idle
             
     show akasyah at speaking
     voice voice_3_14_238_akasyah
@@ -279,10 +302,10 @@ label scene_14:
     
     nd_narrator_brown "Seiya tak menyadari bahwa Dityo telah tiba dan segera menembakkan serangan proyektil tepat ke arahku."
         
-    show seiya at speaking, flip_image
+    show seiya at speaking
     voice voice_3_14_240_seiya
     nd_seiya_brown "SIALAN ! ANEEEE !!!!"
-    show seiya at idle, flip_image
+    show seiya at idle
     
     define eye_close2 = ImageDissolve(
         "assets/effects/eye_mask.png", 
@@ -328,19 +351,19 @@ label scene_14:
     
     nd_narrator_brown "Kini situasi imbang, dua lawan dua. Meski begitu, melihat dari raut wajah Seiya, aku tahu bahwa perkara ini belum usai."
         
-    show seiya at speaking, flip_image
+    show seiya at speaking
     voice voice_3_14_244_seiya
     nd_seiya_brown "Aneki, pergilah !"
-    show seiya at idle, flip_image
+    show seiya at idle
         
     show yuura at speaking
     nd_yuura_brown "T-tapi..."
     show yuura at idle
     
-    show seiya at speaking, flip_image
+    show seiya at speaking
     voice voice_3_14_246_seiya
     nd_seiya_brown "Serahkan urusan ini padaku dan Shark! Oke"
-    show seiya at idle, flip_image
+    show seiya at idle
     
     nd_narrator_brown "Meski enggan, aku berbalik dan lari meninggalkan mereka berdua."
         
@@ -351,10 +374,10 @@ label scene_14:
     
     nd_narrator_brown "Akasyah berusaha menyerangku tapi Seiya langsung menghentikan gerakannya dengan bayangannya."
         
-    show seiya at speaking, flip_image
+    show seiya at speaking
     voice voice_3_14_248_seiya
     nd_seiya_brown "Lawanmu adalah aku."
-    show seiya at idle, flip_image
+    show seiya at idle
 
     jump scene_15
 
