@@ -4,15 +4,18 @@ label scene_12:
 
     scene inn entrance_2 with Dissolve(2.0) 
     
-    show yuura netral at center, idle
-    nd_narrator_brown "Tepat ketika aku tiba di dekat pintu depan, aku melihat seorang laki-laki berwajah masam."
-    
+    # show yuura netral at center, idle
+    show yuura netral at face_flip, ease_custom(offscreenleft, left, 7.0)
+    nd_narrator_brown "Tepat ketika aku tiba di dekat pintu depan, aku melihat seorang laki-laki berwajah masam.{w=1.0}{nw}"
+
+    show aergia netral at ease_custom(offscreenright, right, 5.0), idle
+
     nd_narrator_brown "Kantung matanya sangat tebal, wajahnya terlihat sudah sangat lelah dan tidak karuan. Dia menghampiriku dan mencoba menyapaku."
 
-    show yuura at right
-    with move
+    # show yuura at right
+    # with move
         # Aergia
-    show aergia netral at left, speaking, flip_image
+    show aergia at right, speaking
     with dissolve
     voice voice_2_12_181_aergia
     # nd_unknown_brown "Halo anee... Tidak. {w=0.5}Yuura... Apa kabar ?"
@@ -23,9 +26,9 @@ label scene_12:
     
     nd_narrator_brown "Sayangnya, di dalamnya tidak ada informasi apa pun mengenai orang ini."
         
-    show yuura scared at speaking
+    show yuura scared at face_flip, speaking
     nd_yuura_brown "Ah... H-halo {w}eh...mh..."
-    show yuura at idle
+    show yuura at face_flip, idle
 
     show aergia at speaking
     # voice voice_2_12_183_aergia
@@ -38,11 +41,11 @@ label scene_12:
     nd_unknown_brown "Loh? kamu cari aku dibuku tamu? padahal gua ga pernah ditulis disana sama lu loh… lu tahukan gua siapa Yur?"
     show aergia at idle
         
-    show yuura at speaking
+    show yuura at face_flip, speaking
     nd_yuura_brown "A-ah g-ga dong, tentu saja aku tahu."
     
     nd_yuura_brown "(Sial, apakah aku akan ketahuan ?)"
-    show yuura at idle
+    show yuura at face_flip, idle
 
     show aergia at speaking
     voice voice_2_12_185_aergia
@@ -63,19 +66,19 @@ label scene_12:
     nd_aergia_brown "Ehh, ini gua loh Yuur... gua Aergia, ingat kan?"
     show aergia at idle
         
-    show yuura at speaking
+    show yuura at face_flip, speaking
     nd_yuura_brown "Ah... Aergia ! Inget-inget hehe."
-    show yuura at idle
+    show yuura at face_flip, idle
 
     show aergia at speaking
     voice voice_2_12_189_aergia
     nd_aergia_brown "nahhhh kan inget, eh tapi....kok. hmm kok rasanya ada yang aneh..lu beneran yuura kan?"
         
-    show yuura at speaking
+    show yuura at face_flip, speaking
     nd_yuura_brown "!!!"
     
     nd_yuura_brown "A-apa maksudmu ? A-aku Yuura, kok !"
-    show yuura at idle
+    show yuura at face_flip, idle
         
     show aergia at speaking
     voice voice_2_12_192_aergia
@@ -87,7 +90,7 @@ label scene_12:
         
     show aergia at speaking
     nd_yuura_brown "B-bukan begitu, cuma terlalu mendadak jadinya aku kaget."
-    show yuura at idle
+    show yuura at face_flip, idle
 
     show aergia at speaking
     voice voice_2_12_195_aergia
@@ -97,8 +100,10 @@ label scene_12:
     nd_aergia_brown "Maaf ya… kalo gua agak terlalu aneh buat lu… maaf ya Yur haha"
     show aergia at idle
 
+    show aergia at ease_custom(right, offscreenleft, 10.0)
+
     nd_narrator_brown "Aergia langsung pergi dari sana, membuatku semakin bertanya-tanya dengan apa yang terjadi dan mengapa Yuura yang dulu sangat disayang oleh mereka."
-    hide aergia with dissolve
+    # hide aergia with dissolve
     
     nd_narrator_brown "Aku sudah tidak peduli, aku lelah dan hanya ingin beristirahat sejenak. Pada akhirnya aku duduk di teras dan menikmati waktu ku berdiam diri."
 

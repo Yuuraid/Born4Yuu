@@ -2,38 +2,69 @@
 
 label scene_11:
 
-    scene inn entrance_2 with Dissolve(2.0)
+    scene inn parkiran with Dissolve(2.0)
 
         # # show lorong dekat pintu penginapan 
         # with Dissolve(1.0)
 
-    nd_narrator_brown "Sepanjang perjalanan, aku selalu mendengar gosip tentang diriku, entah mengapa rasanya sangat cepat sekali."
-    
-    nd_narrator_brown "Entah seperti ada dua sejoli yang selalu menyebarkan informasi palsu di penginapan."
-    
-    show josua netral at left with dissolve
-    voice voice_2_11_163_josua
-    nd_josua_brown "Bukannya itu Yuura yang dibilang sama Axiaregis ya ?"
-    
-    show ibe netral at right with dissolve
-    voice voice_2_11_164_ibe
-    nd_ibe_brown "Ihh iya tuh, keknya emang dia deh."
-    
-    hide ibe
-    hide josua
-    with dissolve
+    show yuura netral at face_flip, ease_custom(offscreenleft, offscreenright, 15.0) zorder 10
+    pause 2.0
+    show josua netral at ease_custom(offscreenright, left, 10.0), idle
+    show ibe netral at ease_custom(offscreenright, right, 10.0), idle
 
-    nd_narrator_brown "Mendengar itu aku hanya bisa diam, tak peduli. Aku rasa ini semua hanya kesalahan dan akan segera selesai."
+    # nd_narrator_brown "Sepanjang perjalanan, aku selalu mendengar gosip tentang diriku, entah mengapa rasanya sangat cepat sekali."
+
+    nd_narrator_brown "Sepanjang perjalanan, aku sangat bingung dengan semua yang terjadi seharian ini. Tapi aku harus bersikap normal agar tidak di curigai orang-orang."
+
+    # nd_narrator_brown "Entah seperti ada dua anomali yang mana aku tidak mengerti apa yang mereka bicarakan."
+    
+    show josua at speaking
+    voice voice_2_11_163_josua
+    nd_josua_brown "{font=alien}Be be Yuura tadi Ibe, gokil juga baru nyampe udah ketemu artis kita{/font}\n(Be be Yuura tadi Ibe, gokil juga baru nyampe udah ketemu artis kita)"
+    
+    # show ibe netral at right with dissolve
+    show ibe at speaking
+    show josua at idle
+    voice voice_2_11_164_ibe
+    nd_ibe_brown "{font=alien}Yuura? kamu yakin itu Yuura?{/font}\n(Yuura? kamu yakin itu Yuura?)"
+
+    show ibe at idle
+    show josua at speaking
+    voice voice_2_11_163_josua
+    nd_josua_brown "{font=alien}Kok gitu? emangnya ada yang salah kah?{/font}\n(Kok gitu? emangnya ada yang salah kah?)"
+
+    show ibe at speaking
+    show josua at idle
+    voice voice_2_11_164_ibe
+    nd_ibe_brown "{font=alien}Nggak, cuma firasatku saja{/font}\n(Nggak, cuma firasatku saja)"
+
+    show ibe at idle
+    show josua at speaking
+    voice voice_2_11_163_josua
+    nd_josua_brown "{font=alien}Ah ngibul kamu, mending kita beli YOYU biar kamu nggak halusinasi {/font}\n(Ah ngibul kamu, mending kita beli YOYU biar kamu nggak halusinasi lagi)"
+    
+    # hide ibe
+    # hide josua
+    # with dissolve
+    show josua at idle, ease_custom(left, offscreenleft, 7.0)
+    show ibe at idle, ease_custom(right, offscreenleft, 6.0)
+
+    # nd_narrator_brown "Mendengar itu aku hanya bisa diam, tak peduli. Aku rasa ini semua hanya kesalahan dan akan segera selesai."
     
     # TODO: they both in different places
-
+    scene garden_2
     show aergia netral at left, silhouette
-    show axia netral at right, idle
-    nd_narrator_brown "Sementara itu di tempat lain, Axiaregis bertemu dengan seseorang yang misterius. Wajahnya yang terlihat sangat lelah dengan semua ini membuatnya semakin suram. Dia berdiri diam menatap lukisan tak bergeming sedikit pun."
+    with fade
+
+    show axia netral at ease_custom(offscreenright, right, 5.0), idle
+
+    nd_narrator_brown "Sementara itu di tempat lain, Axiaregis bertemu dengan seseorang yang misterius."
+    
+    nd_narrator_brown "Wajahnya yang terlihat sangat lelah dengan semua ini membuatnya semakin suram. Dia berdiri diam menatap orang pacaran di taman tanpa bergeming sedikit pun."
     
         # Aergia
     
-    show aergia at silhouette, speaking
+    show aergia at silhouette, face_flip, speaking
     voice voice_2_11_165_aergia
     nd_unknown_brown "Ha... Lu lagi lu lagi, kenapa sih harus selalu lu yang ke tempat gua ?"
     show aergia at silhouette, idle
@@ -95,11 +126,13 @@ label scene_11:
     # hide axia with dissolve
     # hide aergia with dissolve
 
-    scene black with dissolve
+    scene garden_1 with dissolve
 
-    nd_narrator_black "Aku berjalan melewati lorong yang semakin banyak anomali di dalamnya, ada seseorang yang sangat menyukai gundam bernama Ivan."
+    show yuura netral at ease_custom(offscreenright, offscreenleft, 20.0)
+
+    nd_narrator_brown "Aku berjalan melewati lorong yang semakin banyak anomali di dalamnya, ada seseorang yang sangat menyukai gundam bernama Ivan."
     
-    nd_narrator_black "Ada juga seseorang om-om berbaju batik putih yang sedang berkebun. Terus ada seorang anak laki-laki yang sedang berbicara dengan kudanil? Ah entahlah aku tidak mengerti lagi."
+    nd_narrator_brown "Ada juga seseorang om-om berbaju batik putih yang sedang berkebun. Terus ada seorang anak laki-laki yang sedang berbicara dengan kudanil? Ah entahlah aku tidak mengerti lagi."
     
     # nd_narrator_brown "Dari jauh terdengar suara orang sedang bertengkar dari dalam kamar. Mereka bertengkar karena bermain kartu."
     
@@ -130,11 +163,11 @@ label scene_11:
     # with dissolve
 
     # show yuura netral at center, idle
-    nd_narrator_black "Aku benar-benar bingung dengan situasi di tempat ini, terkadang mereka terlihat santai dan tenang."
+    nd_narrator_brown "Aku benar-benar bingung dengan situasi di tempat ini, terkadang mereka terlihat santai dan tenang."
     
-    nd_narrator_black "Tapi terkadang mereka terlihat sangat ricuh."
+    nd_narrator_brown "Tapi terkadang mereka terlihat sangat ricuh."
     
-    nd_narrator_black "Aku terus bergerak, tanpa memperdulikan apapun di sekitarku. Aku hanya ingin beristirahat dari semua keanehan ini."
+    nd_narrator_brown "Aku terus bergerak, tanpa memperdulikan apapun di sekitarku. Aku hanya ingin beristirahat dari semua keanehan ini."
 
     jump scene_12
 

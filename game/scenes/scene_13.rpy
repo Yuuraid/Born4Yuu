@@ -2,6 +2,11 @@
 
 label scene_13:
 
+    scene inn resepsionis
+    with Dissolve(1.0) 
+
+    show yuura netral at face_flip, ease_custom(offscreenleft, left, 7.0)
+
     nd_narrator_brown "Hari pun mulai gelap, rasanya kepalaku lebih baik dibanding sebelumnya. Aku berjalan menuju kamarku untuk berleha-leha."
     
     nd_narrator_brown "Tapi entah mengapa aku banyak sekali mendengar hal-hal aneh di sekitar, mereka tampak seperti sedang membicarakanku."
@@ -10,18 +15,34 @@ label scene_13:
     
     nd_narrator_brown "Tepat ketika aku sedang melamun, aku mendengar suara langkah kaki yang cepat menghampiriku."
     
+    scene pe kick kick_set_alter:
+        zoom 0.95
+        xalign 0.5
+        yalign 0.5
+        linear 0.5 zoom 1.05
+    with Flash
+
         # play sound pressure
         # Use CG here
-    nd_narrator_brown "Untuk sekilas, aku melihat persis seseorang melancarkan tendangan yang mengarah tepat ke arahku." 
+    nd_narrator_brown "Seseorang melancarkan tendangan ke arahku.{w=0.5}{nw}" 
     
-    nd_narrator_brown "Tapi sebelum sempat bereaksi, pijakanku tiba-tiba menghilang yang membuat keseimbanganku tumbang dan terjatuh sebelum akhirnya tenggelam ke dalam kegelapan.."
+    scene inn resepsionis
+    show yuura scared at face_flip, left
+    with fade
+
+    nd_narrator_brown "Tapi sebelum sempat bereaksi{w=0.5}{nw}"
+    
+    scene inn resepsionis with fade
+
+    nd_narrator_brown "Pijakanku tiba-tiba menghilang dan aku tenggelam ke dalam kegelapan.."
     
         # play sound wind blow
-    scene inn resepsionis
-    with Dissolve(1.0) 
 
-    show akasyah angry at left, speaking
-    show dityo angry at right, idle
+    show akasyah angry at left, idle with easeinleft
+    show dityo angry at right, idle with easeinright
+    
+    pause 0.5
+    show akasyah at speaking
     voice voice_3_13_197_akasyah
     nd_akasyah_brown "BRENGSEK SEIYA !!!"
     show akasyah at idle
@@ -33,13 +54,13 @@ label scene_13:
             
     show akasyah at speaking
     voice voice_3_13_199_akasyah
-    nd_akasyah_brown "Hah ? Kabur ? Dari hadapan gue ? Ga mungkin ! Ga bakal gua biarin si tua itu kabur dari gua."
+    nd_akasyah_brown "Hah ? Kabur ? Dari hadapan gue ? Ga mungkin ! Ga bakal gua biarin si tua itu kabur dari gua. Gimana Dit ? Lu udah nemu belum kelemahannya si Seiya ?"
     show akasyah at idle
     
-    show akasyah at speaking
-    voice voice_3_13_200_akasyah
-    nd_akasyah_brown "Gimana Dit ? Lu udah nemu belum kelemahannya si Seiya ?"
-    show akasyah at idle
+    # show akasyah at speaking
+    # voice voice_3_13_200_akasyah
+    # nd_akasyah_brown "Gimana Dit ? Lu udah nemu belum kelemahannya si Seiya ?"
+    # show akasyah at idle
     
     show dityo at speaking
     voice voice_3_13_201_dityo
@@ -48,7 +69,7 @@ label scene_13:
             
     show akasyah at speaking
     voice voice_3_13_202_akasyah
-    nd_akasyah_brown "20 meter ? Segitu doang mah bisa gua kejar ! Beraninya si Seiya itu merusak semua rencana gua !"
+    nd_akasyah_brown "20 meter ? Ya elah segitu doang mah bisa gua kejar ! Beraninya si Seiya itu merusak semua rencana gua !"
     hide akasyah 
     with moveoutright
     

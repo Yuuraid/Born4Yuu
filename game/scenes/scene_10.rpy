@@ -274,7 +274,7 @@ label scene_10:
             pause 0.5
 
             voice voice_2_10_136_shark
-            nd_shark_brown "A-aneeki gapapa?"
+            nd_shark_brown "Uh Anee kamu gapapa?"
             
             show yuura at speaking
             hide shark_n_sequence
@@ -430,6 +430,6 @@ label scene_10:
                     
                     show yuura at ease_custom(center, offscreenleft, 2.0), idle
                     show shark at idle
-                    nd_narrator_brown "Aku berjalan pergi meninggalkan lorong-lorong menuju pintu teras."
+                    nd_narrator_brown "Aku berjalan pergi keluar untuk mencari udara segar."
 
             jump scene_11

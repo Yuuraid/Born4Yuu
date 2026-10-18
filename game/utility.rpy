@@ -1,0 +1,1 @@
+define config.font_name_map["alien"] = "fonts/number_one.ttf"
