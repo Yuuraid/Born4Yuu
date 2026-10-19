@@ -57,6 +57,8 @@ label evolve_sequence:
 
     # "Congratulations! Your hiu evolved into shark_n_sequence!"
 
+    hide shark_n_sequence
+
     return
 
 label evolve_sequence_:

@@ -270,9 +270,11 @@ label scene_10:
 
             hide shark beast
             call evolve_sequence from _evolve_sequence
+            show shark netral at idle, right
 
-            pause 0.5
+            pause 1.0
 
+            show shark at speaking
             voice voice_2_10_136_shark
             nd_shark_brown "Uh Anee kamu gapapa?"
             

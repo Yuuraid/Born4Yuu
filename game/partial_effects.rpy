@@ -5,6 +5,11 @@ image pe kick serangan_seiya transparent  = "assets/effects/partial_effects/Kick
 image pe kick kick_set_alter = "assets/effects/partial_effects/Kick/Kick-Set_Alter.png"
 image pe kick kick_set_alter transparent = "assets/effects/partial_effects/Kick/Kick-Set_Alter_Transparent.png"
 
+image serangan_seiya = "assets/effects/partial_effects/Kick/Serangan-Seiya.png"
+image serangan_seiya transparent  = "assets/effects/partial_effects/Kick/Serangan-seiya_Transparent.png"
+image kick_set_alter = "assets/effects/partial_effects/Kick/Kick-Set_Alter.png"
+image kick_set_alter transparent = "assets/effects/partial_effects/Kick/Kick-Set_Alter_Transparent.png"
+
 image pe blue_meteor blash = "assets/effects/partial_effects/Projectile_Blast/Arc3_Scene14_Dityo_telah_tiba_dan_segera_menembakkan_serangan_proyektil_1.png"
 image pe particle ring transparent = "assets/effects/partial_effects/Ring-Particle.png"
 image pe blue_meteor ring = "assets/effects/partial_effects/Projectile_Blast/Arc3_Scene14_Dityo_telah_tiba_dan_segera_menembakkan_serangan_proyektil_2.png"
@@ -51,10 +56,21 @@ image pe purple_flame flame_front = "assets/effects/partial_effects/Fire/Arc2_Sc
 image pe purple_flame flame_behind = "assets/effects/partial_effects/Fire/Arc2_Scene11_Api_kemudian_membakar_Axiaregis_Behind.png"
 image pe purple_flame flame_full = "assets/effects/partial_effects/Fire/Arc2_Scene11_Api_kemudian_membakar_Axiaregis_Full.png"
 
+image flame_front = "assets/effects/partial_effects/Fire/Arc2_Scene11_Api_kemudian_membakar_Axiaregis_Front.png"
+image flame_behind = "assets/effects/partial_effects/Fire/Arc2_Scene11_Api_kemudian_membakar_Axiaregis_Behind.png"
+image flame_full = "assets/effects/partial_effects/Fire/Arc2_Scene11_Api_kemudian_membakar_Axiaregis_Full.png"
+
 # "assets/effects/partial_effects/Punch/Punch_1/Arc2_Scene9_Tangan_melesat_kepadaku.png"
 image pe punch yellow 0 transparent = "assets/effects/partial_effects/Punch/Punch_1/Arc2_Scene9_Tangan_melesat_kepadaku_Transparent.png"
 image pe punch yellow = "assets/effects/partial_effects/Punch/Revision/Arc2_Scene9_Sebuah_tangan_melesat_ke_arahku.png"
 image pe punch yellow transparent = "assets/effects/partial_effects/Punch/Revision/Arc2_Scene9_Sebuah_tangan_melesat_ke_arahku_Transparent.png"
 image pe punch swipe = "assets/effects/partial_effects/Punch/Punch_2/Arc2_Scene9_Tangan_melesat_kepadaku_Alternative.png"
 image pe punch swipe transparent = "assets/effects/partial_effects/Punch/Punch_2/Arc2_Scene9_Tangan_melesat_kepadaku_Alternative_Transparent.png"
+
+# image yellow 0 transparent = "assets/effects/partial_effects/Punch/Punch_1/Arc2_Scene9_Tangan_melesat_kepadaku_Transparent.png"
+image yellow = "assets/effects/partial_effects/Punch/Revision/Arc2_Scene9_Sebuah_tangan_melesat_ke_arahku.png"
+image yellow transparent = "assets/effects/partial_effects/Punch/Revision/Arc2_Scene9_Sebuah_tangan_melesat_ke_arahku_Transparent.png"
+image swipe = "assets/effects/partial_effects/Punch/Punch_2/Arc2_Scene9_Tangan_melesat_kepadaku_Alternative.png"
+image swipe transparent = "assets/effects/partial_effects/Punch/Punch_2/Arc2_Scene9_Tangan_melesat_kepadaku_Alternative_Transparent.png"
+
 image pe punch purple transparent = "assets/effects/partial_effects/Punch/Revision/BLACK_FORCE_ENERGY/Punch_Set-Alter_Dark.png"

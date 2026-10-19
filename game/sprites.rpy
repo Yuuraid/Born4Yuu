@@ -32,3 +32,9 @@ transform silhouette:
 
 transform reveal_character:
     matrixcolor None
+
+transform startled_jump:
+    easein .05 yoffset -30
+    easeout .08 yoffset 0
+    easein .03 yoffset -10
+    easeout .05 yoffset 0

@@ -130,9 +130,9 @@ label scene_11:
 
     show yuura netral at ease_custom(offscreenright, offscreenleft, 20.0)
 
-    nd_narrator_brown "Aku berjalan melewati lorong yang semakin banyak anomali di dalamnya, ada seseorang yang sangat menyukai gundam bernama Ivan."
+    nd_narrator_brown "Semakin lama aku berkeliling, semakin aku melihat banyak anomali-anomali di di sekitarku, ada seseorang yang sangat menyukai gundam bernama Ivan."
     
-    nd_narrator_brown "Ada juga seseorang om-om berbaju batik putih yang sedang berkebun. Terus ada seorang anak laki-laki yang sedang berbicara dengan kudanil? Ah entahlah aku tidak mengerti lagi."
+    nd_narrator_brown "Ada juga seseorang om-om berbaju batik putih yang sedang berkebun. Terus ada seorang anak laki-laki yang sedang berbicara dengan kuda nil? Ah entahlah aku tidak mengerti lagi."
     
     # nd_narrator_brown "Dari jauh terdengar suara orang sedang bertengkar dari dalam kamar. Mereka bertengkar karena bermain kartu."
     

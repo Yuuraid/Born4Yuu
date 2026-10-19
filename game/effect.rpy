@@ -37,3 +37,24 @@ transform enblur:
 transform deblur:
     blur 30
     linear 1.0 blur 0
+
+# Define the custom transform
+transform consumed_by_darkness:
+    # Tint black instantly (or you can use 'ease' / 'linear' if you want it to darken gradually)
+    matrixcolor TintMatrix("#000000")
+    # Quick linear fade out
+    linear 0.5 alpha 0.0
+
+transform emerge_from_darkness:
+    # Start invisible and tinted black
+    alpha 0.0
+    matrixcolor TintMatrix("#000000")
+
+    # Animate both the alpha and the color simultaneously
+    parallel:
+        linear 0.5 alpha 1.0
+    parallel:
+        linear 0.5 matrixcolor IdentityMatrix() # Returns to normal color
+
+
+define fast_fade = Fade(0.2, 0.0, 0.2)

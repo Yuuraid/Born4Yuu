@@ -5,7 +5,7 @@ label scene_13:
     scene inn resepsionis
     with Dissolve(1.0) 
 
-    show yuura netral at face_flip, ease_custom(offscreenleft, left, 7.0)
+    show yuura netral at face_flip, ease_custom(offscreenleft, center, 7.0)
 
     nd_narrator_brown "Hari pun mulai gelap, rasanya kepalaku lebih baik dibanding sebelumnya. Aku berjalan menuju kamarku untuk berleha-leha."
     
@@ -17,6 +17,7 @@ label scene_13:
     
     scene pe kick kick_set_alter:
         zoom 0.95
+        xzoom -1
         xalign 0.5
         yalign 0.5
         linear 0.5 zoom 1.05
@@ -27,14 +28,22 @@ label scene_13:
     nd_narrator_brown "Seseorang melancarkan tendangan ke arahku.{w=0.5}{nw}" 
     
     scene inn resepsionis
-    show yuura scared at face_flip, left
-    with fade
+    show yuura scared at face_flip, center
+    pause 0.2
+    show yuura at face_flip, ease_custom(center, left, 0.25)
 
     nd_narrator_brown "Tapi sebelum sempat bereaksi{w=0.5}{nw}"
-    
-    scene inn resepsionis with fade
+
+    show pe purple_flame flame_full at custom_sprite_pos(x=3.0, y=0.5), silhouette
+    show yuura at face_flip, consumed_by_darkness
+
+    pause 0.2
+    hide pe purple_flame flame_full with dissolve
+    # scene inn resepsionis with fast_fade
 
     nd_narrator_brown "Pijakanku tiba-tiba menghilang dan aku tenggelam ke dalam kegelapan.."
+
+    hide yuura
     
         # play sound wind blow
 

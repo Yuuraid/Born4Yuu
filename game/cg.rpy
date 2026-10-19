@@ -14,3 +14,8 @@ image cg_arc_2_scene_06_shoot_4 = "assets/cg/cg_arc_2_scene_06_shoot_4.png"
 image cg_arc_3_scene_14_shoot_1 = "assets/cg/cg_arc_3_scene_14_shoot_1.png"
 image cg_arc_3_scene_14_shoot_2 = "assets/cg/cg_arc_3_scene_14_shoot_2.png"
 image cg_arc_3_scene_14_shoot_3 = "assets/cg/cg_arc_3_scene_14_shoot_3.png"
+
+image cg_arc_3_scene_14_shark_shoot_04 = "assets/cg/cg_arc_3_scene_14_shark_shoot_04.png"
+image cg_arc_3_scene_14_shark_shoot_03 = "assets/cg/cg_arc_3_scene_14_shark_shoot_03.png"
+image cg_arc_3_scene_14_shark_shoot_02 = "assets/cg/cg_arc_3_scene_14_shark_shoot_02.png"
+image cg_arc_3_scene_14_shark_shoot_01 = "assets/cg/cg_arc_3_scene_14_shark_shoot_01.png"
