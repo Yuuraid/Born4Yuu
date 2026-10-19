@@ -518,7 +518,7 @@ label scene_17:
                     $ renpy.call_screen("game_over_screen", reason_text="Yuura Pergi.")
                     
                     return
-                "Yuuraid adalah segalanya bagiku":
+                "Aku tidak mengerti...":
                     # play music two chords
                     show yuura at speaking
                     nd_yuura_brown "Aku..."
@@ -660,7 +660,7 @@ label scene_17:
                     show pria at speaking
                     voice voice_3_17_582_pria_misterius
                     # TODO: please redo this part
-                    nd_pria_brown "Kau salah... Aku adalah Yuuraid." # kasih pause setelah jeda titik-titik?
+                    nd_pria_brown "Panggil saja aku Yuuraid." # kasih pause setelah jeda titik-titik?
                     show pria at idle
                     
                     show yuura at speaking
