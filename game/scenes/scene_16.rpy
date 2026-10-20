@@ -242,12 +242,15 @@ label scene_16:
     scene black with fade
 
     # named
-    camera:
-        zoom 1.5
-        xoffset -960
-        yoffset -250
+    # camera:
+    #     zoom 1.5
+    #     xoffset -960
+    #     yoffset -250
         
     # camera at cam_move
+
+    camera:
+        zoom 1 xpos 0 ypos 0 
 
     show pe punch purple transparent as p6:
         rotate 0
@@ -509,46 +512,32 @@ label scene_16:
 
     # There are CG here
 
+    # camera at camera_reset 
+    camera:
+        zoom 1 xpos 0 ypos 0  
+
     scene pe red_projectile full_CG
-    # camera:
-    #     zoom 2 
-    # with wipe_kiri(.05)
-    # pause .1
-    # camera:
-    #     zoom 2 xpos -1920 ypos -1080
-    # with wipe_kanan(.05)
-    # pause .1
-    # camera:
-    #     zoom 2 xpos 0 ypos -1080
-    # with wipe_kiri(.05)
-    # pause .1
-    # camera:
-    #     zoom 2 xpos -1920 ypos 0
-    # with wipe_kanan(.05)
-    # pause .1 
-    # camera:
-    #     zoom 1 xpos 0 ypos 0
-    # with wipe_kiri(.05)
     camera:
         zoom 2 
-    with Dissolve(.15)
+    with wipe_kiri(.05)
     pause .1
     camera:
         zoom 2 xpos -1920 ypos -1080
-    with Dissolve(.15)
+    with wipe_kanan(.05)
     pause .1
     camera:
         zoom 2 xpos 0 ypos -1080
-    with Dissolve(.15)
+    with wipe_kiri(.05)
     pause .1
     camera:
         zoom 2 xpos -1920 ypos 0
-    with Dissolve(.15)
+    with wipe_kanan(.05)
     pause .1 
     camera:
         zoom 1 xpos 0 ypos 0
-    with Dissolve(.15)
-    pause .5
+    with wipe_kiri(.05)
+
+
     nd_narrator_brown "Serangan proyektil hitam mulai bertebaran mengarah langsung ke Dawam."
     # scene pe dash negative_blue
     pause .5
