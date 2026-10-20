@@ -20,3 +20,5 @@ transform looping_shake:
     linear 0.05 xoffset 3 yoffset 3
     linear 0.05 xoffset 0 yoffset 0
     repeat # This makes it loop indefinitely
+
+define battle_start = ImageDissolve("assets/effects/Apho_RenPyImageDissolveTransitions/slasht.png", 1.0, ramplen=64)

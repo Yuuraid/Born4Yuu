@@ -30,6 +30,10 @@ layeredimage akasyah:
         attribute full_angry "assets/sprite/Akasyah/akasyah_full_angry.png"
         attribute full_hurt "assets/sprite/Akasyah/akasyah_full_hurt.png"
 
+image axia_n_sequence = "assets/sprite/Axia/axia_main_cute.png"
+image axia_b_sequence = "assets/sprite/Axia/axia_main_loli.png"
+
+
 layeredimage axia:
 
     group expression:

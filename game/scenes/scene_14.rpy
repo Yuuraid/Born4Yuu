@@ -100,7 +100,7 @@ label scene_14:
     scene pe dash blue with Flash
     show layer master at shake
     
-    nd_narrator_brown "Belum sempat menyelesaikan bicaranya, Seiya mendengar suara yang sangat keras mengarah padanya.{w=3.0}{nw}"
+    nd_narrator_black "Belum sempat menyelesaikan bicaranya, Seiya mendengar suara yang sangat keras mengarah padanya.{w=3.0}{nw}"
     
     scene cg_arc_3_scene_14_shoot_2:
         xalign 0.7
@@ -229,7 +229,7 @@ label scene_14:
     
     # TODO: I want this to be behind seiya
     show yuura behind seiya at consumed_by_darkness
-    show pe purple_flame flame_full behind seiya at custom_sprite_pos(x=-2.0, y=0.5), silhouette
+    show pe purple_flame flame_full behind seiya at custom_sprite_pos(x=-2.0, y=0.5), silhouette with wipe_j_atas(0.2)
     pause 0.2
     hide pe purple_flame flame_full with dissolve
     
