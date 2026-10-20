@@ -122,3 +122,28 @@ label evolve_sequence_:
     "Congratulations! Your hiu evolved into shark!"
 
     return
+
+transform white_flicker:
+    # Flash on
+    alpha 1.0
+    pause 0.1
+    # Flash off
+    alpha 0.0
+    pause 0.1
+    # Repeat the flicker 3 times (or as many as you like)
+    repeat 3
+    # End fully visible (or hidden depending on what you want)
+    alpha 1.0
+
+screen lp_display(player, x_align=0.95, y_align=0.05):
+    frame:
+        xalign x_align
+        yalign y_align
+        padding (20, 10)
+        background "#ffffff00"
+
+        hbox:
+            # spacing 10
+            # text "": 
+            # color "#ffaa00" size 30 bold True
+            add DynamicDisplayable(player.display_func)
