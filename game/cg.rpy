@@ -25,3 +25,13 @@ image cg_arc_3_scene_15_shoot_05 = "assets/cg/cg_arc_3_scene_15_shoot_05.png"
 image cg_arc_3_scene_15_shoot_04 = "assets/cg/cg_arc_3_scene_15_shoot_04.png"
 image cg_arc_3_scene_15_shoot_03 = "assets/cg/cg_arc_3_scene_15_shoot_03.png"
 image cg_arc_3_scene_15_shoot_02 = "assets/cg/cg_arc_3_scene_15_shoot_02.png"
+
+image cg_arc_3_scene_16_cekik_shoot_01 = "assets/cg/cg_arc_3_scene_16_cekik_shoot_01.png"
+image cg_arc_3_scene_16_cekik_shoot_02 = "assets/cg/cg_arc_3_scene_16_cekik_shoot_02.png"
+image cg_arc_3_scene_16_cekik_shoot_03 = "assets/cg/cg_arc_3_scene_16_cekik_shoot_03.png"
+image cg_arc_3_scene_16_cekik_shoot_04 = "assets/cg/cg_arc_3_scene_16_cekik_shoot_04.png"
+
+image cg_arc_3_scene_16_aer_cg = "assets/cg/cg_arc_3_scene_16_aer_cg.png"
+
+image cg_arc_3_scene_16_aer_aura_01 = "assets/cg/cg_arc_3_scene_16_aer_aura_01.png"
+image cg_arc_3_scene_16_aer_aura_02 = "assets/cg/cg_arc_3_scene_16_aer_aura_02.png"

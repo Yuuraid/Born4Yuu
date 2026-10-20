@@ -2,19 +2,25 @@
 
 label scene_16:
 
-    scene inn halaman with Dissolve(1.0)
+    scene inn halaman
+    show aergia netral at idle, right
+    with Dissolve(1.0)
+
+    show yuura scared at face_flip, idle, left with easeinleft
+
         # show halaman belakang penginapan 
     nd_narrator_brown "Setelah keluar dari pintu dan berjalan beberapa langkah, langkahku terhenti. Tepat berada dihadapanku, Aergia berdiri dengan raut wajah yang tak dapat ku mengerti."
     
         # play music judgment.mp3
 
-    show aergia netral at right, speaking
+    show aergia netral at speaking
     voice voice_3_16_366_aergia
     nd_aergia_brown "Ahahaha kebetulan banget ketemu lu disini Yuur.. ah… eh... sorry gw tau lu tuh ga nyaman kan sama gw sorry ya"
+    show aergia at idle
     
-    show yuura scared at left, speaking
+    show yuura scared at speaking, face_flip
     nd_yuura_brown "Apa maksu-"
-    show yuura at idle
+    show yuura at idle, face_flip
 
     show aergia furious at speaking
     show aergia at shake
@@ -35,7 +41,7 @@ label scene_16:
     show aergia at speaking
     voice voice_3_16_370_aergia
     nd_aergia_brown "CUKUP ! LU TU SIAPA !?"
-    show aergia at idle
+    show aergia at center, idle with ease
 
     nd_narrator_brown "Aergia mulai berjalan perlahan ke arahku. Aku ingin membantah pernyataan tersebut, tapi mulutku terbungkam ketika melihat energi-energi hitam mulai muncul di sekitarnya."
     
@@ -52,16 +58,19 @@ label scene_16:
     nd_aergia_brown "Yuura bakal peduli sama semua orang yang ada disini !"
     show aergia at idle
     
-    show yuura at speaking
+    show yuura at speaking, face_flip
     nd_yuura_brown "Aku buka-"
-    show yuura at idle
+    show yuura at idle, face_flip
 
         # play music elegant boss.m4a
         
     show aergia at speaking
     voice voice_3_16_375_aergia
     nd_aergia_brown "ARGGHHH BACOT !"
-    
+
+    show layer master at looping_shake 
+    with wipe_j_atas(0.2)
+
     voice voice_3_16_376_aergia
     nd_aergia_brown "LU TUH BUKAN SIAPA-SIAPA ! LU BUKAN YUURA !"
     show aergia at idle
@@ -70,23 +79,29 @@ label scene_16:
     
         # play sound barang-barang pecah dan hancur
             
-    show yuura at speaking
+    show yuura at face_flip, speaking
     nd_yuura_brown "(Sial ! kalau terus begini, aku akan terjebak bersama orang aneh ini...)"
     
     nd_yuura_brown "(Aku harus kabur !)"
-    show yuura at idle
+    show yuura at idle, custom_sprite_pos(x=-0.3) with ease
 
         # play sound berpindah
         
     show aergia at speaking
     voice voice_3_16_378_aergia
     nd_aergia_brown "Mau ke mana lu ha ??"
-    show aergia at idle
+    show aergia at idle, custom_sprite_pos(x=0.1) with ease
+
+    scene cg_arc_3_scene_16_cekik_shoot_01 with wipe_j_atas(0.2)
+    pause 0.2
+    scene cg_arc_3_scene_16_cekik_shoot_02 with wipe_j_bawah(0.2)
 
     # TODO: there a CG here
 
-    nd_narrator_brown "Aergia mengarahkan tangan dan mencengkram."
+    nd_narrator_brown "Aergia mengarahkan tangan dan mencengkram.{nw}"
     
+    scene cg_arc_3_scene_16_cekik_shoot_03 at looping_shake with wipe_j_atas(0.2) 
+
     nd_narrator_brown "Yuura tersentak akibat tercekik."
     
         # There CG here
@@ -96,51 +111,62 @@ label scene_16:
     # nd_aergia_brown "JAWAB ! DIMANA YUURA !?"
     # show aergia at idle
     
-    show yuura hurt at speaking
-    nd_yuura_brown "Aku... Yuura..."
-    show yuura at idle
+    scene cg_arc_3_scene_16_cekik_shoot_04 at looping_shake with wipe_j_atas(0.2)
 
-    show aergia at speaking
+    # show yuura hurt at speaking
+    nd_yuura_brown "Aku... Yuura..."
+    # show yuura at idle
+
+    # show aergia at speaking
     voice voice_3_16_381_aergia
     nd_aergia_brown "AH BANGSAT! DIMANA YUURA? YUURA YANG ASLI! DIMANA!"
     
     # nd_aergia_brown "DIMANA YUURA !?"
     # show aergia at idle
 
+    scene cg_arc_3_scene_16_cekik_shoot_02 at looping_shake with wipe_j_atas(0.2)
+
     nd_narrator_brown "Aergia mencengkram leherku lebih kuat, membuat nafasku terputus saat itu juga. Kakiku menendang-nendang di udara, berusaha untuk lari. Namun itu sia-sia,"
     
-    nd_narrator_brown "pandanganku mulai kabur..."
+    scene black with eye_close
+
+    nd_narrator_black "pandanganku mulai kabur..."
     
         # fx blur
         
     # show aergia at speaking
     # nd_aergia_brown "Tch"
     voice voice_3_16_382_aergia
-    nd_aergia_brown "Ahhh ehh e sorry, ngapain gua gtu ke lu?\nGua tau lu salah tapi kan..."
+    nd_aergia_black "Ahhh ehh e sorry, ngapain gua gtu ke lu?\nGua tau lu salah tapi kan..."
     
     voice voice_3_16_383_aergia
-    nd_aergia_brown "ARGHHH TAPI INI DEMI SI YUURAAAA"
+    nd_aergia_black "ARGHHH TAPI INI DEMI SI YUURAAAA"
     show aergia at idle
 
-    nd_narrator_brown "Aergia mengangkat sedikit dan membanting Yuura ke gudang."
+    scene inn gudang outside with dissolve
+    show yuura sad at face_flip, ease_custom(offscreenright, offscreenleft, 0.5)
+    pause 0.5
+    scene black with fade
+    with hpunch 
+    nd_narrator_black "Aergia mengangkat sedikit dan membanting Yuura ke gudang."
     
         # fx stop blur
     # show gudang with shake
         # play sound kayu patah
-    nd_narrator_brown "Setelah mencekikku dengan kuat, kini ia menghantamkan diriku ke tanah secara biadab. Sekujur tubuhku kesakitan, belum lagi debu-debu yang berterbangan di sekitarku."
+    nd_narrator_black "Setelah mencekikku dengan kuat, kini ia menghantamkan diriku ke tanah secara biadab. Sekujur tubuhku kesakitan, belum lagi debu-debu yang berterbangan di sekitarku."
     
-    nd_narrator_brown "Tapi ini belum berakhir, Aergia perlahan berjalan ke arahku, aura di sekitarnya semakin menguat. Aku ingin lari... Tapi tubuhku sudah terlalu lemah untuk itu..."
+    nd_narrator_black "Tapi ini belum berakhir, Aergia perlahan berjalan ke arahku, aura di sekitarnya semakin menguat. Aku ingin lari... Tapi tubuhku sudah terlalu lemah untuk itu..."
     
     show aergia at speaking
     voice voice_3_16_384_aergia
-    nd_aergia_brown "BALIKIN YUURA YG GUA KENAL SEKARANG JUGA !"
+    nd_aergia_black "BALIKIN YUURA YG GUA KENAL SEKARANG JUGA !"
     show aergia at idle
 
         # aergia memukul Yuura
             
     show yuura at speaking
     show yuura at shake
-    nd_yuura_brown "KHAKK..."
+    nd_yuura_black "KHAKK..."
     show yuura at idle
 
     # scene black with fade
@@ -209,9 +235,9 @@ label scene_16:
         flip_image
     with wipe_kanan(.15)
 
-    pause
+    # pause
 
-    nd_narrator_brown "Aergia mulai melancarkan pukulan ke arahku, dengan tenaga yang tersisa, aku mengangkat kedua lenganku, menjadikan mereka sebagai bentuk pertahanan terakhir."
+    nd_narrator_black "Aergia mulai melancarkan pukulan ke arahku, dengan tenaga yang tersisa, aku mengangkat kedua lenganku, menjadikan mereka sebagai bentuk pertahanan terakhir."
 
     scene black with fade
 
@@ -257,13 +283,13 @@ label scene_16:
         zoom 1
     with wipe_atas(.15)
     
-    nd_narrator_brown "Pukulan demi pukulan dilancarkan olehnya, makin lama pukulannya makin cepat dan lebih menyakitkan, aku hanya bisa menerima pukulan, aku sudah tidak ada kekuatan untuk melawan balik..."
+    nd_narrator_black "Pukulan demi pukulan dilancarkan olehnya, makin lama pukulannya makin cepat dan lebih menyakitkan, aku hanya bisa menerima pukulan, aku sudah tidak ada kekuatan untuk melawan balik..."
     
     # stop music
     scene black with fade
 
     voice voice_3_16_386_aergia
-    nd_aergia_brown "Balikin ga ? BALIKIN !"
+    nd_aergia_black "Balikin ga ? BALIKIN !"
 
     show pe punch purple transparent as p9:
         rotate 0
@@ -283,21 +309,21 @@ label scene_16:
     with wipe_kanan(.15)
     # play sound sweeping blow
 
-    nd_narrator_brown "Tinju itu, nampaknya akan segera menghantam wajah ku..."
+    nd_narrator_black "Tinju itu, nampaknya akan segera menghantam wajah ku..."
 
     scene black with fade
 
-    nd_narrator_brown "Seberharga itukah Yuura di mata mereka... Sialan... Kenapa ini selalu terjadi padaku..."
+    nd_narrator_black "Seberharga itukah Yuura di mata mereka... Sialan... Kenapa ini selalu terjadi padaku..."
     
     # play music trigger
     # show dawam angry at silhouette
     # with dissolve
     voice voice_3_16_387_dawam
-    nd_unknown_brown "Hal yang kau perbuat itu sungguh menjijikan."
+    nd_unknown_black "Hal yang kau perbuat itu sungguh menjijikan."
     
-    nd_narrator_brown "Tiba-tiba seseorang melayangkan tendangan ke arah Aergia."
+    nd_narrator_black "Tiba-tiba seseorang melayangkan tendangan ke arah Aergia."
     
-    nd_narrator_brown "Aergia dengan sigap mundur menghindari tendangan orang itu."
+    nd_narrator_black "Aergia dengan sigap mundur menghindari tendangan orang itu."
     
     show aergia hurt at center, zorder 2
     with dissolve
@@ -308,7 +334,7 @@ label scene_16:
     with dissolve
     pause .5
     voice voice_3_16_388_aergia
-    nd_aergia_brown "AHHH BACOT emangnya lu tau apa hah ?!"
+    nd_aergia_black "AHHH BACOT emangnya lu tau apa hah ?!"
     show aergia at idle
 
     image white = Solid("#ffffff")
@@ -361,18 +387,18 @@ label scene_16:
     
     show aergia at speaking
     voice voice_3_16_393_aergia
-    nd_aergia_brown "Hahaha kenapa kalian lagi, kalian lagi hahaha."
+    nd_aergia_black "Hahaha kenapa kalian lagi, kalian lagi hahaha."
     
     voice voice_3_16_394_aergia
-    nd_aergia_brown "Udah sering lupain gua sekarang kalian malah lindungun ni orang ha ?!"
+    nd_aergia_black "Udah sering lupain gua sekarang kalian malah lindungun ni orang ha ?!"
     show aergia at idle
             
     show dawam at speaking
     voice voice_3_16_396_dawam
-    nd_dawam_brown "Itu bukan urusanku, misi ku di sini hanya karena Tuan Muda Risol FRB."
+    nd_dawam_black "Itu bukan urusanku, misi ku di sini hanya karena Tuan Muda Risol FRB."
     
     voice voice_3_16_397_dawam
-    nd_dawam_brown "Yang terpenting adalah... Selesaikan perintah... Tanpa adanya kesalahan."
+    nd_dawam_black "Yang terpenting adalah... Selesaikan perintah... Tanpa adanya kesalahan."
     show dawam at idle
     
     scene inn gudang outside 
@@ -403,7 +429,7 @@ label scene_16:
     show aergia:
         ease .15 left 
         shake
-    pause 
+    # pause 
     # There are CG here
     nd_narrator_brown "Dawam langsung berpindah dengan cepat dan segera melayangkan tendangan ke arah Aergia yang membuatnya terdorong beberapa meter meski tidak melukainya."
 
@@ -420,9 +446,9 @@ label scene_16:
     show pe punch yellow 0 transparent:
         center rotate 45 yoffset 500
     with wipe_kiri(.15)
-    nd_narrator_brown "Tapi tak berhenti disana, Dawam sudah berada di depannya ketika kepulan debu memudar dan segera memberikan uppercut padanya yang membuatnya terpental."
+    nd_narrator_black "Tapi tak berhenti disana, Dawam sudah berada di depannya ketika kepulan debu memudar dan segera memberikan uppercut padanya yang membuatnya terpental."
     
-    nd_narrator_brown "Meski begitu, serangan itu nampaknya malah jadi pemicu bagi Aergia, energi di sekitarnya makin menjadi-jadi, terlebih lagi ia melayang yang di mana hal itu mungkin dapat mempengaruhi Dawam."
+    # Dawam appear
 
     transform matrix_sketch:
         matrixcolor InvertMatrix(1.0) * SaturationMatrix(0.0) * TintMatrix("#d0d8d0") * ContrastMatrix(1.0)
@@ -437,13 +463,46 @@ label scene_16:
     show inn gudang outside at matrix_sketch 
     with circleirisout
 
+    pause 0.2
+
+    scene white with Flash
+
+    pause 0.5
+
+    show cg_arc_3_scene_16_aer_aura_01:
+        xalign 0.5
+        yalign 1.0
+        zoom 2.0
+        ease 4.0 yalign 0.4
+
+    show layer master at looping_shake
+
+    nd_narrator_brown "Meski begitu, serangan itu nampaknya malah jadi pemicu bagi Aergia, energi di sekitarnya makin menjadi-jadi, terlebih lagi ia melayang yang di mana hal itu mungkin dapat mempengaruhi Dawam."
+
+
     show aergia at speaking
     voice voice_3_16_398_aergia
-    nd_aergia_brown "Kenapa... Kenapa !!! KENAPA !?"
+    nd_aergia_brown "Kenapa... Kenapa !!! KENAPA !? {nw}"
     
+    show cg_arc_3_scene_16_aer_aura_02:
+        xalign 0.5
+        yalign 0.4
+        zoom 2.0
+    with dissolve
+
     voice voice_3_16_399_aergia
-    nd_aergia_brown "Gua tahu bahwa gua ga pantes disini ! TAPI KENAPA !"
+    nd_aergia_brown "Gua tahu bahwa gua ga pantes disini ! TAPI KENAPA ! "
     
+    show cg_arc_3_scene_16_aer_aura_02:
+        xalign 0.5
+        yalign 0.4
+        zoom 2.0
+        ease 3.0 zoom 0.5 xalign 0.5 yalign 0.5
+        # xalign 0.5
+        # yalign 0.5
+        # zoom 0.5
+    # with ease
+
     voice voice_3_16_400_aergia
     nd_aergia_brown "ARGHHH MATI LU SEMUA !!!"
     show aergia at idle
@@ -491,13 +550,13 @@ label scene_16:
     with Dissolve(.15)
     pause .5
     nd_narrator_brown "Serangan proyektil hitam mulai bertebaran mengarah langsung ke Dawam."
-    scene pe dash negative_blue
+    # scene pe dash negative_blue
     pause .5
     # zoom + rotate nya masih blm bisa
     camera:
         truecenter
         ease 1.0 zoom 1.34 rotate 12 
-    pause
+    # pause
     
     scene black with dissolve
     camera:
@@ -521,9 +580,9 @@ label scene_16:
     show pe punch yellow transparent as p13:
         truecenter zoom 1 rotate 150 xoffset -400 
     with wipe_atas(.15)
-    pause
+    # pause
 
-    nd_narrator_brown "Meski demikian, Dawam menerjang ke arah proyektil-proyektil tersebut sembari menepis beberapa dari proyektil itu..."
+    nd_narrator_black "Meski demikian, Dawam menerjang ke arah proyektil-proyektil tersebut sembari menepis beberapa dari proyektil itu..."
     scene inn gudang outside
     with Dissolve(.25)
     camera:
@@ -721,10 +780,10 @@ label scene_16:
     camera:
         truecenter zoom 1.0
     voice voice_3_16_401_dawam
-    nd_dawam_brown "Dasar lalat pengganggu !"
+    nd_dawam_black "Dasar lalat pengganggu !"
     
     voice voice_3_16_402_aergia
-    nd_aergia_brown "Hahaha, iya lalat. ya ya lalat ya \niya... TERUS KENAPA KALAU GW LALAT HAH!!."
+    nd_aergia_black "Hahaha, iya lalat. ya ya lalat ya \niya... TERUS KENAPA KALAU GW LALAT HAH!!."
 
     # CG here
     show pe punch yellow 0 transparent as b1:
@@ -739,7 +798,7 @@ label scene_16:
         flip_image
     with wipe_bawah(.15)
 
-    nd_narrator_brown "Dawam menghantamkan kedua tangannya ke arah Aergia"
+    nd_narrator_black "Dawam menghantamkan kedua tangannya ke arah Aergia"
     scene pe dash blue:
         zoom 1.0
         truecenter 
@@ -847,7 +906,7 @@ label scene_16:
         linear .5 yoffset 0
     pause .1
     hide dawam with dissolve
-    pause .5
+    pause .2
     show pe purple_flame flame_front as f1:
         zoom .75 yoffset 160 xoffset 1000
     show pe purple_flame flame_behind as f2:
@@ -866,7 +925,7 @@ label scene_16:
         zoom .75 yoffset 160 xoffset -500
     show pe purple_flame flame_behind as f9:
         zoom .75 yoffset 160 xoffset -250
-    with Dissolve(.5)
+    with Dissolve(.2)
     nd_narrator_brown "Semburan api ungu yang keluar dari tanah dengan kuatnya diikuti semburan-semburan api lainnya, memaksa Dawam untuk berpindah."
     
     scene pe dash blue:
@@ -874,11 +933,11 @@ label scene_16:
         zoom 1.0
         ease .5 zoom 1.6 rotate -20
 
-    pause 1.5
+    pause 0.5
     scene black:
         truecenter
         zoom 1.0
-    pause
+    # pause
     show pe punch purple transparent as d1:
         truecenter zoom .65 rotate 270 xoffset -200 yoffset -100
     show pe punch purple transparent as d2:
@@ -894,7 +953,7 @@ label scene_16:
         truecenter
     with wipe_kiri(.25)
 
-    nd_narrator_brown "Belum sempat menyentuh tanah, Aergia muncul dari kepulan debu, memberikan pukulan telak yang segera ditahan oleh Dawam dengan kedua lengannya sebelum terpental beberapa kaki dari tempat ia pertama kali mendarat."
+    nd_narrator_black "Belum sempat menyentuh tanah, Aergia muncul dari kepulan debu, memberikan pukulan telak yang segera ditahan oleh Dawam dengan kedua lengannya sebelum terpental beberapa kaki dari tempat ia pertama kali mendarat."
     
     # TODO: marker do switch place
 
@@ -908,7 +967,7 @@ label scene_16:
         truecenter 
         flip_image
         zoom 1.75 xoffset -720 yoffset -405
-    with wipe_kanan(1.0)
+    with wipe_j_bawah(1.0)
 
     pause 1.0
 
@@ -925,9 +984,9 @@ label scene_16:
         truecenter
         flip_image rotate 22 yoffset -200
 
-    pause
+    # pause
 
-    nd_narrator_brown "Sebelum sempat mengenai tubuhnya, Dawam menepuk kedua tangannya, menghasilkan gelombang angin yang sanggup memecah pusaran energi."
+    nd_narrator_black "Sebelum sempat mengenai tubuhnya, Dawam menepuk kedua tangannya, menghasilkan gelombang angin yang sanggup memecah pusaran energi."
 
     # scene pe red_blast full_CG at flip_image
     # with Dissolve(1.0)
@@ -948,7 +1007,7 @@ label scene_16:
 
     show aergia at speaking
     voice voice_3_16_403_aergia
-    nd_aergia_brown "BAJINGAN ! Berhenti ganggu gw sat !"
+    nd_aergia_black "BAJINGAN ! Berhenti ganggu gw sat !"
     show aergia at idle
 
     scene inn gudang outside:
@@ -1085,27 +1144,40 @@ label scene_16:
         flip_image
     with wipe_kanan(.15)
 
-    nd_narrator_brown "Dengan seluruh kekuatannya, Aergia menembakkan beberapa energi pekat dengan kecepatan yang tidak terduga . meski dengan usaha Dawam untuk menangkisnya, sebuah tembakan tetap melesat tepat ke ulu hati Dawam yang membuatnya sontak terkejut akibat serangan tersebut. "
+    nd_narrator_black "Dengan seluruh kekuatannya, Aergia menembakkan beberapa energi pekat dengan kecepatan yang tidak terduga . meski dengan usaha Dawam untuk menangkisnya, sebuah tembakan tetap melesat tepat ke ulu hati Dawam yang membuatnya sontak terkejut akibat serangan tersebut. "
     
-    nd_narrator_brown "Tak berhenti di sana, gundukan tanah kedua melesat tepat ke arah dagu Dawam yang membuat dia terpental jauh saking kuatnya."
+    nd_narrator_black "Tak berhenti di sana, gundukan tanah kedua melesat tepat ke arah dagu Dawam yang membuat dia terpental jauh saking kuatnya."
     
-    nd_narrator_brown "Aergia berjalan dengan sebuah bola energi yang berputar di telapak tangannya,"
+    scene black with fade
+
+    show cg_arc_3_scene_16_aer_cg:
+        xalign 0.3
+        yalign 0.5
+        zoom 0.9
+        alpha 0.0
+        ease 3.0 alpha 1.0
+        ease 4.0 zoom 0.5 xalign 0.5 yalign 0.5
+    show layer master at looping_shake
+
+    nd_narrator_black "Aergia berjalan dengan sebuah bola energi yang berputar di telapak tangannya,"
     
-    nd_narrator_brown "ketika debu-debu di tempat jatuhnya Dawam memudar, tampak Dawam terduduk sembari tersenyum dengan darah segar yang mengalir dari mulutnya."
+    nd_narrator_black "ketika debu-debu di tempat jatuhnya Dawam memudar, tampak Dawam terduduk sembari tersenyum dengan darah segar yang mengalir dari mulutnya."
     
     show aergia at speaking
     # nd_aergia_brown "Tch"
     
     voice voice_3_16_407_aergia
-    nd_aergia_brown "Haa... Udahlah, nyerah aja. Lagian buat apa sih bangkit bangkit terus kalau endingnya terus sama kayak gini terus ha?! Udahlah."
+    nd_aergia_black "Haa... Udahlah, nyerah aja. Lagian buat apa sih bangkit bangkit terus kalau endingnya terus sama kayak gini terus ha?! Udahlah."
     show aergia at idle
 
-    nd_narrator_brown "Dawam berdiri sembari menyeka luka di wajah."
+    scene black with dissolve
+
+    nd_narrator_black "Dawam berdiri sembari menyeka luka di wajah."
                 
-    show dawam at speaking
+    # show dawam at speaking
     voice voice_3_16_409_dawam
-    nd_dawam_brown "Waruni na... Tapi kali ini kupastikan lebih menyenangkan!"
-    show dawam at idle
+    nd_dawam_black "Waruni na... Tapi kali ini kupastikan lebih menyenangkan!"
+    # show dawam at idle
     
     # play sound kretek tangan
     # stop music

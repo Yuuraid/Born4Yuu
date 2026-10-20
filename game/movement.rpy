@@ -79,3 +79,12 @@ transform custom_sprite_pos(x=0.5, y=1.0, offset=0):
     xalign x
     yalign y
     xoffset offset
+
+transform camera_reset:
+    pos (0, 0)
+    zpos 0
+    rotate 0
+    xzoom 1.0
+    yzoom 1.0
+    zoom 1.0
+    matrixoffset (0, 0, 0) # or matrixtransform RotateMatrix(0, 0, 0)
