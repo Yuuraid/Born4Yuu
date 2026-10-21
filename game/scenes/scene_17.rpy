@@ -2,10 +2,14 @@
 
 label scene_17:
 
-    scene inn ruang_tamu_1
-    with Dissolve(1.0)
+    stop music
+
+    scene inn ruang_tamu_1 
+    show yuura hurt at left, idle
+    show pria netral at right, idle
+    with eye_open
     # play music pria asing
-    
+
     nd_narrator_brown "Sementara itu di tempat yang tidak diketahui, aku terbangun tepat di hadapan seseorang yang pernah kutemui di dalam hutan."
     show yuura hurt at left, speaking
     nd_yuura_brown "Di mana aku ? Kenapa aku di sini ?"
@@ -18,6 +22,10 @@ label scene_17:
     voice voice_3_17_412_pria_misterius
     nd_pria_brown "Selamat datang kembali di rumah."
     show pria at idle
+
+    show yuura at face_flip
+    pause 0.2
+    show yuura at custom_sprite_pos(x=-0.2) with ease
 
     nd_narrator_brown "Aku mundur beberapa langkah setelah mendengar suara itu."
 
@@ -82,6 +90,8 @@ label scene_17:
     nd_pria_brown "Sekarang giliranmu, Aneeki."
     show pria at idle
 
+    show layer master at shake
+
     nd_narrator_brown "Yuura menyemburkan teh yang baru ia teguk."
     
     nd_narrator_brown "..."
@@ -94,6 +104,10 @@ label scene_17:
     voice voice_3_17_428_pria_misterius
     nd_pria_brown "Hahahaha… tidak terduga bukan?"
     show pria at idle
+
+    show white
+    pause 0.2
+    hide white with dissolve
 
     nd_narrator_brown "Pria itu menjentikkan jari nya dan seketika sisa-sisa teh yang ada di tubuhnya lenyap seperti tak terjadi apa-apa."
 
@@ -127,6 +141,11 @@ label scene_17:
             nd_pria_brown "Tidak apa, biar aku tunjukkan sesuatu untukmu."
             show pria at idle
             
+            scene whiteroom 
+            show yuura netral at custom_sprite_pos(x=-0.2), idle, face_flip
+            show pria netral at right, idle
+            with Flash
+
             nd_narrator_brown "Pria itu menjentikkan jarinya dan membuat kami langsung berpindah menuju sebuah ruangan putih yang tak aku kenali sama sekali."
             # play sound zupp
             # show ruang putih
@@ -169,23 +188,52 @@ label scene_17:
             show pria at speaking
             voice voice_3_17_460_pria_misterius
             nd_pria_brown "Hahaha memang dirimu tidak pernah berubah ya, Aneeki."
-            
+
+            $ renpy.sound.set_volume(0.0, channel="memories")
+
             voice voice_3_17_461_pria_misterius
             nd_pria_brown "Selalu saja terburu-buru, apalagi soal sake"
-            
+
+            show vid_memory_mabok behind yuura:
+                blur 25
+            with Dissolve(2.0)
+
+            $ renpy.sound.set_volume(0.0, channel="memories")
+
             voice voice_3_17_462_pria_misterius
             nd_pria_brown "Apa kamu ingat ? Ketika hari itu kamu pulang dengan satu buah box berisi sake ?"
-            show pria at idle
+            # show pria at idle
             
-            nd_narrator_brown "Tiba-tiba saja muncul penglihatan di ruangan putih itu mengenai kenangan ketika aku berpesta dengan mereka. Canda dan tawa terdengar jelas di telingaku, seakan-akan aku masuk ke dalamnya."
+            # nd_narrator_brown "Tiba-tiba saja muncul penglihatan di ruangan putih itu mengenai kenangan ketika aku berpesta dengan mereka. Canda dan tawa terdengar jelas di telingaku, seakan-akan aku masuk ke dalamnya."
+
+            hide vid_memory_mabok with Dissolve(2.0)
+            show vid_memory_singging behind yuura:
+                blur 25
+            with Dissolve(2.0)
+
+            $ renpy.sound.set_volume(0.0, channel="memories")
 
             show pria at speaking
             voice voice_3_17_463_pria_misterius
             nd_pria_brown "Kita bernyanyi dari pagi, tanpa memikirkan apakah besok kita punya kegiatan atau tidak."
             
+            hide vid_memory_singging with Dissolve(2.0)
+            show vid_memory_sake behind yuura:
+                blur 25
+            with Dissolve(2.0)
+
+            $ renpy.sound.set_volume(0.0, channel="memories")
+
             voice voice_3_17_464_pria_misterius
             nd_pria_brown "Kamu bahkan yang paling lantang dalam mengajak kami semua minum."
             
+            hide vid_memory_sake with Dissolve(2.0)
+            show vid_memory_people_laugh behind yuura:
+                blur 25
+            with Dissolve(2.0)
+
+            $ renpy.sound.set_volume(0.0, channel="memories")
+
             voice voice_3_17_465_pria_misterius
             nd_pria_brown "Rasanya sangat menyenangkan bukan ? Melihat mereka tertawa dan tersenyum."
             show pria at idle
@@ -193,6 +241,8 @@ label scene_17:
             show yuura at speaking
             nd_yuura_brown "Aku... Tidak mengerti..."
             show yuura at idle
+
+            hide vid_memory_people_laugh with Dissolve(0.5)
             
             show pria at speaking
             voice voice_3_17_467_pria_misterius
@@ -215,6 +265,12 @@ label scene_17:
             voice voice_3_17_472_pria_misterius
             nd_pria_brown "Bagaimana jika kita lanjut saja?"
             show pria at idle
+
+            show vid_memory_reading behind yuura:
+                blur 25
+            with Dissolve(2.0)
+
+            $ renpy.sound.set_volume(0.0, channel="memories")
             # CG here
             nd_narrator_brown "Pria itu menampilkan sebuah momen ketika aku membacakan sebuah cerita pada mereka, pembawaanku yang tadinya kasar dan beringas menjadi sangat lembut."
             
@@ -241,6 +297,8 @@ label scene_17:
             show yuura at speaking
             nd_yuura_brown "Bisakah kita berhenti ?"
             show yuura at idle
+
+            hide vid_memory_reading with Dissolve(0.5)
             
             show pria at speaking
             voice voice_3_17_479_pria_misterius
@@ -265,16 +323,43 @@ label scene_17:
             nd_yuura_brown "Apa maksudmu ?"
             show yuura at idle
 
+            show vid_memory_hutang behind yuura:
+                blur 25
+            with Dissolve(2.0)
+
+            $ renpy.sound.set_volume(0.0, channel="memories")
+
             show pria at speaking
             voice voice_3_17_484_pria_misterius
             nd_pria_brown "Yuura yang belum melunasi hutangnya ?"
             
+            hide vid_memory_hutang with Dissolve(2.0)
+            show vid_memory_senyum behind yuura:
+                blur 25
+            with Dissolve(2.0)
+
+            $ renpy.sound.set_volume(0.0, channel="memories")
+
             voice voice_3_17_485_pria_misterius
             nd_pria_brown "Atau Yuura yang akan selalu tersenyum untuk kami ?"
             
+            hide vid_memory_senyum with Dissolve(2.0)
+            show vid_memory_nyanyi behind yuura:
+                blur 25
+            with Dissolve(2.0)
+
+            $ renpy.sound.set_volume(0.0, channel="memories")
+
             voice voice_3_17_486_pria_misterius
             nd_pria_brown "Atau Yuura yang akan selalu bernyanyi bersama kami ?"
             
+            hide vid_memory_nyanyi with Dissolve(2.0)
+            show vid_memory_tertawa behind yuura:
+                blur 25
+            with Dissolve(2.0)
+
+            $ renpy.sound.set_volume(0.0, channel="memories")
+
             voice voice_3_17_487_pria_misterius
             nd_pria_brown "Atau Yuura yang akan selalu tertawa bersama kami ?"
             show pria at idle
@@ -282,6 +367,8 @@ label scene_17:
             show yuura at speaking
             nd_yuura_brown "Aku tidak mengerti apa yang kamu ingin sampaikan ?"
             
+            hide vid_memory_tertawa with Dissolve(0.5)
+
             nd_yuura_brown "Aku bukanlah Yuura yang kamu kenal ! Aku terlempar ke sini dan menjalani hari yang super berat."
             
             nd_yuura_brown "Apakah kita tidak bisa berhenti saja ?"
@@ -325,8 +412,15 @@ label scene_17:
             nd_pria_brown "Baiklah... Biar aku perlihatkan sesuatu untukmu."
             show pria at idle
             
+            show dark_overlay
+            show foto_bersama at pos(y=0.7, r=2), speaking with dissolve
+
             nd_narrator_brown "Pria itu memperlihatkan beberapa foto lainnya, di mana momen ketika semua orang merayakan ulang tahunku."
             
+            hide foto_bersama 
+            hide dark_overlay
+            with dissolve
+
             # nd_narrator_brown "Mereka terlihat dengan bersemangat membuat hal-hal diluar nalar, membuatku mempertanyakan mengapa mereka begitu peduli padaku ?" # using question mark?
             
             show pria at speaking
@@ -353,6 +447,8 @@ label scene_17:
             nd_pria_brown "Apa kamu kira dia sempurna sejak awal ?"
             show pria at idle
             
+            show pria at custom_sprite_pos(x=0.2) with ease
+
             nd_narrator_brown "Pria itu tersenyum, tangannya yang lembut mengelus pipiku dan menyeka air mataku."
             
             show pria at speaking
@@ -396,7 +492,13 @@ label scene_17:
             nd_pria_brown "Jadi jangan menangis... Tersenyumlah dan berbahagialah !" # kasih pause setelah jeda titik-titik?
             show pria at idle
             
+            show pria at face_flip with dissolve
+            pause 0.5
+            with Flash
+
             nd_narrator_brown "Pria itu menjentikkan jarinya, perlahan memperlihatkan dua buah pintu untukku."
+
+            show pria at center with ease
             
             show pria at speaking
             voice voice_3_17_514_pria_misterius
@@ -528,31 +630,50 @@ label scene_17:
                     nd_yuura_brown "Mengapa kalian melakukan semua ini hanya demi diriku ?"
                     
                     nd_yuura_brown "Maksudku... Ah ! Apasih..."
-                    show yuura at idle
+                    # show yuura at idle
                     
+                    scene cg_arc_3_scene_17_shoot_01 with Flash
+                    pause 0.5
+                    scene cg_arc_3_scene_17_shoot_02 with Flash
+                    pause 0.5
+                    scene cg_arc_3_scene_17_shoot_03 with Flash
+                    pause 0.5
+
                     # This have CG
                     nd_narrator_brown "Air mataku turun perlahan, tidak mengerti mengapa semuanya terjadi. Mengapa semua orang mengejarku dan mengapa ada orang yang ingin melindungiku. Aku sungguh tidak mengerti apa-apa."
                     
+                    scene cg_arc_3_scene_17_shoot_04 with dissolve
+
                     nd_narrator_brown "Sampai sekarang pun aku hanya melarikan diri, tanpa memahami apa-apa."
 
-                    show yuura at speaking
+                    scene cg_arc_3_scene_17_shoot_03 with dissolve
+                    # show yuura at speaking
                     nd_yuura_brown "Apa sih yang kalian lakukan..."
                     
                     nd_yuura_brown "Apa kalian tidak takut bahwa aku akan pergi meninggalkan kalian ?"
                     
                     nd_yuura_brown "Apa kalian tidak takut ketika aku berubah menjadi seseorang yang kalian tidak kenali ?"
                     
+                    with hpunch
+
                     nd_yuura_brown "KENAPA KALIAN MELAKUKAN INI ?"
                     
                     nd_yuura_brown "Kenapa kalian ga bisa melupakan diriku saja ? Kenapa kalian memaksaku, mengejarku bahkan berusaha menangkapku ?"
-                    show yuura at idle
+                    # show yuura at idle
                     
-                    show pria at speaking
+                    scene cg_arc_3_scene_17_shoot_04 with dissolve
+
+                    # show pria at speaking
                     voice voice_3_17_554_pria_misterius
                     nd_pria_brown "Jika kamu bertanya padaku."
                     
                     voice voice_3_17_555_pria_misterius
                     nd_pria_brown "Alasannya Sederhana, karena kamu Yuura" # kasih pause setelah jeda koma?
+
+                    scene whiteroom
+                    show yuura sad at left, idle, face_flip
+                    show pria netral at right, speaking
+                    with fade
                     
                     voice voice_3_17_556_pria_misterius
                     nd_pria_brown "Karena mereka peduli padamu, pada Yuura." # kasih pause setelah jeda koma?
@@ -618,12 +739,25 @@ label scene_17:
                     show pria at speaking
                     voice voice_3_17_572_pria_misterius
                     nd_pria_brown "Biar aku tunjukkan padamu."
-                    show pria at idle
+                    # show pria at idle
 
                     # stop music
                     # play misic credit scene
                     
-                    nd_narrator_brown "Pria itu menunjukkan sebuah video, di mana banyak hal yang terjadi."
+                    stop music
+                    scene vid_memory_pleaseework:
+                        xalign 0.5
+                        yalign 0.5
+                    with fade
+                    pause 250
+                    
+                    hide vid_memory_pleaseework
+                    scene whiteroom
+                    show yuura sad at left, idle, face_flip
+                    show pria netral at right, speaking
+                    with Flash
+
+                    # nd_narrator_brown "Pria itu menunjukkan sebuah video, di mana banyak hal yang terjadi."
                     
                     show pria at speaking
                     voice voice_3_17_573_pria_misterius
@@ -665,8 +799,10 @@ label scene_17:
                     
                     show yuura at speaking
                     nd_yuura_brown "Ya ! Terimakasih, Yuuraid."
-                    show yuura at idle
+                    # show yuura at idle
                     
+                    hide yuura with dissolve
+
                     nd_narrator_brown "Aku menghilang sepenuhnya dan kembali ke dunia nyata."
                     jump scene_18
         "Aku ingin pergi dari sini":

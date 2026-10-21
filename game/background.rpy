@@ -36,6 +36,24 @@ image whiteroom = "assets/bg/Whiteroom.png"
 image game_over = "assets/bg/Game_Over_Screen.png"
 image mading = "assets/bg/mading_after_1.webp"
 
+# Memories background
+image vid_memory_halloween = Movie(play="assets/videos/memories/halloween.webm", size=(1920, 1080), loop=True, channel="memories")
+image vid_memory_mabok = Movie(play="assets/videos/memories/mabok.webm", size=(1920, 1080), loop=True, channel="memories")
+image vid_memory_reading = Movie(play="assets/videos/memories/reading.webm", size=(1920, 1080), loop=True, channel="memories")
+image vid_memory_sake = Movie(play="assets/videos/memories/sake.webm", size=(1920, 1080), loop=True, channel="memories")
+image vid_memory_singging = Movie(play="assets/videos/memories/singging.webm", size=(1920, 1080), loop=True, channel="memories")
+image vid_memory_story = Movie(play="assets/videos/memories/story.webm", size=(1920, 1080), loop=True, channel="memories")
+image vid_memory_people_laugh = Movie(play="assets/videos/memories/people_laugh.webm", size=(1920, 1080), loop=True, channel="memories")
+image vid_memory_tertawa = Movie(play="assets/videos/memories/tertawa.webm", size=(1920, 1080), loop=True, channel="memories")
+image vid_memory_senyum = Movie(play="assets/videos/memories/senyum.webm", size=(1920, 1080), loop=True, channel="memories")
+image vid_memory_nyanyi = Movie(play="assets/videos/memories/nyanyi.webm", size=(1920, 1080), loop=True, channel="memories")
+image vid_memory_hutang = Movie(play="assets/videos/memories/hutang.webm", size=(1920, 1080), loop=True, channel="memories")
+image vid_memory_pleaseework = Movie(play="assets/videos/memories/pleaseework_2.webm", size=(1920, 1200))
+
+# tertawa.webm
+# senyum.webm
+# nyanyi.webm
+
 # Concentration transition
 image transition_screen black concentrationline01_w = Movie(play="assets/effects/video effects/black/concentrationline01_w.webm")
 image transition_screen black concentrationline01_b = Movie(play="assets/effects/video effects/black/concentrationline01_b.webm")
