@@ -16,19 +16,20 @@ label scene_2:
     show yuura scared eff_sweat_w at center, speaking with easeinright
 
     play sound sfx_ambience_angin_berhembus_sepoi_sepoi_scene18 loop
-    nd_yuura_black "*huft huft..."
-    stop sound
+    nd_yuura_brown "*huft huft..."
+    # stop sound
 
     show yuura at idle
 
-    nd_narrator_black "Aku berlari, melompat, dan melesat sambil menyusuri lorong ini. Terlihat dari dinding dan lantainya, jelas ini menggunakan kayu yang berkualitas."
+    nd_narrator_brown "Aku berlari, melompat, dan melesat sambil menyusuri lorong ini. Terlihat dari dinding dan lantainya, jelas ini menggunakan kayu yang berkualitas."
 
-    play sound sfx_ambience_heavy_wind_scene3 loop
-    nd_narrator_black "Meski begitu, tetap akan kujadikan dinding-dinding di lorong ini sebagai target dari Grappling ku."
-    stop sound
+    # play sound sfx_ambience_heavy_wind_scene3 loop
+    nd_narrator_brown "Meski begitu, tetap akan kujadikan dinding-dinding di lorong ini sebagai target dari Grappling ku."
+    # stop sound
 
     show yuura at speaking
-    nd_yuura_black "(Peduli apa aku dengan kerusakan di tempat ini)"
+    nd_yuura_brown "(Peduli apa aku dengan kerusakan di tempat ini)"
+    stop sound
     play sound sfx_action_grappling_gun_scene2
 
         # hide yuura normal animated
@@ -38,13 +39,17 @@ label scene_2:
 
     hide yuura with easeoutleft
 
-    nd_narrator_black "Pelarian ini tidaklah mulus, aku harus menghindari orang-orang yang berlalu lalang di lorong ini, belum lagi aku sempat menimpuk wajah seseorang yang berpakaian serba coklat dengan lututku."
+    nd_narrator_brown "Pelarian ini tidaklah mulus, aku harus menghindari orang-orang yang berlalu lalang di lorong ini, belum lagi aku sempat menimpuk wajah seseorang yang berpakaian serba coklat dengan lututku."
 
-    nd_narrator_black "Melesat ditempat sempit nan ramai ini membuatku kesulitan dalam melaju. Akhirnya setelah cukup panjang menyusuri lorong ini, aku melihat sebuah pintu yang dibuka di ujung sana. Nampaknya, itu adalah jalan keluar yang ku cari-cari"
+    nd_narrator_brown "Melesat ditempat sempit nan ramai ini membuatku kesulitan dalam melaju. Akhirnya setelah cukup panjang menyusuri lorong ini, aku melihat sebuah pintu yang dibuka di ujung sana. Nampaknya, itu adalah jalan keluar yang ku cari-cari"
     
         # show yuura normal animated at center
         # with Dissolve(2.0)
-    scene inn ruang_tamu_1 with fade
+    scene inn ruang_tamu_1
+    show josua netral behind yuura at left, silhouette, face_flip
+    show ibe netral behind yuura at right, silhouette
+    with fade
+
     show yuura netral at center, speaking with easeinright
     play sound sfx_action_fall_down_scene5_14
     nd_yuura_brown "Akhirnya..."

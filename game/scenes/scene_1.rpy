@@ -6,7 +6,7 @@ label scene_1:
     # $ quick_menu = True
     # play music start with fadein 1.0 -> define dulu
     # play sound "audio/sfx/knock_door.ogg"
-    play music bgm_scene1_start volume 0.75 loop
+    play music bgm_scene1_start volume 0.90 loop
     scene black
     nd_narrator_black "Aku mendengar suara berisik dari luar"
     
@@ -26,8 +26,19 @@ label scene_1:
         # show yuura normal animated at center
         # with moveinbottom
         # with nongol_dari_bawah # <-- blm jadi :""
+    camera:
+        zoom 2.0
+        xalign 0.3
+        yalign 0.3
+    
     show yuura netral eff_sleepy at jump_in_bottom(duration=2.0), speaking
     nd_yuura_brown "Iya iya... Hooam..." 
+
+    camera:
+        zoom 1.0
+        xalign 0.0
+        yalign 0.0
+    with dissolve
 
     show yuura netral at idle
     nd_narrator_brown "Aku terbangun dari tidurku,{w} duduk sebentar sebelum benar-benar beranjak dari dari kasurku."
@@ -51,6 +62,11 @@ label scene_1:
     
     show yuura scared at center, idle
     nd_narrator_brown "Dan benar saja" 
+
+    camera:
+        zoom 2.0
+        xalign 0.3
+        yalign 0.3
     
     $ renpy.music.set_pause(True, channel="music")
     play sound sfx_expression_shocked
@@ -61,80 +77,121 @@ label scene_1:
     show yuura netral eff_question_mark at center, speaking
     nd_yuura_brown "Kemarin aku salah masuk kamar apa gimana dah?{w} Kok bisa-bisanya kebangun di sini?"
     
-    show yuura netral none at center, idle
-    nd_narrator_brown "Aku meminggirkan selimut yang selama ini menutupi setengah badanku dan berdiri melihat sekitar."
+    scene black
+    camera:
+        zoom 1.0
+        xalign 0.0
+        yalign 0.0
+    with dissolve
+
+    # show yuura netral none at center, idle
+    nd_narrator_black "Aku meminggirkan selimut yang selama ini menutupi setengah badanku dan berdiri melihat sekitar."
     
-    nd_narrator_brown "Aku melihat cermin, cermin itu memantulkan rupaku yang sama persis sebelum aku tertidur karena kelelahan."
+    nd_narrator_black "Aku melihat cermin, cermin itu memantulkan rupaku yang sama persis sebelum aku tertidur karena kelelahan."
     
     show yuura netral at center, speaking
-    nd_yuura_brown "Nggak ada yang aneh sih..."
+    nd_yuura_black "Nggak ada yang aneh sih..."
     
-    show yuura netral at center, idle
-    nd_narrator_brown "Aku berjalan kecil, mengelilingi kamar nan asing ini yang entah kenapa.. terasa familiar bagiku."
+    hide yuura netral
+    show kamar_yuura_shoot_1:
+        xalign 1.0
+        ease 9.8 xalign 0.0
+    with dissolve
+    # show yuura netral at center, idle
+    nd_narrator_brown "Aku berjalan kecil, mengelilingi kamar nan asing ini yang entah kenapa.. terasa familiar bagiku.{w=5.0}{nw}"
     
-    nd_narrator_brown "Lukisan-lukisan aneh yang tergantung di dinding kamar, juga topeng topeng yang digantung di dinding membuat suasana agak seram"
+    # nd_narrator_brown "Lukisan-lukisan aneh yang tergantung di dinding kamar, juga topeng topeng yang digantung di dinding membuat suasana agak seram"
+
+    show kamar_yuura_shoot_3:
+        xalign 0.0
+        ease 10.55 xalign 1.0
+    with dissolve
+    nd_narrator_brown "Dekorasi jejepangan pun menghiasi dinding ruangan ini{w=5.0}{nw}"
     
-    nd_narrator_brown "belum lagi pencahayaan yang redup, Sepertinya kamar ini didesain untuk membuat sang pemilik susah untuk bangun."
+    show kamar_yuura_shoot_2:
+        zoom 1.3
+        ease 10.55 zoom 1.0
+    with dissolve
+    nd_narrator_brown "Belum lagi pencahayaan yang redup, Sepertinya kamar ini didesain untuk membuat sang pemilik susah untuk bangun.{w=5.0}{nw}"
         # play sound "audio/sfx/cubit_pipi.ogg"
     
-    play sound sfx_action_cubit_pipi_scene1
-    nd_narrator_brown "*Sfx cubit pipi"
-    
-    show yuura sad at center, shake, speaking
+    # play sound sfx_action_cubit_pipi_scene1
+    nd_narrator_brown "*Cubit pipi{w=1.0}{nw}"
+
+    # show yuura sad at center, shake, speaking
+    show layer master at shake
     nd_yuura_brown "Aduh..."
     
-    show yuura netral at center, idle
+    scene inn kamar_yuura morning
+    show yuura sad at center, idle, face_flip
+    with dissolve
+    
+    # show yuura netral at center, idle
     nd_narrator_brown "(Aku benar-benar udah kebangun nih.. Tapi kok bisa yah aku tidur disini !?...)"
     
+    show yuura at ease_custom(center, offscreenright, 2.0)
+
     nd_narrator_brown "Aku terus keliling melihat sekitar, mana tau menemukan hal menarik."
     
     nd_narrator_brown "Aku mendekati sebuah zirah yang terpajang gagah beserta pedang dengan sarungnya yang berwarna merah muda"
     
-    show yuura scared eff_sweat_w at center, speaking
+    
+    show yuura scared eff_sweat_w at center, speaking with easeinright
+    play sound sfx_expression_shocked
+    $ renpy.music.set_pause(True, channel="music")
+    show layer master at shake
     nd_yuura_brown "Uh.. Kayaknya pemilik kamar ini adalah orang yang menakutkan.."
     
     show yuura scared eff_sweat_w at center, idle
     nd_narrator_brown "Didekat zirah itu terdapat meja kecil yang diatasnya terdapat alat penghisap tembakau dan topeng berbentuk hewan"
     
+    play sound sfx_expression_shocked
+    show layer master at shake
     show yuura scared eff_surprise_y at center, shake, speaking
     nd_yuura_brown "Beneran kriminal ini mah.."
 
     stop music
-    play music bgm_scene1_foto_foto_kenangan fadeout 1.0 fadein 1.0 volume 0.75 loop
+    play music bgm_scene1_foto_foto_kenangan fadeout 1.0 fadein 1.0 volume 0.90 loop
     # Start CG
 
-    scene cg meja_kamar_yuura with dissolve
+    show cg meja_kamar_yuura:
+        zoom 1.0
+        xalign 0.5
+        yalign 0.5
+        ease 9.4 zoom 1.5
+    with dissolve
     hide yuura
 
-    nd_narrator_brown "Tak jauh dari sana, aku melihat sebuah meja yang di atasnya terdapat banyak sekali foto."
+    nd_narrator_brown "Tak jauh dari sana, aku melihat sebuah meja yang di atasnya terdapat banyak sekali foto.{w=5.0}{nw}"
 
-    camera:
+    show cg meja_kamar_yuura:
         # Initial position (zoomed out at the right side)
         zoom 1.5
         xalign 1.0
         yalign 0.2
         
         # Pan across to the left over 5 seconds
-        ease 15.0 xalign 0.0
+        ease 12.05 xalign 0.0
     with dissolve
 
-    nd_narrator_brown "Ketika kudekati, terlihat jelas foto-foto itu adalah momen kebersamaan si pemilik kamar dengan teman maupun keluarga nya. "
+    nd_narrator_brown "Ketika kudekati, terlihat jelas foto-foto itu adalah momen kebersamaan si pemilik kamar dengan teman maupun keluarga nya.{w=6.0}{nw}"
     
     # Zoomed into picture frame
-    camera:
+    show cg meja_kamar_yuura:
         zoom 2.0
         xalign 1.0
         yalign 0.5
     with dissolve
 
-    nd_narrator_brown "Aku mengambil sebuah foto dan mengamati lebih jelas."
+    nd_narrator_brown "Aku mengambil sebuah foto dan mengamati lebih jelas.{w=2.6}{nw}"
 
+    stop music
     scene inn kamar_yuura morning 
     # Reset camera
-    camera:
-        zoom 1.0
-        xalign 0.0
-        yalign 0.0
+    # camera:
+    #     zoom 1.0
+    #     xalign 0.0
+    #     yalign 0.0
 
     play sound sfx_expression_shocked
     show yuura scared eff_exclamation at center, shake, speaking
@@ -147,28 +204,42 @@ label scene_1:
     
     nd_narrator_brown "Aku meletakkan kembali foto-foto itu ke tempatnya semula"
     
+    camera:
+        zoom 2.0
+        xalign 0.3
+        yalign 0.3
+    with dissolve
+
     play sound sfx_expression_confused
     show yuura netral eff_question_mark at center, speaking
     nd_yuura_brown "Kok bisa yah, ada orang yang beneran mirip sama aku..?"
 
+    scene black
+    camera:
+        zoom 1.0
+        xalign 0.0
+        yalign 0.0
+    with dissolve
+
     # BGM jade bottle
     stop music fadeout 2.5
-    play music bgm_scene1_jade_bottle fadeout 1.0 fadein 1.0 volume 0.75 loop
-    show yuura netral none at center, idle
-    nd_narrator_brown "Di tengah kebingungan itu, aku melihat sebuah benda yang bersinar. Pandanganku langsung tertuju pada benda itu dan melesat mendekatinya."
+    play music bgm_scene1_jade_bottle fadeout 1.0 fadein 1.0 volume 0.90 loop
+    # show yuura netral none at center, idle
+    nd_narrator_black "Di tengah kebingungan itu, aku melihat sebuah benda yang bersinar. Pandanganku langsung tertuju pada benda itu dan melesat mendekatinya."
     
-    nd_narrator_brown "Sebuah botol berwarna Jade yang sejuk dan cerah, tidak salah lagi kalau botol ini terbuat dari batu Jade yang berharga!"
+    nd_narrator_black "Sebuah botol berwarna Jade yang sejuk dan cerah, tidak salah lagi kalau botol ini terbuat dari batu Jade yang berharga!"
 
-    nd_narrator_brown "Aku memegang botol hijau zamrud itu dan memandangi keindahan nya. Hingga.."
+    nd_narrator_black "Aku memegang botol hijau zamrud itu dan memandangi keindahan nya. Hingga.."
     
     stop music fadeout 1.0
     # play sound sfx_action_knocking_door_scene1
     voice voice_1_1_12_haruto
-    wd_unknown_brown "Anee, waktu nya bangun"
+    wd_unknown_black "Anee, waktu nya bangun"
 
     # BGM rock
+    scene inn kamar_yuura morning
     play sound sfx_expression_shocked
-    play music bgm_scene1_rock fadeout 1.0 volume 0.75 loop
+    play music bgm_scene1_rock fadeout 1.0 volume 0.90 loop
     show yuura scared eff_exclamation at center, shake, speaking
     nd_yuura_brown "ANJIR,TERNYATA ADA ORANG LAIN JUGA DISINI"
     

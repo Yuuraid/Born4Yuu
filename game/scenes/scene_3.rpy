@@ -20,9 +20,9 @@ label scene_3:
     stop sound
     # play music "audio/bgm/hutan.ogg" fadein 1.0
     
-    play music bgm_scene3_forest_w_ambience fadeout 1.0 volume 0.75 loop
+    play music bgm_scene3_forest_w_ambience fadeout 1.0 volume 0.7 loop
     scene hutan taman with dissolve
-    show yuura netral at center, speaking with easeinright
+    show yuura scared at center, speaking with easeinright
     
     nd_yuura_brown "Arghhh.. Ini gila! bisa-bisanya aku terbangun di tempat kayak gini? huah.."
     
@@ -43,6 +43,8 @@ label scene_3:
         # with Dissolve(1.0)
         # show Unknown at right # karakter terlalu kanan dan terlalu kiri
         # with Dissolve(1.0)
+    stop music fadeout 1.0
+    play music bgm_scene3_pria_asing volume 0.90 fadein 2.0 fadeout 2.0 loop
     show yuura at right, idle with ease
     show pria netral at left, silhouette, speaking with moveinleft
     pause 0.2
@@ -66,7 +68,8 @@ label scene_3:
     voice voice_1_3_21_pria_misterius
     wd_pria_brown "Kamu.. bukan dari dunia ini kan?"
 
-    show yuura at speaking
+    play sound sfx_expression_angry
+    show yuura angry eff_angry at speaking
     show pria at idle
     nd_yuura_brown "S-siapa kamu??? CEPAT JAWAB DARIMANA KAMU TAHU TENTANGKU!"
     
@@ -75,12 +78,15 @@ label scene_3:
     voice voice_1_3_23_pria_misterius
     wd_pria_brown "Intuisiku saja"
     
-    show yuura at speaking
+    show yuura sad eff_sweat_w at speaking
     show pria at idle
     nd_yuura_brown "Aku sudah tidak mengerti lagi dengan tempat ini, tadi orang-orang mengejarku." 
     
     nd_yuura_brown "Sekarang ada orang aneh yang berbicara denganku dari balik pohon! Lalu apa? aku akan melihat orang-orang masuk penjara?"
     
+    stop music fadeout 1.0
+    play music bgm_scene3_pelukan volume 0.90 fadein 2.0 fadeout 2.0 loop
+
     show yuura at idle
     show pria at speaking
     wd_pria_brown "..."
@@ -102,12 +108,12 @@ label scene_3:
         xpos 0.0
         linear 10.0 xalign 1.0
     with dissolve
-    pause 9.0
+    pause 4.0
     scene cg_arc_1_scene_03_shoot_2:
         xpos -1.0
         linear 10.0 xalign 0.0
     with dissolve
-    pause 9.0
+    pause 6.0
     scene cg_arc_1_scene_03_shoot_3:
         xalign 0.5
         ypos -0.5
@@ -142,6 +148,8 @@ label scene_3:
 
     nd_narrator_brown "Aku menceritakan semuanya tanpa ku sadari, orang itu hanya diam membiarkan ku mengeluarkan semuanya."
     
+    # DEMO END HERE
+
     # CG end here
     scene hutan taman 
     show yuura sad at right, idle

@@ -30,6 +30,9 @@ transform idle:
 transform silhouette:
     matrixcolor TintMatrix("#000000")
 
+transform cahaya_ilahi:
+    matrixcolor TintMatrix("#ffff") * BrightnessMatrix(1.0)
+
 transform reveal_character:
     matrixcolor None
 

@@ -3,6 +3,8 @@ image guest_book = "assets/props/guest_book.png"
 # image jade_bottle closeup = im.Composite(None, (0, 0), "assets/props/jade_bottle.png") 
 image foto_bersama = "assets/props/foto_bersama_frame.png"
 
+image kuda_nill = "assets/props/kuda_nill.png"
+
 image dark_overlay = Solid("#000000aa") # 'aa' sets transparency in hex, or use Color("#000node", alpha=0.5)
 
 transform pos(x=0.5, y=1.0, z=1.0, r=0):

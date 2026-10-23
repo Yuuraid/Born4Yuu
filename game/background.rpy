@@ -75,3 +75,8 @@ image transition_screen white concentrationline02_b = Movie(play="assets/effects
 #     Movie(play="assets/effects/momentum01.webm", mask="assets/effects/momentum01.webm"), # Transparent video
 #     fit_first=True
 # )
+
+# Demo stuff
+image kamar_yuura_shoot_1 = "assets/bg/demo/kamar_yuura_shoot_1.png"
+image kamar_yuura_shoot_2 = "assets/bg/demo/kamar_yuura_shoot_2.png"
+image kamar_yuura_shoot_3 = "assets/bg/demo/kamar_yuura_shoot_3.png"
