@@ -17,10 +17,10 @@ label scene_17:
     
     show pria netral at right, speaking
     voice voice_3_17_411_pria_misterius
-    nd_pria_brown "Ah.. sang putri tidur sudah bangun"
+    nd_unknown_brown "Ah.. sang putri tidur sudah bangun"
     
     voice voice_3_17_412_pria_misterius
-    nd_pria_brown "Selamat datang kembali di rumah."
+    nd_unknown_brown "Selamat datang kembali di rumah."
     show pria at idle
 
     show yuura at face_flip
@@ -31,10 +31,10 @@ label scene_17:
 
     show pria at speaking
     voice voice_3_17_413_pria_misterius
-    nd_pria_brown "Kenapa? Kaget banget lihat aku"
+    nd_unknown_brown "Kenapa? Kaget banget lihat aku"
     
     voice voice_3_17_414_pria_misterius
-    nd_pria_brown "Bukannya kamu yang ngajak? Untuk minum teh bersama?"
+    nd_unknown_brown "Bukannya kamu yang ngajak? Untuk minum teh bersama?"
     show pria at idle
 
     show yuura netral at speaking
@@ -56,10 +56,10 @@ label scene_17:
 
     show pria netral at speaking
     voice voice_3_17_419_pria_misterius
-    nd_pria_brown "Pertarungan? Yang mana?" 
+    nd_unknown_brown "Pertarungan? Yang mana?" 
     
     voice voice_3_17_420_pria_misterius
-    nd_pria_brown "Bukankah kita disini untuk membicarakan dirimu?"
+    nd_unknown_brown "Bukankah kita disini untuk membicarakan dirimu?"
     show pria at idle
 
     show yuura at speaking
@@ -68,7 +68,7 @@ label scene_17:
     
     show pria at speaking
     voice voice_3_17_422_pria_misterius
-    nd_pria_brown "Iya… aku ingin membicarakan soal dirimu"
+    nd_unknown_brown "Iya… aku ingin membicarakan soal dirimu"
     show pria at idle
 
     show yuura at speaking
@@ -81,13 +81,13 @@ label scene_17:
     
     show pria at speaking
     voice voice_3_17_424_pria_misterius
-    nd_pria_brown "Langit benar-benar sudah menentukan takdirnya sendiri."
+    nd_unknown_brown "Langit benar-benar sudah menentukan takdirnya sendiri."
     
     voice voice_3_17_425_pria_misterius
-    nd_pria_brown "Sudah banyak sekali takdir yang tertulis, namun hanya satu yang benar."
+    nd_unknown_brown "Sudah banyak sekali takdir yang tertulis, namun hanya satu yang benar."
     
     voice voice_3_17_426_pria_misterius
-    nd_pria_brown "Sekarang giliranmu, Aneeki."
+    nd_unknown_brown "Sekarang giliranmu, Aneeki."
     show pria at idle
 
     show layer master at shake
@@ -102,7 +102,7 @@ label scene_17:
 
     show pria at speaking
     voice voice_3_17_428_pria_misterius
-    nd_pria_brown "Hahahaha… tidak terduga bukan?"
+    nd_unknown_brown "Hahahaha… tidak terduga bukan?"
     show pria at idle
 
     show white
@@ -117,15 +117,15 @@ label scene_17:
 
     show pria at speaking
     voice voice_3_17_430_pria_misterius
-    nd_pria_brown "Kita tidak fokus kesana sekarang"
+    nd_unknown_brown "Kita tidak fokus kesana sekarang"
     
     voice voice_3_17_431_pria_misterius
-    nd_pria_brown "Takdirmu sudah ditentukan dari awal"
+    nd_unknown_brown "Takdirmu sudah ditentukan dari awal"
     
     $ renpy.run(QuickSave())
 
     voice voice_3_17_432_pria_misterius
-    nd_pria_brown "Sekarang ini adalah waktunya untuk kamu memilih"
+    nd_unknown_brown "Sekarang ini adalah waktunya untuk kamu memilih"
     show pria at idle
 
     # stop music
@@ -138,7 +138,7 @@ label scene_17:
 
             show pria at speaking
             voice voice_3_17_451_pria_misterius
-            nd_pria_brown "Tidak apa, biar aku tunjukkan sesuatu untukmu."
+            nd_unknown_brown "Tidak apa, biar aku tunjukkan sesuatu untukmu."
             show pria at idle
             
             scene whiteroom 
@@ -155,7 +155,7 @@ label scene_17:
 
             show pria at speaking
             voice voice_3_17_453_pria_misterius
-            nd_pria_brown "Kita ada di dalam pusat alam bawah sadarmu."
+            nd_unknown_brown "Kita ada di dalam pusat alam bawah sadarmu."
             show pria at idle
 
             show yuura at speaking
@@ -166,7 +166,7 @@ label scene_17:
 
             show pria at speaking
             voice voice_3_17_455_pria_misterius
-            nd_pria_brown "Semakin aku lihat kamu semakin imut saja"
+            nd_unknown_brown "Semakin aku lihat kamu semakin imut saja"
             show pria at idle
 
             show yuura at speaking
@@ -175,10 +175,10 @@ label scene_17:
 
             show pria at speaking
             voice voice_3_17_457_pria_misterius
-            nd_pria_brown "Kenapa terlalu terburu-buru seperti itu ?"
+            nd_unknown_brown "Kenapa terlalu terburu-buru seperti itu ?"
 
             voice voice_3_17_458_pria_misterius
-            nd_pria_brown "Apa kamu tidak nyaman berbicara denganku ?"
+            nd_unknown_brown "Apa kamu tidak nyaman berbicara denganku ?"
             show pria at idle
 
             show yuura at speaking
@@ -187,12 +187,12 @@ label scene_17:
 
             show pria at speaking
             voice voice_3_17_460_pria_misterius
-            nd_pria_brown "Hahaha memang dirimu tidak pernah berubah ya, Aneeki."
+            nd_unknown_brown "Hahaha memang dirimu tidak pernah berubah ya, Aneeki."
 
             $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_461_pria_misterius
-            nd_pria_brown "Selalu saja terburu-buru, apalagi soal sake"
+            nd_unknown_brown "Selalu saja terburu-buru, apalagi soal sake"
 
             show vid_memory_mabok behind yuura:
                 blur 25
@@ -201,7 +201,7 @@ label scene_17:
             $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_462_pria_misterius
-            nd_pria_brown "Apa kamu ingat ? Ketika hari itu kamu pulang dengan satu buah box berisi sake ?"
+            nd_unknown_brown "Apa kamu ingat ? Ketika hari itu kamu pulang dengan satu buah box berisi sake ?"
             # show pria at idle
             
             # nd_narrator_brown "Tiba-tiba saja muncul penglihatan di ruangan putih itu mengenai kenangan ketika aku berpesta dengan mereka. Canda dan tawa terdengar jelas di telingaku, seakan-akan aku masuk ke dalamnya."
@@ -215,7 +215,7 @@ label scene_17:
 
             show pria at speaking
             voice voice_3_17_463_pria_misterius
-            nd_pria_brown "Kita bernyanyi dari pagi, tanpa memikirkan apakah besok kita punya kegiatan atau tidak."
+            nd_unknown_brown "Kita bernyanyi dari pagi, tanpa memikirkan apakah besok kita punya kegiatan atau tidak."
             
             hide vid_memory_singging with Dissolve(2.0)
             show vid_memory_sake behind yuura:
@@ -225,7 +225,7 @@ label scene_17:
             $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_464_pria_misterius
-            nd_pria_brown "Kamu bahkan yang paling lantang dalam mengajak kami semua minum."
+            nd_unknown_brown "Kamu bahkan yang paling lantang dalam mengajak kami semua minum."
             
             hide vid_memory_sake with Dissolve(2.0)
             show vid_memory_people_laugh behind yuura:
@@ -235,7 +235,7 @@ label scene_17:
             $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_465_pria_misterius
-            nd_pria_brown "Rasanya sangat menyenangkan bukan ? Melihat mereka tertawa dan tersenyum."
+            nd_unknown_brown "Rasanya sangat menyenangkan bukan ? Melihat mereka tertawa dan tersenyum."
             show pria at idle
 
             show yuura at speaking
@@ -246,10 +246,10 @@ label scene_17:
             
             show pria at speaking
             voice voice_3_17_467_pria_misterius
-            nd_pria_brown "Tidak apa, tidak semua hal harus dipahami."
+            nd_unknown_brown "Tidak apa, tidak semua hal harus dipahami."
             
             voice voice_3_17_468_pria_misterius
-            nd_pria_brown "Tapi rasakanlah kenangannya dalam benakmu."
+            nd_unknown_brown "Tapi rasakanlah kenangannya dalam benakmu."
             show pria at idle
 
             show yuura at speaking
@@ -260,10 +260,10 @@ label scene_17:
 
             show pria at speaking
             voice voice_3_17_471_pria_misterius
-            nd_pria_brown "Tidak perlu memaksakan dirimu, aku.. tidak— KITA akan siap membantumu selalu"
+            nd_unknown_brown "Tidak perlu memaksakan dirimu, aku.. tidak— KITA akan siap membantumu selalu"
             
             voice voice_3_17_472_pria_misterius
-            nd_pria_brown "Bagaimana jika kita lanjut saja?"
+            nd_unknown_brown "Bagaimana jika kita lanjut saja?"
             show pria at idle
 
             show vid_memory_reading behind yuura:
@@ -278,19 +278,19 @@ label scene_17:
             
             show pria at speaking
             voice voice_3_17_473_pria_misterius
-            nd_pria_brown "Suara yang indah dan menenangkan."
+            nd_unknown_brown "Suara yang indah dan menenangkan."
             
             voice voice_3_17_474_pria_misterius
-            nd_pria_brown "Bahkan dunia pun terlelap mendengar suaranya."
+            nd_unknown_brown "Bahkan dunia pun terlelap mendengar suaranya."
             
             voice voice_3_17_475_pria_misterius
-            nd_pria_brown "Dongeng yang selalu dibuat oleh teman-teman."
+            nd_unknown_brown "Dongeng yang selalu dibuat oleh teman-teman."
             
             voice voice_3_17_476_pria_misterius
-            nd_pria_brown "Dan dibacakan oleh panda merah yang mereka sayangi"
+            nd_unknown_brown "Dan dibacakan oleh panda merah yang mereka sayangi"
             
             voice voice_3_17_477_pria_misterius
-            nd_pria_brown "Sungguh perpaduan yang indah, bukan ?"
+            nd_unknown_brown "Sungguh perpaduan yang indah, bukan ?"
             show pria at idle
             nd_narrator_brown "Aku semakin bingung, sejak kapan aku pernah membacakan mereka cerita. Aku tidak paham arah dari pembicaraan ini."
             
@@ -302,7 +302,7 @@ label scene_17:
             
             show pria at speaking
             voice voice_3_17_479_pria_misterius
-            nd_pria_brown "Mengapa demikian ?"
+            nd_unknown_brown "Mengapa demikian ?"
             show pria at idle
 
             show yuura at speaking
@@ -316,7 +316,7 @@ label scene_17:
 
             show pria at speaking
             voice voice_3_17_482_pria_misterius
-            nd_pria_brown "Jadi... Kamu Yuura yang mana ?"
+            nd_unknown_brown "Jadi... Kamu Yuura yang mana ?"
             show pria at idle
 
             show yuura at speaking
@@ -331,7 +331,7 @@ label scene_17:
 
             show pria at speaking
             voice voice_3_17_484_pria_misterius
-            nd_pria_brown "Yuura yang belum melunasi hutangnya ?"
+            nd_unknown_brown "Yuura yang belum melunasi hutangnya ?"
             
             hide vid_memory_hutang with Dissolve(2.0)
             show vid_memory_senyum behind yuura:
@@ -341,7 +341,7 @@ label scene_17:
             $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_485_pria_misterius
-            nd_pria_brown "Atau Yuura yang akan selalu tersenyum untuk kami ?"
+            nd_unknown_brown "Atau Yuura yang akan selalu tersenyum untuk kami ?"
             
             hide vid_memory_senyum with Dissolve(2.0)
             show vid_memory_nyanyi behind yuura:
@@ -351,7 +351,7 @@ label scene_17:
             $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_486_pria_misterius
-            nd_pria_brown "Atau Yuura yang akan selalu bernyanyi bersama kami ?"
+            nd_unknown_brown "Atau Yuura yang akan selalu bernyanyi bersama kami ?"
             
             hide vid_memory_nyanyi with Dissolve(2.0)
             show vid_memory_tertawa behind yuura:
@@ -361,7 +361,7 @@ label scene_17:
             $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_487_pria_misterius
-            nd_pria_brown "Atau Yuura yang akan selalu tertawa bersama kami ?"
+            nd_unknown_brown "Atau Yuura yang akan selalu tertawa bersama kami ?"
             show pria at idle
 
             show yuura at speaking
@@ -380,7 +380,7 @@ label scene_17:
 
             # show pria at speaking
             # voice voice_
-            # nd_pria_brown "Apa kamu pernah terpikirkan perasaan mereka yang menyerangmu ?"
+            # nd_unknown_brown "Apa kamu pernah terpikirkan perasaan mereka yang menyerangmu ?"
             # show pria at idle
 
             # show yuura at speaking
@@ -389,7 +389,7 @@ label scene_17:
             
             # show pria at speaking
             # voice voice_
-            # nd_pria_brown "Kenapa ?"
+            # nd_unknown_brown "Kenapa ?"
             # show pria at idle
 
             # show yuura at speaking
@@ -400,7 +400,7 @@ label scene_17:
             
             show pria at speaking
             voice voice_3_17_491_pria_misterius
-            nd_pria_brown "Apakah kamu yakin dengan itu ?"
+            nd_unknown_brown "Apakah kamu yakin dengan itu ?"
             show pria at idle
 
             show yuura at speaking
@@ -409,7 +409,7 @@ label scene_17:
             
             show pria at speaking
             voice voice_3_17_493_pria_misterius
-            nd_pria_brown "Baiklah... Biar aku perlihatkan sesuatu untukmu."
+            nd_unknown_brown "Baiklah... Biar aku perlihatkan sesuatu untukmu."
             show pria at idle
             
             show dark_overlay
@@ -425,7 +425,7 @@ label scene_17:
             
             show pria at speaking
             voice voice_3_17_494_pria_misterius
-            nd_pria_brown "Bagaimana ? Apa ada sesuatu yang berbeda ?"
+            nd_unknown_brown "Bagaimana ? Apa ada sesuatu yang berbeda ?"
             show pria at idle
 
             show yuura at speaking
@@ -438,13 +438,13 @@ label scene_17:
             
             show pria at speaking
             voice voice_3_17_498_pria_misterius
-            nd_pria_brown "Siapa yang menyuruhmu menjadi seperti Yuura yang lama ?"
+            nd_unknown_brown "Siapa yang menyuruhmu menjadi seperti Yuura yang lama ?"
             
             voice voice_3_17_499_pria_misterius
-            nd_pria_brown "Apakah kamu pikir Yuura yang dulu seperti gambar itu ?"
+            nd_unknown_brown "Apakah kamu pikir Yuura yang dulu seperti gambar itu ?"
             
             voice voice_3_17_500_pria_misterius
-            nd_pria_brown "Apa kamu kira dia sempurna sejak awal ?"
+            nd_unknown_brown "Apa kamu kira dia sempurna sejak awal ?"
             show pria at idle
             
             show pria at custom_sprite_pos(x=0.2) with ease
@@ -453,43 +453,43 @@ label scene_17:
             
             show pria at speaking
             voice voice_3_17_501_pria_misterius
-            nd_pria_brown "Yuura perlu waktu yang lama untuk bisa mencapai tempat nya sekarang ini"
+            nd_unknown_brown "Yuura perlu waktu yang lama untuk bisa mencapai tempat nya sekarang ini"
             
             voice voice_3_17_502_pria_misterius
-            nd_pria_brown "Dia tidak pernah menyerah, selalu berusaha yang terbaik."
+            nd_unknown_brown "Dia tidak pernah menyerah, selalu berusaha yang terbaik."
             
             voice voice_3_17_503_pria_misterius
-            nd_pria_brown "Bahkan terkadang dia akan memaksakan dirinya sendiri."
+            nd_unknown_brown "Bahkan terkadang dia akan memaksakan dirinya sendiri."
             
             voice voice_3_17_504_pria_misterius
-            nd_pria_brown "Apakah kamu pikir dia berubah karena orang-orang ingin dia berubah ?"
+            nd_unknown_brown "Apakah kamu pikir dia berubah karena orang-orang ingin dia berubah ?"
             
             voice voice_3_17_505_pria_misterius
-            nd_pria_brown "Tidak.. dia berubah karena dirinya mau, dia selalu berusaha menjadi dirinya sendiri"
+            nd_unknown_brown "Tidak.. dia berubah karena dirinya mau, dia selalu berusaha menjadi dirinya sendiri"
             
             voice voice_3_17_506_pria_misterius
-            nd_pria_brown "Untuk apa dirimu berusaha menjadi Yuura yang dulu ?"
+            nd_unknown_brown "Untuk apa dirimu berusaha menjadi Yuura yang dulu ?"
             
             voice voice_3_17_507_pria_misterius
-            nd_pria_brown "Untuk siapa ? Dan kenapa kamu harus ?"
+            nd_unknown_brown "Untuk siapa ? Dan kenapa kamu harus ?"
             
             voice voice_3_17_508_pria_misterius
-            nd_pria_brown "Demi kita? PPFFTT HAHAHAHA! YAKALI PANDA TUA ITU MIRIKIRIN KITA" 
+            nd_unknown_brown "Demi kita? PPFFTT HAHAHAHA! YAKALI PANDA TUA ITU MIRIKIRIN KITA" 
             
             voice voice_3_17_509_pria_misterius
-            nd_pria_brown "Melihatmu tersenyum saja sudah sangat membahagiakan bagi kami."
+            nd_unknown_brown "Melihatmu tersenyum saja sudah sangat membahagiakan bagi kami."
             
             voice voice_3_17_510_pria_misterius
-            nd_pria_brown "Jadi... Berhenti memaksakan dirimu."
+            nd_unknown_brown "Jadi... Berhenti memaksakan dirimu."
             
             voice voice_3_17_511_pria_misterius
-            nd_pria_brown "Jadilah dirimu sendiri dan temukan jati dirimu sendiri."
+            nd_unknown_brown "Jadilah dirimu sendiri dan temukan jati dirimu sendiri."
             
             voice voice_3_17_512_pria_misterius
-            nd_pria_brown "Karena Yuura yang kukenal adalah orang yang kuat" # kasih pause setelah kata "kenal"?
+            nd_unknown_brown "Karena Yuura yang kukenal adalah orang yang kuat" # kasih pause setelah kata "kenal"?
             
             voice voice_3_17_513_pria_misterius
-            nd_pria_brown "Jadi jangan menangis... Tersenyumlah dan berbahagialah !" # kasih pause setelah jeda titik-titik?
+            nd_unknown_brown "Jadi jangan menangis... Tersenyumlah dan berbahagialah !" # kasih pause setelah jeda titik-titik?
             show pria at idle
             
             show pria at face_flip with dissolve
@@ -502,15 +502,15 @@ label scene_17:
             
             show pria at speaking
             voice voice_3_17_514_pria_misterius
-            nd_pria_brown "Takdir memanglah kejam, dia tak memberikan waktu untukmu."
+            nd_unknown_brown "Takdir memanglah kejam, dia tak memberikan waktu untukmu."
             
             voice voice_3_17_515_pria_misterius
-            nd_pria_brown "Yang kau bisa lakukan adalah memilih."
+            nd_unknown_brown "Yang kau bisa lakukan adalah memilih."
             
             $ renpy.run(QuickSave())
 
             voice voice_3_17_516_pria_misterius
-            nd_pria_brown "Jadilah Yuura yang kamu inginkan atau pergi dan tak pernah kembali."
+            nd_unknown_brown "Jadilah Yuura yang kamu inginkan atau pergi dan tak pernah kembali."
             show pria at idle
             menu keputusan:
                 "Pergi dari Inn untuk selamanya":
@@ -521,7 +521,7 @@ label scene_17:
                     
                     show pria at speaking
                     voice voice_3_17_518_pria_misterius
-                    nd_pria_brown "Mengapa ?"
+                    nd_unknown_brown "Mengapa ?"
                     show pria at idle
 
                     show yuura at speaking
@@ -530,10 +530,10 @@ label scene_17:
                     
                     show pria at speaking
                     voice voice_3_17_520_pria_misterius
-                    nd_pria_brown "Apa maksudmu, anee ?"
+                    nd_unknown_brown "Apa maksudmu, anee ?"
                     
                     voice voice_3_17_521_pria_misterius
-                    nd_pria_brown "Mengapa kamu berbicara seperti itu ?"
+                    nd_unknown_brown "Mengapa kamu berbicara seperti itu ?"
                     show pria at idle
 
                     show yuura at speaking
@@ -555,7 +555,7 @@ label scene_17:
                     show yuura at idle
                     
                     voice voice_3_17_530_pria_misterius
-                    nd_pria_brown "..."
+                    nd_unknown_brown "..."
                     
                     nd_yuura_brown "..."
                     
@@ -563,13 +563,13 @@ label scene_17:
                     
                     show pria at speaking
                     voice voice_3_17_532_pria_misterius
-                    nd_pria_brown "Baiklah..."
+                    nd_unknown_brown "Baiklah..."
                     
                     voice voice_3_17_533_pria_misterius
-                    nd_pria_brown "Aku memang tak bisa memaksakan keputusan mu..."
+                    nd_unknown_brown "Aku memang tak bisa memaksakan keputusan mu..."
                     
                     voice voice_3_17_534_pria_misterius
-                    nd_pria_brown "Hahaha... Rasanya sangat menyakitkan yah..."
+                    nd_unknown_brown "Hahaha... Rasanya sangat menyakitkan yah..."
                     show pria at idle
 
                     show yuura at speaking
@@ -578,28 +578,28 @@ label scene_17:
                     
                     show pria at speaking
                     voice voice_3_17_536_pria_misterius
-                    nd_pria_brown "Tak apa... Aku mengerti."
+                    nd_unknown_brown "Tak apa... Aku mengerti."
                     
                     voice voice_3_17_537_pria_misterius
-                    nd_pria_brown "Pada akhirnya sang pengembara pun harus berpisah dengan kota yang ia singgahi bukan ?"
+                    nd_unknown_brown "Pada akhirnya sang pengembara pun harus berpisah dengan kota yang ia singgahi bukan ?"
                     
                     voice voice_3_17_538_pria_misterius
-                    nd_pria_brown "Tapi, meskipun begitu aku harap kamu tetap kembali pada kami."
+                    nd_unknown_brown "Tapi, meskipun begitu aku harap kamu tetap kembali pada kami."
                     
                     voice voice_3_17_539_pria_misterius
-                    nd_pria_brown "Karena kami akan selalu ada di sini untukmu."
+                    nd_unknown_brown "Karena kami akan selalu ada di sini untukmu."
                     
                     voice voice_3_17_540_pria_misterius
-                    nd_pria_brown "Maaf jika selama ini kami selalu merepotkanmu."
+                    nd_unknown_brown "Maaf jika selama ini kami selalu merepotkanmu."
                     
                     voice voice_3_17_541_pria_misterius
-                    nd_pria_brown "Maaf jika kami tidak bisa menjadi orang yang baik untukmu."
+                    nd_unknown_brown "Maaf jika kami tidak bisa menjadi orang yang baik untukmu."
                     
                     voice voice_3_17_542_pria_misterius
-                    nd_pria_brown "Kalau begitu sampai jumpa."
+                    nd_unknown_brown "Kalau begitu sampai jumpa."
                     
                     voice voice_3_17_543_pria_misterius
-                    nd_pria_brown "Semoga takdir dunia ini mempertemukan kami denganmu kembali."
+                    nd_unknown_brown "Semoga takdir dunia ini mempertemukan kami denganmu kembali."
                     show pria at idle
 
                     show yuura at speaking
@@ -665,10 +665,10 @@ label scene_17:
 
                     # show pria at speaking
                     voice voice_3_17_554_pria_misterius
-                    nd_pria_brown "Jika kamu bertanya padaku."
+                    nd_unknown_brown "Jika kamu bertanya padaku."
                     
                     voice voice_3_17_555_pria_misterius
-                    nd_pria_brown "Alasannya Sederhana, karena kamu Yuura" # kasih pause setelah jeda koma?
+                    nd_unknown_brown "Alasannya Sederhana, karena kamu Yuura" # kasih pause setelah jeda koma?
 
                     scene whiteroom
                     show yuura sad at left, idle, face_flip
@@ -676,7 +676,7 @@ label scene_17:
                     with fade
                     
                     voice voice_3_17_556_pria_misterius
-                    nd_pria_brown "Karena mereka peduli padamu, pada Yuura." # kasih pause setelah jeda koma?
+                    nd_unknown_brown "Karena mereka peduli padamu, pada Yuura." # kasih pause setelah jeda koma?
                     show pria at idle
 
                     show yuura at speaking
@@ -687,7 +687,7 @@ label scene_17:
                     
                     show pria at speaking
                     voice voice_3_17_559_pria_misterius
-                    nd_pria_brown "Karena kamu Yuura."
+                    nd_unknown_brown "Karena kamu Yuura."
                     show pria at idle
 
                     show yuura at speaking
@@ -698,10 +698,10 @@ label scene_17:
                     
                     show pria at speaking
                     voice voice_3_17_562_pria_misterius
-                    nd_pria_brown "Pffttt !!"
+                    nd_unknown_brown "Pffttt !!"
                     
                     voice voice_3_17_563_pria_misterius
-                    nd_pria_brown "Hahaha"
+                    nd_unknown_brown "Hahaha"
                     show pria at idle
 
                     show yuura at speaking
@@ -710,7 +710,7 @@ label scene_17:
                     
                     show pria at speaking
                     voice voice_3_17_565_pria_misterius
-                    nd_pria_brown "Tidak... Hanya saja itu adalah hal yang paling sering kamu katakan."
+                    nd_unknown_brown "Tidak... Hanya saja itu adalah hal yang paling sering kamu katakan."
                     show pria at idle
                     
                     show yuura at speaking
@@ -719,26 +719,26 @@ label scene_17:
                     
                     show pria at speaking
                     voice voice_3_17_567_pria_misterius
-                    nd_pria_brown "Iya... Kamu selalu bilang 'Yuuraid itu aneh banget, emang kalian ga cape apa ?'" # italic buat kutipannya kah?
+                    nd_unknown_brown "Iya... Kamu selalu bilang 'Yuuraid itu aneh banget, emang kalian ga cape apa ?'" # italic buat kutipannya kah?
                     
                     voice voice_3_17_568_pria_misterius
-                    nd_pria_brown "Tapi kita selalu bilang 'ga, biasa aja sih'" # perlukah italic?
+                    nd_unknown_brown "Tapi kita selalu bilang 'ga, biasa aja sih'" # perlukah italic?
                     
                     voice voice_3_17_569_pria_misterius
-                    nd_pria_brown "Terus kita ketawa bareng-bareng."
+                    nd_unknown_brown "Terus kita ketawa bareng-bareng."
                     
                     voice voice_3_17_570_pria_misterius
-                    nd_pria_brown "Lagian buat apa tanya begituan juga?"
+                    nd_unknown_brown "Lagian buat apa tanya begituan juga?"
                     
                     voice voice_3_17_571_pria_misterius
-                    nd_pria_brown "Kami ngelakuin semua ini, ya karena kamu !"
+                    nd_unknown_brown "Kami ngelakuin semua ini, ya karena kamu !"
                     show pria at idle
                     
                     nd_narrator_brown "Aku semakin bingung dengan pernyataan yang pria ini lontarkan. Aku tak mengerti mengapa dia terlihat tidak peduli, padahal aku adalah orang asing."
 
                     show pria at speaking
                     voice voice_3_17_572_pria_misterius
-                    nd_pria_brown "Biar aku tunjukkan padamu."
+                    nd_unknown_brown "Biar aku tunjukkan padamu."
                     # show pria at idle
 
                     # stop music
@@ -761,29 +761,29 @@ label scene_17:
                     
                     show pria at speaking
                     voice voice_3_17_573_pria_misterius
-                    nd_pria_brown "Bagaimana menurutmu ?"
+                    nd_unknown_brown "Bagaimana menurutmu ?"
                     
                     voice voice_3_17_574_pria_misterius
-                    nd_pria_brown "Apa kamu masih ragu pada dirimu sendiri ?"
+                    nd_unknown_brown "Apa kamu masih ragu pada dirimu sendiri ?"
                     show pria at idle
                     
                     nd_yuura_brown "..."
                     
                     show pria at speaking
                     voice voice_3_17_576_pria_misterius
-                    nd_pria_brown "Tidak apa, untuk sekarang kembalilah dan temui mereka."
+                    nd_unknown_brown "Tidak apa, untuk sekarang kembalilah dan temui mereka."
                     
                     voice voice_3_17_577_pria_misterius
-                    nd_pria_brown "Katakan bahwa kamu adalah Yuura."
+                    nd_unknown_brown "Katakan bahwa kamu adalah Yuura."
                     
                     voice voice_3_17_578_pria_misterius
-                    nd_pria_brown "Baik Yuura yang manapun itu, kamu tetaplah Yuura."
+                    nd_unknown_brown "Baik Yuura yang manapun itu, kamu tetaplah Yuura."
                     
                     voice voice_3_17_579_pria_misterius
-                    nd_pria_brown "Selesaikan semuanya, dan jadilah dirimu sendiri."
+                    nd_unknown_brown "Selesaikan semuanya, dan jadilah dirimu sendiri."
                     
                     voice voice_3_17_580_pria_misterius
-                    nd_pria_brown "Jadilah Yuura yang kami sayangi, kami cintai, dan kami dukung."
+                    nd_unknown_brown "Jadilah Yuura yang kami sayangi, kami cintai, dan kami dukung."
                     show pria at idle
                     
                     nd_narrator_brown "Perlahan aku mulai menghilang, melihat pria itu tersenyum bahagia membuatku merasa sangat bahagia. Apakah ini adalah jalan yang benar untukku? Entahlah, aku hanya perlu menjadi diriku sendiri."
@@ -814,7 +814,7 @@ label scene_17:
     
             show pria at speaking
             voice voice_3_17_434_pria_misterius
-            nd_pria_brown "Apa kamu yakin dengan pilihan mu ?"
+            nd_unknown_brown "Apa kamu yakin dengan pilihan mu ?"
             show pria at idle
 
             show yuura at speaking
@@ -823,7 +823,7 @@ label scene_17:
 
             # show pria at speaking
             # voice voice_
-            # nd_pria_brown "kamu orang yang seperti itu ya."
+            # nd_unknown_brown "kamu orang yang seperti itu ya."
             # show pria at idle
 
             show yuura at speaking
@@ -833,10 +833,10 @@ label scene_17:
     
             show pria at speaking
             voice voice_3_17_438_pria_misterius
-            nd_pria_brown "Hm, untuk apa minta maaf ?"
+            nd_unknown_brown "Hm, untuk apa minta maaf ?"
     
             voice voice_3_17_439_pria_misterius
-            nd_pria_brown "Tidak ada yang salah dalam pilihan mu."
+            nd_unknown_brown "Tidak ada yang salah dalam pilihan mu."
             show pria at idle
 
             show yuura at speaking
@@ -846,35 +846,35 @@ label scene_17:
     
             show pria at speaking
             voice voice_3_17_441_pria_misterius
-            nd_pria_brown "Tidak apa, tidak semua orang berani mengambil pilihan."
+            nd_unknown_brown "Tidak apa, tidak semua orang berani mengambil pilihan."
     
             
             voice voice_3_17_442_pria_misterius
-            nd_pria_brown "Pada akhirnya sang pengembarapun harus berpisah dengan kota yang ia singgahi bukan ?"
+            nd_unknown_brown "Pada akhirnya sang pengembarapun harus berpisah dengan kota yang ia singgahi bukan ?"
     
             
             voice voice_3_17_443_pria_misterius
-            nd_pria_brown "Tapi, meskipun begitu aku harap kamu tetap kembali pada kami."
+            nd_unknown_brown "Tapi, meskipun begitu aku harap kamu tetap kembali pada kami."
     
             
             voice voice_3_17_444_pria_misterius
-            nd_pria_brown "Karena kami akan selalu ada di sini untukmu."
+            nd_unknown_brown "Karena kami akan selalu ada di sini untukmu."
     
             
             voice voice_3_17_445_pria_misterius
-            nd_pria_brown "Maaf jika selama ini kami selalu merepotkanmu."
+            nd_unknown_brown "Maaf jika selama ini kami selalu merepotkanmu."
     
             
             voice voice_3_17_446_pria_misterius
-            nd_pria_brown "Maaf jika kami tidak bisa menjadi orang yang baik untukmu."
+            nd_unknown_brown "Maaf jika kami tidak bisa menjadi orang yang baik untukmu."
     
             
             voice voice_3_17_447_pria_misterius
-            nd_pria_brown "Kalau begitu sampai jumpa."
+            nd_unknown_brown "Kalau begitu sampai jumpa."
     
             
             voice voice_3_17_448_pria_misterius
-            nd_pria_brown "Semoga takdir dunia ini mempertemukan kami denganmu kembali."
+            nd_unknown_brown "Semoga takdir dunia ini mempertemukan kami denganmu kembali."
             show pria at idle
             
             show yuura at speaking

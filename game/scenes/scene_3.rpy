@@ -45,60 +45,61 @@ label scene_3:
         # with Dissolve(1.0)
     stop music fadeout 1.0
     play music bgm_scene3_pria_asing volume 0.90 fadein 2.0 fadeout 2.0 loop
-    show yuura at right, idle with ease
-    show pria netral at left, silhouette, speaking with moveinleft
+    # show yuura at right, idle with ease
+    # show pria netral at left, silhouette, speaking with moveinleft
     pause 0.2
     voice voice_1_3_19_pria_misterius
     nd_unknown_brown "Capek kan? Lari-lari"
     
-    show pria at silhouette, idle
+    # show pria at silhouette, idle
     show yuura netral eff_exclamation at shake
     play sound sfx_expression_surprised
     nd_narrator_brown "Aku terkejut mendengar suara yang entah dari mana asalnya. Aku melihat sekitar dan merasakan adanya seseorang di balik pohon yang ku sandari."
     
-    show pria at reveal_character, speaking with dissolve
+    # show pria at reveal_character, speaking with dissolve
     show yuura none at idle
     voice voice_1_3_20_pria_misterius
-    wd_pria_brown "Gausah takut, aku gak gigit"
+    nd_unknown_brown "Gausah takut, aku gak gigit"
     
-    show pria at idle
+    # show pria at idle
     nd_narrator_brown "Aku merasa terkejut, bingung, sekaligus bertanya-tanya dari mana orang ini berasal. Aku tidak tahu apapun tentangnya, yang aku tahu suara ini adalah suara laki-laki."
 
-    show pria at speaking
+    # show pria at speaking
     voice voice_1_3_21_pria_misterius
-    wd_pria_brown "Kamu.. bukan dari dunia ini kan?"
+    nd_unknown_brown "Kamu.. bukan dari dunia ini kan?"
 
     play sound sfx_expression_angry
-    show yuura angry eff_angry at speaking
-    show pria at idle
+    show yuura angry eff_angry at face_flip, speaking
+    # show pria at idle
     nd_yuura_brown "S-siapa kamu??? CEPAT JAWAB DARIMANA KAMU TAHU TENTANGKU!"
     
-    show yuura at idle
-    show pria at speaking
+    show yuura at face_flip, idle 
+    # show pria at speaking
     voice voice_1_3_23_pria_misterius
-    wd_pria_brown "Intuisiku saja"
+    nd_unknown_brown "Intuisiku saja"
     
     show yuura sad eff_sweat_w at speaking
     show pria at idle
     nd_yuura_brown "Aku sudah tidak mengerti lagi dengan tempat ini, tadi orang-orang mengejarku." 
     
     nd_yuura_brown "Sekarang ada orang aneh yang berbicara denganku dari balik pohon! Lalu apa? aku akan melihat orang-orang masuk penjara?"
-    
-    stop music fadeout 1.0
-    play music bgm_scene3_pelukan volume 0.90 fadein 2.0 fadeout 2.0 loop
+
 
     show yuura at idle
-    show pria at speaking
-    wd_pria_brown "..."
+    # show pria at speaking
+    nd_unknown_brown "..."
 
     show yuura at speaking
-    show pria at idle
+    # show pria at idle
     nd_yuura_brown "Aku capek.. aku mau pulang.. tidak seharusnya aku disini.."
     
     show yuura at idle
-    show pria at speaking
+    # show pria at speaking
     voice voice_1_3_27_pria_misterius
-    wd_pria_brown "Hey.. jangan menangis, aku gak sanggup melihat cewek nangis di hadapanku"
+    nd_unknown_brown "Hey.. jangan menangis, aku gak sanggup melihat cewek nangis di hadapanku"
+
+    stop music fadeout 1.0
+    play music bgm_scene3_pelukan volume 0.90 fadein 2.0 fadeout 2.0 loop
     
     # CG hugging start here
 
@@ -187,7 +188,7 @@ label scene_3:
 
     show pria at speaking
     voice voice_1_3_28_pria_misterius
-    wd_pria_brown "Oh? Kamu membawa benda yang menarik~"
+    wd_unknown_brown "Oh? Kamu membawa benda yang menarik~"
     
     show pria at idle
     show yuura at speaking
@@ -196,7 +197,7 @@ label scene_3:
     show yuura at idle
     show pria at speaking
     voice voice_1_3_30_pria_misterius
-    wd_pria_brown "Lalu bagaimana benda itu bisa di sini?"
+    wd_unknown_brown "Lalu bagaimana benda itu bisa di sini?"
     
     show pria at idle
     show yuura at speaking
@@ -205,7 +206,7 @@ label scene_3:
     show yuura at idle
     show pria at speaking
     voice voice_1_3_32_pria_misterius
-    wd_pria_brown "Mungkin saja takdir"
+    wd_unknown_brown "Mungkin saja takdir"
     
     show pria at idle
     show yuura at speaking
@@ -214,7 +215,7 @@ label scene_3:
     show yuura at idle
     show pria at speaking
     voice voice_1_3_34_pria_misterius
-    wd_pria_brown "Mungkin saja kan~"
+    wd_unknown_brown "Mungkin saja kan~"
     
     show pria at idle
     show yuura at speaking
@@ -226,7 +227,7 @@ label scene_3:
     show yuura at idle
     show pria at speaking
     voice voice_1_3_36_pria_misterius
-    wd_pria_brown "Coba saja, kalau bisa" 
+    wd_unknown_brown "Coba saja, kalau bisa" 
         # hide Unknown
         # with fade
     
