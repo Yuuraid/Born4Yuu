@@ -60,6 +60,12 @@ define nd_narrator_black = Character("", window_background = "gui/textbox/Narrat
 define nd_narrator_brown = Character("", window_background = "gui/textbox/Narrator/narrator_nd_brown.png", what_prefix="{cps=20}", what_suffix="{/cps}")
 define wd_narrator_black = Character("", window_background = "gui/textbox/Narrator/narrator_wd_black.png", what_prefix="{cps=20}", what_suffix="{/cps}")
 define wd_narrator_brown = Character("", window_background = "gui/textbox/Narrator/narrator_wd_brown.png", what_prefix="{cps=20}", what_suffix="{/cps}")
+
+define nd_ncps_narrator_black = Character("", window_background = "gui/textbox/Narrator/narrator_nd_black.png")
+define nd_ncps_narrator_brown = Character("", window_background = "gui/textbox/Narrator/narrator_nd_brown.png")
+define wd_ncps_narrator_black = Character("", window_background = "gui/textbox/Narrator/narrator_wd_black.png")
+define wd_ncps_narrator_brown = Character("", window_background = "gui/textbox/Narrator/narrator_wd_brown.png")
+
 # Nicholas
 define nd_nicholas_black = Character("", window_background = "gui/textbox/Nicholas/nicholas_nd_black.png")
 define nd_nicholas_brown = Character("", window_background = "gui/textbox/Nicholas/nicholas_nd_brown.png")
