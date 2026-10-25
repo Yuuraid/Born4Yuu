@@ -35,6 +35,14 @@ image arena = "assets/bg/Arena.png"
 image whiteroom = "assets/bg/Whiteroom.png"
 image game_over = "assets/bg/Game_Over_Screen.png"
 image mading = "assets/bg/mading_after_1.webp"
+image garden_fight_1 = "assets/bg/Garden_fight_1.png"
+image garden_fight_2 = "assets/bg/Garden_fight_2.png"
+image garden_fight_3 = "assets/bg/Garden_fight_3.png"
+image garden_fight_4 = "assets/bg/Garden_fight_4.png"
+image taman_penginapan_4 = "assets/bg/Taman_Penginapan_4.png"
+image taman_penginapan_3 = "assets/bg/Taman_Penginapan_3.png"
+image taman_penginapan_2 = "assets/bg/Taman_Penginapan_2.png"
+image taman_penginapan_1 = "assets/bg/Taman_Penginapan_1.png"
 
 # Memories background
 image vid_memory_halloween = Movie(play="assets/videos/memories/halloween.webm", size=(1920, 1080), loop=True, channel="memories")
@@ -80,3 +88,5 @@ image transition_screen white concentrationline02_b = Movie(play="assets/effects
 image kamar_yuura_shoot_1 = "assets/bg/demo/kamar_yuura_shoot_1.png"
 image kamar_yuura_shoot_2 = "assets/bg/demo/kamar_yuura_shoot_2.png"
 image kamar_yuura_shoot_3 = "assets/bg/demo/kamar_yuura_shoot_3.png"
+
+image rocket_greenscreen = Movie(play="assets/effects/video effects/rocket_fixed.webm", mask="assets/effects/video effects/rocket_fixed.webm", loop=False)

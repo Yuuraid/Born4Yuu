@@ -40,3 +40,12 @@ image cg_arc_3_scene_17_shoot_01 = "assets/cg/cg_arc_3_scene_17_shoot_01.png"
 image cg_arc_3_scene_17_shoot_03 = "assets/cg/cg_arc_3_scene_17_shoot_03.png"
 image cg_arc_3_scene_17_shoot_02 = "assets/cg/cg_arc_3_scene_17_shoot_02.png"
 image cg_arc_3_scene_17_shoot_04 = "assets/cg/cg_arc_3_scene_17_shoot_04.png"
+
+image cg_arc_3_scene_18_yuura_nahan_shoot_1 = "assets/cg/cg_arc_3_scene_18_yuura_nahan_shoot_1.png"
+image cg_arc_3_scene_18_yuura_nahan_shoot_2 = "assets/cg/cg_arc_3_scene_18_yuura_nahan_shoot_2.png"
+image cg_arc_3_scene_18_yuura_nahan_shoot_3 = "assets/cg/cg_arc_3_scene_18_yuura_nahan_shoot_3.png"
+
+image cg_arc_3_scene_18_lempar_yoyu_shoot_1 = "assets/cg/cg_arc_3_scene_18_lempar_yoyu_shoot_1.png"
+image cg_arc_3_scene_18_lempar_yoyu_shoot_2 = "assets/cg/cg_arc_3_scene_18_lempar_yoyu_shoot_2.png"
+image cg_arc_3_scene_18_lempar_yoyu_shoot_3 = "assets/cg/cg_arc_3_scene_18_lempar_yoyu_shoot_3.png"
+image cg_arc_3_scene_18_lempar_yoyu_shoot_4 = "assets/cg/cg_arc_3_scene_18_lempar_yoyu_shoot_4.png"

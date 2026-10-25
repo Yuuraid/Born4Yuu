@@ -24,3 +24,5 @@ transform looping_shake:
 define slashht = ImageDissolve("assets/effects/Apho_RenPyImageDissolveTransitions/slasht.png", 1.0, ramplen=64)
 
 define dusted = ImageDissolve("assets/effects/Apho_RenPyImageDissolveTransitions/crack.png", 1.0, ramplen=64)
+
+define slash = ImageDissolve("assets/effects/Apho_RenPyImageDissolveTransitions/slash.png", 1.0, ramplen=64)
