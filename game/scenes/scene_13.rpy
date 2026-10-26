@@ -14,7 +14,10 @@ label scene_13:
     nd_narrator_brown "Aku bingung bagaimana berita ini bisa sangat cepat menyebar dalam waktu beberapa jam saja ? Aku tidak mengerti lagi dengan tempat ini."
     
     nd_narrator_brown "Tepat ketika aku sedang melamun, aku mendengar suara langkah kaki yang cepat menghampiriku."
-    
+
+    play music bgm_scene1_rock volume 0.9 loop
+    # play sound pressure
+
     scene pe kick kick_set_alter:
         zoom 0.95
         xzoom -1
@@ -66,11 +69,6 @@ label scene_13:
     nd_akasyah_brown "Hah ? Kabur ? Dari hadapan gue ? Ga mungkin ! Ga bakal gua biarin si tua itu kabur dari gua. Gimana Dit ? Lu udah nemu belum kelemahannya si Seiya ?"
     show akasyah at idle
     
-    # show akasyah at speaking
-    # voice voice_3_13_200_akasyah
-    # nd_akasyah_brown "Gimana Dit ? Lu udah nemu belum kelemahannya si Seiya ?"
-    # show akasyah at idle
-    
     show dityo at speaking
     voice voice_3_13_201_dityo
     nd_dityo_brown "Udah. Menurut pengamatanku, Seiya hanya dapat berpindah dari radius 20 meter dari tempat ia terakhir berdiri."
@@ -91,7 +89,7 @@ label scene_13:
     voice voice_3_13_203_dityo
     nd_dityo_brown "WOI ! TUNGGU, EMANGNYA LU TAU DIA LARI KE... {w=0.5}Ah sudahlah, tidak ada untungnya mengharapkan dia untuk bekerja sama."
     show dityo at idle
-
+    stop music
     jump scene_14
 
     return

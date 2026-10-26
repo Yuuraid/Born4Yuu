@@ -1,24 +1,16 @@
 # label start:
 
 label scene_3:
-    # # scene hutan # sementara
-    # scene hutan with Dissolve(2.0)
-    # $ quick_menu = True
-    
-    # BG hutan taman
-
+    play music bgm_scene3_forest_w_ambience volume .9 loop
     play sound sfx_ambience_grasak_grusuk_daun_scene3
     scene transition_screen orange concentrationline02_w with dissolve
     show yuura scared at center, speaking with easeinright
     nd_narrator_brown "Aku berlari, terus berlari. Tanpa sekalipun melihat ke belakangku, aku berlari tanpa henti berharap mereka semua tidak mengejar diriku lagi."
-        # show yuura normal animated at center
-        # with Dissolve(2.0)
     
     show yuura at speaking
     nd_yuura_brown "*huft huft..."
     hide yuura with easeoutleft
     stop sound
-    # play music "audio/bgm/hutan.ogg" fadein 1.0
     
     play music bgm_scene3_forest_w_ambience fadeout 1.0 volume 0.7 loop
     scene hutan taman with dissolve
@@ -35,46 +27,33 @@ label scene_3:
     
     play sound sfx_expression_angry
     show yuura angry eff_angry at speaking
-    nd_yuura_brown "(Bagaimana aku bisa tiba-tiba berada di tempat ini. Apa yang telah terjadi? Mengapa ini semua terjadi? Dan kenapa aku bisa ada disini?)"
+    nd_yuura_brown "(Bagaimana aku bisa tiba-tiba berada di tempat ini. Apa yang telah terjadi? Mengapa ini semua terjadi? Dan kenapa aku bisa ada di sini?)"
 
-        # hide yuura normal animated
-        # with fade
-        # show yuura normal animated at left # harusnya cuma geser, tapi ga ngerti maenin x y nya
-        # with Dissolve(1.0)
-        # show Unknown at right # karakter terlalu kanan dan terlalu kiri
-        # with Dissolve(1.0)
     stop music fadeout 1.0
     play music bgm_scene3_pria_asing volume 0.90 fadein 2.0 fadeout 2.0 loop
-    # show yuura at right, idle with ease
-    # show pria netral at left, silhouette, speaking with moveinleft
+    
     pause 0.2
     voice voice_1_3_19_pria_misterius
     nd_unknown_brown "Capek kan? Lari-lari"
     
-    # show pria at silhouette, idle
     show yuura netral eff_exclamation at shake
     play sound sfx_expression_surprised
     nd_narrator_brown "Aku terkejut mendengar suara yang entah dari mana asalnya. Aku melihat sekitar dan merasakan adanya seseorang di balik pohon yang ku sandari."
     
-    # show pria at reveal_character, speaking with dissolve
     show yuura none at idle
     voice voice_1_3_20_pria_misterius
     nd_unknown_brown "Gausah takut, aku gak gigit"
     
-    # show pria at idle
     nd_narrator_brown "Aku merasa terkejut, bingung, sekaligus bertanya-tanya dari mana orang ini berasal. Aku tidak tahu apapun tentangnya, yang aku tahu suara ini adalah suara laki-laki."
 
-    # show pria at speaking
     voice voice_1_3_21_pria_misterius
     nd_unknown_brown "Kamu.. bukan dari dunia ini kan?"
 
     play sound sfx_expression_angry
     show yuura angry eff_angry at face_flip, speaking
-    # show pria at idle
     nd_yuura_brown "S-siapa kamu??? CEPAT JAWAB DARIMANA KAMU TAHU TENTANGKU!"
     
     show yuura at face_flip, idle 
-    # show pria at speaking
     voice voice_1_3_23_pria_misterius
     nd_unknown_brown "Intuisiku saja"
     
@@ -86,8 +65,10 @@ label scene_3:
 
 
     show yuura at idle
-    # show pria at speaking
     nd_unknown_brown "..."
+
+    stop music
+    play music bgm_scene3_pelukan volume .9 loop
 
     show yuura at speaking
     # show pria at idle
@@ -148,6 +129,9 @@ label scene_3:
         linear 5.0 zoom 1.8
 
     nd_narrator_brown "Aku menceritakan semuanya tanpa ku sadari, orang itu hanya diam membiarkan ku mengeluarkan semuanya."
+
+    stop music
+    play music bgm_scene1_jade_bottle volume .9 loop
     
     # DEMO END HERE
 
@@ -237,13 +221,9 @@ label scene_3:
     hide pria with dissolve
     show yuura scared eff_exclamation at speaking
     nd_yuura_brown "Ke mana orang itu pergi ?"
-    
+    stop music
     show yuura at idle
     nd_narrator_brown "Aku terdiam sejenak, bertanya-tanya kemana pria itu pergi. Tapi aku langsung mengalihkan perhatianku saat ini, aku sudah tidak peduli lagi dan langsung pergi mencari jalan keluar dari sini."
     hide yuura with easeoutleft
-        # $ quick_menu = False
-
-
-    # play music "audio/bgm/hutan.ogg" fadeout 1.0
 
     jump scene_4

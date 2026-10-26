@@ -1,13 +1,14 @@
 # label start:
 
 label scene_7:
+
     scene inn lorong with fade
     show yuura netral at ease_custom(offscreenleft, center, 1.8), face_flip, idle
-    # BG: lorong penginapan
-    # show lorong penginapan with dissolve(2.0)
-    nd_narrator_brown "Setelah menyelesaikan makananku, aku berjalan-jalan di sekitar penginapan untuk mencari cara keluar dari sini. Aku menyusuri tiap lorong penginapan yang tak kukenali, mencari informasi ke setiap sudut mengenai bangunan ini."
-        # play music rock with fadein 1.0 -> define music dulu
     
+    nd_narrator_brown "Setelah menyelesaikan makananku, aku berjalan-jalan di sekitar penginapan untuk mencari cara keluar dari sini. Aku menyusuri tiap lorong penginapan yang tak kukenali, mencari informasi ke setiap sudut mengenai bangunan ini."
+
+    play music bgm_scene1_rock volume .9 loop
+
     nd_narrator_brown "Tak selang berapa lama, aku bertemu dengan seseorang yang badannya besar, dengan perawakan layaknya om-om ganas di film cab*l yang kutonton."
     
     nd_narrator_brown "Dia menatapku sebentar dan langsung lari ke arahku. Membuatku panik dan langsung kabur dari hadapannya."
@@ -56,6 +57,7 @@ label scene_7:
     nd_narrator_brown "Ketika aku sudah mulai kehabisan tenaga, tanganku tetiba ditarik ke dalam sebuah ruangan."
     
     nd_narrator_brown "Membuatku terkejut bukan main dengan apa yang baru saja terjadi."
-        # stop music fadeout 1.0
+
+    stop music fadeout 1.0
 
     jump scene_8

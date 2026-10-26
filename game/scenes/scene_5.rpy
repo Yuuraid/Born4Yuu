@@ -1,11 +1,7 @@
 # label start:
 
 label scene_5:
-    # scene black #sementara
-    # $ quick_menu = True
-    # # play music 
-    # # scene teras penginapan pagi with Dissolve(2.0)
-    # BG teras penginapan pagi
+    play music bgm_scene1_foto_foto_kenangan volume .9 loop
     scene inn entrance_2
     show yuura netral at center, idle
     nd_narrator_brown "Setelah ditinggal oleh Haruto, entah mengapa rasa lelahku kembali, rasanya sangat berat sekali untuk melangkah."
@@ -23,21 +19,22 @@ label scene_5:
 
     nd_narrator_brown "Aku berjalan dengan terhuyung-huyung, badanku gemetar, penglihatanku mulai kabur."
 
+    stop music
+    #sfx jatuh
+
     show yuura at fall_down
     $ renpy.pause(0.6, hard=True) # Waits for the falling animation to finish
     show layer master at shake
     hide yuura
-        # # bgm stop
-        # hide yuura normal animated with moveoutbottom
-        # show layer master at shake_custom
+
     nd_narrator_brown "Tiba tiba tubuhku tersungkur tak berdaya, aku melihat seorang sedang berdiri diam di kejauhan."
     
     nd_narrator_brown "Tanganku berusaha menggapainya, suaraku yang sudah serak berusaha berteriak ke arahnya."
     
     scene black with eye_close
 
+    #play sound ears ringing
     nd_yuura_black "Tolong..."
-        # show Unknown at center with Dissolve(1.0)
     
     voice voice_1_5_59_taro
     wd_unknown_black "Anee? ANEEE!?"

@@ -4,7 +4,7 @@ label scene_18:
     scene black with dissolve
     pause 0.2
     scene inn gudang outside with eye_open
-    # play music trigger
+    play music bgm_scene16_trigger volume 0.90 loop
     nd_narrator_brown "Aku terbangun dan mendengar suara samar, ketika aku mencoba untuk duduk, aku melihat Dawam dan Aergia yang masing-masing di antara mereka telah menyiapkan kuda-kuda, sudah jelas itu merupakan serangan pengakhiran untuk mengakhiri pertempuran panjang mereka."
     show aergia hurt at right, shake, speaking
     voice voice_3_18_584_aergia
@@ -61,6 +61,8 @@ label scene_18:
     show aergia at right, idle
     show dawam at left, idle
     with ease
+    stop music
+    play music bgm_scene1_jade_bottle volume .9 loop
 
     nd_narrator_brown "Aku menangkap tangan mereka masing-masing dengan tanganku, dalam sekejap menghentikan semua serangan pamungkas mereka tanpa sisa."
     show yuura angry at center, idle
@@ -141,11 +143,14 @@ label scene_18:
     voice voice_3_18_611_dawam
     nd_dawam_brown "Nona..."
     show dawam at idle
-    # hide aergia with dissolve
-    # hide dawam with dissolve
+    
     show dawam behind yuura at custom_sprite_pos(x=0.3), idle
     show aergia behind yuura at custom_sprite_pos(x=0.7), idle
     with ease
+    
+    stop music
+    play music bgm_scene3_forest volume .9 loop
+
     nd_narrator_brown "Aku mengelus kepala mereka dengan lembut, sebelum meninggalkan mereka berdua. Aku berlari menuju tempat pertarungan lainnya."
 
     scene inn ruang_kerja 
@@ -254,18 +259,9 @@ label scene_18:
     show akasyah angry at right, face_flip, speaking
     with dissolve
 
-    # show yuura at idle
-    # hide yuura with easeoutleft
-    # hide rian with dissolve
-    # hide axia with dissolve
+    stop music 
+    play music bgm_scene15_pursuit volume 0.9 loop
 
-    # nd_narrator_black "Aku pergi dengan grappling hook dan melesat ke arah pertempuran berikutnya."
-    # stop music
-    # play music pursuit ver 2
-    # hide yuura
-    
-    # show seiya hurt at left, face_flip, idle
-    # show akasyah at shake
     voice voice_3_18_629_akasyah
     nd_akasyah_brown "SEIYAAAAA !!"
 
@@ -329,6 +325,9 @@ label scene_18:
     show cg_arc_3_scene_18_lempar_yoyu_shoot_2:
         xpos 1.0
         ease 0.2 xpos 0.0
+        
+    stop music
+    play music bgm_scene8_awkward_yoyu_ver volume 0.9 loop
 
     nd_narrator_brown "Aku melempar sebuah minuman berlabel Yoyu kepada Akasyah."
 

@@ -3,26 +3,22 @@
 label scene_11:
 
     scene inn parkiran with Dissolve(2.0)
-
-        # # show lorong dekat pintu penginapan 
-        # with Dissolve(1.0)
+    
+    play music bgm_scene1_start volume .9 loop
 
     show yuura netral at face_flip, ease_custom(offscreenleft, offscreenright, 15.0) zorder 10
     pause 2.0
     show josua netral at ease_custom(offscreenright, left, 10.0), idle
     show ibe netral at ease_custom(offscreenright, right, 10.0), idle
 
-    # nd_narrator_brown "Sepanjang perjalanan, aku selalu mendengar gosip tentang diriku, entah mengapa rasanya sangat cepat sekali."
-
     nd_narrator_brown "Sepanjang perjalanan, aku sangat bingung dengan semua yang terjadi seharian ini. Tapi aku harus bersikap normal agar tidak di curigai orang-orang."
 
-    # nd_narrator_brown "Entah seperti ada dua anomali yang mana aku tidak mengerti apa yang mereka bicarakan."
-    
     show josua at speaking
     voice voice_2_11_163_josua
     nd_josua_brown "{font=alien}Be be Yuura tadi Ibe, gokil juga baru nyampe udah ketemu artis kita{/font}\n(Be be Yuura tadi Ibe, gokil juga baru nyampe udah ketemu artis kita)"
-    
-    # show ibe netral at right with dissolve
+
+    # play sound people chatter
+
     show ibe at speaking
     show josua at idle
     voice voice_2_11_164_ibe
@@ -57,6 +53,8 @@ label scene_11:
     with fade
 
     show axia netral at ease_custom(offscreenright, right, 5.0), idle
+
+    stop music
 
     nd_narrator_brown "Sementara itu di tempat lain, Axiaregis bertemu dengan seseorang yang misterius."
     
@@ -118,6 +116,8 @@ label scene_11:
     nd_unknown_brown "Hah Yuura?! Emangnya, kenapa sama si Yuura?"
     show aergia at silhouette, idle
         
+    play music bgm_scene1_start volume .9 loop
+
     show axia at speaking
     voice voice_2_11_175_axiaregis
     nd_axiaregis_brown "Sebenarnya..."
@@ -168,7 +168,7 @@ label scene_11:
     nd_narrator_brown "Tapi terkadang mereka terlihat sangat ricuh."
     
     nd_narrator_brown "Aku terus bergerak, tanpa memperdulikan apapun di sekitarku. Aku hanya ingin beristirahat dari semua keanehan ini."
-
+    stop music
     jump scene_12
 
     return

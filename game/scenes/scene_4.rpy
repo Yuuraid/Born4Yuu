@@ -1,17 +1,14 @@
 # label start:
 
 label scene_4:
-    # scene black #sementara
-    # $ quick_menu = True
-    # # scene Kuil kecil with Dissolve(2.0)
-    # # play music "audio/bgm/kuil.ogg" fadein 1.0
-    # show Yuura at center
-    # with Dissolve(1.0)
+    play music bgm_scene3_forest volume .9 loop
     scene transition_screen orange concentrationline02_w with dissolve
     show yuura scared at center, speaking with easeinright
     nd_narrator_brown "Aku terus berjalan, melewati pepohonan yang entah kenapa sangat familiar bagiku. Sepertinya aku sudah berputar-putar di tempat ini selama berjam-jam tanpa menemukan jalan keluar."
 
     nd_narrator_brown "Kaki ku lemas, rasanya sangat sakit sekali. Aku benar-benar berjalan-jalan sepanjang hari tapi tetap saja berakhir di tempat yang sama."
+    stop music 
+    play music bgm_scene4 volume .9 loop
     
     scene hutan kuil with fade
     show yuura netral at center, speaking with easeinright
@@ -26,7 +23,6 @@ label scene_4:
     nd_narrator_brown "Aku mencari disekitar dengan harapan bahwa aku akan bertemu seseorang."
     
     hide yuura
-    # show yuura none netral at right, speaking
     show yuura none netral at right, face_flip, speaking
     with fade
     show haruto happy at left with easeinleft
@@ -35,11 +31,7 @@ label scene_4:
     nd_narrator_brown "Tanpa ku sadari seseorang datang menghampiriku dari belakang, membuatku berteriak kencang"
     
     show yuura none netral
-    nd_yuura_brown "AHH !!" # buat gimmick biar karakternya loncat
-        # hide Yuura # harusnya geser aja ke kiri
-        # show Yuura at left
-        # show Haruto at right
-        # with Dissolve(0.5)
+    nd_yuura_brown "AHH !!"
     
     show haruto eff_exclamation at speaking
     show yuura at idle
@@ -139,5 +131,5 @@ label scene_4:
     
     nd_narrator_brown "Aku berterimakasih banyak pada Haruto atas kebaikannya. Dia hanya tersenyum sembari berjalan menjauh menuju hutan, dan menghilang dari pandanganku."
         # $ quick_menu = False
-
+    stop music
     jump scene_5

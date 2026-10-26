@@ -11,7 +11,7 @@ label scene_16:
         # show halaman belakang penginapan 
     nd_narrator_brown "Setelah keluar dari pintu dan berjalan beberapa langkah, langkahku terhenti. Tepat berada dihadapanku, Aergia berdiri dengan raut wajah yang tak dapat ku mengerti."
     
-        # play music judgment.mp3
+    play music bgm_scene15_judgment volume .9 loop
 
     show aergia netral at speaking
     voice voice_3_16_366_aergia
@@ -36,7 +36,7 @@ label scene_16:
 
     nd_narrator_brown "Bentakan nya berhasil membuatku diam seribu bahasa, seperti saat pertama kami bertemu, ia marah karena hal yang tidak kuketahui."
     
-        # stop music
+    stop music
         
     show aergia at speaking
     voice voice_3_16_370_aergia
@@ -62,7 +62,7 @@ label scene_16:
     nd_yuura_brown "Aku buka-"
     show yuura at idle, face_flip
 
-        # play music elegant boss.m4a
+        play music bgm_scene15_judgment volume .9 loop  
         
     show aergia at speaking
     voice voice_3_16_375_aergia
@@ -288,7 +288,7 @@ label scene_16:
     
     nd_narrator_black "Pukulan demi pukulan dilancarkan olehnya, makin lama pukulannya makin cepat dan lebih menyakitkan, aku hanya bisa menerima pukulan, aku sudah tidak ada kekuatan untuk melawan balik..."
     
-    # stop music
+    stop music
     scene black with fade
 
     voice voice_3_16_386_aergia
@@ -317,10 +317,8 @@ label scene_16:
     scene black with fade
 
     nd_narrator_black "Seberharga itukah Yuura di mata mereka... Sialan... Kenapa ini selalu terjadi padaku..."
-    
-    # play music trigger
-    # show dawam angry at silhouette
-    # with dissolve
+
+    play music bgm_scene16_trigger volume 0.9 loop
     voice voice_3_16_387_dawam
     nd_unknown_black "Hal yang kau perbuat itu sungguh menjijikan."
     
@@ -1169,7 +1167,7 @@ label scene_16:
     # show dawam at idle
     
     # play sound kretek tangan
-    # stop music
+    stop music
     jump scene_17
     
     return

@@ -1,10 +1,8 @@
 # label start:
 
 label scene_8:
+    # play sound crowd rushing against wooden floor
 
-    # BG: Ruangan di bawah tangga
-        # show ruangan di bawah tangga with Dissolve(1.0)
-        # play music  awkward with fadein 1.0 -> define dulu
     scene inn lorong lantai_1 with fade
     show yuura netral at ease_custom(offscreenright, right, 0.8), idle
     show shark netral at silhouette, ease_custom(offscreenright, left, 1.5), idle
@@ -12,6 +10,8 @@ label scene_8:
     
     show shark eff_sweat_w at idle
     nd_narrator_brown "Dia terlihat sangat pemalu, dengan rambut putih dan mata berwarna biru. Membuatku merasa bersyukur masih ada yang mau menyelamatkanku."
+
+    play bgm_scene8_awkward volume .9 loop
     
     show yuura at speaking
     show shark none at face_flip, idle
@@ -30,6 +30,7 @@ label scene_8:
     show shark at face_flip, speaking
     voice voice_2_8_81_shark
     wd_unknown_brown "O-oh begitu, i-ini anee waktu pertama kali gabung, kamu ngasih aku buku yang isinya nama-nama anak penginapan disini"
+
         # play sound memberi barang ??
     
     show dark_overlay
@@ -77,6 +78,7 @@ label scene_8:
     
     show shark at idle
     nd_narrator_brown "Aku langsung lari tanpa memikirkan orang itu. Dia tampak ingin memanggilku, tapi aku sudah menghilang dari sudut pandangnya."
-        # stop music 
+
+    stop music 
 
     jump scene_9
