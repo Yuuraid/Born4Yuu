@@ -62,7 +62,7 @@ label scene_16:
     nd_yuura_brown "Aku buka-"
     show yuura at idle, face_flip
 
-        play music bgm_scene15_judgment volume .9 loop  
+    play music bgm_scene15_judgment volume .9 loop  
         
     show aergia at speaking
     voice voice_3_16_375_aergia
