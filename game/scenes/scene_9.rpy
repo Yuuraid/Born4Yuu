@@ -1,10 +1,8 @@
 # label start:
 
 label scene_9:
+    play music bgm_scene8_awkward_yoyu_ver_1st_part_only volume .9 loop
 
-    # BG: Tangga menuju lantai 2
-        # play music awkward and yoyu with fadein 1.0 -> define dulu
-        # show tangga menuju lantai 2 with Dissolve (1.0)
     scene transition_screen orange concentrationline02_w with fade
     show yuura netral at ease_custom(offscreenleft, center, 0.5), speaking, face_flip
 
@@ -25,7 +23,9 @@ label scene_9:
     with hpunch 
 
     nd_narrator_brown "Namun, tanpa sengaja aku menabrak salah seorang yang sedang berdiri menatap langit sambil minum susu."
-        # play sound bruuk -> define dulu
+
+    stop music
+    # sfx bruuk
     
     show yuura at reset_xoffset
     show akasyah at reset_xoffset 
@@ -118,6 +118,7 @@ label scene_9:
     nd_narrator_black "Aku langsung lari dengan sangat cepat, sebisa mungkin menjauh dari mereka berdua. Aku terus mendengarkan erangan dari Akasyah dan suara ledakan di belakangku, tapi apa dayaku."
     
     nd_narrator_black "Aku hanya bisa lari untuk selamat dari semua bencana ini"
-        # stop music
+    
+    stop music
 
     jump scene_10

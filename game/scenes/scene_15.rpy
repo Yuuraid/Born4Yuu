@@ -3,6 +3,7 @@
 label scene_15:
 
     scene inn ruang_kerja with Dissolve(1.0)
+    play music bgm_scene15_feint volume 0.90 loop
 
     show yuura scared at left, speaking
     nd_yuura_brown "Ah... Ah..."
@@ -110,8 +111,13 @@ label scene_15:
     nd_axiaregis_brown "Jika kamu menyerah semuanya akan menjadi lebih baik loh~"
     show axia at idle
 
+    stop music
+
     menu lawan:
         "Menyerah pada Axiaregis":
+
+            play music bgm_scene1_foto_foto_kenangan volume 0.90 loop 
+            
             show yuura at speaking
             nd_yuura_brown "A-aku... menyerah !"
             show yuura at idle
@@ -133,8 +139,25 @@ label scene_15:
             # show black with Dissolve(1.0)
             nd_narrator_brown "Axiaregis menjentikkan jarinya dan membuatku mematung tak bisa bergerak, mataku menjadi blur dan semuanya menjadi tak terlihat lagi. Aku mematung untuk selamanya."
             
+<<<<<<< Updated upstream
             # end?
         "Berontak sekuat tenaga":
+=======
+            $ quick_menu = False
+
+            $ renpy.call_screen("game_over_screen", reason_text="Yuura berubah menjadi standee, menambahkan koleksi my bini Axiaregis.")
+            
+            stop music
+
+            return
+
+            # end?
+        "Berontak sekuat tenaga":
+
+            play music bgm_scene15_feint volume 0.90 loop
+
+            show axia at custom_sprite_pos(x=0.4) with ease
+>>>>>>> Stashed changes
             show yuura at speaking
             nd_yuura_brown "ARGhhh Lepas !"
             show yuura at idle
@@ -156,6 +179,18 @@ label scene_15:
             # play sound kucing huh
             nd_narrator_brown "Tiba-tiba saja muncul sebuah kudanil besar menabrakkan dirinya yang membuat Axiaregis terpental ke dalam ruangan."
             
+<<<<<<< Updated upstream
+=======
+            scene inn ruang_kerja
+            show axia netral at right, idle
+            show yuura netral at custom_sprite_pos(x=-0.2), idle
+            show rian angry at left, idle
+            with fade
+
+            stop music
+            play music bgm_scene15_pursuit volume 0.90 loop
+
+>>>>>>> Stashed changes
             show axia at speaking
             nd_axiaregis_brown "Ah…... Iya-iya si penjaga hewan rupanya..."
             show axia at idle
@@ -195,8 +230,20 @@ label scene_15:
 
             nd_narrator_brown "Axiaregis menggunakan kekuatannya untuk merubah tempat ini jadi arena battle."
             
+<<<<<<< Updated upstream
             # BG: show duel arena yugioh
             show axia at speaking
+=======
+            hide screen rian_hp 
+            hide screen axia_hp 
+            with dissolve
+
+            stop music
+            play music bgm_scene15_catastrophe volume 0.90 loop
+
+            show axia netral at right, speaking
+            voice voice_3_15_296_axiaregis
+>>>>>>> Stashed changes
             nd_axiaregis_brown "Sekarang giliranku."
             
             nd_axiaregis_brown "Aku Summon Renge dengan attack 300 ke arena !"
@@ -339,6 +386,9 @@ label scene_15:
             show axia at idle
 
             nd_narrator_brown "Rian menarik tanganku dan langsung lari dari hadapan Axiaregis."
+
+            stop music
+            play music bgm_scene1_rock volume 0.90 loop
             
             show axia at speaking
             nd_axiaregis_brown "TUNGGU ! WOI !"

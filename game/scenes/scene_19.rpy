@@ -76,8 +76,31 @@ label scene_19:
     show haruto at idle
     show layer master at shake
     nd_narrator_brown "Tiba-tiba saja terdengar sebuah ledakan besar di taman, membuatku langsung berlari dengan sangat kencang."
+<<<<<<< Updated upstream
     # play sound start
     hide haruto 
+=======
+
+    play music bgm_after_credit volume .9 loop
+
+    hide yuura with easeoutright
+
+    scene taman_penginapan_1
+    show dawam netral at custom_sprite_pos(x=-0.2), idle
+    show dityo netral at custom_sprite_pos(x=1.2), idle
+    show seiya netral at face_flip, custom_sprite_pos(x=-0.5), idle
+    show aergia netral at face_flip, custom_sprite_pos(x=0.5), idle
+    show axia netral at custom_sprite_pos(x=0.8), idle
+    show shark netral at face_flip, custom_sprite_pos(x=0.25), idle
+    show rian netral at custom_sprite_pos(x=0.1), idle
+    show akasyah netral at custom_sprite_pos(x=-0.55), idle
+    
+    with fade
+    show yuura netral at custom_sprite_pos(x=1.4), idle with easeinright
+
+    pause 0.2
+
+>>>>>>> Stashed changes
     show yuura eff_surprise_y at speaking
     nd_yuura_brown "Apa sih yang kalian lakukan ?"
     show yuura none at idle

@@ -2,7 +2,12 @@
 
 label scene_11:
 
+<<<<<<< Updated upstream
     scene inn entrance_2 with Dissolve(2.0)
+=======
+    scene inn parkiran with Dissolve(2.0)
+    play music bgm_scene1_start volume .9 loop
+>>>>>>> Stashed changes
 
         # # show lorong dekat pintu penginapan 
         # with Dissolve(1.0)

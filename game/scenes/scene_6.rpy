@@ -6,6 +6,9 @@ label scene_6:
     # $ quick_menu = True
     # show yuura normal animated at center
     # with Dissolve(1.0)
+
+    play music bgm_scene1_jade_bottle volume .9 loop
+
     scene inn kamar_yuura morning with eye_open
     pause 1.0
     show layer master at shake
@@ -30,6 +33,9 @@ label scene_6:
     
     show yuura at speaking
     nd_yuura_brown "Arghhhh... Aku sudah sangat lelah... Sebaiknya aku mandi, bauku sudah sangat buruk"
+
+    stop music
+    play music bgm_scene6_ver2 volume .9 loop
     
     show yuura at idle
     nd_narrator_brown "Aku mengambil handuk dan segera pergi ke onsen."
@@ -53,7 +59,14 @@ label scene_6:
     
     nd_yuura_brown "Rasanya benar-benar puas dengan pemandian di gedung ini."
     
+<<<<<<< Updated upstream
     nd_narrator_brown "Aku mengambil air dan membilas sisa-sisa sabun dari tubuhku, dan mengeringkan sela-sela jari kakiku"
+=======
+    # 10s
+    nd_narrator_brown "Aku mengambil air dan membilas sisa-sisa sabun dari tubuhku, dan mengeringkan sela-sela jari kakiku{w=5.0}{nw}"
+
+    stop music
+>>>>>>> Stashed changes
     
     scene inn kamar_yuura morning with fade
     show yuura happy at ease_custom(offscreenright, center, 1.8)
@@ -61,6 +74,9 @@ label scene_6:
     show yuura netral 
 
     nd_narrator_brown "Setelah mandi, aku terkejut karena mendengar ketukan di pintu. Membuatku sedikit panik karena melupakan bahwa aku masih di tempat antah berantah."
+
+    play music bgm_scene1_foto_foto_kenangan volume .9 loop
+
         # play music fotokenangan fadein 1.0 -> define music dulu
     
     show yuura at face_flip with dissolve
@@ -94,5 +110,5 @@ label scene_6:
     nd_narrator_brown "dan tersenyum tipis, merasakan sebuah ketulusan dari orang itu..."
 
         # $ quick_menu = False
-
+    stop music
     jump scene_7

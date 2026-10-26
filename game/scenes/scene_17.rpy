@@ -2,8 +2,17 @@
 
 label scene_17:
 
+<<<<<<< Updated upstream
     scene inn ruang_tamu_1
     with Dissolve(1.0)
+=======
+    play music bgm_scene3_pria_asing volume 0.90 loop
+
+    scene inn ruang_tamu_1 
+    show yuura hurt at left, idle
+    show pria netral at right, idle
+    with eye_open
+>>>>>>> Stashed changes
     # play music pria asing
     
     nd_narrator_brown "Sementara itu di tempat yang tidak diketahui, aku terbangun tepat di hadapan seseorang yang pernah kutemui di dalam hutan."
@@ -112,10 +121,11 @@ label scene_17:
     nd_pria_brown "Sekarang ini adalah waktunya untukmu memilih."
     show pria at idle
 
-    # stop music
+    stop music
     menu siap:
         "Aku belum siap":
-            # play music pria asing
+            play music bgm_scene3_pria_asing volume 0.90 loop
+
             show yuura at speaking
             nd_yuura_brown "Aku belum siap."
             show yuura at idle
@@ -354,9 +364,10 @@ label scene_17:
             
             nd_pria_brown "Jadilah Yuura yang kamu inginkan atau pergi dan tak pernah kembali."
             show pria at idle
+            stop music
             menu keputusan:
                 "Pergi dari Inn untuk selamanya":
-                    # play music foto foto kenangan
+                    play music bgm_scene1_foto_foto_kenangan volume .9 loop
                     show yuura at speaking
                     nd_yuura_brown "Aku tak bisa."
                     show yuura at idle
@@ -437,10 +448,24 @@ label scene_17:
                     
                     nd_narrator_brown "Semuanya menjadi sangat kelabu dan menyakitkan, aku berjalan melewati semua orang dan pergi keluar penginapan ini."
                     
+<<<<<<< Updated upstream
                     nd_narrator_brown "Tanpa melihat ke belakang dan tanpa menyesali semuanya. Aku harap aku tak akan kembali kesini, meskipun hatiku masih menginginkannya."
                     # ------------ END ------------
                 "Yuuraid adalah segalanya bagiku":
                     # play music two chords
+=======
+                    nd_narrator_black "Tanpa melihat ke belakang dan tanpa menyesali semuanya. Aku harap aku tak akan kembali kesini, meskipun hatiku masih menginginkannya."
+                    stop music
+                    # ------------ END ------------
+
+                    $ quick_menu = False
+
+                    $ renpy.call_screen("game_over_screen", reason_text="Yuura Pergi.")
+                    
+                    return
+                "Aku tidak mengerti...":
+                    play music bgm_scene17_chord volume 0.90 loop
+>>>>>>> Stashed changes
                     show yuura at speaking
                     nd_yuura_brown "Aku..."
                     
@@ -528,10 +553,29 @@ label scene_17:
                     nd_pria_brown "Biar aku tunjukkan padamu."
                     show pria at idle
 
+<<<<<<< Updated upstream
                     # stop music
                     # play misic credit scene
                     
                     nd_narrator_brown "Pria itu menunjukkan sebuah video, di mana banyak hal yang terjadi."
+=======
+                    stop music
+                    play music bgm_credit_scene volume .9 loop
+
+                    scene vid_memory_pleaseework:
+                        xalign 0.5
+                        yalign 0.5
+                    with fade
+                    pause 250
+                    
+                    hide vid_memory_pleaseework
+                    scene whiteroom
+                    show yuura sad at left, idle, face_flip
+                    show pria netral at right, speaking
+                    with Flash
+
+                    # nd_narrator_brown "Pria itu menunjukkan sebuah video, di mana banyak hal yang terjadi."
+>>>>>>> Stashed changes
                     
                     show pria at speaking
                     nd_pria_brown "Bagaimana menurutmu ?"
@@ -567,9 +611,12 @@ label scene_17:
                     show yuura at idle
                     
                     nd_narrator_brown "Aku menghilang sepenuhnya dan kembali ke dunia nyata."
+                    stop music
                     jump scene_18
         "Aku ingin pergi dari sini":
-            # play music foto foto kenangan
+
+            play music bgm_scene1_foto_foto_kenangan volume .9 loop
+
             show yuura at speaking
             nd_yuura_brown "Aku ingin pergi dari sini."
             show yuura at idle

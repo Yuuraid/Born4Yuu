@@ -9,6 +9,7 @@ label scene_13:
     nd_narrator_brown "Aku bingung bagaimana berita ini bisa sangat cepat menyebar dalam waktu beberapa jam saja ? Aku tidak mengerti lagi dengan tempat ini."
     
     nd_narrator_brown "Tepat ketika aku sedang melamun, aku mendengar suara langkah kaki yang cepat menghampiriku."
+    play music bgm_scene1_rock volume .9 loop
     
         # play sound pressure
         # Use CG here
@@ -54,7 +55,7 @@ label scene_13:
     show dityo at speaking
     nd_dityo_brown "WOI ! TUNGGU, EMANGNYA LU TAU DIA LARI KE... {w=0.5}Ah sudahlah, tidak ada untungnya mengharapkan dia untuk bekerja sama."
     show dityo at idle
-
+    stop music
     jump scene_14
 
     return

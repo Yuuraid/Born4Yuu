@@ -3,6 +3,7 @@
 label scene_12:
 
     scene inn entrance_2 with Dissolve(2.0) 
+    play music bgm_scene8_awkward volume .9 loop
     
     show yuura netral at center, idle
     nd_narrator_brown "Tepat ketika aku tiba di dekat pintu depan, aku melihat seorang laki-laki berwajah masam."
@@ -86,8 +87,13 @@ label scene_12:
     nd_narrator_brown "Aergia langsung pergi dari sana, membuatku semakin bertanya-tanya dengan apa yang terjadi dan mengapa Yuura yang dulu sangat disayang oleh mereka."
     hide aergia with dissolve
     
+<<<<<<< Updated upstream
     nd_narrator_brown "Aku sudah tidak peduli, aku lelah dan hanya ingin beristirahat sejenak. Pada akhirnya aku duduk di teras dan menikmati waktuku berdiam diri."
 
+=======
+    nd_narrator_brown "Aku sudah tidak peduli, aku lelah dan hanya ingin beristirahat sejenak. Pada akhirnya aku duduk di teras dan menikmati waktu ku berdiam diri."
+    stop music
+>>>>>>> Stashed changes
     jump scene_13
     
     return

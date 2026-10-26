@@ -7,6 +7,7 @@ label scene_5:
     # # scene teras penginapan pagi with Dissolve(2.0)
     # BG teras penginapan pagi
     scene inn entrance_2
+    play music bgm_scene1_foto_foto_kenangan volume .9 loop
     show yuura netral at center, idle
     nd_narrator_brown "Setelah ditinggal oleh Haruto, entah mengapa rasa lelahku kembali, rasanya sangat berat sekali untuk melangkah."
     
@@ -22,6 +23,8 @@ label scene_5:
     with fade
 
     nd_narrator_brown "Aku berjalan dengan terhuyung-huyung, badanku gemetar, penglihatanku mulai kabur."
+
+    stop music
 
     show yuura at fall_down
     $ renpy.pause(0.6, hard=True) # Waits for the falling animation to finish

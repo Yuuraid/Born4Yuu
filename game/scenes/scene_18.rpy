@@ -1,8 +1,15 @@
 # label start:
 
 label scene_18:
+<<<<<<< Updated upstream
     scene inn backyard with Dissolve(1.0)
     # play music trigger
+=======
+    scene black with dissolve
+    pause 0.2
+    scene inn gudang outside with eye_open
+    play music bgm_scene16_trigger volume 0.90 loop
+>>>>>>> Stashed changes
     nd_narrator_brown "Aku terbangun dan mendengar suara samar, ketika aku mencoba untuk duduk, aku melihat Dawam dan Aergia yang masing-masing di antara mereka telah menyiapkan kuda-kuda, sudah jelas itu merupakan serangan pengakhiran untuk mengakhiri pertempuran panjang mereka."
     show aergia hurt at right, shake, speaking
     voice voice_3_18_584_aergia
@@ -34,6 +41,22 @@ label scene_18:
     # stop music
     # play music jade bottle
     
+<<<<<<< Updated upstream
+=======
+    scene inn gudang outside
+    show yuura angry at center, idle
+    show dawam hurt behind yuura at custom_sprite_pos(x=0.3), idle
+    show aergia hurt behind yuura at custom_sprite_pos(x=0.7), idle
+    with wipe_j_bawah(0.1)
+
+    pause 0.1
+    show aergia at right, idle
+    show dawam at left, idle
+    with ease
+    stop music
+    play music bgm_scene1_jade_bottle volume .9 loop
+
+>>>>>>> Stashed changes
     nd_narrator_brown "Aku menangkap tangan mereka masing-masing dengan tanganku, dalam sekejap menghentikan semua serangan pamungkas mereka tanpa sisa."
     show yuura angry at center, idle
     show dawam at speaking
@@ -113,9 +136,36 @@ label scene_18:
     voice voice_3_18_611_dawam
     nd_dawam_brown "Anee..."
     show dawam at idle
+<<<<<<< Updated upstream
     hide aergia with dissolve
     hide dawam with dissolve
     nd_narrator_brown "Aku mengelus kepalanya dengan lembut, sebelum meninggalkan mereka berdua. Aku berlari menuju tempat pertarungan lainnya."
+=======
+    # hide aergia with dissolve
+    # hide dawam with dissolve
+    show dawam behind yuura at custom_sprite_pos(x=0.3), idle
+    show aergia behind yuura at custom_sprite_pos(x=0.7), idle
+    with ease
+
+    stop music
+    play music bgm_scene3_forest volume .9 loop
+
+    nd_narrator_brown "Aku mengelus kepala mereka dengan lembut, sebelum meninggalkan mereka berdua. Aku berlari menuju tempat pertarungan lainnya."
+
+    scene inn ruang_kerja 
+    show axia netral at right, idle
+    show rian angry at left, idle
+    with Dissolve(1.0)
+
+    pause 1.0
+
+    # show yuura at speaking
+    # show yuura at shake
+    nd_yuura_brown "EDY !!"
+    # show yuura at idle
+
+    show axia at face_flip
+>>>>>>> Stashed changes
 
     show yuura at speaking
     show yuura at shake
@@ -185,10 +235,21 @@ label scene_18:
     nd_narrator_brown "Aku pergi dengan grappling hook dan melesat ke arah pertempuran berikutnya."
     # stop music
     # play music pursuit ver 2
+<<<<<<< Updated upstream
     hide yuura
     show akasyah hurt at left, speaking
     show seiya hurt at right, idle
     show akasyah at shake
+=======
+    # hide yuura
+    
+    # show seiya hurt at left, face_flip, idle
+    # show akasyah at shake
+
+    stop music 
+    play music bgm_scene15_pursuit volume 0.9 loop
+
+>>>>>>> Stashed changes
     voice voice_3_18_629_akasyah
     nd_akasyah_brown "SEIYAAAAA !!"
     show akasyah at idle
@@ -209,9 +270,15 @@ label scene_18:
     
     voice voice_3_18_633_akasyah
     nd_akasyah_brown "MINGGIR GA? ATAU LU..."
+<<<<<<< Updated upstream
     show akasyah at idle
     # stop music
     # play music awkward yoyu
+=======
+    # show akasyah at idle
+    stop music
+    play music bgm_scene8_awkward_yoyu_ver volume 0.9 loop
+>>>>>>> Stashed changes
     
     nd_narrator_brown "Aku melempar sebuah minuman berlabel Yoyu kepada Akasyah."
     show yuura happy at center, speaking
@@ -240,9 +307,15 @@ label scene_18:
     show yuura at idle
     show seiya at speaking
     voice voice_3_18_642_seiya
+<<<<<<< Updated upstream
     nd_seiya_brown "Hahaha...ya... Kamu benar."
     # stop music
     # play music pursuit ver 2
+=======
+    nd_seiya_brown "Hahaha...ya... Kamu benar.{w=1}{nw}"
+    stop music
+    play music bgm_scene15_pursuit volume 0.9 loop
+>>>>>>> Stashed changes
     # play sound angin berhembus sepoi sepoi
     show seiya at idle
     nd_narrator_brown "Sebuah roket meluncur ke arah kami yang sedang mengobrol."
@@ -289,8 +362,8 @@ label scene_18:
     nd_shark_brown "A-aman aja Anee, luka begini doang mah kecil."
     show shark at idle
     nd_narrator_brown "Aku menarik tangannya dan melihat luka yang ada disana. Aku mengoleskan sebuah salep di luka tersebut, untuk membuatnya menjadi lebih baik."
-    # stop music
-    # play music awkward
+    stop music
+    play music bgm_scene8_awkward volume .9 loop
     show shark at speaking
     voice voice_3_18_654_shark
     nd_shark_brown "A-ane ???"
@@ -311,8 +384,8 @@ label scene_18:
     voice voice_3_18_659_shark
     nd_shark_brown "D-dihh...  Diem deh..."
     show shark at idle
-    # stop music
-    # play music scene 4
+    stop music
+    play music bgm_scene4 volume .9 loop
     
     nd_narrator_brown "Aku tertawa kecil karena merasa sangat senang menjahili dirinya. Semua orang yang tadi sedang beristirahat menghampiriku."
     hide dityo

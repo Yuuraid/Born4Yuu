@@ -2,9 +2,6 @@
 
 label scene_8:
 
-    # BG: Ruangan di bawah tangga
-        # show ruangan di bawah tangga with Dissolve(1.0)
-        # play music  awkward with fadein 1.0 -> define dulu
     scene inn lorong lantai_1 with fade
     show yuura netral at ease_custom(offscreenright, right, 0.8), idle
     show shark netral at ease_custom(offscreenright, left, 1.5), idle
@@ -12,6 +9,8 @@ label scene_8:
     
     show shark eff_sweat_w
     nd_narrator_brown "Dia terlihat sangat pemalu, dengan rambut putih dan mata berwarna biru. Membuatku merasa bersyukur masih ada yang mau menyelamatkanku."
+
+    play music bgm_scene8_awkward volume .9 loop
     
     show yuura at speaking
     show shark none at face_flip, idle
@@ -73,6 +72,7 @@ label scene_8:
     
     show shark at idle
     nd_narrator_brown "Aku langsung lari tanpa memikirkan orang itu. Dia tampak ingin memanggilku, tapi aku sudah menghilang dari sudut pandangnya."
-        # stop music 
+
+    stop music
 
     jump scene_9
