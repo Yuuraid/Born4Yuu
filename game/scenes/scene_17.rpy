@@ -447,7 +447,14 @@ label scene_17:
             nd_unknown_brown "Apa kamu kira dia sempurna sejak awal ?"
             show pria at idle
             
-            show pria at custom_sprite_pos(x=0.2) with ease
+            # show pria at custom_sprite_pos(x=0.2) with ease
+            # show pria at ease_custom(right, 0.2, 2.0)
+            show pria:
+                ease 3.0 xalign 0.2
+
+            # camera:
+            #     zoom 1.5
+            #     xpos 0.4
 
             nd_narrator_brown "Pria itu tersenyum, tangannya yang lembut mengelus pipiku dan menyeka air mataku."
             

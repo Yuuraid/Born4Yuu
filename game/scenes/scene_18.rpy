@@ -66,7 +66,7 @@ label scene_18:
     show yuura angry at center, idle
     show dawam at speaking
     voice voice_3_18_588_dawam
-    nd_dawam_brown "Y-yuura ?"
+    nd_dawam_brown "No-nona Yuura ?"
     show dawam at idle
     show yuura at speaking
     show yuura at shake
@@ -122,7 +122,7 @@ label scene_18:
     nd_aergia_brown "Alah nyocot doang, lu kira bakalan mem-"
     show aergia sad
     voice voice_3_18_606_aergia
-    nd_aergia_brown "Eh iya makasih ya..."
+    nd_aergia_brown "Eh iya makasih ya...ehek ehek"
     show aergia at idle
     nd_narrator_brown "Aergia menangis dan mulai menyadari bahwa dirinya tidak sendirian lagi."
     show yuura at speaking
@@ -130,7 +130,7 @@ label scene_18:
     show yuura at idle
     show dawam at speaking
     voice voice_3_18_608_dawam
-    nd_dawam_brown "Gapapa Nona, ini semua adalah tugas yang diperintahkan oleh pak bos."
+    nd_dawam_brown "Gapapa Nona, ini semua adalah tugas yang diperintahkan oleh tuan muda."
     show dawam at idle
     show yuura at speaking
     nd_yuura_brown "Ga... Itu adalah keinginanmu sendiri."

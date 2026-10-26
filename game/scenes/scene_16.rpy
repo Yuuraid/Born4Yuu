@@ -398,7 +398,7 @@ label scene_16:
             
     show dawam at speaking
     voice voice_3_16_396_dawam
-    nd_dawam_black "Itu bukan urusanku, misi ku di sini hanya karena Tuan Muda Risol FRB."
+    nd_dawam_black "Itu bukan urusanku, misi ku di sini hanya karena Tuan Muda Risol."
     
     voice voice_3_16_397_dawam
     nd_dawam_black "Yang terpenting adalah... Selesaikan perintah... Tanpa adanya kesalahan."
@@ -996,7 +996,7 @@ label scene_16:
 
     show aergia at speaking
     voice voice_3_16_403_aergia
-    nd_aergia_black "BAJINGAN ! Berhenti ganggu gw sat !"
+    nd_aergia_black "BAJINGAN ! Berhenti ganggu gw, DASAR BANGSAT !"
     show aergia at idle
 
     scene inn gudang outside:
