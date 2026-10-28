@@ -65,7 +65,7 @@ label scene_6:
     
     # 10s
     nd_narrator_brown "Aku mengambil air dan membilas sisa-sisa sabun dari tubuhku, dan mengeringkan sela-sela jari kakiku{w=5.0}{nw}"
-    stop music
+    # stop music
     
     scene cg_arc_2_scene_06_shoot_4:
         zoom 1.5

@@ -55,7 +55,7 @@ label scene_9:
     show yuura at center with ease
     pause 0.3
     show yuura at left with ease
-    nd_narrator_brown "Aku berusaha mendorong Akasyah. Tapi karena tubuhku kecil dan PENDEK, aku tidak bisa membuatnya bergeser."
+    nd_narrator_brown "Aku berusaha mendorong orang itu. Tapi karena tubuhku kecil dan PENDEK, aku tidak bisa membuatnya bergeser."
     
     show akasyah at speaking
     show yuura at idle
@@ -79,14 +79,14 @@ label scene_9:
     show yuura scared at custom_sprite_pos(x=-0.5)
     show seiya netral at custom_sprite_pos(x=1.3), idle
     with fade
-    nd_narrator_brown "Sebuah tangan melesat ke arahku dengan sangat cepat, tapi beruntung aku tiba-tiba terteleporasi agak jauh dari Akasyah."
+    nd_narrator_brown "Sebuah tangan melesat ke arahku dengan sangat cepat, tapi beruntung aku tiba-tiba terteleporasi agak jauh dari orang itu."
     
     show akasyah at speaking
     voice voice_2_9_94_akasyah
     wd_unknown_brown "HM?! SEIYAAAAAAAAA !!!"
     
     show akasyah at idle
-    nd_narrator_brown "Seiya muncul dari belakang orang itu dan langsung menahan pergerakannya."
+    nd_narrator_brown "Tiba-tiba muncul orang dari belakang orang itu dan langsung menahan pergerakannya."
     
     show seiya at speaking
     voice voice_2_9_95_seiya
