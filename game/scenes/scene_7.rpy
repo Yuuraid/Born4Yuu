@@ -7,7 +7,7 @@ label scene_7:
     
     nd_narrator_brown "Setelah menyelesaikan makananku, aku berjalan-jalan di sekitar penginapan untuk mencari cara keluar dari sini. Aku menyusuri tiap lorong penginapan yang tak kukenali, mencari informasi ke setiap sudut mengenai bangunan ini."
 
-    play music bgm_scene1_rock volume .9 loop
+    play music bgm_scene1_rock volume .9 fadeout 2.0 loop
 
     nd_narrator_brown "Tak selang berapa lama, aku bertemu dengan seseorang yang badannya besar, dengan perawakan layaknya om-om ganas di film cab*l yang kutonton."
     
@@ -43,7 +43,7 @@ label scene_7:
     show dityo at speaking, silhouette
     
     voice voice_2_7_76_dityo
-    nd_unknown_brown "Anee!!! Berhenti disana!."
+    nd_unknown_brown "Anee!!! Berhenti di sana!."
     
     show yuura at speaking
     show dityo at idle, silhouette

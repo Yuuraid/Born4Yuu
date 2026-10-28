@@ -1,7 +1,6 @@
 # label start:
 
 label scene_3:
-    play music bgm_scene3_forest_w_ambience volume .9 loop
     play sound sfx_ambience_grasak_grusuk_daun_scene3
     scene transition_screen orange concentrationline02_w with dissolve
     show yuura scared at center, speaking with easeinright
@@ -32,7 +31,7 @@ label scene_3:
     stop music fadeout 1.0
     play music bgm_scene3_pria_asing volume 0.90 fadein 2.0 fadeout 2.0 loop
     
-    pause 0.2
+    # pause 0.2
     voice voice_1_3_19_pria_misterius
     nd_unknown_brown "Capek kan? Lari-lari"
     
@@ -67,25 +66,17 @@ label scene_3:
     show yuura at idle
     nd_unknown_brown "..."
 
-    stop music
-    play music bgm_scene3_pelukan volume .9 loop
+    stop music fadeout 1.0
+    play music bgm_scene3_pelukan volume .9 fadein 2.0 fadeout 2.0 loop
 
     show yuura at speaking
-    # show pria at idle
-    nd_yuura_brown "Aku capek.. aku mau pulang.. tidak seharusnya aku disini.."
+    nd_yuura_brown "Aku capek.. aku mau pulang.. tidak seharusnya aku di sini.."
     
     show yuura at idle
-    # show pria at speaking
     voice voice_1_3_27_pria_misterius
     nd_unknown_brown "Hey.. jangan menangis, aku gak sanggup melihat cewek nangis di hadapanku"
-
-    stop music fadeout 1.0
-    play music bgm_scene3_pelukan volume 0.90 fadein 2.0 fadeout 2.0 loop
     
     # CG hugging start here
-
-    # show pria at idle
-    # scene black
     scene cg_arc_1_scene_03_shoot_1:
         xpos 0.0
         linear 10.0 xalign 1.0
@@ -130,8 +121,8 @@ label scene_3:
 
     nd_narrator_brown "Aku menceritakan semuanya tanpa ku sadari, orang itu hanya diam membiarkan ku mengeluarkan semuanya."
 
-    stop music
-    play music bgm_scene1_jade_bottle volume .9 loop
+    stop music fadeout 1.0
+    play music bgm_scene1_jade_bottle volume .9 fadeout 2.0 loop
     
     # DEMO END HERE
 
@@ -221,7 +212,7 @@ label scene_3:
     hide pria with dissolve
     show yuura scared eff_exclamation at speaking
     nd_yuura_brown "Ke mana orang itu pergi ?"
-    stop music
+    stop music fadeout 1.0
     show yuura at idle
     nd_narrator_brown "Aku terdiam sejenak, bertanya-tanya kemana pria itu pergi. Tapi aku langsung mengalihkan perhatianku saat ini, aku sudah tidak peduli lagi dan langsung pergi mencari jalan keluar dari sini."
     hide yuura with easeoutleft

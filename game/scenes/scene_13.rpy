@@ -15,7 +15,7 @@ label scene_13:
     
     nd_narrator_brown "Tepat ketika aku sedang melamun, aku mendengar suara langkah kaki yang cepat menghampiriku."
 
-    play music bgm_scene1_rock volume 0.9 loop
+    play music bgm_scene1_rock volume 0.9 fadeout 2.0 loop
     # play sound pressure
 
     scene pe kick kick_set_alter:
@@ -89,7 +89,7 @@ label scene_13:
     voice voice_3_13_203_dityo
     nd_dityo_brown "WOI ! TUNGGU, EMANGNYA LU TAU DIA LARI KE... {w=0.5}Ah sudahlah, tidak ada untungnya mengharapkan dia untuk bekerja sama."
     show dityo at idle
-    stop music
+    stop music fadeout 1.0
     jump scene_14
 
     return

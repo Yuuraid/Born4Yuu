@@ -127,7 +127,7 @@ label scene_1:
     with dissolve
     
     # show yuura netral at center, idle
-    nd_narrator_brown "(Aku benar-benar udah kebangun nih.. Tapi kok bisa yah aku tidur disini !?...)"
+    nd_narrator_brown "(Aku benar-benar udah kebangun nih.. Tapi kok bisa yah aku tidur di sini !?...)"
     
     show yuura at ease_custom(center, offscreenright, 2.0)
 
@@ -241,7 +241,7 @@ label scene_1:
     play sound sfx_expression_shocked
     play music bgm_scene1_rock fadeout 1.0 volume 0.90 loop
     show yuura scared eff_exclamation at center, shake, speaking
-    nd_yuura_brown "ANJIR,TERNYATA ADA ORANG LAIN JUGA DISINI"
+    nd_yuura_brown "ANJIR,TERNYATA ADA ORANG LAIN JUGA DI SINI"
     
     show yuura scared eff_sweat_w at pacing_left_right, idle
     nd_narrator_brown "Aku segara memutar otakku, dan menemukan jawaban."

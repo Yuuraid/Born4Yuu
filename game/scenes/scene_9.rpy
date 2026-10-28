@@ -1,6 +1,7 @@
 # label start:
 
 label scene_9:
+    # --------------- BGM ON HOLD -----------------
     play music bgm_scene8_awkward_yoyu_ver_1st_part_only volume .9 loop
     scene transition_screen orange concentrationline02_w with fade
     show yuura netral at ease_custom(offscreenleft, center, 0.5), speaking, face_flip
@@ -25,7 +26,7 @@ label scene_9:
 
         # play sound bruuk 
     stop music
-    play music bgm_scene8_awkward_yoyu_ver volume .9 loop
+    play music bgm_scene8_awkward_yoyu_ver_2nd_part_only volume .9 loop  
     
     show yuura at reset_xoffset
     show akasyah at reset_xoffset 

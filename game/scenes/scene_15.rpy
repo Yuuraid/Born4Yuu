@@ -1,7 +1,7 @@
 # label start:
 
 label scene_15:
-    play music bgm_scene15_feint volume 0.9 loop
+    play music bgm_scene15_feint volume 0.9 fadeout 2.0 loop
     scene inn ruang_kerja with Dissolve(1.0)
 
     show yuura scared at center, speaking with easeinright
@@ -20,7 +20,7 @@ label scene_15:
 
     show axia sassy behind yuura at center, speaking with dissolve
     voice voice_3_15_251_axiaregis
-    nd_unknown_brown "Anyeeeee kamu ngapain disini sendirian ??"
+    nd_unknown_brown "Anyeeeee kamu ngapain di sini sendirian ??"
     show axia at idle
 
     show yuura at left 
@@ -168,10 +168,10 @@ label scene_15:
     voice voice_3_15_273_axiaregis
     nd_axiaregis_brown "Jika kamu menyerah semuanya akan menjadi lebih baik loh~"
     show axia at idle
-    stop music
+    stop music fadeout 1.0 
     menu lawan:
         "Menyerah pada Axiaregis":
-            play music bgm_scene1_foto_foto_kenangan volume .9 loop
+            play music bgm_scene1_foto_foto_kenangan volume .9 fadein 2.0 fadeout 2.0 loop
             show yuura at speaking
             nd_yuura_brown "A-aku... menyerah !"
             show yuura at idle
@@ -201,12 +201,12 @@ label scene_15:
             $ quick_menu = False
 
             $ renpy.call_screen("game_over_screen", reason_text="Yuura berubah menjadi standee, menambahkan koleksi my bini Axiaregis.")
-            stop music
+            stop music fadeout 1.0 
             return
 
             # end?
         "Berontak sekuat tenaga":
-            play music bgm_scene15_feint volume 0.9 loop
+            play music bgm_scene15_feint volume 0.9 fadeout 2.0 loop
             show axia at custom_sprite_pos(x=0.4) with ease
             show yuura at speaking
             nd_yuura_brown "ARGhhh Lepas !"
@@ -244,8 +244,8 @@ label scene_15:
             # play sound kucing huh
             nd_narrator_brown "Tiba-tiba saja muncul sebuah kudanil besar menabrakkan dirinya yang membuat Axiaregis terpental ke dalam ruangan."
 
-            stop music
-            play audio bgm_scene15_pursuit volume 0.9 loop
+            stop music fadeout 1.0 
+            play music bgm_scene15_pursuit volume 0.9 fadeout 2.0 loop
             
             scene inn ruang_kerja
             show axia netral at right, idle
@@ -351,8 +351,6 @@ label scene_15:
             hide white
             scene white with Flash
             scene arena with slashht
-            stop music
-            play music bgm_scene15_pursuit volume 0.9 loop
             show axia netral at right, idle with easeinleft
             show rian angry at left, idle with easeinright
 
@@ -365,8 +363,8 @@ label scene_15:
             hide screen rian_hp 
             hide screen axia_hp 
             with dissolve
-            stop music
-            play music bgm_scene15_catastrophe volume .9 loop
+            stop music fadeout 1.0 
+            play music bgm_scene15_catastrophe volume .9 fadeout 2.0 loop
 
             show axia netral at right, speaking
             voice voice_3_15_296_axiaregis
@@ -980,8 +978,8 @@ label scene_15:
 
             nd_narrator_brown "Rian menarik tanganku dan langsung lari dari hadapan Axiaregis."
 
-            stop music
-            play music bgm_scene1_rock volume 0.9 loop
+            stop music fadeout 1.0
+            play music bgm_scene1_rock volume 0.9 fadeout 2.0 loop
             
             show axia at speaking
             voice voice_3_15_353_axiaregis
@@ -994,7 +992,7 @@ label scene_15:
             nd_axiaregis_brown "ANYEEEEEEEEEE !!!"
             # show axia at idle
 
-            stop music
+            stop music fadeout 1.0 
             scene inn ruang_tamu_2 with fade
 
             show yuura sad at center

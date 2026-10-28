@@ -3,7 +3,7 @@
 label scene_12:
 
     scene inn entrance_2 with Dissolve(2.0) 
-    play music bgm_scene8_awkward volume .9 loop
+    play music bgm_scene8_awkward volume .9 fadeout 2.0 loop
     # show yuura netral at center, idle
     show yuura netral at face_flip, ease_custom(offscreenleft, left, 7.0)
     nd_narrator_brown "Tepat ketika aku tiba di dekat pintu depan, aku melihat seorang laki-laki berwajah masam.{w=1.0}{nw}"
@@ -38,7 +38,7 @@ label scene_12:
     # TODO: find out how to implement the timing for textbox and audio
 
     voice voice_2_12_183_aergia
-    nd_unknown_brown "Loh? kamu cari aku dibuku tamu? padahal gua ga pernah ditulis disana sama lu loh… lu tahukan gua siapa Yur?"
+    nd_unknown_brown "Loh? kamu cari aku dibuku tamu? padahal gua ga pernah ditulis di sana sama lu loh… lu tahukan gua siapa Yur?"
     show aergia at idle
         
     show yuura at face_flip, speaking
@@ -107,7 +107,7 @@ label scene_12:
     
     nd_narrator_brown "Aku sudah tidak peduli, aku lelah dan hanya ingin beristirahat sejenak. Pada akhirnya aku duduk di teras dan menikmati waktu ku berdiam diri."
     
-    stop music
+    stop music fadeout 1.0
 
     jump scene_13
     

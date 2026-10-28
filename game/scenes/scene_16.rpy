@@ -11,11 +11,11 @@ label scene_16:
         # show halaman belakang penginapan 
     nd_narrator_brown "Setelah keluar dari pintu dan berjalan beberapa langkah, langkahku terhenti. Tepat berada dihadapanku, Aergia berdiri dengan raut wajah yang tak dapat ku mengerti."
     
-    play music bgm_scene15_judgment volume .9 loop
+    play music bgm_scene15_judgment volume .9 fadeout 2.0
 
     show aergia netral at speaking
     voice voice_3_16_366_aergia
-    nd_aergia_brown "Ahahaha kebetulan banget ketemu lu disini Yuur.. ah… eh... sorry gw tau lu tuh ga nyaman kan sama gw sorry ya"
+    nd_aergia_brown "Ahahaha kebetulan banget ketemu lu di sini, Yuur.. ah… eh... sorry gw tau lu tuh ga nyaman kan sama gw sorry ya"
     show aergia at idle
     
     show yuura scared at speaking, face_flip
@@ -36,7 +36,7 @@ label scene_16:
 
     nd_narrator_brown "Bentakan nya berhasil membuatku diam seribu bahasa, seperti saat pertama kami bertemu, ia marah karena hal yang tidak kuketahui."
     
-    stop music
+    stop music fadeout 1.0 
         
     show aergia at speaking
     voice voice_3_16_370_aergia
@@ -55,14 +55,14 @@ label scene_16:
     nd_aergia_brown "Yuura yang asli bakal inget sama gua !"
     
     voice voice_3_16_373_aergia
-    nd_aergia_brown "Yuura bakal peduli sama semua orang yang ada disini !"
+    nd_aergia_brown "Yuura bakal peduli sama semua orang yang ada di sini !"
     show aergia at idle
     
     show yuura at speaking, face_flip
     nd_yuura_brown "Aku buka-"
     show yuura at idle, face_flip
 
-    play music bgm_scene15_judgment volume .9 loop  
+    play music bgm_scene15_judgment volume .9 fadeout 2.0 
         
     show aergia at speaking
     voice voice_3_16_375_aergia
@@ -288,7 +288,7 @@ label scene_16:
     
     nd_narrator_black "Pukulan demi pukulan dilancarkan olehnya, makin lama pukulannya makin cepat dan lebih menyakitkan, aku hanya bisa menerima pukulan, aku sudah tidak ada kekuatan untuk melawan balik..."
     
-    stop music
+    stop music fadeout 1.0 
     scene black with fade
 
     voice voice_3_16_386_aergia
@@ -318,7 +318,7 @@ label scene_16:
 
     nd_narrator_black "Seberharga itukah Yuura di mata mereka... Sialan... Kenapa ini selalu terjadi padaku..."
 
-    play music bgm_scene16_trigger volume 0.9 loop
+    play music bgm_scene16_trigger volume 0.9 fadeout 2.0 loop
     voice voice_3_16_387_dawam
     nd_unknown_black "Hal yang kau perbuat itu sungguh menjijikan."
     
@@ -447,7 +447,7 @@ label scene_16:
     show pe punch yellow 0 transparent:
         center rotate 45 yoffset 500
     with wipe_kiri(.15)
-    nd_narrator_black "Tapi tak berhenti disana, Dawam sudah berada di depannya ketika kepulan debu memudar dan segera memberikan uppercut padanya yang membuatnya terpental."
+    nd_narrator_black "Tapi tak berhenti di sana, Dawam sudah berada di depannya ketika kepulan debu memudar dan segera memberikan uppercut padanya yang membuatnya terpental."
     
     # Dawam appear
 
@@ -492,7 +492,7 @@ label scene_16:
     with dissolve
 
     voice voice_3_16_399_aergia
-    nd_aergia_brown "Gua tahu bahwa gua ga pantes disini ! TAPI KENAPA ! "
+    nd_aergia_brown "Gua tahu bahwa gua ga pantes di sini ! TAPI KENAPA ! "
     
     show cg_arc_3_scene_16_aer_aura_02:
         xalign 0.5
@@ -1167,7 +1167,7 @@ label scene_16:
     # show dawam at idle
     
     # play sound kretek tangan
-    stop music
+    stop music fadeout 1.0 
     jump scene_17
     
     return

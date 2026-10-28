@@ -2,13 +2,12 @@
 
 label scene_17:
 
-    play music bgm_scene3_pria_asing volume 0.9 loop
+    play music bgm_scene3_pria_asing volume 0.9 fadein 2.0 fadeout 2.0 loop
 
     scene inn ruang_tamu_1 
     show yuura hurt at left, idle
     show pria netral at right, idle
     with eye_open
-    # play music pria asing
 
     nd_narrator_brown "Sementara itu di tempat yang tidak diketahui, aku terbangun tepat di hadapan seseorang yang pernah kutemui di dalam hutan."
     show yuura hurt at left, speaking
@@ -59,7 +58,7 @@ label scene_17:
     nd_unknown_brown "Pertarungan? Yang mana?" 
     
     voice voice_3_17_420_pria_misterius
-    nd_unknown_brown "Bukankah kita disini untuk membicarakan dirimu?"
+    nd_unknown_brown "Bukankah kita di sini untuk membicarakan dirimu?"
     show pria at idle
 
     show yuura at speaking
@@ -128,10 +127,10 @@ label scene_17:
     nd_unknown_brown "Sekarang ini adalah waktunya untuk kamu memilih"
     show pria at idle
 
-    stop music
+    stop music fadeout 1.0 
     menu siap:
         "Aku belum siap":
-            play music bgm_scene3_pria_asing volume 0.9 loop
+            play music bgm_scene3_pria_asing volume 0.9 fadein 2.0 fadeout 2.0 loop
             show yuura at speaking
             nd_yuura_brown "Aku belum siap."
             show yuura at idle
@@ -519,10 +518,10 @@ label scene_17:
             voice voice_3_17_516_pria_misterius
             nd_unknown_brown "Jadilah Yuura yang kamu inginkan atau pergi dan tak pernah kembali."
             show pria at idle
-            stop music
+            stop music fadeout 1.0 
             menu keputusan:
                 "Pergi dari Inn untuk selamanya":
-                    play music bgm_scene1_foto_foto_kenangan volume .9 loop
+                    play music bgm_scene1_foto_foto_kenangan volume .9 fadein 2.0 fadeout 2.0 loop
                     show yuura at speaking
                     nd_yuura_brown "Aku tak bisa."
                     show yuura at idle
@@ -626,11 +625,11 @@ label scene_17:
                     $ quick_menu = False
 
                     $ renpy.call_screen("game_over_screen", reason_text="Yuura Pergi.")
+                    stop music fadeout 1.0
                     
                     return
                 "Aku tidak mengerti...":
-                    # play music two chords
-                    play music bgm_scene17_chord volume 0.9 loop
+                    play music bgm_scene17_chord volume 0.9 fadeout 2.0 loop
                     show yuura at speaking
                     nd_yuura_brown "Aku..."
                     
@@ -750,7 +749,7 @@ label scene_17:
                     nd_unknown_brown "Biar aku tunjukkan padamu."
                     # show pria at idle
 
-                    stop music
+                    stop music fadeout 1.0 
                     play music bgm_credit_scene volume .9 loop
 
                     scene vid_memory_pleaseework:
@@ -812,9 +811,11 @@ label scene_17:
                     hide yuura with dissolve
 
                     nd_narrator_brown "Aku menghilang sepenuhnya dan kembali ke dunia nyata."
+                    stop music fadeout 1.0
+                    
                     jump scene_18
         "Aku ingin pergi dari sini":
-            play music bgm_scene1_foto_foto_kenangan volume .9 loop
+            play music bgm_scene1_foto_foto_kenangan fadein 2.0 fadeout 2.0 volume .9 loop
             show yuura at speaking
             nd_yuura_brown "Aku ingin pergi dari sini."
             show yuura at idle
@@ -901,6 +902,6 @@ label scene_17:
             $ quick_menu = False
 
             $ renpy.call_screen("game_over_screen", reason_text="Yuura Pergi.")
-            
+            stop music fadeout 1.0
             return
     return

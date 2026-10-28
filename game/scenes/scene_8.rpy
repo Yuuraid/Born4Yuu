@@ -4,6 +4,9 @@ label scene_8:
     # play sound crowd rushing against wooden floor
 
     scene inn lorong lantai_1 with fade
+
+    play music bgm_scene8_awkward volume .9 fadeout 2.0 loop
+
     show yuura netral at ease_custom(offscreenright, right, 0.8), idle
     show shark netral at silhouette, ease_custom(offscreenright, left, 1.5), idle
     nd_narrator_brown "Aku mendengar gemuruh orang berlarian mencariku, entah apa yang mereka lakukan sehingga mengejarku. Tapi aku selamat berkat seseorang yang menarik tanganku."
@@ -11,8 +14,6 @@ label scene_8:
     show shark eff_sweat_w at idle
     nd_narrator_brown "Dia terlihat sangat pemalu, dengan rambut putih dan mata berwarna biru. Membuatku merasa bersyukur masih ada yang mau menyelamatkanku."
 
-    play music bgm_scene8_awkward volume .9 loop
-    
     show yuura at speaking
     show shark none at face_flip, idle
     nd_yuura_brown "Terimakasih banyak... {w} Aku selamat berkat... {w} \n(Ah sial aku tidak tahu namanya)"
@@ -29,7 +30,7 @@ label scene_8:
     show yuura at idle
     show shark at face_flip, speaking
     voice voice_2_8_81_shark
-    wd_unknown_brown "O-oh begitu, i-ini anee waktu pertama kali gabung, kamu ngasih aku buku yang isinya nama-nama anak penginapan disini"
+    wd_unknown_brown "O-oh begitu, i-ini anee waktu pertama kali gabung, kamu ngasih aku buku yang isinya nama-nama anak penginapan di sini"
 
         # play sound memberi barang ??
     
@@ -79,6 +80,6 @@ label scene_8:
     show shark at idle
     nd_narrator_brown "Aku langsung lari tanpa memikirkan orang itu. Dia tampak ingin memanggilku, tapi aku sudah menghilang dari sudut pandangnya."
 
-    stop music 
+    stop music fadeout 1.0
 
     jump scene_9

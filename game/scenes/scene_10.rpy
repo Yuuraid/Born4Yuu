@@ -1,5 +1,5 @@
 label scene_10:
-    play music bgm_scene1_jade_bottle volume .9 loop
+    play music bgm_scene1_jade_bottle volume .9 fadein 2.0 fadeout 2.0 loop
     
     scene transition_screen orange concentrationline02_w with fade
     show yuura scared at ease_custom(offscreenright, center, 0.5), speaking
@@ -31,7 +31,6 @@ label scene_10:
     show yuura at idle
     voice voice_2_10_104_dityo
     nd_unknown_brown "T-tapi Anee, bukannya--"
-        # show yuura shake ??
     
     show yuura angry at speaking
     show dityo at idle, silhouette
@@ -40,7 +39,6 @@ label scene_10:
     
     show yuura at idle
     nd_narrator_brown "Aku memukul tangan Dityo dan bikin mahakaryanya jatuh."
-        # nd_yuura_brown "DIEM ! (Aku memukul tangan Dityo dan bikin mahakaryanya jatuh.)"
     
     show yuura netral at speaking
     nd_yuura_brown "Ah..."
@@ -53,50 +51,41 @@ label scene_10:
     
     voice voice_2_10_108_dityo
     nd_unknown_brown "Yuura yang kukenal tidak akan langsung merusak barang orang lain ! Dia orang yang baik, penyayang."
-        # show dityo marah with shake ??
 
     $ renpy.run(QuickSave())
 
     voice voice_2_10_109_dityo
     nd_unknown_brown "BUKAN ORANG YANG KASAR KAYAK GINI !"
-        # show yuura with shake ??
-    stop music
-        # play music foto mantan fadein(1.0)
+    stop music fadeout 1.0
     menu:
         "APA SIH ! ORANG DARI AWAL JUGA KAMU YANG NGEJAR-NGEJAR AKU ! KENAPA SEMUA MALAH JADI AKU YANG SALAH !":
             $ dityo_route = "Bad end"
-            play music bgm_scene1_foto_foto_kenangan volume .9 loop
+            play music bgm_scene1_foto_foto_kenangan volume .9 fadein 2.0 fadeout 2.0 loop
             show yuura angry at speaking
             show dityo at idle, silhouette
             nd_yuura_brown "APA SIH ! ORANG DARI AWAL JUGA KAMU YANG NGEJAR-NGEJAR AKU ! KENAPA SEMUA MALAH JADI AKU YANG SALAH !"
-                # show yuura panik
-                # show dityo serius
             
             show dityo at speaking, silhouette
             show yuura at idle
             voice voice_2_10_111_dityo
             nd_unknown_brown "Jadi menurut kamu ini salah aku ? SALAHKU ? APA ANEE KIRA BIKIN KAYAK GINI GAMPANG ?"
-                # show dityo marah with shake
+            
             
             voice voice_2_10_112_dityo
             nd_unknown_brown "KAMU DENGAN MUDAHNYA NGANCURIN MAHAKARYAKU ??"
             
             voice voice_2_10_113_dityo
             nd_unknown_brown "Kalo bukan kamu yang minta juga aku ga mungkin bikin alat ini !"
-            
-            # show dityo at idle, silhouette
-            # nd_narrator_brown "Orang itu pergi tanpa berkata-kata. Dia meninggalkan semua barangnya dan tidak pernah kembali lagi ke penginapan."
 
-            # Disable the quick menu for this specific scene/cutscene
             $ quick_menu = False
 
             $ renpy.call_screen("game_over_screen", reason_text="Orang itu pergi tanpa berkata-kata. Dia meninggalkan semua barangnya dan tidak pernah kembali lagi ke penginapan.")
-            stop music
+            stop music fadeout 1.0
             return
 
         "A-aku beneran ga sengaja… sumpah, aku tadi niatnya cuma mau bikin kamu ngejauh bukan buat ngancurin karya yang kamu buat.":
             $ dityo_route = "Good end"
-            play music bgm_scene3_pelukan volume .9 loop
+            play music bgm_scene3_pelukan volume .9 fadein 2.0 fadeout 2.0 loop
             show yuura at speaking
             show dityo at idle, silhouette
             nd_yuura_brown "A-aku beneran ga sengaja... Sumpah, aku tadi  niatnya cuma mau bikin kamu ngejauh bukan buat ngancurin karya yang kamu buat."
@@ -130,7 +119,7 @@ label scene_10:
             show yuura at ease_custom(center, offscreenleft, 3.0)
             nd_narrator_brown "Dityo berdiam diri, dia terdiam mematung tanpa berkata-kata lagi."
             
-            stop music 
+            stop music fadeout 1.0
             # play sound footstep against wooden floor
             
             scene inn rooftop_2 with fade
@@ -234,7 +223,7 @@ label scene_10:
             with ease
             nd_narrator_brown "Semua orang menatapku, membuatku panik dengan orang yang sangat banyak, aku berusaha untuk lari, tapi sayangnya aku terkepung oleh banyak orang."
 
-            play music bgm_scene1_rock volume .9 loop
+            play music bgm_scene1_rock volume .9 fadeout 2.0 loop
             
             # TODO: This part suppose to have CG
 
@@ -299,13 +288,13 @@ label scene_10:
             show yuura at idle
             nd_narrator_brown "Shark terdiam."
 
-            stop music
+            stop music fadeout 1.0
             nd_unknown_brown "..."
             
             menu:
                 "Pergi":
                     $ shark_route = "Bad end"
-                    play music bgm_scene1_foto_foto_kenangan volume .9 loop
+                    play music bgm_scene1_foto_foto_kenangan volume .9 fadein 2.0 fadeout 2.0 loop
                     
                     show yuura at speaking
                     nd_yuura_brown "Pergi"
@@ -325,12 +314,12 @@ label scene_10:
                     $ quick_menu = False
 
                     $ renpy.call_screen("game_over_screen", reason_text="Shark pergi meninggalkanku dan tidak pernah muncul lagi dalam kehidupanku.")
-                    
+                    stop music fadeout 1.0
                     return
 
                 "Sebenarnya... Aku ini siapa sih... Kenapa semua orang seperti ini...":
                     $ shark_route = "Good end"
-                    play music bgm_scene3_forest volume .9 loop
+                    play music bgm_scene3_forest volume .9 fadein 2.0 fadeout 2.0 loop
                     
                     show yuura sad at speaking
                     show shark at idle
@@ -434,6 +423,6 @@ label scene_10:
                     show shark at idle
                     nd_narrator_brown "Aku berjalan pergi meninggalkan lorong-lorong menuju pintu teras."
 
-                    stop music
+                    stop music fadeout 1.0
 
             jump scene_11
