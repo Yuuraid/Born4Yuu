@@ -139,34 +139,104 @@ label scene_19:
     voice voice_4_19_709_seiya
     nd_seiya_brown "..."
     show seiya at face_flip, idle
-    show yuura at speaking
-    nd_yuura_brown "Oi ! Apa yang kalian lakukan ? Kenapa ada ledakan tadi ?"
-    show yuura at idle
-    nd_narrator_brown "Aku berusaha mendekat, tapi tiba-tiba saja muncul sebuah kembang api di langit. Membuatku terkejut dengan semua ini."
 
-    scene black
+    show aergia at speaking
+    voice voice_4_19_715_aergia
+    nd_aergia_brown "Lari !!!"
+    show aergia at idle
 
-    show yuura netral at center, idle
-    with Dissolve(1.0)
+    hide akasyah
+    hide seiya
+    hide dawam
+    hide rian
+    hide dityo
+    hide axia
+    hide shark
+    hide aergia
+    with easeoutleft
+
+    show yuura angry at center, speaking with ease
+
+    nd_yuura_brown "WOI SETAN!! JANGAN KABUR KALIAN!"
+
+    # nd_yuura_brown "Oi ! Apa yang kalian lakukan ? Kenapa ada ledakan tadi ?"
+    # show yuura at idle
+    # nd_narrator_brown "Aku berusaha mendekat, tapi tiba-tiba saja muncul sebuah kembang api di langit. Membuatku terkejut dengan semua ini."
+
+    hide yuura with easeoutleft
+
+    scene cg_arc_3_scene_19_credit:
+        zoom 2.2
+        xalign 1.0
+        yalign 0.8
+        # at speaking
+    with Flash
+
+    # show yuura netral at center, idle
+    # with Dissolve(1.0)
     voice voice_4_19_711_semua_orang
     show layer master at shake
     nd_narrator_brown "{size=+30}SELAMAT ULANG TAHUN YUURA !!!{/size}"
-    show yuura at speaking
+    # show yuura at speaking
+    scene cg_arc_3_scene_19_credit:
+        zoom 2.9
+        xalign 0.0
+        yalign 0.0
     nd_yuura_brown "..."
-    show yuura angry eff_angry
+    scene cg_arc_3_scene_19_credit:
+        zoom 2.9
+        xalign 0.0
+        yalign 0.0
+        ease 2.0 yalign 0.3
+    # show yuura angry eff_angry
     nd_yuura_brown "Kalian ini..."
-    show yuura at shake
-    nd_yuura_brown "TAPI TADI SUARA LEDAKAN APA OI !"
-    hide seiya
-    show yuura at idle
+    # show yuura at shake
+    scene cg_arc_3_scene_19_credit:
+        zoom 1.5
+        xalign 0.5
+        yalign 0.5
+    nd_yuura_brown "WOIII KU PUKUL KALIAN YAH"
+    # hide seiya
+    # show yuura at idle
     # show aergia netral at right, shake, speaking
-    voice voice_4_19_715_aergia
-    nd_aergia_brown "Lari !!!"
-    hide aergia 
+    # voice voice_4_19_715_aergia
+    # nd_aergia_brown "Lari !!!"
+    # hide aergia
+
+    scene cg_arc_3_scene_19_credit:
+        zoom 1.0
+        xalign 0.5
+        yalign 0.0
+        ease 12 yalign 1.0
+    with fade
+
     nd_narrator_brown "Mereka semua lari dengan sangat cepat, membuatku harus mengejar mereka satu per satu. Begitulah setiap hari di penginapan. Tak ada hari yang damai seperti di anime slice of life, isinya hanyalah aksi-aksi yang melelahkan."
     
-    nd_narrator_brown "Kami adalah keluarga, keluarga Yuuraid yang akan selalu melindungi penginapan dan pemiliknya dengan sepenuh hati. Meskipun banyak orang yang sudah pergi, tapi orang baru datang dan mengisi kekosongan dalam penginapan."
-    
-    nd_narrator_brown "Meskipun begitu, kami tetap menjadi diri kami. Menjadi Yuuraid yang selalu mencintai Yuura sepenuh hati."
+    scene white with dissolve
+
+    # use navigation
+    show screen centered_typewriter("Kami adalah keluarga", speed=20) with dissolve
+
+    pause
+
+    show screen centered_typewriter("Keluarga aneh yang menghuni sebuah penginapan sederhana.", speed=20) with dissolve
+
+    pause
+
+    show screen centered_typewriter("Meskipun banyak orang \ndatang dan pergi.", speed=15) with dissolve
+
+    pause
+
+    show screen centered_typewriter("Tapi banyak pengunjung baru yang datang dan mengisi penginapan dengan warna mereka.", speed=15) with dissolve
+
+    pause
+
+    show screen centered_typewriter("Meskipun begitu, kami tetap menjadi diri kami.", speed=15) with dissolve
+
+    pause
+
+    show screen centered_typewriter("Menjadi Yuuraid \nkesayangan Yuura Yozakura.", speed=15) with dissolve
+
+    pause
 
     return

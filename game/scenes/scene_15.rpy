@@ -245,7 +245,7 @@ label scene_15:
             nd_narrator_brown "Tiba-tiba saja muncul sebuah kudanil besar menabrakkan dirinya yang membuat Axiaregis terpental ke dalam ruangan."
 
             stop music
-            play audio bgm_scene15_pursuit volume 0.9 loop
+            play music bgm_scene15_pursuit volume 0.9 loop
             
             scene inn ruang_kerja
             show axia netral at right, idle

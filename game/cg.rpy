@@ -49,3 +49,5 @@ image cg_arc_3_scene_18_lempar_yoyu_shoot_1 = "assets/cg/cg_arc_3_scene_18_lempa
 image cg_arc_3_scene_18_lempar_yoyu_shoot_2 = "assets/cg/cg_arc_3_scene_18_lempar_yoyu_shoot_2.png"
 image cg_arc_3_scene_18_lempar_yoyu_shoot_3 = "assets/cg/cg_arc_3_scene_18_lempar_yoyu_shoot_3.png"
 image cg_arc_3_scene_18_lempar_yoyu_shoot_4 = "assets/cg/cg_arc_3_scene_18_lempar_yoyu_shoot_4.png"
+
+image cg_arc_3_scene_19_credit = "assets/cg/cg_arc_3_scene_19_credit.png"
