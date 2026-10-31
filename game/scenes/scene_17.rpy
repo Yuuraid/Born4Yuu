@@ -2,7 +2,7 @@
 
 label scene_17:
 
-    play music bgm_scene3_pria_asing volume 0.9 loop
+    play music bgm_scene3_pria_asing volume 1.0 loop
 
     scene inn ruang_tamu_1 
     show yuura hurt at left, idle
@@ -131,7 +131,8 @@ label scene_17:
     stop music
     menu siap:
         "Aku belum siap":
-            play music bgm_scene3_pria_asing volume 0.9 loop
+            $ renpy.sound.set_volume(0.0, channel="memories")
+            play music bgm_scene3_pria_asing volume 1.0 loop
             show yuura at speaking
             nd_yuura_brown "Aku belum siap."
             show yuura at idle
@@ -189,7 +190,7 @@ label scene_17:
             voice voice_3_17_460_pria_misterius
             nd_unknown_brown "Hahaha memang dirimu tidak pernah berubah ya, Aneeki."
 
-            $ renpy.sound.set_volume(0.0, channel="memories")
+            # $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_461_pria_misterius
             nd_unknown_brown "Selalu saja terburu-buru, apalagi soal sake"
@@ -198,7 +199,7 @@ label scene_17:
                 blur 25
             with Dissolve(2.0)
 
-            $ renpy.sound.set_volume(0.0, channel="memories")
+            # $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_462_pria_misterius
             nd_unknown_brown "Apa kamu ingat ? Ketika hari itu kamu pulang dengan satu buah box berisi sake ?"
@@ -211,7 +212,7 @@ label scene_17:
                 blur 25
             with Dissolve(2.0)
 
-            $ renpy.sound.set_volume(0.0, channel="memories")
+            # $ renpy.sound.set_volume(0.0, channel="memories")
 
             show pria at speaking
             voice voice_3_17_463_pria_misterius
@@ -222,7 +223,7 @@ label scene_17:
                 blur 25
             with Dissolve(2.0)
 
-            $ renpy.sound.set_volume(0.0, channel="memories")
+            # $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_464_pria_misterius
             nd_unknown_brown "Kamu bahkan yang paling lantang dalam mengajak kami semua minum."
@@ -232,7 +233,7 @@ label scene_17:
                 blur 25
             with Dissolve(2.0)
 
-            $ renpy.sound.set_volume(0.0, channel="memories")
+            # $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_465_pria_misterius
             nd_unknown_brown "Rasanya sangat menyenangkan bukan ? Melihat mereka tertawa dan tersenyum."
@@ -270,7 +271,7 @@ label scene_17:
                 blur 25
             with Dissolve(2.0)
 
-            $ renpy.sound.set_volume(0.0, channel="memories")
+            # $ renpy.sound.set_volume(0.0, channel="memories")
             # CG here
             nd_narrator_brown "Pria itu menampilkan sebuah momen ketika aku membacakan sebuah cerita pada mereka, pembawaanku yang tadinya kasar dan beringas menjadi sangat lembut."
             
@@ -327,7 +328,7 @@ label scene_17:
                 blur 25
             with Dissolve(2.0)
 
-            $ renpy.sound.set_volume(0.0, channel="memories")
+            # $ renpy.sound.set_volume(0.0, channel="memories")
 
             show pria at speaking
             voice voice_3_17_484_pria_misterius
@@ -338,7 +339,7 @@ label scene_17:
                 blur 25
             with Dissolve(2.0)
 
-            $ renpy.sound.set_volume(0.0, channel="memories")
+            # $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_485_pria_misterius
             nd_unknown_brown "Atau Yuura yang akan selalu tersenyum untuk kami ?"
@@ -348,7 +349,7 @@ label scene_17:
                 blur 25
             with Dissolve(2.0)
 
-            $ renpy.sound.set_volume(0.0, channel="memories")
+            # $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_486_pria_misterius
             nd_unknown_brown "Atau Yuura yang akan selalu bernyanyi bersama kami ?"
@@ -358,7 +359,7 @@ label scene_17:
                 blur 25
             with Dissolve(2.0)
 
-            $ renpy.sound.set_volume(0.0, channel="memories")
+            # $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_487_pria_misterius
             nd_unknown_brown "Atau Yuura yang akan selalu tertawa bersama kami ?"
@@ -522,7 +523,7 @@ label scene_17:
             stop music
             menu keputusan:
                 "Pergi dari Inn untuk selamanya":
-                    play music bgm_scene1_foto_foto_kenangan volume .9 loop
+                    play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
                     show yuura at speaking
                     nd_yuura_brown "Aku tak bisa."
                     show yuura at idle
@@ -630,7 +631,7 @@ label scene_17:
                     return
                 "Aku tidak mengerti...":
                     # play music two chords
-                    play music bgm_scene17_chord volume 0.9 loop
+                    play music bgm_scene17_chord volume 1.0 loop
                     show yuura at speaking
                     nd_yuura_brown "Aku..."
                     
@@ -751,7 +752,7 @@ label scene_17:
                     # show pria at idle
 
                     stop music
-                    play music bgm_credit_scene volume .9 loop
+                    play music bgm_credit_scene volume 1.0 loop
 
                     scene vid_memory_pleaseework:
                         xalign 0.5
@@ -814,7 +815,7 @@ label scene_17:
                     nd_narrator_brown "Aku menghilang sepenuhnya dan kembali ke dunia nyata."
                     jump scene_18
         "Aku ingin pergi dari sini":
-            play music bgm_scene1_foto_foto_kenangan volume .9 loop
+            play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
             show yuura at speaking
             nd_yuura_brown "Aku ingin pergi dari sini."
             show yuura at idle

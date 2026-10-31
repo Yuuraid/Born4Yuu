@@ -11,7 +11,7 @@ label scene_8:
     show shark eff_sweat_w at idle
     nd_narrator_brown "Dia terlihat sangat pemalu, dengan rambut putih dan mata berwarna biru. Membuatku merasa bersyukur masih ada yang mau menyelamatkanku."
 
-    play music bgm_scene8_awkward volume .9 loop
+    play music bgm_scene8_awkward volume 1.0 loop
     
     show yuura at speaking
     show shark none at face_flip, idle

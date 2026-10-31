@@ -90,3 +90,4 @@ image kamar_yuura_shoot_2 = "assets/bg/demo/kamar_yuura_shoot_2.png"
 image kamar_yuura_shoot_3 = "assets/bg/demo/kamar_yuura_shoot_3.png"
 
 image rocket_greenscreen = Movie(play="assets/effects/video effects/rocket_fixed.webm", mask="assets/effects/video effects/rocket_fixed.webm", loop=False)
+

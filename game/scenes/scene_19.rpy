@@ -85,7 +85,7 @@ label scene_19:
     show layer master at shake
     nd_narrator_brown "Tiba-tiba saja terdengar sebuah ledakan besar di taman, membuatku langsung berlari dengan sangat kencang."
 
-    play music bgm_after_credit volume .9 loop
+    play music bgm_after_credit volume 1.0 loop
 
     hide yuura with easeoutright
 

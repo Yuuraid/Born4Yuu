@@ -1,5 +1,5 @@
 label scene_10:
-    play music bgm_scene1_jade_bottle volume .9 loop
+    play music bgm_scene1_jade_bottle volume 1.0 loop
     
     scene transition_screen orange concentrationline02_w with fade
     show yuura scared at ease_custom(offscreenright, center, 0.5), speaking
@@ -65,7 +65,7 @@ label scene_10:
     menu:
         "APA SIH ! ORANG DARI AWAL JUGA KAMU YANG NGEJAR-NGEJAR AKU ! KENAPA SEMUA MALAH JADI AKU YANG SALAH !":
             $ dityo_route = "Bad end"
-            play music bgm_scene1_foto_foto_kenangan volume .9 loop
+            play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
             show yuura angry at speaking
             show dityo at idle, silhouette
             nd_yuura_brown "APA SIH ! ORANG DARI AWAL JUGA KAMU YANG NGEJAR-NGEJAR AKU ! KENAPA SEMUA MALAH JADI AKU YANG SALAH !"
@@ -96,7 +96,7 @@ label scene_10:
 
         "A-aku beneran ga sengaja… sumpah, aku tadi niatnya cuma mau bikin kamu ngejauh bukan buat ngancurin karya yang kamu buat.":
             $ dityo_route = "Good end"
-            play music bgm_scene3_pelukan volume .9 loop
+            play music bgm_scene3_pelukan volume 1.0 loop
             show yuura at speaking
             show dityo at idle, silhouette
             nd_yuura_brown "A-aku beneran ga sengaja... Sumpah, aku tadi  niatnya cuma mau bikin kamu ngejauh bukan buat ngancurin karya yang kamu buat."
@@ -139,7 +139,7 @@ label scene_10:
             
             nd_narrator_brown "Aku melihat sebuah foto kebakaran dari gedung ini, yang entah mengapa membuat ku merasa kesal."
 
-            play music bgm_scene8_awkward_yoyu_ver volume .9 loop
+            play music bgm_scene8_awkward_yoyu_ver volume 1.0 loop
             
             show axia netral at custom_sprite_pos(x=0.6), silhouette with easeinright
             nd_narrator_brown "Entah apa yang terjadi tiba-tiba ada seseorang menepuk pundakku, orang itu mirip perempuan namun suaranya laki-laki."
@@ -234,7 +234,7 @@ label scene_10:
             with ease
             nd_narrator_brown "Semua orang menatapku, membuatku panik dengan orang yang sangat banyak, aku berusaha untuk lari, tapi sayangnya aku terkepung oleh banyak orang."
 
-            play music bgm_scene1_rock volume .9 loop
+            play music bgm_scene1_rock volume 1.0 loop
             
             # TODO: This part suppose to have CG
 
@@ -305,7 +305,7 @@ label scene_10:
             menu:
                 "Pergi":
                     $ shark_route = "Bad end"
-                    play music bgm_scene1_foto_foto_kenangan volume .9 loop
+                    play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
                     
                     show yuura at speaking
                     nd_yuura_brown "Pergi"
@@ -330,7 +330,7 @@ label scene_10:
 
                 "Sebenarnya... Aku ini siapa sih... Kenapa semua orang seperti ini...":
                     $ shark_route = "Good end"
-                    play music bgm_scene3_forest volume .9 loop
+                    play music bgm_scene3_forest volume 1.0 loop
                     
                     show yuura sad at speaking
                     show shark at idle

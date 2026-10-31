@@ -4,7 +4,7 @@ label scene_11:
 
     scene inn parkiran with Dissolve(2.0)
     
-    play music bgm_scene1_start volume .9 loop
+    play music bgm_scene1_start volume 1.0 loop
 
     show yuura netral at face_flip, ease_custom(offscreenleft, offscreenright, 15.0) zorder 10
     pause 2.0
@@ -116,7 +116,7 @@ label scene_11:
     nd_unknown_brown "Hah Yuura?! Emangnya, kenapa sama si Yuura?"
     show aergia at silhouette, idle
         
-    play music bgm_scene1_start volume .9 loop
+    play music bgm_scene1_start volume 1.0 loop
 
     show axia at speaking
     voice voice_2_11_175_axiaregis

@@ -62,7 +62,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-define config.main_menu_music = "audio/bgm/BGM_Scene3_Forest.flac"
+define config.main_menu_music = "<volume 0.13>audio/bgm/BGM_Scene3_Forest.flac"
 
 
 ## Transitions #################################################################

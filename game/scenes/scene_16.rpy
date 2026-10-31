@@ -11,7 +11,7 @@ label scene_16:
         # show halaman belakang penginapan 
     nd_narrator_brown "Setelah keluar dari pintu dan berjalan beberapa langkah, langkahku terhenti. Tepat berada dihadapanku, Aergia berdiri dengan raut wajah yang tak dapat ku mengerti."
     
-    play music bgm_scene15_judgment volume .9 loop
+    play music bgm_scene15_judgment volume 1.0 loop
 
     show aergia netral at speaking
     voice voice_3_16_366_aergia
@@ -62,7 +62,7 @@ label scene_16:
     nd_yuura_brown "Aku buka-"
     show yuura at idle, face_flip
 
-    play music bgm_scene15_judgment volume .9 loop  
+    play music bgm_scene15_judgment volume 1.0 loop  
         
     show aergia at speaking
     voice voice_3_16_375_aergia
@@ -318,7 +318,7 @@ label scene_16:
 
     nd_narrator_black "Seberharga itukah Yuura di mata mereka... Sialan... Kenapa ini selalu terjadi padaku..."
 
-    play music bgm_scene16_trigger volume 0.9 loop
+    play music bgm_scene16_trigger volume 1.0 loop
     voice voice_3_16_387_dawam
     nd_unknown_black "Hal yang kau perbuat itu sungguh menjijikan."
     

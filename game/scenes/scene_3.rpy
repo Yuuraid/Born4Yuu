@@ -1,7 +1,7 @@
 # label start:
 
 label scene_3:
-    play music bgm_scene3_forest_w_ambience volume .9 loop
+    play music bgm_scene3_forest_w_ambience volume 1.0 loop
     play sound sfx_ambience_grasak_grusuk_daun_scene3
     scene transition_screen orange concentrationline02_w with dissolve
     show yuura scared at center, speaking with easeinright
@@ -30,7 +30,7 @@ label scene_3:
     nd_yuura_brown "(Bagaimana aku bisa tiba-tiba berada di tempat ini. Apa yang telah terjadi? Mengapa ini semua terjadi? Dan kenapa aku bisa ada di sini?)"
 
     stop music fadeout 1.0
-    play music bgm_scene3_pria_asing volume 0.90 fadein 2.0 fadeout 2.0 loop
+    play music bgm_scene3_pria_asing volume 1.0 fadein 2.0 fadeout 2.0 loop
     
     pause 0.2
     voice voice_1_3_19_pria_misterius
@@ -68,7 +68,7 @@ label scene_3:
     nd_unknown_brown "..."
 
     stop music
-    play music bgm_scene3_pelukan volume .9 loop
+    play music bgm_scene3_pelukan volume 1.0 loop
 
     show yuura at speaking
     # show pria at idle
@@ -80,7 +80,7 @@ label scene_3:
     nd_unknown_brown "Hey.. jangan menangis, aku gak sanggup melihat cewek nangis di hadapanku"
 
     stop music fadeout 1.0
-    play music bgm_scene3_pelukan volume 0.90 fadein 2.0 fadeout 2.0 loop
+    play music bgm_scene3_pelukan volume 1.0 fadein 2.0 fadeout 2.0 loop
     
     # CG hugging start here
 
@@ -131,7 +131,7 @@ label scene_3:
     nd_narrator_brown "Aku menceritakan semuanya tanpa ku sadari, orang itu hanya diam membiarkan ku mengeluarkan semuanya."
 
     stop music
-    play music bgm_scene1_jade_bottle volume .9 loop
+    play music bgm_scene1_jade_bottle volume 1.0 loop
     
     # DEMO END HERE
 

@@ -223,6 +223,9 @@ label scene_14:
     show akasyah at speaking
     voice voice_3_14_230_akasyah
     nd_akasyah_brown "Oh jelas..."
+
+    play music bgm_scene1_rock volume 1.0 loop
+
     voice voice_3_14_231_akasyah
     nd_akasyah_brown "ITU URUSAN GUA !!!"
     show akasyah at idle

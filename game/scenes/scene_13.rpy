@@ -15,7 +15,7 @@ label scene_13:
     
     nd_narrator_brown "Tepat ketika aku sedang melamun, aku mendengar suara langkah kaki yang cepat menghampiriku."
 
-    play music bgm_scene1_rock volume 0.9 loop
+    play music bgm_scene1_rock volume 1.0 loop
     # play sound pressure
 
     scene pe kick kick_set_alter:

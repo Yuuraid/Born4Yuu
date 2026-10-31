@@ -1,7 +1,7 @@
 # label start:
 
 label scene_15:
-    play music bgm_scene15_feint volume 0.9 loop
+    play music bgm_scene15_feint volume 1.0 loop
     scene inn ruang_kerja with Dissolve(1.0)
 
     show yuura scared at center, speaking with easeinright
@@ -171,7 +171,7 @@ label scene_15:
     stop music
     menu lawan:
         "Menyerah pada Axiaregis":
-            play music bgm_scene1_foto_foto_kenangan volume .9 loop
+            play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
             show yuura at speaking
             nd_yuura_brown "A-aku... menyerah !"
             show yuura at idle
@@ -206,7 +206,7 @@ label scene_15:
 
             # end?
         "Berontak sekuat tenaga":
-            play music bgm_scene15_feint volume 0.9 loop
+            play music bgm_scene15_feint volume 1.0 loop
             show axia at custom_sprite_pos(x=0.4) with ease
             show yuura at speaking
             nd_yuura_brown "ARGhhh Lepas !"
@@ -245,7 +245,7 @@ label scene_15:
             nd_narrator_brown "Tiba-tiba saja muncul sebuah kudanil besar menabrakkan dirinya yang membuat Axiaregis terpental ke dalam ruangan."
 
             stop music
-            play music bgm_scene15_pursuit volume 0.9 loop
+            play music bgm_scene15_pursuit volume 1.0 loop
             
             scene inn ruang_kerja
             show axia netral at right, idle
@@ -352,7 +352,7 @@ label scene_15:
             scene white with Flash
             scene arena with slashht
             stop music
-            play music bgm_scene15_pursuit volume 0.9 loop
+            play music bgm_scene15_pursuit volume 1.0 loop
             show axia netral at right, idle with easeinleft
             show rian angry at left, idle with easeinright
 
@@ -366,7 +366,7 @@ label scene_15:
             hide screen axia_hp 
             with dissolve
             stop music
-            play music bgm_scene15_catastrophe volume .9 loop
+            play music bgm_scene15_catastrophe volume 1.0 loop
 
             show axia netral at right, speaking
             voice voice_3_15_296_axiaregis
@@ -981,7 +981,7 @@ label scene_15:
             nd_narrator_brown "Rian menarik tanganku dan langsung lari dari hadapan Axiaregis."
 
             stop music
-            play music bgm_scene1_rock volume 0.9 loop
+            play music bgm_scene1_rock volume 1.0 loop
             
             show axia at speaking
             voice voice_3_15_353_axiaregis

@@ -3,7 +3,7 @@
 label scene_12:
 
     scene inn entrance_2 with Dissolve(2.0) 
-    play music bgm_scene8_awkward volume .9 loop
+    play music bgm_scene8_awkward volume 1.0 loop
     # show yuura netral at center, idle
     show yuura netral at face_flip, ease_custom(offscreenleft, left, 7.0)
     nd_narrator_brown "Tepat ketika aku tiba di dekat pintu depan, aku melihat seorang laki-laki berwajah masam.{w=1.0}{nw}"

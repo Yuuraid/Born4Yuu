@@ -1,7 +1,7 @@
 # label start:
 
 label scene_5:
-    play music bgm_scene1_foto_foto_kenangan volume .9 loop
+    play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
     scene inn entrance_2
     show yuura netral at center, idle
     nd_narrator_brown "Setelah ditinggal oleh Haruto, entah mengapa rasa lelahku kembali, rasanya sangat berat sekali untuk melangkah."

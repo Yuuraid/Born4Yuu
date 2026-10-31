@@ -2,9 +2,10 @@
 
 label scene_18:
     scene black with dissolve
+    # $ renpy.music.set_volume(0.01, channel="rocket_audio")
     pause 0.2
     scene inn gudang outside with eye_open
-    play music bgm_scene16_trigger volume 0.90 loop
+    play music bgm_scene16_trigger volume 1.0 loop
     nd_narrator_brown "Aku terbangun dan mendengar suara samar, ketika aku mencoba untuk duduk, aku melihat Dawam dan Aergia yang masing-masing di antara mereka telah menyiapkan kuda-kuda, sudah jelas itu merupakan serangan pengakhiran untuk mengakhiri pertempuran panjang mereka."
     show aergia hurt at right, shake, speaking
     voice voice_3_18_584_aergia
@@ -62,7 +63,7 @@ label scene_18:
     show dawam at left, idle
     with ease
     stop music
-    play music bgm_scene1_jade_bottle volume .9 loop
+    play music bgm_scene1_jade_bottle volume 1.0 loop
 
     nd_narrator_brown "Aku menangkap tangan mereka masing-masing dengan tanganku, dalam sekejap menghentikan semua serangan pamungkas mereka tanpa sisa."
     show yuura angry at center, idle
@@ -149,7 +150,7 @@ label scene_18:
     with ease
     
     stop music
-    play music bgm_scene3_forest volume .9 loop
+    play music bgm_scene3_forest volume 1.0 loop
 
     nd_narrator_brown "Aku mengelus kepala mereka dengan lembut, sebelum meninggalkan mereka berdua. Aku berlari menuju tempat pertarungan lainnya."
 
@@ -260,7 +261,7 @@ label scene_18:
     with dissolve
 
     stop music 
-    play music bgm_scene15_pursuit volume 0.9 loop
+    play music bgm_scene15_pursuit volume 1.0 loop
 
     voice voice_3_18_629_akasyah
     nd_akasyah_brown "SEIYAAAAA !!"
@@ -327,7 +328,7 @@ label scene_18:
         ease 0.2 xpos 0.0
         
     stop music
-    play music bgm_scene8_awkward_yoyu_ver volume 0.9 loop
+    play music bgm_scene8_awkward_yoyu_ver volume 1.0 loop
 
     nd_narrator_brown "Aku melempar sebuah minuman berlabel Yoyu kepada Akasyah."
 

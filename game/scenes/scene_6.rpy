@@ -1,7 +1,7 @@
 # label start:
 
 label scene_6:
-    play music bgm_scene1_jade_bottle volume .9 loop
+    play music bgm_scene1_jade_bottle volume 1.0 loop
     scene inn kamar_yuura morning with eye_open
     pause 1.0
     show layer master at shake
@@ -31,7 +31,7 @@ label scene_6:
     nd_narrator_brown "Aku mengambil handuk dan segera pergi ke onsen."
 
     stop music
-    play music bgm_scene6_ver2 volume .9 loop
+    play music bgm_scene6_ver2 volume 1.0 loop
     
     play music bgm_scene6_ver2 volume 1.0 loop
     scene cg_arc_2_scene_06_shoot_1:
@@ -87,7 +87,7 @@ label scene_6:
     nd_narrator_brown "Setelah mandi, aku terkejut karena mendengar ketukan di pintu. Membuatku sedikit panik karena melupakan bahwa aku masih di tempat antah berantah."
 
     # play sound ketukan pintu
-    play music bgm_scene1_foto_foto_kenangan volume .9 loop
+    play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
     
     show yuura at face_flip with dissolve
     
