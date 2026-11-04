@@ -1,7 +1,8 @@
 # label start:
 
 label scene_15:
-    play music bgm_scene15_feint volume 1.0 loop
+    # play music bgm_scene15_feint volume 1.0 loop
+    stop music fadeout 1.0
     scene inn ruang_kerja with Dissolve(1.0)
 
     show yuura scared at center, speaking with easeinright
@@ -23,14 +24,16 @@ label scene_15:
     nd_unknown_brown "Anyeeeee kamu ngapain disini sendirian ??"
     show axia at idle
 
+    play music bgm_scene1_jade_bottle volume 1.0 loop
     show yuura at left 
     show axia at right
     with ease
-    show yuura at face_flip, speaking
+    play sound sfx_expression_shocked
+    show yuura eff_surprise_y at face_flip, speaking
     nd_yuura_brown "KYAHHHH !"
     show yuura at face_flip, idle
 
-    show yuura at face_flip, custom_sprite_pos(x=0.6) with ease
+    show yuura none at face_flip, custom_sprite_pos(x=0.6) with ease
 
     show axia at custom_sprite_pos(x=0.6):
         crop (0, 0, 540, 1080)
@@ -168,7 +171,7 @@ label scene_15:
     voice voice_3_15_273_axiaregis
     nd_axiaregis_brown "Jika kamu menyerah semuanya akan menjadi lebih baik loh~"
     show axia at idle
-    stop music
+    # stop music
     menu lawan:
         "Menyerah pada Axiaregis":
             play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
@@ -193,7 +196,7 @@ label scene_15:
             nd_axiaregis_brown "Selamat tinggal... hehehe"
             show axia at idle
             
-            scene black with eye_close
+            scene black with dusted
 
             # show black with Dissolve(1.0)
             nd_narrator_black "Axiaregis menjentikkan jarinya dan membuatku mematung tak bisa bergerak, mataku menjadi blur dan semuanya menjadi tak terlihat lagi. Aku mematung untuk selamanya."
@@ -206,7 +209,7 @@ label scene_15:
 
             # end?
         "Berontak sekuat tenaga":
-            play music bgm_scene15_feint volume 1.0 loop
+            # play music bgm_scene15_feint volume 1.0 loop
             show axia at custom_sprite_pos(x=0.4) with ease
             show yuura at speaking
             nd_yuura_brown "ARGhhh Lepas !"
@@ -222,13 +225,16 @@ label scene_15:
 
             # hide yuura 
             # show rian angry at left, silhouette
+            stop music fadeout 1.0
             voice voice_3_15_282_rian
-            nd_unknown_brown "Tidak jika aku membantu ! Aku mengeluarkan kartuku. Fathanil !!!!"
+            nd_unknown_brown "Tidak jika aku membantu ! Aku akan mengeluarkan kartuku. Fathanil !!!!"
             
             show axia at speaking
             voice voice_3_15_283_axiaregis
             nd_axiaregis_brown "Huh ?"
             show axia at idle
+
+            play music bgm_scene15_feint volume 1.0 loop
 
             scene cg_arc_3_scene_15_shoot_01 with Flash
             pause 0.0
@@ -244,8 +250,8 @@ label scene_15:
             # play sound kucing huh
             nd_narrator_brown "Tiba-tiba saja muncul sebuah kudanil besar menabrakkan dirinya yang membuat Axiaregis terpental ke dalam ruangan."
 
-            stop music
-            play music bgm_scene15_pursuit volume 1.0 loop
+            # stop music
+            # play music bgm_scene15_pursuit volume 1.0 loop
             
             scene inn ruang_kerja
             show axia netral at right, idle
@@ -346,13 +352,14 @@ label scene_15:
             $ axia_lp.current_lp = 8000
             $ axia_lp.target_lp = 8000
 
+            play music bgm_scene15_pursuit volume 1.0 loop
             show white at white_flicker
             pause 1.0
             hide white
             scene white with Flash
             scene arena with slashht
-            stop music
-            play music bgm_scene15_pursuit volume 1.0 loop
+            # stop music
+            
             show axia netral at right, idle with easeinleft
             show rian angry at left, idle with easeinright
 
@@ -365,8 +372,8 @@ label scene_15:
             hide screen rian_hp 
             hide screen axia_hp 
             with dissolve
-            stop music
-            play music bgm_scene15_catastrophe volume 1.0 loop
+            # stop music
+            # play music bgm_scene15_catastrophe volume 1.0 loop
 
             show axia netral at right, speaking
             voice voice_3_15_296_axiaregis
@@ -384,6 +391,7 @@ label scene_15:
 
             show card_bg_axia_v with dissolve
 
+            play sound sfx_card_flip
             show card_back:
                 xalign 0.5 
                 yalign 5.0
@@ -392,7 +400,8 @@ label scene_15:
                 linear 0.2 xzoom 0.0
                 # Flip back to 0 width
             pause 1.2
-            play sound sfx_action_summon_1_scene15
+            # pause 1.0
+            # play sound sfx_card_flip
             show card_ilya_von_eizbern:
                 # Expand front face
                 xalign 0.5
@@ -408,6 +417,7 @@ label scene_15:
                 xalign 0.8
             with ease
 
+            play sound sfx_action_draw_card_during_phase_scene15
             show card_fatanil:
                 zoom 5.0
                 xalign 0.5 
@@ -416,7 +426,7 @@ label scene_15:
 
             pause 1.0
 
-            play sound sfx_action_summon_2_scene15
+            play sound sfx_action_gigit_roket_scene14
             show card_fatanil:
                 ease 0.2 rotate 90
 
@@ -436,6 +446,7 @@ label scene_15:
             nd_rian_brown "Sial... Aku aktifkan efek Fatanil !"
             
             show card_bg_rian_h
+            play sound sfx_action_summon_2_scene15
             show card_fatanil:
                 rotate 90
                 xalign 0.5 
@@ -445,8 +456,14 @@ label scene_15:
             with dissolve
 
             voice voice_3_15_300_rian
-            nd_rian_brown "Ketika dia bertahan, Fatanil akan menerima  kerusakan setengah dari musuh."
+            nd_rian_brown "Ketika dia bertahan, Fatanil akan menerima  kerusakan setengah dari musuh.{w=5.0}{nw}"
             # show rian at idle
+
+            play sound sfx_fathanil_roar
+
+            pause 7.0
+
+            stop sound
 
             scene arena
             show axia netral at right, idle
@@ -459,6 +476,7 @@ label scene_15:
 
             show card_bg_axia_v with dissolve
 
+            play sound sfx_card_flip
             show card_back:
                 xalign 0.5 
                 yalign 5.0
@@ -467,7 +485,6 @@ label scene_15:
                 linear 0.2 xzoom 0.0
                 # Flip back to 0 width
             pause 1.2
-            play sound sfx_action_summon_1_scene15
             show card_kanna_Kamui_human:
                 # Expand front face
                 xalign 0.5
@@ -492,6 +509,7 @@ label scene_15:
                 linear 0.2 zoom 1.0 xalign 0.8 yalign 0.5
             
             pause 1.0
+            play sound sfx_ilya_teriak
             hide card_ilya_von_eizbern with dusted
             show card_kanna_Kamui_human:
                 xalign 0.5
@@ -501,13 +519,14 @@ label scene_15:
             nd_axiaregis_brown "Aku summon, Dragon Kanna ke battlefield !"
             
             hide card_kanna_Kamui_human 
+            play sound sfx_dragon_kanna_roar
             show card_dragon_kanna:
                 zoom 5.0
                 xalign 0.5 
                 yalign 0.5
                 linear 0.2 zoom 1.0 xalign 0.5 yalign 0.5
             with Flash
-            pause 0.3
+            pause 3.0
 
             show card_dragon_kanna:
                 xalign 0.8
@@ -526,6 +545,7 @@ label scene_15:
             nd_axiaregis_brown "Kanna serang dia !"
             show axia netral at left, idle
 
+            play sound sfx_action_summon_3_scene15
             show card_dragon_kanna:
                 xalign 0.7 
             with ease
@@ -552,6 +572,10 @@ label scene_15:
                 rotate 90
             with dissolve
             
+            # play sound sfx_action_tanah_retak_scene16
+            # pause 0.5
+            play sound sfx_tidak_fantas_panci_emak
+            # pause 3.0
             show card_mother_pot:
                 zoom 5.0
                 xalign 0.5 
@@ -565,6 +589,8 @@ label scene_15:
             voice voice_3_15_307_rian
             nd_rian_brown "Panci Emak !"
             
+            # play sound sfx_ambience_wind_blow_scene13_16
+            play sound sfx_card_destroyed
             hide card_mother_pot with dusted
 
             voice voice_3_15_308_rian
@@ -597,6 +623,8 @@ label scene_15:
             voice voice_3_15_313_rian
             nd_rian_brown "Draw !"
             
+            play sound sfx_action_showcase_card_scene15
+            play sound sfx_card_flip
             show card_back:
                 xalign 0.5 
                 yalign 5.0
@@ -605,7 +633,7 @@ label scene_15:
                 linear 0.2 xzoom 0.0
                 # Flip back to 0 width
             pause 1.2
-            play sound sfx_action_summon_1_scene15
+            play sound sfx_shark_roar
             show card_javanese_shark:
                 # Expand front face
                 xalign 0.5
@@ -622,6 +650,7 @@ label scene_15:
             voice voice_3_15_315_rian
             nd_rian_brown "Hiu Jawa dengan attack 1000 memiliki efek yang menyeramkan."
             
+            play sound sfx_action_summon_2_scene15
             show card_javanese_shark:
                 # rotate 90
                 xalign 0.5 
@@ -643,6 +672,7 @@ label scene_15:
             show card_javanese_shark:
                 xalign 0.7
             with ease
+            play sound sfx_shark_bite
             show card_dragon_kanna at shake
             pause 0.4
             show card_javanese_shark:
@@ -651,18 +681,23 @@ label scene_15:
 
             voice voice_3_15_317_rian
             nd_rian_brown "Dengan menggunakan Gigi Hiu, aku mengurangi attack dari Kanna sebesar 2000."
-            
+
+
+            voice voice_3_15_318_rian
+            nd_rian_brown "Dengan begitu aku akan menggunakan kartu spell ku"
+
+            play sound sfx_fbi_roar
             show card_fbi:
                 zoom 5.0
                 xalign 0.5 
                 yalign 0.5
                 alpha 0.0
-                pause 5.0
                 linear 0.2 zoom 1.3 xalign 0.5 yalign 0.5 alpha 1.0
 
-            voice voice_3_15_318_rian
-            nd_rian_brown "Dengan begitu aku akan menggunakan kartu spell ku, aktiflah ! FBI !"
+            voice voice_3_15_318_rian_2
+            nd_rian_brown "AKTIFLAH ! FBI !"
             
+            play sound sfx_card_destroyed
             hide card_dragon_kanna with dusted
 
             voice voice_3_15_319_rian
@@ -685,6 +720,7 @@ label scene_15:
             show card_bg_axia_v
             with dissolve
 
+            play sound sfx_card_flip
             show card_back:
                 xalign 0.5 
                 yalign 5.0
@@ -693,7 +729,6 @@ label scene_15:
                 linear 0.2 xzoom 0.0
                 # Flip back to 0 width
             pause 1.2
-            play sound sfx_action_summon_1_scene15
             show card_zoo_hunter:
                 # Expand front face
                 xalign 0.5
@@ -722,7 +757,9 @@ label scene_15:
             voice voice_3_15_323_axiaregis
             nd_axiaregis_brown "Dengan begitu semua tipe binatang milikmu akan hancur dan dikirim ke kuburan."
 
+            play sound sfx_card_destroyed
             hide card_javanese_shark with dusted
+            play sound sfx_card_destroyed
             hide card_fatanil with dusted
             
             scene arena
@@ -748,13 +785,14 @@ label scene_15:
             voice voice_3_15_327_rian
             nd_rian_brown "Aktifkan Fatanil dari kuburan !"
             
+            play sound sfx_fathanil_roar
             show card_fatanil:
                 zoom 1.0
                 xalign 0.5 
                 yalign 0.5
             with dusted
 
-            pause 1.0
+            pause 5.0
 
             show card_fatanil:
                 xalign 0.2
@@ -768,6 +806,7 @@ label scene_15:
             voice voice_3_15_328_rian
             nd_rian_brown "Aku akan menggabungkannya dengan Cyber Dragon !"
             
+            play sound sfx_action_summon_2_scene15
             show card_fatanil:
                 xalign 0.5
             show card_cyber_dragon:
@@ -779,6 +818,7 @@ label scene_15:
             hide card_cyber_dragon            
             with Flash
 
+            play sound sfx_mecha_fathanil_roar
             show card_mecha_fatanil:
                 zoom 5.0
                 xalign 0.5 
@@ -794,6 +834,7 @@ label scene_15:
             show card_mecha_fatanil:
                 xalign 0.2
             with ease
+            play sound sfx_mecha_kecoak_roar
             show card_manusia_kecoa:
                 zoom 5.0
                 xalign 0.5 
@@ -829,6 +870,9 @@ label scene_15:
 
             pause 0.2
 
+            play sound sfx_mecha_fathanil_roar
+            play sound2 sfx_mecha_kecoak_roar
+
             show card_mecha_fatanil:
                 yalign -2.0
             show card_manusia_kecoa:
@@ -845,6 +889,7 @@ label scene_15:
             with dissolve
 
             show axia at shake
+            $ axia_lp.current_lp = 8000
             show screen lp_display(player = axia_lp)
             $ axia_lp.change_lp(-4000)
             play sound sfx_action_life_point_scene15
@@ -881,10 +926,16 @@ label scene_15:
             nd_rian_brown "Humu humu kata siapa ?"
             show rian at idle
 
+            show img_bagaimana_mungkin:
+                yalign 0.35
+                xalign 0.75
+                zoom 0.5
             show axia at speaking
             voice voice_3_15_340_axiaregis
             nd_axiaregis_brown "Tidak mungkin ??"
             show axia at idle
+
+            hide img_bagaimana_mungkin
 
             show rian at speaking
             voice voice_3_15_341_rian
@@ -905,6 +956,7 @@ label scene_15:
             show rian angry at left, idle 
             with dissolve
 
+            $ axia_lp.current_lp = 4000
             show screen lp_display(player = axia_lp)
             $ axia_lp.change_lp(-2000)
             play sound sfx_action_life_point_scene15
@@ -916,8 +968,10 @@ label scene_15:
             hide screen lp_display
             
             voice voice_3_15_344_rian
-            nd_rian_brown "Sebaiknya kamu hitung dosa-dosamu !"
+            nd_rian_brown "Sebaiknya kamu berhitung dosa-dosamu !"
             show rian at idle
+
+            play music bgm_scene16_trigger volume 1.0 loop
 
             show axia at speaking
             voice voice_3_15_345_axiaregis
@@ -931,6 +985,7 @@ label scene_15:
             voice voice_3_15_347_axiaregis
             nd_axiaregis_brown "Draw !"
             
+            play sound sfx_card_flip
             show card_back:
                 xalign 0.5 
                 yalign 5.0
@@ -939,7 +994,7 @@ label scene_15:
                 linear 0.2 xzoom 0.0
                 # Flip back to 0 width
             pause 1.2
-            play sound sfx_action_summon_1_scene15
+            play sound sfx_senko_roar
             show card_senko:
                 # Expand front face
                 xalign 0.5
@@ -957,6 +1012,7 @@ label scene_15:
             show card_senko:
                 xalign 0.2
             with ease
+            play sound sfx_dragon_kanna_roar
             show card_dragon_kanna:
                 zoom 5.0
                 xalign 0.5 
@@ -970,8 +1026,13 @@ label scene_15:
             nd_axiaregis_brown "Lalu serangannya akan menjadi 6000 dengan efek dari Kanna loli di kuburan."
             
             voice voice_3_15_352_axiaregis
-            nd_axiaregis_brown "Sekarang kau tak akan bisa berbuat apa-apa... KAU KALAH RI-"
+            nd_axiaregis_brown "Sekarang kau tak akan bisa berbuat apa-apa..." 
+            
+            voice voice_3_15_352_axiaregis_2
+            nd_axiaregis_brown "KAU KALAH RI-"
             show axia at idle
+
+            stop music
 
             scene arena
             show axia netral at right, idle
@@ -981,7 +1042,7 @@ label scene_15:
             nd_narrator_brown "Rian menarik tanganku dan langsung lari dari hadapan Axiaregis."
 
             stop music
-            play music bgm_scene1_rock volume 1.0 loop
+            # play music bgm_scene1_rock volume 1.0 loop
             
             show axia at speaking
             voice voice_3_15_353_axiaregis
@@ -990,11 +1051,13 @@ label scene_15:
             voice voice_3_15_354_axiaregis
             nd_axiaregis_brown "ANYEEEE JANGAN TINGGALKAN AKU LAGIII !!!"
             
+            hide axia with easeoutleft
+
             voice voice_3_15_355_axiaregis
             nd_axiaregis_brown "ANYEEEEEEEEEE !!!"
             # show axia at idle
 
-            stop music
+            play music bgm_scene8_awkward volume 1.0 loop
             scene inn ruang_tamu_2 with fade
 
             show yuura sad at center
@@ -1040,13 +1103,20 @@ label scene_15:
 
             # nd_narrator_brown "Dia melempar banyak sekali bola dan mengeluarkan seluruh hewan yang ada di penginapan ini."
             
+            voice voice_3_15_355_axiaregis
+            nd_axiaregis_brown "ANYEEEEEEEEEE !!!"
+
             show rian at speaking
             voice voice_3_15_365_rian
             nd_rian_brown "Larilah ! Si NPD sudah datang !"
             show rian at idle
 
-            hide yuura at idle with easeoutleft
+            show yuura at idle
+            pause 0.1
+            hide yuura with easeoutleft
             scene black with fade
+
+            stop music fadeout 2.0
 
             nd_narrator_black "Axiaregis datang dengan kecepatan penuh, dia membawa seluruh pasukan anak kecil yang jumlahnya ada ratusan. Membuatku tak punya pilihan lain selain lari lagi."
             

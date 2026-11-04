@@ -4,9 +4,11 @@ label scene_11:
 
     scene inn parkiran with Dissolve(2.0)
     
+    # play music "<loop 10>audio/sfx/SFX_Action_Melangkah_Scene7-18.ogg"
     play music bgm_scene1_start volume 1.0 loop
 
     show yuura netral at face_flip, ease_custom(offscreenleft, offscreenright, 15.0) zorder 10
+    
     pause 2.0
     show josua netral at ease_custom(offscreenright, left, 10.0), idle
     show ibe netral at ease_custom(offscreenright, right, 10.0), idle
@@ -54,17 +56,19 @@ label scene_11:
 
     show axia netral at ease_custom(offscreenright, right, 5.0), idle
 
-    stop music
+    stop music fadeout 1.0
+    play music bgm_scene15_judgment volume 1.0 loop fadein 1.0
+    $ renpy.music.set_volume(0.4, channel="music")
 
-    nd_narrator_brown "Sementara itu di tempat lain, Axiaregis bertemu dengan seseorang yang misterius."
+    nd_narrator_brown "(Sementara itu di tempat lain, Axiaregis bertemu dengan seseorang yang misterius.)"
     
-    nd_narrator_brown "Wajahnya yang terlihat sangat lelah dengan semua ini membuatnya semakin suram. Dia berdiri diam menatap orang pacaran di taman tanpa bergeming sedikit pun."
+    nd_narrator_brown "(Wajahnya yang terlihat sangat lelah dengan semua ini membuatnya semakin suram. Dia berdiri diam menatap orang pacaran di taman tanpa bergeming sedikit pun.)"
     
         # Aergia
     
     show aergia at silhouette, face_flip, speaking
     voice voice_2_11_165_aergia
-    nd_unknown_brown "Ha... Lu lagi lu lagi, kenapa sih harus selalu lu yang ke tempat gua ?"
+    nd_unknown_brown "Ha... Lu lagi lu lagi, kenapa sih harus selalu lu terus yang ke tempat gua, hah?"
     show aergia at silhouette, idle
     
     show axia sassy at speaking
@@ -72,8 +76,13 @@ label scene_11:
     nd_axiaregis_brown "Kira-kira kenapa ya ? Apa jangan-jangan aku suka kamu kyahh."
     show axia at idle
     
+    play sound sfx_api_aergia
     show pe purple_flame flame_full at custom_sprite_pos(x=-3.0, y=0.5) with Dissolve(0.2)
+    # pause 0.3
+    # play sound sfx_api_aergia_burning volume 0.8 loop
     show axia hurt at shake
+    pause 0.4
+    play sound sfx_api_aergia_burning volume 0.8 loop
     nd_narrator_brown "Api langsung membakar Axiaregis{nw}"
     extend "."
     
@@ -82,12 +91,13 @@ label scene_11:
     nd_unknown_brown "Bangsat ! Jijik banget anjing." 
     
     voice voice_2_11_168_aergia
-    nd_unknown_brown "Kenapa sih lu tiap dateng selalu bikin gua kesel ?"
+    nd_unknown_brown "Kenapa sih lu tiap dateng selalu aja bikin gua kesel, hah?"
     show aergia at silhouette, idle
     
     show axia at speaking
     voice voice_2_11_169_axiaregis
     nd_axiaregis_brown "T-tolonggg ahhh panassss...wuhahahaha.."
+    stop sound fadeout 1.0
     hide pe purple_flame flame_full with dissolve
     show axia at idle
     
@@ -103,7 +113,7 @@ label scene_11:
     
     show aergia angry at silhouette, speaking
     voice voice_2_11_172_aergia
-    nd_unknown_brown "Ha.. ngomong atau lu mau beneran gua jadiin femboy bakar sekarang"
+    nd_unknown_brown "Ha.. ngomong atau lu mau beneran gua jadiin femboy bakar sekarang, hah?"
     show aergia at silhouette, idle
         
     show axia netral at speaking
@@ -115,8 +125,6 @@ label scene_11:
     voice voice_2_11_174_aergia
     nd_unknown_brown "Hah Yuura?! Emangnya, kenapa sama si Yuura?"
     show aergia at silhouette, idle
-        
-    play music bgm_scene1_start volume 1.0 loop
 
     show axia at speaking
     voice voice_2_11_175_axiaregis
@@ -127,6 +135,8 @@ label scene_11:
     # hide aergia with dissolve
 
     scene garden_1 with dissolve
+    $ renpy.music.set_volume(1.0, channel="music")
+    play music bgm_scene1_start volume 1.0 loop
 
     show yuura netral at ease_custom(offscreenright, offscreenleft, 20.0)
 

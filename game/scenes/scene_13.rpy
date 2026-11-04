@@ -9,6 +9,9 @@ label scene_13:
 
     nd_narrator_brown "Hari pun mulai gelap, rasanya kepalaku lebih baik dibanding sebelumnya. Aku berjalan menuju kamarku untuk berleha-leha."
     
+    $ renpy.music.set_volume(1.0, channel="music")
+    play music bgm_scene1_foto_foto_kenangan fadein 1.0 loop
+
     nd_narrator_brown "Tapi entah mengapa aku banyak sekali mendengar hal-hal aneh di sekitar, mereka tampak seperti sedang membicarakanku."
     
     nd_narrator_brown "Aku bingung bagaimana berita ini bisa sangat cepat menyebar dalam waktu beberapa jam saja ? Aku tidak mengerti lagi dengan tempat ini."
@@ -89,7 +92,7 @@ label scene_13:
     voice voice_3_13_203_dityo
     nd_dityo_brown "WOI ! TUNGGU, EMANGNYA LU TAU DIA LARI KE... {w=0.5}Ah sudahlah, tidak ada untungnya mengharapkan dia untuk bekerja sama."
     show dityo at idle
-    stop music
+    # stop music
     jump scene_14
 
     return

@@ -223,3 +223,8 @@ init python:
 define config.mouse = { 
     'default' : [ ('gui/cursor.png', 0, 0)],
     }
+
+# Extra sound
+
+init python:
+    renpy.music.register_channel("sound2", "sfx", loop=False)

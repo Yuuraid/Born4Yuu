@@ -27,3 +27,5 @@ image card_mother_pot = "assets/props/Cards/Card_Mother_Pot.png"
 image card_nyocot = "assets/props/Cards/Card_Nyocot.png"
 image card_senko = "assets/props/Cards/Card_Senko.png"
 image card_back = "assets/props/Cards/Card_Back.png"
+
+image img_bagaimana_mungkin = "assets/props/bagaimana_mungkin.png"

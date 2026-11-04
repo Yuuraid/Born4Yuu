@@ -58,6 +58,8 @@ label scene_12:
     voice voice_2_12_186_aergia
     nd_unknown_brown "Hahaha... Bercanda kok, Yuur. Gua tahu pasti lu lagi capek banget. Lu ga mungkin lupa sama gua, iya kan ? {nw=0.5}"
     show aergia angry at shake
+    play music bgm_scene15_judgment volume 1.0 loop fadein 1.0
+    $ renpy.music.set_volume(0.4, channel="music")
     extend "KAN !?"
     show aergia at idle
             
