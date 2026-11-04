@@ -114,5 +114,5 @@ label scene_2:
     nd_yuura_brown "(Semoga tak ada yang mengejarku, pagi ku sudah cukup sial untuk membuatku menggerutu.)"
         # $ quick_menu = False
 
-    stop music fadeout 2.0
+    # stop music fadeout 2.0
     jump scene_3

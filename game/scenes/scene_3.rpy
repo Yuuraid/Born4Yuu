@@ -1,7 +1,7 @@
 # label start:
 
 label scene_3:
-    play music bgm_scene3_forest_w_ambience volume 1.0 loop
+    # play music bgm_scene3_forest_w_ambience volume 1.0 loop
     play sound sfx_ambience_grasak_grusuk_daun_scene3
     scene transition_screen orange concentrationline02_w with dissolve
     show yuura scared at center, speaking with easeinright
@@ -67,8 +67,8 @@ label scene_3:
     show yuura at idle
     nd_unknown_brown "..."
 
-    stop music
-    play music bgm_scene3_pelukan volume 1.0 loop
+    # stop music
+    # play music bgm_scene3_pelukan volume 1.0 loop
 
     show yuura at speaking
     # show pria at idle
@@ -130,8 +130,8 @@ label scene_3:
 
     nd_narrator_brown "Aku menceritakan semuanya tanpa ku sadari, orang itu hanya diam membiarkan ku mengeluarkan semuanya."
 
-    stop music
-    play music bgm_scene1_jade_bottle volume 1.0 loop
+    # stop music
+    # play music bgm_scene1_jade_bottle volume 1.0 loop
     
     # DEMO END HERE
 
@@ -221,9 +221,11 @@ label scene_3:
     hide pria with dissolve
     show yuura scared eff_exclamation at speaking
     nd_yuura_brown "Ke mana orang itu pergi ?"
-    stop music
+    # stop music 
     show yuura at idle
     nd_narrator_brown "Aku terdiam sejenak, bertanya-tanya kemana pria itu pergi. Tapi aku langsung mengalihkan perhatianku saat ini, aku sudah tidak peduli lagi dan langsung pergi mencari jalan keluar dari sini."
     hide yuura with easeoutleft
+
+    stop music fadeout 1.0
 
     jump scene_4

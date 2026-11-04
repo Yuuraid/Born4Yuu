@@ -12,14 +12,19 @@ label scene_5:
     
     show yuura at speaking
     nd_yuura_brown "Ah... Kakiku sudah tak sanggup melangkah, apakah pada akhirnya...apakah aku..."
-    
+
     scene inn entrance_2 at enblur
     show yuura netral at center, idle 
+    camera:
+        zoom 2.0
+        xalign 0.45
+        yalign 0.3
     with fade
 
     nd_narrator_brown "Aku berjalan dengan terhuyung-huyung, badanku gemetar, penglihatanku mulai kabur."
 
-    stop music
+    # stop music
+    $ renpy.music.set_volume(0.5, channel="music")
     #sfx jatuh
 
     show yuura at fall_down
@@ -29,6 +34,12 @@ label scene_5:
 
     nd_narrator_brown "Tiba tiba tubuhku tersungkur tak berdaya, aku melihat seorang sedang berdiri diam di kejauhan."
     
+    # pause 0.5
+    # scene black
+    # with fade
+
+    show taro netral at left, silhouette with easeinleft
+
     nd_narrator_brown "Tanganku berusaha menggapainya, suaraku yang sudah serak berusaha berteriak ke arahnya."
     
     scene black with eye_close
@@ -46,6 +57,11 @@ label scene_5:
     
     nd_narrator_black "Mendengar teriakan orang itu, anak penginapan langsung berlari ke arahku, membantu mengangkatku untuk masuk ke dalam penginapan."
     
+    camera:
+        zoom 1.0
+        xalign 0.0
+        yalign 0.0
+
         # $ quick_menu = False
 
     jump scene_6

@@ -63,3 +63,4 @@ define sfx_running_on_wood_floor_scene_1 = "audio/sfx/SFX_Running-on-wood-floor-
 define sfx_rustling_blanket_scene_1 = "audio/sfx/SFX_Rustling-blanket-(scene-1).ogg"
 define sfx_ui_menu = "audio/sfx/SFX_UI_Menu.ogg"
 define sfx_walkling_on_the_forest_scene_4 = "audio/sfx/SFX_walkling-on-the-forest-(scene-4).ogg"
+define sfx_footstep_taro = "audio/sfx/SFX_footstep taro.ogg"

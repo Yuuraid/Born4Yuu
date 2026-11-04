@@ -583,6 +583,10 @@ label scene_18:
     show akasyah at idle
     show dityo at speaking
     show dityo at shake
+    show shark at speaking
+    show shark at shake
+    show yuura angry at speaking
+    show yuura at shake
     # voice voice_3_18_678_dityo
     # show axia at speaking
     # show axia at shake
@@ -592,6 +596,7 @@ label scene_18:
     
     nd_narrator_brown "{size=+20}Kamu juga.{/size}" # dityo dan aergia
     show dityo at idle
+    show shark at idle
     # show axia at idle
     # show aergia netral at left, speaking
     # voice voice_3_18_680_aergia

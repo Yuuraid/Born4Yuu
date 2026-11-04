@@ -5,7 +5,7 @@ label scene_8:
 
     scene inn lorong lantai_1 with fade
     show yuura netral at ease_custom(offscreenright, right, 0.8), idle
-    show shark netral at silhouette, ease_custom(offscreenright, left, 1.5), idle
+    show shark netral at ease_custom(offscreenright, left, 1.5), idle
     nd_narrator_brown "Aku mendengar gemuruh orang berlarian mencariku, entah apa yang mereka lakukan sehingga mengejarku. Tapi aku selamat berkat seseorang yang menarik tanganku."
     
     show shark eff_sweat_w at idle

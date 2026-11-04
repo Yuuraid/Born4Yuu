@@ -28,7 +28,7 @@ label scene_1:
         # with nongol_dari_bawah # <-- blm jadi :""
     camera:
         zoom 2.0
-        xalign 0.3
+        xalign 0.45
         yalign 0.3
     
     show yuura netral eff_sleepy at jump_in_bottom(duration=2.0), speaking
@@ -65,16 +65,18 @@ label scene_1:
 
     camera:
         zoom 2.0
-        xalign 0.3
+        xalign 0.45
         yalign 0.3
     
     $ renpy.music.set_pause(True, channel="music")
     play sound sfx_expression_shocked
     show yuura scared none at center, shake, speaking
     nd_yuura_brown "INI BUKAN KAMARKU!!"
-    $ renpy.music.set_pause(False, channel="music")
+    # $ renpy.music.set_pause(False, channel="music")
+    play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
     
     show yuura netral eff_question_mark at center, speaking
+    play sound sfx_expression_surprised
     nd_yuura_brown "Kemarin aku salah masuk kamar apa gimana dah?{w} Kok bisa-bisanya kebangun di sini?"
     
     scene black
@@ -89,10 +91,18 @@ label scene_1:
     
     nd_narrator_black "Aku melihat cermin, cermin itu memantulkan rupaku yang sama persis sebelum aku tertidur karena kelelahan."
     
+    camera:
+        zoom 2.0
+        xalign 0.45
+        yalign 0.3
     show yuura netral at center, speaking
     nd_yuura_black "Nggak ada yang aneh sih..."
-    
     hide yuura netral
+    camera:
+        zoom 1.0
+        xalign 0.0
+        yalign 0.0
+    with dissolve
     show kamar_yuura_shoot_1:
         xalign 1.0
         ease 9.8 xalign 0.0
@@ -139,6 +149,10 @@ label scene_1:
     show yuura scared eff_sweat_w at center, speaking with easeinright
     play sound sfx_expression_shocked
     $ renpy.music.set_pause(True, channel="music")
+    camera:
+        zoom 2.0
+        xalign 0.60
+        yalign 0.3
     show layer master at shake
     nd_yuura_brown "Uh.. Kayaknya pemilik kamar ini adalah orang yang menakutkan.."
     
@@ -149,6 +163,11 @@ label scene_1:
     show layer master at shake
     show yuura scared eff_surprise_y at center, shake, speaking
     nd_yuura_brown "Beneran kriminal ini mah.."
+
+    camera:
+        zoom 1.0
+        xalign 0.0
+        yalign 0.0
 
     stop music
     play music bgm_scene1_foto_foto_kenangan fadeout 1.0 fadein 1.0 volume 1.0 loop
@@ -197,6 +216,7 @@ label scene_1:
     show yuura scared eff_exclamation at center, shake, speaking
     nd_yuura_brown "ANJIR!!"
     
+    play music bgm_scene1_jade_bottle fadeout 1.0 fadein 1.0 volume 1.0 loop
     nd_yuura_brown "NIH ORANG MIRIP BANGET SAMA GUE COK !"
     
     show yuura netral none at center, idle
@@ -222,8 +242,8 @@ label scene_1:
     with dissolve
 
     # BGM jade bottle
-    stop music fadeout 2.5
-    play music bgm_scene1_jade_bottle fadeout 1.0 fadein 1.0 volume 1.0 loop
+    # stop music fadeout 2.5
+    
     # show yuura netral none at center, idle
     nd_narrator_black "Di tengah kebingungan itu, aku melihat sebuah benda yang bersinar. Pandanganku langsung tertuju pada benda itu dan melesat mendekatinya."
     
@@ -240,11 +260,20 @@ label scene_1:
     scene inn kamar_yuura morning
     play sound sfx_expression_shocked
     play music bgm_scene1_rock fadeout 1.0 volume 1.0 loop
+    camera:
+        zoom 2.0
+        xalign 0.45
+        yalign 0.3
     show yuura scared eff_exclamation at center, shake, speaking
     nd_yuura_brown "ANJIR,TERNYATA ADA ORANG LAIN JUGA DISINI"
     
+    camera:
+        zoom 1.0
+        xalign 0.0
+        yalign 0.0
+    with dissolve
     show yuura scared eff_sweat_w at pacing_left_right, idle
-    nd_narrator_brown "Aku segara memutar otakku, dan menemukan jawaban."
+    nd_narrator_brown "Aku segera memutar otakku, dan menemukan jawaban."
     
     show yuura scared eff_sweat_w at center, speaking
     nd_yuura_brown "AKU HARUS LARI SEBELUM KETAHUAN !!!"

@@ -257,7 +257,7 @@ label scene_10:
             
             show axia at speaking
             voice voice_2_10_135_axiaregis
-            nd_axiaregis_brown "Hmph ! Beraninya hiu kecil ituh mengganggu rencanakuh ! Awas kamu yah ! IHHH KECOAKKKK !!! EWWWW."
+            nd_axiaregis_brown "Hmph ! Beraninya hiu kecil ituh mengganggu rencanakuh ! Awas kamu yah ! IHHH KECOAKKKK !!!"
 
             scene black with fade
 
