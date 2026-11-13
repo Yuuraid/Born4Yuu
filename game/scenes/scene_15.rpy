@@ -797,6 +797,7 @@ label scene_15:
             show card_fatanil:
                 xalign 0.2
             with ease
+            play sound sfx_cyber_dragon
             show card_cyber_dragon:
                 zoom 5.0
                 xalign 0.5 
@@ -1068,7 +1069,7 @@ label scene_15:
             
             show rian at speaking
             voice voice_3_15_356_rian
-            nd_rian_brown "Yuur, aku harap kamu lari sekarang juga."
+            nd_rian_brown "Yuura, aku harap kamu lari sekarang juga."
             show rian at idle
 
             show yuura at face_flip, speaking
@@ -1079,6 +1080,7 @@ label scene_15:
             voice voice_3_15_358_rian
             nd_rian_brown "Tidak bisa... Aku harus menghentikan manusia NPD itu."
             
+            play music bgm_scene4 volume 1.0 loop fadein 1.0
             voice voice_3_15_359_rian
             nd_rian_brown "Tenang saja, aku akan baik-baik saja."
             
@@ -1103,6 +1105,7 @@ label scene_15:
 
             # nd_narrator_brown "Dia melempar banyak sekali bola dan mengeluarkan seluruh hewan yang ada di penginapan ini."
             
+            stop music
             voice voice_3_15_355_axiaregis
             nd_axiaregis_brown "ANYEEEEEEEEEE !!!"
 

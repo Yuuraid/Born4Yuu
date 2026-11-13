@@ -90,6 +90,7 @@ label scene_17:
     nd_unknown_brown "Sekarang giliranmu, Aneeki."
     show pria at idle
 
+    play sound sfx_spit_water
     show layer master at shake
 
     nd_narrator_brown "Yuura menyemburkan teh yang baru ia teguk."
@@ -105,6 +106,7 @@ label scene_17:
     nd_unknown_brown "Hahahaha… tidak terduga bukan?"
     show pria at idle
 
+    play sound sfx_finger_snap
     show white
     pause 0.2
     hide white with dissolve
@@ -128,7 +130,7 @@ label scene_17:
     nd_unknown_brown "Sekarang ini adalah waktunya untuk kamu memilih"
     show pria at idle
 
-    stop music
+    # stop music
     menu siap:
         "Aku belum siap":
             $ renpy.sound.set_volume(0.0, channel="memories")
@@ -142,6 +144,7 @@ label scene_17:
             nd_unknown_brown "Tidak apa, biar aku tunjukkan sesuatu untukmu."
             show pria at idle
             
+            play sound sfx_finger_snap
             scene whiteroom 
             show yuura netral at custom_sprite_pos(x=-0.2), idle, face_flip
             show pria netral at right, idle
@@ -190,7 +193,7 @@ label scene_17:
             voice voice_3_17_460_pria_misterius
             nd_unknown_brown "Hahaha memang dirimu tidak pernah berubah ya, Aneeki."
 
-            # $ renpy.sound.set_volume(0.0, channel="memories")
+            $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_461_pria_misterius
             nd_unknown_brown "Selalu saja terburu-buru, apalagi soal sake"
@@ -199,7 +202,7 @@ label scene_17:
                 blur 25
             with Dissolve(2.0)
 
-            # $ renpy.sound.set_volume(0.0, channel="memories")
+            $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_462_pria_misterius
             nd_unknown_brown "Apa kamu ingat ? Ketika hari itu kamu pulang dengan satu buah box berisi sake ?"
@@ -212,7 +215,7 @@ label scene_17:
                 blur 25
             with Dissolve(2.0)
 
-            # $ renpy.sound.set_volume(0.0, channel="memories")
+            $ renpy.sound.set_volume(0.0, channel="memories")
 
             show pria at speaking
             voice voice_3_17_463_pria_misterius
@@ -223,7 +226,7 @@ label scene_17:
                 blur 25
             with Dissolve(2.0)
 
-            # $ renpy.sound.set_volume(0.0, channel="memories")
+            $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_464_pria_misterius
             nd_unknown_brown "Kamu bahkan yang paling lantang dalam mengajak kami semua minum."
@@ -233,7 +236,7 @@ label scene_17:
                 blur 25
             with Dissolve(2.0)
 
-            # $ renpy.sound.set_volume(0.0, channel="memories")
+            $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_465_pria_misterius
             nd_unknown_brown "Rasanya sangat menyenangkan bukan ? Melihat mereka tertawa dan tersenyum."
@@ -271,7 +274,7 @@ label scene_17:
                 blur 25
             with Dissolve(2.0)
 
-            # $ renpy.sound.set_volume(0.0, channel="memories")
+            $ renpy.sound.set_volume(0.0, channel="memories")
             # CG here
             nd_narrator_brown "Pria itu menampilkan sebuah momen ketika aku membacakan sebuah cerita pada mereka, pembawaanku yang tadinya kasar dan beringas menjadi sangat lembut."
             
@@ -328,7 +331,7 @@ label scene_17:
                 blur 25
             with Dissolve(2.0)
 
-            # $ renpy.sound.set_volume(0.0, channel="memories")
+            $ renpy.sound.set_volume(0.0, channel="memories")
 
             show pria at speaking
             voice voice_3_17_484_pria_misterius
@@ -339,7 +342,7 @@ label scene_17:
                 blur 25
             with Dissolve(2.0)
 
-            # $ renpy.sound.set_volume(0.0, channel="memories")
+            $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_485_pria_misterius
             nd_unknown_brown "Atau Yuura yang akan selalu tersenyum untuk kami ?"
@@ -349,7 +352,7 @@ label scene_17:
                 blur 25
             with Dissolve(2.0)
 
-            # $ renpy.sound.set_volume(0.0, channel="memories")
+            $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_486_pria_misterius
             nd_unknown_brown "Atau Yuura yang akan selalu bernyanyi bersama kami ?"
@@ -359,7 +362,7 @@ label scene_17:
                 blur 25
             with Dissolve(2.0)
 
-            # $ renpy.sound.set_volume(0.0, channel="memories")
+            $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_487_pria_misterius
             nd_unknown_brown "Atau Yuura yang akan selalu tertawa bersama kami ?"
@@ -414,9 +417,14 @@ label scene_17:
             show pria at idle
             
             show dark_overlay
-            show foto_bersama at pos(y=0.7, r=2), speaking with dissolve
+            play sound sfx_paper
+            show foto_bersama at pos(y=0.7, r=2):
+                xalign 0.5
+                yalign 5.0
+                ease 0.5 yalign 0.7
 
-            nd_narrator_brown "Pria itu memperlihatkan beberapa foto lainnya, di mana momen ketika semua orang merayakan ulang tahunku."
+
+            nd_narrator_brown "Pria itu memperlihatkan sebuah foto, di mana momen ketika semua orang merayakan ulang tahunku."
             
             hide foto_bersama 
             hide dark_overlay
@@ -450,6 +458,8 @@ label scene_17:
             
             # show pria at custom_sprite_pos(x=0.2) with ease
             # show pria at ease_custom(right, 0.2, 2.0)
+
+            play sound sfx_action_footstep_on_wooden_floor_scene10
             show pria:
                 ease 3.0 xalign 0.2
 
@@ -499,14 +509,21 @@ label scene_17:
             voice voice_3_17_513_pria_misterius
             nd_unknown_brown "Jadi jangan menangis... Tersenyumlah dan berbahagialah !" # kasih pause setelah jeda titik-titik?
             show pria at idle
-            
+
+                     
             show pria at face_flip with dissolve
             pause 0.5
+            play sound sfx_finger_snap
+            scene whiteroom_door
+            show yuura netral at custom_sprite_pos(x=-0.2), idle, face_flip
+            show pria netral at face_flip, idle:
+                xalign 0.2
             with Flash
 
             nd_narrator_brown "Pria itu menjentikkan jarinya, perlahan memperlihatkan dua buah pintu untukku."
 
-            show pria at center with ease
+            show pria at face_flip, center with ease
+            pause 0.2
             
             show pria at speaking
             voice voice_3_17_514_pria_misterius
@@ -520,7 +537,7 @@ label scene_17:
             voice voice_3_17_516_pria_misterius
             nd_unknown_brown "Jadilah Yuura yang kamu inginkan atau pergi dan tak pernah kembali."
             show pria at idle
-            stop music
+            # stop music
             menu keputusan:
                 "Pergi dari Inn untuk selamanya":
                     play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
@@ -668,7 +685,7 @@ label scene_17:
 
                     nd_yuura_brown "KENAPA KALIAN MELAKUKAN INI ?"
                     
-                    nd_yuura_brown "Kenapa kalian ga bisa melupakan diriku saja ? Kenapa kalian memaksaku, mengejarku bahkan berusaha menangkapku ?"
+                    nd_yuura_brown "Kenapa kalian ga bisa melupakan diriku saja ?"
                     # show yuura at idle
                     
                     scene cg_arc_3_scene_17_shoot_04 with dissolve
@@ -680,9 +697,9 @@ label scene_17:
                     voice voice_3_17_555_pria_misterius
                     nd_unknown_brown "Alasannya Sederhana, karena kamu Yuura" # kasih pause setelah jeda koma?
 
-                    scene whiteroom
-                    show yuura sad at left, idle, face_flip
-                    show pria netral at right, speaking
+                    scene whiteroom_door
+                    show yuura sad at custom_sprite_pos(x=-0.2), idle, face_flip
+                    show pria netral at center, speaking
                     with fade
                     
                     voice voice_3_17_556_pria_misterius
@@ -752,18 +769,19 @@ label scene_17:
                     # show pria at idle
 
                     stop music
-                    play music bgm_credit_scene volume 1.0 loop
-
+                    play sound sfx_finger_snap
+                    # play music bgm_credit_scene volume 1.0 loop
                     scene vid_memory_pleaseework:
                         xalign 0.5
                         yalign 0.5
-                    with fade
+                    with Flash
                     pause 250
                     
-                    hide vid_memory_pleaseework
-                    scene whiteroom
-                    show yuura sad at left, idle, face_flip
-                    show pria netral at right, speaking
+                    play sound sfx_finger_snap
+                    # hide vid_memory_pleaseework
+                    scene whiteroom_door
+                    show yuura sad at custom_sprite_pos(x=-0.2), idle, face_flip
+                    show pria netral at center, speaking
                     with Flash
 
                     # nd_narrator_brown "Pria itu menunjukkan sebuah video, di mana banyak hal yang terjadi."
@@ -779,6 +797,7 @@ label scene_17:
                     nd_yuura_brown "..."
                     
                     show pria at speaking
+                    play music bgm_scene4 volume 1.0 loop fadein 1.0
                     voice voice_3_17_576_pria_misterius
                     nd_unknown_brown "Tidak apa, untuk sekarang kembalilah dan temui mereka."
                     
@@ -794,6 +813,10 @@ label scene_17:
                     voice voice_3_17_580_pria_misterius
                     nd_unknown_brown "Jadilah Yuura yang kami sayangi, kami cintai, dan kami dukung."
                     show pria at idle
+
+                    show yuura:
+                        alpha 1.0
+                        ease 10 alpha 0.5
                     
                     nd_narrator_brown "Perlahan aku mulai menghilang, melihat pria itu tersenyum bahagia membuatku merasa sangat bahagia. Apakah ini adalah jalan yang benar untukku? Entahlah, aku hanya perlu menjadi diriku sendiri."
                     show yuura at speaking
@@ -805,14 +828,22 @@ label scene_17:
                     # TODO: please redo this part
                     nd_pria_brown "Panggil saja aku Yuuraid." # kasih pause setelah jeda titik-titik?
                     show pria at idle
+
+                    show yuura:
+                        ease 5 alpha 0.2
                     
                     show yuura at speaking
                     nd_yuura_brown "Ya ! Terimakasih, Yuuraid."
                     # show yuura at idle
+
+                    show yuura:
+                        ease 2 alpha 0.0
                     
-                    hide yuura with dissolve
+                    # hide yuura with dissolve
 
                     nd_narrator_brown "Aku menghilang sepenuhnya dan kembali ke dunia nyata."
+
+                    stop music fadeout 1.0
                     jump scene_18
         "Aku ingin pergi dari sini":
             play music bgm_scene1_foto_foto_kenangan volume 1.0 loop

@@ -52,12 +52,14 @@ layeredimage dawam:
         attribute happy "assets/sprite/Dawam/dawam_main_laugh.png"
         attribute angry "assets/sprite/Dawam/dawam_main_angry.png"
         attribute hurt "assets/sprite/Dawam/dawam_main_hurt.png"
+        attribute hurt_smile "assets/sprite/Dawam/dawam_main_hurt_smile.png"
 
         attribute full_netral "assets/sprite/Dawam/dawam_full_happy.png"
         attribute full_sad "assets/sprite/Dawam/dawam_full_sad.png"
         attribute full_happy "assets/sprite/Dawam/dawam_full_laugh.png"
         attribute full_angry "assets/sprite/Dawam/dawam_full_angry.png"
         attribute full_hurt "assets/sprite/Dawam/dawam_full_hurt.png"
+        
 
 layeredimage dityo:
 

@@ -36,6 +36,10 @@ image cg_arc_3_scene_16_aer_cg = "assets/cg/cg_arc_3_scene_16_aer_cg.png"
 image cg_arc_3_scene_16_aer_aura_01 = "assets/cg/cg_arc_3_scene_16_aer_aura_01.png"
 image cg_arc_3_scene_16_aer_aura_02 = "assets/cg/cg_arc_3_scene_16_aer_aura_02.png"
 
+image cg_arc_3_scene_16_balikin_1 = "assets/cg/cg_arc_3_scene_16_balikin_1.png"
+image cg_arc_3_scene_16_balikin_2 = "assets/cg/cg_arc_3_scene_16_balikin_2.png"
+image cg_arc_3_scene_16_balikin_3 = "assets/cg/cg_arc_3_scene_16_balikin_3.png"
+
 image cg_arc_3_scene_17_shoot_01 = "assets/cg/cg_arc_3_scene_17_shoot_01.png"
 image cg_arc_3_scene_17_shoot_03 = "assets/cg/cg_arc_3_scene_17_shoot_03.png"
 image cg_arc_3_scene_17_shoot_02 = "assets/cg/cg_arc_3_scene_17_shoot_02.png"
