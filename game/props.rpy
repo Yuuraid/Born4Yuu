@@ -29,3 +29,4 @@ image card_senko = "assets/props/Cards/Card_Senko.png"
 image card_back = "assets/props/Cards/Card_Back.png"
 
 image img_bagaimana_mungkin = "assets/props/bagaimana_mungkin.png"
+image mahakarya_fixed = "assets/props/mahakarya.png"

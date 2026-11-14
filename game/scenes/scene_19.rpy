@@ -1,6 +1,7 @@
 # label start:
 
 label scene_19:
+    play music bgm_scene4 volume 1.0 fadein 1.0
     scene inn resepsionis 
     # play sound barang ditaruh
     show yuura scared at face_flip, left, idle
@@ -50,6 +51,7 @@ label scene_19:
     nd_haruto_brown "Itu kutaruh di atas meja."
     show haruto at idle
     show yuura at idle
+    play sound sfx_paper
     nd_narrator_brown "Aku segera mengambil buku tamu dan membalik-balik halaman untuk mencari tahu orang-orang yang pernah menulis surat untukku, ada yang pindah bahkan ada yang tak terdaftar di sini."
     show yuura at face_flip, speaking
     nd_yuura_brown "Kenapa dia pindah yah ?"
@@ -82,12 +84,15 @@ label scene_19:
     voice voice_4_19_700_haruto
     nd_haruto_brown "Dasar penghutang handal."
     show haruto at idle
+
+    play sound sfx_explode
     show layer master at shake
+    stop music
     nd_narrator_brown "Tiba-tiba saja terdengar sebuah ledakan besar di taman, membuatku langsung berlari dengan sangat kencang."
-
-    play music bgm_after_credit volume 1.0 loop
-
+    play sound sfx_action_whoosh_scene13_16
     hide yuura with easeoutright
+
+    play music bgm_scene8_awkward volume 1.0 loop
 
     scene taman_penginapan_1
     show dawam netral at custom_sprite_pos(x=-0.2), idle
@@ -100,6 +105,7 @@ label scene_19:
     show akasyah netral at custom_sprite_pos(x=-0.55), idle
     
     with fade
+    play sound sfx_action_whoosh_scene13_16
     show yuura netral at custom_sprite_pos(x=1.4), idle with easeinright
 
     pause 0.2
@@ -176,26 +182,26 @@ label scene_19:
     # with Dissolve(1.0)
     voice voice_4_19_711_semua_orang
     show layer master at shake
-    nd_narrator_brown "{size=+30}SELAMAT ULANG TAHUN YUURA !!!{/size}"
+    nd_narrator_brown "{size=+30}SELAMAT ULANG TAHUN YUURA !!!{/size}{nw}"
     # show yuura at speaking
     scene cg_arc_3_scene_19_credit:
         zoom 2.9
         xalign 0.0
         yalign 0.0
-    nd_yuura_brown "..."
+    nd_yuura_brown "...{w=1}{nw}"
     scene cg_arc_3_scene_19_credit:
         zoom 2.9
         xalign 0.0
         yalign 0.0
         ease 2.0 yalign 0.3
     # show yuura angry eff_angry
-    nd_yuura_brown "Kalian ini..."
+    nd_yuura_brown "Kalian ini...{w=1}{nw}"
     # show yuura at shake
     scene cg_arc_3_scene_19_credit:
         zoom 1.5
         xalign 0.5
         yalign 0.5
-    nd_yuura_brown "WOIII KU PUKUL KALIAN YAH"
+    nd_yuura_brown "{size=+30}WOIII KU PUKUL KALIAN YAH{/size}{w=1}{nw}"
     # hide seiya
     # show yuura at idle
     # show aergia netral at right, shake, speaking

@@ -7,11 +7,11 @@ label scene_18:
     scene inn gudang outside with eye_open
     play music bgm_scene16_trigger volume 1.0 loop
     nd_narrator_brown "Aku terbangun dan mendengar suara samar, ketika aku mencoba untuk duduk, aku melihat Dawam dan Aergia yang masing-masing di antara mereka telah menyiapkan kuda-kuda, sudah jelas itu merupakan serangan pengakhiran untuk mengakhiri pertempuran panjang mereka."
-    show aergia hurt at right, shake, speaking
+    show aergia hurt at right, shake, speaking with easeinright
     voice voice_3_18_584_aergia
     nd_aergia_brown "Uhuk uhuk... Mati aja lu!!"
     show aergia at idle
-    show dawam hurt at left, speaking
+    show dawam hurt at left, speaking with easeinleft
     voice voice_3_18_585_dawam
     nd_dawam_brown "Sesuai dengan permintaanmu !"
     show dawam at idle
@@ -23,6 +23,7 @@ label scene_18:
     
     pause 0.2
 
+    play sound sfx_shadow_dash_2
     scene pe dash negative_blue:
         zoom 0.95
         rotate 0
@@ -59,6 +60,7 @@ label scene_18:
     with wipe_j_bawah(0.1)
 
     pause 0.1
+    play sound sfx_punch_impact_01
     show aergia at right, idle
     show dawam at left, idle
     with ease
@@ -145,16 +147,22 @@ label scene_18:
     nd_dawam_brown "Nona..."
     show dawam at idle
     
+    stop music fadeout 1.0
+    
     show dawam behind yuura at custom_sprite_pos(x=0.3), idle
     show aergia behind yuura at custom_sprite_pos(x=0.7), idle
     with ease
     
+    pause 0.5
+
+    scene black with fade
+
+    nd_narrator_black "Aku mengelus kepala mereka dengan lembut, sebelum meninggalkan mereka berdua. Aku berlari menuju tempat pertarungan lainnya."
+
     stop music
-    play music bgm_scene3_forest volume 1.0 loop
+    play music bgm_scene16_trigger volume 1.0 loop
 
-    nd_narrator_brown "Aku mengelus kepala mereka dengan lembut, sebelum meninggalkan mereka berdua. Aku berlari menuju tempat pertarungan lainnya."
-
-    scene inn ruang_kerja 
+    scene arena
     show axia netral at right, idle
     show rian angry at left, idle
     with Dissolve(1.0)
@@ -163,7 +171,7 @@ label scene_18:
 
     # show yuura at speaking
     # show yuura at shake
-    nd_yuura_brown "EDY !!"
+    nd_yuura_brown "{size=+20}EDY !!{/size}"
     # show yuura at idle
 
     show axia at face_flip
@@ -172,6 +180,9 @@ label scene_18:
     voice voice_3_18_613_axiaregis
     nd_axiaregis_brown "A-anee ???"
 
+    stop music
+
+    play sound sfx_shadow_dash_2
     show kuda_nill behind rian at ease_custom(offscreenleft, offscreenright, 0.7):
         yalign -2.0
         xzoom -1
@@ -179,6 +190,13 @@ label scene_18:
     show axia at ease_custom(right, offscreenright, 0.5)
     show layer master at shake
     
+    pause 0.3
+
+    scene inn ruang_tamu_2
+    # show axia netral at right, idle
+    show rian angry at left, idle
+    with Flash
+
     nd_narrator_brown "Axiaregis sekali lagi ditabrak oleh kuda nil, membuatnya terjatuh tepat di hadapan diriku."
     # show axia hurt at jump_in_right(duration=1.0), idle
     # pause 2.0
@@ -189,6 +207,7 @@ label scene_18:
     voice voice_3_18_614_rian
     nd_rian_brown "Edy, maaf... Aku ga sengaja."
     
+    play music bgm_scene8_awkward
     show yuura scared at right with easeinright
 
     voice voice_3_18_615_rian
@@ -203,7 +222,7 @@ label scene_18:
 
     pause 0.5
 
-    show yuura at speaking
+    show yuura at face_flip, speaking
     nd_yuura_brown "Maaf ya, Edy... Aku berbuat jahat padamu."
     
     nd_yuura_brown "Tapi lain kali tolong jangan kayak gitu lagi."
@@ -277,10 +296,13 @@ label scene_18:
     nd_seiya_brown "AKASYAHHH !!"
     hide seiya with easeoutright
 
+    play sound sfx_punch_12
     show cg_arc_3_scene_18_yuura_nahan_shoot_1 with Flash
     pause 0.1
+    play sound sfx_punch_12
     show cg_arc_3_scene_18_yuura_nahan_shoot_2 with Flash
     pause 0.1
+    play sound sfx_action_sweeping_blow_scene16
     show cg_arc_3_scene_18_yuura_nahan_shoot_3 with slash
 
     # play sound cartoonish punch
@@ -290,6 +312,8 @@ label scene_18:
     hide yuura
     hide akasyah
     hide seiya
+
+    $ renpy.music.set_volume(0.5, channel="music")
 
     scene garden_fight_2
     show seiya netral at left, face_flip, idle
@@ -305,11 +329,15 @@ label scene_18:
     nd_akasyah_brown "GANGGU BANGET, LAGI SERU JUGA."
     
     voice voice_3_18_633_akasyah
-    nd_akasyah_brown "MINGGIR GA? ATAU LU..."
+    nd_akasyah_brown "MINGGIR GA? ATAU LU...{nw}"
     # show akasyah at idle
     # stop music
     # play music awkward yoyu
     
+    stop music
+    $ renpy.music.set_volume(1.0, channel="music")
+    play music bgm_scene8_awkward_yoyu_ver volume 1.0 loop
+
     show cg_arc_3_scene_18_lempar_yoyu_shoot_1:
         ypos -1.0
         ease 0.2 ypos 0.0
@@ -327,8 +355,7 @@ label scene_18:
         xpos 1.0
         ease 0.2 xpos 0.0
         
-    stop music
-    play music bgm_scene8_awkward_yoyu_ver volume 1.0 loop
+
 
     nd_narrator_brown "Aku melempar sebuah minuman berlabel Yoyu kepada Akasyah."
 
@@ -381,22 +408,20 @@ label scene_18:
     # play music pursuit ver 2
     # play sound angin berhembus sepoi sepoi
     show seiya at face_flip, idle
+
+    $ renpy.music.set_pause(True, channel="music")
     
-    nd_narrator_brown "Sebuah roket meluncur ke arah kami yang sedang mengobrol.{w=3}{nw}"
-
-    pause 0.0
-
     show rocket_greenscreen zorder 6:
         xzoom -1
         zoom 1.3
         xalign 0.5
         yalign 0.5
-    
-    pause 3.0
+
+    nd_narrator_brown "Disaat kita lagi mengobrol tiba tiba..{nw}"
 
     show akasyah angry at face_flip, center zorder 5 with ease 
     voice voice_3_18_643_akasyah
-    nd_akasyah_brown "Yuur !!!{w=1}{nw}"
+    nd_akasyah_brown "Yuur !!!{nw}"
     
     # hide seiya 
     # hide akasyah 
@@ -406,6 +431,8 @@ label scene_18:
 
     # sink sprite ?
     nd_narrator_black "Akasyah melompat untuk menyelamatkan diriku, dia menjadikan dirinya sebagai tameng hidup demi diriku. Beruntung Seiya berhasil memindahkan roket itu sebelum hal buruk terjadi."
+
+    $ renpy.music.set_pause(False, channel="music")
 
     scene garden_fight_1
     show dityo angry at right, speaking
@@ -418,9 +445,9 @@ label scene_18:
     nd_dityo_brown "Kalian gapapa kan ?"
 
     scene garden_fight_2
-    show seiya netral at left, face_flip, idle
+    show seiya hurt at left, face_flip, idle
     show yuura happy at custom_sprite_pos(x=0.2), face_flip, speaking
-    show akasyah netral at center, face_flip, idle
+    show akasyah hurt at center, face_flip, idle
     with dissolve
 
     # show dityo netral at idle
@@ -437,47 +464,82 @@ label scene_18:
     nd_narrator_brown "Aku menghampiri Dityo dan memberikannya sebuah alat yang aku rusak siang tadi."
     show yuura at face_flip, speaking
     nd_yuura_brown "Ini, aku berhasil memperbaikinya."
-    
+    show yuura at face_flip
+
+    show dark_overlay
+    play sound sfx_paper
+    show mahakarya_fixed at pos(r=2):
+        xalign -0.3
+        yalign 5.0
+        ease 0.5 yalign 0.65
+
+    pause
+
+    show yuura at face_flip, speaking
     nd_yuura_brown "Maaf, aku mendorong dirimu dan tanpa sengaja dan bertindak kasar padamu."
-    show yuura at face_flip, idle
+
+    nd_yuura_brown "Aku di bantu Edy dan Rian memperbaiki ini"
+    show yuura at face_flip
+
     show dityo at speaking
     voice voice_3_18_649_dityo
     nd_dityo_brown "Anee..."
+    show yuura at idle
     show dityo at idle
-    show shark hurt at custom_sprite_pos(x=1.4), speaking with easeinright
+
+    play sound sfx_action_whoosh_scene13_16
+    show mahakarya_fixed at pos(r=2):
+        xalign -0.3
+        yalign 0.65
+        ease 0.2 yalign 7.0 xalign 5.0
+    hide dark_overlay with dissolve
+
+    play sound sfx_glass_throw
+    pause 0.7
+    play sound sfx_tom_scream_ow
+
+    pause 1.0
+
+    show yuura at speaking
+    # show dityo at idle
+    nd_yuura_brown "Maaf yah Dityo"
+
+    show dityo at idle
+    show yuura at idle
+    show shark hurt_frame_frame at custom_sprite_pos(x=1.4), speaking with easeinright
     voice voice_3_18_650_shark
     nd_shark_brown "Kalian gapapa kan ?"
     show shark at speaking
     voice voice_3_18_651_shark
     nd_shark_brown "L-loh Anee ?"
     show shark at idle
-    show yuura at face_flip, speaking
-    nd_yuura_brown "Shark, kamu gapapa ?"
-    show yuura at face_flip, idle
+    show yuura at speaking
+    nd_yuura_brown "Shark, kok kamu..."
+    show yuura at idle
     show shark at speaking
     voice voice_3_18_653_shark
     nd_shark_brown "A-aman aja Anee, luka begini doang mah kecil."
     show shark at idle
-    show yuura at face_flip, custom_sprite_pos(x=1.0) with ease
+    show yuura at custom_sprite_pos(x=1.0) with ease
     nd_narrator_brown "Aku menarik tangannya dan melihat luka yang ada disana. Aku mengoleskan sebuah salep di luka tersebut, untuk membuatnya menjadi lebih baik."
     # stop music
     # play music awkward
     show shark at speaking
     voice voice_3_18_654_shark
-    nd_shark_brown "A-ane ???"
+    nd_shark_brown "Huh.. A-ane ???"
     show shark at idle
-    show yuura at center, face_flip, speaking with ease
+    show yuura at center, speaking with ease
     nd_yuura_brown "Lebih baik ?"
-    show yuura at face_flip, idle
+    show yuura at idle
     show shark at speaking
     voice voice_3_18_656_shark
     nd_shark_brown "I-iya..."
     show shark at idle
-    show yuura at face_flip, speaking
+    show yuura at speaking
     nd_yuura_brown "Makasih ya, udah ngelindungin aku."
     
     nd_yuura_brown "Kamu imut deh."
-    show yuura at face_flip, idle
+    show yuura at idle
     show shark at speaking
     voice voice_3_18_659_shark
     nd_shark_brown "D-dihh...  Diem deh..."
@@ -517,26 +579,44 @@ label scene_18:
     # hide rian
     # hide dawam
 
+    play music bgm_scene4 fadein 1.0
     scene garden_fight_1
     show dityo angry at right, idle
-    show shark hurt at custom_sprite_pos(x=1.4), idle
+    show shark hurt_frame at custom_sprite_pos(x=1.4), idle
     show yuura scared at center, speaking
     # with fade
 
     nd_yuura_brown "Maaf..."
     show yuura sad at idle
     nd_narrator_brown "Air mataku mulai turun seraya tubuhku mulai terduduk lemas."
-    show yuura at speaking
+    # show yuura at speaking
+
+    scene cg_arc_3_scene_17_shoot_01 with fade
+    pause 0.2
+    scene cg_arc_3_scene_17_shoot_02 with dissolve
+    pause 0.2
+    scene cg_arc_3_scene_17_shoot_01 with dissolve
     nd_yuura_brown "Maaf..."
     
+    scene cg_arc_3_scene_17_shoot_02 with dissolve
+    pause 0.2
+    scene cg_arc_3_scene_17_shoot_01 with dissolve
     nd_yuura_brown "Maaf aku ga bisa jadi Yuura yang kalian kenal."    
     
+    scene cg_arc_3_scene_17_shoot_02 with dissolve
+    pause 0.2
+    scene cg_arc_3_scene_17_shoot_01 with dissolve
     nd_yuura_brown "Maaf bahwa aku berubah."
     
+    scene cg_arc_3_scene_17_shoot_02 with dissolve
+    pause 0.2
+    scene cg_arc_3_scene_17_shoot_01 with dissolve
     nd_yuura_brown "Maaf kalau aku selalu mengecewakan para Yuuraid."
     
+    scene cg_arc_3_scene_17_shoot_02 with dissolve
     nd_yuura_brown "Maaf."
     
+    scene cg_arc_3_scene_17_shoot_03 with dissolve
     nd_yuura_brown "Maaf..."
     # hide yuura
 
@@ -564,7 +644,7 @@ label scene_18:
 
     scene garden_fight_1
     show dityo sad at right, speaking
-    show shark hurt at custom_sprite_pos(x=1.4), idle
+    show shark hurt_frame at custom_sprite_pos(x=1.4), idle
     show yuura sad at center, idle
 
     # show dityo sad at left, speaking
@@ -577,6 +657,7 @@ label scene_18:
 
     show akasyah smug at left, idle with easeinleft
     pause 0.2
+    play music bgm_scene8_awkward
     show akasyah at speaking
     voice voice_3_18_677_akasyah
     nd_akasyah_brown "Au, lu pada ngapain coba kayak gitu ?"

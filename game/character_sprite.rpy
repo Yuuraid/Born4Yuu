@@ -133,6 +133,7 @@ layeredimage shark:
         attribute hurt "assets/sprite/Shark/shark_main_hurt.png"
         attribute sad "assets/sprite/Shark/shark_main_worried.png"
         attribute beast "assets/sprite/Shark/shark_main_beast.png"
+        attribute hurt_frame "assets/sprite/Shark/shark_main_hurt_frame.png"
 
         attribute full_netral "assets/sprite/Shark/shark_full_netral.png"
         attribute full_happy "assets/sprite/Shark/shark_full_happy.png"
