@@ -31,7 +31,7 @@ label scene_1:
         xalign 0.45
         yalign 0.3
     
-    show yuura netral eff_sleepy at jump_in_bottom(duration=2.0), speaking
+    show yuura sad eff_sleepy at jump_in_bottom(duration=2.0), speaking
     nd_yuura_brown "Iya iya... Hooam..." 
 
     camera:
@@ -40,7 +40,7 @@ label scene_1:
         yalign 0.0
     with dissolve
 
-    show yuura netral at idle
+    show yuura at idle
     nd_narrator_brown "Aku terbangun dari tidurku,{w} duduk sebentar sebelum benar-benar beranjak dari dari kasurku."
     
     nd_narrator_brown "Rasanya benar-benar malas untuk beranjak dari kas-"
