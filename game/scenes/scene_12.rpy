@@ -74,8 +74,9 @@ label scene_12:
 
     show aergia at speaking
     voice voice_2_12_189_aergia
-    nd_aergia_brown "nahhhh kan inget, eh tapi....kok. hmm kok rasanya ada yang aneh..lu beneran yuura kan?"
-        
+    nd_aergia_brown "nahhhh kan inget, eh tapi....kok. hmm kok rasanya ada yang aneh ya..lu...lu beneran yuura kan?"
+    show aergia at idle
+
     show yuura at face_flip, speaking
     nd_yuura_brown "!!!"
     
@@ -85,13 +86,14 @@ label scene_12:
     show aergia at speaking
     voice voice_2_12_192_aergia
     nd_aergia_brown "Lah lah, lah ko marah??" 
-    
+
     voice voice_2_12_193_aergia
     nd_aergia_brown "emngnya gw salah kah? kok marah gitu sih?"
     show aergia at idle
         
-    show aergia at speaking
+    show yuura at face_flip, speaking
     nd_yuura_brown "B-bukan begitu, cuma terlalu mendadak jadinya aku kaget."
+    show aergia at idle
     show yuura at face_flip, idle
 
     show aergia at speaking

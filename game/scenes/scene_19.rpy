@@ -151,6 +151,7 @@ label scene_19:
     nd_aergia_brown "Lari!!!"
     show aergia at idle
 
+    play sound sfx_action_whoosh_scene13_16
     hide akasyah
     hide seiya
     hide dawam
@@ -169,6 +170,7 @@ label scene_19:
     # show yuura at idle
     # nd_narrator_brown "Aku berusaha mendekat, tapi tiba-tiba saja muncul sebuah kembang api di langit. Membuatku terkejut dengan semua ini."
 
+    play sound sfx_action_whoosh_scene13_16
     hide yuura with easeoutleft
 
     scene cg_arc_3_scene_19_credit:

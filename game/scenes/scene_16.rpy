@@ -93,6 +93,7 @@ label scene_16:
     voice voice_3_16_378_aergia
     nd_aergia_brown "Mau ke mana lu ha??"
     $ renpy.music.set_volume(2.0, channel="music")
+    play sound sfx_action_whoosh_scene13_16
     show aergia at idle, custom_sprite_pos(x=0.1) with ease
 
     scene cg_arc_3_scene_16_cekik_shoot_01 with wipe_j_atas(0.2)
@@ -152,13 +153,14 @@ label scene_16:
     show aergia at idle
 
     scene inn gudang outside with dissolve
+    play sound sfx_action_whoosh_scene13_16
     show yuura sad at face_flip, ease_custom(offscreenright, offscreenleft, 0.5)
     pause 0.1
 
     scene black with fade
-    with hpunch 
     play sound sfx_action_tanah_retak_scene16
-    nd_narrator_black "Aergia mengangkat sedikit dan membanting Yuura ke gudang."
+    with hpunch 
+    nd_narrator_black "Aergia mengangkat dan membanting Yuura ke gudang."
     
         # fx stop blur
     # show gudang with shake
@@ -478,7 +480,7 @@ label scene_16:
 
     define flashbulb = Fade(0.2, 0.0, 0.8, color='#fff')
 
-    play sound sfx_punch_2
+    play sound sfx_shadow_dash_2
     scene pe dash negative_blue:
         zoom 1.0
         truecenter
@@ -996,6 +998,7 @@ label scene_16:
     play sound sfx_punch_1
     show pe punch purple transparent as d1:
         truecenter zoom .65 rotate 270 xoffset -200 yoffset -100
+    pause 0.2
     play sound sfx_punch_1
     show pe punch purple transparent as d2:
         truecenter zoom .65 xoffset -200 yoffset -100

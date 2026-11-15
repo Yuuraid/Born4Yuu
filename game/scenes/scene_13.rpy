@@ -21,6 +21,7 @@ label scene_13:
     play music bgm_scene1_rock volume 1.0 loop
     # play sound pressure
 
+    play sound sfx_punch_4
     scene pe kick kick_set_alter:
         zoom 0.95
         xzoom -1
@@ -36,10 +37,12 @@ label scene_13:
     scene inn resepsionis
     show yuura scared at face_flip, center
     pause 0.2
+    play sound sfx_action_whoosh_scene13_16
     show yuura at face_flip, ease_custom(center, left, 0.25)
 
     nd_narrator_brown "Tapi sebelum sempat bereaksi{w=0.5}{nw}"
 
+    play sound sfx_shadow_teleport
     show pe purple_flame flame_full at custom_sprite_pos(x=3.0, y=0.5), silhouette
     show yuura at face_flip, consumed_by_darkness
 
@@ -80,6 +83,8 @@ label scene_13:
     show akasyah at speaking
     voice voice_3_13_202_akasyah
     nd_akasyah_brown "20 meter? Ya elah segitu doang mah bisa gua kejar! Beraninya si Seiya itu merusak semua rencana gua!"
+    
+    play sound sfx_action_whoosh_scene13_16
     hide akasyah 
     with moveoutright
     

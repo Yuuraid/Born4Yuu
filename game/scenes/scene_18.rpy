@@ -461,7 +461,7 @@ label scene_18:
 
     show yuura happy at center, face_flip, idle with easeinleft
 
-    nd_narrator_brown "Aku menghampiri Dityo dan memberikannya sebuah alat yang aku rusak siang tadi."
+    nd_narrator_brown "Aku menghampiri Dityo dan memberikannya sebuah lukisan yang aku rusak siang tadi."
     show yuura at face_flip, speaking
     nd_yuura_brown "Ini, aku berhasil memperbaikinya."
     show yuura at face_flip
@@ -475,7 +475,7 @@ label scene_18:
 
     pause
 
-    show yuura at face_flip, speaking
+    show yuura at speaking
     nd_yuura_brown "Maaf, aku mendorong dirimu dan tanpa sengaja dan bertindak kasar padamu."
 
     nd_yuura_brown "Aku di bantu Edy dan Rian memperbaiki ini"
@@ -506,7 +506,7 @@ label scene_18:
 
     show dityo at idle
     show yuura at idle
-    show shark hurt_frame_frame at custom_sprite_pos(x=1.4), speaking with easeinright
+    show shark hurt_frame at custom_sprite_pos(x=1.4), speaking with easeinright
     voice voice_3_18_650_shark
     nd_shark_brown "Kalian gapapa kan?"
     show shark at speaking

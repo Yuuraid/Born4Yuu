@@ -134,7 +134,7 @@ label scene_17:
     menu siap:
         "Aku belum siap":
             $ renpy.sound.set_volume(0.0, channel="memories")
-            play music bgm_scene3_pria_asing volume 1.0 loop
+            # play music bgm_scene3_pria_asing volume 1.0 loop
             show yuura at speaking
             nd_yuura_brown "Aku belum siap."
             show yuura at idle
@@ -418,15 +418,15 @@ label scene_17:
             
             show dark_overlay
             play sound sfx_paper
-            show foto_bersama at pos(y=0.7, r=2):
+            show foto_seratus_hal at pos(y=0.7, r=2):
                 xalign 0.5
                 yalign 5.0
-                ease 0.5 yalign 0.7
+                ease 0.5 yalign 0.5
 
 
-            nd_narrator_brown "Pria itu memperlihatkan sebuah foto, di mana momen ketika semua orang merayakan ulang tahunku."
+            nd_narrator_brown "Pria itu memperlihatkan sebuah foto, dimana aku menyoraki seseorang yang memuji diriku"
             
-            hide foto_bersama 
+            hide foto_seratus_hal 
             hide dark_overlay
             with dissolve
 

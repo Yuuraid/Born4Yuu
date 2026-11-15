@@ -14,12 +14,14 @@ label scene_9:
     with fade
     pause 1.0
     show yuura netral at center, idle, face_flip with easeinleft
+    show layer master at shake
+    play sound sfx_punch_impact_03
     show yuura netral at collide_leftward
     show akasyah angry at collide_rightward, face_flip
     
-    # Shake screen precisely upon impact (0.25s delay matches easein timing)
-    $ renpy.pause(0.25, hard=True)
-    with hpunch 
+    # # Shake screen precisely upon impact (0.25s delay matches easein timing)
+    # $ renpy.pause(0.25, hard=True)
+    # with hpunch 
 
     nd_narrator_brown "Namun, tanpa sengaja aku menabrak salah seorang yang sedang berdiri menatap langit sambil minum susu."
 
@@ -70,7 +72,8 @@ label scene_9:
     show yuura at idle
     voice voice_2_9_93_akasyah
     wd_unknown_brown "Ah berisik lu Yur!"
-    
+    play sound sfx_punch_2
+    stop music
     show akasyah at idle
     show pe punch yellow transparent with CropMove(0.2, "wipeleft")
     pause 0.2
@@ -79,6 +82,7 @@ label scene_9:
     show yuura scared at custom_sprite_pos(x=-0.5)
     show seiya netral at custom_sprite_pos(x=1.3), idle
     with fade
+    play music bgm_scene1_rock
     nd_narrator_brown "Sebuah tangan melesat ke arahku dengan sangat cepat, tapi beruntung aku tiba-tiba terteleporasi agak jauh dari orang itu."
     
     show akasyah at speaking
@@ -107,9 +111,11 @@ label scene_9:
     voice voice_2_9_98_akasyah
     wd_akasyah_brown "SIALAN! GUA BILANG LEPAS!!!!"
     
+    play sound sfx_action_whoosh_scene13_16
     show akasyah at center, idle with ease
-    nd_narrator_brown "Akasyah berhasil lepas dengan kecepatannya yang luar biasa, dia langsung melompat ke arahku dengan penuh kemarahan."
+    nd_narrator_brown "Dengan kecepatan luar biasa, Akasyah lolos dan langsung menerjangku penuh amarah!{w=1}{nw}"
     
+    play sound sfx_shadow_teleport
     show akasyah at right with fade
     nd_narrator_brown "Tapi, Seiya langsung memindahkannya lagi dengan menggunakan manipulasi bayangan."
     
@@ -130,6 +136,6 @@ label scene_9:
     
     nd_narrator_black "Aku hanya bisa lari untuk selamat dari semua bencana ini"
 
-    stop music
+    # stop music
 
     jump scene_10

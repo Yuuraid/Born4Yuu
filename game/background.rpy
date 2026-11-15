@@ -58,6 +58,7 @@ image vid_memory_senyum = Movie(play="assets/videos/memories/senyum.webm", size=
 image vid_memory_nyanyi = Movie(play="assets/videos/memories/nyanyi.webm", size=(1920, 1080), loop=True, channel="memories")
 image vid_memory_hutang = Movie(play="assets/videos/memories/hutang.webm", size=(1920, 1080), loop=True, channel="memories")
 image vid_memory_pleaseework = Movie(play="assets/videos/memories/pleaseework_2.webm", size=(1920, 1200))
+image vid_memory_totsu = Movie(play="assets/videos/memories/memory_totsu.webm")
 
 # tertawa.webm
 # senyum.webm

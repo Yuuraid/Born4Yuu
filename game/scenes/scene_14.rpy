@@ -2,12 +2,14 @@
 
 label scene_14:
 
+    stop music
     scene inn lorong malam with fade
     # play sound buk
     # nd_narrator_brown "Pantatku menghantam tanah duluan."
     
     show yuura scared at center, speaking
     with easeinleft
+    play sound sfx_punch_impact_02
     show yuura scared at center, shake
     nd_yuura_brown "ADUH..."
     show yuura at idle
@@ -38,8 +40,6 @@ label scene_14:
     show yuura netral at speaking
     nd_yuura_brown "Kenapa emangnya?"
     show yuura at idle
-
-    play music bgm_scene15_pursuit volume 1.0 loop
 
     transform flip_image(horizontal=True, vertical=False):
         xzoom (-1.0 if horizontal else 1.0)
@@ -94,17 +94,19 @@ label scene_14:
     voice voice_3_14_210_seiya
     nd_seiya_brown "Tempat ini sudah tidak aman, sebaik-{nw}"
     # show seiya at idle
+
     scene cg_arc_3_scene_14_shoot_1:
         zoom 1.0
         xalign 0.5
         linear 0.2 xalign 1.0 zoom 1.05
     pause 0.3
-    play sound sfx_action_cartoonish_punch_scene18
+    play sound sfx_shadow_dash_1
     scene pe dash blue with Flash
     show layer master at shake
     
     nd_narrator_black "Belum sempat menyelesaikan bicaranya, Seiya mendengar suara yang sangat keras mengarah padanya.{w=3.0}{nw}"
     
+    play music bgm_scene15_pursuit volume 1.0 loop
     scene cg_arc_3_scene_14_shoot_2:
         xalign 0.7
         yalign 0.9
@@ -204,6 +206,7 @@ label scene_14:
     
     nd_narrator_brown "Badanku gemetar karena merasa takut bahwa aku tidak akan bisa keluar dari sini hidup-hidup, aku menoleh ke arah Seiya dan mulai melihat raut wajah ragu padanya."
     
+    play sound sfx_move
     show seiya at custom_sprite_pos(x=0.6)
     show yuura at custom_sprite_pos(x=0.9) 
     with ease
@@ -242,16 +245,16 @@ label scene_14:
     
     # Use CG here
     scene black with fast_fade
-    play sound sfx_action_cartoonish_punch_scene18
+    play sound sfx_punch_1
     show pe punch yellow transparent as punch_1:
         zoom 1.1
         xalign 0.5
         yalign 0.5
     with wipe_j_atas(0.25)
-    # play sound sfx_action_cartoonish_punch_scene18
+    # play sound sfx_punch_1
     nd_narrator_black "Dalam sekejap, Akasyah berpindah dan memberikan serangan akurat kepada Seiya."
 
-    play sound sfx_action_cartoonish_punch_scene18
+    play sound sfx_punch_2
     show pe kick serangan_seiya transparent as punch_2:
         zoom 1.1
         xalign 0.5
@@ -264,7 +267,7 @@ label scene_14:
 
     pause 0.1
 
-    play sound sfx_action_cartoonish_punch_scene18
+    play sound sfx_punch_3
     # Resize punch_1 without affecting anything else:
     show pe punch yellow transparent as punch_1:
         # zoom 0.9  # Change this to whatever zoom level you want
@@ -274,7 +277,7 @@ label scene_14:
 
     pause 0.1
 
-    play sound sfx_action_cartoonish_punch_scene18
+    play sound sfx_punch_4
     show pe punch yellow transparent as punch_3:
         zoom 1.8
         rotate -90
@@ -295,7 +298,7 @@ label scene_14:
     #     yalign 0.7
     #     ease 0.25 zoom 1.5
 
-    play sound sfx_action_cartoonish_punch_scene18
+    play sound sfx_punch_5
     show pe punch yellow transparent as punch_4:
         zoom 1.5
         rotate -225
@@ -318,6 +321,7 @@ label scene_14:
         xzoom -1
         zoom 1.3
         xalign 1.0
+    play sound sfx_action_whoosh_scene13_16
     show seiya netral at right
     with ease
 
@@ -433,7 +437,7 @@ label scene_14:
     
     pause 0.5
 
-    play sound sfx_action_cartoonish_punch_scene18
+    play sound sfx_heavy_punch_2
     scene pe kick serangan_seiya with wipe_j_atas(0.2)
     show layer master at shake
 
@@ -446,7 +450,7 @@ label scene_14:
 
     nd_narrator_black "Tak melewatkan kesempatan, Seiya muncul dari portal bayangan dan melayangkan tinjunya."
 
-    play sound sfx_action_cartoonish_punch_scene18
+    play sound sfx_punch_1
     show pe kick kick_set_alter transparent as aka_counter_1:
         rotate 180
         xalign 0.5
@@ -467,14 +471,20 @@ label scene_14:
         zoom 1.3
         xalign 0.0
     with ease
+    play sound sfx_punch_impact_01
     show seiya hurt at face_flip, ease_custom(offscreenright, center, 0.5)
 
-    nd_narrator_brown "Meski terpental, Seiya berhasil mengikat kaki Akasyah dan memanfaatkan momentum untuk menarik kakinya dan membantingkan tubuhnya ke lantai."
+    # nd_narrator_brown "Meski terpental, Seiya berhasil mengikat kaki Akasyah dan memanfaatkan momentum untuk menarik kakinya dan membantingkan tubuhnya ke lantai."
+    nd_narrator_brown "Meski terpental, Seiya berhasil menempatkan bayangannya didekat Akasyah"
     
+    play sound sfx_punch_impact_03
+    play sound sfx_tom_scream_ow
     show layer master at shake
 
     # play sound lantai kayu patah
-    nd_narrator_brown "Seiya berhasil memberikan serangan telak, tapi nampaknya itu tak terlalu berefek karena ketika kepulan debu memudar, terlihat Akasyah yang masih berdiri meski dengan darah yang mengalir dari mulutnya."
+    # nd_narrator_brown "Seiya berhasil memberikan serangan telak, tapi nampaknya itu tak terlalu berefek karena ketika kepulan debu memudar, terlihat Akasyah yang masih berdiri meski dengan darah yang mengalir dari mulutnya."
+    nd_narrator_brown "Bayangan tersebut merodok Akasyah dengan hebatnya"
+    
 
     scene inn lorong malam:
         xzoom -1
@@ -490,7 +500,7 @@ label scene_14:
     # Another CG?
     scene black with wipe_j_bawah(0.2)
 
-    play sound sfx_action_cartoonish_punch_scene18
+    play sound sfx_punch_1
     show pe kick serangan_seiya transparent:
         # zoom 0.9
         xalign 0.5
@@ -501,7 +511,7 @@ label scene_14:
     nd_narrator_black "Baru menutup bicaranya, Seiya muncul dari portal bayangan dan melancarkan tinju yang diselimuti energi hitam." 
     
     # TODO: add more sequence
-    play sound sfx_action_cartoonish_punch_scene18
+    play sound sfx_punch_1
     show pe kick kick_set_alter transparent:
         # zoom 0.9
         xzoom -1
@@ -525,7 +535,7 @@ label scene_14:
 
     pause 0.2
 
-    play sound sfx_action_cartoonish_punch_scene18
+    play sound sfx_punch_2
     show pe punch yellow transparent:
         # rotate 45
         xzoom -1
@@ -538,7 +548,7 @@ label scene_14:
 
     pause 0.2
 
-    play sound sfx_action_cartoonish_punch_scene18
+    play sound sfx_punch_3
     show serangan_seiya transparent:
         zoom 1.0
         # yzoom -1
@@ -570,12 +580,12 @@ label scene_14:
     nd_seiya_black "Urghhh!!!"
     show seiya at idle
     
-    play sound sfx_action_cartoonish_punch_scene18
+    play sound sfx_punch_1
     show pe punch swipe transparent with wipe_j_bawah(0.2)
 
     nd_narrator_black "Seiya kehilangan keseimbangannya karena tak menyadari serangan dadakan itu dan Akasyah segera memanfaatkan kesempatan itu."
     
-    play sound sfx_action_cartoonish_punch_scene18
+    play sound sfx_punch_1
     show yellow transparent:
         yzoom -1
         zoom 0.8
@@ -590,7 +600,7 @@ label scene_14:
     hide pe punch swipe transparent
     with wipe_j_atas(0.3)
 
-    play sound sfx_action_cartoonish_punch_scene18
+    play sound sfx_punch_2
     show yellow transparent:
         # yzoom -1
         zoom 1.5
@@ -603,7 +613,7 @@ label scene_14:
     
     hide yellow transparent
 
-    play sound sfx_action_cartoonish_punch_scene18
+    play sound sfx_punch_3
     show yellow transparent:
         # yzoom -1
         xzoom -1
@@ -628,6 +638,7 @@ label scene_14:
     voice voice_3_14_236_akasyah
     nd_akasyah_brown "SEKARANG LAH AKHIRNYA! BYE BYE PAHLAWAN KESIANGAN!"
     
+    play sound sfx_action_whoosh_scene13_16
     hide akasyah with easeoutright
 
     pause 0.1
@@ -700,6 +711,7 @@ label scene_14:
         # play sound gigit roket
     nd_yuura_black "!!" # improvisasi? Wkwkwkwk hapus aja kalo ga butuh
     
+    play sound sfx_action_whoosh_scene13_16
     scene cg_arc_3_scene_14_shark_shoot_01 with Flash
     pause 0.2
     play sound sfx_action_gigit_roket_scene14
@@ -736,8 +748,12 @@ label scene_14:
     show shark beast at right with moveinright
     pause 1.0
     hide shark beast
+    play sound sfx_pokemon_evolution_intro
     call evolve_sequence from _evolve_sequence_2
     hide shark
+    show shark netral at right, idle
+    play sound sfx_pokemon_evolve
+    pause 4.0
 
     show shark netral at right, speaking
     voice voice_3_14_243_shark
