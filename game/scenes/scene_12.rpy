@@ -18,7 +18,7 @@ label scene_12:
     show aergia at right, speaking
     with dissolve
     voice voice_2_12_181_aergia
-    # nd_unknown_brown "Halo anee... Tidak. {w=0.5}Yuura... Apa kabar ?"
+    # nd_unknown_brown "Halo anee... Tidak. {w=0.5}Yuura... Apa kabar?"
     nd_unknown_brown "ehh halo~, eh.. maksudnya Yuura, apa kabar yuur? hehe"
     show aergia at idle
 
@@ -32,7 +32,7 @@ label scene_12:
 
     show aergia at speaking
     # voice voice_2_12_183_aergia
-    # nd_unknown_brown "Loh ? Kamu cari aku di buku tamu? Padahal gua gapernah ditulis di sana sama lu loh... Lu tahukan gua siapa, Yuur ?"
+    # nd_unknown_brown "Loh? Kamu cari aku di buku tamu? Padahal gua gapernah ditulis di sana sama lu loh... Lu tahukan gua siapa, Yuur?"
         # Ga konsisten gua gua, aku aku
     
     # TODO: find out how to implement the timing for textbox and audio
@@ -44,7 +44,7 @@ label scene_12:
     show yuura at face_flip, speaking
     nd_yuura_brown "A-ah g-ga dong, tentu saja aku tahu."
     
-    nd_yuura_brown "(Sial, apakah aku akan ketahuan ?)"
+    nd_yuura_brown "(Sial, apakah aku akan ketahuan?)"
     show yuura at face_flip, idle
 
     show aergia at speaking
@@ -56,11 +56,11 @@ label scene_12:
     
     show aergia at speaking
     voice voice_2_12_186_aergia
-    nd_unknown_brown "Hahaha... Bercanda kok, Yuur. Gua tahu pasti lu lagi capek banget. Lu ga mungkin lupa sama gua, iya kan ? {nw=0.5}"
+    nd_unknown_brown "Hahaha... Bercanda kok, Yuur. Gua tahu pasti lu lagi capek banget. Lu ga mungkin lupa sama gua, iya kan? {nw=0.5}"
     show aergia angry at shake
     play music bgm_scene15_judgment volume 1.0 loop fadein 1.0
     $ renpy.music.set_volume(0.4, channel="music")
-    extend "KAN !?"
+    extend "KAN!?"
     show aergia at idle
             
     show aergia at speaking
@@ -69,7 +69,7 @@ label scene_12:
     show aergia at idle
         
     show yuura at face_flip, speaking
-    nd_yuura_brown "Ah... Aergia ! Inget-inget hehe."
+    nd_yuura_brown "Ah... Aergia! Inget-inget hehe."
     show yuura at face_flip, idle
 
     show aergia at speaking
@@ -79,7 +79,7 @@ label scene_12:
     show yuura at face_flip, speaking
     nd_yuura_brown "!!!"
     
-    nd_yuura_brown "A-apa maksudmu ? A-aku Yuura, kok !"
+    nd_yuura_brown "A-apa maksudmu? A-aku Yuura, kok!"
     show yuura at face_flip, idle
         
     show aergia at speaking

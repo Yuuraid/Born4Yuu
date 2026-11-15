@@ -25,13 +25,13 @@ label scene_16:
     show aergia furious at speaking
     show aergia at shake
     voice voice_3_16_368_aergia
-    nd_aergia_brown "DIAM ! ARGGH eh?"
+    nd_aergia_brown "DIAM! ARGGH eh?"
     show aergia sad
     voice voice_3_16_369_aergia
     nd_aergia_brown "Eh maksudnya buk..bukan.. BUKAN ARGGGH!"
     # nd_aergia_brown "Ah... Maaf maksudnya bukan... {nw=0.5}"
     # show aergia angry
-    # extend "ARGGGH !"
+    # extend "ARGGGH!"
     show aergia at idle
 
     nd_narrator_brown "Bentakan nya berhasil membuatku diam seribu bahasa, seperti saat pertama kami bertemu, ia marah karena hal yang tidak kuketahui."
@@ -41,7 +41,7 @@ label scene_16:
         
     show aergia at speaking
     voice voice_3_16_370_aergia
-    nd_aergia_brown "CUKUP ! LU TU SIAPA !?"
+    nd_aergia_brown "CUKUP! LU TU SIAPA!?"
     show aergia at center, idle with ease
 
     nd_narrator_brown "Aergia mulai berjalan perlahan ke arahku. Aku ingin membantah pernyataan tersebut, tapi mulutku terbungkam ketika melihat energi-energi hitam mulai muncul di sekitarnya."
@@ -50,13 +50,13 @@ label scene_16:
         
     show aergia at speaking
     voice voice_3_16_371_aergia
-    nd_aergia_brown "Gua tau lu itu bukan Yuura !"
+    nd_aergia_brown "Gua tau lu itu bukan Yuura!"
     
     voice voice_3_16_372_aergia
-    nd_aergia_brown "Yuura yang asli bakal inget sama gua !"
+    nd_aergia_brown "Yuura yang asli bakal inget sama gua!"
     
     voice voice_3_16_373_aergia
-    nd_aergia_brown "Yuura bakal peduli sama semua orang yang ada disini !"
+    nd_aergia_brown "Yuura bakal peduli sama semua orang yang ada disini!"
     show aergia at idle
     
     show yuura at speaking, face_flip
@@ -68,13 +68,13 @@ label scene_16:
         
     show aergia at speaking
     voice voice_3_16_375_aergia
-    nd_aergia_brown "ARGGHHH BACOT !"
+    nd_aergia_brown "ARGGHHH BACOT!"
 
     show layer master at looping_shake 
     with wipe_j_atas(0.2)
 
     voice voice_3_16_376_aergia
-    nd_aergia_brown "LU TUH BUKAN SIAPA-SIAPA ! LU BUKAN YUURA !"
+    nd_aergia_brown "LU TUH BUKAN SIAPA-SIAPA! LU BUKAN YUURA!"
     show aergia at idle
 
     nd_narrator_brown "Gelombang angin berhembus kencang akibat gertakannya, berhasil membuat benda-benda di sekitar berterbangan dari tempatnya."
@@ -82,16 +82,16 @@ label scene_16:
         # play sound barang-barang pecah dan hancur
             
     show yuura at face_flip, speaking
-    nd_yuura_brown "(Sial ! kalau terus begini, aku akan terjebak bersama orang aneh ini...)"
+    nd_yuura_brown "(Sial! kalau terus begini, aku akan terjebak bersama orang aneh ini...)"
     
-    nd_yuura_brown "(Aku harus kabur !)"
+    nd_yuura_brown "(Aku harus kabur!)"
     show yuura at idle, custom_sprite_pos(x=-0.3) with ease
 
         # play sound berpindah
         
     show aergia at speaking
     voice voice_3_16_378_aergia
-    nd_aergia_brown "Mau ke mana lu ha ??"
+    nd_aergia_brown "Mau ke mana lu ha??"
     $ renpy.music.set_volume(2.0, channel="music")
     show aergia at idle, custom_sprite_pos(x=0.1) with ease
 
@@ -113,7 +113,7 @@ label scene_16:
     nd_narrator_brown "Tubuhku melayang di udara dengan leherku yang tercekik oleh sesuatu yang tak terlihat, rasanya sangat menyakitkan membuat air mataku keluar. Dia berjalan menghampiriku dengan tatapan anehnya.{w=2}{nw}"
     
     # show aergia at speaking
-    # nd_aergia_brown "JAWAB ! DIMANA YUURA !?"
+    # nd_aergia_brown "JAWAB! DIMANA YUURA!?"
     # show aergia at idle
     
     scene cg_arc_3_scene_16_cekik_shoot_04 at looping_shake with wipe_j_atas(0.2)
@@ -126,7 +126,7 @@ label scene_16:
     voice voice_3_16_381_aergia
     nd_aergia_brown "AH BANGSAT! DIMANA YUURA? YUURA YANG ASLI! DIMANA!{nw}"
     
-    # nd_aergia_brown "DIMANA YUURA !?"
+    # nd_aergia_brown "DIMANA YUURA!?"
     # show aergia at idle
 
     scene cg_arc_3_scene_16_cekik_shoot_02 at looping_shake with wipe_j_atas(0.2)
@@ -172,7 +172,7 @@ label scene_16:
 
     show cg_arc_3_scene_16_balikin_1 with dissolve
     voice voice_3_16_384_aergia
-    nd_aergia_black "BALIKIN YUURA YG GUA KENAL SEKARANG JUGA !{nw}"
+    nd_aergia_black "BALIKIN YUURA YG GUA KENAL SEKARANG JUGA!{nw}"
     # show aergia at idle
 
         # aergia memukul Yuura
@@ -323,7 +323,7 @@ label scene_16:
     scene black with fade
 
     voice voice_3_16_386_aergia
-    nd_aergia_black "Balikin ga ? BALIKIN !"
+    nd_aergia_black "Balikin ga? BALIKIN!"
 
     # play sound sfx_punch_1
     stop music
@@ -372,7 +372,7 @@ label scene_16:
     with dissolve
     pause .5
     voice voice_3_16_388_aergia
-    nd_aergia_black "AHHH BACOT emangnya lu tau apa hah ?!"
+    nd_aergia_black "AHHH BACOT emangnya lu tau apa hah?!"
     show aergia at idle
 
     image white = Solid("#ffffff")
@@ -398,7 +398,7 @@ label scene_16:
 
     show dawam angry at center, silhouette
     with dissolve
-    nd_narrator_brown "Ketika mataku kembali terbuka, samar-samar aku melihat sosok tinggi dan besar sedang membelakangiku, dia... melindungiku ?"
+    nd_narrator_brown "Ketika mataku kembali terbuka, samar-samar aku melihat sosok tinggi dan besar sedang membelakangiku, dia... melindungiku?"
     
     show dawam at silhouette
     voice voice_3_16_389_dawam
@@ -429,7 +429,7 @@ label scene_16:
     nd_aergia_black "Hahaha kenapa kalian lagi, kalian lagi hahaha."
     
     voice voice_3_16_394_aergia
-    nd_aergia_black "Udah sering lupain gua sekarang kalian malah lindungun ni orang ha ?!"
+    nd_aergia_black "Udah sering lupain gua sekarang kalian malah lindungun ni orang ha?!"
     show aergia at idle
             
     show dawam at speaking
@@ -538,11 +538,11 @@ label scene_16:
     play sound sfx_action_heartbeat_scene10
     show aergia at speaking
     voice voice_3_16_398_aergia
-    nd_aergia_brown "Kenapa... Kenapa !!! KENAPA !? {nw}"
+    nd_aergia_brown "Kenapa... Kenapa!!! KENAPA!? {nw}"
 
 
     voice voice_3_16_399_aergia
-    nd_aergia_brown "Gua tahu bahwa gua ga pantes disini ! TAPI KENAPA ! "
+    nd_aergia_brown "Gua tahu bahwa gua ga pantes disini! TAPI KENAPA! "
     
     show cg_arc_3_scene_16_aer_aura_02:
         xalign 0.5
@@ -555,7 +555,7 @@ label scene_16:
     # with ease
 
     voice voice_3_16_400_aergia
-    nd_aergia_brown "ARGHHH MATI LU SEMUA !!!"
+    nd_aergia_brown "ARGHHH MATI LU SEMUA!!!"
     show aergia at idle
 
     # There are CG here
@@ -826,7 +826,7 @@ label scene_16:
     camera:
         truecenter zoom 1.0
     voice voice_3_16_401_dawam
-    nd_dawam_black "Dasar lalat pengganggu !{nw}"
+    nd_dawam_black "Dasar lalat pengganggu!{nw}"
     
     voice voice_3_16_402_aergia
     nd_aergia_black "Hahaha, iya lalat. ya ya lalat ya \niya... TERUS KENAPA KALAU GW LALAT HAH!!.{nw}"
@@ -1068,7 +1068,7 @@ label scene_16:
 
     show aergia at speaking
     voice voice_3_16_403_aergia
-    nd_aergia_black "BAJINGAN ! Berhenti ganggu gw, DASAR BANGSAT !"
+    nd_aergia_black "BAJINGAN! Berhenti ganggu gw, DASAR BANGSAT!"
     show aergia at idle
 
     scene inn gudang outside:
@@ -1111,7 +1111,7 @@ label scene_16:
     nd_aergia_brown "Bahkan pas lu lawan orang bodo kaya gua aja lu kalah ya?  hah~"
     
     voice voice_3_16_406_aergia
-    nd_aergia_brown "Atau lu nya aja yg lebih bodo daripada gw ?"
+    nd_aergia_brown "Atau lu nya aja yg lebih bodo daripada gw?"
     show aergia at idle
 
     hide dawam

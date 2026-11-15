@@ -26,7 +26,7 @@ label scene_6:
     nd_narrator_brown "Aku memperhatikan sekitarku dengan seksama, menyadari bahwa aku kembali ke tempat aku bangun pertama kali."
     
     show yuura at speaking
-    nd_yuura_brown "K-kenapa aku di sini !? {w}Tunggu... Apa jangan-jangan tadi aku mimpi ya ?"
+    nd_yuura_brown "K-kenapa aku di sini!? {w}Tunggu... Apa jangan-jangan tadi aku mimpi ya?"
     
     nd_yuura_brown "Ga, ga mungkin..."
     
@@ -112,8 +112,11 @@ label scene_6:
     # play sound ketukan pintu
     # play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
     
+    play sound sfx_action_knocking_door_scene1
     show yuura at face_flip with dissolve
     
+    pause 1.0
+
     voice voice_2_6_68_taro
     wd_unknown_brown "Ane… ini aku Tarochips, aku bawa makanan buat ane…"
     

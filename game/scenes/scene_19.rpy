@@ -20,14 +20,14 @@ label scene_19:
     show yuura at face_flip, idle
     nd_narrator_brown "Tepat ketika baru duduk di kursi resepsionis untuk istirahat, aku melihat sebuah kotak yang tersempil di kolong meja, aku mengambil dan meletakkannya di meja."
     show yuura at face_flip, speaking
-    nd_yuura_brown "Kotak apa ini ?"
+    nd_yuura_brown "Kotak apa ini?"
     show yuura at face_flip, idle
     show haruto happy at speaking
     voice voice_4_19_687_haruto
     nd_haruto_brown "Oh... Itu Time Capsule milikmu, Aneeki."
     show haruto at idle
     show yuura at face_flip, speaking
-    nd_yuura_brown "Time Capsule milikku ?"
+    nd_yuura_brown "Time Capsule milikku?"
     show yuura at face_flip, idle
     nd_narrator_brown "Aku membukanya tanpa ragu dan melihatnya begitu banyak barang, foto, dan surat-surat di dalamnya. Aku mengambil satu per satu barang yang ada di dalamnya dan saat itu juga kenangan-kenangan hangat kembali mengalir di benakku."
     
@@ -35,14 +35,14 @@ label scene_19:
     
     nd_narrator_brown "Aku melihat surat-surat yang nampaknya ditulis oleh para penghuni penginapan, aku membaca satu per satu hingga terdapat beberapa nama yang tak terdengar lagi sekarang."
     show yuura at face_flip, speaking
-    nd_yuura_brown "Si ini kemana yah ? Kok gak pernah keliatan lagi."
+    nd_yuura_brown "Si ini kemana yah? Kok gak pernah keliatan lagi."
     show yuura at face_flip, idle
     show haruto at speaking
     voice voice_4_19_690_haruto
     nd_haruto_brown "Bukannya sudah lama pindah yah..."
     show haruto at idle
     show yuura at face_flip, speaking
-    nd_yuura_brown "Iyakah ?"
+    nd_yuura_brown "Iyakah?"
     
     nd_yuura_brown "Eh, buku tamuku dimana yah..."
     show yuura at face_flip, idle
@@ -54,7 +54,7 @@ label scene_19:
     play sound sfx_paper
     nd_narrator_brown "Aku segera mengambil buku tamu dan membalik-balik halaman untuk mencari tahu orang-orang yang pernah menulis surat untukku, ada yang pindah bahkan ada yang tak terdaftar di sini."
     show yuura at face_flip, speaking
-    nd_yuura_brown "Kenapa dia pindah yah ?"
+    nd_yuura_brown "Kenapa dia pindah yah?"
     show yuura at face_flip, idle
     show haruto exhausted at speaking
     voice voice_4_19_695_haruto
@@ -111,7 +111,7 @@ label scene_19:
     pause 0.2
 
     show yuura eff_surprise_y at speaking
-    nd_yuura_brown "Apa sih yang kalian lakukan ?"
+    nd_yuura_brown "Apa sih yang kalian lakukan?"
     show yuura none at idle
     show aergia psycho at speaking
     voice voice_4_19_702_aergia
@@ -123,7 +123,7 @@ label scene_19:
     show axia at idle
     show rian happy at speaking
     voice voice_4_19_704_rian
-    nd_rian_brown "Loh Anee ?"
+    nd_rian_brown "Loh Anee?"
     show rian at idle
     show shark scared at face_flip,  speaking
     voice voice_4_19_705_shark
@@ -148,7 +148,7 @@ label scene_19:
 
     show aergia at speaking
     voice voice_4_19_715_aergia
-    nd_aergia_brown "Lari !!!"
+    nd_aergia_brown "Lari!!!"
     show aergia at idle
 
     hide akasyah
@@ -165,7 +165,7 @@ label scene_19:
 
     nd_yuura_brown "WOI SETAN!! JANGAN KABUR KALIAN!"
 
-    # nd_yuura_brown "Oi ! Apa yang kalian lakukan ? Kenapa ada ledakan tadi ?"
+    # nd_yuura_brown "Oi! Apa yang kalian lakukan? Kenapa ada ledakan tadi?"
     # show yuura at idle
     # nd_narrator_brown "Aku berusaha mendekat, tapi tiba-tiba saja muncul sebuah kembang api di langit. Membuatku terkejut dengan semua ini."
 
@@ -182,7 +182,7 @@ label scene_19:
     # with Dissolve(1.0)
     voice voice_4_19_711_semua_orang
     show layer master at shake
-    nd_narrator_brown "{size=+30}SELAMAT ULANG TAHUN YUURA !!!{/size}{nw}"
+    nd_narrator_brown "{size=+30}SELAMAT ULANG TAHUN YUURA!!!{/size}{nw}"
     # show yuura at speaking
     scene cg_arc_3_scene_19_credit:
         zoom 2.9
@@ -206,7 +206,7 @@ label scene_19:
     # show yuura at idle
     # show aergia netral at right, shake, speaking
     # voice voice_4_19_715_aergia
-    # nd_aergia_brown "Lari !!!"
+    # nd_aergia_brown "Lari!!!"
     # hide aergia
 
     scene cg_arc_3_scene_19_credit:

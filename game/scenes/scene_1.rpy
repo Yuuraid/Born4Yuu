@@ -50,7 +50,7 @@ label scene_1:
     $ renpy.music.set_pause(True, channel="music")
     play sound sfx_expression_shocked
     show yuura scared eff_surprise_y at shake, speaking
-    nd_yuura_brown "(LOH KENAPA AKU DI LANTAI !?)"
+    nd_yuura_brown "(LOH KENAPA AKU DI LANTAI!?)"
     
     show yuura scared none at idle
     
@@ -137,7 +137,7 @@ label scene_1:
     with dissolve
     
     # show yuura netral at center, idle
-    nd_narrator_brown "(Aku benar-benar udah kebangun nih.. Tapi kok bisa yah aku tidur disini !?...)"
+    nd_narrator_brown "(Aku benar-benar udah kebangun nih.. Tapi kok bisa yah aku tidur disini!?...)"
     
     show yuura at ease_custom(center, offscreenright, 2.0)
 
@@ -217,7 +217,7 @@ label scene_1:
     nd_yuura_brown "ANJIR!!"
     
     play music bgm_scene1_jade_bottle fadeout 1.0 fadein 1.0 volume 1.0 loop
-    nd_yuura_brown "NIH ORANG MIRIP BANGET SAMA GUE COK !"
+    nd_yuura_brown "NIH ORANG MIRIP BANGET SAMA GUE COK!"
     
     show yuura netral none at center, idle
     nd_narrator_brown "Aku mengamati beberapa foto lainnya. Benar saja, perempuan yang mirip denganku itu nampaknya merupakan pemilik kamar ini."
@@ -276,7 +276,7 @@ label scene_1:
     nd_narrator_brown "Aku segera memutar otakku, dan menemukan jawaban."
     
     show yuura scared eff_sweat_w at center, speaking
-    nd_yuura_brown "AKU HARUS LARI SEBELUM KETAHUAN !!!"
+    nd_yuura_brown "AKU HARUS LARI SEBELUM KETAHUAN!!!"
     
     play sound sfx_action_whoosh_scene13_16
     hide yuura with easeoutleft
@@ -287,7 +287,7 @@ label scene_1:
     play sound sfx_action_fall_down_scene5_14
     nd_narrator_brown "Tak menyadari bahwa orang yang membukakan pintu terjatuh karena ku, tapi peduli apa aku."
     
-    nd_yuura_brown "Argh dimana sih.. Ah ini dia !"
+    nd_yuura_brown "Argh dimana sih.. Ah ini dia!"
     
     nd_narrator_brown "Segera kutembakkan Grappling Gun ku dan melesat tanpa melihat ke belakang."
         # $ quick_menu = False

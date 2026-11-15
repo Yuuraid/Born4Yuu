@@ -15,7 +15,7 @@ label scene_14:
     show seiya netral at left, speaking, flip_image
     with moveinleft
     voice voice_3_14_205_seiya
-    nd_unknown_brown "Ane gapapa ?"
+    nd_unknown_brown "Ane gapapa?"
     show seiya at idle
     
     show yuura at right
@@ -25,7 +25,7 @@ label scene_14:
     nd_narrator_brown "Menyadari bahwa itu adalah Seiya, orang sudah membantuku sebelumnya, aku segera mendekat meski sedikit ragu."
     
     show yuura happy at speaking
-    nd_yuura_brown "Seiya !"
+    nd_yuura_brown "Seiya!"
     
     nd_yuura_brown "Makasih banget udah nolongin aku dari tendangan itu. Bisa mampus aku kalau bukan karena kamu."
     show yuura at idle
@@ -36,7 +36,7 @@ label scene_14:
     show seiya at idle
         
     show yuura netral at speaking
-    nd_yuura_brown "Kenapa emangnya ?"
+    nd_yuura_brown "Kenapa emangnya?"
     show yuura at idle
 
     play music bgm_scene15_pursuit volume 1.0 loop
@@ -131,7 +131,7 @@ label scene_14:
     with fade
     
     voice voice_3_14_211_akasyah
-    nd_akasyah_brown "KETEMU LU BANGSAT !"
+    nd_akasyah_brown "KETEMU LU BANGSAT!"
     show akasyah at idle
         
     # show seiya angry at flip_image, speaking
@@ -140,56 +140,56 @@ label scene_14:
     
     voice voice_3_14_213_seiya
     show seiya at speaking
-    nd_seiya_brown "Apa yang kau coba lakukan !?"
+    nd_seiya_brown "Apa yang kau coba lakukan!?"
     
     voice voice_3_14_214_seiya
-    nd_seiya_brown "Apa kau ga capek bikin masalah terus buat Yuura ?"
+    nd_seiya_brown "Apa kau ga capek bikin masalah terus buat Yuura?"
     show seiya at idle
             
     show akasyah at speaking
     voice voice_3_14_215_akasyah
-    nd_akasyah_brown "MASALAH ??? LU PIKIR APA YANG LU LAKUIN SEKARANG ?"
+    nd_akasyah_brown "MASALAH??? LU PIKIR APA YANG LU LAKUIN SEKARANG?"
     
     voice voice_3_14_216_akasyah
-    nd_akasyah_brown "MINGGIR ! JANGAN GANGGU RENCANA GUA !"
+    nd_akasyah_brown "MINGGIR! JANGAN GANGGU RENCANA GUA!"
     show akasyah at idle
         
     show seiya at speaking
     voice voice_3_14_217_seiya
-    nd_seiya_brown "Rencana ? Maksudmu dengan mau menghajar Yuura ? APA ITU YANG KAU SEBUT RENCANA !?"
+    nd_seiya_brown "Rencana? Maksudmu dengan mau menghajar Yuura? APA ITU YANG KAU SEBUT RENCANA!?"
     show seiya at idle
             
     show akasyah at speaking
     voice voice_3_14_218_akasyah
-    nd_akasyah_brown "Mata lu buta apa gimana ?"
+    nd_akasyah_brown "Mata lu buta apa gimana?"
     
     voice voice_3_14_219_akasyah
-    nd_akasyah_brown "Apa emang lu gabisa bedain Yuura yang asli sama yang palsu ?"
+    nd_akasyah_brown "Apa emang lu gabisa bedain Yuura yang asli sama yang palsu?"
     show akasyah at idle
         
     show seiya at speaking
     voice voice_3_14_220_seiya
-    nd_seiya_brown "Apa sih maksudmu ? Apa kamu kebanyakan minum sake siang-siang ?"
+    nd_seiya_brown "Apa sih maksudmu? Apa kamu kebanyakan minum sake siang-siang?"
     show seiya at idle
     
     nd_narrator_brown "Akasyah melempar sebuah linting."
             
     show akasyah at speaking
     voice voice_3_14_221_akasyah
-    nd_akasyah_brown "OI YUUR ! Lu tau ga benda apa ini ?"
+    nd_akasyah_brown "OI YUUR! Lu tau ga benda apa ini?"
     show akasyah at idle
     
     nd_narrator_brown "Aku kaget melihat benda yang dia lempar, aku tidak mengerti untuk apa benda itu dan mengapa dia menanyakan padaku."
             
     show akasyah at speaking
     voice voice_3_14_222_akasyah
-    nd_akasyah_brown "Kok diem ? Jawab bangsat !"
+    nd_akasyah_brown "Kok diem? Jawab bangsat!"
     show akasyah at idle
         
     show yuura at speaking
     nd_yuura_brown "Ah...um...ituu..."
     
-    nd_yuura_brown "(ARGH SIAL, aku gatau linting apaan ! Lagian sejak kapan aku punya uang untuk melakukan kebiasaan yang sama seperti orang-orang kaya !)"
+    nd_yuura_brown "(ARGH SIAL, aku gatau linting apaan! Lagian sejak kapan aku punya uang untuk melakukan kebiasaan yang sama seperti orang-orang kaya!)"
     show yuura at idle
         
     show akasyah at speaking
@@ -197,7 +197,7 @@ label scene_14:
     nd_akasyah_brown "Hahaha... Udah gua duga lu pasti gabisa jawab pertanyaan gua."
     
     voice voice_3_14_226_akasyah
-    nd_akasyah_brown "Sekarang minggir dan biar gua hajar si palsu ini !"
+    nd_akasyah_brown "Sekarang minggir dan biar gua hajar si palsu ini!"
     show akasyah at idle
     
     nd_narrator_brown "Aku melihat senyum lebar di wajah Akasyah yang berhasil mengungkap fakta yang selama ini kututupi."
@@ -211,16 +211,16 @@ label scene_14:
             
     show akasyah at speaking
     voice voice_3_14_227_akasyah
-    nd_akasyah_brown "Lu goblok apa gimana ?"
+    nd_akasyah_brown "Lu goblok apa gimana?"
     
     voice voice_3_14_228_akasyah
-    nd_akasyah_brown "Masih mau ngelindungin si peniru sialan ini ? Seiya Seiya..."
+    nd_akasyah_brown "Masih mau ngelindungin si peniru sialan ini? Seiya Seiya..."
     show akasyah at idle
     
     # TODO: im here
     show seiya at speaking
     voice voice_3_14_229_seiya
-    nd_seiya_brown "Mau palsu atau bukan, itu bukan urusanmu !"
+    nd_seiya_brown "Mau palsu atau bukan, itu bukan urusanmu!"
     show seiya at idle
             
     show akasyah at speaking
@@ -230,7 +230,7 @@ label scene_14:
     play music bgm_scene15_catastrophe volume 1.0 loop
 
     voice voice_3_14_231_akasyah
-    nd_akasyah_brown "ITU URUSAN GUA !!!"
+    nd_akasyah_brown "ITU URUSAN GUA!!!"
     show akasyah at idle
     
     # TODO: I want this to be behind seiya
@@ -484,7 +484,7 @@ label scene_14:
     with wipe_kiri(0.2)
             
     voice voice_3_14_232_akasyah
-    nd_akasyah_brown "Segitu doang serangan lu ? GUA JUGA BISA !"
+    nd_akasyah_brown "Segitu doang serangan lu? GUA JUGA BISA!"
     # show akasyah at idle
     
     # Another CG?
@@ -518,7 +518,7 @@ label scene_14:
     with fade
 
     voice voice_3_14_233_akasyah
-    nd_akasyah_brown "Udah puas ? Now, it's my turn..."
+    nd_akasyah_brown "Udah puas? Now, it's my turn..."
     # show akasyah at idle
     
     scene black with wipe_j_bawah(0.2)
@@ -567,7 +567,7 @@ label scene_14:
     
     show seiya at speaking
     voice voice_3_14_234_seiya
-    nd_seiya_black "Urghhh !!!"
+    nd_seiya_black "Urghhh!!!"
     show seiya at idle
     
     play sound sfx_action_cartoonish_punch_scene18
@@ -626,7 +626,7 @@ label scene_14:
     nd_akasyah_brown "Udah nih? Seiya-Seiya"
     
     voice voice_3_14_236_akasyah
-    nd_akasyah_brown "SEKARANG LAH AKHIRNYA ! BYE BYE PAHLAWAN KESIANGAN !"
+    nd_akasyah_brown "SEKARANG LAH AKHIRNYA! BYE BYE PAHLAWAN KESIANGAN!"
     
     hide akasyah with easeoutright
 
@@ -659,11 +659,11 @@ label scene_14:
             
     show akasyah at face_flip, speaking
     voice voice_3_14_238_akasyah
-    nd_akasyah_brown "Kau pikir bisa nahan gw dengan ngikat kaki gw ?"
+    nd_akasyah_brown "Kau pikir bisa nahan gw dengan ngikat kaki gw?"
     
     voice voice_3_14_239_akasyah
     play sound sfx_dityo_missle_launch
-    nd_akasyah_brown "DITYO !!{nw}" # shake
+    nd_akasyah_brown "DITYO!!{nw}" # shake
     # show akasyah at idle
     
     # show dityo netral at right with easeinright
@@ -689,7 +689,7 @@ label scene_14:
 
     # show seiya at speaking
     voice voice_3_14_240_seiya
-    nd_seiya_brown "SIALAN ! ANEEEE !!!!{nw}"
+    nd_seiya_brown "SIALAN! ANEEEE!!!!{nw}"
     # show seiya at idle
     
     scene black with eye_close
@@ -723,9 +723,9 @@ label scene_14:
     
     # This two suppose to speak the same time
     
-    nd_yuura_brown "Shark !"
+    nd_yuura_brown "Shark!"
     # voice voice_3_14_242_seiya
-    # nd_seiya_brown "Shark !"
+    # nd_seiya_brown "Shark!"
 
     show inn lorong malam
     show seiya netral at face_flip, left, idle
@@ -748,7 +748,7 @@ label scene_14:
         
     show seiya at face_flip, speaking
     voice voice_3_14_244_seiya
-    nd_seiya_brown "Aneki, pergilah !"
+    nd_seiya_brown "Aneki, pergilah!"
     show seiya at face_flip, idle
         
     show yuura at speaking
@@ -766,7 +766,7 @@ label scene_14:
         
     # show akasyah at speaking
     voice voice_3_14_247_akasyah
-    nd_akasyah_brown "WOI MAU KE MANA LU NENEK !!!"
+    nd_akasyah_brown "WOI MAU KE MANA LU NENEK!!!"
     # show akasyah at idle
     
     scene black with fade

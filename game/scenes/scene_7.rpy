@@ -16,7 +16,7 @@ label scene_7:
     # To use ease_custom if you need to flip the image, you put flip after the ease_custom function
     show yuura at face_flip, ease_custom(center, offscreenleft, 0.5), idle
     pause 0.5
-    show dityo netral at ease_custom(offscreenright, offscreenleft, 1.0), silhouette
+    show dityo netral mahakarya at ease_custom(offscreenright, offscreenleft, 1.0), silhouette
 
     voice voice_2_7_74_dityo
     nd_unknown_brown "ANEE! TUNGGU! INI AKU BAWA SESUATU YANG BAKAL BIKIN KAMU SENANG!"
@@ -31,7 +31,7 @@ label scene_7:
     nd_narrator_brown "Sepertinya dia membawa sesuatu yang meningkatkan kecepatannya dalam bergerak."
     
     show yuura at ease_custom(center, left, 0.8), idle
-    show dityo netral at ease_custom(offscreenright, right, 0.8), speaking, silhouette
+    show dityo netral mahakarya at ease_custom(offscreenright, right, 0.8), speaking, silhouette
     
     voice voice_2_7_75_dityo
     nd_unknown_brown "Ane!!! Stop!!!"
@@ -48,15 +48,21 @@ label scene_7:
     show yuura at speaking
     show dityo at idle, silhouette
     
-    nd_yuura_brown "Ga mau ! Kalian aneh ! Kenapa sih kalian terus mengejar aku dari pagi !"
+    nd_yuura_brown "Ga mau! Kalian aneh! Kenapa sih kalian terus mengejar aku dari pagi!"
     
     show yuura at ease_custom(left, offscreenleft, 0.5)
     
-    nd_narrator_brown "Aku berlari semakin kencang, melupakan bahwa aku memiliki alat-alat canggih untuk lari di situasi ini."
+    scene black with fade
+
+    nd_narrator_black "Aku berlari semakin kencang, melupakan bahwa aku memiliki alat-alat canggih untuk lari di situasi ini."
     
-    nd_narrator_brown "Ketika aku sudah mulai kehabisan tenaga, tanganku tetiba ditarik ke dalam sebuah ruangan."
+    nd_narrator_black "Ketika aku sudah mulai kehabisan tenaga"
     
-    nd_narrator_brown "Membuatku terkejut bukan main dengan apa yang baru saja terjadi."
+    play sound sfx_action_fall_down_scene5_14
+    show layer master at shake
+    nd_narrator_black "Tanganku tetiba ditarik ke dalam sebuah ruangan."
+    
+    nd_narrator_black "Membuatku terkejut bukan main dengan apa yang baru saja terjadi."
 
     stop music fadeout 1.0
 

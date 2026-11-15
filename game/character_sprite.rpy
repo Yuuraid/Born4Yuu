@@ -69,6 +69,8 @@ layeredimage dityo:
         attribute happy "assets/sprite/Dityo/dityo_main_laugh.png"
         attribute angry "assets/sprite/Dityo/dityo_main_angry.png"
         attribute sad "assets/sprite/Dityo/dityo_main_gloom.png"
+    group props:
+        attribute mahakarya "assets/sprite/Dityo/dityo_main_props.png"
 
 layeredimage haruto:
 

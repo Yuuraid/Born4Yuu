@@ -144,12 +144,14 @@ label scene_3:
 
     nd_narrator_brown "Setelah cukup puas bercerita, aku menyadari sesuatu yang janggal."
     
+    play sound sfx_glass_bottle
     # show screen show_item("assets/props/jade_bottle.png", "Botol misterius") with Dissolve(0.2)
     show dark_overlay
     show jade_bottle at pos(y=0.3, r=45), speaking with dissolve
 
     nd_narrator_brown "Aku mengeluarkan sebuah botol yang sama dengan di kamar sebelumnya, membuatku bertanya-tanya bagaimana bisa dia terbawa bersamaku."
 
+    play sound sfx_bottle_click
     show jade_bottle at pos(y=0.5, z=2.0, r=45) with dissolve
     
     nd_narrator_brown "Aku melihat sebuah ukiran bertuliskan dengan huruf jepang, Yozakura Yuura."
@@ -158,10 +160,11 @@ label scene_3:
     hide jade_bottle
     with dissolve
 
+    play sound sfx_expression_shocked
     show yuura netral eff_surprise_y at right, speaking
     nd_narrator_brown "Aku terkejut bukan main."
 
-    nd_yuura_brown "(Kenapa namaku ada di sini ? Bahkan cara menulisnya sama persis seperti diriku)"
+    nd_yuura_brown "(Kenapa namaku ada di sini? Bahkan cara menulisnya sama persis seperti diriku)"
 
     show yuura none at idle
     nd_narrator_brown "Aku semakin bingung dengan apa yang terjadi. Baru beberapa saat yang lalu aku dikejar oleh ratusan orang dan sekarang aku malah membawa benda berharga atas nama diriku sendiri."
@@ -218,9 +221,11 @@ label scene_3:
     show pria at idle
     show yuura at speaking
     nd_yuura_brown "Apa maksud...mu???"
+
+    play sound sfx_zoom
     hide pria with dissolve
     show yuura scared eff_exclamation at speaking
-    nd_yuura_brown "Ke mana orang itu pergi ?"
+    nd_yuura_brown "Ke mana orang itu pergi?"
     # stop music 
     show yuura at idle
     nd_narrator_brown "Aku terdiam sejenak, bertanya-tanya kemana pria itu pergi. Tapi aku langsung mengalihkan perhatianku saat ini, aku sudah tidak peduli lagi dan langsung pergi mencari jalan keluar dari sini."

@@ -73,7 +73,7 @@ label scene_11:
     
     show axia sassy at speaking
     voice voice_2_11_166_axiaregis
-    nd_axiaregis_brown "Kira-kira kenapa ya ? Apa jangan-jangan aku suka kamu kyahh."
+    nd_axiaregis_brown "Kira-kira kenapa ya? Apa jangan-jangan aku suka kamu kyahh."
     show axia at idle
     
     play sound sfx_api_aergia
@@ -88,7 +88,7 @@ label scene_11:
     
     show aergia at silhouette, speaking
     voice voice_2_11_167_aergia
-    nd_unknown_brown "Bangsat ! Jijik banget anjing." 
+    nd_unknown_brown "Bangsat! Jijik banget anjing." 
     
     voice voice_2_11_168_aergia
     nd_unknown_brown "Kenapa sih lu tiap dateng selalu aja bikin gua kesel, hah?"
@@ -156,13 +156,13 @@ label scene_11:
     #     ease 15.0 xalign 0.0
     # with dissolve
     
-    # nd_nicholas_brown "Oi Lark ! Cepet jalan."
+    # nd_nicholas_brown "Oi Lark! Cepet jalan."
     
-    # nd_lark_brown "Sabar, China !"
+    # nd_lark_brown "Sabar, China!"
     
-    # nd_nicholas_brown "Kau juga China, anjeng !"
+    # nd_nicholas_brown "Kau juga China, anjeng!"
     
-    # nd_lark_brown "Mana ada aku orang China, anjeng !"
+    # nd_lark_brown "Mana ada aku orang China, anjeng!"
     
     # nd_yc_brown "Udah-udah, kalian berdua sesama china ngapain berantem..."
 

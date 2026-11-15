@@ -31,8 +31,9 @@ label scene_8:
     voice voice_2_8_81_shark
     wd_unknown_brown "O-oh begitu, i-ini anee waktu pertama kali gabung, kamu ngasih aku buku yang isinya nama-nama anak penginapan disini"
 
-        # play sound memberi barang ??
+        # play sound memberi barang??
     
+    play sound sfx_paper
     show dark_overlay
     show guest_book at pos(y=0.3, r=45), speaking with dissolve
 
@@ -41,6 +42,7 @@ label scene_8:
 
     pause
 
+    play sound sfx_paper
     hide guest_book 
     hide dark_overlay
     with dissolve
@@ -49,7 +51,7 @@ label scene_8:
     show shark at face_flip, idle
     nd_yuura_brown "Oh, oke sekarang aku ingat. Shark!"
 
-    nd_yuura_brown "Tapi kok bukunya kayak ga lengkap ?"
+    nd_yuura_brown "Tapi kok bukunya kayak ga lengkap?"
     
     show yuura at idle
     show shark at face_flip, speaking
@@ -67,7 +69,7 @@ label scene_8:
     
     show yuura at speaking
     show shark at face_flip, idle
-    nd_yuura_brown "Ya udah makasih ya udah bantuin  aku, aku udah ga denger suara apa pun dari luar. Jadi, sampai jumpa, Shark !"
+    nd_yuura_brown "Ya udah makasih ya udah bantuin  aku, aku udah ga denger suara apa pun dari luar. Jadi, sampai jumpa, Shark!"
     
     show yuura at ease_custom(right, offscreenleft, 1.5), speaking
     show shark at face_flip, idle

@@ -41,7 +41,7 @@ label scene_9:
     nd_narrator_brown "Dia terlihat sangat kesal karena minumannya tumpah di baju kesayangannya."
     
     show yuura angry at speaking
-    nd_yuura_brown "Aduuhh apaan sih ! Ngapain coba berdiri di tengah jalan, dikira ini jalan punya nenek moyangnya apa gimana !?"
+    nd_yuura_brown "Aduuhh apaan sih! Ngapain coba berdiri di tengah jalan, dikira ini jalan punya nenek moyangnya apa gimana!?"
     
     show akasyah at speaking
     show yuura at idle
@@ -50,7 +50,7 @@ label scene_9:
     
     show akasyah at idle
     show yuura at speaking
-    nd_yuura_brown "Kurang ajar kamu ya ! Kupukul-pukulin juga kamu !"
+    nd_yuura_brown "Kurang ajar kamu ya! Kupukul-pukulin juga kamu!"
     
     show yuura at center with ease
     pause 0.3
@@ -64,7 +64,7 @@ label scene_9:
     
     show akasyah at idle
     show yuura at speaking
-    nd_yuura_brown "Kok jadi salahku !? Kamu yang berdiri di tengah jalan, kok aku yang salah !?"
+    nd_yuura_brown "Kok jadi salahku!? Kamu yang berdiri di tengah jalan, kok aku yang salah!?"
     
     show akasyah at speaking
     show yuura at idle
@@ -83,7 +83,7 @@ label scene_9:
     
     show akasyah at speaking
     voice voice_2_9_94_akasyah
-    wd_unknown_brown "HM?! SEIYAAAAAAAAA !!!"
+    wd_unknown_brown "HM?! SEIYAAAAAAAAA!!!"
     
     show akasyah at idle
     nd_narrator_brown "Tiba-tiba muncul orang dari belakang orang itu dan langsung menahan pergerakannya."

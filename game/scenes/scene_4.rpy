@@ -28,12 +28,14 @@ label scene_4:
     with fade
     show haruto happy at left with easeinleft
     pause 0.5
+    play sound sfx_expression_surprised
     show yuura eff_surprise_y netral at right, face_default, speaking
     nd_narrator_brown "Tanpa ku sadari seseorang datang menghampiriku dari belakang, membuatku berteriak kencang"
     
     show yuura none netral
-    nd_yuura_brown "AHH !!"
+    nd_yuura_brown "AHH!!"
     
+    play sound sfx_expression_surprised
     show haruto eff_exclamation at speaking
     show yuura at idle
     voice voice_1_4_39_haruto
@@ -61,7 +63,7 @@ label scene_4:
     
     show haruto at idle
     show yuura at speaking
-    nd_yuura_brown "I-itu tidak penting sekarang, b-bisakah kamu menemani ku menuju jalan keluar dari hutan ini ?"
+    nd_yuura_brown "I-itu tidak penting sekarang, b-bisakah kamu menemani ku menuju jalan keluar dari hutan ini?"
     
     show haruto at speaking
     show yuura at idle
@@ -83,7 +85,7 @@ label scene_4:
     
     show haruto at idle
     show yuura at speaking
-    nd_yuura_brown "Penginapan? Bangunan besar yang bergaya jepang itu ? K-kenapa kita harus kesana ?"
+    nd_yuura_brown "Penginapan? Bangunan besar yang bergaya jepang itu? K-kenapa kita harus kesana?"
     
     show haruto at speaking
     show yuura at idle
@@ -108,7 +110,7 @@ label scene_4:
     
     show haruto at idle
     show yuura at speaking
-    nd_yuura_brown "Haruto, mengapa kamu mau membantuku ?"
+    nd_yuura_brown "Haruto, mengapa kamu mau membantuku?"
     
     nd_narrator_brown "Aku menatapnya dengan keheranan, karena sepanjang tadi pagi aku terus saja mengalami kesialan membuatku curiga padanya."
     
