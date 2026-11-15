@@ -89,8 +89,8 @@ label scene_10:
             voice voice_2_10_112_dityo
             nd_unknown_brown "KAMU DENGAN MUDAHNYA NGANCURIN MAHAKARYAKU??"
             
-            voice voice_2_10_113_dityo
-            nd_unknown_brown "Kalo bukan kamu yang minta juga aku ga mungkin bikin alat ini!"
+            # voice voice_2_10_113_dityo
+            # nd_unknown_brown "Kalo bukan kamu yang minta juga aku ga mungkin bikin alat ini!"
             
             # show dityo at idle, silhouette
             # nd_narrator_brown "Orang itu pergi tanpa berkata-kata. Dia meninggalkan semua barangnya dan tidak pernah kembali lagi ke penginapan."

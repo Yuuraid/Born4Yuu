@@ -30,4 +30,5 @@ image card_back = "assets/props/Cards/Card_Back.png"
 
 image img_bagaimana_mungkin = "assets/props/bagaimana_mungkin.png"
 image mahakarya_fixed = "assets/props/mahakarya.png"
-image foto_seratus_hal = "assets/props/100_hal_baik.png"
+image foto_seratus_hal = "assets/props/foto_terakhir.png"
+image pipe = "assets/props/pipe_trans.png"

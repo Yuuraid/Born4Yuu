@@ -424,8 +424,9 @@ label scene_17:
                 ease 0.5 yalign 0.5
 
 
-            nd_narrator_brown "Pria itu memperlihatkan sebuah foto, dimana aku menyoraki seseorang yang memuji diriku"
+            nd_narrator_brown "Pria itu memperlihatkan sebuah foto, di mana begitu banyak orang menyoraki diriku."
             
+            play sound sfx_paper
             hide foto_seratus_hal 
             hide dark_overlay
             with dissolve

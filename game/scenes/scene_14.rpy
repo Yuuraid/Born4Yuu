@@ -174,7 +174,14 @@ label scene_14:
     nd_seiya_brown "Apa sih maksudmu? Apa kamu kebanyakan minum sake siang-siang?"
     show seiya at idle
     
-    nd_narrator_brown "Akasyah melempar sebuah linting."
+    show dark_overlay
+    play sound sfx_pipe_fall
+    show pipe at pos(y=0.7, r=2):
+        xalign 0.5
+        yalign 5.0
+        ease 0.5 yalign 0.5
+
+    nd_narrator_brown "Akasyah melempar sesuatu yang menyerupai sebuah... tongkat?"
             
     show akasyah at speaking
     voice voice_3_14_221_akasyah
@@ -182,7 +189,17 @@ label scene_14:
     show akasyah at idle
     
     nd_narrator_brown "Aku kaget melihat benda yang dia lempar, aku tidak mengerti untuk apa benda itu dan mengapa dia menanyakan padaku."
-            
+    
+    play sound sfx_pipe_fall
+    show pipe:
+        xalign 0.5
+        yalign 0.5
+        ease 0.5 yalign 5.0
+    pause 0.5
+    hide pipe
+    hide dark_overlay
+    with dissolve
+
     show akasyah at speaking
     voice voice_3_14_222_akasyah
     nd_akasyah_brown "Kok diem? Jawab bangsat!"
@@ -191,7 +208,7 @@ label scene_14:
     show yuura at speaking
     nd_yuura_brown "Ah...um...ituu..."
     
-    nd_yuura_brown "(ARGH SIAL, aku gatau linting apaan! Lagian sejak kapan aku punya uang untuk melakukan kebiasaan yang sama seperti orang-orang kaya!)"
+    nd_yuura_brown "(ARGH SIAL, aku gatau itu benda apaan! Lagian sejak kapan aku punya uang untuk melakukan kebiasaan yang sama seperti orang-orang kaya!)"
     show yuura at idle
         
     show akasyah at speaking
@@ -478,12 +495,12 @@ label scene_14:
     nd_narrator_brown "Meski terpental, Seiya berhasil menempatkan bayangannya didekat Akasyah"
     
     play sound sfx_punch_impact_03
-    play sound sfx_tom_scream_ow
+    # play sound sfx_tom_scream_ow
     show layer master at shake
 
     # play sound lantai kayu patah
     # nd_narrator_brown "Seiya berhasil memberikan serangan telak, tapi nampaknya itu tak terlalu berefek karena ketika kepulan debu memudar, terlihat Akasyah yang masih berdiri meski dengan darah yang mengalir dari mulutnya."
-    nd_narrator_brown "Bayangan tersebut merodok Akasyah dengan hebatnya"
+    nd_narrator_brown "Dengan bayangan itu Akasyah ditarik jatuh oleh Seiya"
     
 
     scene inn lorong malam:
