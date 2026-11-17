@@ -15,6 +15,49 @@ layeredimage aergia:
         attribute full_psycho "assets/sprite/Aergia/aergia_full_psycho.png"
         attribute full_furious "assets/sprite/Aergia/aergia_full_furious.png"
 
+    group effect:
+        attribute none default Null() # Default state (nothing rendered)
+        attribute eff_angry:
+            Transform(
+                Movie(play="assets/effects/angry.webm", mask="assets/effects/angry.webm"),
+                zoom=0.25, xpos=0.16, ypos=0.18
+            )
+        attribute eff_laugh:
+            Transform(
+                Movie(play="assets/effects/funny01-y.webm", mask="assets/effects/funny01-y.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.14, ypos=0.06
+            )
+        attribute eff_surprise_y:
+            Transform(
+                Movie(play="assets/effects/surprise01-y.webm", mask="assets/effects/surprise01-y.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.16, ypos=0.1
+            )
+        attribute eff_sweat_w:
+            Transform(
+                Movie(play="assets/effects/sweat02-w.webm", mask="assets/effects/sweat02-w.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.1, ypos=0.2 # Flip
+            )
+        attribute eff_exclamation:
+            Transform(
+                Movie(play="assets/effects/exclamation-mark01-r.webm", mask="assets/effects/exclamation-mark01-r.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.12, ypos=0.2, rotate=-20
+            )
+        attribute eff_question_mark:
+            Transform(
+                Movie(play="assets/effects/question-mark02-r.webm", mask="assets/effects/question-mark02-r.webm", loop=False),
+                zoom=0.25, xpos=0.12, ypos=0.2, rotate=-20
+            )
+        attribute eff_sleepy:
+            Transform(
+                Movie(play="assets/effects/sleep02-w.webm", mask="assets/effects/sleep02-w.webm"),
+                zoom=0.25, xpos=0.2, ypos=0.05
+            )
+        attribute eff_snot:
+            Transform(
+                Movie(play="assets/effects/snot-bubble01.webm", mask="assets/effects/snot-bubble01.webm"),
+                zoom=0.4, xpos=0.17, ypos=0.23
+            )
+
 layeredimage akasyah:
 
     group expression:
@@ -22,13 +65,55 @@ layeredimage akasyah:
         attribute hurt "assets/sprite/Akasyah/akasyah_main_hurt.png"
         attribute smug "assets/sprite/Akasyah/akasyah_main_smug.png"
         attribute angry "assets/sprite/Akasyah/akasyah_main_angry.png"
-        attribute hurt "assets/sprite/Akasyah/akasyah_main_hurt.png"
 
         attribute full_netral "assets/sprite/Akasyah/akasyah_full_happy.png"
         attribute full_hurt "assets/sprite/Akasyah/akasyah_full_hurt.png"
         attribute full_smug "assets/sprite/Akasyah/akasyah_full_smug.png"
         attribute full_angry "assets/sprite/Akasyah/akasyah_full_angry.png"
         attribute full_hurt "assets/sprite/Akasyah/akasyah_full_hurt.png"
+
+    group effect:
+        attribute none default Null() # Default state (nothing rendered)
+        attribute eff_angry:
+            Transform(
+                Movie(play="assets/effects/angry.webm", mask="assets/effects/angry.webm"),
+                zoom=0.25, xpos=0.18, ypos=0.2
+            )
+        attribute eff_laugh:
+            Transform(
+                Movie(play="assets/effects/funny01-y.webm", mask="assets/effects/funny01-y.webm"),
+                xzoom=1.0, zoom=0.4, xpos=0.3, ypos=0.1
+            )
+        attribute eff_surprise_y:
+            Transform(
+                Movie(play="assets/effects/surprise01-y.webm", mask="assets/effects/surprise01-y.webm", loop=False),
+                xzoom=1.0, zoom=0.25, xpos=0.32, ypos=0.15
+            )
+        attribute eff_sweat_w:
+            Transform(
+                Movie(play="assets/effects/sweat02-w.webm", mask="assets/effects/sweat02-w.webm"),
+                xzoom=1.0, zoom=0.4, xpos=0.32, ypos=0.2 # Flip
+            )
+        attribute eff_exclamation:
+            Transform(
+                Movie(play="assets/effects/exclamation-mark01-r.webm", mask="assets/effects/exclamation-mark01-r.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.32, ypos=0.2, rotate=20
+            )
+        attribute eff_question_mark:
+            Transform(
+                Movie(play="assets/effects/question-mark02-r.webm", mask="assets/effects/question-mark02-r.webm", loop=False),
+                zoom=0.25, xpos=0.32, ypos=0.2, rotate=20
+            )
+        attribute eff_sleepy:
+            Transform(
+                Movie(play="assets/effects/sleep02-w.webm", mask="assets/effects/sleep02-w.webm"),
+                zoom=0.25, xpos=0.25, ypos=0.1
+            )
+        attribute eff_snot:
+            Transform(
+                Movie(play="assets/effects/snot-bubble01.webm", mask="assets/effects/snot-bubble01.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.26, ypos=0.27
+            )
 
 image axia_n_sequence = "assets/sprite/Axia/axia_main_cute.png"
 image axia_b_sequence = "assets/sprite/Axia/axia_main_loli.png"
@@ -43,6 +128,50 @@ layeredimage axia:
         attribute love "assets/sprite/Axia/axia_main_love.png"
         attribute hurt "assets/sprite/Axia/axia_main_hurt.png"
         attribute loli "assets/sprite/Axia/axia_main_loli.png"
+    
+    group effect:
+        attribute none default Null() # Default state (nothing rendered)
+        attribute eff_angry:
+            Transform(
+                Movie(play="assets/effects/angry.webm", mask="assets/effects/angry.webm"),
+                zoom=0.25, xpos=0.15, ypos=0.2
+            )
+        attribute eff_laugh:
+            Transform(
+                Movie(play="assets/effects/funny01-y.webm", mask="assets/effects/funny01-y.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.1, ypos=0.1
+            )
+        attribute eff_surprise_y:
+            Transform(
+                Movie(play="assets/effects/surprise01-y.webm", mask="assets/effects/surprise01-y.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.15, ypos=0.2
+            )
+        attribute eff_sweat_w:
+            Transform(
+                Movie(play="assets/effects/sweat02-w.webm", mask="assets/effects/sweat02-w.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.1, ypos=0.2 # Flip
+            )
+        attribute eff_exclamation:
+            Transform(
+                Movie(play="assets/effects/exclamation-mark01-r.webm", mask="assets/effects/exclamation-mark01-r.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.10, ypos=0.2, rotate=-20
+            )
+        attribute eff_question_mark:
+            Transform(
+                Movie(play="assets/effects/question-mark02-r.webm", mask="assets/effects/question-mark02-r.webm", loop=False),
+                zoom=0.25, xpos=0.10, ypos=0.2, rotate=-20
+            )
+        attribute eff_sleepy:
+            Transform(
+                Movie(play="assets/effects/sleep02-w.webm", mask="assets/effects/sleep02-w.webm"),
+                zoom=0.25, xpos=0.2, ypos=0.1
+            )
+        attribute eff_snot:
+            Transform(
+                Movie(play="assets/effects/snot-bubble01.webm", mask="assets/effects/snot-bubble01.webm"),
+                zoom=0.4, xpos=0.185, ypos=0.28
+            )
+
 
 layeredimage dawam:
 
@@ -59,7 +188,49 @@ layeredimage dawam:
         attribute full_happy "assets/sprite/Dawam/dawam_full_laugh.png"
         attribute full_angry "assets/sprite/Dawam/dawam_full_angry.png"
         attribute full_hurt "assets/sprite/Dawam/dawam_full_hurt.png"
-        
+
+    group effect:
+        attribute none default Null() # Default state (nothing rendered)
+        attribute eff_angry:
+            Transform(
+                Movie(play="assets/effects/angry.webm", mask="assets/effects/angry.webm"),
+                zoom=0.25, xpos=0.19, ypos=0.05
+            )
+        attribute eff_laugh:
+            Transform(
+                Movie(play="assets/effects/funny01-y.webm", mask="assets/effects/funny01-y.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.17, ypos=0.0
+            )
+        attribute eff_surprise_y:
+            Transform(
+                Movie(play="assets/effects/surprise01-y.webm", mask="assets/effects/surprise01-y.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.18, ypos=0.0
+            )
+        attribute eff_sweat_w:
+            Transform(
+                Movie(play="assets/effects/sweat02-w.webm", mask="assets/effects/sweat02-w.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.12, ypos=0.05 # Flip
+            )
+        attribute eff_exclamation:
+            Transform(
+                Movie(play="assets/effects/exclamation-mark01-r.webm", mask="assets/effects/exclamation-mark01-r.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.14, ypos=0.05, rotate=-20
+            )
+        attribute eff_question_mark:
+            Transform(
+                Movie(play="assets/effects/question-mark02-r.webm", mask="assets/effects/question-mark02-r.webm", loop=False),
+                zoom=0.25, xpos=0.14, ypos=0.05, rotate=-20
+            )
+        attribute eff_sleepy:
+            Transform(
+                Movie(play="assets/effects/sleep02-w.webm", mask="assets/effects/sleep02-w.webm"),
+                zoom=0.25, xpos=0.25, ypos=0.0
+            )
+        attribute eff_snot:
+            Transform(
+                Movie(play="assets/effects/snot-bubble01.webm", mask="assets/effects/snot-bubble01.webm"),
+                zoom=0.4, xpos=0.195, ypos=0.12
+            )  
 
 layeredimage dityo:
 
@@ -69,8 +240,52 @@ layeredimage dityo:
         attribute happy "assets/sprite/Dityo/dityo_main_laugh.png"
         attribute angry "assets/sprite/Dityo/dityo_main_angry.png"
         attribute sad "assets/sprite/Dityo/dityo_main_gloom.png"
+    
     group props:
         attribute mahakarya "assets/sprite/Dityo/dityo_main_props.png"
+
+    group effect:
+        attribute none default Null() # Default state (nothing rendered)
+        attribute eff_angry:
+            Transform(
+                Movie(play="assets/effects/angry.webm", mask="assets/effects/angry.webm"),
+                zoom=0.25, xpos=0.15, ypos=0.05
+            )
+        attribute eff_laugh:
+            Transform(
+                Movie(play="assets/effects/funny01-y.webm", mask="assets/effects/funny01-y.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.13, ypos=0.0
+            )
+        attribute eff_surprise_y:
+            Transform(
+                Movie(play="assets/effects/surprise01-y.webm", mask="assets/effects/surprise01-y.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.15, ypos=0.05
+            )
+        attribute eff_sweat_w:
+            Transform(
+                Movie(play="assets/effects/sweat02-w.webm", mask="assets/effects/sweat02-w.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.12, ypos=0.05 # Flip
+            )
+        attribute eff_exclamation:
+            Transform(
+                Movie(play="assets/effects/exclamation-mark01-r.webm", mask="assets/effects/exclamation-mark01-r.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.14, ypos=0.05, rotate=-20
+            )
+        attribute eff_question_mark:
+            Transform(
+                Movie(play="assets/effects/question-mark02-r.webm", mask="assets/effects/question-mark02-r.webm", loop=False),
+                zoom=0.25, xpos=0.14, ypos=0.05, rotate=-20
+            )
+        attribute eff_sleepy:
+            Transform(
+                Movie(play="assets/effects/sleep02-w.webm", mask="assets/effects/sleep02-w.webm"),
+                zoom=0.25, xpos=0.25, ypos=0.0
+            )
+        attribute eff_snot:
+            Transform(
+                Movie(play="assets/effects/snot-bubble01.webm", mask="assets/effects/snot-bubble01.webm"),
+                zoom=0.4, xpos=0.15, ypos=0.13
+            )
 
 layeredimage haruto:
 
@@ -83,10 +298,45 @@ layeredimage haruto:
 
     group effect:
         attribute none default Null() # Default state (nothing rendered)
+        attribute eff_angry:
+            Transform(
+                Movie(play="assets/effects/angry.webm", mask="assets/effects/angry.webm"),
+                zoom=0.25, xpos=0.17, ypos=0.05
+            )
+        attribute eff_laugh:
+            Transform(
+                Movie(play="assets/effects/funny01-y.webm", mask="assets/effects/funny01-y.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.15, ypos=0.0
+            )
+        attribute eff_surprise_y:
+            Transform(
+                Movie(play="assets/effects/surprise01-y.webm", mask="assets/effects/surprise01-y.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.18, ypos=0.05
+            )
+        attribute eff_sweat_w:
+            Transform(
+                Movie(play="assets/effects/sweat02-w.webm", mask="assets/effects/sweat02-w.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.15, ypos=0.05 # Flip
+            )
         attribute eff_exclamation:
             Transform(
                 Movie(play="assets/effects/exclamation-mark01-r.webm", mask="assets/effects/exclamation-mark01-r.webm", loop=False),
                 xzoom=-1.0, zoom=0.25, xpos=0.14, ypos=0.1, rotate=-20
+            )
+        attribute eff_question_mark:
+            Transform(
+                Movie(play="assets/effects/question-mark02-r.webm", mask="assets/effects/question-mark02-r.webm", loop=False),
+                zoom=0.25, xpos=0.14, ypos=0.1, rotate=-20
+            )
+        attribute eff_sleepy:
+            Transform(
+                Movie(play="assets/effects/sleep02-w.webm", mask="assets/effects/sleep02-w.webm"),
+                zoom=0.25, xpos=0.25, ypos=0.0
+            )
+        attribute eff_snot:
+            Transform(
+                Movie(play="assets/effects/snot-bubble01.webm", mask="assets/effects/snot-bubble01.webm"),
+                zoom=0.4, xpos=0.194, ypos=0.185
             )
 
 layeredimage ibe:
@@ -94,10 +344,96 @@ layeredimage ibe:
     group expression:
         attribute netral "assets/sprite/Ibe/ibe_main_netral.png"
 
+    group effect:
+        attribute none default Null() # Default state (nothing rendered)
+        attribute eff_angry:
+            Transform(
+                Movie(play="assets/effects/angry.webm", mask="assets/effects/angry.webm"),
+                zoom=0.25, xpos=0.15, ypos=0.3
+            )
+        attribute eff_laugh:
+            Transform(
+                Movie(play="assets/effects/funny01-y.webm", mask="assets/effects/funny01-y.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.1, ypos=0.2
+            )
+        attribute eff_surprise_y:
+            Transform(
+                Movie(play="assets/effects/surprise01-y.webm", mask="assets/effects/surprise01-y.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.15, ypos=0.3
+            )
+        attribute eff_sweat_w:
+            Transform(
+                Movie(play="assets/effects/sweat02-w.webm", mask="assets/effects/sweat02-w.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.07, ypos=0.3 # Flip
+            )
+        attribute eff_exclamation:
+            Transform(
+                Movie(play="assets/effects/exclamation-mark01-r.webm", mask="assets/effects/exclamation-mark01-r.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.10, ypos=0.3, rotate=-20
+            )
+        attribute eff_question_mark:
+            Transform(
+                Movie(play="assets/effects/question-mark02-r.webm", mask="assets/effects/question-mark02-r.webm", loop=False),
+                zoom=0.25, xpos=0.10, ypos=0.3, rotate=-20
+            )
+        attribute eff_sleepy:
+            Transform(
+                Movie(play="assets/effects/sleep02-w.webm", mask="assets/effects/sleep02-w.webm"),
+                zoom=0.25, xpos=0.2, ypos=0.15
+            )
+        attribute eff_snot:
+            Transform(
+                Movie(play="assets/effects/snot-bubble01.webm", mask="assets/effects/snot-bubble01.webm"),
+                zoom=0.4, xpos=0.19, ypos=0.4
+            )
+
 layeredimage josua:
 
     group expression:
         attribute netral "assets/sprite/Josua/josua_main_netral.png"
+
+    group effect:
+        attribute none default Null() # Default state (nothing rendered)
+        attribute eff_angry:
+            Transform(
+                Movie(play="assets/effects/angry.webm", mask="assets/effects/angry.webm"),
+                zoom=0.25, xpos=0.15, ypos=0.3
+            )
+        attribute eff_laugh:
+            Transform(
+                Movie(play="assets/effects/funny01-y.webm", mask="assets/effects/funny01-y.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.1, ypos=0.2
+            )
+        attribute eff_surprise_y:
+            Transform(
+                Movie(play="assets/effects/surprise01-y.webm", mask="assets/effects/surprise01-y.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.15, ypos=0.3
+            )
+        attribute eff_sweat_w:
+            Transform(
+                Movie(play="assets/effects/sweat02-w.webm", mask="assets/effects/sweat02-w.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.07, ypos=0.3 # Flip
+            )
+        attribute eff_exclamation:
+            Transform(
+                Movie(play="assets/effects/exclamation-mark01-r.webm", mask="assets/effects/exclamation-mark01-r.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.10, ypos=0.3, rotate=-20
+            )
+        attribute eff_question_mark:
+            Transform(
+                Movie(play="assets/effects/question-mark02-r.webm", mask="assets/effects/question-mark02-r.webm", loop=False),
+                zoom=0.25, xpos=0.10, ypos=0.3, rotate=-20
+            )
+        attribute eff_sleepy:
+            Transform(
+                Movie(play="assets/effects/sleep02-w.webm", mask="assets/effects/sleep02-w.webm"),
+                zoom=0.25, xpos=0.2, ypos=0.15
+            )
+        attribute eff_snot:
+            Transform(
+                Movie(play="assets/effects/snot-bubble01.webm", mask="assets/effects/snot-bubble01.webm"),
+                zoom=0.4, xpos=0.19, ypos=0.4
+            )
 
 layeredimage pria:
 
@@ -106,6 +442,49 @@ layeredimage pria:
         attribute sad "assets/sprite/Pria_M/pria_main_sad.png"
         attribute happy "assets/sprite/Pria_M/pria_main_happy.png"
 
+    group effect:
+        attribute none default Null() # Default state (nothing rendered)
+        attribute eff_angry:
+            Transform(
+                Movie(play="assets/effects/angry.webm", mask="assets/effects/angry.webm"),
+                zoom=0.25, xpos=0.15, ypos=0.1
+            )
+        attribute eff_laugh:
+            Transform(
+                Movie(play="assets/effects/funny01-y.webm", mask="assets/effects/funny01-y.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.1, ypos=0.0
+            )
+        attribute eff_surprise_y:
+            Transform(
+                Movie(play="assets/effects/surprise01-y.webm", mask="assets/effects/surprise01-y.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.15, ypos=0.1
+            )
+        attribute eff_sweat_w:
+            Transform(
+                Movie(play="assets/effects/sweat02-w.webm", mask="assets/effects/sweat02-w.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.1, ypos=0.1 # Flip
+            )
+        attribute eff_exclamation:
+            Transform(
+                Movie(play="assets/effects/exclamation-mark01-r.webm", mask="assets/effects/exclamation-mark01-r.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.10, ypos=0.1, rotate=-20
+            )
+        attribute eff_question_mark:
+            Transform(
+                Movie(play="assets/effects/question-mark02-r.webm", mask="assets/effects/question-mark02-r.webm", loop=False),
+                zoom=0.25, xpos=0.10, ypos=0.1, rotate=-20
+            )
+        attribute eff_sleepy:
+            Transform(
+                Movie(play="assets/effects/sleep02-w.webm", mask="assets/effects/sleep02-w.webm"),
+                zoom=0.25, xpos=0.2, ypos=0.0
+            )
+        attribute eff_snot:
+            Transform(
+                Movie(play="assets/effects/snot-bubble01.webm", mask="assets/effects/snot-bubble01.webm"),
+                zoom=0.4, xpos=0.16, ypos=0.175
+            )
+
 layeredimage rian:
 
     group expression:
@@ -113,70 +492,6 @@ layeredimage rian:
         attribute happy "assets/sprite/Rian/rian_main_happy.png"
         attribute angry "assets/sprite/Rian/rian_main_angry.png"
         attribute hurt "assets/sprite/Rian/rian_main_hurt.png"
-
-layeredimage seiya:
-
-    group expression:
-        attribute netral "assets/sprite/Seiya/seiya_main_netral.png"
-        attribute happy "assets/sprite/Seiya/seiya_main_happy.png"
-        attribute angry "assets/sprite/Seiya/seiya_main_angry.png"
-        attribute hurt "assets/sprite/Seiya/seiya_main_hurt.png"
-        attribute sassy "assets/sprite/Seiya/seiya_main_sassy.png"
-
-image shark_n_sequence = "assets/sprite/Shark/shark_main_netral.png"
-image shark_b_sequence = "assets/sprite/Shark/shark_main_beast.png"
-
-layeredimage shark:
-
-    group expression:
-        attribute netral "assets/sprite/Shark/shark_main_netral.png"
-        attribute happy "assets/sprite/Shark/shark_main_happy.png"
-        attribute scared "assets/sprite/Shark/shark_main_scared.png"
-        attribute hurt "assets/sprite/Shark/shark_main_hurt.png"
-        attribute sad "assets/sprite/Shark/shark_main_worried.png"
-        attribute beast "assets/sprite/Shark/shark_main_beast.png"
-        attribute hurt_frame "assets/sprite/Shark/shark_main_hurt_frame.png"
-
-        attribute full_netral "assets/sprite/Shark/shark_full_netral.png"
-        attribute full_happy "assets/sprite/Shark/shark_full_happy.png"
-        attribute full_scared "assets/sprite/Shark/shark_full_scared.png"
-        attribute full_hurt "assets/sprite/Shark/shark_full_hurt.png"
-        attribute full_sad "assets/sprite/Shark/shark_full_worried.png"
-        attribute full_beast "assets/sprite/Shark/shark_full_beast.png"
-    
-    group effect:
-        attribute none default Null() # Default state (nothing rendered)
-        attribute eff_sweat_w:
-            Transform(
-                Movie(play="assets/effects/sweat02-w.webm", mask="assets/effects/sweat02-w.webm"),
-                xzoom=-1.0, zoom=0.4, xpos=0.1, ypos=0.1 # Flip
-            )
-
-layeredimage taro:
-
-    group expression:
-        attribute netral "assets/sprite/Taro/taro_main_netral.png"
-        attribute disgusted "assets/sprite/Taro/taro_main_disgusted.png"
-        attribute happy "assets/sprite/Taro/taro_main_smile.png"
-        attribute sad "assets/sprite/Taro/taro_main_sad.png"
-        attribute huh "assets/sprite/Taro/taro_main_speak.png"
-
-layeredimage yuura:
-
-    group expression:
-        attribute netral "assets/sprite/Yuura/yuura_main_netral.png"
-        attribute angry "assets/sprite/Yuura/yuura_main_angry.png"
-        attribute sad "assets/sprite/Yuura/yuura_main_sad.png"
-        attribute happy "assets/sprite/Yuura/yuura_main_happy.png"
-        attribute scared "assets/sprite/Yuura/yuura_main_scared.png"
-        attribute hurt "assets/sprite/Yuura/yuura_main_hurt.png"
-
-        attribute full_netral "assets/sprite/Yuura/yuura_full_netral.png"
-        attribute full_angry "assets/sprite/Yuura/yuura_full_angry.png"
-        attribute full_sad "assets/sprite/Yuura/yuura_full_sad.png"
-        attribute full_happy "assets/sprite/Yuura/yuura_full_happy.png"
-        attribute full_scared "assets/sprite/Yuura/yuura_full_scared.png"
-        attribute full_hurt "assets/sprite/Yuura/yuura_full_hurt.png"
 
     group effect:
         attribute none default Null() # Default state (nothing rendered)
@@ -218,5 +533,210 @@ layeredimage yuura:
         attribute eff_snot:
             Transform(
                 Movie(play="assets/effects/snot-bubble01.webm", mask="assets/effects/snot-bubble01.webm"),
+                zoom=0.4, xpos=0.16, ypos=0.32
+            )
+
+layeredimage seiya:
+
+    group expression:
+        attribute netral "assets/sprite/Seiya/seiya_main_netral.png"
+        attribute happy "assets/sprite/Seiya/seiya_main_happy.png"
+        attribute angry "assets/sprite/Seiya/seiya_main_angry.png"
+        attribute hurt "assets/sprite/Seiya/seiya_main_hurt.png"
+        attribute sassy "assets/sprite/Seiya/seiya_main_sassy.png"
+
+    group effect:
+        attribute none default Null() # Default state (nothing rendered)
+        attribute eff_angry:
+            Transform(
+                Movie(play="assets/effects/angry.webm", mask="assets/effects/angry.webm"),
+                zoom=0.25, xpos=0.13, ypos=0.05
+            )
+        attribute eff_laugh:
+            Transform(
+                Movie(play="assets/effects/funny01-y.webm", mask="assets/effects/funny01-y.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.1, ypos=0.0
+            )
+        attribute eff_surprise_y:
+            Transform(
+                Movie(play="assets/effects/surprise01-y.webm", mask="assets/effects/surprise01-y.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.13, ypos=0.05
+            )
+        attribute eff_sweat_w:
+            Transform(
+                Movie(play="assets/effects/sweat02-w.webm", mask="assets/effects/sweat02-w.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.1, ypos=0.0 # Flip
+            )
+        attribute eff_exclamation:
+            Transform(
+                Movie(play="assets/effects/exclamation-mark01-r.webm", mask="assets/effects/exclamation-mark01-r.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.10, ypos=0.1, rotate=-20
+            )
+        attribute eff_question_mark:
+            Transform(
+                Movie(play="assets/effects/question-mark02-r.webm", mask="assets/effects/question-mark02-r.webm", loop=False),
+                zoom=0.25, xpos=0.10, ypos=0.1, rotate=-20
+            )
+        attribute eff_sleepy:
+            Transform(
+                Movie(play="assets/effects/sleep02-w.webm", mask="assets/effects/sleep02-w.webm"),
+                zoom=0.25, xpos=0.2, ypos=0.0
+            )
+        attribute eff_snot:
+            Transform(
+                Movie(play="assets/effects/snot-bubble01.webm", mask="assets/effects/snot-bubble01.webm"),
+                zoom=0.4, xpos=0.145, ypos=0.155
+            )
+
+image shark_n_sequence = "assets/sprite/Shark/shark_main_netral.png"
+image shark_b_sequence = "assets/sprite/Shark/shark_main_beast.png"
+
+layeredimage shark:
+
+    group expression:
+        attribute netral "assets/sprite/Shark/shark_main_netral.png"
+        attribute happy "assets/sprite/Shark/shark_main_happy.png"
+        attribute scared "assets/sprite/Shark/shark_main_scared.png"
+        attribute hurt "assets/sprite/Shark/shark_main_hurt.png"
+        attribute sad "assets/sprite/Shark/shark_main_worried.png"
+        attribute beast "assets/sprite/Shark/shark_main_beast.png"
+        attribute hurt_frame "assets/sprite/Shark/shark_main_hurt_frame.png"
+
+        attribute full_netral "assets/sprite/Shark/shark_full_netral.png"
+        attribute full_happy "assets/sprite/Shark/shark_full_happy.png"
+        attribute full_scared "assets/sprite/Shark/shark_full_scared.png"
+        attribute full_hurt "assets/sprite/Shark/shark_full_hurt.png"
+        attribute full_sad "assets/sprite/Shark/shark_full_worried.png"
+        attribute full_beast "assets/sprite/Shark/shark_full_beast.png"
+    
+    group effect:
+        attribute none default Null() # Default state (nothing rendered)
+        attribute eff_angry:
+            Transform(
+                Movie(play="assets/effects/angry.webm", mask="assets/effects/angry.webm"),
+                zoom=0.25, xpos=0.13, ypos=0.05
+            )
+        attribute eff_laugh:
+            Transform(
+                Movie(play="assets/effects/funny01-y.webm", mask="assets/effects/funny01-y.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.1, ypos=0
+            )
+        attribute eff_surprise_y:
+            Transform(
+                Movie(play="assets/effects/surprise01-y.webm", mask="assets/effects/surprise01-y.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.15, ypos=0.05
+            )
+        attribute eff_sweat_w:
+            Transform(
+                Movie(play="assets/effects/sweat02-w.webm", mask="assets/effects/sweat02-w.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.1, ypos=0 # Flip
+            )
+        attribute eff_exclamation:
+            Transform(
+                Movie(play="assets/effects/exclamation-mark01-r.webm", mask="assets/effects/exclamation-mark01-r.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.10, ypos=0.05, rotate=-20
+            )
+        attribute eff_question_mark:
+            Transform(
+                Movie(play="assets/effects/question-mark02-r.webm", mask="assets/effects/question-mark02-r.webm", loop=False),
+                zoom=0.25, xpos=0.10, ypos=0.05, rotate=-20
+            )
+        attribute eff_sleepy:
+            Transform(
+                Movie(play="assets/effects/sleep02-w.webm", mask="assets/effects/sleep02-w.webm"),
+                zoom=0.25, xpos=0.2, ypos=0.0
+            )
+        attribute eff_snot:
+            Transform(
+                Movie(play="assets/effects/snot-bubble01.webm", mask="assets/effects/snot-bubble01.webm"),
+                zoom=0.4, xpos=0.15, ypos=0.16
+            )
+
+
+layeredimage taro:
+
+    group expression:
+        attribute netral "assets/sprite/Taro/taro_main_netral.png"
+        attribute disgusted "assets/sprite/Taro/taro_main_disgusted.png"
+        attribute happy "assets/sprite/Taro/taro_main_smile.png"
+        attribute sad "assets/sprite/Taro/taro_main_sad.png"
+        attribute huh "assets/sprite/Taro/taro_main_speak.png"
+
+layeredimage yuura:
+
+    group expression:
+        attribute netral "assets/sprite/Yuura/yuura_main_netral.png"
+        attribute angry "assets/sprite/Yuura/yuura_main_angry.png"
+        attribute sad "assets/sprite/Yuura/yuura_main_sad.png"
+        attribute happy "assets/sprite/Yuura/yuura_main_happy.png"
+        attribute scared "assets/sprite/Yuura/yuura_main_scared.png"
+        attribute hurt "assets/sprite/Yuura/yuura_main_hurt.png"
+
+        attribute full_netral "assets/sprite/Yuura/yuura_full_netral.png"
+        attribute full_angry "assets/sprite/Yuura/yuura_full_angry.png"
+        attribute full_sad "assets/sprite/Yuura/yuura_full_sad.png"
+        attribute full_happy "assets/sprite/Yuura/yuura_full_happy.png"
+        attribute full_scared "assets/sprite/Yuura/yuura_full_scared.png"
+        attribute full_hurt "assets/sprite/Yuura/yuura_full_hurt.png"
+
+    group effect:
+        attribute none default Null() # Default state (nothing rendered)
+        attribute eff_angry:
+            Transform(
+                Movie(play="assets/effects/angry.webm", mask="assets/effects/angry.webm"),
+                zoom=0.25, xpos=0.15, ypos=0.2
+            )
+        attribute eff_laugh:
+            Transform(
+                Movie(play="assets/effects/funny01-y.webm", mask="assets/effects/funny01-y.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.13, ypos=0.15
+            )
+        attribute eff_surprise_y:
+            Transform(
+                Movie(play="assets/effects/surprise01-y.webm", mask="assets/effects/surprise01-y.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.15, ypos=0.2
+            )
+        attribute eff_sweat_w:
+            Transform(
+                Movie(play="assets/effects/sweat02-w.webm", mask="assets/effects/sweat02-w.webm"),
+                xzoom=-1.0, zoom=0.4, xpos=0.1, ypos=0.2 # Flip
+            )
+        attribute eff_exclamation:
+            Transform(
+                Movie(play="assets/effects/exclamation-mark01-r.webm", mask="assets/effects/exclamation-mark01-r.webm", loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.10, ypos=0.2, rotate=-20
+            )
+        attribute eff_question_mark:
+            Transform(
+                Movie(play="assets/effects/question-mark02-r.webm", mask="assets/effects/question-mark02-r.webm", loop=False),
+                zoom=0.25, xpos=0.10, ypos=0.2, rotate=-20
+            )
+        attribute eff_sleepy:
+            Transform(
+                Movie(play="assets/effects/sleep02-w.webm", mask="assets/effects/sleep02-w.webm"),
+                zoom=0.25, xpos=0.2, ypos=0.1
+            )
+        attribute eff_snot:
+            Transform(
+                Movie(play="assets/effects/snot-bubble01.webm", mask="assets/effects/snot-bubble01.webm"),
                 zoom=0.4, xpos=0.145, ypos=0.3
             )
+        attribute eff_sigh:
+            Transform(
+                Movie(play="assets/effects/sigh01.webm", side_mask=True),
+                zoom=0.4, xpos=0.145, ypos=0.3
+            )
+        attribute eff_confused:
+            Transform(
+                Movie(play="assets/effects/conffused.webm", mask="assets/effects/conffused.webm"),
+                zoom=0.4, xpos=0.145, ypos=0.3
+            )
+        attribute eff_pale:
+            Transform(
+                Movie(play="assets/effects/pale01.webm", mask="assets/effects/pale01.webm"),
+                zoom=0.4, xpos=0.145, ypos=0.3
+            )
+
+# game/assets/effects/conffused.webm 
+# game/assets/effects/sigh01.webm 
+# game/assets/effects/pale01.webm
