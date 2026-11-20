@@ -13,7 +13,7 @@ label scene_2:
     # BG: inn lorong pagi
 
     scene transition_screen orange concentrationline02_w with dissolve
-    show yuura scared eff_sweat_w at center, speaking with easeinright
+    show yuura scared at center, speaking with easeinright
 
     play sound sfx_ambience_angin_berhembus_sepoi_sepoi_scene18 loop
     nd_yuura_brown "*huft huft..."
@@ -27,7 +27,7 @@ label scene_2:
     nd_narrator_brown "Meski begitu, tetap akan kujadikan dinding-dinding di lorong ini sebagai target dari Grappling ku."
     # stop sound
 
-    show yuura at speaking
+    show yuura angry eff_sweat_w at speaking
     nd_yuura_brown "(Peduli apa aku dengan kerusakan di tempat ini)"
     stop sound
     play sound sfx_action_grappling_gun_scene2
@@ -68,7 +68,7 @@ label scene_2:
     hide yuura with easeoutleft
     
     scene inn rooftop with dissolve
-    show yuura netral at center, idle with easeinright
+    show yuura angry at center, idle with easeinright
 
     nd_narrator_brown "Akhirnya setelah dua menit berlalu, aku berhasil mencapai atap dari tempat terbuka nan luas ini."
 
@@ -92,7 +92,7 @@ label scene_2:
     pause 5.0
 
     scene inn rooftop
-    show yuura netral eff_exclamation at center, speaking
+    show yuura netral eff_exclamation_y at center, speaking
     camera:
         # Initial position (zoomed out at the right side)
         zoom 1.0

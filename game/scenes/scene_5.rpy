@@ -2,10 +2,16 @@
 
 label scene_5:
     play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
+    camera:
+        zoom 2.0
+        xalign 0.45
+        yalign 0.3
     scene inn entrance_2
-    show yuura netral at center, idle
+    show yuura netral at center
     nd_narrator_brown "Setelah ditinggal oleh Haruto, entah mengapa rasa lelahku kembali, rasanya sangat berat sekali untuk melangkah."
     
+    show layer master at shake
+    show yuura hurt eff_tremble_w
     nd_narrator_brown "Kaki sakit, kepalaku pusing, rasanya seperti aku akan pingsan saat ini juga."
         # show yuura normal animated at center
         # with Dissolve(1.0)
@@ -14,7 +20,7 @@ label scene_5:
     nd_yuura_brown "Ah... Kakiku sudah tak sanggup melangkah, apakah pada akhirnya...apakah aku..."
 
     scene inn entrance_2 at enblur
-    show yuura netral at center, idle 
+    show yuura hurt eff_confused at center 
     camera:
         zoom 2.0
         xalign 0.45
@@ -30,6 +36,7 @@ label scene_5:
     show yuura at fall_down
     $ renpy.pause(0.6, hard=True) # Waits for the falling animation to finish
     show layer master at shake
+    play sound sfx_action_fall_down_scene5_14
     hide yuura
 
     nd_narrator_brown "Tiba tiba tubuhku tersungkur tak berdaya, aku melihat seorang sedang berdiri diam di kejauhan."

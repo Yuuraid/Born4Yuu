@@ -5,29 +5,29 @@ label scene_9:
     scene transition_screen orange concentrationline02_w with fade
     show yuura netral at ease_custom(offscreenleft, center, 0.5), speaking, face_flip
 
-    nd_narrator_brown "Aku naik ke atas untuk menghindari dari orang-orang, segera berlari untuk mencari jalan keluar."
+    nd_narrator_brown "Aku melanjutkan pencarian jalan keluar."
 
     show yuura at ease_custom(center, offscreenright, 0.5), speaking, face_flip
 
     scene inn lorong lantai_2
-    show akasyah netral at right, idle
+    show akasyah netral at right
     with fade
     pause 1.0
-    show yuura netral at center, idle, face_flip with easeinleft
+    show yuura netral at center, face_flip with easeinleft
     show layer master at shake
     play sound sfx_punch_impact_03
-    show yuura netral at collide_leftward
-    show akasyah angry at collide_rightward, face_flip
+    show yuura angry eff_angry at collide_leftward
+    show akasyah angry eff_angry at collide_rightward, face_flip
     
     # # Shake screen precisely upon impact (0.25s delay matches easein timing)
     # $ renpy.pause(0.25, hard=True)
     # with hpunch 
 
-    nd_narrator_brown "Namun, tanpa sengaja aku menabrak salah seorang yang sedang berdiri menatap langit sambil minum susu."
+    nd_narrator_brown "Namun, tanpa sengaja aku menabrak salah seorang yang sedang berdiri menikmati minumannya."
 
         # play sound bruuk 
-    stop music
-    play music bgm_scene8_awkward_yoyu_ver volume 1.0 loop
+    # stop music
+    # play music bgm_scene8_awkward_yoyu_ver volume 1.0 loop
     
     show yuura at reset_xoffset
     show akasyah at reset_xoffset 
@@ -79,11 +79,11 @@ label scene_9:
     pause 0.2
     hide pe punch yellow
     show akasyah at idle, zorder 5
-    show yuura scared at custom_sprite_pos(x=-0.5)
+    show yuura scared none at custom_sprite_pos(x=-0.5)
     show seiya netral at custom_sprite_pos(x=1.3), idle
     with fade
     play music bgm_scene1_rock
-    nd_narrator_brown "Sebuah tangan melesat ke arahku dengan sangat cepat, tapi beruntung aku tiba-tiba terteleporasi agak jauh dari orang itu."
+    nd_narrator_brown "Sebuah tangan melesat ke arahku dengan sangat cepat, tapi beruntung aku tiba-tiba berpindah tempat agak jauh dari orang itu."
     
     show akasyah at speaking
     voice voice_2_9_94_akasyah
@@ -119,20 +119,24 @@ label scene_9:
     show akasyah at right with fade
     nd_narrator_brown "Tapi, Seiya langsung memindahkannya lagi dengan menggunakan manipulasi bayangan."
     
-    show seiya at speaking
+    show seiya eff_exclamation_r at speaking
     with hpunch
     voice voice_2_9_99_seiya
     nd_seiya_brown "PERGI SEKARANG JUGA! AKU TAK BISA MENAHANNYA TERLALU LAMA!"
         # show layer master at shake_custom
     
     show akasyah at speaking
-    show seiya at idle
+    show seiya none at idle
     voice voice_2_9_100_akasyah
     wd_akasyah_brown "SEIYAAAAAAAAA!!!!!!"
     
+    play sound sfx_action_whoosh_scene13_16
     hide yuura at face_flip with easeoutleft
     scene black with fade
-    nd_narrator_black "Aku langsung lari dengan sangat cepat, sebisa mungkin menjauh dari mereka berdua. Aku terus mendengarkan erangan dari Akasyah dan suara ledakan di belakangku, tapi apa dayaku."
+    nd_narrator_black "Aku langsung lari dengan sangat cepat, sebisa mungkin menjauh dari mereka berdua." 
+    
+    play sound sfx_explode
+    nd_narrator_black "Aku terus mendengarkan suara ledakan dari tempat itu seraya aku menjauh."
     
     nd_narrator_black "Aku hanya bisa lari untuk selamat dari semua bencana ini"
 

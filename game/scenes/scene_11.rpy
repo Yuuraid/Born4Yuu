@@ -13,16 +13,16 @@ label scene_11:
     show josua netral at ease_custom(offscreenright, left, 10.0), idle
     show ibe netral at ease_custom(offscreenright, right, 10.0), idle
 
-    nd_narrator_brown "Sepanjang perjalanan, aku sangat bingung dengan semua yang terjadi seharian ini. Tapi aku harus bersikap normal agar tidak di curigai orang-orang."
+    nd_narrator_brown "Aku melanjutkan perjalanan ku. Aku masih sangat bingung dengan semua yang terjadi seharian ini. Namun aku harus tetap bersikap normal agar tidak dicurigai orang-orang."
 
-    show josua at speaking
+    show josua eff_exclamation_r at speaking
     voice voice_2_11_163_josua
     nd_josua_brown "{font=alien}Be be Yuura tadi Ibe, gokil juga baru nyampe udah ketemu artis kita{/font}\n(Be be Yuura tadi Ibe, gokil juga baru nyampe udah ketemu artis kita)"
 
     # play sound people chatter
 
     show ibe at speaking
-    show josua at idle
+    show josua none at idle
     voice voice_2_11_164_ibe
     nd_ibe_brown "{font=alien}Yuura? kamu yakin itu Yuura?{/font}\n(Yuura? kamu yakin itu Yuura?)"
 
@@ -54,7 +54,7 @@ label scene_11:
     show aergia netral at left, silhouette
     with fade
 
-    show axia netral at ease_custom(offscreenright, right, 5.0), idle
+    show axia cute at ease_custom(offscreenright, right, 5.0), idle
 
     stop music fadeout 1.0
     play music bgm_scene15_judgment volume 1.0 loop fadein 1.0
@@ -68,13 +68,13 @@ label scene_11:
     
     show aergia at silhouette, face_flip, speaking
     voice voice_2_11_165_aergia
-    nd_unknown_brown "Ha... Lu lagi lu lagi, kenapa sih harus selalu lu terus yang ke tempat gua, hah?"
+    nd_unknown_brown "Ha... Lu lagi lu lagi, kenapa sih harus selalu lu terus yang datang ke tempat gua, hah?"
     show aergia at silhouette, idle
     
-    show axia sassy at speaking
+    show axia sassy eff_sparkle at speaking
     voice voice_2_11_166_axiaregis
     nd_axiaregis_brown "Kira-kira kenapa ya? Apa jangan-jangan aku suka kamu kyahh."
-    show axia at idle
+    show axia none at idle
     
     play sound sfx_api_aergia
     show pe purple_flame flame_full at custom_sprite_pos(x=-3.0, y=0.5) with Dissolve(0.2)
@@ -88,10 +88,10 @@ label scene_11:
     
     show aergia at silhouette, speaking
     voice voice_2_11_167_aergia
-    nd_unknown_brown "Bangsat! Jijik banget anjing." 
+    nd_unknown_brown "Eh bangsat! Jijik banget anjing." 
     
     voice voice_2_11_168_aergia
-    nd_unknown_brown "Kenapa sih lu tiap dateng selalu aja bikin gua kesel, hah?"
+    nd_unknown_brown "Kenapa sih lu tiap dateng tu selalu aja bikin gua kesel, hah?"
     show aergia at silhouette, idle
     
     show axia at speaking
@@ -103,7 +103,7 @@ label scene_11:
     
     show aergia at silhouette, speaking
     voice voice_2_11_170_aergia
-    nd_unknown_brown "Cukup!, jelaskan alasan lu ada sini dan pergi dari sini sekarang!"
+    nd_unknown_brown "Cukup! jelaskan alasan lu ada sini dan pergi dari sini sekarang!"
     show aergia at silhouette, idle
         
     show axia cute at speaking
@@ -126,7 +126,7 @@ label scene_11:
     nd_unknown_brown "Hah Yuura?! Emangnya, kenapa sama si Yuura?"
     show aergia at silhouette, idle
 
-    show axia at speaking
+    show axia sassy eff_sparkle at speaking
     voice voice_2_11_175_axiaregis
     nd_axiaregis_brown "Sebenarnya..."
     show axia at idle
@@ -140,7 +140,9 @@ label scene_11:
 
     show yuura netral at ease_custom(offscreenright, offscreenleft, 20.0)
 
-    nd_narrator_brown "Semakin lama aku berkeliling, semakin aku melihat banyak anomali-anomali di di sekitarku, ada seseorang yang sangat menyukai gundam bernama Ivan."
+    nd_narrator_brown "Semakin lama aku berkeliling, semakin aku melihat banyak orang-orang aneh di sekitarku."
+    
+    nd_narrator_brown ", ada seseorang yang sangat menyukai gundam bernama Ivan."
     
     nd_narrator_brown "Ada juga seseorang om-om berbaju batik putih yang sedang berkebun. Terus ada seorang anak laki-laki yang sedang berbicara dengan kuda nil? Ah entahlah aku tidak mengerti lagi."
     
