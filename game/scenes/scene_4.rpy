@@ -4,9 +4,10 @@ label scene_4:
     # play music bgm_scene3_forest volume 1.0 loop
     play sound sfx_ambience_grasak_grusuk_daun_scene3 volume 0.5 loop
     scene transition_screen orange concentrationline02_w with dissolve
-    show yuura scared at center, speaking with easeinright
+    show yuura netral eff_sweat_w at center, speaking with easeinright
     nd_narrator_brown "Aku terus berjalan, melewati pepohonan yang entah kenapa sangat familiar bagiku. Sepertinya aku sudah berputar-putar di tempat ini selama berjam-jam tanpa menemukan jalan keluar."
 
+    show yuura scared eff_sweat_w
     nd_narrator_brown "Kaki ku lemas, rasanya sangat sakit sekali. Aku benar-benar berjalan-jalan sepanjang hari tapi tetap saja berakhir di tempat yang sama."
     stop sound 
     play music bgm_scene4 volume 1.0 loop
@@ -53,58 +54,59 @@ label scene_4:
     wd_unknown_brown "Oh begitukah? bukannya jam segini harusnya kamu masih di penginapan ya?"
     
     show haruto at idle
-    show yuura at speaking
+    show yuura eff_sweat_w at speaking
     nd_yuura_brown "Ah... Em... Aku hanya bosan saja hahaha."
     
-    show haruto at speaking
-    show yuura at idle
+    show haruto sad eff_exclamation at speaking
+    show yuura none at idle
     voice voice_1_4_43_haruto
     wd_unknown_brown "Kenapa kamu terlihat sangat berantakan? apa kamu baik-baik saja?"
     
-    show haruto at idle
-    show yuura at speaking
+    show haruto none at idle
+    show yuura eff_sweat_w at speaking
     nd_yuura_brown "I-itu tidak penting sekarang, b-bisakah kamu menemani ku menuju jalan keluar dari hutan ini?"
     
-    show haruto at speaking
-    show yuura at idle
+    show haruto eff_question_mark at speaking
+    show yuura none at idle
     voice voice_1_4_45_haruto
     wd_unknown_brown "Tentu? tapi tumben banget kamu ingin ditemani seperti ini. Biasanya juga kamu pergi sendiri" 
     
-    show haruto at idle
-    show yuura at speaking
+    show haruto none at idle
+    show yuura eff_sweat_w at speaking
     nd_yuura_brown "K-karena aku sudah terlalu lelah berkeliling hutan ini, makanya aku minta ditemani."
     
     show haruto at idle
     show yuura at speaking
     nd_narrator_brown "Dia tampak bingung dengan alibiku, tapi dia tetap percaya padaku dengan sepenuh hatinya."
     
-    show haruto at speaking
-    show yuura at idle
+    show haruto exhausted eff_laugh at speaking
+    show yuura none at idle
     voice voice_1_4_47_haruto
     wd_unknown_brown "Baiklah biar aku antarkan kamu kembali ke penginapan" 
     
-    show haruto at idle
-    show yuura at speaking
+    show haruto happy none at idle
+    show yuura eff_question_mark at speaking
     nd_yuura_brown "Penginapan? Bangunan besar yang bergaya jepang itu? K-kenapa kita harus kesana?"
     
     show haruto at speaking
-    show yuura at idle
+    show yuura none at idle
     voice voice_1_4_50_haruto
     wd_unknown_brown "Loh? Bukannya jalan keluar dari hutan ini memang di penginapan ya?" 
     
+    show haruto sad at speaking
     voice voice_1_4_51_haruto
     wd_unknown_brown "Anee.. kamu yakin baik-baik saja?"
     
     show haruto at idle
-    show yuura at speaking
+    show yuura eff_sweat_w at speaking
     nd_yuura_brown "Y-ya.. aku baik-baik saja, um.."
     
-    show haruto at speaking
-    show yuura at idle
+    show haruto exhausted eff_laugh at speaking
+    show yuura none at idle
     voice voice_1_4_53_haruto
     wd_haruto_brown "Haruto anee, namaku Haruto" 
     
-    show haruto at idle
+    show haruto none at idle
     show yuura at idle
     nd_narrator_brown "Haruto hanya bisa terdiam dan tertawa kecil melihat diriku yang seperti orang linglung."
     
@@ -112,12 +114,14 @@ label scene_4:
     show yuura at speaking
     nd_yuura_brown "Haruto, mengapa kamu mau membantuku?"
     
+    show haruto happy
+    show yuura at idle
     nd_narrator_brown "Aku menatapnya dengan keheranan, karena sepanjang tadi pagi aku terus saja mengalami kesialan membuatku curiga padanya."
     
-    show haruto at speaking
+    show haruto exhausted eff_laugh at speaking
     show yuura at idle
     voice voice_1_4_56_haruto
-    wd_haruto_brown "Hahaha.. pertanyaan macam apa itu Anee? tentu saja aku membantumu karena kamu selalu membantuku"
+    wd_haruto_brown "Hahaha.. pertanyaan macam apa itu Anee? tentu saja aku membantumu karena kamu selalu membantuku."
     
     show haruto at idle
     show yuura at speaking

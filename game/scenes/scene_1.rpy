@@ -70,7 +70,7 @@ label scene_1:
     
     $ renpy.music.set_pause(True, channel="music")
     play sound sfx_expression_shocked
-    show yuura scared none at center, shake, speaking
+    show yuura scared none at center, shake, speaking #kalo boleh ada dissapointed
     nd_yuura_brown "INI BUKAN KAMARKU!!"
     # $ renpy.music.set_pause(False, channel="music")
     play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
@@ -146,7 +146,7 @@ label scene_1:
     nd_narrator_brown "Aku mendekati sebuah zirah yang terpajang gagah beserta pedang dengan sarungnya yang berwarna merah muda"
     
     
-    show yuura scared eff_sweat_w at center, speaking with easeinright
+    show yuura scared eff_exclamation at center, speaking with easeinright
     play sound sfx_expression_shocked
     $ renpy.music.set_pause(True, channel="music")
     camera:

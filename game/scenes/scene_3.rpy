@@ -13,14 +13,18 @@ label scene_3:
     stop sound
     
     play music bgm_scene3_forest_w_ambience fadeout 1.0 volume 0.7 loop
-    scene hutan taman with dissolve
-    show yuura scared at center, speaking with easeinright
+    scene hutan pohon with dissolve
+    show yuura angry at center, speaking with easeinright #dissapointed/confused
     
     nd_yuura_brown "Arghhh.. Ini gila! bisa-bisanya aku terbangun di tempat kayak gini? huah.."
     
-    show yuura at idle
+    show yuura scared eff_sweat_w at idle
     nd_narrator_brown "Nafasku tersengal-sengal karena berlarian terus sepanjang waktu."
     
+    hide yuura with easeoutleft
+    scene hutan taman with dissolve
+    show yuura scared at center, speaking with easeinright
+
     nd_narrator_brown "Aku melanjutkan perjalanan ku dengan rasa lelah yang luar biasa, sebelum akhirnya aku memutuskan untuk duduk di dekat sebuah pohon besar."
     
     nd_narrator_brown "Aku berusaha menenangkan diriku, menarik nafas secara perlahan dan mulai memikirkan segalanya."
@@ -80,7 +84,7 @@ label scene_3:
     nd_unknown_brown "Hey.. jangan menangis, aku gak sanggup melihat cewek nangis di hadapanku"
 
     stop music fadeout 1.0
-    play music bgm_scene3_pelukan volume 1.0 fadein 2.0 fadeout 2.0 loop
+    play music bgm_scene3_pelukan volume 1. loop
     
     # CG hugging start here
 
@@ -138,7 +142,7 @@ label scene_3:
     # CG end here
     scene hutan taman 
     show yuura sad at right, idle
-    show pria netral at left, idle
+    show pria netral at left, idle, face_flip
     with fade
     # Start BGM Jade
 
@@ -161,7 +165,7 @@ label scene_3:
     with dissolve
 
     play sound sfx_expression_shocked
-    show yuura netral eff_surprise_y at right, speaking
+    show yuura scared eff_surprise_y at right, speaking
     nd_narrator_brown "Aku terkejut bukan main."
 
     nd_yuura_brown "(Kenapa namaku ada di sini? Bahkan cara menulisnya sama persis seperti diriku)"
@@ -173,20 +177,20 @@ label scene_3:
 
     nd_narrator_brown "Tapi mana mungkin aku mampu membeli botol semahal itu, makan saja sudah sangat sulit. Mana mungkin aku punya uang untuk beli botol mewah."
 
-    show pria at speaking
+    show pria happy at speaking
     voice voice_1_3_28_pria_misterius
     wd_unknown_brown "Oh? Kamu membawa benda yang menarik~"
     
     show pria at idle
-    show yuura at speaking
+    show yuura angry eff_question_mark at speaking
     nd_yuura_brown "Apa maksudmu? Lagipula aku ingat dengan jelas bahwa botol ini tidak bersamaku?"
     
-    show yuura at idle
-    show pria at speaking
+    show yuura none at idle
+    show pria netral eff_question_mark_flip at speaking
     voice voice_1_3_30_pria_misterius
     wd_unknown_brown "Lalu bagaimana benda itu bisa di sini?"
     
-    show pria at idle
+    show pria none at idle
     show yuura at speaking
     nd_yuura_brown "Entahlah.. Jika botol ini ku bawa di dalam bajuku, sudah pasti akan sangat sulit membawanya sambil dikejar oleh banyak orang"
     
@@ -200,15 +204,15 @@ label scene_3:
     nd_yuura_brown "Takdir? Apa maksudmu semua hal bodoh ini adalah takdir bagiku?"
     
     show yuura at idle
-    show pria at speaking
+    show pria happy eff_laugh at speaking
     voice voice_1_3_34_pria_misterius
     wd_unknown_brown "Mungkin saja kan~"
     
-    show pria at idle
-    show yuura at speaking
+    show pria none at idle
+    show yuura eff_angry at speaking
     nd_yuura_brown "Ga, ga masuk akal. Mustahil, lebih baik aku pergi keluar dan menjual botol ini."
     
-    show yuura at center, speaking with ease
+    show yuura none at center with ease
     nd_narrator_brown "Aku berjalan melewati pria misterius itu"
     
     show yuura at idle
@@ -219,7 +223,7 @@ label scene_3:
         # with fade
     
     show pria at idle
-    show yuura at speaking
+    show yuura eff_question_mark at speaking
     nd_yuura_brown "Apa maksud...mu???"
 
     play sound sfx_zoom
