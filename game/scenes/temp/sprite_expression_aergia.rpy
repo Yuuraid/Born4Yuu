@@ -95,7 +95,7 @@ label sprite_animation_aergia:
     "testing effects: exclamation yellow"
 
     play sound sfx_expression_confused
-    show aergia netral eff_question_mark_r
+    show aergia netral eff_question_mark_r 
     "testing effects: question mark red"
 
     play sound sfx_expression_confused

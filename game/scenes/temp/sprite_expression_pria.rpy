@@ -58,7 +58,7 @@ label sprite_animation_pria:
     "testing effects: exclamation yellow"
 
     play sound sfx_expression_confused
-    show pria netral eff_question_mark_r
+    show pria netral eff_question_mark_r 
     "testing effects: question mark red"
 
     play sound sfx_expression_confused

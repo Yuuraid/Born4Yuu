@@ -40,7 +40,7 @@ label scene_3:
     voice voice_1_3_19_pria_misterius
     nd_unknown_brown "Capek kan? Lari-lari"
     
-    show yuura netral eff_exclamation at shake
+    show yuura netral eff_exclamation_y at shake
     play sound sfx_expression_surprised
     nd_narrator_brown "Aku terkejut mendengar suara yang entah dari mana asalnya. Aku melihat sekitar dan merasakan adanya seseorang di balik pohon yang ku sandari."
     
@@ -182,11 +182,11 @@ label scene_3:
     wd_unknown_brown "Oh? Kamu membawa benda yang menarik~"
     
     show pria at idle
-    show yuura angry eff_question_mark at speaking
+    show yuura angry eff_question_mark_r at speaking
     nd_yuura_brown "Apa maksudmu? Lagipula aku ingat dengan jelas bahwa botol ini tidak bersamaku?"
     
     show yuura none at idle
-    show pria netral eff_question_mark_flip at speaking
+    show pria netral eff_question_mark_flip_r at speaking
     voice voice_1_3_30_pria_misterius
     wd_unknown_brown "Lalu bagaimana benda itu bisa di sini?"
     
@@ -204,7 +204,7 @@ label scene_3:
     nd_yuura_brown "Takdir? Apa maksudmu semua hal bodoh ini adalah takdir bagiku?"
     
     show yuura at idle
-    show pria happy eff_laugh at speaking
+    show pria happy eff_laugh_r at speaking
     voice voice_1_3_34_pria_misterius
     wd_unknown_brown "Mungkin saja kan~"
     
@@ -223,12 +223,12 @@ label scene_3:
         # with fade
     
     show pria at idle
-    show yuura eff_question_mark at speaking
+    show yuura eff_question_mark_r at speaking
     nd_yuura_brown "Apa maksud...mu???"
 
     play sound sfx_zoom
     hide pria with dissolve
-    show yuura scared eff_exclamation at speaking
+    show yuura scared eff_exclamation_y at speaking
     nd_yuura_brown "Ke mana orang itu pergi?"
     # stop music 
     show yuura at idle

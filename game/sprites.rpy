@@ -24,6 +24,13 @@ transform speaking:
         easeout 0.5 yoffset 0
         repeat
 
+transform speak_in_mind:
+    matrixcolor None
+    # parallel:
+    #     easein 0.8 yoffset 20
+    #     easeout 0.5 yoffset 0
+    #     repeat
+
 transform idle:
     matrixcolor TintMatrix("#777777") # Hex color code to darken/tint the sprite
 

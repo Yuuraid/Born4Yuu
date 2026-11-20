@@ -92,7 +92,7 @@ label scene_2:
     pause 5.0
 
     scene inn rooftop
-    show yuura netral eff_exclamation at center, speaking
+    show yuura netral eff_exclamation_y at center, speaking
     camera:
         # Initial position (zoomed out at the right side)
         zoom 1.0

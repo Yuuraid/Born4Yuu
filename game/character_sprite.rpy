@@ -67,7 +67,7 @@ layeredimage aergia:
                 Movie(play="assets/effects/exclamation-mark01-y.webm", side_mask=True, loop=False),
                 xzoom=-1.0, zoom=0.25, xpos=0.13, ypos=0.2, rotate=-20
             )
-        attribute eff_question_mark_r:
+        attribute eff_question_mark_r :
             Transform(
                 Movie(play="assets/effects/exclamation-question-mark01-r.webm", side_mask=True, loop=False),
                 xzoom=1.0, zoom=0.25, xpos=0.13, ypos=0.2, rotate=-20
@@ -175,7 +175,6 @@ layeredimage akasyah:
         attribute full_hurt "assets/sprite/Akasyah/akasyah_full_hurt.png"
         attribute full_smug "assets/sprite/Akasyah/akasyah_full_smug.png"
         attribute full_angry "assets/sprite/Akasyah/akasyah_full_angry.png"
-        attribute full_hurt "assets/sprite/Akasyah/akasyah_full_hurt.png"
 
     group effect:
         attribute none default Null() # Default state (nothing rendered)
@@ -229,7 +228,7 @@ layeredimage akasyah:
                 Movie(play="assets/effects/exclamation-mark01-y.webm", side_mask=True, loop=False),
                 xzoom=-1.0, zoom=0.25, xpos=0.32, ypos=0.2, rotate=20
             )
-        attribute eff_question_mark_r:
+        attribute eff_question_mark_r :
             Transform(
                 Movie(play="assets/effects/exclamation-question-mark01-r.webm", side_mask=True, loop=False),
                 zoom=0.25, xpos=0.32, ypos=0.2, rotate=20
@@ -391,7 +390,7 @@ layeredimage axia:
                 Movie(play="assets/effects/exclamation-mark01-y.webm", side_mask=True, loop=False),
                 xzoom=-1.0, zoom=0.25, xpos=0.10, ypos=0.2, rotate=-20
             )
-        attribute eff_question_mark_r:
+        attribute eff_question_mark_r :
             Transform(
                 Movie(play="assets/effects/exclamation-question-mark01-r.webm", side_mask=True, loop=False),
                 zoom=0.25, xpos=0.10, ypos=0.2, rotate=-20
@@ -556,7 +555,7 @@ layeredimage dawam:
                 Movie(play="assets/effects/exclamation-mark01-y.webm", side_mask=True, loop=False),
                 xzoom=-1.0, zoom=0.25, xpos=0.15, ypos=0.05, rotate=-20
             )
-        attribute eff_question_mark_r:
+        attribute eff_question_mark_r :
             Transform(
                 Movie(play="assets/effects/exclamation-question-mark01-r.webm", side_mask=True, loop=False),
                 zoom=0.25, xpos=0.15, ypos=0.05, rotate=-20
@@ -716,7 +715,7 @@ layeredimage dityo:
                 Movie(play="assets/effects/exclamation-mark01-y.webm", side_mask=True, loop=False),
                 xzoom=-1.0, zoom=0.25, xpos=0.15, ypos=0.05, rotate=-20
             )
-        attribute eff_question_mark_r:
+        attribute eff_question_mark_r :
             Transform(
                 Movie(play="assets/effects/exclamation-question-mark01-r.webm", side_mask=True, loop=False),
                 zoom=0.25, xpos=0.15, ypos=0.05, rotate=-20
@@ -873,7 +872,7 @@ layeredimage haruto:
                 Movie(play="assets/effects/exclamation-mark01-y.webm", side_mask=True, loop=False),
                 xzoom=-1.0, zoom=0.25, xpos=0.15, ypos=0.05, rotate=-20
             )
-        attribute eff_question_mark_r:
+        attribute eff_question_mark_r :
             Transform(
                 Movie(play="assets/effects/exclamation-question-mark01-r.webm", side_mask=True, loop=False),
                 zoom=0.25, xpos=0.15, ypos=0.05, rotate=-20
@@ -1026,7 +1025,7 @@ layeredimage ibe:
                 Movie(play="assets/effects/exclamation-mark01-y.webm", side_mask=True, loop=False),
                 xzoom=-1.0, zoom=0.25, xpos=0.10, ypos=0.2, rotate=-20
             )
-        attribute eff_question_mark_r:
+        attribute eff_question_mark_r :
             Transform(
                 Movie(play="assets/effects/exclamation-question-mark01-r.webm", side_mask=True, loop=False),
                 zoom=0.25, xpos=0.10, ypos=0.2, rotate=-20
@@ -1179,7 +1178,7 @@ layeredimage josua:
                 Movie(play="assets/effects/exclamation-mark01-y.webm", side_mask=True, loop=False),
                 xzoom=-1.0, zoom=0.25, xpos=0.10, ypos=0.2, rotate=-20
             )
-        attribute eff_question_mark_r:
+        attribute eff_question_mark_r :
             Transform(
                 Movie(play="assets/effects/exclamation-question-mark01-r.webm", side_mask=True, loop=False),
                 zoom=0.25, xpos=0.10, ypos=0.2, rotate=-20
@@ -1334,7 +1333,7 @@ layeredimage pria:
                 Movie(play="assets/effects/exclamation-mark01-y.webm", side_mask=True, loop=False),
                 xzoom=-1.0, zoom=0.25, xpos=0.10, ypos=0.05, rotate=-20
             )
-        attribute eff_question_mark_r:
+        attribute eff_question_mark_r :
             Transform(
                 Movie(play="assets/effects/exclamation-question-mark01-r.webm", side_mask=True, loop=False),
                 zoom=0.25, xpos=0.10, ypos=0.05, rotate=-20
@@ -1343,6 +1342,16 @@ layeredimage pria:
             Transform(
                 Movie(play="assets/effects/exclamation-question-mark01-y.webm", side_mask=True, loop=False),
                 zoom=0.25, xpos=0.10, ypos=0.05, rotate=-20
+            )
+        attribute eff_question_mark_flip_r :
+            Transform(
+                Movie(play="assets/effects/exclamation-question-mark01-r.webm", side_mask=True, loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.10, ypos=0.05, rotate=-20
+            )
+        attribute eff_question_mark_flip_y:
+            Transform(
+                Movie(play="assets/effects/exclamation-question-mark01-y.webm", side_mask=True, loop=False),
+                xzoom=-1.0, zoom=0.25, xpos=0.10, ypos=0.05, rotate=-20
             )
         attribute eff_sleepy_w:
             Transform(
@@ -1490,7 +1499,7 @@ layeredimage rian:
                 Movie(play="assets/effects/exclamation-mark01-y.webm", side_mask=True, loop=False),
                 xzoom=-1.0, zoom=0.25, xpos=0.10, ypos=0.2, rotate=-20
             )
-        attribute eff_question_mark_r:
+        attribute eff_question_mark_r :
             Transform(
                 Movie(play="assets/effects/exclamation-question-mark01-r.webm", side_mask=True, loop=False),
                 zoom=0.25, xpos=0.10, ypos=0.2, rotate=-20
@@ -1647,7 +1656,7 @@ layeredimage seiya:
                 Movie(play="assets/effects/exclamation-mark01-y.webm", side_mask=True, loop=False),
                 xzoom=-1.0, zoom=0.25, xpos=0.10, ypos=0.1, rotate=-20
             )
-        attribute eff_question_mark_r:
+        attribute eff_question_mark_r :
             Transform(
                 Movie(play="assets/effects/exclamation-question-mark01-r.webm", side_mask=True, loop=False),
                 zoom=0.25, xpos=0.10, ypos=0.1, rotate=-20
@@ -1816,7 +1825,7 @@ layeredimage shark:
                 Movie(play="assets/effects/exclamation-mark01-y.webm", side_mask=True, loop=False),
                 xzoom=-1.0, zoom=0.25, xpos=0.10, ypos=0.05, rotate=-20
             )
-        attribute eff_question_mark_r:
+        attribute eff_question_mark_r :
             Transform(
                 Movie(play="assets/effects/exclamation-question-mark01-r.webm", side_mask=True, loop=False),
                 zoom=0.25, xpos=0.10, ypos=0.05, rotate=-20
@@ -1931,6 +1940,7 @@ layeredimage yuura:
         attribute happy "assets/sprite/Yuura/yuura_main_happy.png"
         attribute scared "assets/sprite/Yuura/yuura_main_scared.png"
         attribute hurt "assets/sprite/Yuura/yuura_main_hurt.png"
+        attribute bittersweet "assets/sprite/Yuura/yuura_main_bs.png"
 
         attribute full_netral "assets/sprite/Yuura/yuura_full_netral.png"
         attribute full_angry "assets/sprite/Yuura/yuura_full_angry.png"
@@ -1991,7 +2001,7 @@ layeredimage yuura:
                 Movie(play="assets/effects/exclamation-mark01-y.webm", side_mask=True, loop=False),
                 xzoom=-1.0, zoom=0.25, xpos=0.10, ypos=0.2, rotate=-20
             )
-        attribute eff_question_mark_r:
+        attribute eff_question_mark_r :
             Transform(
                 Movie(play="assets/effects/exclamation-question-mark01-r.webm", side_mask=True, loop=False),
                 zoom=0.25, xpos=0.10, ypos=0.2, rotate=-20

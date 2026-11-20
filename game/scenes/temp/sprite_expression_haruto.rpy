@@ -63,7 +63,7 @@ label sprite_animation_haruto:
     "testing effects: exclamation yellow"
 
     play sound sfx_expression_confused
-    show haruto netral eff_question_mark_r
+    show haruto netral eff_question_mark_r 
     "testing effects: question mark red"
 
     play sound sfx_expression_confused

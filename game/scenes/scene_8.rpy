@@ -4,12 +4,14 @@ label scene_8:
     # play sound crowd rushing against wooden floor
 
     scene inn lorong lantai_1 with fade
-    show yuura netral at ease_custom(offscreenright, right, 0.8), idle
-    show shark netral at ease_custom(offscreenright, left, 1.5), idle
-    nd_narrator_brown "Aku mendengar gemuruh orang berlarian mencariku, entah apa yang mereka lakukan sehingga mengejarku. Tapi aku selamat berkat seseorang yang menarik tanganku."
+    show yuura netral at ease_custom(offscreenright, right, 0.8)
+    show shark netral at ease_custom(offscreenright, left, 1.5)
+    nd_narrator_brown "Aku mendengar gemuruh orang itu berlari mencariku, entah apa yang dia lakukan sehingga mengejarku. Tapi aku selamat berkat seseorang yang menarik tanganku."
     
-    show shark eff_sweat_w at idle
-    nd_narrator_brown "Dia terlihat sangat pemalu, dengan rambut putih dan mata berwarna biru. Membuatku merasa bersyukur masih ada yang mau menyelamatkanku."
+    show shark eff_sweat_w
+    nd_narrator_brown "Dia terlihat sangat pemalu, dengan rambut putih dan mata berwarna biru."
+    
+    nd_narrator_brown "Paling tidak aku harus berterimakasih, berkat dia aku bisa lolos dari kejaran orang tadi."
 
     play music bgm_scene8_awkward volume 1.0 loop
     
@@ -51,14 +53,15 @@ label scene_8:
     show shark at face_flip, idle
     nd_yuura_brown "Oh, oke sekarang aku ingat. Shark!"
 
+    show yuura eff_question_mark_y
     nd_yuura_brown "Tapi kok bukunya kayak ga lengkap?"
     
-    show yuura at idle
+    show yuura none at idle
     show shark at face_flip, speaking
     voice voice_2_8_83_shark
     wd_shark_brown "Y-ya kan buku tamunya emang ga pernah kamu selesaiin Ane.." 
     
-    show yuura at speaking
+    show yuura eff_sweat_w at speaking
     show shark at face_flip, idle
     nd_yuura_brown "O-oh..."
     
@@ -67,20 +70,21 @@ label scene_8:
     nd_narrator_brown "Suasana menjadi sangat canggung dan awkward"
         # cek lagi docs nya
     
-    show yuura at speaking
+    show yuura happy at speaking
     show shark at face_flip, idle
-    nd_yuura_brown "Ya udah makasih ya udah bantuin  aku, aku udah ga denger suara apa pun dari luar. Jadi, sampai jumpa, Shark!"
+    nd_yuura_brown "Ya udah makasih ya udah bantuin aku, aku udah ga denger suara apa pun dari luar. Jadi, sampai jumpa, Shark!"
     
     show yuura at ease_custom(right, offscreenleft, 1.5), speaking
     show shark at face_flip, idle
     pause 1.0
-    show shark at speaking
+    show shark eff_sweat_w at speaking
     voice voice_2_8_86_shark
     wd_shark_brown "T-tunggu anee a-aku.."
     
-    show shark at idle
-    nd_narrator_brown "Aku langsung lari tanpa memikirkan orang itu. Dia tampak ingin memanggilku, tapi aku sudah menghilang dari sudut pandangnya."
+    # show shark at idle
+    scene black with dissolve
+    nd_narrator_black "Aku langsung lari meninggalkan orang itu. Dia tampak ingin memanggilku, tapi aku sudah menghilang dari sudut pandangnya."
 
-    stop music 
+    # stop music 
 
     jump scene_9

@@ -66,7 +66,7 @@ label sprite_animation_axia:
     "testing effects: exclamation yellow"
 
     play sound sfx_expression_confused
-    show axia netral eff_question_mark_r
+    show axia netral eff_question_mark_r 
     "testing effects: question mark red"
 
     play sound sfx_expression_confused

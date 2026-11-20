@@ -31,7 +31,7 @@ label scene_1:
         xalign 0.45
         yalign 0.3
     
-    show yuura netral eff_sleepy at jump_in_bottom(duration=2.0), speaking
+    show yuura netral eff_drowsy_w at jump_in_bottom(duration=2.0), speaking
     nd_yuura_brown "Iya iya... Hooam..." 
 
     camera:
@@ -75,7 +75,7 @@ label scene_1:
     # $ renpy.music.set_pause(False, channel="music")
     play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
     
-    show yuura netral eff_question_mark at center, speaking
+    show yuura netral eff_question_mark_r at center, speaking
     play sound sfx_expression_surprised
     nd_yuura_brown "Kemarin aku salah masuk kamar apa gimana dah?{w} Kok bisa-bisanya kebangun di sini?"
     
@@ -146,7 +146,7 @@ label scene_1:
     nd_narrator_brown "Aku mendekati sebuah zirah yang terpajang gagah beserta pedang dengan sarungnya yang berwarna merah muda"
     
     
-    show yuura scared eff_exclamation at center, speaking with easeinright
+    show yuura scared eff_exclamation_y at center, speaking with easeinright
     play sound sfx_expression_shocked
     $ renpy.music.set_pause(True, channel="music")
     camera:
@@ -213,7 +213,7 @@ label scene_1:
     #     yalign 0.0
 
     play sound sfx_expression_shocked
-    show yuura scared eff_exclamation at center, shake, speaking
+    show yuura scared eff_exclamation_y at center, shake, speaking
     nd_yuura_brown "ANJIR!!"
     
     play music bgm_scene1_jade_bottle fadeout 1.0 fadein 1.0 volume 1.0 loop
@@ -231,7 +231,7 @@ label scene_1:
     with dissolve
 
     play sound sfx_expression_confused
-    show yuura netral eff_question_mark at center, speaking
+    show yuura netral eff_question_mark_r at center, speaking
     nd_yuura_brown "Kok bisa yah, ada orang yang beneran mirip sama aku..?"
 
     scene black
@@ -264,7 +264,7 @@ label scene_1:
         zoom 2.0
         xalign 0.45
         yalign 0.3
-    show yuura scared eff_exclamation at center, shake, speaking
+    show yuura scared eff_exclamation_y at center, shake, speaking
     nd_yuura_brown "ANJIR,TERNYATA ADA ORANG LAIN JUGA DISINI"
     
     camera:

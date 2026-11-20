@@ -51,7 +51,7 @@ label sprite_animation_rakun:
     "testing effects: exclamation yellow"
 
     play sound sfx_expression_confused
-    show ibe netral eff_question_mark_r
+    show ibe netral eff_question_mark_r 
     "testing effects: question mark red"
 
     play sound sfx_expression_confused
