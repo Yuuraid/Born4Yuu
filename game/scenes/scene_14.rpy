@@ -133,7 +133,7 @@ label scene_14:
     with fade
     
     voice voice_3_14_211_akasyah
-    nd_akasyah_brown "KETEMU LU BANGSAT!"
+    nd_akasyah_brown "HAHH KETEMU LU BANGSAT!"
     show akasyah at idle
         
     # show seiya angry at flip_image, speaking
@@ -185,7 +185,7 @@ label scene_14:
             
     show akasyah at speaking
     voice voice_3_14_221_akasyah
-    nd_akasyah_brown "OI YUUR! Lu tau ga benda apa ini?"
+    nd_akasyah_brown "OI YUUR! Lu tau ga ini apa?"
     show akasyah at idle
     
     nd_narrator_brown "Aku kaget melihat benda yang dia lempar, aku tidak mengerti untuk apa benda itu dan mengapa dia menanyakan padaku."
@@ -213,7 +213,7 @@ label scene_14:
         
     show akasyah at speaking
     voice voice_3_14_225_akasyah
-    nd_akasyah_brown "Hahaha... Udah gua duga lu pasti gabisa jawab pertanyaan gua."
+    nd_akasyah_brown "Hahaha... kan? Udah gua duga lu pasti gabisa jawab pertanyaan gua."
     
     voice voice_3_14_226_akasyah
     nd_akasyah_brown "Sekarang minggir dan biar gua hajar si palsu ini!"
@@ -650,7 +650,7 @@ label scene_14:
         # play sound lantai kayu patah
     # show akasyah at speaking
     voice voice_3_14_235_akasyah
-    nd_akasyah_brown "Udah nih? Seiya-Seiya"
+    nd_akasyah_brown "Udah nih? Seiya-Seiya."
     
     voice voice_3_14_236_akasyah
     nd_akasyah_brown "SEKARANG LAH AKHIRNYA! BYE BYE PAHLAWAN KESIANGAN!"
@@ -687,7 +687,7 @@ label scene_14:
             
     show akasyah at face_flip, speaking
     voice voice_3_14_238_akasyah
-    nd_akasyah_brown "Kau pikir bisa nahan gw dengan ngikat kaki gw?"
+    nd_akasyah_brown "Lu pikir bisa nahan gua dengan ngiket kaki gua?"
     
     voice voice_3_14_239_akasyah
     play sound sfx_dityo_missle_launch

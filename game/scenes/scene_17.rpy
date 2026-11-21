@@ -68,7 +68,7 @@ label scene_17:
     
     show pria at speaking
     voice voice_3_17_422_pria_misterius
-    nd_unknown_brown "Iya… aku ingin membicarakan soal dirimu"
+    nd_unknown_brown "Iya… aku ingin membicarakan soal dirimu."
     show pria at idle
 
     show yuura at speaking
@@ -87,7 +87,7 @@ label scene_17:
     nd_unknown_brown "Sudah banyak sekali takdir yang tertulis, namun hanya satu yang benar."
     
     voice voice_3_17_426_pria_misterius
-    nd_unknown_brown "Sekarang giliranmu, Aneeki."
+    nd_unknown_brown "Sekarang giliranmu, Aneki."
     show pria at idle
 
     play sound sfx_spit_water
@@ -119,15 +119,15 @@ label scene_17:
 
     show pria at speaking
     voice voice_3_17_430_pria_misterius
-    nd_unknown_brown "Kita tidak fokus kesana sekarang"
+    nd_unknown_brown "Kita tidak fokus kesana sekarang."
     
     voice voice_3_17_431_pria_misterius
-    nd_unknown_brown "Takdirmu sudah ditentukan dari awal"
+    nd_unknown_brown "Takdirmu sudah ditentukan dari awal."
     
     $ renpy.run(QuickSave())
 
     voice voice_3_17_432_pria_misterius
-    nd_unknown_brown "Sekarang ini adalah waktunya untuk kamu memilih"
+    nd_unknown_brown "Sekarang ini adalah waktunya untuk kamu memilih."
     show pria at idle
 
     # stop music
@@ -196,7 +196,7 @@ label scene_17:
             $ renpy.sound.set_volume(0.0, channel="memories")
 
             voice voice_3_17_461_pria_misterius
-            nd_unknown_brown "Selalu saja terburu-buru, apalagi soal sake"
+            nd_unknown_brown "Selalu saja terburu-buru, apalagi soal sake."
 
             show vid_memory_mabok behind yuura:
                 blur 25
@@ -264,7 +264,7 @@ label scene_17:
 
             show pria at speaking
             voice voice_3_17_471_pria_misterius
-            nd_unknown_brown "Tidak perlu memaksakan dirimu, aku.. tidak— KITA akan siap membantumu selalu"
+            nd_unknown_brown "Tidak perlu memaksakan dirimu, aku.. tidak— KITA akan siap membantumu selalu."
             
             voice voice_3_17_472_pria_misterius
             nd_unknown_brown "Bagaimana jika kita lanjut saja?"
@@ -291,7 +291,7 @@ label scene_17:
             nd_unknown_brown "Dongeng yang selalu dibuat oleh teman-teman."
             
             voice voice_3_17_476_pria_misterius
-            nd_unknown_brown "Dan dibacakan oleh panda merah yang mereka sayangi"
+            nd_unknown_brown "Dan dibacakan oleh panda merah yang mereka sayangi."
             
             voice voice_3_17_477_pria_misterius
             nd_unknown_brown "Sungguh perpaduan yang indah, bukan?"
@@ -472,7 +472,7 @@ label scene_17:
             
             show pria at speaking
             voice voice_3_17_501_pria_misterius
-            nd_unknown_brown "Yuura perlu waktu yang lama untuk bisa mencapai tempat nya sekarang ini"
+            nd_unknown_brown "Yuura perlu waktu yang lama untuk bisa mencapai tempat nya sekarang ini."
             
             voice voice_3_17_502_pria_misterius
             nd_unknown_brown "Dia tidak pernah menyerah, selalu berusaha yang terbaik."
@@ -484,8 +484,8 @@ label scene_17:
             nd_unknown_brown "Apakah kamu pikir dia berubah karena orang-orang ingin dia berubah?"
             
             voice voice_3_17_505_pria_misterius
-            nd_unknown_brown "Tidak.. dia berubah karena dirinya mau, dia selalu berusaha menjadi dirinya sendiri"
-            
+            nd_unknown_brown "Tidak.. dia berubah karena dirinya mau, dia selalu berusaha menjadi dirinya sendiri."
+        
             voice voice_3_17_506_pria_misterius
             nd_unknown_brown "Untuk apa dirimu berusaha menjadi Yuura yang dulu?"
             
@@ -493,7 +493,7 @@ label scene_17:
             nd_unknown_brown "Untuk siapa? Dan kenapa kamu harus?"
             
             voice voice_3_17_508_pria_misterius
-            nd_unknown_brown "Demi kita? PPFFTT HAHAHAHA! YAKALI PANDA TUA ITU MIRIKIRIN KITA" 
+            nd_unknown_brown "Demi kita? PPFFTT HAHAHAHA! YAKALI PANDA TUA ITU MIRIKIRIN KITA." 
             
             voice voice_3_17_509_pria_misterius
             nd_unknown_brown "Melihatmu tersenyum saja sudah sangat membahagiakan bagi kami."
@@ -505,7 +505,7 @@ label scene_17:
             nd_unknown_brown "Jadilah dirimu sendiri dan temukan jati dirimu sendiri."
             
             voice voice_3_17_512_pria_misterius
-            nd_unknown_brown "Karena Yuura yang kukenal adalah orang yang kuat" # kasih pause setelah kata "kenal"?
+            nd_unknown_brown "Karena Yuura yang kukenal adalah orang yang kuat." # kasih pause setelah kata "kenal"?
             
             voice voice_3_17_513_pria_misterius
             nd_unknown_brown "Jadi jangan menangis... Tersenyumlah dan berbahagialah!" # kasih pause setelah jeda titik-titik?

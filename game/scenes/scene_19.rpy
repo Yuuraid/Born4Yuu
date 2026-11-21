@@ -135,7 +135,7 @@ label scene_19:
     show dityo at idle
     show dawam sad at speaking
     voice voice_4_19_707_dawam
-    nd_dawam_brown "Mazui."
+    nd_dawam_brown "{i}Mazui{/i}..."
     show dawam at idle
     show akasyah netral at speaking
     voice voice_4_19_708_akasyah

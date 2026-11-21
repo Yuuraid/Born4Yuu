@@ -15,7 +15,7 @@ label scene_16:
 
     show aergia netral at speaking
     voice voice_3_16_366_aergia
-    nd_aergia_brown "Ahahaha kebetulan banget ketemu lu disini Yuur.. ah… eh... sorry gw tau lu tuh ga nyaman kan sama gw sorry ya yuur... sorry"
+    nd_aergia_brown "Ahahaha kebetulan banget nih Yuur! {w=4} Gua ketemu lu disini .. eh…! eh iya... gua lupa kalo lu tuh sebenernya ga nyaman ya sama gua...{w=9} sorry ya Yuur... uhh sorry."
     show aergia at idle
     
     show yuura scared at speaking, face_flip
@@ -28,7 +28,7 @@ label scene_16:
     nd_aergia_brown "DIAM! ARGGH eh?"
     show aergia sad
     voice voice_3_16_369_aergia
-    nd_aergia_brown "Eh maksudnya buk..bukan.. BUKAN ARGGGH!"
+    nd_aergia_brown "Eh maksudnya buk..bukan.. BUKAN GIT- ARGGGH!"
     # nd_aergia_brown "Ah... Maaf maksudnya bukan... {nw=0.5}"
     # show aergia angry
     # extend "ARGGGH!"
@@ -53,7 +53,7 @@ label scene_16:
     nd_aergia_brown "Gua tau lu itu bukan Yuura!"
     
     voice voice_3_16_372_aergia
-    nd_aergia_brown "Yuura yang asli bakal inget sama gua!"
+    nd_aergia_brown "Yuura yang asli tuh bakal inget sama gua!"
     
     voice voice_3_16_373_aergia
     nd_aergia_brown "Yuura bakal peduli sama semua orang yang ada disini!"
@@ -74,7 +74,7 @@ label scene_16:
     with wipe_j_atas(0.2)
 
     voice voice_3_16_376_aergia
-    nd_aergia_brown "LU TUH BUKAN SIAPA-SIAPA! LU BUKAN YUURA!"
+    nd_aergia_brown "LU TUH BUKAN SIAPA-SIAPA! LU BUKAN YUURA ANJ-!"
     show aergia at idle
 
     nd_narrator_brown "Gelombang angin berhembus kencang akibat gertakannya, berhasil membuat benda-benda di sekitar berterbangan dari tempatnya."
@@ -120,7 +120,7 @@ label scene_16:
     scene cg_arc_3_scene_16_cekik_shoot_04 at looping_shake with wipe_j_atas(0.2)
 
     # show yuura hurt at speaking
-    nd_yuura_brown "Aku... Yuura...{w=2}{nw}"
+    nd_yuura_brown "Tapi... namaku... Yuura...{w=2}{nw}"
     # show yuura at idle
 
     # show aergia at speaking
@@ -145,11 +145,11 @@ label scene_16:
     # nd_aergia_brown "Tch"
     $ renpy.music.set_volume(0.2, channel="music")
     voice voice_3_16_382_aergia
-    nd_aergia_black "Ahhh ehh e sorry, ngapain gua gtu ke lu? Gua tau lu salah tapi kan...{nw}"
+    nd_aergia_black "Ah-- eh- e- sorry, ngapain gua gitu ke lu? Gua tau lu kan salah tapi kan...{nw}"
     
     $ renpy.music.set_volume(2.0, channel="music")
     voice voice_3_16_383_aergia
-    nd_aergia_black "ARGHHH TAPI INI DEMI SI YUURAAAA{nw}"
+    nd_aergia_black "ARGHHH TAPI INI KAN DEMI SI YUURAAAA-!!{nw}"
     show aergia at idle
 
     scene inn gudang outside with dissolve
@@ -404,7 +404,7 @@ label scene_16:
     
     show dawam at silhouette
     voice voice_3_16_389_dawam
-    nd_unknown_brown "Maaf atas keterlambatanku nona Yuura. Perkenalkan namaku dawam"
+    nd_unknown_brown "Maaf atas keterlambatanku nona Yuura. Perkenalkan, namaku Dawam."
         
     show yuura at speaking
     nd_yuura_brown "Kau..."
@@ -431,7 +431,7 @@ label scene_16:
     nd_aergia_black "Hahaha kenapa kalian lagi, kalian lagi hahaha."
     
     voice voice_3_16_394_aergia
-    nd_aergia_black "Udah sering lupain gua sekarang kalian malah lindungun ni orang ha?!"
+    nd_aergia_black "Udah sering lupain gua sekarang kalian malah lindungin ni orang ha?!"
     show aergia at idle
             
     show dawam at speaking
@@ -544,7 +544,7 @@ label scene_16:
 
 
     voice voice_3_16_399_aergia
-    nd_aergia_brown "Gua tahu bahwa gua ga pantes disini! TAPI KENAPA! "
+    nd_aergia_brown "Gua tahu kalau gua ga pantes disini! TAPI KENAPA! "
     
     show cg_arc_3_scene_16_aer_aura_02:
         xalign 0.5
@@ -831,7 +831,7 @@ label scene_16:
     nd_dawam_black "Dasar lalat pengganggu!{nw}"
     
     voice voice_3_16_402_aergia
-    nd_aergia_black "Hahaha, iya lalat. ya ya lalat ya \niya... TERUS KENAPA KALAU GW LALAT HAH!!.{nw}"
+    nd_aergia_black "Hahaha, iya lalat. ya ya lalat ya \niya... TERUS KENAPA KALAU GW LALAT HAH!!{nw}"
 
     # CG here
     play sound sfx_punch_1
@@ -1251,7 +1251,7 @@ label scene_16:
     # nd_aergia_brown "Tch"
     
     voice voice_3_16_407_aergia
-    nd_aergia_black "Haa... Udahlah, nyerah aja. Lagian buat apa sih bangkit bangkit terus kalau endingnya terus sama kayak gini terus ha?! Udahlah."
+    nd_aergia_black "Haa... Udahlah, nyerah aja. Lagian buat apa sih bangkit-bangkit terus kalau endingnya terus sama kayak gini terus ha?! Udahlah."
     show aergia at idle
 
     scene black with dissolve
@@ -1266,7 +1266,7 @@ label scene_16:
         zoom 3.0
     show dawam hurt_smile at center with fade
     voice voice_3_16_409_dawam
-    nd_dawam_black "Waruni na... Tapi kali ini kupastikan lebih menyenangkan!"
+    nd_dawam_black "{i}Waruni na{/i}... tapi kali ini kupastikan lebih menyenangkan!"
     # show dawam at idle
     stop sound2
 
