@@ -17,12 +17,18 @@ label scene_8:
     
     show yuura at speaking
     show shark none at face_flip, idle
-    nd_yuura_brown "Terimakasih banyak... {w} Aku selamat berkat... {w} \n(Ah sial aku tidak tahu namanya)"
+    # nd_yuura_brown "Terimakasih banyak... {w} Aku selamat berkat... {w} \n(Ah sial aku tidak tahu namanya)"
+    nd_yuura_brown "Haloo...{w} Terimakasih...{w}ermm...{w}. Kamu udah bantuin aku dari kejaran {w}aduh siapa yah tadi──"
     
     show yuura at idle
     show shark at face_flip, speaking
     voice voice_2_8_79_shark
     wd_unknown_brown "A-anee lupa sama kami?"
+
+    show yuura at speaking
+    show shark none at face_flip, idle
+    # nd_yuura_brown "Terimakasih banyak... {w} Aku selamat berkat... {w} \n(Ah sial aku tidak tahu namanya)"
+    nd_narrator_brown "(Ah sial aku tidak tahu namanya)"
     
     show yuura at speaking
     show shark at face_flip, idle
@@ -42,7 +48,13 @@ label scene_8:
     show yuura at idle
     show shark at face_flip, idle
 
-    pause
+    nd_narrator_brown "Aku membuka buku yang dia berikan kepada ku."
+    
+    nd_narrator_brown "Di situ aku menemukan banyak nama orang yang menjadi penghuni penginapan ini."
+    
+    nd_narrator_brown "Termasuk orang yang tadi mengejarku dan Sharks, orang yang membantu ku."
+
+    # pause
 
     play sound sfx_paper
     hide guest_book 
@@ -72,7 +84,7 @@ label scene_8:
     
     show yuura happy at speaking
     show shark at face_flip, idle
-    nd_yuura_brown "Ya udah makasih ya udah bantuin aku, aku udah ga denger suara apa pun dari luar. Jadi, sampai jumpa, Shark!"
+    nd_yuura_brown "Ya udah makasih ya udah bantuin aku, aku udah ga denger suara orang tadi. Jadi, sampai jumpa, Shark!"
     
     show yuura at ease_custom(right, offscreenleft, 1.5), speaking
     show shark at face_flip, idle

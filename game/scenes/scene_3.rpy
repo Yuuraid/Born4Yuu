@@ -125,6 +125,8 @@ label scene_3:
     with Flash
 
     nd_narrator_brown "Melihat sosoknya yang tinggi itu, membuatku tanpa sadar memeluknya dan langsung menangis."
+
+    nd_narrator_brown "Di tempat yang serba asing ini, anehnya kehadiran orang yang benar-benar tidak aku kenali ini justru terasa...{w} familiar."
     
     scene cg_arc_1_scene_03_shoot_5:
         # zoom 1.03
@@ -168,14 +170,14 @@ label scene_3:
     show yuura scared eff_surprise_y at right, speaking
     nd_narrator_brown "Aku terkejut bukan main."
 
-    nd_yuura_brown "(Kenapa namaku ada di sini? Bahkan cara menulisnya sama persis seperti diriku)"
+    nd_yuura_brown "(Nama ini----!)"
 
     show yuura none at idle
-    nd_narrator_brown "Aku semakin bingung dengan apa yang terjadi. Baru beberapa saat yang lalu aku dikejar oleh ratusan orang dan sekarang aku malah membawa benda berharga atas nama diriku sendiri."
+    nd_narrator_brown "Aku semakin bingung dengan apa yang terjadi. Baru beberapa saat yang lalu aku dikejar oleh ratusan orang dan sekarang aku malah menemukan barang tak ingat aku pernah ambil."
 
     nd_narrator_brown "Aku benar-benar tidak mengerti sekaligus bingung setelah melihat ukiran nama pada botol itu."
 
-    nd_narrator_brown "Tapi mana mungkin aku mampu membeli botol semahal itu, makan saja sudah sangat sulit. Mana mungkin aku punya uang untuk beli botol mewah."
+    # nd_narrator_brown "Tapi mana mungkin aku mampu membeli botol semahal itu, makan saja sudah sangat sulit. Mana mungkin aku punya uang untuk beli botol mewah."
 
     show pria happy at speaking
     voice voice_1_3_28_pria_misterius
@@ -197,7 +199,7 @@ label scene_3:
     show yuura at idle
     show pria at speaking
     voice voice_1_3_32_pria_misterius
-    wd_unknown_brown "Mungkin saja takdir"
+    wd_unknown_brown "Mungkin saja takdir."
     
     show pria at idle
     show yuura at speaking
@@ -213,12 +215,12 @@ label scene_3:
     nd_yuura_brown "Ga, ga masuk akal. Mustahil, lebih baik aku pergi keluar dan menjual botol ini."
     
     show yuura none at center with ease
-    nd_narrator_brown "Aku berjalan melewati pria misterius itu"
+    nd_narrator_brown "Aku berjalan melewati pria misterius itu."
     
     show yuura at idle
     show pria at speaking
     voice voice_1_3_36_pria_misterius
-    wd_unknown_brown "Coba saja, kalau bisa" 
+    wd_unknown_brown "Coba saja, kalau bisa." 
         # hide Unknown
         # with fade
     

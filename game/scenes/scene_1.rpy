@@ -3,6 +3,9 @@
 label scene_1:
     # scene black
 
+    # scene vid_intro
+    $ renpy.movie_cutscene("assets/videos/intro.webm")
+
     # $ quick_menu = True
     # play music start with fadein 1.0 -> define dulu
     # play sound "audio/sfx/knock_door.ogg"

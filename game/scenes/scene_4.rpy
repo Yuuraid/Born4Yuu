@@ -61,7 +61,7 @@ label scene_4:
     show haruto at speaking
     show yuura none at idle
     voice voice_1_4_41_haruto
-    wd_unknown_brown "Oh begitukah? bukannya jam segini harusnya kamu masih di penginapan ya?"
+    wd_unknown_brown "Oh begitukah? Bukannya jam segini harusnya kamu masih di penginapan ya?"
     
     show haruto at idle
     show yuura eff_sweat_w at speaking

@@ -30,6 +30,7 @@ image hutan pohon = "assets/bg/Hutan-2.png"
 image hutan kuil entrance_2 = "assets/bg/Pintu-depan-penginapan-1.png"
 image hutan kuil = "assets/bg/Kuil-Kecil-di-hutan.png"
 image garden_1 = "assets/bg/Taman-1.png"
+image garden_1_bush = "assets/bg/Taman-1-bush.png"
 image garden_2 = "assets/bg/Taman-2.png"
 image arena = "assets/bg/Arena.png"
 image whiteroom = "assets/bg/Whiteroom.png"
@@ -59,6 +60,8 @@ image vid_memory_nyanyi = Movie(play="assets/videos/memories/nyanyi.webm", size=
 image vid_memory_hutang = Movie(play="assets/videos/memories/hutang.webm", size=(1920, 1080), loop=True, channel="memories")
 image vid_memory_pleaseework = Movie(play="assets/videos/memories/pleaseework_2.webm", size=(1920, 1200))
 image vid_memory_totsu = Movie(play="assets/videos/memories/memory_totsu.webm")
+
+# image vid_intro = Movie(play="assets/videos/intro.webm", size=(1920, 1200))
 
 # tertawa.webm
 # senyum.webm

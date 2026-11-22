@@ -104,12 +104,12 @@ label scene_10:
             stop music
             return
 
-        "A-aku beneran ga sengaja… sumpah, aku tadi niatnya cuma mau bikin kamu ngejauh bukan buat ngancurin karya yang kamu buat.":
+        "A-aku beneran ga sengaja… sumpah, aku tadi niatnya cuma mau ngelewatin kamu bukan buat ngancurin karya yang kamu buat.":
             $ dityo_route = "Good end"
             play music bgm_scene3_pelukan volume 1.0 loop
             show yuura sad eff_pale at speaking
             show dityo at idle, silhouette
-            nd_yuura_brown "A-aku beneran ga sengaja... Sumpah, aku tadi  niatnya cuma mau bikin kamu ngejauh bukan buat ngancurin karya yang kamu buat."
+            nd_yuura_brown "A-aku beneran ga sengaja… sumpah, aku tadi niatnya cuma mau ngelewatin kamu bukan buat ngancurin karya yang kamu buat."
             
             show dityo at speaking, silhouette
             show yuura none at idle
@@ -121,7 +121,9 @@ label scene_10:
             
             show dityo sad at idle, silhouette
             show yuura at idle
-            nd_narrator_brown "Aku ingat sebelumnya orang ini ada di buku tamu, namanya Dityo."
+            nd_narrator_brown "Benar... aku ingat orang ini."
+            
+            nd_narrator_brown "Nama orang ini juga ada di buku tamu yang sharks berikan padaku.{w} Namanya adalah..."
             
             show yuura at speaking
             show dityo at idle with dissolve
@@ -130,7 +132,7 @@ label scene_10:
             show dityo at speaking
             show yuura none at idle
             voice voice_2_10_118_dityo
-            nd_dityo_brown "Entahlah Anee... Aku capek banget... Bisakah kamu biarkan aku sendiri?"
+            nd_dityo_brown "Entahlah Anee... Aku capek banget... Bisa nggak kamu biarkan aku sendiri?"
             
             show yuura at speaking
             show dityo at idle
@@ -299,8 +301,15 @@ label scene_10:
             # nd_narrator_brown "Aku melesat dengan hiu itu pergi dari lorong itu."
             
             show axia sassy eff_angry at speaking
-            voice voice_2_10_135_axiaregis
-            nd_axiaregis_brown "Hmph! Beraninya hiu kecil ituh mengganggu rencanakuh! Awas kamu yah! IHHH KECOAKKKK!!!"
+            voice voice_2_10_135_axiaregis_1
+            nd_axiaregis_brown "Hmph! Beraninya hiu kecil ituh mengganggu rencanakuh! Awas kamu yah!{nw}"
+            
+            show layer master at shake
+            show axia hurt eff_pale at speaking
+            voice voice_2_10_135_axiaregis_2
+            extend " IHHH KECOAKKKK!!!{nw}"
+
+            hide axia with easeoutright
 
             stop music fadeout 1.0
             scene black with fade
@@ -432,7 +441,7 @@ label scene_10:
                     
                     show yuura at speaking
                     show shark at idle
-                    nd_yuura_brown "A-aku ga terlalu inget"
+                    nd_yuura_brown "A-aku ga terlalu inget."
                         # scene black with dissolve(1.0)
                         # show yuura at center with dissolve(1.0)
                     

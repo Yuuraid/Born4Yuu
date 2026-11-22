@@ -134,52 +134,98 @@ label scene_11:
     # hide axia with dissolve
     # hide aergia with dissolve
 
-    scene garden_1 with dissolve
+    scene garden_1     
+    show extras_1 netral eff_realization at custom_sprite_pos(y=0.65):
+        zoom 0.2
+    
+    show extras_3 netral at custom_sprite_pos(x=-0.2, y=0.5):
+        zoom 0.3
+        rotate -210
+
+    show garden_1_bush
+    
+    show extras_2 netral eff_realization at custom_sprite_pos(x=0.37, y=0.73):
+        zoom 0.23
+        xzoom -1.0
+
+    with dissolve
     $ renpy.music.set_volume(1.0, channel="music")
     play music bgm_scene1_start volume 1.0 loop
 
-    show yuura netral at ease_custom(offscreenright, offscreenleft, 20.0)
+    show yuura netral at custom_sprite_pos(x=1.5) with easeinright
 
-    nd_narrator_brown "Semakin lama aku berkeliling, semakin aku melihat banyak orang-orang aneh di sekitarku."
-    
-    nd_narrator_brown ", ada seseorang yang sangat menyukai gundam bernama Ivan."
-    
-    nd_narrator_brown "Ada juga seseorang om-om berbaju batik putih yang sedang berkebun. Terus ada seorang anak laki-laki yang sedang berbicara dengan kuda nil? Ah entahlah aku tidak mengerti lagi."
-    
-    # nd_narrator_brown "Dari jauh terdengar suara orang sedang bertengkar dari dalam kamar. Mereka bertengkar karena bermain kartu."
-    
-    # camera:
-    #     # Initial position (zoomed out at the right side)
-    #     zoom 2.2
-    #     xalign 0.0
-    #     yalign 0.5
-        
-    #     # Pan across to the left over 5 seconds
-    #     ease 15.0 xalign 0.0
-    # with dissolve
-    
-    # nd_nicholas_brown "Oi Lark! Cepet jalan."
-    
-    # nd_lark_brown "Sabar, China!"
-    
-    # nd_nicholas_brown "Kau juga China, anjeng!"
-    
-    # nd_lark_brown "Mana ada aku orang China, anjeng!"
-    
-    # nd_yc_brown "Udah-udah, kalian berdua sesama china ngapain berantem..."
 
-    # camera:
-    #     zoom 1.0
-    #     xalign 0.0
-    #     yalign 0.0
-    # with dissolve
+    nd_narrator_brown "Sembari berkeliling mencari jalan keluar, aku jadi tersadar denan seberapa janggalnya tempat ini."
 
-    # show yuura netral at center, idle
-    nd_narrator_brown "Aku benar-benar bingung dengan situasi di tempat ini, terkadang mereka terlihat santai dan tenang."
+    nd_narrator_brown "Tidak peduli kemana pun aku pergi, selalu ada saja kejadian yang membuat orang geleng kepala."
+
+    extend " contohnya:"
+
+    show yuura none at idle
+    show extras_1 netral at speak_in_mind
+    show extras_2 netral at idle
+    voice voice_2_11_163_josua
+    nd_unknown_brown "Weh ber! lagi ngapain?"
+
+    show extras_2 netral at speak_in_mind
+    show extras_1 netral at idle
+    voice voice_2_11_164_ibe
+    nd_unknown_brown "Nyari orang bun. Keliatan Ivan sama Ryan ga bun?"
+
+    show extras_1 netral at speak_in_mind
+    show extras_2 netral at idle
+    voice voice_2_11_163_josua
+    nd_unknown_brown "Oh Ryan tadi lagi jalan-jalan sama kuda nil kesana."
+
+    show extras_1 netral at idle
+    show yuura scared eff_pale at speaking
+    nd_yuura_brown "Kuda nil...? {w}Jalan-jalan...?"
+
+    show yuura netral none at idle
+    show extras_1 netral at speak_in_mind
+    show extras_2 netral at idle
+    voice voice_2_11_163_josua
+    nd_unknown_brown "Untuk Ivan... liat aja ke belakang. Gund*mnya masuk ke rerumputan, katanya tadi dia yakin liat robotnya bisa terbang jadi cobalah dia lempar."
+
+    show extras_1 netral at idle
+    show yuura netral at speak_in_mind
+    nd_yuura_brown "..."
+
+    show yuura none at idle
+    nd_narrator_brown "Aku pikir buku tamu ini melebih-lebihkan dengan berbagai macam hobi dan detail absurd tentang pengunjungnya. Tapi tak kusangka bahwa yang ditulis benar-benar sama dengan aslinya."
+
+    show yuura happy at speak_in_mind
+    nd_narrator_brown "Tapi melihat mereka, ada rasa hangat yang timbul di dadaku."
+
+    # hide yuura with easeoutleft
+
+    # nd_narrator_brown "Melihat rangkaian kejanggalan ini, aku memutuskan untuk kembali berjalan."
+
+    show yuura happy eff_sigh at speaking
+    nd_yuura_brown "...tempat gak jelas."
+
+    show yuura at idle
+
+    # ===
+
+    # nd_narrator_brown "Semakin lama aku berkeliling, semakin aku melihat banyak mahkluk aneh disekitar sini."
     
-    nd_narrator_brown "Tapi terkadang mereka terlihat sangat ricuh."
+    # nd_narrator_brown ", ada seseorang yang sangat menyukai gundam bernama Ivan."
     
-    nd_narrator_brown "Aku terus bergerak, tanpa memperdulikan apapun di sekitarku. Aku hanya ingin beristirahat dari semua keanehan ini."
+    # nd_narrator_brown "Ada juga seseorang om-om berbaju batik putih yang sedang berkebun. Terus ada seorang anak laki-laki yang sedang berbicara dengan kuda nil? Ah entahlah aku tidak mengerti lagi."
+    
+    # # # show yuura netral at center, idle
+    # nd_narrator_brown "Aku benar-benar bingung dengan situasi di tempat ini, terkadang mereka terlihat santai dan tenang."
+    
+    # show extras_1 netral none
+    # show extras_2 netral none
+    # show extras_1 netral eff_yelling
+    # show extras_2 netral eff_yelling
+
+    # nd_narrator_brown "Tapi terkadang mereka terlihat sangat ricuh."
+    
+    # nd_narrator_brown "Aku terus bergerak, tanpa memperdulikan apapun di sekitarku. Aku hanya ingin beristirahat dari semua keanehan ini."
+
     stop music
     jump scene_12
 

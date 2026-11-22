@@ -236,7 +236,7 @@ label scene_15:
             # show rian angry at left, silhouette
             stop music fadeout 1.0
             voice voice_3_15_282_rian
-            nd_unknown_brown "Tidak jika aku membantu! Aku akan mengeluarkan kartuku. Fathanil!!!!"
+            nd_unknown_brown "Tidak jika aku membantu! Aku akan mengeluarkan kartuku, Fathanil!!!!"
             
             show axia at speaking
             voice voice_3_15_283_axiaregis
@@ -1133,11 +1133,11 @@ label scene_15:
 
             stop music fadeout 2.0
 
-            nd_narrator_black "Axiaregis datang dengan kecepatan penuh, dia membawa seluruh pasukan anak kecil yang jumlahnya ada ratusan. Membuatku tak punya pilihan lain selain lari lagi."
+            nd_narrator_black "Axiaregis datang dengan kecepatan penuh, dia membawa seluruh pasukan anak kecil yang jumlahnya ada ratusan. Memaksaku untuk pergi dari tempat ini."
             
-            nd_narrator_black "Pada titik ini aku sudah sangat muak, mengapa diriku hanya berlari terus menerus. Apa aku tak bisa melakukan apapun seperti Yuura yang mereka kenal?"
+            nd_narrator_black "Dengan situasi yang seperti ini, aku harus cepat pergi dan menyelematkan diri. Botol itu bisa ku kembalikan nanti, yang paling penting sekarang ada lah pergi ke luar─────"
             
-            nd_narrator_black "Apa aku hanya akan terus seperti ini sampai aku menemukan jalan keluarnya? Aku sudah sangat lelah dan ingin segera pergi dari tempat ini."
+            # nd_narrator_black "Apa aku hanya akan terus seperti ini sampai aku menemukan jalan keluarnya? Aku sudah sangat lelah dan ingin segera pergi dari tempat ini."
 
             jump scene_16
 

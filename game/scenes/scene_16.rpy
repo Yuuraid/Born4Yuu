@@ -5,14 +5,15 @@ label scene_16:
     scene inn halaman
     play music bgm_scene15_judgment volume 1.0 loop
     $ renpy.music.set_volume(0.3, channel="music")
-    show aergia netral at idle, right
+    show aergia psycho at idle, right
     with Dissolve(1.0)
 
     show yuura scared at face_flip, idle, left with easeinleft
 
         # show halaman belakang penginapan 
-    nd_narrator_brown "Setelah keluar dari pintu dan berjalan beberapa langkah, langkahku terhenti. Tepat berada dihadapanku, Aergia berdiri dengan raut wajah yang tak dapat ku mengerti."
+    nd_narrator_brown "───── hanya untuk menemukan Aergia sudah berdiri disana,  dengan raut wajah yang tak dapat ku mengerti."
 
+    # TODO: split this so he can change faces  
     show aergia netral at speaking
     voice voice_3_16_366_aergia
     nd_aergia_brown "Ahahaha kebetulan banget nih Yuur! {w=4} Gua ketemu lu disini .. eh…! eh iya... gua lupa kalo lu tuh sebenernya ga nyaman ya sama gua...{w=9} sorry ya Yuur... uhh sorry."
@@ -172,6 +173,7 @@ label scene_16:
     $ renpy.music.set_volume(2.5, channel="music")
     # show aergia at speaking
 
+    # TODO: make this shake
     show cg_arc_3_scene_16_balikin_1 with dissolve
     voice voice_3_16_384_aergia
     nd_aergia_black "BALIKIN YUURA YG GUA KENAL SEKARANG JUGA!{nw}"

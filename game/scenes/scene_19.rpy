@@ -223,7 +223,7 @@ label scene_19:
     scene white with dissolve
 
     # use navigation
-    show screen centered_typewriter("Kami adalah keluarga", speed=20) with dissolve
+    show screen centered_typewriter("Kita adalah keluarga", speed=20) with dissolve
 
     pause
 
@@ -231,19 +231,39 @@ label scene_19:
 
     pause
 
-    show screen centered_typewriter("Meskipun banyak orang \ndatang dan pergi.", speed=15) with dissolve
+    show screen centered_typewriter("Banyak orang \ndatang dan pergi.", speed=15) with dissolve
 
     pause
 
-    show screen centered_typewriter("Tapi banyak pengunjung baru yang datang dan mengisi penginapan dengan warna mereka.", speed=15) with dissolve
+    show screen centered_typewriter("Namun pengunjung-\npengunjung baru datang dan mengisi penginapan dengan \nwarna yang unik,", speed=15) with dissolve
 
     pause
 
-    show screen centered_typewriter("Meskipun begitu, kami tetap menjadi diri kami.", speed=15) with dissolve
+    show screen centered_typewriter("dan begitulah \nkita tetap menjadi diri kita.", speed=15) with dissolve
 
     pause
 
-    show screen centered_typewriter("Menjadi Yuuraid \nkesayangan Yuura Yozakura.", speed=15) with dissolve
+    show screen centered_typewriter("bagaimanapun... Yuura.", speed=15) with dissolve
+
+    pause
+
+    show screen centered_typewriter("bagaimanapun (wujud) Yuura.", speed=15) with dissolve
+
+    pause
+
+    show screen centered_typewriter("bagaimanapun (pilihan) Yuura.", speed=15) with dissolve
+
+    pause
+
+    show screen centered_typewriter("bagaimanapun (adanya) Yuura.", speed=15) with dissolve
+
+    pause
+
+    show screen centered_typewriter("Kita tetap..", speed=15) with dissolve
+
+    pause
+
+    show screen centered_typewriter("menjadi Yuuraid yang terus \nmemilih Yuura Yozakura.", speed=15) with dissolve
 
     pause
 

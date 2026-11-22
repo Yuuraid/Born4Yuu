@@ -7,14 +7,14 @@ label scene_13:
 
     show yuura netral at face_flip, ease_custom(offscreenleft, center, 7.0)
 
-    nd_narrator_brown "Hari pun mulai gelap, rasanya kepalaku lebih baik dibanding sebelumnya. Aku berjalan menuju kamarku untuk berleha-leha."
+    nd_narrator_brown "Aku berjalan menuju kamar itu untuk mengembalikan botol itu ke tempat semula."
     
     $ renpy.music.set_volume(1.0, channel="music")
     play music bgm_scene1_foto_foto_kenangan fadein 1.0 loop
 
     nd_narrator_brown "Tapi entah mengapa aku banyak sekali mendengar hal-hal aneh di sekitar, mereka tampak seperti sedang membicarakanku."
     
-    nd_narrator_brown "Aku bingung bagaimana berita ini bisa sangat cepat menyebar dalam waktu beberapa jam saja? Aku tidak mengerti lagi dengan tempat ini."
+    nd_narrator_brown "Apa jangan-jangan fakta bahwa aku berpura-pura menjadi Yuura sudah tersebar?"
     
     nd_narrator_brown "Tepat ketika aku sedang melamun, aku mendengar suara langkah kaki yang cepat menghampiriku."
 
@@ -35,7 +35,7 @@ label scene_13:
     nd_narrator_brown "Seseorang melancarkan tendangan ke arahku.{w=0.5}{nw}" 
     
     scene inn resepsionis
-    show yuura scared at face_flip, center
+    show yuura scared eff_exclamation_r at face_flip, center
     pause 0.2
     play sound sfx_action_whoosh_scene13_16
     show yuura at face_flip, ease_custom(center, left, 0.25)
@@ -60,7 +60,7 @@ label scene_13:
     show dityo angry at right, idle with easeinright
     
     pause 0.5
-    show akasyah at speaking
+    show akasyah eff_angry at speaking
     voice voice_3_13_197_akasyah
     nd_akasyah_brown "BRENGSEK SEIYA!!!"
     show akasyah at idle
@@ -70,9 +70,9 @@ label scene_13:
     nd_dityo_brown "Berhasil kabur lagi?"
     show dityo at idle
             
-    show akasyah at speaking
+    show akasyah none at speaking
     voice voice_3_13_199_akasyah
-    nd_akasyah_brown "Hah? Kabur? Dari hadapan gue? Ga mungkin! Ga bakal gua biarin si tua itu kabur dari gua. Gimana Dit? Lu udah nemu belum kelemahannya si Seiya?"
+    nd_akasyah_brown "Hah? Kabur? Dari gue? Ga mungkin! Ga bakal gua biarin si tua itu kabur dari gua. Gimana Dit? Lu udah nemu belum kelemahannya si Seiya?"
     show akasyah at idle
     
     show dityo at speaking
@@ -80,9 +80,17 @@ label scene_13:
     nd_dityo_brown "Udah. Menurut pengamatanku, Seiya hanya dapat berpindah dari radius 20 meter dari tempat ia terakhir berdiri."
     show dityo at idle
             
-    show akasyah at speaking
-    voice voice_3_13_202_akasyah
-    nd_akasyah_brown "20 meter? Ya elah segitu doang mah bisa gua kejar! Beraninya si Seiya itu merusak semua rencana gua!"
+    show akasyah eff_question_mark_r at speaking
+    voice voice_3_13_202_akasyah_1
+    nd_akasyah_brown "HAH 20 METER?{nw}" 
+    
+    show akasyah smug eff_sparkle at speaking
+    voice voice_3_13_202_akasyah_2
+    extend " Ya elah segitu doang mah bisa gua kejar!{nw}"
+    
+    show akasyah angry eff_angry at speaking
+    voice voice_3_13_202_akasyah_3
+    extend " Beraninya si Seiya itu merusak rencana gua!"
     
     play sound sfx_action_whoosh_scene13_16
     hide akasyah 
@@ -93,10 +101,16 @@ label scene_13:
     nd_narrator_brown "Akasyah berlari meninggalkan Dityo sendirian."
     
         # play krik krik
-    show dityo at speaking
-    voice voice_3_13_203_dityo
-    nd_dityo_brown "WOI! TUNGGU, EMANGNYA LU TAU DIA LARI KE... {w=0.5}Ah sudahlah, tidak ada untungnya mengharapkan dia untuk bekerja sama."
+    show dityo eff_exclamation_r at speaking
+    voice voice_3_13_203_dityo_1
+    nd_dityo_brown "WOI! TUNGGU, EMANGNYA LU TAU DIA LARI KE...{nw}"
+    
+    voice voice_3_13_203_dityo_2
+    show dityo eff_sigh at speaking
+    extend " Ah sudahlah, tidak ada untungnya mengharapkan dia untuk bekerja sama."
     show dityo at idle
+    play sound sfx_action_whoosh_scene13_16
+    hide dityo with moveoutright
     # stop music
     jump scene_14
 

@@ -132,11 +132,11 @@ label scene_17:
 
     # stop music
     menu siap:
-        "Aku belum siap":
+        "Apa maksudmu?":
             $ renpy.sound.set_volume(0.0, channel="memories")
             # play music bgm_scene3_pria_asing volume 1.0 loop
             show yuura at speaking
-            nd_yuura_brown "Aku belum siap."
+            nd_yuura_brown "Apa maksudmu?"
             show yuura at idle
 
             show pria at speaking
@@ -424,7 +424,9 @@ label scene_17:
                 ease 0.5 yalign 0.5
 
 
-            nd_narrator_brown "Pria itu memperlihatkan sebuah foto, di mana begitu banyak orang menyoraki diriku."
+            nd_narrator_brown "Pria itu memperliahtkan sebuah foto, di mana begitu banyak orang bersorak di depan panggung."
+
+            nd_narrator_brown "Meski aku tahu jelas bahwa orang yang mereka soraki adalah aku, aku jelas-jelas tidak memiliki ingatan tentang itu."
             
             play sound sfx_paper
             hide foto_seratus_hal 
@@ -441,9 +443,12 @@ label scene_17:
             show yuura at speaking
             nd_yuura_brown "Aku... Aku tak bisa..."
             
-            nd_yuura_brown "Aku tak bisa seperti Yuura yang lama, aku tak bisa... Sama sekali tidak bisa."
+            nd_yuura_brown "Aku hanya seorang pencuri biasa yang terjebak ditubuh orang yang kalian sebut YUURA"
+
+            nd_yuura_brown "AKU BUKAN DIA, aku tak bisa... Sama sekali tidak bisa."
             
-            nd_yuura_brown "Aku berbeda! Aku tidak bisa menjadi orang lain!"
+            nd_yuura_brown "Meski aku berusaha sekeras mungkin untuk menjadi Yuura sekarang, aku gak akan bisa jadi Yuura yang kalian kenal sejak lama!"
+
             show yuura at idle
             
             show pria at speaking
@@ -472,7 +477,7 @@ label scene_17:
             
             show pria at speaking
             voice voice_3_17_501_pria_misterius
-            nd_unknown_brown "Yuura perlu waktu yang lama untuk bisa mencapai tempat nya sekarang ini."
+            nd_unknown_brown "Yuura perlu waktu yang lama untuk bisa mencapai tempatnya sekarang ini."
             
             voice voice_3_17_502_pria_misterius
             nd_unknown_brown "Dia tidak pernah menyerah, selalu berusaha yang terbaik."
@@ -540,10 +545,10 @@ label scene_17:
             show pria at idle
             # stop music
             menu keputusan:
-                "Pergi dari Inn untuk selamanya":
+                "Aku tidak bisa":
                     play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
                     show yuura at speaking
-                    nd_yuura_brown "Aku tak bisa."
+                    nd_yuura_brown "Aku tidak bisa."
                     show yuura at idle
                     
                     show pria at speaking
@@ -632,19 +637,27 @@ label scene_17:
                     show yuura at speaking
                     nd_yuura_brown "Terimakasih..."
                     show yuura at idle
-                    
+
+                    stop music
+                    $ renpy.movie_cutscene("assets/videos/intro.webm")
+
                     scene black with dissolve
 
-                    nd_narrator_black "Aku terbangun tepat di hadapan orang-orang yang sudah tidak sadarkan diri, hujan mulai turun menutupi langit yang cerah."
+                    nd_narrator_black "Aku kembali terbangun dari tidur ku."
                     
-                    nd_narrator_black "Semuanya menjadi sangat kelabu dan menyakitkan, aku berjalan melewati semua orang dan pergi keluar penginapan ini."
+                    nd_narrator_black "Cahaya bulan menyisip masuk dari celah gerigi menara jam, menyinari meja dengan tumpukan kertas dan peralatan yang berserak di atasnya."
                     
-                    nd_narrator_black "Tanpa melihat ke belakang dan tanpa menyesali semuanya. Aku harap aku tak akan kembali kesini, meskipun hatiku masih menginginkannya."
+                    nd_narrator_black "Bekas luka yang ia terima dari mimpi panjangnya masih terasa. Mungkin mimpi itu memang nyata."
+
+                    nd_narrator_black "Tapi, seperti keinginannya, dia sudah kembali ke tempatnya. Tanpa tahu nasib tempat yang  sempat ia singgahi, ataupun nasib dari orang-orang yang ia tinggalkan."
+
+                    nd_narrator_black "Meski ingin tahu ataupun pergi, kini keduanya sudah tidak mungkin terjadi."
+
                     # ------------ END ------------
 
                     $ quick_menu = False
 
-                    $ renpy.call_screen("game_over_screen", reason_text="Yuura Pergi.")
+                    $ renpy.call_screen("game_over_screen", reason_text="Yuura kembali ke dunianya, tapi kita tidak tau dengan dunia yang dia tinggalkan.")
                     
                     return
                 "Aku tidak mengerti...":
@@ -655,7 +668,7 @@ label scene_17:
                     
                     nd_yuura_brown "Aku tidak mengerti... Sama sekali tidak mengerti dengan ini semua..."
                     
-                    nd_yuura_brown "Mengapa kalian melakukan semua ini hanya demi diriku?"
+                    nd_yuura_brown "Kenapa kalian melakukannya sejauh itu?"
                     
                     nd_yuura_brown "Maksudku... Ah! Apasih..."
                     # show yuura at idle
@@ -668,25 +681,25 @@ label scene_17:
                     pause 0.5
 
                     # This have CG
-                    nd_narrator_brown "Air mataku turun perlahan, tidak mengerti mengapa semuanya terjadi. Mengapa semua orang mengejarku dan mengapa ada orang yang ingin melindungiku. Aku sungguh tidak mengerti apa-apa."
+                    nd_narrator_brown "Air mata ku turun perlahan. Masih dilanda bingung. Mengapa mereka mengejarku? Mengapa mereka melindungiku? Mengapa mereka mencariku? Aku benar-benar tidak tahu apa-apa."
                     
                     scene cg_arc_3_scene_17_shoot_04 with dissolve
 
-                    nd_narrator_brown "Sampai sekarang pun aku hanya melarikan diri, tanpa memahami apa-apa."
+                    nd_narrator_brown "Sampai sekarang pun aku hanya melarikan diri, tanpa memahami apapun."
 
                     scene cg_arc_3_scene_17_shoot_03 with dissolve
                     # show yuura at speaking
-                    nd_yuura_brown "Apa sih yang kalian lakukan..."
+                    nd_yuura_brown "Apa sih yang kalian inginkan dariku..."
                     
-                    nd_yuura_brown "Apa kalian tidak takut bahwa aku akan pergi meninggalkan kalian?"
-                    
-                    nd_yuura_brown "Apa kalian tidak takut ketika aku berubah menjadi seseorang yang kalian tidak kenali?"
+                    nd_yuura_brown "Apa kalian tidak takut ketika Yuura berubah menjadi seseorang yang kalian tidak kenali?"
+
+                    nd_yuura_brown "Gimana kalau Yuura yang kalian lindungi itu palsu?"
                     
                     with hpunch
 
-                    nd_yuura_brown "KENAPA KALIAN MELAKUKAN INI?"
+                    nd_yuura_brown "KENAPA KALIAN TETAP BEGINI PADAHAL KALIAN SEBENARNYA PUN CURIGA DAN RAGU PADAKU?"
                     
-                    nd_yuura_brown "Kenapa kalian ga bisa melupakan diriku saja?"
+                    nd_yuura_brown "Kenapa kalian...{w} masih mau menerimaku?"
                     # show yuura at idle
                     
                     scene cg_arc_3_scene_17_shoot_04 with dissolve
@@ -719,7 +732,7 @@ label scene_17:
                     show pria at idle
 
                     show yuura at speaking
-                    nd_yuura_brown "Bagaimana bisa? Hanya karena aku mirip dengan orang yang kalian kenal, kalian langsung melakukan apapun demiku!" # demiku atau demi aku?
+                    nd_yuura_brown "Bagaimana bisa? Hanya karena aku mirip dengan orang yang kalian kenal, kalian langsung melakukan apapun demi diriku!" # demiku atau demi aku?
                     
                     nd_yuura_brown "Apa kalian itu tolol atau gimana sih!"
                     show yuura at idle
@@ -825,9 +838,10 @@ label scene_17:
                     show yuura at idle
                     
                     show pria at speaking
-                    voice voice_3_17_582_pria_misterius
+                    voice voice_3_17_582_pria_misterius_1
                     # TODO: please redo this part
                     nd_pria_brown "Panggil saja aku Yuuraid." # kasih pause setelah jeda titik-titik?
+
                     show pria at idle
 
                     show yuura:
@@ -921,8 +935,11 @@ label scene_17:
             show yuura at speaking
             nd_yuura_brown "Terimakasih..."
             show yuura at idle
+
+            stop music
+            $ renpy.movie_cutscene("assets/videos/intro-reversed-1.5-faded.webm")
             
-            scene black with fade
+            scene black
 
             nd_narrator_black "Aku terbangun tepat di hadapan orang-orang yang sudah tidak sadarkan diri, hujan mulai turun menutupi langit yang cerah."
             

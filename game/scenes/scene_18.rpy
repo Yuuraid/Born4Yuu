@@ -601,17 +601,17 @@ label scene_18:
     scene cg_arc_3_scene_17_shoot_02 with dissolve
     pause 0.2
     scene cg_arc_3_scene_17_shoot_01 with dissolve
-    nd_yuura_brown "Maaf aku ga bisa jadi Yuura yang kalian kenal."    
+    nd_yuura_brown "Maaf kalau aku bukan Yuura yang kalian kenal."    
     
     scene cg_arc_3_scene_17_shoot_02 with dissolve
     pause 0.2
     scene cg_arc_3_scene_17_shoot_01 with dissolve
-    nd_yuura_brown "Maaf bahwa aku berubah."
+    nd_yuura_brown "Maaf kalau aku berubah."
     
     scene cg_arc_3_scene_17_shoot_02 with dissolve
     pause 0.2
     scene cg_arc_3_scene_17_shoot_01 with dissolve
-    nd_yuura_brown "Maaf kalau aku selalu mengecewakan para Yuuraid."
+    nd_yuura_brown "Maaf kalau aku selalu mengecewakan kalian."
     
     scene cg_arc_3_scene_17_shoot_02 with dissolve
     nd_yuura_brown "Maaf."

@@ -968,6 +968,51 @@ layeredimage haruto:
                 xzoom=-1.0, zoom=0.2, xpos=0.28, ypos=0.27, rotate=-60
             )
 
+layeredimage extras_1:
+
+    group expression:
+        attribute netral "assets/sprite/Extras/extras_full_netral.png"
+
+    attribute none default Null() # Default state (nothing rendered)
+    attribute eff_realization:
+        Transform(
+            Movie(play="assets/effects/realization01.webm", side_mask=True, loop=True),
+            xzoom=-1.0, zoom=0.5, xpos=0.1, ypos=0.1
+        )
+    attribute eff_yelling:
+            Transform(
+                Movie(play="assets/effects/pain01.webm", side_mask=True, loop=True),
+                xzoom=-1.0, zoom=0.4, xpos=0.1, ypos=0.5
+            )
+
+layeredimage extras_2:
+
+    group expression:
+        attribute netral "assets/sprite/Extras/extras_full_netral.png"
+
+    attribute none default Null() # Default state (nothing rendered)
+    attribute eff_realization:
+        Transform(
+            Movie(play="assets/effects/realization01.webm", side_mask=True, loop=True),
+            xzoom=-1.0, zoom=0.5, xpos=0.1, ypos=0.1
+        )
+    attribute eff_yelling:
+            Transform(
+                Movie(play="assets/effects/pain01.webm", side_mask=True, loop=True),
+                xzoom=-1.0, zoom=0.4, xpos=0.1, ypos=0.5
+            )
+
+layeredimage extras_3:
+
+    group expression:
+        attribute netral "assets/sprite/Extras/extras_full_netral.png"
+
+    attribute eff_realization:
+        Transform(
+            Movie(play="assets/effects/realization01.webm", side_mask=True, loop=True),
+            xzoom=-1.0, zoom=0.5, xpos=0.1, ypos=0.1
+        )
+
 layeredimage ibe:
 
     group expression:

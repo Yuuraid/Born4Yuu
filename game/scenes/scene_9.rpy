@@ -40,7 +40,7 @@ label scene_9:
     
     show yuura at left, face_flip with ease
     show akasyah at idle
-    nd_narrator_brown "Dia terlihat sangat kesal karena minumannya tumpah di baju kesayangannya."
+    nd_narrator_brown "Dia terlihat sangat kesal karena minumannya tumpah dilantai."
     
     show yuura angry at speaking
     nd_yuura_brown "Aduuhh apaan sih! Ngapain coba berdiri di tengah jalan, dikira ini jalan punya nenek moyangnya apa gimana!?"

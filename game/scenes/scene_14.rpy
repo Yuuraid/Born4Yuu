@@ -14,11 +14,11 @@ label scene_14:
     nd_yuura_brown "ADUH..."
     show yuura at idle
     
-    show seiya netral at left, speaking, flip_image
+    show seiya angry eff_exclamation_r at left, speaking, flip_image
     with moveinleft
     voice voice_3_14_205_seiya
     nd_unknown_brown "Ane gapapa?"
-    show seiya at idle
+    show seiya none at idle
     
     show yuura at right
     with move
@@ -26,18 +26,18 @@ label scene_14:
     
     nd_narrator_brown "Menyadari bahwa itu adalah Seiya, orang sudah membantuku sebelumnya, aku segera mendekat meski sedikit ragu."
     
-    show yuura happy at speaking
+    show yuura happy eff_surprise_y at speaking
     nd_yuura_brown "Seiya!"
     
     nd_yuura_brown "Makasih banget udah nolongin aku dari tendangan itu. Bisa mampus aku kalau bukan karena kamu."
-    show yuura at idle
+    show yuura none at idle
         
     show seiya at speaking
     voice voice_3_14_208_seiya
     nd_seiya_brown "Aman aja, Anee. Tapi saranku sekarang kamu lari."
     show seiya at idle
         
-    show yuura netral at speaking
+    show yuura netral eff_question_mark_y at speaking
     nd_yuura_brown "Kenapa emangnya?"
     show yuura at idle
 
@@ -129,32 +129,32 @@ label scene_14:
     scene inn lorong malam
     show yuura sad at idle, custom_sprite_pos(x=0.8)
     show seiya hurt at idle, right
-    show akasyah angry at left, speaking
+    show akasyah angry eff_yelling at left, speaking
     with fade
     
     voice voice_3_14_211_akasyah
     nd_akasyah_brown "HAHH KETEMU LU BANGSAT!"
-    show akasyah at idle
+    show akasyah none at idle
         
     # show seiya angry at flip_image, speaking
     # voice voice_3_14_212_seiya
     # nd_seiya_brown "FAHH"
     
     voice voice_3_14_213_seiya
-    show seiya at speaking
+    show seiya angry eff_angry at speaking
     nd_seiya_brown "Apa yang kau coba lakukan!?"
     
     voice voice_3_14_214_seiya
     nd_seiya_brown "Apa kau ga capek bikin masalah terus buat Yuura?"
-    show seiya at idle
+    show seiya none at idle
             
-    show akasyah at speaking
+    show akasyah eff_angry at speaking
     voice voice_3_14_215_akasyah
     nd_akasyah_brown "MASALAH??? LU PIKIR APA YANG LU LAKUIN SEKARANG?"
     
     voice voice_3_14_216_akasyah
     nd_akasyah_brown "MINGGIR! JANGAN GANGGU RENCANA GUA!"
-    show akasyah at idle
+    show akasyah none at idle
         
     show seiya at speaking
     voice voice_3_14_217_seiya
@@ -200,20 +200,22 @@ label scene_14:
     hide dark_overlay
     with dissolve
 
-    show akasyah at speaking
+    show akasyah eff_yelling at speaking
     voice voice_3_14_222_akasyah
     nd_akasyah_brown "Kok diem? Jawab bangsat!"
-    show akasyah at idle
+    show akasyah none at idle
         
-    show yuura at speaking
+    show yuura eff_sweat_w at speaking
     nd_yuura_brown "Ah...um...ituu..."
     
     nd_yuura_brown "(ARGH SIAL, aku gatau itu benda apaan! Lagian sejak kapan aku punya uang untuk melakukan kebiasaan yang sama seperti orang-orang kaya!)"
-    show yuura at idle
+    show yuura none at idle
         
     show akasyah at speaking
     voice voice_3_14_225_akasyah
-    nd_akasyah_brown "Hahaha... kan? Udah gua duga lu pasti gabisa jawab pertanyaan gua."
+    nd_akasyah_brown "Hahaha... kan?"
+    
+    extend " Udah gua duga lu pasti gabisa jawab pertanyaan gua."
     
     voice voice_3_14_226_akasyah
     nd_akasyah_brown "Sekarang minggir dan biar gua hajar si palsu ini!"
@@ -229,13 +231,15 @@ label scene_14:
     with ease
     nd_narrator_brown "Meski begitu Seiya berdiri depan untuk melindungiku."
             
-    show akasyah at speaking
+    show akasyah eff_angry at speaking
     voice voice_3_14_227_akasyah
     nd_akasyah_brown "Lu goblok apa gimana?"
     
     voice voice_3_14_228_akasyah
-    nd_akasyah_brown "Masih mau ngelindungin si peniru sialan ini? Seiya Seiya..."
-    show akasyah at idle
+    nd_akasyah_brown "Masih mau ngelindungin si peniru sialan ini?"
+    
+    extend " Seiya Seiya..."
+    show akasyah none at idle
     
     # TODO: im here
     show seiya at speaking
@@ -511,7 +515,9 @@ label scene_14:
     with wipe_kiri(0.2)
             
     voice voice_3_14_232_akasyah
-    nd_akasyah_brown "Segitu doang serangan lu? GUA JUGA BISA!"
+    nd_akasyah_brown "Segitu doang serangan lu?"
+    
+    extend " GUA JUGA BISA!"
     # show akasyah at idle
     
     # Another CG?
@@ -779,10 +785,10 @@ label scene_14:
     
     nd_narrator_brown "Kini situasi imbang, dua lawan dua. Meski begitu, melihat dari raut wajah Seiya, aku tahu bahwa perkara ini belum usai."
         
-    show seiya at face_flip, speaking
+    show seiya eff_inspiration_y at face_flip, speaking
     voice voice_3_14_244_seiya
     nd_seiya_brown "Aneki, pergilah!"
-    show seiya at face_flip, idle
+    show seiya none at face_flip, idle
         
     show yuura at speaking
     nd_yuura_brown "T-tapi..."
