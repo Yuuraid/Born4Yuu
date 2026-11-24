@@ -47,61 +47,61 @@ label scene_6:
 
     # Onsen marker
 
+    stop music
+    play music bgm_scene6_ver2 volume 1.0 loop
+    
+    play music bgm_scene6_ver2 volume 1.0 loop
+    scene cg_arc_2_scene_06_shoot_1:
+        # xpos 0.0
+        # y_align 0.0
+        xalign 0.5
+        linear 20.0 yalign 1.0
+    with dissolve
+    
+    nd_narrator_brown "Suara percikan air yang membasahi tubuhku, aku mengelap seluruh bagian tubuhku. Bahkan bagian kaki yang paling bisa aku banggakan. Aku mengelap sela-sela jari kaki dengan sabun.{w=5.0}{nw}"
+    # nd_narrator_brown "Suara percikan air yang membasahi tubuhku, aku mengelap seluruh bagian tubuhku. Bahkan bagian kaki yang paling bisa aku banggakan. Aku mengelap sela-sela jari kaki dengan sabun.{nw}"
+    $ renpy.pause(5.0, hard=True)
+        # koreksi lagi docsnya
+    
+    scene cg_arc_2_scene_06_shoot_2:
+        xpos 0.0
+        linear 40.0 xalign 1.0
+    with dissolve
+    # 10s
+    nd_narrator_brown "Baunya harum seperti bunga sakura yang mungkin bisa membuat laki-laki tergoda padaku.{w=5.0}{nw}" 
+    # nd_narrator_brown "Baunya harum seperti bunga sakura yang mungkin bisa membuat laki-laki tergoda padaku.{nw}" 
+    $ renpy.pause(5.0, hard=True)
+    
+    
+    # 11s
+    nd_narrator_brown "Aku membersihkan bagian punggungku dengan sabun yang sama, membilas tiap keringat yang aku keluarkan sepanjang perjalanan.{w=5.0}{nw}"
+    $ renpy.pause(5.0, hard=True)
+    
+    # 6s
+    nd_you_brown "Ah~ enaknya...{w=5.0}{nw}"
+    $ renpy.pause(5.0, hard=True)
+    
+    scene cg_arc_2_scene_06_shoot_3:
+        xpos 0.0
+        yalign 1.0
+        linear 25.0 yalign 0.0
+    with dissolve
+    
+    # 10s
+    nd_narrator_brown "Aku mengambil air dan membilas sisa-sisa sabun dari tubuhku, dan mengeringkan sela-sela jari kakiku{w=5.0}{nw}"
+    $ renpy.pause(5.0, hard=True)
     # stop music
-    # play music bgm_scene6_ver2 volume 1.0 loop
     
-    # play music bgm_scene6_ver2 volume 1.0 loop
-    # scene cg_arc_2_scene_06_shoot_1:
-    #     # xpos 0.0
-    #     # y_align 0.0
-    #     xalign 0.5
-    #     linear 20.0 yalign 1.0
-    # with dissolve
-    
-    # nd_narrator_brown "Suara percikan air yang membasahi tubuhku, aku mengelap seluruh bagian tubuhku. Bahkan bagian kaki yang paling bisa aku banggakan. Aku mengelap sela-sela jari kaki dengan sabun.{w=5.0}{nw}"
-    # # nd_narrator_brown "Suara percikan air yang membasahi tubuhku, aku mengelap seluruh bagian tubuhku. Bahkan bagian kaki yang paling bisa aku banggakan. Aku mengelap sela-sela jari kaki dengan sabun.{nw}"
-    # $ renpy.pause(5.0, hard=True)
-    #     # koreksi lagi docsnya
-    
-    # scene cg_arc_2_scene_06_shoot_2:
-    #     xpos 0.0
-    #     linear 40.0 xalign 1.0
-    # with dissolve
-    # # 10s
-    # nd_narrator_brown "Baunya harum seperti bunga sakura yang mungkin bisa membuat laki-laki tergoda padaku.{w=5.0}{nw}" 
-    # # nd_narrator_brown "Baunya harum seperti bunga sakura yang mungkin bisa membuat laki-laki tergoda padaku.{nw}" 
-    # $ renpy.pause(5.0, hard=True)
-    
-    
-    # # 11s
-    # nd_narrator_brown "Aku membersihkan bagian punggungku dengan sabun yang sama, membilas tiap keringat yang aku keluarkan sepanjang perjalanan.{w=5.0}{nw}"
-    # $ renpy.pause(5.0, hard=True)
-    
-    # # 6s
-    # nd_you_brown "Ah~ enaknya...{w=5.0}{nw}"
-    # $ renpy.pause(5.0, hard=True)
-    
-    # scene cg_arc_2_scene_06_shoot_3:
-    #     xpos 0.0
-    #     yalign 1.0
-    #     linear 25.0 yalign 0.0
-    # with dissolve
-    
-    # # 10s
-    # nd_narrator_brown "Aku mengambil air dan membilas sisa-sisa sabun dari tubuhku, dan mengeringkan sela-sela jari kakiku{w=5.0}{nw}"
-    # $ renpy.pause(5.0, hard=True)
-    # # stop music
-    
-    # scene cg_arc_2_scene_06_shoot_4:
-    #     zoom 1.5
-    #     xalign 0.5
-    #     yalign 0.5
-    #     linear 15.0 zoom 1.0
-    # with Flash
+    scene cg_arc_2_scene_06_shoot_4:
+        zoom 1.5
+        xalign 0.5
+        yalign 0.5
+        linear 15.0 zoom 1.0
+    with Flash
 
-    # # 8s
-    # nd_you_brown "Rasanya benar-benar puas dengan pemandian di gedung ini.{w=10.0}{nw}"
-    # $ renpy.pause(10.0, hard=True)
+    # 8s
+    nd_you_brown "Rasanya benar-benar puas dengan pemandian di gedung ini.{w=10.0}{nw}"
+    $ renpy.pause(10.0, hard=True)
 
     # Onsen end
 
