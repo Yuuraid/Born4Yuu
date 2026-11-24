@@ -170,28 +170,43 @@ label scene_11:
     show extras_2 netral at speak_in_mind
     show extras_1 netral at idle
     voice voice_2_11_164_ibe
-    nd_unknown_brown "Nyari orang bun. Keliatan Ivan sama Ryan ga bun?"
+    nd_cyber_brown "Nyari orang bun. Keliatan Ivan sama Rian ga Bun?"
 
     show extras_1 netral at speak_in_mind
     show extras_2 netral at idle
     voice voice_2_11_163_josua
-    nd_unknown_brown "Oh Ryan tadi lagi jalan-jalan sama kuda nil kesana."
+    nd_kebun_brown "Oh Rian tadi lagi jalan-jalan sama kuda nil kesana."
 
+    camera:
+        zoom 2.0
+        xalign 1.0
+        yalign 0.25
     show extras_1 netral at idle
     show yuura scared eff_pale at speaking
-    nd_yuura_brown "Kuda nil...? {w}Jalan-jalan...?"
+    nd_you_brown "Kuda nil...? {w}Jalan-jalan...?"
 
+
+    camera:
+        zoom 2.0
+        xalign 0.3
+        yalign 0.5
     show yuura netral none at idle
     show extras_1 netral at speak_in_mind
     show extras_2 netral at idle
     voice voice_2_11_163_josua
-    nd_unknown_brown "Untuk Ivan... liat aja ke belakang. Gund*mnya masuk ke rerumputan, katanya tadi dia yakin liat robotnya bisa terbang jadi cobalah dia lempar."
+    nd_kebun_brown "Untuk Ivan... liat aja ke belakang. Gund*mnya masuk ke rerumputan, katanya tadi dia yakin liat robotnya bisa terbang jadi cobalah dia lempar."
 
-    show extras_1 netral at idle
-    show yuura netral at speak_in_mind
-    nd_yuura_brown "..."
+    camera:
+        zoom 2.0
+        xalign 1.0
+        yalign 0.25
+    with dissolve
 
-    show yuura none at idle
+    # show extras_1 netral at idle
+    # show yuura netral at speak_in_mind
+    # nd_you_brown "..."
+
+    show yuura none at speak_in_mind
     nd_narrator_brown "Aku pikir buku tamu ini melebih-lebihkan dengan berbagai macam hobi dan detail absurd tentang pengunjungnya. Tapi tak kusangka bahwa yang ditulis benar-benar sama dengan aslinya."
 
     show yuura happy at speak_in_mind
@@ -201,8 +216,13 @@ label scene_11:
 
     # nd_narrator_brown "Melihat rangkaian kejanggalan ini, aku memutuskan untuk kembali berjalan."
 
-    show yuura happy eff_sigh at speaking
-    nd_yuura_brown "...tempat gak jelas."
+    camera:
+        zoom 3.0
+        xalign 1.0
+        yalign 0.35
+
+    show yuura happy eff_sigh at speak_in_mind
+    nd_you_brown "...tempat gak jelas."
 
     show yuura at idle
 

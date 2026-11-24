@@ -9,25 +9,25 @@ label scene_19:
     with Dissolve(1.0)
 
     show yuura eff_sweat_w at face_flip, speaking
-    nd_yuura_brown "Phiuu... Akhirnya beres juga bagian resepsionis."
+    nd_you_brown "Phiuu... Akhirnya beres juga bagian resepsionis."
     show yuura scared none at face_flip, idle
     voice voice_4_19_684_haruto
     show haruto at speaking
     nd_haruto_brown "Otsukare, sisanya biar aku yang lanjutkan."
     show haruto angry at idle
     show yuura happy at face_flip, speaking
-    nd_yuura_brown "Tolong yah..."
+    nd_you_brown "Tolong yah..."
     show yuura at face_flip, idle
     nd_narrator_brown "Tepat ketika baru duduk di kursi resepsionis untuk istirahat, aku melihat sebuah kotak yang tersempil di kolong meja, aku mengambil dan meletakkannya di meja."
     show yuura at face_flip, speaking
-    nd_yuura_brown "Kotak apa ini?"
+    nd_you_brown "Kotak apa ini?"
     show yuura at face_flip, idle
     show haruto happy at speaking
     voice voice_4_19_687_haruto
     nd_haruto_brown "Oh... Itu Time Capsule milikmu, Aneeki."
     show haruto at idle
     show yuura at face_flip, speaking
-    nd_yuura_brown "Time Capsule milikku?"
+    nd_you_brown "Time Capsule milikku?"
     show yuura at face_flip, idle
     nd_narrator_brown "Aku membukanya tanpa ragu dan melihatnya begitu banyak barang, foto, dan surat-surat di dalamnya. Aku mengambil satu per satu barang yang ada di dalamnya dan saat itu juga kenangan-kenangan hangat kembali mengalir di benakku."
     
@@ -35,16 +35,16 @@ label scene_19:
     
     nd_narrator_brown "Aku melihat surat-surat yang nampaknya ditulis oleh para penghuni penginapan, aku membaca satu per satu hingga terdapat beberapa nama yang tak terdengar lagi sekarang."
     show yuura at face_flip, speaking
-    nd_yuura_brown "Si ini kemana yah? Kok gak pernah keliatan lagi."
+    nd_you_brown "Si ini kemana yah? Kok gak pernah keliatan lagi."
     show yuura at face_flip, idle
     show haruto at speaking
     voice voice_4_19_690_haruto
     nd_haruto_brown "Bukannya sudah lama pindah yah..."
     show haruto at idle
     show yuura at face_flip, speaking
-    nd_yuura_brown "Iyakah?"
+    nd_you_brown "Iyakah?"
     
-    nd_yuura_brown "Eh, buku tamuku dimana yah..."
+    nd_you_brown "Eh, buku tamuku dimana yah..."
     show yuura at face_flip, idle
     show haruto at speaking
     voice voice_4_19_693_haruto
@@ -54,7 +54,7 @@ label scene_19:
     play sound sfx_paper
     nd_narrator_brown "Aku segera mengambil buku tamu dan membalik-balik halaman untuk mencari tahu orang-orang yang pernah menulis surat untukku, ada yang pindah bahkan ada yang tak terdaftar di sini."
     show yuura at face_flip, speaking
-    nd_yuura_brown "Kenapa dia pindah yah?"
+    nd_you_brown "Kenapa dia pindah yah?"
     show yuura at face_flip, idle
     show haruto exhausted at speaking
     voice voice_4_19_695_haruto
@@ -76,9 +76,9 @@ label scene_19:
     nd_haruto_brown "Kalau Aneeki kesusahan, sini kubantu untuk merekap buku tamunya."
     show haruto at idle
     show yuura at face_flip, speaking
-    nd_yuura_brown "Biar aku sendiri aja."
+    nd_you_brown "Biar aku sendiri aja."
     
-    nd_yuura_brown "Lagian aku juga masih punya banyak utang."
+    nd_you_brown "Lagian aku juga masih punya banyak utang."
     show yuura at face_flip, idle
     show haruto at speaking
     voice voice_4_19_700_haruto
@@ -111,7 +111,7 @@ label scene_19:
     pause 0.2
 
     show yuura eff_surprise_y at speaking
-    nd_yuura_brown "Apa sih yang kalian lakukan?"
+    nd_you_brown "Apa sih yang kalian lakukan?"
     show yuura none at idle
     show aergia psycho at speaking
     voice voice_4_19_702_aergia
@@ -164,9 +164,9 @@ label scene_19:
 
     show yuura angry at center, speaking with ease
 
-    nd_yuura_brown "WOI SETAN!! JANGAN KABUR KALIAN!"
+    nd_you_brown "WOI SETAN!! JANGAN KABUR KALIAN!"
 
-    # nd_yuura_brown "Oi! Apa yang kalian lakukan? Kenapa ada ledakan tadi?"
+    # nd_you_brown "Oi! Apa yang kalian lakukan? Kenapa ada ledakan tadi?"
     # show yuura at idle
     # nd_narrator_brown "Aku berusaha mendekat, tapi tiba-tiba saja muncul sebuah kembang api di langit. Membuatku terkejut dengan semua ini."
 
@@ -190,20 +190,20 @@ label scene_19:
         zoom 2.9
         xalign 0.0
         yalign 0.0
-    nd_yuura_brown "...{w=1}{nw}"
+    nd_you_brown "...{w=1}{nw}"
     scene cg_arc_3_scene_19_credit:
         zoom 2.9
         xalign 0.0
         yalign 0.0
         ease 2.0 yalign 0.3
     # show yuura angry eff_angry
-    nd_yuura_brown "Kalian ini...{w=1}{nw}"
+    nd_you_brown "Kalian ini...{w=1}{nw}"
     # show yuura at shake
     scene cg_arc_3_scene_19_credit:
         zoom 1.5
         xalign 0.5
         yalign 0.5
-    nd_yuura_brown "{size=+30}WOIII KU PUKUL KALIAN YAH{/size}{w=1}{nw}"
+    nd_you_brown "{size=+30}WOIII KU PUKUL KALIAN YAH{/size}{w=1}{nw}"
     # hide seiya
     # show yuura at idle
     # show aergia netral at right, shake, speaking

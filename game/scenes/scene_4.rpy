@@ -7,6 +7,7 @@ label scene_4:
     show yuura netral eff_sweat_w at center, speaking with easeinright
     nd_narrator_brown "Aku terus berjalan, melewati pepohonan yang entah kenapa sangat familiar bagiku. Sepertinya aku sudah berputar-putar di tempat ini selama berjam-jam tanpa menemukan jalan keluar."
 
+    play sound sfx_expression_sweat
     show yuura scared eff_sweat_w
     nd_narrator_brown "Kaki ku lemas, rasanya sangat sakit sekali. Aku benar-benar berjalan-jalan sepanjang hari tapi tetap saja berakhir di tempat yang sama."
     stop sound 
@@ -30,12 +31,12 @@ label scene_4:
     show haruto happy at left with easeinleft
     pause 0.5
     
-    show yuura none netral at right, face_default, speaking
-    nd_narrator_brown "Tanpa ku sadari seseorang datang menghampiriku dari belakang, membuatku berteriak kencang"
+    show yuura none netral at right, face_default, speak_in_mind
+    # nd_narrator_brown "Tanpa ku sadari seseorang datang menghampiriku dari belakang, membuatku berteriak kencang"
     
-    play sound sfx_expression_surprised
-    show yuura eff_surprise_y angry
-    nd_yuura_brown "AHH!!"
+    play sound sfx_expression_shocked
+    show yuura eff_surprise_y scared
+    nd_you_brown "AHH!!"
     
     play sound sfx_expression_surprised
     show haruto happy eff_exclamation_y at speaking
@@ -48,15 +49,16 @@ label scene_4:
         xalign 0.7
         yalign 0.3
     show haruto at idle
+    play sound sfx_expression_sweat
     show yuura eff_sweat_w netral at speak_in_mind
-    nd_yuura_brown "(Sepertinya dia mengenaliku, sebaiknya aku berpura-pura mengenalnya saja)"
+    nd_you_brown "(Sepertinya dia mengenaliku, sebaiknya aku berpura-pura mengenalnya saja)"
     
     camera:
         zoom 1.0
         xalign 0.0
         yalign 0.0
     show yuura at speaking
-    nd_yuura_brown "AH... em aku sedang jalan-jalan saja kok."
+    nd_you_brown "AH... em aku sedang jalan-jalan saja kok."
     
     show haruto at speaking
     show yuura none at idle
@@ -65,7 +67,7 @@ label scene_4:
     
     show haruto at idle
     show yuura eff_sweat_w at speaking
-    nd_yuura_brown "Ah... Em... Aku hanya bosan saja hahaha."
+    nd_you_brown "Ah... Em... Aku hanya bosan saja hahaha."
     
     show haruto sad eff_exclamation_y at speaking
     show yuura none at idle
@@ -74,7 +76,7 @@ label scene_4:
     
     show haruto none at idle
     show yuura eff_sweat_w at speaking
-    nd_yuura_brown "I-itu tidak penting sekarang, b-bisakah kamu menemani ku menuju jalan keluar dari hutan ini?"
+    nd_you_brown "I-itu tidak penting sekarang, b-bisakah kamu menemani ku menuju jalan keluar dari hutan ini?"
     
     show haruto eff_question_mark_r at speaking
     show yuura none at idle
@@ -83,7 +85,7 @@ label scene_4:
     
     show haruto none at idle
     show yuura eff_sweat_w at speaking
-    nd_yuura_brown "K-karena aku sudah terlalu lelah berkeliling hutan ini, makanya aku minta ditemani."
+    nd_you_brown "K-karena aku sudah terlalu lelah berkeliling hutan ini, makanya aku minta ditemani."
     
     camera:
         zoom 2.0
@@ -105,8 +107,9 @@ label scene_4:
     wd_unknown_brown "Baiklah biar aku antarkan kamu kembali ke penginapan" 
     
     show haruto happy none at idle
+    play sound sfx_expression_surprised
     show yuura eff_question_mark_r netral at speaking
-    nd_yuura_brown "Penginapan? Bangunan besar yang bergaya jepang itu? K-kenapa kita harus kesana?"
+    nd_you_brown "Penginapan? Bangunan besar yang bergaya jepang itu? K-kenapa kita harus kesana?"
     
     show haruto at speaking
     show yuura none at idle
@@ -119,7 +122,8 @@ label scene_4:
     
     show haruto at idle
     show yuura eff_sweat_w at speaking
-    nd_yuura_brown "Y-ya.. aku baik-baik saja, um.."
+    play sound sfx_expression_sweat
+    nd_you_brown "Y-ya.. aku baik-baik saja, um.."
     
     show haruto exhausted eff_laugh_y at speaking
     show yuura none at idle
@@ -132,7 +136,7 @@ label scene_4:
     
     show haruto at idle
     show yuura at speaking
-    nd_yuura_brown "Haruto, mengapa kamu mau membantuku?"
+    nd_you_brown "Haruto, mengapa kamu mau membantuku?"
     
     show haruto happy
     show yuura at idle
@@ -166,6 +170,8 @@ label scene_4:
     show yuura at center with ease
     nd_narrator_brown "Dia pun pamit karena masih ada banyak hal yang harus dia lakukan."
     
+    show yuura happy at face_flip with dissolve
+
     nd_narrator_brown "Aku berterimakasih banyak pada Haruto atas kebaikannya. Dia hanya tersenyum sembari berjalan menjauh menuju hutan, dan menghilang dari pandanganku."
         # $ quick_menu = False
     stop music

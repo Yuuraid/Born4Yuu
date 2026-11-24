@@ -14,9 +14,13 @@ label scene_10:
     show yuura scared at ease_custom(offscreenright, left, 0.5), idle
     pause 0.5
     play music bgm_scene1_jade_bottle volume 1.0 loop
-    show yuura at ease_custom(left, center, 0.2), idle
+    show yuura none at ease_custom(left, center, 0.2), idle
     nd_narrator_brown "Meskipun aku sudah lolos dari mereka berdua. Nyatanya, dunia tidak seindah itu. Aku bertemu om-om yang tadi mengejarku. Apakah dia menungguku disini?"
     
+    camera:
+        zoom 2.0
+        xalign 0.1
+        yalign 0.0
     show dityo at speaking, silhouette
     voice voice_2_10_101_dityo
     nd_unknown_brown "Fufufufu.. Mau ke mana kamu Anee?"
@@ -26,9 +30,13 @@ label scene_10:
     
     show yuura angry eff_angry at speaking
     show dityo at idle, silhouette
-    # nd_yuura_brown "Apasih! Minggir! Aku sudah muak banget ya sama kalian semua! Dari pagi dikejar-kejar mulu"
+    # nd_you_brown "Apasih! Minggir! Aku sudah muak banget ya sama kalian semua! Dari pagi dikejar-kejar mulu"
 
-    nd_yuura_brown "Apasih! Minggir! Aku sudah muak banget ya dari tadi lari-lari mulu, aku mau pergi dari sini!"
+    camera:
+        zoom 2.0
+        xalign 0.5
+        yalign 0.3
+    nd_you_brown "Apasih! Minggir! Aku sudah muak banget ya dari tadi lari-lari mulu, aku mau pergi dari sini!"
     
     show dityo eff_sweat_b at speaking, silhouette
     show yuura at idle
@@ -39,25 +47,41 @@ label scene_10:
     show yuura angry at speaking
     show dityo none at idle, silhouette
     show layer master at shake
-    nd_yuura_brown "MINGGIR!"
+    nd_you_brown "MINGGIR!"
     
+    camera:
+        zoom 1.0
+        xalign 0.0
+        yalign 0.0
+
     show yuura at idle
     show yuura at custom_sprite_pos(x=0.2) with ease
     play sound sfx_card_destroyed
     hide dityo
     show dityo netra netral behind yuura at left, silhouette 
     show layer master at shake
-    pause 0.2
-    show yuura angry none at center with ease
-    nd_narrator_brown "Aku berusaha menerobos melewati orang itu, tapi sayangnya, mahakarya yang ia bawa tersenggol dan hancur."
-        # nd_yuura_brown "DIEM! (Aku memukul tangan Dityo dan bikin mahakaryanya jatuh.)"
+    # pause 0.2
+    show yuura none at center with ease
+
+    pause 0.4
+    # nd_narrator_brown "Aku berusaha menerobos melewati orang itu, tapi sayangnya, mahakarya yang ia bawa tersenggol dan hancur."
+        # nd_you_brown "DIEM! (Aku memukul tangan Dityo dan bikin mahakaryanya jatuh.)"
     
+    camera:
+        zoom 2.0
+        xalign 0.5
+        yalign 0.3
     show yuura scared eff_pale at speaking
-    nd_yuura_brown "Ah..."
+    nd_you_brown "Ah..."
     
-    show dityo at speaking, silhouette
-    show yuura at idle
+    camera:
+        zoom 2.0
+        xalign 0.1
+        yalign 0.0
+    show dityo at speak_in_mind, silhouette
+    show yuura none at idle
     nd_unknown_brown "..."
+    show dityo at speaking, silhouette
     voice voice_2_10_107_dityo
     nd_unknown_brown "Kenapa ne? Kenapa kamu jadi seperti ini? Ini bukan seperti Anee yang kukenal..."
     
@@ -67,21 +91,36 @@ label scene_10:
 
     $ renpy.run(QuickSave())
 
+    show layer master at shake
     voice voice_2_10_109_dityo
     nd_unknown_brown "BUKAN ORANG YANG KASAR KAYAK GINI!"
+
+    show dityo at idle, silhouette
+    camera:
+        zoom 1.0
+        xalign 0.0
+        yalign 0.0
         # show yuura with shake??
     # stop music
         # play music foto mantan fadein(1.0)
     menu:
         "APA SIH! ORANG DARI AWAL JUGA KAMU YANG NGEJAR-NGEJAR AKU! KENAPA SEMUA MALAH JADI AKU YANG SALAH!":
             $ dityo_route = "Bad end"
+            camera:
+                zoom 2.0
+                xalign 0.5
+                yalign 0.3
             # play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
             show yuura angry eff_angry at speaking
             show dityo at idle, silhouette
-            nd_yuura_brown "APA SIH! ORANG DARI AWAL JUGA KAMU YANG NGEJAR-NGEJAR AKU! KENAPA SEMUA MALAH JADI AKU YANG SALAH!"
+            nd_you_brown "APA SIH! ORANG DARI AWAL JUGA KAMU YANG NGEJAR-NGEJAR AKU! KENAPA SEMUA MALAH JADI AKU YANG SALAH!"
                 # show yuura panik
                 # show dityo serius
             
+            camera:
+                zoom 2.0
+                xalign 0.1
+                yalign 0.0
             show dityo at speaking, silhouette
             show yuura none at idle
             voice voice_2_10_111_dityo
@@ -109,7 +148,7 @@ label scene_10:
             play music bgm_scene3_pelukan volume 1.0 loop
             show yuura sad eff_pale at speaking
             show dityo at idle, silhouette
-            nd_yuura_brown "A-aku beneran ga sengaja… sumpah, aku tadi niatnya cuma mau ngelewatin kamu bukan buat ngancurin karya yang kamu buat."
+            nd_you_brown "A-aku beneran ga sengaja… sumpah, aku tadi niatnya cuma mau ngelewatin kamu bukan buat ngancurin karya yang kamu buat."
             
             show dityo at speaking, silhouette
             show yuura none at idle
@@ -117,7 +156,7 @@ label scene_10:
             
             show yuura eff_sweat_b at speaking
             show dityo at idle, silhouette
-            nd_yuura_brown "Sumpah aku ga sengaja... A-aku beneran minta maaf..."
+            nd_you_brown "Sumpah aku ga sengaja... A-aku beneran minta maaf..."
             
             show dityo sad at idle, silhouette
             show yuura at idle
@@ -127,7 +166,7 @@ label scene_10:
             
             show yuura at speaking
             show dityo at idle with dissolve
-            nd_yuura_brown "Maaf, Dityo..."
+            nd_you_brown "Maaf, Dityo..."
 
             show dityo at speaking
             show yuura none at idle
@@ -136,7 +175,7 @@ label scene_10:
             
             show yuura at speaking
             show dityo at idle
-            nd_yuura_brown "Iya... Sekali lagi aku minta maaf, Dityo..."
+            nd_you_brown "Iya... Sekali lagi aku minta maaf, Dityo..."
 
             show dityo sad at idle
             show yuura at ease_custom(center, offscreenleft, 3.0)
@@ -167,13 +206,22 @@ label scene_10:
             show yuura scared eff_tremble_w
             nd_narrator_brown "Entah apa yang terjadi tiba-tiba ada seseorang menepuk pundakku, orang itu mirip perempuan namun suaranya jelas laki-laki."
             
+            camera:
+                zoom 2.0
+                xalign 0.6
+                yalign 0.3
             show yuura at idle
             show axia at speaking, silhouette
             voice voice_2_10_120_axiaregis
             nd_unknown_brown "HAWOOOO ANYEEE, KAMU LAGI APAAA? IHHH SENENG BANGET DEH RASANYA KETEMU ANYEE DI SINI."
 
-            show axia at idle, silhouette
-            nd_narrator_brown "Mendengar suaranya saja membuat bulu kudukku langsung berdiri, dia dengan sangat percaya diri memelukku erat."
+            camera:
+                zoom 1.0
+                xalign 0.0
+                yalign 0.0
+
+            # show axia at idle, silhouette
+            # nd_narrator_brown "Mendengar suaranya saja membuat bulu kudukku langsung berdiri, dia dengan sangat percaya diri memelukku erat."
             
                 # Axiaregis section 
             
@@ -183,7 +231,9 @@ label scene_10:
             show axia at right with ease
             pause 0.3
             show yuura at face_flip, speak_in_mind
-            nd_yuura_brown "(Orang ini kayaknya Axiaregis deh, sesuai deskripsi di buku tamu.)"
+            nd_narrator_brown "Mendengar suaranya saja membuat bulu kudukku langsung berdiri."
+            
+            nd_you_brown "(Orang ini kayaknya Axiaregis deh, sesuai deskripsi di buku tamu.)"
             
             show yuura at face_flip, idle
             show axia cute eff_sparkle at speaking with dissolve
@@ -224,7 +274,7 @@ label scene_10:
             show axia at idle
             show yuura at face_flip
             pause 0.2
-            nd_yuura_brown "DIEM!"
+            nd_you_brown "DIEM!"
             
             show yuura at custom_sprite_pos(x=0.6) with ease
             play sound sfx_body_fall
@@ -232,7 +282,11 @@ label scene_10:
             nd_narrator_brown "Aku mendorongnya jatuh dan dengan lebaynya Axiaregis terjatuh."
             
             scene inn ruang_tamu_2
-            show yuura scared at face_flip
+            camera:
+                zoom 2.0
+                xalign 1.0
+                yalign 0.25
+            show yuura scared none at face_flip
             show yuura at custom_sprite_pos(x=0.6), idle
             show axia sassy eff_laugh_y at custom_sprite_pos(x=1.3)
             with fade
@@ -244,27 +298,42 @@ label scene_10:
             voice voice_2_10_129_axiaregis
             nd_axiaregis_brown "Kamu tega banget ihhh padahal aku udah syantik, imut, dan manish giniii. Masa dengan teganya kamu dorong akuuuu ahhh~ hidoiii."
             
+            camera:
+                zoom 2.0
+                xalign 0.7
+                yalign 0.3
             show yuura angry eff_yelling at speaking
             show axia none at idle
-            nd_yuura_brown "DIEM ANJENG KUPUKUL-PUKULIN JUGA YA KAMU!"
+            nd_you_brown "DIEM ANJENG KUPUKUL-PUKULIN JUGA YA KAMU!"
             
-            show axia at speaking
-            show yuura scared eff_tremble_w at idle, center with ease
+            camera:
+                zoom 1.7
+                xalign 1.0
+                yalign 0.25
+            show axia eff_heart at speaking
+            show yuura angry none at idle
             voice voice_2_10_131_axiaregis
-            nd_axiaregis_brown "Kyaahhh anyeee kasarrr, tolonggg ah~ anyeeki mau mukul akyuhhh"
+            nd_axiaregis_brown "Kyaahhh anyeee kasarrr, tolonggg ah~ anyeeki mau mukul akyuhhh{nw}"
+            show yuura scared eff_tremble_w at center with ease
 
             # voice voice_2_10_129_axiaregis
             # nd_axiaregis_brown "Kamuuu tega banget ihhh padahal aku udah syantik, imut dan manish giniiii. Masa dengan teganya kamu dorong akuuuu ahhh~ hidoiii"
 
             show yuura angry eff_yelling at speaking
-            show axia at idle
-            nd_yuura_brown "DIEM ANJENG KU PUKUL-PUKULIN JUGA YA KAMU!"
+            show axia none at idle
+            nd_you_brown "DIEM ANJENG KU PUKUL-PUKULIN JUGA YA KAMU!"
             
-            show axia at speaking
+            show axia eff_heart at speaking
             show yuura scared eff_tremble_w at idle
             voice voice_2_10_131_axiaregis
             nd_axiaregis_brown "Kyaahhhh anyeeee kasarrrr, tolonggg ah~ anyeeki mau mukul akyuhhhh"
             show axia at idle
+
+            camera:
+                zoom 1.0
+                xalign 0.0
+                yalign 0.0
+            with dissolve
 
             # stop music
 
@@ -296,7 +365,7 @@ label scene_10:
             pause 0.2
             show yuura at ease_custom(left, offscreenleft, 0.5)
             
-            nd_yuura_brown "Oi!!! Pelan-pelan!!"
+            nd_you_brown "Oi!!! Pelan-pelan!!"
 
             # nd_narrator_brown "Aku melesat dengan hiu itu pergi dari lorong itu."
             
@@ -317,7 +386,7 @@ label scene_10:
             nd_narrator_black "Dari kejauhan aku mendengar suara teriakan menjijikan itu, tapi aku sudah tidak peduli lagi. Aku sudah lelah dengan semua hal aneh di tempat ini."
             
             scene inn lorong lantai_1 with fade
-            show yuura netral at ease_custom(offscreenright, left, 1.0)
+            show yuura scared at ease_custom(offscreenright, left, 1.0)
             show shark beast at ease_custom(offscreenright, right, 0.5)
             pause 1.5
 
@@ -341,26 +410,27 @@ label scene_10:
             show yuura scared eff_pale at speaking
             hide shark_n_sequence
             show shark netral at right, idle
-            nd_yuura_brown "APAAN SIH INI TEMPAT?! KENAPA COBA BANYAK BANGET KEANEHAN DI SINI??! TADI OM-OM LAH, TERUS PEREMPUAN YANG SUARANYA LAKI-LAKI LAH"
+            nd_you_brown "APAAN SIH INI TEMPAT?! KENAPA COBA BANYAK BANGET KEANEHAN DI SINI??! TADI OM-OM LAH, TERUS PEREMPUAN YANG SUARANYA LAKI-LAKI LAH"
             
-            nd_yuura_brown "SEKARANG APA LAGI? SEEKOR HIU YANG BISA BERUBAH WUJUD?? BISAKAH TEMPAT INI NORMAL DIKIT GITU?!"
+            nd_you_brown "SEKARANG APA LAGI? SEEKOR HIU YANG BISA BERUBAH WUJUD?? BISAKAH TEMPAT INI NORMAL DIKIT GITU?!"
             
             show shark at speaking
             show yuura none at idle
             voice voice_2_10_139_shark
             nd_shark_brown "T-tapi anee, i-inikan tempatmu sendiri."
             
-            show shark at idle
+            show layer master at shake
+            show shark scared at idle
             show yuura at face_flip
             show yuura angry eff_angry at speaking
-            nd_yuura_brown "DIEM!"
+            nd_you_brown "DIEM!"
             
             $ renpy.run(QuickSave())
             show yuura at idle
             nd_narrator_brown "Shark terdiam."
 
-            stop music
-            nd_unknown_brown "..."
+            # stop music
+            # nd_unknown_brown "..."
             
             menu:
                 "Pergi":
@@ -369,7 +439,7 @@ label scene_10:
                     
                     show yuura at speaking
                     show shark scared at idle
-                    nd_yuura_brown "PERGI!!"
+                    nd_you_brown "PERGI!!"
                     
                     show yuura at idle
                     show shark at speaking
@@ -378,7 +448,7 @@ label scene_10:
                     
                     show yuura at speaking
                     show shark at idle
-                    nd_yuura_brown "PERGI!! AKU UDAH CAPEK DENGAN SEMUA INI!"
+                    nd_you_brown "PERGI!! AKU UDAH CAPEK DENGAN SEMUA INI!"
                     
                     # voice voice_2_10_144_shark
                     # nd_shark_brown "..."
@@ -395,10 +465,10 @@ label scene_10:
                     
                     show yuura sad eff_sweat_b at speaking
                     show shark at idle
-                    nd_yuura_brown "Sebenarnya... Aku ini siapa sih... Kenapa semua orang seperti ini..."
+                    nd_you_brown "Sebenarnya... Aku ini siapa sih... Kenapa semua orang seperti ini..."
                     
                     show yuura at idle
-                    show shark at speaking
+                    show shark netral at speaking
                     voice voice_2_10_146_shark
                     nd_shark_brown "A-anee... Jangan nangis, a-aku tau i-ini sangat berat untuk anee, t-tapi a-aku yakin anee bisa kok ngelewatin semuanya."
                         # show yuura nangis
@@ -406,7 +476,7 @@ label scene_10:
                     
                     show yuura at speaking
                     show shark at idle
-                    nd_yuura_brown "*hiks"
+                    nd_you_brown "*hiks"
                     
                     show yuura at idle
                     show shark happy at speaking
@@ -441,11 +511,11 @@ label scene_10:
                     
                     show yuura at speaking
                     show shark at idle
-                    nd_yuura_brown "A-aku ga terlalu inget."
+                    nd_you_brown "A-aku ga terlalu inget."
                         # scene black with dissolve(1.0)
                         # show yuura at center with dissolve(1.0)
                     
-                    nd_yuura_brown "(AHHH BODOH BANGET HARUSNYA AKU PURA PURA TAU)"
+                    nd_you_brown "(AHHH BODOH BANGET HARUSNYA AKU PURA PURA TAU)"
 
                     hide foto_bersama 
                     hide dark_overlay
@@ -462,44 +532,69 @@ label scene_10:
                     
                     play music bgm_scene4 fadein 1.0
 
+                    camera:
+                        zoom 2.0
+                        xalign 0.8
+                        yalign 0.1
                     voice voice_2_10_151_shark
-                    nd_shark_brown "Aku memang anak baru di sini, tapi tiap kali ada acara pasti kamu ngajak aku untuk ikut."
+                    nd_shark_brown "Aku memang anak baru di sini, tapi tiap kali ada acara pasti kamu ngajak aku untuk ikut.{nw}"
                     
                     voice voice_2_10_152_shark
-                    nd_shark_brown "Entah itu karaoke sampai mabuk, atau ya sekadar pesta aja."
+                    nd_shark_brown "Entah itu karaoke sampai mabuk, atau ya sekadar pesta aja.{nw}"
                     
                     show shark netral eff_heart
                     voice voice_2_10_153_shark
-                    nd_shark_brown "T-tapi bukannya gimana-gimana ya...em...cuma suaranya anee itu bagus banget..."
+                    nd_shark_brown "T-tapi bukannya gimana-gimana ya...em...cuma suaranya anee itu bagus banget...{nw}"
                     
                     voice voice_2_10_154_shark
-                    nd_shark_brown "Dan anee juga imut...terus em...ahh banyak dah."
+                    nd_shark_brown "Dan anee juga imut...terus em...ahh banyak dah.{nw}"
                     
+                    camera:
+                        zoom 2.0
+                        xalign 0.6
+                        yalign 0.25
+
                     show shark none at idle
-                    show yuura netral at speak_in_mind
-                    nd_yuura_brown "..."
+                    # show yuura netral at speak_in_mind
+                    # nd_you_brown "..."
                     show yuura bittersweet eff_laugh_y at speaking
-                    nd_yuura_brown "Ahahaha... Kamu lucu deh."
+                    nd_you_brown "Ahahaha... Kamu lucu deh."
                     
+                    camera:
+                        zoom 2.0
+                        xalign 0.8
+                        yalign 0.1
                     show yuura none at idle
                     show shark at speaking
                     voice voice_2_10_156_shark
                     nd_shark_brown "A-apasih! Diem deh lu, Yuur."
                     
+                    camera:
+                        zoom 2.0
+                        xalign 0.6
+                        yalign 0.25
                     show yuura at speaking
                     show shark at idle
-                    nd_yuura_brown "Tch..{w} *hiks* {w}Tsundere."
+                    nd_you_brown "Tch..{w} *hiks* {w}Tsundere."
                     
+                    camera:
+                        zoom 2.0
+                        xalign 0.8
+                        yalign 0.1
                     show yuura at idle
                     show shark eff_sweat_w at speaking
                     voice voice_2_10_158_shark
                     nd_shark_brown "A-apaan sih! Udah deh, yang penting sekarang udah tenangkan?"
                     
+                    camera:
+                        zoom 1.0
+                        xalign 0.0
+                        yalign 0.0
                     show yuura at speaking
                     show shark none at idle
-                    nd_yuura_brown "Ya... Terima kasih Shark... Kusudah lebih baik sekarang."
+                    nd_you_brown "Ya... Terima kasih Shark... Kusudah lebih baik sekarang."
                     
-                    nd_yuura_brown "Tapi sepertinya aku masih butuh udara segar, Shark."
+                    nd_you_brown "Tapi sepertinya aku masih butuh udara segar, Shark."
                     
                     show yuura at idle
                     show shark eff_sweat_w at speaking
@@ -508,7 +603,7 @@ label scene_10:
                     
                     show yuura at speaking
                     show shark none at idle
-                    nd_yuura_brown "Gapapa, aku bisa sendiri, sekali lagi terima kasih."
+                    nd_you_brown "Gapapa, aku bisa sendiri, sekali lagi terima kasih."
 
                     show yuura at face_flip, idle with dissolve
                     

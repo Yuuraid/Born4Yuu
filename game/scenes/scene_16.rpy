@@ -20,7 +20,7 @@ label scene_16:
     show aergia at idle
     
     show yuura scared at speaking, face_flip
-    nd_yuura_brown "Apa maksu-"
+    nd_you_brown "Apa maksu-"
     show yuura at idle, face_flip
 
     show aergia furious at speaking
@@ -61,7 +61,7 @@ label scene_16:
     show aergia at idle
     
     show yuura at speaking, face_flip
-    nd_yuura_brown "Aku buka-"
+    nd_you_brown "Aku buka-"
     show yuura at idle, face_flip
 
     # play music bgm_scene15_judgment volume 1.0 loop  
@@ -83,9 +83,9 @@ label scene_16:
         # play sound barang-barang pecah dan hancur
             
     show yuura at face_flip, speaking
-    nd_yuura_brown "(Sial! kalau terus begini, aku akan terjebak bersama orang aneh ini...)"
+    nd_you_brown "(Sial! kalau terus begini, aku akan terjebak bersama orang aneh ini...)"
     
-    nd_yuura_brown "(Aku harus kabur!)"
+    nd_you_brown "(Aku harus kabur!)"
     show yuura at idle, custom_sprite_pos(x=-0.3) with ease
 
         # play sound berpindah
@@ -121,7 +121,7 @@ label scene_16:
     scene cg_arc_3_scene_16_cekik_shoot_04 at looping_shake with wipe_j_atas(0.2)
 
     # show yuura hurt at speaking
-    nd_yuura_brown "Tapi... namaku... Yuura...{w=2}{nw}"
+    nd_you_brown "Tapi... namaku... Yuura...{w=2}{nw}"
     # show yuura at idle
 
     # show aergia at speaking
@@ -184,7 +184,7 @@ label scene_16:
     # show yuura at speaking
     # show yuura at shake
     show cg_arc_3_scene_16_balikin_2 with dissolve
-    nd_yuura_black "KHAKK...{w=2}{nw}"
+    nd_you_black "KHAKK...{w=2}{nw}"
     # show yuura at idle
 
     show cg_arc_3_scene_16_balikin_3:
@@ -409,7 +409,7 @@ label scene_16:
     nd_unknown_brown "Maaf atas keterlambatanku nona Yuura. Perkenalkan, namaku Dawam."
         
     show yuura at speaking
-    nd_yuura_brown "Kau..."
+    nd_you_brown "Kau..."
     show yuura at idle
             
     show dawam at speaking
@@ -419,7 +419,7 @@ label scene_16:
     show dawam at idle
     
     show yuura at speaking
-    nd_yuura_brown "Risol..."
+    nd_you_brown "Risol..."
     show yuura at idle
 
     nd_narrator_brown "Meski ingin tahu siapa sosok yang ingin membantuku, tubuhku terlalu lemah untuk menanyakan hal tersebut. Penglihatanku mulai menghitam dan akhirnya kesadaranku pun mulai menghilang."

@@ -17,24 +17,32 @@ label scene_8:
     
     show yuura at speaking
     show shark none at face_flip, idle
-    # nd_yuura_brown "Terimakasih banyak... {w} Aku selamat berkat... {w} \n(Ah sial aku tidak tahu namanya)"
-    nd_yuura_brown "Haloo...{w} Terimakasih...{w}ermm...{w}. Kamu udah bantuin aku dari kejaran {w}aduh siapa yah tadi──"
+    # nd_you_brown "Terimakasih banyak... {w} Aku selamat berkat... {w} \n(Ah sial aku tidak tahu namanya)"
+    nd_you_brown "Haloo...{w} Terimakasih...{w}ermm...{w}. Kamu udah bantuin aku dari kejaran {w}aduh siapa yah tadi──"
     
     show yuura at idle
     show shark at face_flip, speaking
     voice voice_2_8_79_shark
     wd_unknown_brown "A-anee lupa sama kami?"
 
-    show yuura at speaking
+    camera:
+        zoom 2.0
+        xalign 0.7
+        yalign 0.3
+    show yuura scared eff_sweat_w at speak_in_mind
     show shark none at face_flip, idle
-    # nd_yuura_brown "Terimakasih banyak... {w} Aku selamat berkat... {w} \n(Ah sial aku tidak tahu namanya)"
+    # nd_you_brown "Terimakasih banyak... {w} Aku selamat berkat... {w} \n(Ah sial aku tidak tahu namanya)"
     nd_narrator_brown "(Ah sial aku tidak tahu namanya)"
     
+    camera:
+        zoom 1.0
+        xalign 0.0
+        yalign 0.0
     show yuura at speaking
     show shark at face_flip, idle
-    nd_yuura_brown "B-bukan begitu, aku hanya lagi cape aja. Makanya a-aku lupa sama namamu."
+    nd_you_brown "B-bukan begitu, aku hanya lagi cape aja. Makanya a-aku lupa sama namamu."
     
-    show yuura at idle
+    show yuura none at idle
     show shark at face_flip, speaking
     voice voice_2_8_81_shark
     wd_unknown_brown "O-oh begitu, i-ini anee waktu pertama kali gabung, kamu ngasih aku buku yang isinya nama-nama anak penginapan disini"
@@ -61,21 +69,21 @@ label scene_8:
     hide dark_overlay
     with dissolve
 
-    show yuura at speaking
+    show yuura netral at speaking
     show shark at face_flip, idle
-    nd_yuura_brown "Oh, oke sekarang aku ingat. Shark!"
+    nd_you_brown "Oh, oke sekarang aku ingat. Shark!"
 
     show yuura eff_question_mark_y
-    nd_yuura_brown "Tapi kok bukunya kayak ga lengkap?"
+    nd_you_brown "Tapi kok bukunya kayak ga lengkap?"
     
     show yuura none at idle
-    show shark at face_flip, speaking
+    show shark happy at face_flip, speaking
     voice voice_2_8_83_shark
     wd_shark_brown "Y-ya kan buku tamunya emang ga pernah kamu selesaiin Ane.." 
     
     show yuura eff_sweat_w at speaking
     show shark at face_flip, idle
-    nd_yuura_brown "O-oh..."
+    nd_you_brown "O-oh..."
     
     show yuura at idle
     show shark at face_flip, idle
@@ -84,12 +92,12 @@ label scene_8:
     
     show yuura happy at speaking
     show shark at face_flip, idle
-    nd_yuura_brown "Ya udah makasih ya udah bantuin aku, aku udah ga denger suara orang tadi. Jadi, sampai jumpa, Shark!"
+    nd_you_brown "Ya udah makasih ya udah bantuin aku, aku udah ga denger suara orang tadi. Jadi, sampai jumpa, Shark!"
     
     show yuura at ease_custom(right, offscreenleft, 1.5), speaking
     show shark at face_flip, idle
     pause 1.0
-    show shark eff_sweat_w at speaking
+    show shark netral eff_sweat_w at speaking
     voice voice_2_8_86_shark
     wd_shark_brown "T-tunggu anee a-aku.."
     

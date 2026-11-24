@@ -7,6 +7,8 @@ layeredimage aergia:
         attribute hurt "assets/sprite/Aergia/aergia_main_hurt.png"
         attribute psycho "assets/sprite/Aergia/aergia_main_psycho.png"
         attribute furious "assets/sprite/Aergia/aergia_main_furious.png"
+        attribute smile_normal "assets/sprite/Aergia/aergia_main_sb.png"
+        attribute smile_cool "assets/sprite/Aergia/aergia_main_sk.png"
         
         attribute full_netral "assets/sprite/Aergia/aergia_full_neutral.png"
         attribute full_angry "assets/sprite/Aergia/aergia_full_angry.png"

@@ -16,7 +16,7 @@ label scene_2:
     show yuura scared at center, speaking with easeinright
 
     play sound sfx_ambience_angin_berhembus_sepoi_sepoi_scene18 loop
-    nd_yuura_brown "*huft huft..."
+    nd_you_brown "*huft huft..."
     # stop sound
 
     show yuura at idle
@@ -28,7 +28,7 @@ label scene_2:
     # stop sound
 
     show yuura angry eff_sweat_w at speaking
-    nd_yuura_brown "(Peduli apa aku dengan kerusakan di tempat ini)"
+    nd_you_brown "(Peduli apa aku dengan kerusakan di tempat ini)"
     stop sound
     play sound sfx_action_grappling_gun_scene2
 
@@ -52,13 +52,14 @@ label scene_2:
 
     show yuura netral at center, speaking with easeinright
     play sound sfx_action_fall_down_scene5_14
-    nd_yuura_brown "Akhirnya..."
+    nd_you_brown "Akhirnya..."
     
     # BG inn ruang_tamu_1
     
     show yuura at idle
     nd_narrator_brown "Tapi aku salah kira, bukannya jalan keluar, aku malah mendarat di tempat yang penuh dengan banyak orang."
 
+    play sound sfx_expression_sweat
     show yuura scared eff_sweat_w at pacing_left_right
     nd_narrator_brown "Aku langsung panik, bisa-bisanya aku malah pergi ke tempat yang lebih ramai. Segera aku tembak Grappling ku."
 
@@ -101,7 +102,7 @@ label scene_2:
     with fade
 
     play sound sfx_expression_surprised
-    nd_yuura_brown "Finally!"
+    nd_you_brown "Finally!"
     
     # BG hutan kuil entrance
 
@@ -111,7 +112,7 @@ label scene_2:
     play sound sfx_action_grappling_gun_scene2
     hide yuura with easeoutleft
 
-    nd_yuura_brown "(Semoga tak ada yang mengejarku, pagi ku sudah cukup sial untuk membuatku menggerutu.)"
+    nd_you_brown "(Semoga tak ada yang mengejarku, pagi ku sudah cukup sial untuk membuatku menggerutu.)"
         # $ quick_menu = False
 
     # stop music fadeout 2.0

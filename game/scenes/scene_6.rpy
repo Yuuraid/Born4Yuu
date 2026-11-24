@@ -7,34 +7,35 @@ label scene_6:
     pause 1.0
     show layer master at shake
     
-    nd_yuura_brown "Ughhh... Kepalaku sakit banget..."
-    
-    nd_narrator_brown "Aku terbangun dari pingsanku, entah sudah berapa lama tapi aku masih merasakan sakit disekujur tubuhku."
+    nd_you_brown "Ughhh... Kepalaku sakit banget..."
     
     camera:
         zoom 2.0
         xalign 0.45
         yalign 0.3
-    show yuura netral at jump_in_bottom(duration=2.0), speaking
-    nd_yuura_brown "Di mana ini? Kenapa rasanya sangat familiar..."
+    show yuura hurt eff_tremble_w at jump_in_bottom(duration=2.0), speaking
+    nd_narrator_brown "Aku terbangun dari pingsanku, entah sudah berapa lama tapi aku masih merasakan sakit disekujur tubuhku."
+    
+    show yuura eff_question_mark_r
+    nd_you_brown "Di mana ini? Kenapa rasanya sangat familiar..."
     
     camera:
         zoom 1.0
         xalign 0.0
         yalign 0.0
-    show yuura at idle
-    nd_narrator_brown "Aku memperhatikan sekitarku dengan seksama, menyadari bahwa aku kembali ke tempat aku bangun pertama kali."
+    # show yuura scared eff_surprise_y at idle
+    # nd_narrator_brown "Aku memperhatikan sekitarku dengan seksama, menyadari bahwa aku kembali ke tempat aku bangun pertama kali."
     
-    show yuura eff_question_mark_r at speaking
-    nd_yuura_brown "K-kenapa aku di sini lagi!? {w}Tunggu... Apa jangan-jangan tadi aku mimpi ya?"
+    show yuura scared eff_surprise_y at speaking
+    nd_you_brown "K-kenapa aku di sini lagi!? {w}Tunggu... Apa jangan-jangan tadi aku mimpi ya?"
     
-    nd_yuura_brown "Ga, ga mungkin..."
+    nd_you_brown "Ga, ga mungkin..."
     
     show yuura none at idle
     nd_narrator_brown "Aku benar-benar merasa deja vu dengan kondisi diriku saat ini."
     
     show yuura angry eff_pale at speaking
-    nd_yuura_brown "Arghhhh... Aku sudah sangat lelah... Sebaiknya aku mandi, bauku sudah sangat buruk"
+    nd_you_brown "Arghhhh... Aku sudah sangat lelah... Sebaiknya aku mandi, bauku sudah sangat buruk"
 
     stop music fadeout 1.0
     # $ config.allow_skipping = False
@@ -77,7 +78,7 @@ label scene_6:
     # $ renpy.pause(5.0, hard=True)
     
     # # 6s
-    # nd_yuura_brown "Ah~ enaknya...{w=5.0}{nw}"
+    # nd_you_brown "Ah~ enaknya...{w=5.0}{nw}"
     # $ renpy.pause(5.0, hard=True)
     
     # scene cg_arc_2_scene_06_shoot_3:
@@ -99,21 +100,20 @@ label scene_6:
     # with Flash
 
     # # 8s
-    # nd_yuura_brown "Rasanya benar-benar puas dengan pemandian di gedung ini.{w=10.0}{nw}"
+    # nd_you_brown "Rasanya benar-benar puas dengan pemandian di gedung ini.{w=10.0}{nw}"
     # $ renpy.pause(10.0, hard=True)
 
     # Onsen end
 
     scene inn kamar_yuura morning with fade
     stop music fadeout 2.0
-    show yuura happy at ease_custom(offscreenright, center, 1.8)
+    show yuura happy eff_sparkle at ease_custom(offscreenright, center, 1.8)
     pause 1.8
-    show yuura netral 
+    # show yuura netral none
 
     # $ config.allow_skipping = True
 
     
-
     nd_narrator_brown "Setelah mandi,"
     
     play sound sfx_action_knocking_door_scene1
@@ -132,13 +132,13 @@ label scene_6:
     
     nd_narrator_brown "Aku diam saja, tak membalas satu pun ucapannya."
     
-    show yuura netral eff_sweat_w
+    show yuura scared eff_sweat_w
     voice voice_2_6_69_taro
     wd_taro_brown "Ane? kamu masih tidur? aku taruh di depan aja ya… maaf sudah mengganggu istirahat ane"
     
     play sound sfx_footstep_taro
 
-    show yuura none
+    show yuura netral none
     nd_narrator_brown "Dia berjalan untuk pergi, tapi sebelum terlalu jauh dia menatap ke kamarku sekali lagi."
 
     play music bgm_scene4 volume 1.0 loop
@@ -159,12 +159,15 @@ label scene_6:
     voice voice_2_6_73_taro
     wd_taro_brown "Tapi yang ane harus tau, aku senang melihat ane bahagia… jadi jangan sampai dirimu terluka lagi"
     
+    show yuura happy with dissolve
     nd_narrator_brown "Dia berjalan pergi meninggalkan lorong. Suara langkah kakinya tidak terdengar lagi."
     
     camera:
         zoom 2.0
         xalign 0.7
         yalign 0.3
+    with dissolve
+    pause 0.3
     show yuura at ease_custom(center, offscreenright, 1.8)
     nd_narrator_brown "Aku keluar dari kamar, mengambil makanan yang dia buat."
 
@@ -172,6 +175,7 @@ label scene_6:
         zoom 1.0
         xalign 0.0
         yalign 0.0
+    with dissolve
     show yuura happy at face_flip, ease_custom(offscreenright, center, 1.8)
     
     nd_narrator_brown "dan tersenyum tipis, merasakan sebuah ketulusan dari orang itu..."

@@ -13,6 +13,10 @@ label scene_7:
 
     play music bgm_scene1_rock volume 1.0 loop
 
+    camera:
+        zoom 2.0
+        xalign 0.6
+        yalign 0.3
     show yuura scared eff_exclamation_r at shake
 
     nd_narrator_brown "Tak selang berapa lama, aku bertemu dengan seseorang yang badannya besar, dengan perawakan layaknya om-om ganas di film cab*l yang kutonton."
@@ -25,6 +29,10 @@ label scene_7:
     play sound sfx_action_whoosh_scene13_16
     show yuura none at face_flip, ease_custom(center, offscreenleft, 0.5)
     pause 0.5
+    camera:
+        zoom 1.0
+        xalign 0.0
+        yalign 0.0
     show dityo netral mahakarya at ease_custom(offscreenright, offscreenleft, 1.0), silhouette
 
     voice voice_2_7_74_dityo
@@ -57,7 +65,7 @@ label scene_7:
     show yuura at speaking
     show dityo at idle, silhouette
     
-    nd_yuura_brown "Ga mau! Kalian aneh! Kenapa sih kalian terus mengejar aku dari pagi!"
+    nd_you_brown "Ga mau! Kalian aneh! Kenapa sih kalian terus mengejar aku dari pagi!"
     
     play sound sfx_action_whoosh_scene13_16
     show yuura at ease_custom(left, offscreenleft, 0.5)

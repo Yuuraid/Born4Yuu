@@ -1,23 +1,29 @@
 # label start:
 
 label scene_5:
+    show yuura netral eff_exclamation_y at face_flip
+
+    nd_narrator_brown "Setelah ditinggal oleh Haruto, pandangaku tertuju di gerbang tempat ini"
+    
+    nd_narrator_brown "Entah mengapa setelah melihat gerbang pintu ini. Aku..."
+
     play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
     camera:
         zoom 2.0
         xalign 0.45
         yalign 0.3
     scene inn entrance_2
-    show yuura netral at center
-    nd_narrator_brown "Setelah ditinggal oleh Haruto, entah mengapa rasa lelahku kembali, rasanya sangat berat sekali untuk melangkah."
+    show yuura netral none at face_flip, center
+    # nd_narrator_brown "Setelah ditinggal oleh Haruto, entah mengapa rasa lelahku kembali, rasanya sangat berat sekali untuk melangkah."
     
     show layer master at shake
-    show yuura hurt eff_tremble_w
-    nd_narrator_brown "Kaki sakit, kepalaku pusing, rasanya seperti aku akan pingsan saat ini juga."
+    show yuura hurt eff_tremble_w at speaking
+    nd_you_brown "ADUH!!"
         # show yuura normal animated at center
         # with Dissolve(1.0)
     
-    show yuura at speaking
-    nd_yuura_brown "Ah... Kakiku sudah tak sanggup melangkah, apakah pada akhirnya...apakah aku..."
+    show yuura at speak_in_mind
+    nd_you_brown "(Kepalaku pusing, apakah aku kecapean habis lari seharian ini?)"
 
     scene inn entrance_2 at enblur
     show yuura hurt eff_confused at center 
@@ -25,7 +31,11 @@ label scene_5:
         zoom 2.0
         xalign 0.45
         yalign 0.3
-    with fade
+    with dissolve
+
+    pause 0.2
+
+    show yuura hurt eff_confused at custom_sprite_pos(x=0.4) with ease
 
     nd_narrator_brown "Aku berjalan dengan terhuyung-huyung, badanku gemetar, penglihatanku mulai kabur."
 
@@ -52,7 +62,7 @@ label scene_5:
     scene black with eye_close
 
     #play sound ears ringing
-    nd_yuura_black "Tolong..."
+    nd_you_black "Tolong..."
     
     voice voice_1_5_59_taro
     wd_unknown_black "Anee? ANEEE!?"

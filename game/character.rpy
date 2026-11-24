@@ -106,11 +106,26 @@ define nd_yc_brown = Character("", window_background = "gui/textbox/YC/yc_nd_bro
 define nd_yc_black = Character("", window_background = "gui/textbox/YC/yc_nd_black.png")
 define wd_yc_black = Character("", window_background = "gui/textbox/YC/yc_wd_black.png")
 define wd_yc_brown = Character("", window_background = "gui/textbox/YC/yc_wd_brown.png")
+# Kebun
+define nd_kebun_brown = Character("", window_background = "gui/textbox/Kebun/kebun_nd_brown.png")
+define nd_kebun_black = Character("", window_background = "gui/textbox/Kebun/kebun_nd_black.png")
+define wd_kebun_black = Character("", window_background = "gui/textbox/Kebun/kebun_wd_black.png")
+define wd_kebun_brown = Character("", window_background = "gui/textbox/Kebun/kebun_wd_brown.png")
+# Cyber
+define nd_cyber_brown = Character("", window_background = "gui/textbox/Cyber/cyber_nd_brown.png")
+define nd_cyber_black = Character("", window_background = "gui/textbox/Cyber/cyber_nd_black.png")
+define wd_cyber_black = Character("", window_background = "gui/textbox/Cyber/cyber_wd_black.png")
+define wd_cyber_brown = Character("", window_background = "gui/textbox/Cyber/cyber_wd_brown.png")
 # Yuura
 define nd_yuura_black = Character("", window_background = "gui/textbox/Yuura/yuura_nd_black.png", what_prefix="{cps=20}", what_suffix="{/cps}")
 define nd_yuura_brown = Character("", window_background = "gui/textbox/Yuura/yuura_nd_brown.png", what_prefix="{cps=20}", what_suffix="{/cps}")
 define wd_yuura_black = Character("", window_background = "gui/textbox/Yuura/yuura_wd_black.png", what_prefix="{cps=20}", what_suffix="{/cps}")
 define wd_yuura_brown = Character("", window_background = "gui/textbox/Yuura/yuura_wd_brown.png", what_prefix="{cps=20}", what_suffix="{/cps}")
+# You
+define nd_you_black = Character("", window_background = "gui/textbox/Yuura/you_nd_black.png", what_prefix="{cps=20}", what_suffix="{/cps}")
+define nd_you_brown = Character("", window_background = "gui/textbox/Yuura/you_nd_brown.png", what_prefix="{cps=20}", what_suffix="{/cps}")
+define wd_you_black = Character("", window_background = "gui/textbox/Yuura/you_wd_black.png", what_prefix="{cps=20}", what_suffix="{/cps}")
+define wd_you_brown = Character("", window_background = "gui/textbox/Yuura/you_wd_brown.png", what_prefix="{cps=20}", what_suffix="{/cps}")
 
 
 

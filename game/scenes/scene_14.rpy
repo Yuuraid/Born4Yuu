@@ -11,7 +11,7 @@ label scene_14:
     with easeinleft
     play sound sfx_punch_impact_02
     show yuura scared at center, shake
-    nd_yuura_brown "ADUH..."
+    nd_you_brown "ADUH..."
     show yuura at idle
     
     show seiya angry eff_exclamation_r at left, speaking, flip_image
@@ -27,9 +27,9 @@ label scene_14:
     nd_narrator_brown "Menyadari bahwa itu adalah Seiya, orang sudah membantuku sebelumnya, aku segera mendekat meski sedikit ragu."
     
     show yuura happy eff_surprise_y at speaking
-    nd_yuura_brown "Seiya!"
+    nd_you_brown "Seiya!"
     
-    nd_yuura_brown "Makasih banget udah nolongin aku dari tendangan itu. Bisa mampus aku kalau bukan karena kamu."
+    nd_you_brown "Makasih banget udah nolongin aku dari tendangan itu. Bisa mampus aku kalau bukan karena kamu."
     show yuura none at idle
         
     show seiya at speaking
@@ -38,7 +38,7 @@ label scene_14:
     show seiya at idle
         
     show yuura netral eff_question_mark_y at speaking
-    nd_yuura_brown "Kenapa emangnya?"
+    nd_you_brown "Kenapa emangnya?"
     show yuura at idle
 
     transform flip_image(horizontal=True, vertical=False):
@@ -206,9 +206,9 @@ label scene_14:
     show akasyah none at idle
         
     show yuura eff_sweat_w at speaking
-    nd_yuura_brown "Ah...um...ituu..."
+    nd_you_brown "Ah...um...ituu..."
     
-    nd_yuura_brown "(ARGH SIAL, aku gatau itu benda apaan! Lagian sejak kapan aku punya uang untuk melakukan kebiasaan yang sama seperti orang-orang kaya!)"
+    nd_you_brown "(ARGH SIAL, aku gatau itu benda apaan! Lagian sejak kapan aku punya uang untuk melakukan kebiasaan yang sama seperti orang-orang kaya!)"
     show yuura none at idle
         
     show akasyah at speaking
@@ -728,11 +728,11 @@ label scene_14:
     
     scene black with eye_close
     # show yuura netral at slightright, idle
-    # nd_yuura_brown "*Menutup mata"
+    # nd_you_brown "*Menutup mata"
     
         # show black with Dissolve(1.0)
         # play sound gigit roket
-    nd_yuura_black "!!" # improvisasi? Wkwkwkwk hapus aja kalo ga butuh
+    nd_you_black "!!" # improvisasi? Wkwkwkwk hapus aja kalo ga butuh
     
     play sound sfx_action_whoosh_scene13_16
     scene cg_arc_3_scene_14_shark_shoot_01 with Flash
@@ -744,7 +744,7 @@ label scene_14:
     pause 0.2
     scene cg_arc_3_scene_14_shark_shoot_04 with Flash
 
-    # nd_yuura_brown "*Membuka mata"
+    # nd_you_brown "*Membuka mata"
 
     # show yuura at idle
 
@@ -758,7 +758,7 @@ label scene_14:
     
     # This two suppose to speak the same time
     
-    nd_yuura_brown "Shark!"
+    nd_you_brown "Shark!"
     # voice voice_3_14_242_seiya
     # nd_seiya_brown "Shark!"
 
@@ -791,7 +791,7 @@ label scene_14:
     show seiya none at face_flip, idle
         
     show yuura at speaking
-    nd_yuura_brown "T-tapi..."
+    nd_you_brown "T-tapi..."
     show yuura at idle
     
     show seiya at face_flip, speaking

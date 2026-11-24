@@ -6,7 +6,7 @@ label scene_15:
     scene inn ruang_kerja with Dissolve(1.0)
 
     show yuura scared at center, speaking with easeinright
-    nd_yuura_brown "Ah... Ah..."
+    nd_you_brown "Ah... Ah..."
     show yuura at idle
      
     nd_narrator_brown "Aku sudah berlari lumayan jauh dari lorong tempat mereka bertarung satu sama lain, aku sedikit heran, mengapa mereka berani untuk bertarung satu sama lain.. Karena aku?"
@@ -14,7 +14,7 @@ label scene_15:
     nd_narrator_brown "Tapi sebelum sempat berpikir lebih jauh, aku merasa ada seorang yang mendekat ke arahku."
     
     show yuura scared at speaking
-    nd_yuura_brown "Ahh... Aku capek..."
+    nd_you_brown "Ahh... Aku capek..."
     show yuura at idle
 
     nd_narrator_brown "Tiba-tiba aku merasakan ada seseorang yang memelukku dari belakang, dia berbisik pelan di telingaku, suaranya membuat bulu kudukku merinding ketakutan."
@@ -32,7 +32,7 @@ label scene_15:
     with ease
     play sound sfx_expression_shocked
     show yuura eff_surprise_y at face_flip, speaking
-    nd_yuura_brown "KYAHHHH!"
+    nd_you_brown "KYAHHHH!"
     show yuura at face_flip, idle
 
     show yuura none at face_flip, custom_sprite_pos(x=0.6) with ease
@@ -48,9 +48,9 @@ label scene_15:
     # show yuura at left with ease
 
     show yuura at left, speaking with ease
-    nd_yuura_brown "WHAT THE FAHHH?!"
+    nd_you_brown "WHAT THE FAHHH?!"
     
-    nd_yuura_brown "(T-TUBUHNYA.. TERBELAH!?)"
+    nd_you_brown "(T-TUBUHNYA.. TERBELAH!?)"
     show yuura at face_flip, idle
     
     show axia at consumed_by_darkness
@@ -97,7 +97,7 @@ label scene_15:
     nd_narrator_brown "Dia mengulurkan tangannya, membuat diriku semakin takut padanya."
     
     show yuura at speaking
-    nd_yuura_brown "Pergi! PERGI!"
+    nd_you_brown "Pergi! PERGI!"
     show yuura at idle
     
     show axia at speaking
@@ -110,7 +110,7 @@ label scene_15:
 
     show yuura at speaking
     show axia at right with ease
-    nd_yuura_brown "M-menjauhlah dariku!"
+    nd_you_brown "M-menjauhlah dariku!"
     show yuura at idle
     
     # nd_narrator_brown "Gadis dengan suara om-om itu pun mulai berjalan membelakangiku. Yang entah mengapa, semakin ia menjauh dariku, suasana di sini malah terasa sesak."
@@ -121,7 +121,7 @@ label scene_15:
     show axia at idle
 
     show yuura at speaking
-    nd_yuura_brown "Kamu aneh! Aku sudah lelah dengan semua keanehan ini."
+    nd_you_brown "Kamu aneh! Aku sudah lelah dengan semua keanehan ini."
     show yuura at idle
     
     show axia at speaking
@@ -130,7 +130,7 @@ label scene_15:
     show axia at idle
 
     show yuura at speaking
-    nd_yuura_brown "(Sial! Keknya aku salah ngomong lagi.)"
+    nd_you_brown "(Sial! Keknya aku salah ngomong lagi.)"
     show yuura at idle
     
     show axia at custom_sprite_pos(x=0.7) with ease
@@ -159,7 +159,7 @@ label scene_15:
     show yuura at speaking
     show yuura scared at shake
     # show yuura takut shake 
-    nd_yuura_brown "!!"
+    nd_you_brown "!!"
     show yuura at idle
     
     # CG here
@@ -182,7 +182,7 @@ label scene_15:
         "Menyerah pada Axiaregis":
             play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
             show yuura at speaking
-            nd_yuura_brown "A-aku... menyerah!"
+            nd_you_brown "A-aku... menyerah!"
             show yuura at idle
             
             show axia at speaking
@@ -191,7 +191,7 @@ label scene_15:
             show axia at idle
 
             show yuura at speaking
-            nd_yuura_brown "Hah? Kenapa begitu?"
+            nd_you_brown "Hah? Kenapa begitu?"
             show yuura at idle
             
             show axia at speaking
@@ -221,7 +221,7 @@ label scene_15:
             # play music bgm_scene15_feint volume 1.0 loop
             show axia at custom_sprite_pos(x=0.4) with ease
             show yuura at speaking
-            nd_yuura_brown "ARGhhh Lepas!"
+            nd_you_brown "ARGhhh Lepas!"
             show yuura at idle
             
             show axia at speaking
@@ -1084,7 +1084,7 @@ label scene_15:
             show rian at idle
 
             show yuura at face_flip, speaking
-            nd_yuura_brown "Bagaimana denganmu? Kenapa kita tidak lari bersama saja?"
+            nd_you_brown "Bagaimana denganmu? Kenapa kita tidak lari bersama saja?"
             show yuura at face_flip, idle
             
             show rian at speaking
@@ -1106,7 +1106,7 @@ label scene_15:
             show rian at idle
 
             show yuura at face_flip, speaking
-            nd_yuura_brown "B-baiklah… Tapi kamu hati-hati, oke? Dia terlalu berbahaya."
+            nd_you_brown "B-baiklah… Tapi kamu hati-hati, oke? Dia terlalu berbahaya."
             show yuura at face_flip, idle
             
             show rian at speaking

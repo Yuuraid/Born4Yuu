@@ -8,7 +8,7 @@ label scene_3:
     nd_narrator_brown "Aku berlari, terus berlari. Tanpa sekalipun melihat ke belakangku, aku berlari tanpa henti berharap mereka semua tidak mengejar diriku lagi."
     
     show yuura at speaking
-    nd_yuura_brown "*huft huft..."
+    nd_you_brown "*huft huft..."
     hide yuura with easeoutleft
     stop sound
     
@@ -16,9 +16,10 @@ label scene_3:
     scene hutan pohon with dissolve
     show yuura angry at center, speaking with easeinright #dissapointed/confused
     
-    nd_yuura_brown "Arghhh.. Ini gila! bisa-bisanya aku terbangun di tempat kayak gini? huah.."
+    nd_you_brown "Arghhh.. Ini gila! bisa-bisanya aku terbangun di tempat kayak gini? huah.."
     
-    show yuura scared eff_sweat_w at idle
+    play sound sfx_expression_sweat
+    show yuura scared eff_sweat_w at speak_in_mind
     nd_narrator_brown "Nafasku tersengal-sengal karena berlarian terus sepanjang waktu."
     
     hide yuura with easeoutleft
@@ -31,7 +32,7 @@ label scene_3:
     
     play sound sfx_expression_angry
     show yuura angry eff_angry at speaking
-    nd_yuura_brown "(Bagaimana aku bisa tiba-tiba berada di tempat ini. Apa yang telah terjadi? Mengapa ini semua terjadi? Dan kenapa aku bisa ada di sini?)"
+    nd_you_brown "(Bagaimana aku bisa tiba-tiba berada di tempat ini. Apa yang telah terjadi? Mengapa ini semua terjadi? Dan kenapa aku bisa ada di sini?)"
 
     stop music fadeout 1.0
     play music bgm_scene3_pria_asing volume 1.0 fadein 2.0 fadeout 2.0 loop
@@ -55,17 +56,18 @@ label scene_3:
 
     play sound sfx_expression_angry
     show yuura angry eff_angry at face_flip, speaking
-    nd_yuura_brown "S-siapa kamu??? CEPAT JAWAB DARIMANA KAMU TAHU TENTANGKU!"
+    nd_you_brown "S-siapa kamu??? CEPAT JAWAB DARIMANA KAMU TAHU TENTANGKU!"
     
     show yuura at face_flip, idle 
     voice voice_1_3_23_pria_misterius
     nd_unknown_brown "Intuisiku saja"
     
+    play sound sfx_expression_sweat
     show yuura sad eff_sweat_w at speaking
     show pria at idle
-    nd_yuura_brown "Aku sudah tidak mengerti lagi dengan tempat ini, tadi orang-orang mengejarku." 
+    nd_you_brown "Aku sudah tidak mengerti lagi dengan tempat ini, tadi orang-orang mengejarku." 
     
-    nd_yuura_brown "Sekarang ada orang aneh yang berbicara denganku dari balik pohon! Lalu apa? aku akan melihat orang-orang masuk penjara?"
+    nd_you_brown "Sekarang ada orang aneh yang berbicara denganku dari balik pohon! Lalu apa? aku akan melihat orang-orang masuk penjara?"
 
 
     show yuura at idle
@@ -74,9 +76,10 @@ label scene_3:
     # stop music
     # play music bgm_scene3_pelukan volume 1.0 loop
 
+    play sound sfx_expression_sweat
     show yuura at speaking
     # show pria at idle
-    nd_yuura_brown "Aku capek.. aku mau pulang.. tidak seharusnya aku disini.."
+    nd_you_brown "Aku capek.. aku mau pulang.. tidak seharusnya aku disini.."
     
     show yuura at idle
     # show pria at speaking
@@ -170,7 +173,7 @@ label scene_3:
     show yuura scared eff_surprise_y at right, speaking
     nd_narrator_brown "Aku terkejut bukan main."
 
-    nd_yuura_brown "(Nama ini----!)"
+    nd_you_brown "(Nama ini----!)"
 
     show yuura none at idle
     nd_narrator_brown "Aku semakin bingung dengan apa yang terjadi. Baru beberapa saat yang lalu aku dikejar oleh ratusan orang dan sekarang aku malah menemukan barang tak ingat aku pernah ambil."
@@ -184,17 +187,19 @@ label scene_3:
     wd_unknown_brown "Oh? Kamu membawa benda yang menarik~"
     
     show pria at idle
+    play sound sfx_expression_surprised
     show yuura angry eff_question_mark_r at speaking
-    nd_yuura_brown "Apa maksudmu? Lagipula aku ingat dengan jelas bahwa botol ini tidak bersamaku?"
+    nd_you_brown "Apa maksudmu? Lagipula aku ingat dengan jelas bahwa botol ini tidak bersamaku?"
     
     show yuura none at idle
+    play sound sfx_expression_surprised
     show pria netral eff_question_mark_flip_r at speaking
     voice voice_1_3_30_pria_misterius
     wd_unknown_brown "Lalu bagaimana benda itu bisa di sini?"
     
     show pria none at idle
     show yuura at speaking
-    nd_yuura_brown "Entahlah.. Jika botol ini ku bawa di dalam bajuku, sudah pasti akan sangat sulit membawanya sambil dikejar oleh banyak orang"
+    nd_you_brown "Entahlah.. Jika botol ini ku bawa di dalam bajuku, sudah pasti akan sangat sulit membawanya sambil dikejar oleh banyak orang"
     
     show yuura at idle
     show pria at speaking
@@ -203,16 +208,18 @@ label scene_3:
     
     show pria at idle
     show yuura at speaking
-    nd_yuura_brown "Takdir? Apa maksudmu semua hal bodoh ini adalah takdir bagiku?"
+    nd_you_brown "Takdir? Apa maksudmu semua hal bodoh ini adalah takdir bagiku?"
     
     show yuura at idle
+    # play sound sfx_expression_laugh
     show pria happy eff_laugh_r at speaking
     voice voice_1_3_34_pria_misterius
     wd_unknown_brown "Mungkin saja kan~"
     
     show pria none at idle
+    play sound sfx_expression_angry
     show yuura eff_angry at speaking
-    nd_yuura_brown "Ga, ga masuk akal. Mustahil, lebih baik aku pergi keluar dan menjual botol ini."
+    nd_you_brown "Ga, ga masuk akal. Mustahil, lebih baik aku pergi keluar dan menjual botol ini."
     
     show yuura none at center with ease
     nd_narrator_brown "Aku berjalan melewati pria misterius itu."
@@ -225,16 +232,19 @@ label scene_3:
         # with fade
     
     show pria at idle
+    play sound sfx_expression_surprised
     show yuura eff_question_mark_r at speaking
-    nd_yuura_brown "Apa maksud...mu???"
+    nd_you_brown "Apa maksud...mu???"
 
     play sound sfx_zoom
     hide pria with dissolve
+    play sound sfx_expression_shocked
     show yuura scared eff_exclamation_y at speaking
-    nd_yuura_brown "Ke mana orang itu pergi?"
+    nd_you_brown "Ke mana orang itu pergi?"
     # stop music 
     show yuura at idle
     nd_narrator_brown "Aku terdiam sejenak, bertanya-tanya kemana pria itu pergi. Tapi aku langsung mengalihkan perhatianku saat ini, aku sudah tidak peduli lagi dan langsung pergi mencari jalan keluar dari sini."
+    play sound sfx_action_whoosh_scene13_16
     hide yuura with easeoutleft
 
     stop music fadeout 1.0

@@ -12,7 +12,7 @@ label scene_17:
 
     nd_narrator_brown "Sementara itu di tempat yang tidak diketahui, aku terbangun tepat di hadapan seseorang yang pernah kutemui di dalam hutan."
     show yuura hurt at left, speaking
-    nd_yuura_brown "Di mana aku? Kenapa aku di sini?"
+    nd_you_brown "Di mana aku? Kenapa aku di sini?"
     show yuura at idle
     
     show pria netral at right, speaking
@@ -38,18 +38,18 @@ label scene_17:
     show pria at idle
 
     show yuura netral at speaking
-    nd_yuura_brown "Minum teh?"
+    nd_you_brown "Minum teh?"
     show yuura at idle
     nd_narrator_brown "Aku melihat sekeliling dan mendapati diriku berada di kamar tempat pertama kali aku bangun, tapi suasananya jauh berbeda dari sebelumnya."
     
     nd_narrator_brown "Belum lagi peralatan minum serta pria asing yang tiba-tiba ada di kamar ini membuatnya jadi lebih membingungkan."
     
     show yuura at speaking
-    nd_yuura_brown "(Tunggu... Bukannya aku sebelumnya berada di halaman belakang tempat ini...)"
+    nd_you_brown "(Tunggu... Bukannya aku sebelumnya berada di halaman belakang tempat ini...)"
     
-    nd_yuura_brown "Bagaimana aku bisa di sini?"
+    nd_you_brown "Bagaimana aku bisa di sini?"
     
-    nd_yuura_brown "Apa yang terjadi? Bukankah tadi ada pertarungan?"
+    nd_you_brown "Apa yang terjadi? Bukankah tadi ada pertarungan?"
     show yuura at idle
 
     nd_narrator_brown "Pria itu tertawa kecil."
@@ -63,7 +63,7 @@ label scene_17:
     show pria at idle
 
     show yuura at speaking
-    nd_yuura_brown "Diri...ku???"
+    nd_you_brown "Diri...ku???"
     show yuura at idle
     
     show pria at speaking
@@ -72,7 +72,7 @@ label scene_17:
     show pria at idle
 
     show yuura at speaking
-    nd_yuura_brown "Hah?"
+    nd_you_brown "Hah?"
     show yuura at idle
 
     nd_narrator_brown "Yuura menggelengkan kepala ke samping."
@@ -98,7 +98,7 @@ label scene_17:
     nd_narrator_brown "..."
 
     show yuura at speaking
-    nd_yuura_brown "Ah maaf..."
+    nd_you_brown "Ah maaf..."
     show yuura at idle
 
     show pria at speaking
@@ -114,7 +114,7 @@ label scene_17:
     nd_narrator_brown "Pria itu menjentikkan jari nya dan seketika sisa-sisa teh yang ada di tubuhnya lenyap seperti tak terjadi apa-apa."
 
     show yuura at speaking
-    nd_yuura_brown "Bagaimana..."
+    nd_you_brown "Bagaimana..."
     show yuura at idle
 
     show pria at speaking
@@ -136,7 +136,7 @@ label scene_17:
             $ renpy.sound.set_volume(0.0, channel="memories")
             # play music bgm_scene3_pria_asing volume 1.0 loop
             show yuura at speaking
-            nd_yuura_brown "Apa maksudmu?"
+            nd_you_brown "Apa maksudmu?"
             show yuura at idle
 
             show pria at speaking
@@ -154,7 +154,7 @@ label scene_17:
             # play sound zupp
             # show ruang putih
             show yuura at speaking
-            nd_yuura_brown "D-di mana kita sekarang?"
+            nd_you_brown "D-di mana kita sekarang?"
             show yuura at idle
 
             show pria at speaking
@@ -163,7 +163,7 @@ label scene_17:
             show pria at idle
 
             show yuura at speaking
-            nd_yuura_brown "!?"
+            nd_you_brown "!?"
             show yuura at idle
             
             nd_narrator_brown "Pria itu tertawa kecil."
@@ -174,7 +174,7 @@ label scene_17:
             show pria at idle
 
             show yuura at speaking
-            nd_yuura_brown "Berhenti bercanda sekarang juga! Apa sih yang ingin kamu sampaikan?"
+            nd_you_brown "Berhenti bercanda sekarang juga! Apa sih yang ingin kamu sampaikan?"
             show yuura at idle
 
             show pria at speaking
@@ -186,7 +186,7 @@ label scene_17:
             show pria at idle
 
             show yuura at speaking
-            nd_yuura_brown "DIEM!"
+            nd_you_brown "DIEM!"
             show yuura at idle
 
             show pria at speaking
@@ -243,7 +243,7 @@ label scene_17:
             show pria at idle
 
             show yuura at speaking
-            nd_yuura_brown "Aku... Tidak mengerti..."
+            nd_you_brown "Aku... Tidak mengerti..."
             show yuura at idle
 
             hide vid_memory_people_laugh with Dissolve(0.5)
@@ -257,9 +257,9 @@ label scene_17:
             show pria at idle
 
             show yuura at speaking
-            nd_yuura_brown "..."
+            nd_you_brown "..."
             
-            nd_yuura_brown "Aku..."
+            nd_you_brown "Aku..."
             show yuura at idle
 
             show pria at speaking
@@ -299,7 +299,7 @@ label scene_17:
             nd_narrator_brown "Aku semakin bingung, sejak kapan aku pernah membacakan mereka cerita. Aku tidak paham arah dari pembicaraan ini."
             
             show yuura at speaking
-            nd_yuura_brown "Bisakah kita berhenti?"
+            nd_you_brown "Bisakah kita berhenti?"
             show yuura at idle
 
             hide vid_memory_reading with Dissolve(0.5)
@@ -310,10 +310,10 @@ label scene_17:
             show pria at idle
 
             show yuura at speaking
-            nd_yuura_brown "Aku... Aku tak pernah melakukan yang kamu sebutkan..."
+            nd_you_brown "Aku... Aku tak pernah melakukan yang kamu sebutkan..."
             show yuura at idle
             
-            nd_yuura_brown "Aku bukan Yuura yang kalian kenal."
+            nd_you_brown "Aku bukan Yuura yang kalian kenal."
             show yuura at idle
             
             nd_narrator_brown "Pria itu tersenyum, dia menatapku dengan penuh kasih. Rasanya sangat menenangkan melihatnya."
@@ -324,7 +324,7 @@ label scene_17:
             show pria at idle
 
             show yuura at speaking
-            nd_yuura_brown "Apa maksudmu?"
+            nd_you_brown "Apa maksudmu?"
             show yuura at idle
 
             show vid_memory_hutang behind yuura:
@@ -369,13 +369,13 @@ label scene_17:
             show pria at idle
 
             show yuura at speaking
-            nd_yuura_brown "Aku tidak mengerti apa yang kamu ingin sampaikan?"
+            nd_you_brown "Aku tidak mengerti apa yang kamu ingin sampaikan?"
             
             hide vid_memory_tertawa with Dissolve(0.5)
 
-            nd_yuura_brown "Aku bukanlah Yuura yang kamu kenal! Aku terlempar ke sini dan menjalani hari yang super berat."
+            nd_you_brown "Aku bukanlah Yuura yang kamu kenal! Aku terlempar ke sini dan menjalani hari yang super berat."
             
-            nd_yuura_brown "Apakah kita tidak bisa berhenti saja?"
+            nd_you_brown "Apakah kita tidak bisa berhenti saja?"
             show yuura at idle
             
             nd_narrator_brown "Mendengar kata itu, membuatnya terdiam sejenak. Dia menatap langit-langit sembari tersenyum kecil."
@@ -388,7 +388,7 @@ label scene_17:
             # show pria at idle
 
             # show yuura at speaking
-            # nd_yuura_brown "Tidak! Mana mungkin aku mau memikirkan orang-orang aneh seperti mereka?"
+            # nd_you_brown "Tidak! Mana mungkin aku mau memikirkan orang-orang aneh seperti mereka?"
             # show yuura at idle
             
             # show pria at speaking
@@ -397,9 +397,9 @@ label scene_17:
             # show pria at idle
 
             # show yuura at speaking
-            # nd_yuura_brown "Ya... Buat apa? Kenapa aku harus peduli sama kalian?"
+            # nd_you_brown "Ya... Buat apa? Kenapa aku harus peduli sama kalian?"
             
-            # nd_yuura_brown "Tempatku bukan di sini... Aku tak memiliki tempat di sini dan tak akan pernah."
+            # nd_you_brown "Tempatku bukan di sini... Aku tak memiliki tempat di sini dan tak akan pernah."
             # show yuura at idle
             
             show pria at speaking
@@ -408,7 +408,7 @@ label scene_17:
             show pria at idle
 
             show yuura at speaking
-            nd_yuura_brown "Iyalah..."
+            nd_you_brown "Iyalah..."
             show yuura at idle
             
             show pria at speaking
@@ -441,13 +441,13 @@ label scene_17:
             show pria at idle
 
             show yuura at speaking
-            nd_yuura_brown "Aku... Aku tak bisa..."
+            nd_you_brown "Aku... Aku tak bisa..."
             
-            nd_yuura_brown "Aku hanya seorang pencuri biasa yang terjebak ditubuh orang yang kalian sebut YUURA"
+            nd_you_brown "Aku hanya seorang pencuri biasa yang terjebak ditubuh orang yang kalian sebut YUURA"
 
-            nd_yuura_brown "AKU BUKAN DIA, aku tak bisa... Sama sekali tidak bisa."
+            nd_you_brown "AKU BUKAN DIA, aku tak bisa... Sama sekali tidak bisa."
             
-            nd_yuura_brown "Meski aku berusaha sekeras mungkin untuk menjadi Yuura sekarang, aku gak akan bisa jadi Yuura yang kalian kenal sejak lama!"
+            nd_you_brown "Meski aku berusaha sekeras mungkin untuk menjadi Yuura sekarang, aku gak akan bisa jadi Yuura yang kalian kenal sejak lama!"
 
             show yuura at idle
             
@@ -548,7 +548,7 @@ label scene_17:
                 "Aku tidak bisa":
                     play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
                     show yuura at speaking
-                    nd_yuura_brown "Aku tidak bisa."
+                    nd_you_brown "Aku tidak bisa."
                     show yuura at idle
                     
                     show pria at speaking
@@ -557,7 +557,7 @@ label scene_17:
                     show pria at idle
 
                     show yuura at speaking
-                    nd_yuura_brown "Aku rasa... Aku bukan lah orang yang cocok."
+                    nd_you_brown "Aku rasa... Aku bukan lah orang yang cocok."
                     show yuura at idle
                     
                     show pria at speaking
@@ -569,27 +569,27 @@ label scene_17:
                     show pria at idle
 
                     show yuura at speaking
-                    nd_yuura_brown "Aku... Hanya tidak mengerti mengapa aku harus di sini..."
+                    nd_you_brown "Aku... Hanya tidak mengerti mengapa aku harus di sini..."
                     
-                    nd_yuura_brown "Memang benar banyak hal yang terjadi hari ini."
+                    nd_you_brown "Memang benar banyak hal yang terjadi hari ini."
                     
-                    nd_yuura_brown "Memang benar semua yang kamu beritahukan padaku sungguh indah."
+                    nd_you_brown "Memang benar semua yang kamu beritahukan padaku sungguh indah."
                     
-                    nd_yuura_brown "Tapi itu bukanlah diriku..."
+                    nd_you_brown "Tapi itu bukanlah diriku..."
                     
-                    nd_yuura_brown "Aku tak pernah melakukan semua itu..."
+                    nd_you_brown "Aku tak pernah melakukan semua itu..."
                     
-                    nd_yuura_brown "Aku merasa tidak pantas untuk menggantikan Yuura kalian."
+                    nd_you_brown "Aku merasa tidak pantas untuk menggantikan Yuura kalian."
                     
-                    nd_yuura_brown "Bahkan aku saja jauh dari Yuura yang kalian kenal."
+                    nd_you_brown "Bahkan aku saja jauh dari Yuura yang kalian kenal."
                     
-                    nd_yuura_brown "Aku... Hanya ingin pulang, ke tempat asalku..."
+                    nd_you_brown "Aku... Hanya ingin pulang, ke tempat asalku..."
                     show yuura at idle
                     
                     voice voice_3_17_530_pria_misterius
                     nd_unknown_brown "..."
                     
-                    nd_yuura_brown "..."
+                    nd_you_brown "..."
                     
                     nd_narrator_brown "Aku benar-benar terdiam, tak tahu harus berbuat apa lagi. Aku hanya ingin beristirahat dan melupakan semua kejadian yang melelahkan ini."
                     
@@ -605,7 +605,7 @@ label scene_17:
                     show pria at idle
 
                     show yuura at speaking
-                    nd_yuura_brown "Maaf... Aku tidak punya pilihan lagi."
+                    nd_you_brown "Maaf... Aku tidak punya pilihan lagi."
                     show yuura at idle
                     
                     show pria at speaking
@@ -635,7 +635,7 @@ label scene_17:
                     show pria at idle
 
                     show yuura at speaking
-                    nd_yuura_brown "Terimakasih..."
+                    nd_you_brown "Terimakasih..."
                     show yuura at idle
 
                     stop music
@@ -664,13 +664,13 @@ label scene_17:
                     # play music two chords
                     play music bgm_scene17_chord volume 1.0 loop
                     show yuura at speaking
-                    nd_yuura_brown "Aku..."
+                    nd_you_brown "Aku..."
                     
-                    nd_yuura_brown "Aku tidak mengerti... Sama sekali tidak mengerti dengan ini semua..."
+                    nd_you_brown "Aku tidak mengerti... Sama sekali tidak mengerti dengan ini semua..."
                     
-                    nd_yuura_brown "Kenapa kalian melakukannya sejauh itu?"
+                    nd_you_brown "Kenapa kalian melakukannya sejauh itu?"
                     
-                    nd_yuura_brown "Maksudku... Ah! Apasih..."
+                    nd_you_brown "Maksudku... Ah! Apasih..."
                     # show yuura at idle
                     
                     scene cg_arc_3_scene_17_shoot_01 with Flash
@@ -689,17 +689,17 @@ label scene_17:
 
                     scene cg_arc_3_scene_17_shoot_03 with dissolve
                     # show yuura at speaking
-                    nd_yuura_brown "Apa sih yang kalian inginkan dariku..."
+                    nd_you_brown "Apa sih yang kalian inginkan dariku..."
                     
-                    nd_yuura_brown "Apa kalian tidak takut ketika Yuura berubah menjadi seseorang yang kalian tidak kenali?"
+                    nd_you_brown "Apa kalian tidak takut ketika Yuura berubah menjadi seseorang yang kalian tidak kenali?"
 
-                    nd_yuura_brown "Gimana kalau Yuura yang kalian lindungi itu palsu?"
+                    nd_you_brown "Gimana kalau Yuura yang kalian lindungi itu palsu?"
                     
                     with hpunch
 
-                    nd_yuura_brown "KENAPA KALIAN TETAP BEGINI PADAHAL KALIAN SEBENARNYA PUN CURIGA DAN RAGU PADAKU?"
+                    nd_you_brown "KENAPA KALIAN TETAP BEGINI PADAHAL KALIAN SEBENARNYA PUN CURIGA DAN RAGU PADAKU?"
                     
-                    nd_yuura_brown "Kenapa kalian...{w} masih mau menerimaku?"
+                    nd_you_brown "Kenapa kalian...{w} masih mau menerimaku?"
                     # show yuura at idle
                     
                     scene cg_arc_3_scene_17_shoot_04 with dissolve
@@ -721,9 +721,9 @@ label scene_17:
                     show pria at idle
 
                     show yuura at speaking
-                    nd_yuura_brown "Tapi aku bukan Yuura yang kalian kenal!"
+                    nd_you_brown "Tapi aku bukan Yuura yang kalian kenal!"
                     
-                    nd_yuura_brown "Mengapa masih saja ada yang mau melindungiku, bahkan melukai dirinya sendiri demi diriku!"
+                    nd_you_brown "Mengapa masih saja ada yang mau melindungiku, bahkan melukai dirinya sendiri demi diriku!"
                     show yuura at idle
                     
                     show pria at speaking
@@ -732,9 +732,9 @@ label scene_17:
                     show pria at idle
 
                     show yuura at speaking
-                    nd_yuura_brown "Bagaimana bisa? Hanya karena aku mirip dengan orang yang kalian kenal, kalian langsung melakukan apapun demi diriku!" # demiku atau demi aku?
+                    nd_you_brown "Bagaimana bisa? Hanya karena aku mirip dengan orang yang kalian kenal, kalian langsung melakukan apapun demi diriku!" # demiku atau demi aku?
                     
-                    nd_yuura_brown "Apa kalian itu tolol atau gimana sih!"
+                    nd_you_brown "Apa kalian itu tolol atau gimana sih!"
                     show yuura at idle
                     
                     show pria at speaking
@@ -746,7 +746,7 @@ label scene_17:
                     show pria at idle
 
                     show yuura at speaking
-                    nd_yuura_brown "Apanya yang lucu dari itu?"
+                    nd_you_brown "Apanya yang lucu dari itu?"
                     show yuura at idle
                     
                     show pria at speaking
@@ -755,7 +755,7 @@ label scene_17:
                     show pria at idle
                     
                     show yuura at speaking
-                    nd_yuura_brown "Maksudmu?"
+                    nd_you_brown "Maksudmu?"
                     show yuura at idle
                     
                     show pria at speaking
@@ -808,7 +808,7 @@ label scene_17:
                     nd_unknown_brown "Apa kamu masih ragu pada dirimu sendiri?"
                     show pria at idle
                     
-                    nd_yuura_brown "..."
+                    nd_you_brown "..."
                     
                     show pria at speaking
                     play music bgm_scene4 volume 1.0 loop fadein 1.0
@@ -834,7 +834,7 @@ label scene_17:
                     
                     nd_narrator_brown "Perlahan aku mulai menghilang, melihat pria itu tersenyum bahagia membuatku merasa sangat bahagia. Apakah ini adalah jalan yang benar untukku? Entahlah, aku hanya perlu menjadi diriku sendiri."
                     show yuura at speaking
-                    nd_yuura_brown "Terima kasih... {w}ermm..."
+                    nd_you_brown "Terima kasih... {w}ermm..."
                     show yuura at idle
                     
                     show pria at speaking
@@ -848,7 +848,7 @@ label scene_17:
                         ease 5 alpha 0.2
                     
                     show yuura at speaking
-                    nd_yuura_brown "Ya! Terimakasih, Yuuraid."
+                    nd_you_brown "Ya! Terimakasih, Yuuraid."
                     # show yuura at idle
 
                     show yuura:
@@ -863,7 +863,7 @@ label scene_17:
         "Aku ingin pergi dari sini":
             play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
             show yuura at speaking
-            nd_yuura_brown "Aku ingin pergi dari sini."
+            nd_you_brown "Aku ingin pergi dari sini."
             show yuura at idle
 
     
@@ -873,7 +873,7 @@ label scene_17:
             show pria at idle
 
             show yuura at speaking
-            nd_yuura_brown "Maaf... Aku tidak bisa di sini..."
+            nd_you_brown "Maaf... Aku tidak bisa di sini..."
             show yuura at idle
 
             # show pria at speaking
@@ -882,7 +882,7 @@ label scene_17:
             # show pria at idle
 
             show yuura at speaking
-            nd_yuura_brown "Maaf..."
+            nd_you_brown "Maaf..."
             show yuura at idle
 
     
@@ -895,7 +895,7 @@ label scene_17:
             show pria at idle
 
             show yuura at speaking
-            nd_yuura_brown "Maaf… aku bukan orang yang baik."
+            nd_you_brown "Maaf… aku bukan orang yang baik."
             show yuura at idle
             
     
@@ -933,7 +933,7 @@ label scene_17:
             show pria at idle
             
             show yuura at speaking
-            nd_yuura_brown "Terimakasih..."
+            nd_you_brown "Terimakasih..."
             show yuura at idle
 
             stop music

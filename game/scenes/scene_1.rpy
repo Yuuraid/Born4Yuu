@@ -34,8 +34,9 @@ label scene_1:
         xalign 0.45
         yalign 0.3
     
+    play sound sfx_expression_drowsy
     show yuura netral eff_drowsy_w at jump_in_bottom(duration=2.0), speaking
-    nd_yuura_brown "Iya iya... Hooam..." 
+    nd_you_brown "Iya iya... Hooam..." 
 
     camera:
         zoom 1.0
@@ -53,13 +54,14 @@ label scene_1:
     $ renpy.music.set_pause(True, channel="music")
     play sound sfx_expression_shocked
     show yuura scared eff_surprise_y at shake, speaking
-    nd_yuura_brown "(LOH KENAPA AKU DI LANTAI!?)"
+    nd_you_brown "(LOH KENAPA AKU DI LANTAI!?)"
     
     show yuura scared none at idle
     
     $ renpy.music.set_pause(False, channel="music")
     nd_narrator_brown "Aku langsung sadar ketika menyadari ada yang janggal,{w} dan mendapati bahwa aku tidur di kasur yang dibentangkan di lantai?..."
     
+    play sound sfx_expression_sweat
     show yuura scared eff_sweat_w at pacing_left_right, idle
     nd_narrator_brown "Aku segera melihat sekitar"
     
@@ -74,13 +76,13 @@ label scene_1:
     $ renpy.music.set_pause(True, channel="music")
     play sound sfx_expression_shocked
     show yuura scared none at center, shake, speaking #kalo boleh ada dissapointed
-    nd_yuura_brown "INI BUKAN KAMARKU!!"
+    nd_you_brown "INI BUKAN KAMARKU!!"
     # $ renpy.music.set_pause(False, channel="music")
     play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
     
     show yuura netral eff_question_mark_r at center, speaking
     play sound sfx_expression_surprised
-    nd_yuura_brown "Kemarin aku salah masuk kamar apa gimana dah?{w} Kok bisa-bisanya kebangun di sini?"
+    nd_you_brown "Kemarin aku salah masuk kamar apa gimana dah?{w} Kok bisa-bisanya kebangun di sini?"
     
     scene black
     camera:
@@ -99,7 +101,7 @@ label scene_1:
         xalign 0.45
         yalign 0.3
     show yuura netral at center, speaking
-    nd_yuura_black "Nggak ada yang aneh sih..."
+    nd_you_black "Nggak ada yang aneh sih..."
     hide yuura netral
     camera:
         zoom 1.0
@@ -133,7 +135,7 @@ label scene_1:
 
     # show yuura sad at center, shake, speaking
     show layer master at shake
-    nd_yuura_brown "Aduh..."
+    nd_you_brown "Aduh..."
     
     scene inn kamar_yuura morning
     show yuura sad at center, idle, face_flip
@@ -157,15 +159,16 @@ label scene_1:
         xalign 0.60
         yalign 0.3
     show layer master at shake
-    nd_yuura_brown "Uh.. Kayaknya pemilik kamar ini adalah orang yang menakutkan.."
+    nd_you_brown "Uh.. Kayaknya pemilik kamar ini adalah orang yang menakutkan.."
     
+    play sound sfx_expression_sweat
     show yuura scared eff_sweat_w at center, idle
     nd_narrator_brown "Didekat zirah itu terdapat meja kecil yang diatasnya terdapat alat penghisap tembakau dan topeng berbentuk hewan"
     
     play sound sfx_expression_shocked
     show layer master at shake
     show yuura scared eff_surprise_y at center, shake, speaking
-    nd_yuura_brown "Beneran kriminal ini mah.."
+    nd_you_brown "Beneran kriminal ini mah.."
 
     camera:
         zoom 1.0
@@ -217,10 +220,10 @@ label scene_1:
 
     play sound sfx_expression_shocked
     show yuura scared eff_exclamation_y at center, shake, speaking
-    nd_yuura_brown "ANJIR!!"
+    nd_you_brown "ANJIR!!"
     
     play music bgm_scene1_jade_bottle fadeout 1.0 fadein 1.0 volume 1.0 loop
-    nd_yuura_brown "NIH ORANG MIRIP BANGET SAMA GUE COK!"
+    nd_you_brown "NIH ORANG MIRIP BANGET SAMA GUE COK!"
     
     show yuura netral none at center, idle
     nd_narrator_brown "Aku mengamati beberapa foto lainnya. Benar saja, perempuan yang mirip denganku itu nampaknya merupakan pemilik kamar ini."
@@ -235,7 +238,7 @@ label scene_1:
 
     play sound sfx_expression_confused
     show yuura netral eff_question_mark_r at center, speaking
-    nd_yuura_brown "Kok bisa yah, ada orang yang beneran mirip sama aku..?"
+    nd_you_brown "Kok bisa yah, ada orang yang beneran mirip sama aku..?"
 
     scene black
     camera:
@@ -268,18 +271,20 @@ label scene_1:
         xalign 0.45
         yalign 0.3
     show yuura scared eff_exclamation_y at center, shake, speaking
-    nd_yuura_brown "ANJIR,TERNYATA ADA ORANG LAIN JUGA DISINI"
+    nd_you_brown "ANJIR,TERNYATA ADA ORANG LAIN JUGA DISINI"
     
     camera:
         zoom 1.0
         xalign 0.0
         yalign 0.0
     with dissolve
+    play sound sfx_expression_sweat
     show yuura scared eff_sweat_w at pacing_left_right, idle
     nd_narrator_brown "Aku segera memutar otakku, dan menemukan jawaban."
     
+    play sound sfx_expression_sweat
     show yuura scared eff_sweat_w at center, speaking
-    nd_yuura_brown "AKU HARUS LARI SEBELUM KETAHUAN!!!"
+    nd_you_brown "AKU HARUS LARI SEBELUM KETAHUAN!!!"
     
     play sound sfx_action_whoosh_scene13_16
     hide yuura with easeoutleft
@@ -290,7 +295,7 @@ label scene_1:
     play sound sfx_action_fall_down_scene5_14
     nd_narrator_brown "Tak menyadari bahwa orang yang membukakan pintu terjatuh karena ku, tapi peduli apa aku."
     
-    nd_yuura_brown "Argh dimana sih.. Ah ini dia!"
+    nd_you_brown "Argh dimana sih.. Ah ini dia!"
     
     nd_narrator_brown "Segera kutembakkan Grappling Gun ku dan melesat tanpa melihat ke belakang."
         # $ quick_menu = False
