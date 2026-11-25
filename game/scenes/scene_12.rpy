@@ -44,8 +44,6 @@ label scene_12:
     # voice voice_2_12_183_aergia
     # nd_unknown_brown "Loh? Kamu cari aku di buku tamu? Padahal gua gapernah ditulis di sana sama lu loh... Lu tahukan gua siapa, Yuur?"
         # Ga konsisten gua gua, aku aku
-    
-    # TODO: find out how to implement the timing for textbox and audio
 
     show aergia smile_normal eff_question_mark_r at speaking
     voice voice_2_12_183_aergia_1
@@ -153,7 +151,6 @@ label scene_12:
 
     # ====
 
-    # TODO: flesh out yuura
     nd_narrator_brown "Kemanapun aku pergi,{w=0.5} selalu ada orang-orang yang menyapa dan bertanya."
 
     nd_narrator_brown "Di tengah lamunanku, aku kembali mengeluarkan botol jade hijau yang selama ini tersimpan di dalam saku."

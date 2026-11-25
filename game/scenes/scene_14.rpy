@@ -241,7 +241,6 @@ label scene_14:
     extend " Seiya Seiya..."
     show akasyah none at idle
     
-    # TODO: im here
     show seiya at speaking
     voice voice_3_14_229_seiya
     nd_seiya_brown "Mau palsu atau bukan, itu bukan urusanmu!"
@@ -257,7 +256,6 @@ label scene_14:
     nd_akasyah_brown "ITU URUSAN GUA!!!"
     show akasyah at idle
     
-    # TODO: I want this to be behind seiya
     show yuura behind seiya at consumed_by_darkness
     play sound sfx_shadow_teleport
     show pe purple_flame flame_full behind seiya at custom_sprite_pos(x=-2.0, y=0.5), silhouette with wipe_j_atas(0.2)
@@ -466,8 +464,6 @@ label scene_14:
     # pause 0.2
     # hide pe purple_flame flame_full with dissolve
 
-    # TODO: in this part seiya and akasyah switch side
-
 
     nd_narrator_black "Tak melewatkan kesempatan, Seiya muncul dari portal bayangan dan melayangkan tinjunya."
 
@@ -532,8 +528,7 @@ label scene_14:
     with wipe_j_atas(0.2)
 
     nd_narrator_black "Baru menutup bicaranya, Seiya muncul dari portal bayangan dan melancarkan tinju yang diselimuti energi hitam." 
-    
-    # TODO: add more sequence
+
     play sound sfx_punch_1
     show pe kick kick_set_alter transparent:
         # zoom 0.9

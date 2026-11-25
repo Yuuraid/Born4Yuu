@@ -839,7 +839,6 @@ label scene_17:
                     
                     show pria at speaking
                     voice voice_3_17_582_pria_misterius_1
-                    # TODO: please redo this part
                     nd_pria_brown "Panggil saja aku Yuuraid." # kasih pause setelah jeda titik-titik?
 
                     show pria at idle

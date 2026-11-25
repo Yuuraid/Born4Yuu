@@ -49,7 +49,6 @@ label scene_11:
 
     # nd_narrator_brown "Mendengar itu aku hanya bisa diam, tak peduli. Aku rasa ini semua hanya kesalahan dan akan segera selesai."
     
-    # TODO: they both in different places
     scene garden_2
     show aergia netral at left, silhouette
     with fade

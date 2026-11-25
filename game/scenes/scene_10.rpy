@@ -348,8 +348,6 @@ label scene_10:
             nd_narrator_brown "Meski orang itu berteriak teriak minta tolong, tapi rasanya malah diriku yang berada dalam bahaya"
 
             # play music bgm_scene1_rock volume 1.0 loop
-            
-            # TODO: This part suppose to have CG
 
             # nd_narrator_brown "Aku yang sudah terpojok dan tidak bisa melakukan apa pun hanya bisa pasrah, sebelum akhirnya aku melihat ekor ikan hiu muncul. Dia menerobos banyak orang dengan kecepatan yang cukup tinggi."
             

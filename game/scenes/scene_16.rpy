@@ -12,8 +12,7 @@ label scene_16:
 
         # show halaman belakang penginapan 
     nd_narrator_brown "───── hanya untuk menemukan Aergia sudah berdiri disana,  dengan raut wajah yang tak dapat ku mengerti."
-
-    # TODO: split this so he can change faces  
+ 
     show aergia netral at speaking
     voice voice_3_16_366_aergia
     nd_aergia_brown "Ahahaha kebetulan banget nih Yuur! {w=4} Gua ketemu lu disini .. eh…! eh iya... gua lupa kalo lu tuh sebenernya ga nyaman ya sama gua...{w=9} sorry ya Yuur... uhh sorry."
@@ -101,8 +100,6 @@ label scene_16:
     pause 0.2
     scene cg_arc_3_scene_16_cekik_shoot_02 at looping_shake with wipe_j_bawah(0.2)
 
-    # TODO: there a CG here
-
     play sound2 sfx_strangled_yuura volume 0.5
 
     nd_narrator_brown "Aergia mengarahkan tangan dan mencengkram.{w=2}{nw}"
@@ -173,7 +170,7 @@ label scene_16:
     $ renpy.music.set_volume(2.5, channel="music")
     # show aergia at speaking
 
-    # TODO: make this shake
+    # TODO: make this shake a little
     show cg_arc_3_scene_16_balikin_1 with dissolve
     voice voice_3_16_384_aergia
     nd_aergia_black "BALIKIN YUURA YG GUA KENAL SEKARANG JUGA!{nw}"
@@ -1112,7 +1109,7 @@ label scene_16:
     # show dawam at idle
     
     show aergia at speaking
-    voice voice_3_16_405_aergia # TODO: find out the issue here
+    voice voice_3_16_405_aergia 
     nd_aergia_brown "Bahkan pas lu lawan orang bodo kaya gua aja lu kalah ya?  hah~"
     
     voice voice_3_16_406_aergia
