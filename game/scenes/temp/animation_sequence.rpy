@@ -62,21 +62,21 @@ label evolve_sequence:
     return
 
 label axia_transform_sequence:
-    show axia_b_sequence at right
+    show axia_b_sequence at left
     # "What? axia_b_sequence is evolving!"
 
     # 1. Turn into white silhouette
-    show axia_b_sequence at silhouette_white, right
+    show axia_b_sequence at silhouette_white, left
     with Dissolve(0.4)
 
     # 2. Rapid flicker loop
     $ count = 0
     while count < 5:
-        show axia_b_sequence at silhouette_white, right
+        show axia_b_sequence at silhouette_white, left
         hide axia_n_sequence
         pause 0.12 - (count * 0.015)
         
-        show axia_n_sequence at silhouette_white, right
+        show axia_n_sequence at silhouette_white, left
         hide axia_b_sequence
         pause 0.12 - (count * 0.015)
         
@@ -84,7 +84,7 @@ label axia_transform_sequence:
 
     # 3. Flash to reveal full color final form
     hide axia_b_sequence
-    show axia_n_sequence at right
+    show axia_n_sequence at left
     with Flash
 
     # "Congratulations! Your hiu evolved into axia_n_sequence!"

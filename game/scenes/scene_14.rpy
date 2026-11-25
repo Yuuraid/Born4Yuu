@@ -494,7 +494,7 @@ label scene_14:
     # nd_narrator_brown "Meski terpental, Seiya berhasil mengikat kaki Akasyah dan memanfaatkan momentum untuk menarik kakinya dan membantingkan tubuhnya ke lantai."
     nd_narrator_brown "Meski terpental, Seiya berhasil menempatkan bayangannya didekat Akasyah"
     
-    play sound sfx_punch_impact_03
+    play sound sfx_tom_scream_ow
     # play sound sfx_tom_scream_ow
     show layer master at shake
 
@@ -796,6 +796,7 @@ label scene_14:
     
     nd_narrator_brown "Meski enggan, aku berbalik dan lari meninggalkan mereka berdua."
 
+    play sound sfx_action_whoosh_scene13_16
     hide yuura with easeoutleft
         
     # show akasyah at speaking

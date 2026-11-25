@@ -7,16 +7,27 @@ label scene_13:
 
     show yuura netral at face_flip, ease_custom(offscreenleft, center, 7.0)
 
-    nd_narrator_brown "Aku berjalan menuju kamar itu untuk mengembalikan botol itu ke tempat semula."
+    nd_narrator_brown "Aku berjalan menuju kamar itu untuk mengembalikan botol ini ke tempat semula."
     
     $ renpy.music.set_volume(1.0, channel="music")
     play music bgm_scene1_foto_foto_kenangan fadein 1.0 loop
 
+    show yuura at face_flip, center
     nd_narrator_brown "Tapi entah mengapa aku banyak sekali mendengar hal-hal aneh di sekitar, mereka tampak seperti sedang membicarakanku."
     
+    camera:
+        zoom 2.0
+        xalign 0.55
+        yalign 0.25
+    show yuura scared eff_sweat_w
     nd_narrator_brown "Apa jangan-jangan fakta bahwa aku berpura-pura menjadi Yuura sudah tersebar?"
     
     nd_narrator_brown "Tepat ketika aku sedang melamun, aku mendengar suara langkah kaki yang cepat menghampiriku."
+
+    camera:
+        zoom 1.0
+        xalign 0.0
+        yalign 0.0
 
     play music bgm_scene1_rock volume 1.0 loop
     # play sound pressure
@@ -35,22 +46,22 @@ label scene_13:
     nd_narrator_brown "Seseorang melancarkan tendangan ke arahku.{w=0.5}{nw}" 
     
     scene inn resepsionis
-    show yuura scared eff_exclamation_r at face_flip, center
+    show yuura scared none at face_flip, center
     pause 0.2
-    play sound sfx_action_whoosh_scene13_16
-    show yuura at face_flip, ease_custom(center, left, 0.25)
+    # play sound sfx_action_whoosh_scene13_16
+    # show yuura at face_flip, ease_custom(center, left, 0.25)
 
-    nd_narrator_brown "Tapi sebelum sempat bereaksi{w=0.5}{nw}"
+    # nd_narrator_brown "Tapi sebelum sempat bereaksi{w=0.5}{nw}"
 
     play sound sfx_shadow_teleport
-    show pe purple_flame flame_full at custom_sprite_pos(x=3.0, y=0.5), silhouette
+    show pe purple_flame flame_full at custom_sprite_pos(x=0.5, y=0.5), silhouette
     show yuura at face_flip, consumed_by_darkness
 
     pause 0.2
     hide pe purple_flame flame_full with dissolve
     # scene inn resepsionis with fast_fade
 
-    nd_narrator_brown "Pijakanku tiba-tiba menghilang dan aku tenggelam ke dalam kegelapan.."
+    # nd_narrator_brown "Pijakanku tiba-tiba menghilang dan aku tenggelam ke dalam kegelapan.."
 
     hide yuura
     

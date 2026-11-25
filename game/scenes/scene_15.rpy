@@ -11,13 +11,13 @@ label scene_15:
      
     nd_narrator_brown "Aku sudah berlari lumayan jauh dari lorong tempat mereka bertarung satu sama lain, aku sedikit heran, mengapa mereka berani untuk bertarung satu sama lain.. Karena aku?"
     
-    nd_narrator_brown "Tapi sebelum sempat berpikir lebih jauh, aku merasa ada seorang yang mendekat ke arahku."
+    # nd_narrator_brown "Tapi sebelum sempat berpikir lebih jauh, aku merasa ada seorang yang mendekat ke arahku."
     
     show yuura scared at speaking
     nd_you_brown "Ahh... Aku capek..."
     show yuura at idle
 
-    nd_narrator_brown "Tiba-tiba aku merasakan ada seseorang yang memelukku dari belakang, dia berbisik pelan di telingaku, suaranya membuat bulu kudukku merinding ketakutan."
+    # nd_narrator_brown "Tiba-tiba aku merasakan ada seseorang yang memelukku dari belakang, dia berbisik pelan di telingaku, suaranya membuat bulu kudukku merinding ketakutan."
 
     play sound sfx_zoom
     show axia sassy behind yuura at center, speaking with dissolve
@@ -53,29 +53,36 @@ label scene_15:
     nd_you_brown "(T-TUBUHNYA.. TERBELAH!?)"
     show yuura at face_flip, idle
     
+    play sound sfx_zoom
+    show axia cute
+    pause 0.3
     show axia at consumed_by_darkness
     pause 0.5
     hide axia
 
-    show yuura at face_flip, center with ease
-    show yuura at idle
+    # show yuura at face_flip, center with ease
+    # show yuura at idle
 
     nd_narrator_brown "Dia tersenyum kecil sebelum tubuhnya menghilang seperti tertiup angin."
 
     play sound sfx_zoom
-    show axia loli behind yuura at center, idle with dissolve
+    show axia loli behind yuura at left, idle with dissolve
     
     pause 0.2
 
-    show yuura at left 
-    show axia at right
-    with ease
+    play sound sfx_expression_shocked
+    show yuura eff_exclamation_r at face_flip, center with ease
+    show yuura none at idle
+
+    # show yuura at left 
+    # show axia at right
+    # with ease
     
-    show yuura at face_flip 
+    # show yuura at face_flip 
 
     nd_narrator_brown "Suasana di sekitar menjadi suram hingga entah darimana, dia tiba-tiba muncul kembali di belakangku."
     
-    show axia at right, speaking 
+    show axia at left, speaking 
     with dissolve
     voice voice_3_15_255_axiaregis
     nd_axiaregis_brown "Arere? Kenyapa kamu kaget begituh?"
@@ -84,15 +91,16 @@ label scene_15:
     play sound sfx_pokemon_evolution_intro
     call axia_transform_sequence from _axia_transform_sequence
     play sound sfx_glow
-    show axia cute at speaking, right
+    show axia cute behind yuura at speaking, left
 
     # show axia cute at right
     # with dissolve
 
     voice voice_3_15_256_axiaregis
     nd_axiaregis_brown "Tidak usah takut anyee, ini aku, Axiaregis. Aku di sini untukmu."
-    show axia at center, idle with ease
-    show yuura at custom_sprite_pos(x=-0.2) with ease
+    
+    show axia at custom_sprite_pos(x=0.3), idle with ease
+    show yuura at right with ease
 
     nd_narrator_brown "Dia mengulurkan tangannya, membuat diriku semakin takut padanya."
     
@@ -108,63 +116,116 @@ label scene_15:
     nd_axiaregis_brown "Apa aku memang tidak berhak ada di sekitarmu?"
     show axia at idle
 
-    show yuura at speaking
+    pause 0.2
+
+    play sound sfx_zoom
+    show axia at consumed_by_darkness
+    pause 0.5
+    hide axia
+
+    pause 0.5
+
+    play sound sfx_zoom
+    show axia sassy behind yuura at right,idle with dissolve
+    show yuura at left with ease
+    show yuura at face_flip
+
+    pause 0.2
+
+    show yuura eff_yelling at speaking
     show axia at right with ease
     nd_you_brown "M-menjauhlah dariku!"
-    show yuura at idle
+    show yuura none at idle
     
     # nd_narrator_brown "Gadis dengan suara om-om itu pun mulai berjalan membelakangiku. Yang entah mengapa, semakin ia menjauh dariku, suasana di sini malah terasa sesak."
     
     show axia at speaking
     voice voice_3_15_261_axiaregis
     nd_axiaregis_brown "Kenapa sihhh harus selalu akuhhh yang pergi?"
-    show axia at idle
+    show axia none at idle
 
-    show yuura at speaking
+    show yuura eff_yelling at speaking
     nd_you_brown "Kamu aneh! Aku sudah lelah dengan semua keanehan ini."
-    show yuura at idle
+    show yuura none at idle
     
-    show axia at speaking
+    show axia eff_angry at speaking
     voice voice_3_15_263_axiaregis
     nd_axiaregis_brown "Begitukah?"
-    show axia at idle
+    show axia none at idle
 
     show yuura at speaking
     nd_you_brown "(Sial! Keknya aku salah ngomong lagi.)"
     show yuura at idle
     
-    show axia at custom_sprite_pos(x=0.7) with ease
-    nd_narrator_brown "Gadis itu tiba-tiba tersenyum dan mulai mendekatiku kembali. Dan ketika ia mendekat, suasana di sepanjang lorong ini makin terasa sesak."
+    show axia cute at custom_sprite_pos(x=0.7) with ease
+    nd_narrator_brown "Orang itu tiba-tiba tersenyum dan mulai mendekatiku kembali. Dan ketika ia mendekat, suasana di sepanjang lorong ini makin terasa sesak."
     
     show axia at speaking
     voice voice_3_15_265_axiaregis
     nd_axiaregis_brown "Bagaimana nihhh, padahal aku pengen banget main sama kamu."
     
-    voice voice_3_15_266_axiaregis
-    nd_axiaregis_brown "Kalau bisa... AKU INGIN MEMILIKI MU SELAMANYA!"
+    voice voice_3_15_266_axiaregis_1
+    nd_axiaregis_brown "Kalau bisa...{nw}"
     
+    camera:
+        zoom 2.0
+        xalign 0.6
+        yalign 0.25
+
+    voice voice_3_15_266_axiaregis_2
+    extend " AKU INGIN MEMILIKI MU SELAMANYA!"
+    
+    show yuura eff_tremble_w
     voice voice_3_15_267_axiaregis
     nd_axiaregis_brown "Seperti sebuah Standee yang ada di pojok ruangan!"
     
     voice voice_3_15_268_axiaregis
     nd_axiaregis_brown "Memandangiku dan selalu tersenyum padaku!"
     
+    camera:
+        zoom 1.0
+        xalign 0.0
+        yalign 0.0
+
     voice voice_3_15_269_axiaregis
     nd_axiaregis_brown "Are? Kamu kenapa berkeringat anyee? Aku hanya bercanda kok..."
     
-    voice voice_3_15_270_axiaregis
-    nd_axiaregis_brown "Or... am I?" # im atau I'm nih?
+    voice voice_3_15_270_axiaregis_1
+    nd_axiaregis_brown "Or...{nw}"
+    
+    voice voice_3_15_270_axiaregis_2
+    show axia at custom_sprite_pos(x=0.5) with ease
+    extend " am{nw}"
+    
+    camera:
+        zoom 2.0
+        xalign 0.1
+        yalign 0.25
+
+    voice voice_3_15_270_axiaregis_3
+    show axia at custom_sprite_pos(x=0.3) with ease
+    extend " I?" # im atau I'm nih?
     show axia at idle
 
-    show yuura at speaking
-    show yuura scared at shake
-    # show yuura takut shake 
-    nd_you_brown "!!"
-    show yuura at idle
+    # show yuura at speaking
+    # show yuura scared at shake
+    # # show yuura takut shake 
+    # nd_you_brown "!!"
+    # show yuura at idle
     
+    camera:
+        zoom 1.0
+        xalign 0.0
+        yalign 0.0
+
     # CG here
-    nd_narrator_brown "Tubuhku tak dapat bergerak tepat setelah menatap mata Axiaregis yang menyala, aku mencoba menggerakkan seluruh anggota tubuh, namun hasilnya nihil. Aku tetap tak bisa bergerak, sementara nafasku perlahan mulai tersengal."
+    nd_narrator_brown "Tubuhku tak dapat bergerak tepat setelah menatap mata Axiaregis, aku mencoba menggerakkan seluruh anggota tubuh, namun hasilnya nihil. Aku tetap tak bisa bergerak, sementara nafasku perlahan mulai tersengal."
     
+    camera:
+        zoom 2.0
+        xalign 0.1
+        yalign 0.25
+
     show axia at speaking
     voice voice_3_15_271_axiaregis
     nd_axiaregis_brown "Oh... Anyeeki yang malang~ Aku sungguh kasihan padamu."
@@ -180,6 +241,10 @@ label scene_15:
     # stop music
     menu lawan:
         "Menyerah pada Axiaregis":
+            camera:
+                zoom 2.0
+                xalign 0.1
+                yalign 0.25
             play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
             show yuura at speaking
             nd_you_brown "A-aku... menyerah!"
@@ -218,8 +283,13 @@ label scene_15:
 
             # end?
         "Berontak sekuat tenaga":
+            camera:
+                zoom 1.0
+                xalign 0.0
+                yalign 0.0
             # play music bgm_scene15_feint volume 1.0 loop
-            show axia at custom_sprite_pos(x=0.4) with ease
+            show layer master at shake
+            show axia at right with ease
             show yuura at speaking
             nd_you_brown "ARGhhh Lepas!"
             show yuura at idle
@@ -235,12 +305,19 @@ label scene_15:
             # hide yuura 
             # show rian angry at left, silhouette
             stop music fadeout 1.0
-            voice voice_3_15_282_rian
-            nd_unknown_brown "Tidak jika aku membantu! Aku akan mengeluarkan kartuku, Fathanil!!!!"
+            voice voice_3_15_282_rian_1
+            nd_unknown_brown "Tidak jika aku membantu!{nw}"
+            
+            voice voice_3_15_282_rian_2
+            extend " Aku akan mengeluarkan kartuku,{nw}"
+            
+            voice voice_3_15_282_rian_3
+            play sound sfx_fathanil_roar_only
+            extend " Fathanil!!!!{nw}"
             
             show axia at speaking
             voice voice_3_15_283_axiaregis
-            nd_axiaregis_brown "Huh?"
+            nd_axiaregis_brown "Huh?{nw}"
             show axia at idle
 
             play music bgm_scene15_feint volume 1.0 loop
@@ -265,17 +342,17 @@ label scene_15:
             
             scene inn ruang_kerja
             show axia netral at right, idle
-            show yuura netral at custom_sprite_pos(x=-0.2), idle
+            show yuura scared at custom_sprite_pos(x=-0.5), face_flip, idle
             show rian angry at left, idle
-            with fade
+            # with fade
 
-            show axia at speaking
+            show axia at right, speaking
             voice voice_3_15_284_axiaregis
             nd_axiaregis_brown "Ah…... Iya-iya si penjaga hewan rupanya..."
             show axia at idle
 
             show rian at speaking
-            with dissolve
+            # with dissolve
             voice voice_3_15_285_rian
             nd_unknown_brown "Aku bukan penjaga hewan, aku adalah sang petualang yang hanya numpang lewat. Ingat itu!"
             
@@ -290,10 +367,19 @@ label scene_15:
             voice voice_3_15_288_axiaregis
             nd_axiaregis_brown "Padahal aku ingin banget bersama Yuura ku!"
             
+            camera:
+                zoom 2.0
+                xalign 0.8
+                yalign 0.25
+            show axia sassy eff_angry
             voice voice_3_15_289_axiaregis
             nd_axiaregis_brown "Tapi KAU MENGGANGU SEMUANYA!"
             show axia at idle
 
+            camera:
+                zoom 2.0
+                xalign 0.1
+                yalign 0.25
             show rian at speaking
             voice voice_3_15_290_rian
             nd_rian_brown "Nenekku pernah berkata."
@@ -305,6 +391,10 @@ label scene_15:
             nd_rian_brown "Kalau kamu tetap melakukannya, maka aku akan menghajarmu!"
             show rian at idle
 
+            camera:
+                zoom 1.0
+                xalign 0.0
+                yalign 0.0
             show axia at speaking
             voice voice_3_15_293_axiaregis
             nd_axiaregis_brown "Ahhhh berisik berisik berisik!"
@@ -370,7 +460,7 @@ label scene_15:
             scene arena with slashht
             # stop music
             
-            show axia netral at right, idle with easeinleft
+            show axia sassy at right, idle with easeinleft
             show rian angry at left, idle with easeinright
 
             show screen lp_display(player = rian_lp, x_align = 0.1) as rian_hp

@@ -20,7 +20,7 @@ label scene_12:
     # show yuura at right
     # with move
         # Aergia
-    show yuura eff_exclamation_y
+    show yuura eff_exclamation_y at face_flip, left
     show aergia psycho at right, speaking
     with dissolve
     voice voice_2_12_181_aergia_1
@@ -74,15 +74,27 @@ label scene_12:
         xalign 0.0
         yalign 0.0
 
-    show aergia at speaking
-    voice voice_2_12_185_aergia
-    nd_unknown_brown "Ehh... beneran??? Yuura, inget kan sama gua iya kan? KAN? kan~?"
+    show aergia netral eff_exclamation_r at speaking
+    voice voice_2_12_185_aergia_1
+    nd_unknown_brown "Ehh... beneran???{nw}"
+    show aergia smile_cool none 
+    voice voice_2_12_185_aergia_2
+    extend " Yuura, inget kan sama gua{nw}"
+    show aergia smile_normal eff_question_mark_r
+    voice voice_2_12_185_aergia_3
+    extend " iya kan?{nw}"
+    show aergia smile_cool eff_sparkle
+    voice voice_2_12_185_aergia_4
+    extend " KAN?{nw}"
+    show aergia psycho none
+    voice voice_2_12_185_aergia_5
+    extend " kan~?"
     show aergia at idle
     
     nd_narrator_brown "Dia menatapku dengan sangat tajam. Aku mulai merasa sedikit merinding."
     nd_narrator_brown "Nampaknya, orang ini sudah sangat curiga denganku. Tapi, dia tiba-tiba mulai tertawa tanpa alasan yang jelas."
     
-    show aergia at speaking
+    show aergia netral at speaking
     voice voice_2_12_186_aergia_1
     nd_unknown_brown "Hahaha... Bercanda kok, Yuur. Gua pasti tahu lu tuh lagi capek banget. Lu ga mungkin kan lupa sama gua, iya kan? {nw=0.5}"
     show aergia psycho at shake
@@ -92,7 +104,7 @@ label scene_12:
     extend "KAN!?"
     show aergia at idle
             
-    show aergia at speaking
+    show aergia smile_normal at speaking
     voice voice_2_12_187_aergia
     nd_aergia_brown "Ehh, ini gua loh Yuur... gua Aergia, ingat kan?"
     show aergia at idle
@@ -101,9 +113,20 @@ label scene_12:
     nd_you_brown "Ah... Aergia! Inget-inget hehe."
     show yuura at face_flip, idle
 
-    show aergia sad at speaking
-    voice voice_2_12_189_aergia
-    nd_aergia_brown "Nahhhh kan inget, eh tapi kok... hmm... kok rasanya ada yang aneh ya..lu...lu beneran yuura kan?"
+    show aergia netral at speaking
+    voice voice_2_12_189_aergia_1
+    nd_aergia_brown "Nahhhh kan inget,{nw}"
+    show aergia smile_cool eff_question_mark_r
+    voice voice_2_12_189_aergia_2
+    extend " eh tapi kok...{nw}"
+    show aergia smile_normal none
+    voice voice_2_12_189_aergia_3
+    extend " hmm...{nw}"
+    voice voice_2_12_189_aergia_4
+    extend " kok rasanya ada yang aneh ya..{nw}"
+    show aergia sad
+    voice voice_2_12_189_aergia_5
+    extend " lu...lu beneran yuura kan?"
     show aergia at idle
 
     show yuura at face_flip, speaking
@@ -129,18 +152,25 @@ label scene_12:
     voice voice_2_12_195_aergia
     nd_aergia_brown "Ohh gitu~"
     
-    show aergia sad eff_sweat_b at speaking
-    voice voice_2_12_196_aergia
-    nd_aergia_brown "Maaf ya… kalo gua agak terlalu aneh buat lu haha… maaf ya Yuur, haha."
+    show aergia sad at speaking
+    voice voice_2_12_196_aergia_1
+    nd_aergia_brown "Maaf ya… kalo gua agak terlalu aneh buat lu,{nw}"
+    show aergia sad eff_sweat_b
+    voice voice_2_12_196_aergia_2
+    extend " ha.. maaf ya Yuur, haha."
     show aergia at idle
 
-    show aergia none at ease_custom(right, offscreenleft, 10.0)
+    show aergia at ease_custom(right, offscreenleft, 10.0)
 
     nd_narrator_brown "Aergia langsung pergi tanpa lanjut bertanya-tanya."
 
-    show yuura none at center with ease
+    show yuura none at left with ease
     # scene black with dissolve
     nd_narrator_brown "Aku terdiam sejenak."
+    camera:
+        zoom 2.0
+        xalign 0.0
+        yalign 0.3
     show yuura at speaking
     nd_you_brown "...lagi-lagi begini."
     show yuura at idle
@@ -155,6 +185,11 @@ label scene_12:
 
     nd_narrator_brown "Di tengah lamunanku, aku kembali mengeluarkan botol jade hijau yang selama ini tersimpan di dalam saku."
 
+    camera:
+        zoom 2.0
+        xalign 0.5
+        yalign 0.2
+
     play sound sfx_glass_bottle
     # show screen show_item("assets/props/jade_bottle.png", "Botol misterius") with Dissolve(0.2)
     show dark_overlay
@@ -168,7 +203,7 @@ label scene_12:
     nd_you_brown "Siapa.. siapa kamu sebenarnya?"
     # show yuura at idle
     nd_narrator_brown "Kenapa kamu bisa begitu dicari?"
-    nd_narrator_brown "Kenapa banyak yang begitu peduli?"
+    nd_narrator_brown "Ada apa dengan tempat ini?"
     nd_narrator_brown "Kenapa...{w=0.5} siapa kamu?"
     # show yuura at speaking
     # nd_you_brown "..."
@@ -178,24 +213,46 @@ label scene_12:
     hide jade_bottle
     with dissolve
 
+    camera:
+        zoom 1.0
+        xalign 0.0
+        yalign 0.0
     show yuura netral at face_flip with dissolve
 
     nd_narrator_brown "Di depan ku kini berdiri pintu keluar yang ku cari. Sekarang, aku hanya perlu mengambil langkah terakhir untuk keluar."
 
     nd_you_brown "..."
 
-    nd_narrator_brown "Sekali lagi aku meraba botol yang ada di dalam saku ku. "
+    camera:
+        zoom 2.0
+        xalign 0.5
+        yalign 0.2
+
+    # play sound sfx_glass_bottle
+    # show screen show_item("assets/props/jade_bottle.png", "Botol misterius") with Dissolve(0.2)
+    show dark_overlay
+    show jade_bottle at pos(y=0.5, z=2.0, r=45), speak_in_mind with dissolve
+
+    nd_narrator_brown "Sekali lagi aku melihat botol yang ku pegang ini. "
 
     nd_you_brown "... apa sebaiknya aku kembalikan saja ya?"
 
     nd_narrator_brown "Barang ini pasti juga berharga bagi mereka. Khususnya dengan Yuura yang tidak ada di sini."
+
+    hide dark_overlay
+    hide jade_bottle
+    camera:
+        zoom 1.0
+        xalign 0.0
+        yalign 0.0
+    with dissolve
 
     nd_you_brown "... aku juga sudah tahu jalan keluarnya."
 
     nd_narrator_brown "Aku rasa mengembalikan barang ini pada tempatnya takkan jadi masalah."
 
     hide yuura
-    show yuura netral at idle, center
+    show yuura netral at idle, left
     with dissolve
     pause 0.3
     hide yuura with easeoutleft

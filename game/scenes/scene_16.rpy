@@ -15,7 +15,9 @@ label scene_16:
  
     show aergia netral at speaking
     voice voice_3_16_366_aergia
-    nd_aergia_brown "Ahahaha kebetulan banget nih Yuur! {w=4} Gua ketemu lu disini .. eh…! eh iya... gua lupa kalo lu tuh sebenernya ga nyaman ya sama gua...{w=9} sorry ya Yuur... uhh sorry."
+    nd_aergia_brown "Ahahaha kebetulan banget nih Yuur! Gua ketemu lu disini .."
+    
+    " eh…! eh iya... gua lupa kalo lu tuh sebenernya ga nyaman ya sama gua...{w=9} sorry ya Yuur... uhh sorry."
     show aergia at idle
     
     show yuura scared at speaking, face_flip
@@ -25,7 +27,9 @@ label scene_16:
     show aergia furious at speaking
     show aergia at shake
     voice voice_3_16_368_aergia
-    nd_aergia_brown "DIAM! ARGGH eh?"
+    nd_aergia_brown "DIAM! ARGGH"
+    
+    extend " eh?"
     show aergia sad
     voice voice_3_16_369_aergia
     nd_aergia_brown "Eh maksudnya buk..bukan.. BUKAN GIT- ARGGGH!"
