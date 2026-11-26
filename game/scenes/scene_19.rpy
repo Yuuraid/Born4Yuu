@@ -2,6 +2,10 @@
 
 label scene_19:
     play music bgm_scene4 volume 1.0 fadein 1.0
+    camera:
+        zoom 1.0
+        xalign 0.5
+        yalign 0.5
     scene inn resepsionis 
     # play sound barang ditaruh
     show yuura scared at face_flip, left, idle
@@ -80,13 +84,15 @@ label scene_19:
     
     nd_you_brown "Lagian aku juga masih punya banyak utang."
     show yuura at face_flip, idle
-    show haruto at speaking
+    show haruto happy at speaking
     voice voice_4_19_700_haruto
     nd_haruto_brown "Dasar penghutang handal."
     show haruto at idle
 
     play sound sfx_explode
     show layer master at shake
+    show yuura scared
+    show haruto sad
     stop music
     nd_narrator_brown "Tiba-tiba saja terdengar sebuah ledakan besar di taman, membuatku langsung berlari dengan sangat kencang."
     play sound sfx_action_whoosh_scene13_16
@@ -173,6 +179,7 @@ label scene_19:
     play sound sfx_action_whoosh_scene13_16
     hide yuura with easeoutleft
 
+    $ unlock_cg("cg_arc_3_scene_19_credit")
     scene cg_arc_3_scene_19_credit:
         zoom 2.2
         xalign 1.0
@@ -243,7 +250,7 @@ label scene_19:
 
     pause
 
-    show screen centered_typewriter("bagaimanapun... Yuura.", speed=15) with dissolve
+    show screen centered_typewriter("bagaimanapun ___ Yuura.", speed=15) with dissolve
 
     pause
 
@@ -267,4 +274,14 @@ label scene_19:
 
     pause
 
-    return
+    show screen centered_typewriter("karena kita.", speed=15) with dissolve
+
+    pause
+
+    show screen centered_typewriter("Born4Yuu.", speed=15) with dissolve
+
+    pause
+
+    hide screen centered_typewriter with dissolve    
+
+    jump credits_scene

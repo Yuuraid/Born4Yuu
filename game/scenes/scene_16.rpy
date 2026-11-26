@@ -2,7 +2,11 @@
 
 label scene_16:
 
+    define config.allow_skipping = False
     scene inn halaman
+    camera:
+        zoom 1.0
+        truecenter
     play music bgm_scene15_judgment volume 1.0 loop
     $ renpy.music.set_volume(0.3, channel="music")
     show aergia psycho at idle, right
@@ -13,40 +17,62 @@ label scene_16:
         # show halaman belakang penginapan 
     nd_narrator_brown "───── hanya untuk menemukan Aergia sudah berdiri disana,  dengan raut wajah yang tak dapat ku mengerti."
  
-    show aergia netral at speaking
-    voice voice_3_16_366_aergia
-    nd_aergia_brown "Ahahaha kebetulan banget nih Yuur! Gua ketemu lu disini .."
+    show aergia psycho at speaking
+    voice voice_3_16_366_aergia_1
+    nd_aergia_brown "Ahahaha kebetulan banget nih Yuur! Gua ketemu lu disini ..{nw}"
     
-    " eh…! eh iya... gua lupa kalo lu tuh sebenernya ga nyaman ya sama gua...{w=9} sorry ya Yuur... uhh sorry."
+    voice voice_3_16_366_aergia_2
+    show aergia smile_normal
+    extend " eh…! eh iya... gua lupa kalo lu tuh sebenernya ga nyaman ya sama gua...{nw}"
+    
+    voice voice_3_16_366_aergia_3
+    show aergia sad eff_sweat_b
+    extend " sorry ya Yuur... uhh sorry."
     show aergia at idle
     
     show yuura scared at speaking, face_flip
     nd_you_brown "Apa maksu-"
     show yuura at idle, face_flip
 
-    show aergia furious at speaking
+    show aergia furious eff_yelling at speaking
     show aergia at shake
-    voice voice_3_16_368_aergia
-    nd_aergia_brown "DIAM! ARGGH"
+    voice voice_3_16_368_aergia_1
+    nd_aergia_brown "DIAM! ARGGH{nw}"
     
+    voice voice_3_16_368_aergia_2
+    show aergia none sad
     extend " eh?"
     show aergia sad
-    voice voice_3_16_369_aergia
-    nd_aergia_brown "Eh maksudnya buk..bukan.. BUKAN GIT- ARGGGH!"
+    voice voice_3_16_369_aergia_1
+    nd_aergia_brown "Eh maksudnya buk..bukan.. BUKAN GIT-{nw}"
+    
+    camera:
+        zoom 2.0
+        xalign 0.8
+        yalign 0.25
+    show aergia furious eff_yelling
+    show layer master at shake
+    voice voice_3_16_369_aergia_2
+    extend " ARGGGH!"
     # nd_aergia_brown "Ah... Maaf maksudnya bukan... {nw=0.5}"
     # show aergia angry
     # extend "ARGGGH!"
-    show aergia at idle
+    show aergia none at idle
+
+    camera:
+        zoom 1.0
+        xalign 0.0
+        yalign 0.0
 
     nd_narrator_brown "Bentakan nya berhasil membuatku diam seribu bahasa, seperti saat pertama kami bertemu, ia marah karena hal yang tidak kuketahui."
     
     # stop music
     $ renpy.music.set_volume(0.5, channel="music")
         
-    show aergia at speaking
+    show aergia eff_yelling at speaking
     voice voice_3_16_370_aergia
     nd_aergia_brown "CUKUP! LU TU SIAPA!?"
-    show aergia at center, idle with ease
+    show aergia none at center, idle with ease
 
     nd_narrator_brown "Aergia mulai berjalan perlahan ke arahku. Aku ingin membantah pernyataan tersebut, tapi mulutku terbungkam ketika melihat energi-energi hitam mulai muncul di sekitarnya."
     
@@ -92,14 +118,28 @@ label scene_16:
     show yuura at idle, custom_sprite_pos(x=-0.3) with ease
 
         # play sound berpindah
-        
+    
+    camera:
+        zoom 2.0
+        xalign 0.5
+        yalign 0.25
+
     show aergia at speaking
     voice voice_3_16_378_aergia
     nd_aergia_brown "Mau ke mana lu ha??"
+
+    camera:
+        zoom 1.0
+        xalign 0.0
+        yalign 0.0
+
+    show layer master at reset_shake
+
     $ renpy.music.set_volume(2.0, channel="music")
     play sound sfx_action_whoosh_scene13_16
     show aergia at idle, custom_sprite_pos(x=0.1) with ease
-
+    show layer master at shake
+    play sound sfx_punch_impact_02
     scene cg_arc_3_scene_16_cekik_shoot_01 with wipe_j_atas(0.2)
     pause 0.2
     scene cg_arc_3_scene_16_cekik_shoot_02 at looping_shake with wipe_j_bawah(0.2)
@@ -108,6 +148,7 @@ label scene_16:
 
     nd_narrator_brown "Aergia mengarahkan tangan dan mencengkram.{w=2}{nw}"
     
+    $ unlock_cg("cg_arc_3_scene_16_cekik_shoot_03")
     scene cg_arc_3_scene_16_cekik_shoot_03 at looping_shake with wipe_j_atas(0.2) 
 
     nd_narrator_brown "Yuura tersentak akibat tercekik.{w=2}{nw}"
@@ -119,6 +160,7 @@ label scene_16:
     # nd_aergia_brown "JAWAB! DIMANA YUURA!?"
     # show aergia at idle
     
+    $ unlock_cg("cg_arc_3_scene_16_cekik_shoot_04")
     scene cg_arc_3_scene_16_cekik_shoot_04 at looping_shake with wipe_j_atas(0.2)
 
     # show yuura hurt at speaking
@@ -175,19 +217,21 @@ label scene_16:
     # show aergia at speaking
 
     # TODO: make this shake a little
+    show layer master at looping_shake
     show cg_arc_3_scene_16_balikin_1 with dissolve
     voice voice_3_16_384_aergia
     nd_aergia_black "BALIKIN YUURA YG GUA KENAL SEKARANG JUGA!{nw}"
     # show aergia at idle
 
         # aergia memukul Yuura
-            
+    show layer master at reset_shake
     # show yuura at speaking
     # show yuura at shake
     show cg_arc_3_scene_16_balikin_2 with dissolve
     nd_you_black "KHAKK...{w=2}{nw}"
     # show yuura at idle
 
+    $ unlock_cg("cg_arc_3_scene_16_balikin_3")
     show cg_arc_3_scene_16_balikin_3:
         xalign 0.5
         yalign 0
@@ -522,6 +566,7 @@ label scene_16:
     pause 0.5
 
     play sound sfx_dark_energy_aergia loop
+    $ unlock_cg("cg_arc_3_scene_16_aer_aura_01")
     show cg_arc_3_scene_16_aer_aura_01:
         xalign 0.5
         yalign 1.0
@@ -534,6 +579,7 @@ label scene_16:
 
     nd_narrator_brown "Bukannya terluka, Aergia malah makin menggila. Ia kini melayang dan mengeluarkan energy yang membutakan!"
 
+    $ unlock_cg("cg_arc_3_scene_16_aer_aura_02")
     show cg_arc_3_scene_16_aer_aura_02:
         xalign 0.5
         yalign 0.4
@@ -834,7 +880,7 @@ label scene_16:
     nd_dawam_black "Dasar lalat pengganggu!{nw}"
     
     voice voice_3_16_402_aergia
-    nd_aergia_black "Hahaha, iya lalat. ya ya lalat ya \niya... TERUS KENAPA KALAU GW LALAT HAH!!{nw}"
+    nd_aergia_black "Hahaha, iya lalat. ya ya lalat ya \n{w=6.22}iya... TERUS EMANG KENAPA KALAU GW LALAT HAH!!{nw}"
 
     # CG here
     play sound sfx_punch_1
@@ -1017,6 +1063,10 @@ label scene_16:
         truecenter
     with wipe_kiri(.25)
 
+    camera:
+        zoom 1.0
+        truecenter
+
     nd_narrator_black "Belum sempat menyentuh tanah, Aergia melesat dari kepulan debu dan melayangkan pukulan telak yang membuat Dawam terpental jauh!"
     
     # TODO: marker do switch place
@@ -1036,6 +1086,7 @@ label scene_16:
 
     pause 1.0
 
+    show layer master at looping_shake
     show pe red_blast full_CG:
         linear .75 zoom 1.0 xoffset 0 yoffset 0
 
@@ -1123,6 +1174,7 @@ label scene_16:
     hide dawam
     hide flame_front
     hide flame_behind
+    show layer master at looping_shake
     play sound sfx_dark_charge_release
     show aergia full_psycho:
         zoom .75
@@ -1237,6 +1289,7 @@ label scene_16:
     scene black with fade
 
     play sound2 sfx_dark_energy_aergia loop
+    $ unlock_cg("cg_arc_3_scene_16_aer_cg")
     show cg_arc_3_scene_16_aer_cg:
         xalign 0.3
         yalign 0.5

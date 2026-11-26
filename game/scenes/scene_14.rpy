@@ -120,6 +120,7 @@ label scene_14:
     #     movetoright
     #     shake
 # -----------recheck
+    $ unlock_cg("cg_arc_3_scene_14_shoot_3")
     scene cg_arc_3_scene_14_shoot_3 with Flash
 
     
@@ -365,7 +366,28 @@ label scene_14:
     camera:
         zoom 1 xpos 0 ypos 0
     with Dissolve(.15)
-    # pause .5
+    pause .5
+
+    # scene pe blue_projectile full_CG
+    # camera:
+    #     zoom 2
+    # with Dissolve(.15)
+    # pause .1
+    # camera:
+    #     zoom 2 xalign 0.0 yalign 0.0
+    # with Dissolve(.15)
+    # pause .1
+    # camera:
+    #     zoom 2 xalign 1.0 yalign 0.0
+    # with Dissolve(.15)
+    # pause .1
+    # camera:
+    #     zoom 2 xalign 0.0 yalign 1.0
+    # with Dissolve(.15)
+    # pause .1
+    # camera:
+    #     zoom 1 xalign 0.5 yalign 0.5
+    # with Dissolve(.15)
 
     nd_narrator_black "Tak tinggal diam, Seiya melancarkan serangan berupa sihir proyektil yang mengarah ke Akasyah."
     
@@ -737,6 +759,7 @@ label scene_14:
     pause 0.2
     scene cg_arc_3_scene_14_shark_shoot_03 with Flash
     pause 0.2
+    $ unlock_cg("cg_arc_3_scene_14_shark_shoot_04")
     scene cg_arc_3_scene_14_shark_shoot_04 with Flash
 
     # nd_you_brown "*Membuka mata"

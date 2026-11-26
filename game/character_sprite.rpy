@@ -1327,6 +1327,7 @@ layeredimage pria:
         attribute netral "assets/sprite/Pria_M/pria_main_netral.png"
         attribute sad "assets/sprite/Pria_M/pria_main_sad.png"
         attribute happy "assets/sprite/Pria_M/pria_main_happy.png"
+        attribute happy_wet "assets/sprite/Pria_M/pria_main_happy_wet.png"
 
     group effect:
         attribute none default Null() # Default state (nothing rendered)

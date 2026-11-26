@@ -109,6 +109,7 @@ label scene_3:
         linear 5.0 ypos -0.4
     with dissolve
     pause 4.0
+    $ unlock_cg("cg_arc_1_scene_03_shoot_4")
     scene cg_arc_1_scene_03_shoot_4:
         zoom 1.05
         xalign 0.5
@@ -120,6 +121,7 @@ label scene_3:
 
     nd_narrator_brown "Aku mengangkat kepalaku dan melihat seseorang berdiri di hadapanku, dengan jubah panjang dan topi fedora yang menutupi wajahnya."
     
+    $ unlock_cg("cg_arc_1_scene_03_shoot_5")
     scene cg_arc_1_scene_03_shoot_5:
         zoom 1.03
         xalign 0.5

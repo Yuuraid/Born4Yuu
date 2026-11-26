@@ -331,6 +331,7 @@ label scene_15:
             pause 0.0
             scene cg_arc_3_scene_15_shoot_04 with Flash
             pause 0.0
+            $ unlock_cg("cg_arc_3_scene_15_shoot_05")
             scene cg_arc_3_scene_15_shoot_05 with Flash
             # pause 0.1
 
@@ -402,6 +403,8 @@ label scene_15:
             voice voice_3_15_294_axiaregis
             nd_axiaregis_brown "Ayo kita bertarung."
             show axia at idle
+
+            $ config.allow_skipping = False
 
             show rian at speaking
             voice voice_3_15_295_rian
@@ -1157,6 +1160,8 @@ label scene_15:
             voice voice_3_15_355_axiaregis
             nd_axiaregis_brown "ANYEEEEEEEEEE!!!{nw}"
             # show axia at idle
+
+            $ config.allow_skipping = True
 
             play music bgm_scene8_awkward volume 1.0 loop
             scene inn ruang_tamu_2 with fade

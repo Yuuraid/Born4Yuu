@@ -21,6 +21,11 @@ transform looping_shake:
     linear 0.05 xoffset 0 yoffset 0
     repeat # This makes it loop indefinitely
 
+transform reset_shake:
+    zoom 1.0
+    xalign 0.0
+    yalign 0.0
+
 define slashht = ImageDissolve("assets/effects/Apho_RenPyImageDissolveTransitions/slasht.png", 1.0, ramplen=64)
 
 define dusted = ImageDissolve("assets/effects/Apho_RenPyImageDissolveTransitions/crack.png", 1.0, ramplen=64)

@@ -6,6 +6,8 @@ label scene_1:
     # scene vid_intro
     $ renpy.movie_cutscene("assets/videos/intro.webm")
 
+    $ config.allow_skipping = True
+
     # $ quick_menu = True
     # play music start with fadein 1.0 -> define dulu
     # play sound "audio/sfx/knock_door.ogg"
@@ -179,7 +181,8 @@ label scene_1:
     play music bgm_scene1_foto_foto_kenangan fadeout 1.0 fadein 1.0 volume 1.0 loop
     # Start CG
 
-    show cg meja_kamar_yuura:
+    $ unlock_cg("cg_arc_1_scene_01_primary_taro_foto-meja")
+    show cg_meja_kamar_yuura:
         zoom 1.0
         xalign 0.5
         yalign 0.5
@@ -189,7 +192,7 @@ label scene_1:
 
     nd_narrator_brown "Tak jauh dari sana, aku melihat sebuah meja yang di atasnya terdapat banyak sekali foto.{w=5.0}{nw}"
 
-    show cg meja_kamar_yuura:
+    show cg_meja_kamar_yuura:
         # Initial position (zoomed out at the right side)
         zoom 1.5
         xalign 1.0
@@ -202,7 +205,7 @@ label scene_1:
     nd_narrator_brown "Ketika kudekati, terlihat jelas foto-foto itu adalah momen kebersamaan si pemilik kamar dengan teman maupun keluarga nya.{w=6.0}{nw}"
     
     # Zoomed into picture frame
-    show cg meja_kamar_yuura:
+    show cg_meja_kamar_yuura:
         zoom 2.0
         xalign 1.0
         yalign 0.5

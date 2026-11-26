@@ -38,7 +38,7 @@ label scene_6:
     nd_you_brown "Arghhhh... Aku sudah sangat lelah... Sebaiknya aku mandi, bauku sudah sangat buruk"
 
     stop music fadeout 1.0
-    # $ config.allow_skipping = False
+    $ config.allow_skipping = False
     
     scene black with dissolve
 
@@ -92,6 +92,7 @@ label scene_6:
     $ renpy.pause(5.0, hard=True)
     # stop music
     
+    $ unlock_cg("cg_arc_2_scene_06_shoot_4")
     scene cg_arc_2_scene_06_shoot_4:
         zoom 1.5
         xalign 0.5
@@ -111,7 +112,7 @@ label scene_6:
     pause 1.8
     # show yuura netral none
 
-    # $ config.allow_skipping = True
+    $ config.allow_skipping = True
 
     
     nd_narrator_brown "Setelah mandi,"

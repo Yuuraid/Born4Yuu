@@ -45,6 +45,7 @@ image taman_penginapan_4 = "assets/bg/Taman_Penginapan_4.png"
 image taman_penginapan_3 = "assets/bg/Taman_Penginapan_3.png"
 image taman_penginapan_2 = "assets/bg/Taman_Penginapan_2.png"
 image taman_penginapan_1 = "assets/bg/Taman_Penginapan_1.png"
+image workshop = "assets/bg/Workshop.png"
 
 # Memories background
 image vid_memory_halloween = Movie(play="assets/videos/memories/halloween.webm", size=(1920, 1080), loop=True, channel="memories")
@@ -60,6 +61,7 @@ image vid_memory_nyanyi = Movie(play="assets/videos/memories/nyanyi.webm", size=
 image vid_memory_hutang = Movie(play="assets/videos/memories/hutang.webm", size=(1920, 1080), loop=True, channel="memories")
 image vid_memory_pleaseework = Movie(play="assets/videos/memories/pleaseework_2.webm", size=(1920, 1200))
 image vid_memory_totsu = Movie(play="assets/videos/memories/memory_totsu.webm")
+image vid_intro_reversed = Movie(play="assets/videos/intro-reversed-1.5-faded.webm", size=(1920, 1200))
 
 # image vid_intro = Movie(play="assets/videos/intro.webm", size=(1920, 1200))
 

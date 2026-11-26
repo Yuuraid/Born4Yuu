@@ -177,8 +177,9 @@ label scene_18:
     show axia at face_flip
 
     nd_narrator_brown "Axiaregis yang sedang fokus bertarung terkejut karena mendengar nama panggilannya."
+    play sound sfx_fathanil_roar_only
     voice voice_3_18_613_axiaregis
-    nd_axiaregis_brown "A-anee???"
+    nd_axiaregis_brown "A-anee???{nw}"
 
     stop music
 
@@ -197,19 +198,22 @@ label scene_18:
     show rian angry at left, idle
     with Flash
 
-    nd_narrator_brown "Axiaregis sekali lagi ditabrak oleh kuda nil, membuatnya terjatuh tepat di hadapan diriku."
+    # nd_narrator_brown "Axiaregis sekali lagi ditabrak oleh kuda nil, membuatnya terjatuh tepat di hadapan diriku."
     # show axia hurt at jump_in_right(duration=1.0), idle
     # pause 2.0
     # show rian angry at left, speaking
 
     # pause 1.0
 
+    show rian at speaking
     voice voice_3_18_614_rian
     nd_rian_brown "Edy, maaf... Aku ga sengaja."
     
+
     play music bgm_scene8_awkward
     show yuura scared at right with easeinright
 
+    show rian happy
     voice voice_3_18_615_rian
     nd_rian_brown "Loh? Anee?"
     show rian at idle
@@ -218,7 +222,7 @@ label scene_18:
     show yuura at center, idle with ease
     nd_narrator_brown "Aku mengelus kepala Rian, membuatnya senang seperti anak kecil."
 
-    show axia netral at face_flip, right with easeinright
+    show axia netral at face_flip, right, idle with easeinright
 
     pause 0.5
 
@@ -303,6 +307,7 @@ label scene_18:
     show cg_arc_3_scene_18_yuura_nahan_shoot_2 with Flash
     pause 0.1
     play sound sfx_action_sweeping_blow_scene16
+    $ unlock_cg("cg_arc_3_scene_18_yuura_nahan_shoot_3")
     show cg_arc_3_scene_18_yuura_nahan_shoot_3 with slash
 
     # play sound cartoonish punch
@@ -338,6 +343,7 @@ label scene_18:
     $ renpy.music.set_volume(1.0, channel="music")
     play music bgm_scene8_awkward_yoyu_ver volume 1.0 loop
 
+    $ unlock_cg("cg_arc_3_scene_18_lempar_yoyu_shoot_4")
     show cg_arc_3_scene_18_lempar_yoyu_shoot_1:
         ypos -1.0
         ease 0.2 ypos 0.0
@@ -421,7 +427,7 @@ label scene_18:
 
     show akasyah angry at face_flip, center zorder 5 with ease 
     voice voice_3_18_643_akasyah
-    nd_akasyah_brown "Yuur!!!{nw}"
+    nd_akasyah_brown "Yuur!!!{w=1}{nw}"
     
     # hide seiya 
     # hide akasyah 
@@ -435,7 +441,7 @@ label scene_18:
     $ renpy.music.set_pause(False, channel="music")
 
     scene garden_fight_1
-    show dityo angry at right, speaking
+    show dityo angry eff_sweat_w at right, speaking
     with fade
 
     voice voice_3_18_644_dityo
@@ -540,10 +546,10 @@ label scene_18:
     
     nd_you_brown "Kamu imut deh."
     show yuura at idle
-    show shark at speaking
+    show shark eff_heart at speaking
     voice voice_3_18_659_shark
     nd_shark_brown "D-dihh...  Diem deh..."
-    show shark at idle
+    show shark none at idle
     # stop music
     # play music scene 4
     
@@ -686,11 +692,19 @@ label scene_18:
     show yuura happy at idle
     nd_narrator_brown "Mereka mulai bertengkar lagi di hadapanku, membuatku yang menangis menjadi tertawa."
     # hide akasyah
+    camera:
+        zoom 2.0
+        xalign 0.5
+        yalign 0.45
     show yuura happy at center, speaking
     nd_you_brown "Emang yah, Yuuraid itu aneh banget hahaha."
 
     show yuura at idle
     # hide aergia
+    camera:
+        zoom 2.0
+        xalign 0.2
+        yalign 0.45
     show akasyah smug at left, speaking
     voice voice_3_18_682_akasyah
     nd_akasyah_brown "Nah gitu dong, Yuur! Ketawa hehe."

@@ -1,4 +1,4 @@
-image cg meja_kamar_yuura = "assets/cg/cg_arc_1_scene_01_primary_taro_foto-meja.png"
+image cg_meja_kamar_yuura = "assets/cg/cg_arc_1_scene_01_primary_taro_foto-meja.png"
 
 image cg_arc_1_scene_03_shoot_1 = "assets/cg/cg_arc_1_scene_03_shoot_1.png"
 image cg_arc_1_scene_03_shoot_2 = "assets/cg/cg_arc_1_scene_03_shoot_2.png"
