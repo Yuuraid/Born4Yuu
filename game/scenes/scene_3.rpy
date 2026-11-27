@@ -32,7 +32,7 @@ label scene_3:
     
     play sound sfx_expression_angry
     show yuura angry eff_angry at speaking
-    nd_you_brown "(Bagaimana aku bisa tiba-tiba berada di tempat ini. Apa yang telah terjadi? Mengapa ini semua terjadi? Dan kenapa aku bisa ada di sini?)"
+    nd_you_brown "(Bagaimana aku bisa tiba-tiba berada di tempat ini? Apa yang telah terjadi? Mengapa ini semua terjadi? Dan kenapa aku bisa ada di sini?)"
 
     stop music fadeout 1.0
     play music bgm_scene3_pria_asing volume 1.0 fadein 2.0 fadeout 2.0 loop

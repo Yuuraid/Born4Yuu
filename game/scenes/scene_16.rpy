@@ -1219,7 +1219,7 @@ label scene_16:
             ease 5.0 xoffset 450
 
         with { "effects": wipe_kiri(5.0) }
-        pause 5.0
+        $ renpy.pause(5.0, hard=True)
 
     # pause 
     scene black 

@@ -135,12 +135,12 @@ label scene_6:
     
     show yuura scared eff_sweat_w
     voice voice_2_6_69_taro
-    wd_taro_brown "Ane? kamu masih tidur? aku taruh di depan aja ya… maaf sudah mengganggu istirahat ane"
+    wd_taro_brown "Ane? kamu masih tidur? aku taruh di depan ya… maaf sudah mengganggu istirahat ane"
     
     play sound sfx_footstep_taro
 
     show yuura netral none
-    nd_narrator_brown "Dia berjalan untuk pergi, tapi sebelum terlalu jauh dia menatap ke kamarku sekali lagi."
+    nd_narrator_brown "Dia berjalan untuk pergi, tapi sebelum terlalu jauh dia menghentikan langkahnya dan mengucapkan sesuatu."
 
     play music bgm_scene4 volume 1.0 loop
     $ renpy.music.set_volume(0.4, channel="music")
@@ -149,16 +149,16 @@ label scene_6:
     wd_taro_brown "Ane… apapun yang terjadi tolong… jaga kesehatan mu, aku ga mau ngeliat ane pingsan lagi." 
     
     voice voice_2_6_71_taro
-    wd_taro_brown "Apa ane kira aku tidak sedih melihatnya? aku sedih ane, melihat orang yang selalu menemaniku di penginapan ini tak berdaya dihadapanku "
+    wd_taro_brown "Apa ane kira aku tidak sedih melihatnya? aku sedih ane, melihat orang yang selalu menemaniku di penginapan tak berdaya dihadapanku."
     
     nd_narrator_brown "(Suaranya sedikit gemetar, menahan perasaan sedih dalam batinnya.)" 
         # aku bingung nulisnya gmn yg atas ini
     
     voice voice_2_6_72_taro
-    wd_taro_brown "Aku emang yang tidak dari yang lain, aku emang yang paling ga mau diliat sama orang.."
+    wd_taro_brown "Aku emang yang tidak terlihat dari yang lain, aku emang yang paling ga mau diliat sama orang.."
     
     voice voice_2_6_73_taro
-    wd_taro_brown "Tapi yang ane harus tau, aku senang melihat ane bahagia… jadi jangan sampai dirimu terluka lagi"
+    wd_taro_brown "Tapi yang ane harus tau, aku senang melihat ane bahagia… jadi jangan sampai dirimu terluka lagi."
     
     show yuura happy with dissolve
     nd_narrator_brown "Dia berjalan pergi meninggalkan lorong. Suara langkah kakinya tidak terdengar lagi."

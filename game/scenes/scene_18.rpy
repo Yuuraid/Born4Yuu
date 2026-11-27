@@ -13,7 +13,7 @@ label scene_18:
     show aergia at idle
     show dawam hurt at left, speaking with easeinleft
     voice voice_3_18_585_dawam
-    nd_dawam_brown "Sesuai dengan permintaanmu!"
+    wd_dawam_brown "Sesuai dengan permintaanmu!"
     show dawam at idle
     nd_narrator_brown "Tepat disaat itu, sebuah perasaan aneh mengalir kuat didalam tubuhku. Entah mengapa tubuhku yang sebelumnya dihajar habis-habisan dapat dengan mudahnya berdiri seperti tak terjadi apa-apa sebelumnya"
 
@@ -71,20 +71,20 @@ label scene_18:
     show yuura angry at center, idle
     show dawam at speaking
     voice voice_3_18_588_dawam
-    nd_dawam_brown "No-nona Yuura?"
+    wd_dawam_brown "No-nona Yuura?"
     show dawam at idle
     show yuura at speaking
     show yuura at shake
-    nd_you_brown "{size=+20}CUKUP!{/size}"
+    wd_yuura_brown "{size=+20}CUKUP!{/size}"
     show yuura at idle
     show aergia at speaking
     voice voice_3_18_590_aergia
     nd_aergia_brown "Minggir, Yuur!"
     show aergia at idle
     show yuura at face_flip, speaking
-    nd_you_brown "{size=+20}Aku bilang CUKUP!{/size}"
+    wd_yuura_brown "{size=+20}Aku bilang CUKUP!{/size}"
     
-    nd_you_brown "Kalian mau ngelanjutin ini sampai kapan sih? Sampai penginapan ini hancur?"
+    wd_yuura_brown "Kalian mau ngelanjutin ini sampai kapan sih? Sampai penginapan ini hancur?"
     show yuura at face_flip, idle
     show aergia at speaking 
     voice voice_3_18_593_aergia
@@ -92,59 +92,62 @@ label scene_18:
     show aergia at idle
     show yuura at shake, face_flip, speaking
     # show yuura at shake
-    nd_you_brown "{size=+20}YA TERUS KENAPA?{/size}"
+    wd_yuura_brown "{size=+20}YA TERUS KENAPA?{/size}"
     
-    nd_you_brown "APA AKU BUKAN YUURA? KARENA AKU DARI DUNIA YANG BERBEDA?"
+    wd_yuura_brown "APA AKU BUKAN YUURA? KARENA AKU DARI DUNIA YANG BERBEDA?"
     show yuura at face_flip, idle
     show aergia at speaking
     voice voice_3_18_596_aergia
     nd_aergia_brown "T-tapi Yuur..."
+
+    play music bgm_scene4 loop
+
     show aergia at idle
     show yuura netral at face_flip, speaking
-    nd_you_brown "Aer..."
-    
-    nd_you_brown "Maaf yah, kalo aku selalu lupa akan dirimu."
+    wd_yuura_brown "Aer..."
+
+    wd_yuura_brown "Maaf yah, kalo aku selalu lupa akan dirimu."
     show yuura at face_flip, idle
     show aergia angry at speaking
     voice voice_3_18_599_aergia
-    nd_aergia_brown "A-apaan sih, huft!"
+    wd_aergia_brown "A-apaan sih, huft!"
     
     voice voice_3_18_600_aergia
-    nd_aergia_brown "Lagian siapa gua sampe bisa diinget orang-orang."
+    wd_aergia_brown "Lagian siapa gua sampe bisa diinget orang-orang."
     show aergia at idle
     show yuura at face_flip, speaking
-    nd_you_brown "Kata siapa?"
+    wd_yuura_brown "Kata siapa?"
     show yuura happy
-    nd_you_brown "Aer, kita adalah keluarga. Jangan selalu merasa bahwa dirimu sendirian di dunia ini."
+    wd_yuura_brown "Aer, kita adalah keluarga. Jangan selalu merasa bahwa dirimu sendirian di dunia ini."
     
-    nd_you_brown "Tak peduli seperti apapun dirimu, kamu sudah berusaha yang terbaik."
+    wd_yuura_brown "Tak peduli seperti apapun dirimu, kamu sudah berusaha yang terbaik."
     show yuura at face_flip, idle
     show aergia sad at speaking
     voice voice_3_18_604_aergia
-    nd_aergia_brown "Yuura..."
+    wd_aergia_brown "Yuura..."
     show aergia furious
     voice voice_3_18_605_aergia
-    nd_aergia_brown "Alah nyocot doang, lu kira bakalan mem-"
+    wd_aergia_brown "Alah nyocot doang, lu kira bakalan mem-"
     show aergia sad
     voice voice_3_18_606_aergia
-    nd_aergia_brown "Eh iya makasih ya...ehek ehek"
+    wd_aergia_brown "Eh iya makasih ya...ehek ehek"
     show aergia at idle
     nd_narrator_brown "Aergia menangis dan mulai menyadari bahwa dirinya tidak sendirian lagi."
     show yuura at speaking
-    nd_you_brown "Dawam... Maaf ya aku bikin kamu terluka."
+    wd_yuura_brown "Dawam... Maaf ya aku bikin kamu terluka."
     show yuura at idle
     show dawam at speaking
     voice voice_3_18_608_dawam
-    nd_dawam_brown "Gapapa Nona, ini semua adalah tugas yang diperintahkan oleh tuan muda."
+    wd_dawam_brown "Gapapa Nona, ini semua adalah tugas yang diperintahkan oleh tuan muda."
     show dawam at idle
     show yuura at speaking
-    nd_you_brown "Ga... Itu adalah keinginanmu sendiri."
+    wd_yuura_brown "Ga... Itu adalah keinginanmu sendiri."
     
-    nd_you_brown "Gausahlah nurutin si Risol-Risol itu, jadilah dirimu sendiri. Karena kamu adalah Yuuraid."
+    wd_yuura_brown "Gausahlah nurutin si Risol-Risol itu, jadilah dirimu sendiri. Karena kamu adalah Yuuraid."
     show yuura at idle
     show dawam sad at speaking
     voice voice_3_18_611_dawam
-    nd_dawam_brown "Nona..."
+    wd_dawam_brown "Nona..."
     show dawam at idle
     
     stop music fadeout 1.0
@@ -171,7 +174,7 @@ label scene_18:
 
     # show yuura at speaking
     # show yuura at shake
-    nd_you_brown "{size=+20}EDY!!{/size}"
+    wd_yuura_brown "{size=+20}EDY!!{/size}"
     # show yuura at idle
 
     show axia at face_flip
@@ -179,7 +182,7 @@ label scene_18:
     nd_narrator_brown "Axiaregis yang sedang fokus bertarung terkejut karena mendengar nama panggilannya."
     play sound sfx_fathanil_roar_only
     voice voice_3_18_613_axiaregis
-    nd_axiaregis_brown "A-anee???{nw}"
+    wd_axiaregis_brown "A-anee???{nw}"
 
     stop music
 
@@ -207,7 +210,7 @@ label scene_18:
 
     show rian at speaking
     voice voice_3_18_614_rian
-    nd_rian_brown "Edy, maaf... Aku ga sengaja."
+    wd_rian_brown "Edy, maaf... Aku ga sengaja."
     
 
     play music bgm_scene8_awkward
@@ -215,10 +218,10 @@ label scene_18:
 
     show rian happy
     voice voice_3_18_615_rian
-    nd_rian_brown "Loh? Anee?"
+    wd_rian_brown "Loh? Anee?"
     show rian at idle
     show yuura happy at speaking, zorder 5
-    nd_you_brown "Rian, kerja bagus!"
+    wd_yuura_brown "Rian, kerja bagus!"
     show yuura at center, idle with ease
     nd_narrator_brown "Aku mengelus kepala Rian, membuatnya senang seperti anak kecil."
 
@@ -227,9 +230,9 @@ label scene_18:
     pause 0.5
 
     show yuura at face_flip, speaking
-    nd_you_brown "Maaf ya, Edy... Aku berbuat jahat padamu."
+    wd_yuura_brown "Maaf ya, Edy... Aku berbuat jahat padamu."
     
-    nd_you_brown "Tapi lain kali tolong jangan kayak gitu lagi."
+    wd_yuura_brown "Tapi lain kali tolong jangan kayak gitu lagi."
 
     show rian behind yuura at custom_sprite_pos(x=0.25), idle
     show axia behind yuura at custom_sprite_pos(x=0.7), idle
@@ -240,14 +243,14 @@ label scene_18:
 
     show axia at face_flip, speaking
     voice voice_3_18_619_axiaregis
-    nd_axiaregis_brown "Aneeeee... Maafiiin akuuuu."
+    wd_axiaregis_brown "Aneeeee... Maafiiin akuuuu."
     show axia at face_flip, idle
     show yuura at speaking
-    nd_you_brown "Iya, aku maafin kok."
+    wd_yuura_brown "Iya, aku maafin kok."
     show yuura at idle
     show axia at face_flip, speaking
     voice voice_3_18_621_axiaregis
-    nd_axiaregis_brown "Huaaaaaa aku cinta kamu Aneee."
+    wd_axiaregis_brown "Huaaaaaa aku cinta kamu Aneee."
     show axia at face_flip, idle
     nd_narrator_brown "Aku mengelus Axiaregis dan membuatnya menangis sangat kencang dalam pelukanku."
     
@@ -257,25 +260,25 @@ label scene_18:
 
     nd_narrator_brown "Setelah puas mengeluarkan semua emosinya, Axiaregis dan Rian menawarkan dirinya untuk membantu dalam menyelesaikan masalah lainnya."
     show yuura at speaking
-    nd_you_brown "Tidak, biar aku saja yang menyelesaikannya."
+    wd_yuura_brown "Tidak, biar aku saja yang menyelesaikannya."
     
-    nd_you_brown "Dimana Akasyah dan lainnya?"
+    wd_yuura_brown "Dimana Akasyah dan lainnya?"
     show yuura at idle
     show axia at speaking
     voice voice_3_18_624_axiaregis
-    nd_axiaregis_brown "Di sana Anee."
+    wd_axiaregis_brown "Di sana Anee."
     
     voice voice_3_18_625_axiaregis
-    nd_axiaregis_brown "Tapi kamu yakin, Anee? Mereka berdua berbahaya."
+    wd_axiaregis_brown "Tapi kamu yakin, Anee? Mereka berdua berbahaya."
     show axia at idle
     show rian at speaking
     voice voice_3_18_626_rian
-    nd_rian_brown "Betul kata Edy, Anee. Sebaiknya kami membantu."
+    wd_rian_brown "Betul kata Edy, Anee. Sebaiknya kami membantu."
     show rian at idle
     show yuura at speaking
-    nd_you_brown "Tidak apa, biar aku saja."
+    wd_yuura_brown "Tidak apa, biar aku saja."
     
-    nd_you_brown "Tapi...{w=1.0} kalian bisa bantu aku sesuatu nggak?"
+    wd_yuura_brown "Tapi...{w=1.0} kalian bisa bantu aku sesuatu nggak?"
 
     scene black with dissolve
     pause 0.5
@@ -297,7 +300,7 @@ label scene_18:
 
     # show seiya at shake
     voice voice_3_18_630_seiya
-    nd_seiya_brown "AKASYAHHH!!"
+    wd_seiya_brown "AKASYAHHH!!"
     hide seiya with easeoutright
 
     play sound sfx_punch_12
@@ -374,9 +377,9 @@ label scene_18:
     # with ease
 
     # show yuura happy at center, speaking
-    nd_you_brown "Nih, kuganti yang sebelumnya."
+    wd_yuura_brown "Nih, kuganti yang sebelumnya."
     
-    nd_you_brown "Maaf yah, aku malah bikin kamu marah."
+    wd_yuura_brown "Maaf yah, aku malah bikin kamu marah."
     
     hide cg_arc_3_scene_18_lempar_yoyu_shoot_1
     hide cg_arc_3_scene_18_lempar_yoyu_shoot_2
@@ -386,30 +389,30 @@ label scene_18:
     show yuura happy at center, face_flip, speaking
     with dissolve
 
-    nd_you_brown "Sini-sini, aku peluk."
+    wd_yuura_brown "Sini-sini, aku peluk."
     show yuura at face_flip, idle
     show akasyah angry at speaking
     voice voice_3_18_637_akasyah
-    nd_akasyah_brown "Apaan sih, Yuur. Lu kira gua anak kecil?"
+    wd_akasyah_brown "Apaan sih, Yuur. Lu kira gua anak kecil?"
     
     show akasyah netral at idle
     nd_narrator_brown "Akasyah meminum Yoyu yang diberikan dan mulai sedikit tenang."
     show akasyah at face_flip, idle
     show seiya netral at face_flip, speaking
     voice voice_3_18_638_seiya
-    nd_seiya_brown "Apa yang terjadi padamu, Anee?"
+    wd_seiya_brown "Apa yang terjadi padamu, Anee?"
     
     voice voice_3_18_639_seiya
-    nd_seiya_brown "Bukankah, kamu seperti orang yang berbeda sekarang?"
+    wd_seiya_brown "Bukankah, kamu seperti orang yang berbeda sekarang?"
     show seiya at face_flip, idle
     show yuura at speaking
-    nd_you_brown "Memang ya, Seiya ini."
+    wd_yuura_brown "Memang ya, Seiya ini."
     
-    nd_you_brown "Mau yang tadi atau sekarang, aku tetaplah Yuura, bukan?"
+    wd_yuura_brown "Mau yang tadi atau sekarang, aku tetaplah Yuura, bukan?"
     show yuura at idle
     show seiya at face_flip, speaking
     voice voice_3_18_642_seiya
-    nd_seiya_brown "Hahaha...ya... Kamu benar.{w=1}{nw}"
+    wd_seiya_brown "Hahaha...ya... Kamu benar.{w=1}{nw}"
     # stop music
     # play music pursuit ver 2
     # play sound angin berhembus sepoi sepoi
@@ -423,11 +426,13 @@ label scene_18:
         xalign 0.5
         yalign 0.5
 
-    nd_narrator_brown "Disaat kita lagi mengobrol tiba tiba..{nw}"
+    nd_narrator_brown "Disaat kita lagi mengobrol tiba tiba..{w=2}{nw}"
+
+    # $ renpy.pause(1.5, hard=True)
 
     show akasyah angry at face_flip, center zorder 5 with ease 
     voice voice_3_18_643_akasyah
-    nd_akasyah_brown "Yuur!!!{w=1}{nw}"
+    wd_akasyah_brown "Yuur!!!{w=1}{nw}"
     
     # hide seiya 
     # hide akasyah 
@@ -458,7 +463,7 @@ label scene_18:
 
     # show dityo netral at idle
     # show yuura happy at center, speaking, zorder 5
-    nd_you_brown "Dityo!"
+    wd_yuura_brown "Dityo!"
     hide yuura with easeoutright
 
     scene garden_fight_1
@@ -469,7 +474,7 @@ label scene_18:
 
     nd_narrator_brown "Aku menghampiri Dityo dan memberikannya sebuah lukisan yang aku rusak siang tadi."
     show yuura at face_flip, speaking
-    nd_you_brown "Ini, aku berhasil memperbaikinya."
+    wd_yuura_brown "Ini, aku berhasil memperbaikinya."
     show yuura at face_flip
 
     show dark_overlay
@@ -482,14 +487,14 @@ label scene_18:
     pause
 
     show yuura at speaking
-    nd_you_brown "Maaf, aku mendorong dirimu dan tanpa sengaja dan bertindak kasar padamu."
+    wd_yuura_brown "Maaf, aku mendorong dirimu dan tanpa sengaja dan bertindak kasar padamu."
 
-    nd_you_brown "Aku di bantu Edy dan Rian memperbaiki ini"
+    wd_yuura_brown "Aku di bantu Edy dan Rian memperbaiki ini"
     show yuura at face_flip
 
     show dityo at speaking
     voice voice_3_18_649_dityo
-    nd_dityo_brown "Anee..."
+    wd_dityo_brown "Anee..."
     show yuura at idle
     show dityo at idle
 
@@ -508,23 +513,23 @@ label scene_18:
 
     show yuura at speaking
     # show dityo at idle
-    nd_you_brown "Maaf yah Dityo"
+    wd_yuura_brown "Maaf yah Dityo"
 
     show dityo at idle
     show yuura at idle
     show shark hurt_frame at custom_sprite_pos(x=1.4), speaking with easeinright
     voice voice_3_18_650_shark
-    nd_shark_brown "Kalian gapapa kan?"
+    wd_shark_brown "Kalian gapapa kan?"
     show shark at speaking
     voice voice_3_18_651_shark
-    nd_shark_brown "L-loh Anee?"
+    wd_shark_brown "L-loh Anee?"
     show shark at idle
     show yuura at speaking
-    nd_you_brown "Shark, kok kamu..."
+    wd_yuura_brown "Shark, kok kamu..."
     show yuura at idle
     show shark at speaking
     voice voice_3_18_653_shark
-    nd_shark_brown "A-aman aja Anee, luka begini doang mah kecil."
+    wd_shark_brown "A-aman aja Anee, luka begini doang mah kecil."
     show shark at idle
     show yuura at custom_sprite_pos(x=1.0) with ease
     nd_narrator_brown "Aku menarik tangannya dan melihat luka yang ada disana. Aku mengoleskan sebuah salep di luka tersebut, untuk membuatnya menjadi lebih baik."
@@ -532,23 +537,23 @@ label scene_18:
     # play music awkward
     show shark at speaking
     voice voice_3_18_654_shark
-    nd_shark_brown "Huh.. A-ane???"
+    wd_shark_brown "Huh.. A-ane???"
     show shark at idle
     show yuura at center, speaking with ease
-    nd_you_brown "Lebih baik?"
+    wd_yuura_brown "Lebih baik?"
     show yuura at idle
     show shark at speaking
     voice voice_3_18_656_shark
-    nd_shark_brown "I-iya..."
+    wd_shark_brown "I-iya..."
     show shark at idle
     show yuura at speaking
-    nd_you_brown "Makasih ya, udah ngelindungin aku."
+    wd_yuura_brown "Makasih ya, udah ngelindungin aku."
     
-    nd_you_brown "Kamu imut deh."
+    wd_yuura_brown "Kamu imut deh."
     show yuura at idle
     show shark eff_heart at speaking
     voice voice_3_18_659_shark
-    nd_shark_brown "D-dihh...  Diem deh..."
+    wd_shark_brown "D-dihh...  Diem deh..."
     show shark none at idle
     # stop music
     # play music scene 4
@@ -566,22 +571,22 @@ label scene_18:
     # hide dityo
     show aergia netral at speaking
     voice voice_3_18_660_aergia
-    nd_aergia_brown "Yuur, lu gapapa?"
+    wd_aergia_brown "Yuur, lu gapapa?"
     show aergia at idle
     hide shark
     show axia netral at speaking
     voice voice_3_18_661_axiaregis
-    nd_axiaregis_brown "Anee gapapah?"
+    wd_axiaregis_brown "Anee gapapah?"
     show axia at idle
     # hide aergia
     show dawam netral at speaking
     voice voice_3_18_662_dawam
-    nd_dawam_brown "Nona gapapa?"
+    wd_dawam_brown "Nona gapapa?"
     show dawam at idle
     # hide axia
     show rian netral at speaking
     voice voice_3_18_663_rian
-    nd_rian_brown "Aneeki aman?"
+    wd_rian_brown "Aneeki aman?"
     # hide rian
     # hide dawam
 
@@ -592,7 +597,7 @@ label scene_18:
     show yuura scared at center, speaking
     # with fade
 
-    nd_you_brown "Maaf..."
+    wd_yuura_brown "Maaf..."
     show yuura sad at idle
     nd_narrator_brown "Air mataku mulai turun seraya tubuhku mulai terduduk lemas."
     # show yuura at speaking
@@ -602,28 +607,28 @@ label scene_18:
     scene cg_arc_3_scene_17_shoot_02 with dissolve
     pause 0.2
     scene cg_arc_3_scene_17_shoot_01 with dissolve
-    nd_you_brown "Maaf..."
+    wd_yuura_brown "Maaf..."
     
     scene cg_arc_3_scene_17_shoot_02 with dissolve
     pause 0.2
     scene cg_arc_3_scene_17_shoot_01 with dissolve
-    nd_you_brown "Maaf kalau aku bukan Yuura yang kalian kenal."    
+    wd_yuura_brown "Maaf kalau aku bukan Yuura yang kalian kenal."    
     
     scene cg_arc_3_scene_17_shoot_02 with dissolve
     pause 0.2
     scene cg_arc_3_scene_17_shoot_01 with dissolve
-    nd_you_brown "Maaf kalau aku berubah."
+    wd_yuura_brown "Maaf kalau aku berubah."
     
     scene cg_arc_3_scene_17_shoot_02 with dissolve
     pause 0.2
     scene cg_arc_3_scene_17_shoot_01 with dissolve
-    nd_you_brown "Maaf kalau aku selalu mengecewakan kalian."
+    wd_yuura_brown "Maaf kalau aku selalu mengecewakan kalian."
     
     scene cg_arc_3_scene_17_shoot_02 with dissolve
-    nd_you_brown "Maaf."
+    wd_yuura_brown "Maaf."
     
     scene cg_arc_3_scene_17_shoot_03 with dissolve
-    nd_you_brown "Maaf..."
+    wd_yuura_brown "Maaf..."
     # hide yuura
 
     scene garden_fight_3
@@ -634,17 +639,17 @@ label scene_18:
 
     # show aergia angry at speaking
     voice voice_3_18_671_aergia
-    nd_aergia_brown "Apaan dah lu tuh ga salah, harusnya gua yang minta maaf."
+    wd_aergia_brown "Apaan dah lu tuh ga salah, harusnya gua yang minta maaf."
     
     voice voice_3_18_672_aergia
-    nd_aergia_brown "Coba aja kalau gua ga goblok maaf ya, Yuur."
+    wd_aergia_brown "Coba aja kalau gua ga goblok maaf ya, Yuur."
     show aergia at idle
     show axia sassy at speaking
     voice voice_3_18_673_axiaregis
-    nd_axiaregis_brown "Apaan, ini semua salahku, Anee."
+    wd_axiaregis_brown "Apaan, ini semua salahku, Anee."
     
     voice voice_3_18_674_axiaregis
-    nd_axiaregis_brown "Karena aku semuanya jadi gini."
+    wd_axiaregis_brown "Karena aku semuanya jadi gini."
     show axia at idle
     # hide aergia
 
@@ -655,10 +660,10 @@ label scene_18:
 
     # show dityo sad at left, speaking
     voice voice_3_18_675_dityo
-    nd_dityo_brown "Ga, ini semua salahku..."
+    wd_dityo_brown "Ga, ini semua salahku..."
     
     voice voice_3_18_676_dityo
-    nd_dityo_brown "Seandainya aku lebih sabar mungkin ga bakal kayak gini."
+    wd_dityo_brown "Seandainya aku lebih sabar mungkin ga bakal kayak gini."
     show dityo at idle
 
     show akasyah smug at left, idle with easeinleft
@@ -666,7 +671,7 @@ label scene_18:
     play music bgm_scene8_awkward
     show akasyah at speaking
     voice voice_3_18_677_akasyah
-    nd_akasyah_brown "Au, lu pada ngapain coba kayak gitu?"
+    wd_akasyah_brown "Au, lu pada ngapain coba kayak gitu?"
     show akasyah at idle
     show dityo at speaking
     show dityo at shake
@@ -681,7 +686,7 @@ label scene_18:
     voice voice_3_18_678_dityo
     # voice voice_3_18_678_9_Dityo_Axia
     
-    nd_narrator_brown "{size=+20}Kamu juga.{/size}" # dityo dan aergia
+    wd_narrator_brown "{size=+20}Kamu juga.{/size}" # dityo dan aergia
     show dityo at idle
     show shark at idle
     # show axia at idle
@@ -697,7 +702,7 @@ label scene_18:
         xalign 0.5
         yalign 0.45
     show yuura happy at center, speaking
-    nd_you_brown "Emang yah, Yuuraid itu aneh banget hahaha."
+    wd_yuura_brown "Emang yah, Yuuraid itu aneh banget hahaha."
 
     show yuura at idle
     # hide aergia
@@ -707,7 +712,7 @@ label scene_18:
         yalign 0.45
     show akasyah smug at left, speaking
     voice voice_3_18_682_akasyah
-    nd_akasyah_brown "Nah gitu dong, Yuur! Ketawa hehe."
+    wd_akasyah_brown "Nah gitu dong, Yuur! Ketawa hehe."
     # show akasyah at idle
     scene white with dissolve
     nd_narrator_brown "Mereka semua memelukku, mengingatkan kembali kehangatan yang selama ini aku inginkan."

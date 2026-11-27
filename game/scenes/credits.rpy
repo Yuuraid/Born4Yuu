@@ -215,11 +215,25 @@ label scene_credits:
     scene white
     # "this is credits"
 
+    show screen centered_typewriter("Credits", speed=15) with dissolve
+
+    pause
+
+    hide screen centered_typewriter with dissolve
+
     # "Let's review the rules before we begin."
 
-    call screen slide_viewer(credits_slides)
+    call screen slide_viewer(credits_slides) with dissolve
 
-    # "Now that you're ready, let's go!"
+    hide screen slide_viewer with dissolve
+
+    show screen centered_typewriter("Tamat", speed=15) with dissolve
+
     pause
+
+    # hide screen centered_typewriter with dissolve
+
+    # # "Now that you're ready, let's go!"
+    # pause
 
     return
