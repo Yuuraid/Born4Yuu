@@ -13,7 +13,7 @@ label scene_18:
     show aergia at idle
     show dawam hurt at left, speaking with easeinleft
     voice voice_3_18_585_dawam
-    wd_dawam_brown "Sesuai dengan permintaanmu!"
+    wd_dawam_brown "Sesuai permintaanmu!"
     show dawam at idle
     nd_narrator_brown "Tepat disaat itu, sebuah perasaan aneh mengalir kuat didalam tubuhku. Entah mengapa tubuhku yang sebelumnya dihajar habis-habisan dapat dengan mudahnya berdiri seperti tak terjadi apa-apa sebelumnya"
 
@@ -33,7 +33,7 @@ label scene_18:
         linear 0.5 zoom 1.5 rotate 10
     with Flash
 
-    nd_narrator_brown "Aku berlari ke tengah-tengah pertarungan, untuk menghentikan hal tak ada gunanya ini."
+    nd_narrator_brown "Aku berlari ke tengah-tengah pertarungan, untuk menghentikan hal yang tak ada gunanya ini."
     # play sound melangkah
     # show dawam at speaking
     # show dawam at shake
@@ -110,10 +110,10 @@ label scene_18:
     show yuura at face_flip, idle
     show aergia angry at speaking
     voice voice_3_18_599_aergia
-    wd_aergia_brown "A-apaan sih, huft!"
+    wd_aergia_brown "A-apaan sih, hmph~"
     
     voice voice_3_18_600_aergia
-    wd_aergia_brown "Lagian siapa gua sampe bisa diinget orang-orang."
+    wd_aergia_brown "Lagian siapa gua bisa sampe diinget orang-orang."
     show aergia at idle
     show yuura at face_flip, speaking
     wd_yuura_brown "Kata siapa?"
@@ -138,7 +138,7 @@ label scene_18:
     show yuura at idle
     show dawam at speaking
     voice voice_3_18_608_dawam
-    wd_dawam_brown "Gapapa Nona, ini semua adalah tugas yang diperintahkan oleh tuan muda."
+    wd_dawam_brown "Tidak masalah Nona, ini semua adalah tugas yang diperintahkan oleh tuan muda."
     show dawam at idle
     show yuura at speaking
     wd_yuura_brown "Ga... Itu adalah keinginanmu sendiri."
@@ -315,7 +315,8 @@ label scene_18:
 
     # play sound cartoonish punch
     # show seiya at idle
-    nd_narrator_brown "Sebelum mereka berhasil menyerang satu sama lain, aku langsung berdiri di antara keduanya. Menghentikan serangan mematikan yang mereka."
+    nd_narrator_brown "Sebelum mereka berhasil menyerang satu sama lain, aku langsung berdiri di antara keduanya. Mematikan serangan pamungkas mereka."
+
 
     hide yuura
     hide akasyah
@@ -487,9 +488,9 @@ label scene_18:
     pause
 
     show yuura at speaking
-    wd_yuura_brown "Maaf, aku mendorong dirimu dan tanpa sengaja dan bertindak kasar padamu."
+    wd_yuura_brown "Maaf, aku mendorong dirimu tanpa sengaja dan bertindak kasar padamu."
 
-    wd_yuura_brown "Aku di bantu Edy dan Rian memperbaiki ini"
+    wd_yuura_brown "Aku dibantu Edy dan Rian memperbaiki ini"
     show yuura at face_flip
 
     show dityo at speaking
@@ -639,10 +640,10 @@ label scene_18:
 
     # show aergia angry at speaking
     voice voice_3_18_671_aergia
-    wd_aergia_brown "Apaan dah lu tuh ga salah, harusnya gua yang minta maaf."
+    wd_aergia_brown "Apaan dah? lu tuh ga salah, harusnya gua yang minta maaf. Gua kok yang salah, gua"
     
     voice voice_3_18_672_aergia
-    wd_aergia_brown "Coba aja kalau gua ga goblok maaf ya, Yuur."
+    wd_aergia_brown "Coba aja kalau gua ga goblok. Maaf ya, Yuur."
     show aergia at idle
     show axia sassy at speaking
     voice voice_3_18_673_axiaregis

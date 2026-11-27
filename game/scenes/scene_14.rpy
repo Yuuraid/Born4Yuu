@@ -167,7 +167,7 @@ label scene_14:
     nd_akasyah_brown "Mata lu buta apa gimana?"
     
     voice voice_3_14_219_akasyah
-    nd_akasyah_brown "Apa emang lu gabisa bedain Yuura yang asli sama yang palsu?"
+    nd_akasyah_brown "Emang lu gabisa bedain Yuura yang asli sama yang palsu?"
     show akasyah at idle
         
     show seiya at speaking
@@ -214,10 +214,10 @@ label scene_14:
         
     show akasyah at speaking
     voice voice_3_14_225_akasyah
-    nd_akasyah_brown "Hahaha... kan? Udah gua duga lu pasti gabisa jawab pertanyaan gua."
+    nd_akasyah_brown "Hahaha... kan? Udah gua duga lu gabisa jawab pertanyaan gua."
     
     voice voice_3_14_226_akasyah
-    nd_akasyah_brown "Sekarang minggir dan biar gua hajar si palsu ini!"
+    nd_akasyah_brown "Sekarang minggir, biar gua hajar si palsu ini!"
     show akasyah at idle
     
     nd_narrator_brown "Aku melihat senyum lebar di wajah Akasyah yang berhasil mengungkap fakta yang selama ini kututupi."
@@ -765,7 +765,7 @@ label scene_14:
     
     # show shark at speaking
     voice voice_3_14_241_shark
-    wd_shark_brown "Aw... Aw... sakit juga nahan rudal pake gigi."
+    wd_shark_brown "Aw... Aw... sakit juga ya nahan rudal pake gigi."
     # show shark at idle
     
     # This two suppose to speak the same time
@@ -808,7 +808,7 @@ label scene_14:
     
     show seiya at face_flip, speaking
     voice voice_3_14_246_seiya
-    wd_seiya_brown "Serahkan urusan ini padaku dan Shark! Oke"
+    wd_seiya_brown "Serahkan urusan ini padaku dan Shark! Oke?"
     show seiya at face_flip, idle
     
     nd_narrator_brown "Meski enggan, aku berbalik dan lari meninggalkan mereka berdua."

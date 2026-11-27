@@ -204,7 +204,7 @@ label scene_16:
     scene black with fade
     play sound sfx_action_tanah_retak_scene16
     with hpunch 
-    nd_narrator_black "Aergia mengangkat dan membanting Yuura ke gudang."
+    nd_narrator_black "Aergia mengangkat dan membanting diriku ke gudang."
     
         # fx stop blur
     # show gudang with shake
@@ -589,7 +589,7 @@ label scene_16:
     play sound sfx_action_heartbeat_scene10
     show aergia at speaking
     voice voice_3_16_398_aergia
-    nd_aergia_brown "Kenapa... Kenapa!!! KENAPA!? "
+    nd_aergia_brown "Kenapa... Kenapa! Kenapa!! Kenapa!!! Kenapa!!!! Kenapa!!!!!  KENAPA!? "
 
 
     voice voice_3_16_399_aergia

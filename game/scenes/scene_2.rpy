@@ -39,9 +39,9 @@ label scene_2:
 
     hide yuura with easeoutleft
 
-    nd_narrator_brown "Pelarian ini tidaklah mulus, aku harus menghindari orang-orang yang berlalu lalang di lorong ini, belum lagi aku sempat menimpuk wajah seseorang yang berpakaian serba coklat dengan lututku."
+    nd_narrator_brown "Pelarian ini tidaklah mulus, aku harus menghindari orang-orang yang berlalu lalang di lorong ini, belum  aku sempat menjegal seseorang yang berpakaian serba coklat dengan lututku."
 
-    nd_narrator_brown "Melesat ditempat sempit nan ramai ini membuatku kesulitan dalam melaju. Akhirnya setelah cukup panjang menyusuri lorong ini, aku melihat sebuah pintu yang dibuka di ujung sana. Nampaknya, itu adalah jalan keluar yang ku cari-cari"
+    nd_narrator_brown "Melesat di tempat sempit nan ramai ini membuatku kesulitan dalam melaju. Akhirnya setelah cukup panjang menyusuri lorong ini, aku melihat sebuah pintu yang dibuka di ujung sana. Nampaknya, itu adalah jalan keluar yang ku cari-cari"
     
         # show yuura normal animated at center
         # with Dissolve(2.0)
@@ -73,7 +73,7 @@ label scene_2:
 
     nd_narrator_brown "Akhirnya setelah dua menit berlalu, aku berhasil mencapai atap dari tempat terbuka nan luas ini."
 
-    nd_narrator_brown "Orang-orang dibawah menatapku dengan tatapan bingung, seperti melihat orang gila sehabis berbuat kericuhan, tapi peduli apa aku."
+    nd_narrator_brown "Orang-orang di bawah menatapku dengan tatatapan bingung, seperti melihat orang gila sehabis berbuat kericuhan, tapi peduli apa aku."
     
     show yuura at pacing_left_right
 

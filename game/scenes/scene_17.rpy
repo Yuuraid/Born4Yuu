@@ -83,7 +83,7 @@ label scene_17:
     nd_you_brown "Hah?"
     show yuura at idle
 
-    nd_narrator_brown "Yuura menggelengkan kepala ke samping."
+    nd_narrator_brown "Aku menggelengkan kepala ke samping."
     
     nd_narrator_brown "Aku sedikit bingung melihat tingkah pria asing itu, membuatku semakin mempertanyakan apa maksud dari semua ini."
     
@@ -103,7 +103,7 @@ label scene_17:
 
     show pria netral_wet
     show yuura scared
-    nd_narrator_brown "Yuura menyemburkan teh yang baru ia teguk."
+    nd_narrator_brown "Aku menyemburkan teh yang baru ku teguk."
     
     nd_narrator_brown "..."
 
@@ -471,7 +471,7 @@ label scene_17:
                 ease 0.5 yalign 0.5
 
 
-            nd_narrator_brown "Pria itu memperliahtkan sebuah foto, di mana begitu banyak orang bersorak di depan panggung."
+            nd_narrator_brown "Pria itu memperlihatkan sebuah foto, di mana begitu banyak orang bersorak di depan panggung."
 
             nd_narrator_brown "Meski aku tahu jelas bahwa orang yang mereka soraki adalah aku, aku jelas-jelas tidak memiliki ingatan tentang itu."
             
@@ -700,7 +700,7 @@ label scene_17:
                     
                     show pria sad eff_laugh_y
                     voice voice_3_17_534_pria_misterius
-                    wd_unknown_brown "Hahaha... Rasanya sangat menyakitkan yah..."
+                    wd_unknown_brown "Hahaha... Rasanya memang menyakitkan yah..."
                     show pria none at idle
 
                     show yuura at speaking
@@ -749,7 +749,7 @@ label scene_17:
                     scene workshop with eye_open
                     # with dissolve
 
-                    nd_narrator_brown "Aku kembali terbangun dari tidur ku."
+                    nd_narrator_brown "Yuura kembali terbangun dari tidurnya."
                     
                     nd_narrator_brown "Cahaya bulan menyisip masuk dari celah gerigi menara jam, menyinari meja dengan tumpukan kertas dan peralatan yang berserak di atasnya."
                     
@@ -765,7 +765,7 @@ label scene_17:
 
                     $ quick_menu = False
 
-                    $ renpy.call_screen("game_over_screen", reason_text="Yuura kembali ke dunianya, \ntapi bagaimana nasib dunia yang dia tinggalkan?")
+                    $ renpy.call_screen("game_over_screen", reason_text="Aku kembali ke duniaku, \ntapi bagaimana nasib dunia yang ku tinggalkan?")
                     
                     return
                 "Aku tidak mengerti...":
@@ -988,7 +988,7 @@ label scene_17:
     
             show pria netral at speaking
             voice voice_3_17_434_pria_misterius
-            wd_unknown_brown "Apa kamu yakin dengan pilihan mu?"
+            wd_unknown_brown "Kamu yakin dengan pilihan mu?"
             show pria at idle
 
             camera:

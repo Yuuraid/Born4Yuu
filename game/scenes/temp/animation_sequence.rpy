@@ -23,7 +23,8 @@ label shark_transform_01:
 
 # White silhouette effect for Gen 3/4 style
 # Define a quick white flash transition
-define Flash = Fade(0.1, 0.0, 0.3, color="#ffffff")
+define Flash = Fade(0.1, 0.0, 0.3, color="#979797")
+# define Flash = Fade(0.1, 0.0, 0.3, color="#ffffff")
 
 # Turn sprite into solid white silhouette
 transform silhouette_white:

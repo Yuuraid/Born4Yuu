@@ -165,7 +165,7 @@ label scene_1:
     
     play sound sfx_expression_sweat
     show yuura scared eff_sweat_w at center, idle
-    nd_narrator_brown "Didekat zirah itu terdapat meja kecil yang diatasnya terdapat alat penghisap tembakau dan topeng berbentuk hewan"
+    nd_narrator_brown "Didekat zirah itu terdapat meja kecil yang di atasnya terdapat alat penghisap tembakau dan topeng berbentuk hewan"
     
     play sound sfx_expression_shocked
     show layer master at shake
@@ -263,7 +263,7 @@ label scene_1:
     stop music fadeout 1.0
     # play sound sfx_action_knocking_door_scene1
     voice voice_1_1_12_haruto
-    wd_unknown_black "Anee, waktu nya bangun"
+    wd_unknown_black "Anee, waktunya bangun"
 
     # BGM rock
     scene inn kamar_yuura morning
@@ -283,7 +283,7 @@ label scene_1:
     with dissolve
     play sound sfx_expression_sweat
     show yuura scared eff_sweat_w at pacing_left_right, idle
-    nd_narrator_brown "Aku segera memutar otakku, dan menemukan jawaban."
+    nd_narrator_brown "Aku segera memutar otak ku, dan menemukan jawaban."
     
     play sound sfx_expression_sweat
     show yuura scared eff_sweat_w at center, speaking
