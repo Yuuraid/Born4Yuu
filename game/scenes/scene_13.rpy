@@ -101,7 +101,7 @@ label scene_13:
     
     show akasyah angry eff_angry at speaking
     voice voice_3_13_202_akasyah_3
-    extend " Beraninya si Seiya itu merusak rencana gua!"
+    extend " Berani nya si Seiya itu merusak rencana gua!"
     
     play sound sfx_action_whoosh_scene13_16
     hide akasyah 

@@ -55,7 +55,7 @@ label scene_12:
     
     show aergia netral eff_question_mark_r
     voice voice_2_12_183_aergia_3
-    extend " loh, bentar, lu tahukan gua siapa Yur?"
+    extend " loh, bentar, lu tahu kan gua siapa Yur?"
     show aergia none at idle
         
     show yuura at face_flip, speaking
@@ -257,7 +257,7 @@ label scene_12:
     pause 0.3
     hide yuura with easeoutleft
 
-    nd_narrator_brown "Pada akhirnya aku mengurungkan niatku untuk pergi untuk mengembalikan botol ini."
+    nd_narrator_brown "Pada akhirnya aku mengurungkan niatku untuk pergi, dan mengembalikan botol ini."
     
     stop music
 

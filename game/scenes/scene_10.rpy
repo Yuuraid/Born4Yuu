@@ -83,7 +83,7 @@ label scene_10:
     wd_unknown_brown "..."
     show dityo at speaking, silhouette
     voice voice_2_10_107_dityo
-    wd_unknown_brown "Kenapa ne? Kenapa kamu jadi seperti ini? Ini bukan seperti Anee yang kukenal..."
+    wd_unknown_brown "Kenapa ne? Kenapa kamu jadi seperti ini? Ini bukan seperti Anee yang aku kenal..."
     
     voice voice_2_10_108_dityo
     wd_unknown_brown "Yuura yang kukenal tidak akan langsung merusak barang orang lain! Dia orang yang baik, penyayang."
@@ -128,7 +128,7 @@ label scene_10:
                 # show dityo marah with shake
             
             voice voice_2_10_112_dityo
-            nd_unknown_brown "KAMU DENGAN MUDAHNYA NGANCURIN MAHAKARYAKU??"
+            nd_unknown_brown "KAMU DENGAN MUDAHNYA NGANCURIN MAHAKARYA AKU??"
             
             # voice voice_2_10_113_dityo
             # nd_unknown_brown "Kalo bukan kamu yang minta juga aku ga mungkin bikin alat ini!"
@@ -162,7 +162,7 @@ label scene_10:
             show yuura at idle
             nd_narrator_brown "Benar... aku ingat orang ini."
             
-            nd_narrator_brown "Nama orang ini juga ada di buku tamu yang sharks berikan padaku.{w} Namanya adalah..."
+            nd_narrator_brown "Nama orang ini juga ada di buku tamu yang shark berikan padaku.{w} Namanya adalah..."
             
             show yuura at speaking
             show dityo at idle with dissolve
@@ -254,7 +254,7 @@ label scene_10:
             play music bgm_scene15_catastrophe
             scene transition_screen orange concentrationline02_w with fade
             show yuura scared eff_tremble_w at ease_custom(offscreenright, center, 0.5), zorder 2
-            nd_narrator_brown "Mendengar itu, membuat merasa jijik sekaligus kesal melihat tingkah orang ini. Aku segera mempercepat langkah kaki ku untuk pergi menghindarinya. Tapi entah mengapa, dia bergerak lebih cepat."
+            nd_narrator_brown "Mendengar itu, membuat ku jijik sekaligus kesal melihat tingkah orang ini. Aku segera mempercepat langkah kaki ku untuk pergi menghindarinya. Tapi entah mengapa, dia bergerak lebih cepat."
             
             show axia cute eff_sparkle at ease_custom(offscreenright, left, 0.5), speaking
             voice voice_2_10_124_axiaregis
@@ -369,7 +369,7 @@ label scene_10:
             
             show axia sassy eff_angry at speaking
             voice voice_2_10_135_axiaregis_1
-            wd_axiaregis_brown "Hmph! Beraninya hiu kecil ituh mengganggu rencanakuh! Awas kamu yah!{nw}"
+            wd_axiaregis_brown "Hmph! Beraninya hiu kecil ituh mengganggu rencana akuwh! Awas kamu yah!{nw}"
             
             show layer master at shake
             show axia hurt eff_pale at speaking
@@ -502,7 +502,7 @@ label scene_10:
                     show yuura at idle
                     show shark at speaking
                     voice voice_2_10_148_shark
-                    wd_shark_brown "I-ini anee, kamu inget ini ga?"
+                    wd_shark_brown "Ini anee, kamu inget ini ga?"
                     
                     show yuura at idle
                     show shark at idle
@@ -566,7 +566,7 @@ label scene_10:
                     show yuura none at idle
                     show shark at speaking
                     voice voice_2_10_156_shark
-                    wd_shark_brown "A-apasih! Diem deh lu, Yuur."
+                    wd_shark_brown "H-hah a-apaan sih! Diem deh lu, Yuur."
                     
                     camera:
                         zoom 2.0
@@ -583,7 +583,7 @@ label scene_10:
                     show yuura at idle
                     show shark eff_sweat_w at speaking
                     voice voice_2_10_158_shark
-                    wd_shark_brown "A-apaan sih! Udah deh, yang penting sekarang udah tenangkan?"
+                    wd_shark_brown "A-apaan sih! Udah deh, yang penting sekarang udah tenang, kan?"
                     
                     camera:
                         zoom 1.0

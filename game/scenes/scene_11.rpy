@@ -75,7 +75,7 @@ label scene_11:
     
     show axia sassy eff_sparkle at speaking
     voice voice_2_11_166_axiaregis
-    wd_axiaregis_brown "Kira-kira kenapa ya? Apa jangan-jangan aku suka kamu kyahh."
+    wd_axiaregis_brown "Kira-kira kenapa ya? Apa jangan-jangan aku suka kamu? kyahh."
     show axia none at idle
     
     play sound sfx_api_aergia
@@ -157,7 +157,7 @@ label scene_11:
     show yuura netral at custom_sprite_pos(x=1.5) with easeinright
 
 
-    nd_narrator_brown "Sembari berkeliling mencari jalan keluar, aku jadi tersadar denan seberapa janggalnya tempat ini."
+    nd_narrator_brown "Sembari berkeliling mencari jalan keluar, aku jadi tersadar dengan seberapa janggalnya tempat ini."
 
     nd_narrator_brown "Tidak peduli kemana pun aku pergi, selalu ada saja kejadian yang membuat orang geleng kepala."
 

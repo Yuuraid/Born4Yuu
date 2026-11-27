@@ -60,7 +60,7 @@ label scene_8:
     
     nd_narrator_brown "Di situ aku menemukan banyak nama orang yang menjadi penghuni penginapan ini."
     
-    nd_narrator_brown "Termasuk orang yang tadi mengejarku dan Sharks, orang yang membantu ku."
+    nd_narrator_brown "Termasuk orang yang tadi mengejarku dan Shark, orang yang membantu ku."
 
     # pause
 
