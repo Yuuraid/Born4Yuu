@@ -19,7 +19,7 @@ label scene_16:
  
     show aergia psycho at speaking
     voice voice_3_16_366_aergia_1
-    nd_aergia_brown "Ahahaha kebetulan banget nih Yuur! Gua ketemu lu disini ..{nw}"
+    wd_aergia_brown "Ahahaha kebetulan banget nih Yuur! Gua ketemu lu disini ..{nw}"
     
     voice voice_3_16_366_aergia_2
     show aergia smile_normal
@@ -37,14 +37,14 @@ label scene_16:
     show aergia furious eff_yelling at speaking
     show aergia at shake
     voice voice_3_16_368_aergia_1
-    nd_aergia_brown "DIAM! ARGGH{nw}"
+    wd_aergia_brown "DIAM! ARGGH{nw}"
     
     voice voice_3_16_368_aergia_2
     show aergia none sad
     extend " eh?"
     show aergia sad
     voice voice_3_16_369_aergia_1
-    nd_aergia_brown "Eh maksudnya buk..bukan.. BUKAN GIT-{nw}"
+    wd_aergia_brown "Eh maksudnya buk..bukan.. BUKAN GIT-{nw}"
     
     camera:
         zoom 2.0
@@ -53,7 +53,7 @@ label scene_16:
     show aergia furious eff_yelling
     show layer master at shake
     voice voice_3_16_369_aergia_2
-    extend " ARGGGH!"
+    nd_aergia_brown " ARGGGH!"
     # nd_aergia_brown "Ah... Maaf maksudnya bukan... {nw=0.5}"
     # show aergia angry
     # extend "ARGGGH!"
@@ -146,15 +146,15 @@ label scene_16:
 
     play sound2 sfx_strangled_yuura volume 0.5
 
-    nd_narrator_brown "Aergia mengarahkan tangan dan mencengkram.{w=2}{nw}"
+    nd_narrator_brown "Aergia mengarahkan tangan dan mencengkram."
     
     $ unlock_cg("cg_arc_3_scene_16_cekik_shoot_03")
     scene cg_arc_3_scene_16_cekik_shoot_03 at looping_shake with wipe_j_atas(0.2) 
 
-    nd_narrator_brown "Yuura tersentak akibat tercekik.{w=2}{nw}"
+    nd_narrator_brown "Yuura tersentak akibat tercekik."
     
         # There CG here
-    nd_narrator_brown "Tubuhku melayang di udara dengan leherku yang tercekik oleh sesuatu yang tak terlihat, rasanya sangat menyakitkan membuat air mataku keluar. Dia berjalan menghampiriku dengan tatapan anehnya.{w=2}{nw}"
+    nd_narrator_brown "Tubuhku melayang di udara dengan leherku yang tercekik oleh sesuatu yang tak terlihat, rasanya sangat menyakitkan membuat air mataku keluar. Dia berjalan menghampiriku dengan tatapan anehnya."
     
     # show aergia at speaking
     # nd_aergia_brown "JAWAB! DIMANA YUURA!?"
@@ -164,24 +164,24 @@ label scene_16:
     scene cg_arc_3_scene_16_cekik_shoot_04 at looping_shake with wipe_j_atas(0.2)
 
     # show yuura hurt at speaking
-    nd_you_brown "Tapi... namaku... Yuura...{w=2}{nw}"
+    nd_you_brown "Tapi... aku..."
     # show yuura at idle
 
     # show aergia at speaking
     voice voice_3_16_381_aergia
-    nd_aergia_brown "AH BANGSAT! DIMANA YUURA? YUURA YANG ASLI! DIMANA!{nw}"
+    nd_aergia_brown "AH BANGSAT! DIMANA YUURA? YUURA YANG ASLI! DIMANA!"
     
     # nd_aergia_brown "DIMANA YUURA!?"
     # show aergia at idle
 
     scene cg_arc_3_scene_16_cekik_shoot_02 at looping_shake with wipe_j_atas(0.2)
 
-    nd_narrator_brown "Aergia mencengkram leherku lebih kuat, membuat nafasku terputus saat itu juga. Kakiku menendang-nendang di udara, berusaha untuk lari. Namun itu sia-sia,{w=2}{nw}"
+    nd_narrator_brown "Aergia mencengkram leherku lebih kuat, membuat nafasku terputus saat itu juga. Kakiku menendang-nendang di udara, berusaha untuk lari. Namun itu sia-sia,"
     
     scene black with eye_close
     stop sound2
 
-    nd_narrator_black "pandanganku mulai kabur...{w=2}{nw}"
+    nd_narrator_black "pandanganku mulai kabur..."
     
         # fx blur
         
@@ -189,11 +189,11 @@ label scene_16:
     # nd_aergia_brown "Tch"
     $ renpy.music.set_volume(0.2, channel="music")
     voice voice_3_16_382_aergia
-    nd_aergia_black "Ah-- eh- e- sorry, ngapain gua gitu ke lu? Gua tau lu kan salah tapi kan...{nw}"
+    nd_aergia_black "Ah-- eh- e- sorry, ngapain gua gitu ke lu? Gua tau lu kan salah tapi kan..."
     
     $ renpy.music.set_volume(2.0, channel="music")
     voice voice_3_16_383_aergia
-    nd_aergia_black "ARGHHH TAPI INI KAN DEMI SI YUURAAAA-!!{nw}"
+    nd_aergia_black "ARGHHH TAPI INI KAN DEMI SI YUURAAAA-!!"
     show aergia at idle
 
     scene inn gudang outside with dissolve
@@ -220,7 +220,7 @@ label scene_16:
     show layer master at looping_shake
     show cg_arc_3_scene_16_balikin_1 with dissolve
     voice voice_3_16_384_aergia
-    nd_aergia_black "BALIKIN YUURA YG GUA KENAL SEKARANG JUGA!{nw}"
+    nd_aergia_black "BALIKIN YUURA YG GUA KENAL SEKARANG JUGA!"
     # show aergia at idle
 
         # aergia memukul Yuura
@@ -228,7 +228,7 @@ label scene_16:
     # show yuura at speaking
     # show yuura at shake
     show cg_arc_3_scene_16_balikin_2 with dissolve
-    nd_you_black "KHAKK...{w=2}{nw}"
+    nd_you_black "KHAKK..."
     # show yuura at idle
 
     $ unlock_cg("cg_arc_3_scene_16_balikin_3")
@@ -312,7 +312,7 @@ label scene_16:
 
     # nd_narrator_black "Aergia mulai melancarkan pukulan ke arahku, dengan tenaga yang tersisa, aku mengangkat kedua lenganku, menjadikan mereka sebagai bentuk pertahanan terakhir."
 
-    nd_narrator_black "Kuangkat lenganku untuk bertahan.{w=2}{nw}"
+    nd_narrator_black "Kuangkat lenganku untuk bertahan."
 
     # pause
 
@@ -366,7 +366,7 @@ label scene_16:
         zoom 1
     with wipe_atas(.15)
     
-    nd_narrator_black "Makin cepat! Makin sakit! Aku sudah tidak sanggup menghalaunya lagi...{nw}"
+    nd_narrator_black "Makin cepat! Makin sakit! Aku sudah tidak sanggup menghalaunya lagi..."
     
     # stop music
     scene black with fade
@@ -396,7 +396,7 @@ label scene_16:
     # with wipe_kanan(.15)
     # play sound sweeping blow
 
-    nd_narrator_black "Sial, dia mau menghantam mukaku...!{w=1}{nw}"
+    nd_narrator_black "Sial, dia mau menghantam mukaku...!{w=1}"
 
     scene black with fade
 
@@ -405,7 +405,7 @@ label scene_16:
     $ renpy.music.set_volume(1.0, channel="music")
     play music bgm_scene16_trigger volume 1.0 loop
     voice voice_3_16_387_dawam
-    nd_unknown_black "Hal yang kau perbuat itu sungguh menjijikan."
+    wd_unknown_black "Hal yang kau perbuat itu sungguh menjijikan."
     
     nd_narrator_black "Tiba-tiba seseorang melayangkan tendangan ke arah Aergia."
     
@@ -451,7 +451,7 @@ label scene_16:
     
     show dawam at silhouette
     voice voice_3_16_389_dawam
-    nd_unknown_brown "Maaf atas keterlambatanku nona Yuura. Perkenalkan, namaku Dawam."
+    wd_unknown_brown "Maaf atas keterlambatanku nona Yuura. Perkenalkan, namaku Dawam."
         
     show yuura at speaking
     nd_you_brown "Kau..."
@@ -460,7 +460,7 @@ label scene_16:
     show dawam at speaking
     with dissolve
     voice voice_3_16_391_dawam
-    nd_dawam_brown "Aku kesini atas perintah langsung Tuan Muda Maharaja Risol FRB."
+    wd_dawam_brown "Aku kesini atas perintah langsung Tuan Muda Maharaja Risol FRB."
     show dawam at idle
     
     show yuura at speaking
@@ -483,10 +483,10 @@ label scene_16:
             
     show dawam at speaking
     voice voice_3_16_396_dawam
-    nd_dawam_black "Itu bukan urusanku, misi ku di sini hanya karena Tuan Muda Risol."
+    wd_dawam_black "Itu bukan urusanku, misi ku di sini hanya karena Tuan Muda Risol."
     
     voice voice_3_16_397_dawam
-    nd_dawam_black "Yang terpenting adalah... Selesaikan perintah... Tanpa adanya kesalahan."
+    wd_dawam_black "Yang terpenting adalah... Selesaikan perintah... Tanpa adanya kesalahan."
     show dawam at idle
     
     scene inn gudang outside 
@@ -589,7 +589,7 @@ label scene_16:
     play sound sfx_action_heartbeat_scene10
     show aergia at speaking
     voice voice_3_16_398_aergia
-    nd_aergia_brown "Kenapa... Kenapa!!! KENAPA!? {nw}"
+    nd_aergia_brown "Kenapa... Kenapa!!! KENAPA!? "
 
 
     voice voice_3_16_399_aergia
@@ -877,10 +877,10 @@ label scene_16:
     camera:
         truecenter zoom 1.0
     voice voice_3_16_401_dawam
-    nd_dawam_black "Dasar lalat pengganggu!{nw}"
+    wd_dawam_black "Dasar lalat pengganggu!"
     
     voice voice_3_16_402_aergia
-    nd_aergia_black "Hahaha, iya lalat. ya ya lalat ya \n{w=6.22}iya... TERUS EMANG KENAPA KALAU GW LALAT HAH!!{nw}"
+    nd_aergia_black "Hahaha, iya lalat. ya ya lalat ya \n{w=6.22}iya... TERUS EMANG KENAPA KALAU GW LALAT HAH!!"
 
     # CG here
     play sound sfx_punch_1
@@ -1160,7 +1160,7 @@ label scene_16:
     
     # show dawam at speaking
     voice voice_3_16_404_dawam
-    nd_dawam_brown "Keuugh..."
+    wd_dawam_brown "Keuugh..."
     # show dawam at idle
     
     show aergia at speaking
@@ -1322,7 +1322,7 @@ label scene_16:
         zoom 3.0
     show dawam hurt_smile at center with fade
     voice voice_3_16_409_dawam
-    nd_dawam_black "{i}Waruni na{/i}... tapi kali ini kupastikan lebih menyenangkan!"
+    wd_dawam_black "{i}Waruni na{/i}... tapi kali ini kupastikan lebih menyenangkan!"
     # show dawam at idle
     stop sound2
 

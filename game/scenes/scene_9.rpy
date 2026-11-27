@@ -94,7 +94,7 @@ label scene_9:
     
     show seiya at speaking
     voice voice_2_9_95_seiya
-    nd_seiya_brown "Sudah lama tidak bertemu Akasyah, apa kamu rindu denganku?"
+    wd_seiya_brown "Sudah lama tidak bertemu Akasyah, apa kamu rindu denganku?"
     
     show akasyah at speaking
     show seiya at idle
@@ -104,7 +104,7 @@ label scene_9:
     show akasyah at idle
     show seiya at speaking
     voice voice_2_9_97_seiya
-    nd_seiya_brown "Coba saja, itu pun jika kamu benar-benar ingin dipermalukan olehku~"
+    wd_seiya_brown "Coba saja, itu pun jika kamu benar-benar ingin dipermalukan olehku~"
     
     show akasyah at speaking
     show seiya at idle
@@ -122,7 +122,7 @@ label scene_9:
     show seiya eff_exclamation_r at speaking
     with hpunch
     voice voice_2_9_99_seiya
-    nd_seiya_brown "PERGI SEKARANG JUGA! AKU TAK BISA MENAHANNYA TERLALU LAMA!"
+    wd_seiya_brown "PERGI SEKARANG JUGA! AKU TAK BISA MENAHANNYA TERLALU LAMA!"
         # show layer master at shake_custom
     
     show akasyah at speaking

@@ -11,7 +11,7 @@ label scene_12:
     play music bgm_scene8_awkward volume 1.0 loop
     # show yuura netral at center, idle
     show yuura netral at face_flip, ease_custom(offscreenleft, left, 7.0)
-    nd_narrator_brown "Tepat ketika aku tiba di dekat pintu depan, aku melihat seorang laki-laki berwajah masam.{w=1.0}{nw}"
+    nd_narrator_brown "Tepat ketika aku tiba di dekat pintu depan, aku melihat seorang laki-laki berwajah masam."
 
     show aergia netral at ease_custom(offscreenright, right, 5.0), idle
 
@@ -24,8 +24,8 @@ label scene_12:
     show aergia psycho at right, speaking
     with dissolve
     voice voice_2_12_181_aergia_1
-    # nd_unknown_brown "Halo anee... Tidak. {w=0.5}Yuura... Apa kabar?"
-    nd_unknown_brown "ehh halo~{nw}"
+    # wd_unknown_brown "Halo anee... Tidak. {w=0.5}Yuura... Apa kabar?"
+    wd_unknown_brown "ehh halo~{nw}"
     show aergia smile_cool
     voice voice_2_12_181_aergia_2
     extend " eh.. uuhh ma-maksudnya Yuura, apa kabar yuur? hehe"
@@ -42,12 +42,12 @@ label scene_12:
 
     # show aergia eff_question_mark_r at speaking
     # voice voice_2_12_183_aergia
-    # nd_unknown_brown "Loh? Kamu cari aku di buku tamu? Padahal gua gapernah ditulis di sana sama lu loh... Lu tahukan gua siapa, Yuur?"
+    # wd_unknown_brown "Loh? Kamu cari aku di buku tamu? Padahal gua gapernah ditulis di sana sama lu loh... Lu tahukan gua siapa, Yuur?"
         # Ga konsisten gua gua, aku aku
 
     show aergia smile_normal eff_question_mark_r at speaking
     voice voice_2_12_183_aergia_1
-    nd_unknown_brown "Lololololoh? Kamu cari aku dibuku tamu?{nw}"
+    wd_unknown_brown "Lololololoh? Kamu cari aku dibuku tamu?{nw}"
     
     show aergia sad eff_sweat_b
     voice voice_2_12_183_aergia_2
@@ -76,7 +76,7 @@ label scene_12:
 
     show aergia netral eff_exclamation_r at speaking
     voice voice_2_12_185_aergia_1
-    nd_unknown_brown "Ehh... beneran???{nw}"
+    wd_unknown_brown "Ehh... beneran???{nw}"
     show aergia smile_cool none 
     voice voice_2_12_185_aergia_2
     extend " Yuura, inget kan sama gua{nw}"
@@ -96,7 +96,7 @@ label scene_12:
     
     show aergia netral at speaking
     voice voice_2_12_186_aergia_1
-    nd_unknown_brown "Hahaha... Bercanda kok, Yuur. Gua pasti tahu lu tuh lagi capek banget. Lu ga mungkin kan lupa sama gua, iya kan? {nw=0.5}"
+    wd_unknown_brown "Hahaha... Bercanda kok, Yuur. Gua pasti tahu lu tuh lagi capek banget. Lu ga mungkin kan lupa sama gua, iya kan? {nw=0.5}"
     show aergia psycho at shake
     play music bgm_scene15_judgment volume 1.0 loop fadein 1.0
     $ renpy.music.set_volume(0.4, channel="music")
@@ -106,7 +106,7 @@ label scene_12:
             
     show aergia smile_normal at speaking
     voice voice_2_12_187_aergia
-    nd_aergia_brown "Ehh, ini gua loh Yuur... gua Aergia, ingat kan?"
+    wd_aergia_brown "Ehh, ini gua loh Yuur... gua Aergia, ingat kan?"
     show aergia at idle
         
     show yuura at face_flip, speaking
@@ -115,7 +115,7 @@ label scene_12:
 
     show aergia netral at speaking
     voice voice_2_12_189_aergia_1
-    nd_aergia_brown "Nahhhh kan inget,{nw}"
+    wd_aergia_brown "Nahhhh kan inget,{nw}"
     show aergia smile_cool eff_question_mark_r
     voice voice_2_12_189_aergia_2
     extend " eh tapi kok...{nw}"
@@ -137,10 +137,10 @@ label scene_12:
         
     show aergia angry eff_angry at speaking
     voice voice_2_12_192_aergia
-    nd_aergia_brown "Lah lah, lah ko marah??" 
+    wd_aergia_brown "Lah lah, lah ko marah??" 
 
     voice voice_2_12_193_aergia
-    nd_aergia_brown "Emangnya gua salah kah? Kok marah gitu sih?"
+    wd_aergia_brown "Emangnya gua salah kah? Kok marah gitu sih?"
     show aergia at idle
         
     show yuura at face_flip, speaking
@@ -181,7 +181,7 @@ label scene_12:
 
     # ====
 
-    nd_narrator_brown "Kemanapun aku pergi,{w=0.5} selalu ada orang-orang yang menyapa dan bertanya."
+    nd_narrator_brown "Kemanapun aku pergi,{w} selalu ada orang-orang yang menyapa dan bertanya."
 
     nd_narrator_brown "Di tengah lamunanku, aku kembali mengeluarkan botol jade hijau yang selama ini tersimpan di dalam saku."
 
@@ -204,7 +204,7 @@ label scene_12:
     # show yuura at idle
     nd_narrator_brown "Kenapa kamu bisa begitu dicari?"
     nd_narrator_brown "Ada apa dengan tempat ini?"
-    nd_narrator_brown "Kenapa...{w=0.5} siapa kamu?"
+    nd_narrator_brown "Kenapa...{w} siapa kamu?"
     # show yuura at speaking
     # nd_you_brown "..."
     # show yuura at idle

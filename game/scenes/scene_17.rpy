@@ -101,7 +101,7 @@ label scene_17:
     play sound sfx_spit_water
     show layer master at shake
 
-    show pria happy_wet
+    show pria netral_wet
     show yuura scared
     nd_narrator_brown "Yuura menyemburkan teh yang baru ia teguk."
     

@@ -17,7 +17,7 @@ label scene_14:
     show seiya angry eff_exclamation_r at left, speaking, flip_image
     with moveinleft
     voice voice_3_14_205_seiya
-    nd_unknown_brown "Ane gapapa?"
+    wd_seiya_brown "Ane gapapa?"
     show seiya none at idle
     
     show yuura at right
@@ -34,7 +34,7 @@ label scene_14:
         
     show seiya at speaking
     voice voice_3_14_208_seiya
-    nd_seiya_brown "Aman aja, Anee. Tapi saranku sekarang kamu lari."
+    wd_seiya_brown "Aman aja, Anee. Tapi saranku sekarang kamu lari."
     show seiya at idle
         
     show yuura netral eff_question_mark_y at speaking
@@ -92,7 +92,7 @@ label scene_14:
 
     show seiya at speaking
     voice voice_3_14_210_seiya
-    nd_seiya_brown "Tempat ini sudah tidak aman, sebaik-{nw}"
+    wd_seiya_brown "Tempat ini sudah tidak aman, sebaik-{nw}"
     # show seiya at idle
 
     scene cg_arc_3_scene_14_shoot_1:
@@ -139,14 +139,14 @@ label scene_14:
         
     # show seiya angry at flip_image, speaking
     # voice voice_3_14_212_seiya
-    # nd_seiya_brown "FAHH"
+    # wd_seiya_brown "FAHH"
     
     voice voice_3_14_213_seiya
     show seiya angry eff_angry at speaking
-    nd_seiya_brown "Apa yang kau coba lakukan!?"
+    wd_seiya_brown "Apa yang kau coba lakukan!?"
     
     voice voice_3_14_214_seiya
-    nd_seiya_brown "Apa kau ga capek bikin masalah terus buat Yuura?"
+    wd_seiya_brown "Apa kau ga capek bikin masalah terus buat Yuura?"
     show seiya none at idle
             
     show akasyah eff_angry at speaking
@@ -159,7 +159,7 @@ label scene_14:
         
     show seiya at speaking
     voice voice_3_14_217_seiya
-    nd_seiya_brown "Rencana? Maksudmu dengan mau menghajar Yuura? APA ITU YANG KAU SEBUT RENCANA!?"
+    wd_seiya_brown "Rencana? Maksudmu dengan mau menghajar Yuura? APA ITU YANG KAU SEBUT RENCANA!?"
     show seiya at idle
             
     show akasyah at speaking
@@ -172,7 +172,7 @@ label scene_14:
         
     show seiya at speaking
     voice voice_3_14_220_seiya
-    nd_seiya_brown "Apa sih maksudmu? Apa kamu kebanyakan minum sake siang-siang?"
+    wd_seiya_brown "Apa sih maksudmu? Apa kamu kebanyakan minum sake siang-siang?"
     show seiya at idle
     
     show dark_overlay
@@ -214,9 +214,7 @@ label scene_14:
         
     show akasyah at speaking
     voice voice_3_14_225_akasyah
-    nd_akasyah_brown "Hahaha... kan?"
-    
-    extend " Udah gua duga lu pasti gabisa jawab pertanyaan gua."
+    nd_akasyah_brown "Hahaha... kan? Udah gua duga lu pasti gabisa jawab pertanyaan gua."
     
     voice voice_3_14_226_akasyah
     nd_akasyah_brown "Sekarang minggir dan biar gua hajar si palsu ini!"
@@ -237,14 +235,12 @@ label scene_14:
     nd_akasyah_brown "Lu goblok apa gimana?"
     
     voice voice_3_14_228_akasyah
-    nd_akasyah_brown "Masih mau ngelindungin si peniru sialan ini?"
-    
-    extend " Seiya Seiya..."
+    nd_akasyah_brown "Masih mau ngelindungin si peniru sialan ini? Seiya Seiya..."
     show akasyah none at idle
     
     show seiya at speaking
     voice voice_3_14_229_seiya
-    nd_seiya_brown "Mau palsu atau bukan, itu bukan urusanmu!"
+    wd_seiya_brown "Mau palsu atau bukan, itu bukan urusanmu!"
     show seiya at idle
             
     show akasyah at speaking
@@ -533,9 +529,7 @@ label scene_14:
     with wipe_kiri(0.2)
             
     voice voice_3_14_232_akasyah
-    nd_akasyah_brown "Segitu doang serangan lu?"
-    
-    extend " GUA JUGA BISA!"
+    nd_akasyah_brown "Segitu doang serangan lu? GUA JUGA BISA!"
     # show akasyah at idle
     
     # Another CG?
@@ -613,11 +607,11 @@ label scene_14:
 
     hide pe dash
 
-    nd_narrator_black "Akasyah menendang kaki Seiya.{w=1.0}{nw}"
+    nd_narrator_black "Akasyah menendang kaki Seiya."
     
     show seiya at speaking
     voice voice_3_14_234_seiya
-    nd_seiya_black "Urghhh!!!"
+    wd_seiya_black "Urghhh!!!"
     show seiya at idle
     
     play sound sfx_punch_1
@@ -705,7 +699,7 @@ label scene_14:
         
     # show seiya at face_flip, speaking
     # voice voice_3_14_237_seiya
-    # nd_seiya_brown "Ha... Hah.. Hah" # kasih jeda
+    # wd_seiya_brown "Ha... Hah.. Hah" # kasih jeda
     # show seiya at face_flip, idle
             
     show akasyah at face_flip, speaking
@@ -740,7 +734,7 @@ label scene_14:
 
     # show seiya at speaking
     voice voice_3_14_240_seiya
-    nd_seiya_brown "SIALAN! ANEEEE!!!!{nw}"
+    wd_seiya_brown "SIALAN! ANEEEE!!!!{nw}"
     # show seiya at idle
     
     scene black with eye_close
@@ -749,7 +743,7 @@ label scene_14:
     
         # show black with Dissolve(1.0)
         # play sound gigit roket
-    nd_you_black "!!" # improvisasi? Wkwkwkwk hapus aja kalo ga butuh
+    # nd_you_black "!!" # improvisasi? Wkwkwkwk hapus aja kalo ga butuh
     
     play sound sfx_action_whoosh_scene13_16
     scene cg_arc_3_scene_14_shark_shoot_01 with Flash
@@ -771,14 +765,14 @@ label scene_14:
     
     # show shark at speaking
     voice voice_3_14_241_shark
-    nd_shark_brown "Aw... Aw... sakit juga nahan rudal pake gigi."
+    wd_shark_brown "Aw... Aw... sakit juga nahan rudal pake gigi."
     # show shark at idle
     
     # This two suppose to speak the same time
     
     nd_you_brown "Shark!"
     # voice voice_3_14_242_seiya
-    # nd_seiya_brown "Shark!"
+    # wd_seiya_brown "Shark!"
 
     show inn lorong malam
     show seiya netral at face_flip, left, idle
@@ -798,14 +792,14 @@ label scene_14:
 
     show shark netral at right, speaking
     voice voice_3_14_243_shark
-    nd_shark_brown "Ah... Anu... Maaf membuat kalian menunggu."
+    wd_shark_brown "Ah... Anu... Maaf membuat kalian menunggu."
     show shark at idle
     
     nd_narrator_brown "Kini situasi imbang, dua lawan dua. Meski begitu, melihat dari raut wajah Seiya, aku tahu bahwa perkara ini belum usai."
         
     show seiya eff_inspiration_y at face_flip, speaking
     voice voice_3_14_244_seiya
-    nd_seiya_brown "Aneki, pergilah!"
+    wd_seiya_brown "Aneki, pergilah!"
     show seiya none at face_flip, idle
         
     show yuura at speaking
@@ -814,7 +808,7 @@ label scene_14:
     
     show seiya at face_flip, speaking
     voice voice_3_14_246_seiya
-    nd_seiya_brown "Serahkan urusan ini padaku dan Shark! Oke"
+    wd_seiya_brown "Serahkan urusan ini padaku dan Shark! Oke"
     show seiya at face_flip, idle
     
     nd_narrator_brown "Meski enggan, aku berbalik dan lari meninggalkan mereka berdua."
@@ -833,7 +827,7 @@ label scene_14:
         
     show seiya at speaking
     voice voice_3_14_248_seiya
-    nd_seiya_black "Lawanmu adalah aku."
+    wd_seiya_black "Lawanmu adalah aku."
     show seiya at idle
 
     jump scene_15

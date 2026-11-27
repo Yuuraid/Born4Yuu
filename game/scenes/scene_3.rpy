@@ -39,7 +39,7 @@ label scene_3:
     
     pause 0.2
     voice voice_1_3_19_pria_misterius
-    nd_unknown_brown "Capek kan? Lari-lari"
+    wd_unknown_brown "Capek kan? Lari-lari"
     
     show yuura netral eff_exclamation_y at shake
     play sound sfx_expression_surprised
@@ -47,12 +47,12 @@ label scene_3:
     
     show yuura none at idle
     voice voice_1_3_20_pria_misterius
-    nd_unknown_brown "Gausah takut, aku gak gigit"
+    wd_unknown_brown "Gausah takut, aku gak gigit"
     
     nd_narrator_brown "Aku merasa terkejut, bingung, sekaligus bertanya-tanya dari mana orang ini berasal. Aku tidak tahu apapun tentangnya, yang aku tahu suara ini adalah suara laki-laki."
 
     voice voice_1_3_21_pria_misterius
-    nd_unknown_brown "Kamu.. bukan dari dunia ini kan?"
+    wd_unknown_brown "Kamu.. bukan dari dunia ini kan?"
 
     play sound sfx_expression_angry
     show yuura angry eff_angry at face_flip, speaking
@@ -60,7 +60,7 @@ label scene_3:
     
     show yuura at face_flip, idle 
     voice voice_1_3_23_pria_misterius
-    nd_unknown_brown "Intuisiku saja"
+    wd_unknown_brown "Intuisiku saja"
     
     play sound sfx_expression_sweat
     show yuura sad eff_sweat_w at speaking
@@ -71,7 +71,7 @@ label scene_3:
 
 
     show yuura at idle
-    nd_unknown_brown "..."
+    wd_unknown_brown "..."
 
     # stop music
     # play music bgm_scene3_pelukan volume 1.0 loop
@@ -84,7 +84,7 @@ label scene_3:
     show yuura at idle
     # show pria at speaking
     voice voice_1_3_27_pria_misterius
-    nd_unknown_brown "Hey.. jangan menangis, aku gak sanggup melihat cewek nangis di hadapanku"
+    wd_unknown_brown "Hey.. jangan menangis, aku gak sanggup melihat cewek nangis di hadapanku"
 
     stop music fadeout 1.0
     play music bgm_scene3_pelukan volume 1. loop
