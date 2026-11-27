@@ -284,4 +284,4 @@ label scene_19:
 
     hide screen centered_typewriter with dissolve    
 
-    jump credits_scene
+    jump scene_credits
