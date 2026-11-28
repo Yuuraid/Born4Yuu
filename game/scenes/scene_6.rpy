@@ -7,7 +7,7 @@ label scene_6:
     pause 1.0
     show layer master at shake
     
-    nd_you_brown "Ughhh... Kepalaku sakit banget..."
+    nd_you_brown "Ughhh... kepalaku sakit banget..."
     
     camera:
         zoom 2.0
@@ -27,15 +27,15 @@ label scene_6:
     # nd_narrator_brown "Aku memperhatikan sekitarku dengan seksama, menyadari bahwa aku kembali ke tempat aku bangun pertama kali."
     
     show yuura scared eff_surprise_y at speaking
-    nd_you_brown "K-kenapa aku di sini lagi!? {w}Tunggu... Apa jangan-jangan tadi aku mimpi ya?"
+    nd_you_brown "K-Kenapa aku di sini lagi!? {w}Tunggu... apa jangan-jangan tadi aku mimpi ya?"
     
-    nd_you_brown "Ga, ga mungkin..."
+    nd_you_brown "Gak, gak mungkin..."
     
     show yuura none at idle
-    nd_narrator_brown "Aku benar-benar merasa deja vu dengan kondisi diriku saat ini."
+    nd_narrator_brown "Aku benar-benar merasa deja vu dengan kondisiku saat ini."
     
     show yuura angry eff_pale at speaking
-    nd_you_brown "Arghhhh... Aku sudah sangat lelah... Sebaiknya aku mandi, bauku sudah sangat buruk"
+    nd_you_brown "Arghhhh... aku sudah sangat lelah... Sebaiknya aku mandi, bau badanku sudah sangat buruk."
 
     stop music fadeout 1.0
     $ config.allow_skipping = False
@@ -68,7 +68,7 @@ label scene_6:
         linear 40.0 xalign 1.0
     with dissolve
     # 10s
-    nd_narrator_brown "Baunya harum seperti bunga sakura yang mungkin bisa membuat laki-laki tergoda padaku.{w=5.0}{nw}" 
+    nd_narrator_brown "Baunya harum seperti bunga sakura yang bisa membuat laki-laki tergoda padaku.{w=5.0}{nw}" 
     # nd_narrator_brown "Baunya harum seperti bunga sakura yang mungkin bisa membuat laki-laki tergoda padaku.{nw}" 
     $ renpy.pause(5.0, hard=True)
     
@@ -88,7 +88,7 @@ label scene_6:
     with dissolve
     
     # 10s
-    nd_narrator_brown "Aku mengambil air dan membilas sisa-sisa sabun dari tubuhku, dan mengeringkan sela-sela jari kakiku{w=5.0}{nw}"
+    nd_narrator_brown "Aku mengambil air dan membilas sisa-sisa sabun dari tubuhku, dan mengeringkan sela-sela jari kakiku.{w=5.0}{nw}"
     $ renpy.pause(5.0, hard=True)
     # stop music
     
@@ -131,11 +131,11 @@ label scene_6:
     voice voice_2_6_68_taro
     wd_unknown_brown "Ane… ini aku Tarochips, aku bawa makanan buat ane…"
     
-    nd_narrator_brown "Aku diam saja, tak membalas satu pun ucapannya."
+    nd_narrator_brown "Aku hanya diam. Tak membalas satu pun ucapannya."
     
     show yuura scared eff_sweat_w
     voice voice_2_6_69_taro
-    wd_taro_brown "Ane? kamu masih tidur? aku taruh di depan ya… maaf sudah mengganggu istirahat ane"
+    wd_taro_brown "Ane? Kamu masih tidur? Aku taruh di depan ya… maaf sudah mengganggu istirahat ane."
     
     play sound sfx_footstep_taro
 
@@ -146,16 +146,16 @@ label scene_6:
     $ renpy.music.set_volume(0.4, channel="music")
 
     voice voice_2_6_70_taro
-    wd_taro_brown "Ane… apapun yang terjadi tolong… jaga kesehatan mu, aku ga mau ngeliat ane pingsan lagi." 
+    wd_taro_brown "Ane… apapun yang terjadi tolong… jaga kesehatan mu. Aku ga mau ngeliat ane pingsan lagi." 
     
     voice voice_2_6_71_taro
-    wd_taro_brown "Apa ane kira aku tidak sedih melihatnya? aku sedih ane, melihat orang yang selalu menemaniku di penginapan tak berdaya dihadapanku."
+    wd_taro_brown "Apa ane kira aku tidak sedih melihatnya? Aku sedih ane, melihat orang yang selalu menemaniku di penginapan tak berdaya dihadapanku."
     
     nd_narrator_brown "(Suaranya sedikit gemetar, menahan perasaan sedih dalam batinnya.)" 
         # aku bingung nulisnya gmn yg atas ini
     
     voice voice_2_6_72_taro
-    wd_taro_brown "Aku emang yang tidak terlihat dari yang lain, aku emang yang paling ga mau diliat sama orang.."
+    wd_taro_brown "Aku emang yang tidak terlihat dari yang lain, aku emang yang paling ga mau diliat sama orang..."
     
     voice voice_2_6_73_taro
     wd_taro_brown "Tapi yang ane harus tau, aku senang melihat ane bahagia… jadi jangan sampai dirimu terluka lagi."
@@ -170,7 +170,7 @@ label scene_6:
     with dissolve
     pause 0.3
     show yuura at ease_custom(center, offscreenright, 1.8)
-    nd_narrator_brown "Aku keluar dari kamar, mengambil makanan yang dia buat."
+    nd_narrator_brown "Aku keluar dari kamar, mengambil makanan yang dia bawakan."
 
     camera:
         zoom 1.0
@@ -179,7 +179,7 @@ label scene_6:
     with dissolve
     show yuura happy at face_flip, ease_custom(offscreenright, center, 1.8)
     
-    nd_narrator_brown "dan tersenyum tipis, merasakan sebuah ketulusan dari orang itu..."
+    nd_narrator_brown "Senyum tipis muncul pada wajahku, merasakan ketulusan meski dalam tempat yang sepenuhnya asing..."
 
     # play music bgm_scene4 volume 1.0 loop
     $ renpy.music.set_volume(1.0, channel="music")

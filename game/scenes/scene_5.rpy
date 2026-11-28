@@ -3,9 +3,9 @@
 label scene_5:
     show yuura netral eff_exclamation_y at face_flip
 
-    nd_narrator_brown "Setelah ditinggal oleh Haruto, pandangaku tertuju di gerbang tempat ini"
+    nd_narrator_brown "Setelah ditinggal oleh Haruto, pandanganku tertuju di gerbang tempat ini."
     
-    nd_narrator_brown "Entah mengapa setelah melihat gerbang pintu ini. Aku..."
+    nd_narrator_brown "Entah mengapa setelah melihat gerbang pintu ini aku..."
 
     play music bgm_scene1_foto_foto_kenangan volume 1.0 loop
     camera:
@@ -23,7 +23,7 @@ label scene_5:
         # with Dissolve(1.0)
     
     show yuura at speak_in_mind
-    nd_you_brown "(Kepalaku pusing, apakah aku kecapean habis lari seharian ini?)"
+    nd_you_brown "(Kepalaku pusing, apa aku kecapean habis lari seharian ini?)"
 
     scene inn entrance_2 at enblur
     show yuura hurt eff_confused at center 
@@ -49,7 +49,7 @@ label scene_5:
     play sound sfx_action_fall_down_scene5_14
     hide yuura
 
-    nd_narrator_brown "Tiba tiba tubuhku tersungkur tak berdaya, aku melihat seorang sedang berdiri diam di kejauhan."
+    nd_narrator_brown "Tiba-tiba tubuhku tersungkur tak berdaya, aku melihat seorang sedang berdiri diam di kejauhan."
     
     # pause 0.5
     # scene black

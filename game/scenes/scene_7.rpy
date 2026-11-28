@@ -23,7 +23,7 @@ label scene_7:
     
     show yuura eff_tremble_w
     # nd_narrator_brown "Dia menatapku sebentar dan langsung lari ke arahku. Membuatku panik dan langsung kabur dari hadapannya."
-    nd_narrator_brown "Dia menatapku sebentar dan langsung lari ke arahku."
+    nd_narrator_brown "Setelah menatap ke arahku, ia langsung berlari ke arahku."
     
     # To use ease_custom if you need to flip the image, you put flip after the ease_custom function
     play sound sfx_action_whoosh_scene13_16
@@ -42,7 +42,7 @@ label scene_7:
 
     show yuura scared eff_sweat_w at ease_custom(offscreenright, center, 0.8), speaking
 
-    nd_narrator_brown "Orang itu mengejarku dengan kecepatan tinggi, entah kenapa yang digunakannya sehingga membuatnya jadi sangat cepat."
+    nd_narrator_brown "Orang itu mengejarku dengan kecepatan yang tinggi, entah kenapa yang digunakannya sehingga membuatnya jadi sangat cepat."
         # cek lagi docs nya
     
     nd_narrator_brown "Sepertinya dia membawa sesuatu yang meningkatkan kecepatannya dalam bergerak."
