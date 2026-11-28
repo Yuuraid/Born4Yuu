@@ -28,7 +28,7 @@ label scene_2:
     # stop sound
 
     show yuura angry eff_sweat_w at speaking
-    nd_you_brown "(Peduli apa aku dengan kerusakan di tempat ini)"
+    nd_you_brown "(Peduli apa aku dengan kerusakan di tempat ini!)"
     stop sound
     play sound sfx_action_grappling_gun_scene2
 
@@ -39,9 +39,9 @@ label scene_2:
 
     hide yuura with easeoutleft
 
-    nd_narrator_brown "Pelarian ini tidaklah mulus, aku harus menghindari orang-orang yang berlalu lalang di lorong ini, belum  aku sempat menjegal seseorang yang berpakaian serba coklat dengan lututku."
+    nd_narrator_brown "Pelarian ini tidaklah mulus, aku harus menghindari orang-orang yang berlalu lalang di lorong ini, belum lagi aku sempat menjegal seseorang yang berpakaian serba coklat dengan lututku."
 
-    nd_narrator_brown "Melesat di tempat sempit nan ramai ini membuatku kesulitan dalam melaju. Akhirnya setelah cukup panjang menyusuri lorong ini, aku melihat sebuah pintu yang dibuka di ujung sana. Nampaknya, itu adalah jalan keluar yang ku cari-cari"
+    nd_narrator_brown "Melesat di tempat sempit nan ramai ini membuatku kesulitan untuk melaju. Akhirnya setelah cukup panjang menyusuri lorong ini, aku melihat sebuah pintu yang dibuka di ujung sana. Nampaknya, itu adalah jalan keluar yang ku cari-cari."
     
         # show yuura normal animated at center
         # with Dissolve(2.0)
@@ -57,13 +57,13 @@ label scene_2:
     # BG inn ruang_tamu_1
     
     show yuura at idle
-    nd_narrator_brown "Tapi aku salah kira, bukannya jalan keluar, aku malah mendarat di tempat yang penuh dengan banyak orang."
+    nd_narrator_brown "Tapi aku salah. Bukannya jalan keluar, aku malah mendarat di tempat yang penuh dengan banyak orang."
 
     play sound sfx_expression_sweat
     show yuura scared eff_sweat_w at pacing_left_right
     nd_narrator_brown "Aku langsung panik, bisa-bisanya aku malah pergi ke tempat yang lebih ramai. Segera aku tembak Grappling ku."
 
-    nd_narrator_brown "Tapi karena panik, arah tembak nya jadi tak karuan. Tertembak menyamping, tidak mengenai target yang menyebabkan harus melompat secara manual, dan membuatku menabrak beberapa orang yang tentu itu menyakitkan."
+    nd_narrator_brown "Tapi karena panik, arah tembakannya jadi tak karuan. Tertembak menyamping, tidak mengenai target yang menyebabkan harus melompat secara manual, dan membuatku menabrak beberapa orang, yang tentu itu menyakitkan."
 
     play sound sfx_action_grappling_gun_scene2
     hide yuura with easeoutleft
@@ -73,11 +73,11 @@ label scene_2:
 
     nd_narrator_brown "Akhirnya setelah dua menit berlalu, aku berhasil mencapai atap dari tempat terbuka nan luas ini."
 
-    nd_narrator_brown "Orang-orang di bawah menatapku dengan tatatapan bingung, seperti melihat orang gila sehabis berbuat kericuhan, tapi peduli apa aku."
+    nd_narrator_brown "Orang-orang di bawah menatapku dengan tatapan bingung. Seperti melihat orang gila sehabis berbuat kericuhan. Tapi peduli apa aku."
     
     show yuura at pacing_left_right
 
-    nd_narrator_brown "Setelah melihat sekitar untuk mencari jalan keluar, aku melihat sebuah gerbang kayu merah besar (Torii) yang terlihat mencolok. Tidak salah lagi.. karena lorong yang ada gerbang di depannya berbeda dengan lorong lainnya.."
+    nd_narrator_brown "Setelah melirik sekitar untuk mencari jalan keluar, aku melihat sebuah gerbang kayu merah besar (Torii) yang terlihat mencolok. Tidak salah lagi.. karena lorong yang ada gerbang di depannya berbeda dengan lorong lainnya.."
     
     scene hutan kuil entrance
     camera:
@@ -107,7 +107,7 @@ label scene_2:
     # BG hutan kuil entrance
 
     show yuura at idle
-    nd_narrator_brown "Kutembakkan segera Grappling ku dan melesat menuju gerbang tori. Mendarat dan berlari sekencang-kencangnya."
+    nd_narrator_brown "Kutembakkan segera Grappling ku dan melesat menuju gerbang torii. Mendarat dan berlari sekencang-kencangnya."
     
     play sound sfx_action_grappling_gun_scene2
     hide yuura with easeoutleft

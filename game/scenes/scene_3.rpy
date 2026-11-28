@@ -5,7 +5,7 @@ label scene_3:
     play sound sfx_ambience_grasak_grusuk_daun_scene3
     scene transition_screen orange concentrationline02_w with dissolve
     show yuura scared at center, speaking with easeinright
-    nd_narrator_brown "Aku berlari, terus berlari. Tanpa sekalipun melihat ke belakangku, aku berlari tanpa henti berharap mereka semua tidak mengejar diriku lagi."
+    nd_narrator_brown "Aku berlari, terus berlari, tanpa sekalipun melihat ke belakang. Aku berlari tanpa henti, berharap mereka semua tidak mengejar diriku lagi."
     
     show yuura at speaking
     nd_you_brown "*huft huft..."
@@ -16,7 +16,7 @@ label scene_3:
     scene hutan pohon with dissolve
     show yuura angry at center, speaking with easeinright #dissapointed/confused
     
-    nd_you_brown "Arghhh.. Ini gila! bisa-bisanya aku terbangun di tempat kayak gini? huah.."
+    nd_you_brown "Arghhh.. ini gila! Bisa-bisanya aku terbangun di tempat kayak gini? Huah.."
     
     play sound sfx_expression_sweat
     show yuura scared eff_sweat_w at speak_in_mind
@@ -26,9 +26,9 @@ label scene_3:
     scene hutan taman with dissolve
     show yuura scared at center, speaking with easeinright
 
-    nd_narrator_brown "Aku melanjutkan perjalanan ku dengan rasa lelah yang luar biasa, sebelum akhirnya aku memutuskan untuk duduk di dekat sebuah pohon besar."
+    nd_narrator_brown "Aku melanjutkan perjalananku dengan rasa lelah yang luar biasa, sebelum akhirnya aku memutuskan untuk duduk di dekat sebuah pohon besar."
     
-    nd_narrator_brown "Aku berusaha menenangkan diriku, menarik nafas secara perlahan dan mulai memikirkan segalanya."
+    nd_narrator_brown "Aku berusaha menenangkan diri, menarik nafas secara perlahan dan mulai memikirkan segalanya."
     
     play sound sfx_expression_angry
     show yuura angry eff_angry at speaking
@@ -39,7 +39,7 @@ label scene_3:
     
     pause 0.2
     voice voice_1_3_19_pria_misterius
-    wd_unknown_brown "Capek kan? Lari-lari"
+    wd_unknown_brown "Capek kan? Lari-lari."
     
     show yuura netral eff_exclamation_y at shake
     play sound sfx_expression_surprised
@@ -47,7 +47,7 @@ label scene_3:
     
     show yuura none at idle
     voice voice_1_3_20_pria_misterius
-    wd_unknown_brown "Gausah takut, aku gak gigit"
+    wd_unknown_brown "Gausah takut, aku gak gigit."
     
     nd_narrator_brown "Aku merasa terkejut, bingung, sekaligus bertanya-tanya dari mana orang ini berasal. Aku tidak tahu apapun tentangnya, yang aku tahu suara ini adalah suara laki-laki."
 
@@ -56,18 +56,18 @@ label scene_3:
 
     play sound sfx_expression_angry
     show yuura angry eff_angry at face_flip, speaking
-    nd_you_brown "S-siapa kamu??? CEPAT JAWAB DARIMANA KAMU TAHU TENTANGKU!"
+    nd_you_brown "S-Siapa kamu??? CEPAT JAWAB DARIMANA KAMU TAHU TENTANGKU!"
     
     show yuura at face_flip, idle 
     voice voice_1_3_23_pria_misterius
-    wd_unknown_brown "Intuisiku saja"
+    wd_unknown_brown "Intuisiku saja."
     
     play sound sfx_expression_sweat
     show yuura sad eff_sweat_w at speaking
     show pria at idle
     nd_you_brown "Aku sudah tidak mengerti lagi dengan tempat ini, tadi orang-orang mengejarku." 
     
-    nd_you_brown "Sekarang ada orang aneh yang berbicara denganku dari balik pohon! Lalu apa? aku akan melihat orang-orang masuk penjara?"
+    nd_you_brown "Sekarang ada orang aneh entah dari mana yang berbicara denganku dari balik pohon! Lalu apa? Aku akan melihat orang-orang masuk penjara?"
 
 
     show yuura at idle
@@ -84,7 +84,7 @@ label scene_3:
     show yuura at idle
     # show pria at speaking
     voice voice_1_3_27_pria_misterius
-    wd_unknown_brown "Hey.. jangan menangis, aku gak sanggup melihat cewek nangis di hadapanku"
+    wd_unknown_brown "Hey.. jangan menangis. Aku gak sanggup melihat cewek nangis di hadapanku."
 
     stop music fadeout 1.0
     play music bgm_scene3_pelukan volume 1. loop
@@ -178,9 +178,12 @@ label scene_3:
     nd_you_brown "(Nama ini----!)"
 
     show yuura none at idle
-    nd_narrator_brown "Aku semakin bingung dengan apa yang terjadi. Baru beberapa saat yang lalu aku dikejar oleh ratusan orang dan sekarang aku malah menemukan barang tak ingat aku pernah ambil."
+    nd_narrator_brown "Aku semakin bingung dengan apa yang terjadi. Baru beberapa saat yang lalu aku dikejar oleh ratusan orang dan sekarang aku malah menemukan barang yang tak ingat aku pernah ambil."
 
-    nd_narrator_brown "Aku benar-benar tidak mengerti sekaligus bingung setelah melihat ukiran nama pada botol itu."
+    #nd_narrator_brown "Aku benar-benar tidak mengerti sekaligus bingung setelah melihat ukiran nama pada botol itu."
+
+    nd_narrator_brown "Belum lagi, nama yang terukir di atasnya..."
+
 
     # nd_narrator_brown "Tapi mana mungkin aku mampu membeli botol semahal itu, makan saja sudah sangat sulit. Mana mungkin aku punya uang untuk beli botol mewah."
 
@@ -201,7 +204,7 @@ label scene_3:
     
     show pria none at idle
     show yuura at speaking
-    nd_you_brown "Entahlah.. Jika botol ini ku bawa di dalam bajuku, sudah pasti akan sangat sulit membawanya sambil dikejar oleh banyak orang"
+    nd_you_brown "Entahlah.. Jika botol ini ku bawa di dalam bajuku, sudah pasti akan sangat sulit membawanya sambil dikejar oleh banyak orang."
     
     show yuura at idle
     show pria at speaking
@@ -221,7 +224,7 @@ label scene_3:
     show pria none at idle
     play sound sfx_expression_angry
     show yuura eff_angry at speaking
-    nd_you_brown "Ga, ga masuk akal. Mustahil, lebih baik aku pergi keluar dan menjual botol ini."
+    nd_you_brown "Gak, gak masuk akal. Mustahil, lebih baik aku pergi keluar dan menjual botol ini."
     
     show yuura none at center with ease
     nd_narrator_brown "Aku berjalan melewati pria misterius itu."
@@ -236,7 +239,7 @@ label scene_3:
     show pria at idle
     play sound sfx_expression_surprised
     show yuura eff_question_mark_r at speaking
-    nd_you_brown "Apa maksud...mu???"
+    nd_you_brown "Apa maksudmu?!"
 
     play sound sfx_zoom
     hide pria with dissolve

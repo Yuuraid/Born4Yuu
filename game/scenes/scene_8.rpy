@@ -6,7 +6,7 @@ label scene_8:
     scene inn lorong lantai_1 with fade
     show yuura netral at ease_custom(offscreenright, right, 0.8)
     show shark netral at ease_custom(offscreenright, left, 1.5)
-    nd_narrator_brown "Aku mendengar gemuruh orang itu berlari mencariku, entah apa yang dia lakukan sehingga mengejarku. Tapi aku selamat berkat seseorang yang menarik tanganku."
+    nd_narrator_brown "Aku mendengar gemuruh langkah orang itu berlari mencariku. Jika saja orang ini tidak menarik ku tepat waktu, aku pasti sudah tertangkap. Tapi aku selamat berkat seseorang yang menarik tanganku."
     
     show shark eff_sweat_w
     nd_narrator_brown "Dia terlihat sangat pemalu, dengan rambut putih dan mata berwarna biru."
@@ -32,7 +32,7 @@ label scene_8:
     show yuura scared eff_sweat_w at speak_in_mind
     show shark none at face_flip, idle
     # nd_you_brown "Terimakasih banyak... {w} Aku selamat berkat... {w} \n(Ah sial aku tidak tahu namanya)"
-    nd_narrator_brown "(Ah sial aku tidak tahu namanya)"
+    nd_narrator_brown "(Ah sial aku tidak tahu namanya!!)"
     
     camera:
         zoom 1.0
@@ -45,7 +45,7 @@ label scene_8:
     show yuura none at idle
     show shark at face_flip, speaking
     voice voice_2_8_81_shark
-    wd_unknown_brown "O-oh begitu, i-ini anee waktu pertama kali gabung, kamu ngasih aku buku yang isinya nama-nama anak penginapan disini"
+    wd_unknown_brown "O-Oh begitu, i-ini anee waktu pertama kali gabung, kamu ngasih aku buku yang isinya nama-nama anak penginapan disini."
 
         # play sound memberi barang??
     
@@ -56,11 +56,11 @@ label scene_8:
     show yuura at idle
     show shark at face_flip, idle
 
-    nd_narrator_brown "Aku membuka buku yang dia berikan kepada ku."
+    nd_narrator_brown "Aku membuka buku yang dia berikan kepadaku."
     
     nd_narrator_brown "Di situ aku menemukan banyak nama orang yang menjadi penghuni penginapan ini."
     
-    nd_narrator_brown "Termasuk orang yang tadi mengejarku dan Shark, orang yang membantu ku."
+    nd_narrator_brown "Termasuk orang yang tadi mengejarku dan Shark, orang yang membantuku."
 
     # pause
 
@@ -71,7 +71,7 @@ label scene_8:
 
     show yuura netral at speaking
     show shark at face_flip, idle
-    nd_you_brown "Oh, oke sekarang aku ingat. Shark!"
+    nd_you_brown "Oh, oke sekarang aku ingat, makasih ya Shark!"
 
     show yuura eff_question_mark_y
     nd_you_brown "Tapi kok bukunya kayak ga lengkap?"
@@ -79,20 +79,20 @@ label scene_8:
     show yuura none at idle
     show shark happy at face_flip, speaking
     voice voice_2_8_83_shark
-    wd_shark_brown "Y-ya kan buku tamunya emang ga pernah kamu selesaiin Ane.." 
+    wd_shark_brown "Y-Ya kan buku tamunya emang ga pernah kamu selesaiin anee.." 
     
     show yuura eff_sweat_w at speaking
     show shark at face_flip, idle
-    nd_you_brown "O-oh..."
+    nd_you_brown "O-Oh..."
     
     show yuura at idle
     show shark at face_flip, idle
-    nd_narrator_brown "Suasana menjadi sangat canggung dan awkward"
+    nd_narrator_brown "Suasana menjadi sangat canggung dan awkward."
         # cek lagi docs nya
     
     show yuura happy at speaking
     show shark at face_flip, idle
-    nd_you_brown "Ya udah makasih ya udah bantuin aku, aku udah ga denger suara orang tadi. Jadi, sampai jumpa, Shark!"
+    nd_you_brown "Ya udah makasih ya udah bantuin aku, aku udah ga denger suara orang tadi. Jadi, sampai jumpa Shark!"
     
     show yuura at ease_custom(right, offscreenleft, 1.5), speaking
     show shark at face_flip, idle
@@ -103,7 +103,7 @@ label scene_8:
     
     # show shark at idle
     scene black with dissolve
-    nd_narrator_black "Aku langsung lari meninggalkan orang itu. Dia tampak ingin memanggilku, tapi aku sudah menghilang dari sudut pandangnya."
+    nd_narrator_black "Aku langsung lari meninggalkan orang itu. Dia tampak ingin memanggilmu, tapi aku sudah menghilang dan pergi jauh."
 
     # stop music 
 

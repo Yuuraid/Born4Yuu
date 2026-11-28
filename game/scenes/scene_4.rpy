@@ -5,11 +5,11 @@ label scene_4:
     play sound sfx_ambience_grasak_grusuk_daun_scene3 volume 0.5 loop
     scene transition_screen orange concentrationline02_w with dissolve
     show yuura netral eff_sweat_w at center, speaking with easeinright
-    nd_narrator_brown "Aku terus berjalan, melewati pepohonan yang entah kenapa sangat familiar bagiku. Sepertinya aku sudah berputar-putar di tempat ini selama berjam-jam tanpa menemukan jalan keluar."
+    nd_narrator_brown "Aku terus berjalan, melewati pepohonan yang entah kenapa terasa sangat familiar. Tapi, meski terus berjalan, aku rasa aku sudah berputar-putar di tempat ini selama berjam-jam tanpa menemukan jalan keluar."
 
     play sound sfx_expression_sweat
     show yuura scared eff_sweat_w
-    nd_narrator_brown "Kaki ku lemas, rasanya sangat sakit sekali. Aku benar-benar berjalan-jalan sepanjang hari tapi tetap saja berakhir di tempat yang sama."
+    nd_narrator_brown "Kaki ku lemas, rasanya sangat sakit sekali. Aku benar-benar terus berjalan sepanjang hari, tapi tetap saja berakhir di tempat yang sama."
     stop sound 
     play music bgm_scene4 volume 1.0 loop
     
@@ -21,9 +21,9 @@ label scene_4:
     nd_narrator_brown "Aku melihat sekitar, seraya mencari siapa yang memainkan gitar di hutan ini."
     
     show yuura eff_sweat_w
-    nd_narrator_brown "Aku berjalan dengan tubuh yang terhuyung-huyung, rasanya sangat tubuhku seperti dipukul palu besar."
+    nd_narrator_brown "Aku berjalan dengan tubuh yang terhuyung-huyung, rasanya tubuhku seperti dipukul palu besar."
     
-    nd_narrator_brown "Aku mencari disekitar dengan harapan bahwa aku akan bertemu seseorang."
+    nd_narrator_brown "Aku mencoba berkeliling untuk mencari sumber suara itu dengan harapan bahwa aku akan bertemu seseorang."
     
     hide yuura
     show yuura none netral at right, face_flip, speaking
@@ -42,7 +42,7 @@ label scene_4:
     show haruto happy eff_exclamation_y at speaking
     show yuura none at idle
     voice voice_1_4_39_haruto
-    wd_unknown_brown "Aneeki? Kenapa kamu bisa ada disini?" 
+    wd_unknown_brown "Aneki? Kenapa kamu bisa ada disini?" 
     
     camera:
         zoom 2.0
@@ -51,14 +51,14 @@ label scene_4:
     show haruto at idle
     play sound sfx_expression_sweat
     show yuura eff_sweat_w netral at speak_in_mind
-    nd_you_brown "(Sepertinya dia mengenaliku, sebaiknya aku berpura-pura mengenalnya saja)"
+    nd_you_brown "(Sepertinya dia mengenaliku, sebaiknya aku berpura-pura mengenalinya juga.)"
     
     camera:
         zoom 1.0
         xalign 0.0
         yalign 0.0
     show yuura at speaking
-    nd_you_brown "AH... em aku sedang jalan-jalan saja kok."
+    nd_you_brown "Ah... erm a-aku sedang jalan-jalan saja kok."
     
     show haruto at speaking
     show yuura none at idle
@@ -67,25 +67,25 @@ label scene_4:
     
     show haruto at idle
     show yuura eff_sweat_w at speaking
-    nd_you_brown "Ah... Em... Aku hanya bosan saja hahaha."
+    nd_you_brown "Ah... ermm... aku hanya bosan saja hahaha."
     
     show haruto sad eff_exclamation_y at speaking
     show yuura none at idle
     voice voice_1_4_43_haruto
-    wd_unknown_brown "Kenapa kamu terlihat sangat berantakan? apa kamu baik-baik saja?"
+    wd_unknown_brown "Kenapa kamu terlihat sangat berantakan? Apa kamu baik-baik saja?"
     
     show haruto none at idle
     show yuura eff_sweat_w at speaking
-    nd_you_brown "I-itu tidak penting sekarang, b-bisakah kamu menemani ku menuju jalan keluar dari hutan ini?"
+    nd_you_brown "I-Itu tidak penting sekarang, b-bisakah kamu menemani ku menuju jalan keluar dari hutan ini?"
     
     show haruto eff_question_mark_r at speaking
     show yuura none at idle
     voice voice_1_4_45_haruto
-    wd_unknown_brown "Tentu? tapi tumben banget kamu ingin ditemani seperti ini. Biasanya juga kamu pergi sendiri" 
+    wd_unknown_brown "Tentu? Tapi tumben banget kamu ingin ditemani seperti ini. Biasanya juga kamu pergi sendiri." 
     
     show haruto none at idle
     show yuura eff_sweat_w at speaking
-    nd_you_brown "K-karena aku sudah terlalu lelah berkeliling hutan ini, makanya aku minta ditemani."
+    nd_you_brown "K-Karena aku sudah terlalu lelah berkeliling hutan ini, makanya aku minta ditemani."
     
     camera:
         zoom 2.0
@@ -104,12 +104,12 @@ label scene_4:
     show haruto exhausted eff_laugh_r at speaking
     show yuura none at idle
     voice voice_1_4_47_haruto
-    wd_unknown_brown "Baiklah biar aku antarkan kamu kembali ke penginapan" 
+    wd_unknown_brown "Baiklah, biar aku antarkan kamu kembali ke penginapan." 
     
     show haruto happy none at idle
     play sound sfx_expression_surprised
     show yuura eff_question_mark_r netral at speaking
-    nd_you_brown "Penginapan? Bangunan besar yang bergaya jepang itu? K-kenapa kita harus kesana?"
+    nd_you_brown "Penginapan? Bangunan besar yang bergaya jepang itu? K-Kenapa kita harus kesana?"
     
     show haruto at speaking
     show yuura none at idle
@@ -128,7 +128,7 @@ label scene_4:
     show haruto exhausted eff_laugh_y at speaking
     show yuura none at idle
     voice voice_1_4_53_haruto
-    wd_haruto_brown "Haruto anee, namaku Haruto" 
+    wd_haruto_brown "Haruto anee, namaku Haruto." 
     
     show haruto none at idle
     show yuura at idle
@@ -140,12 +140,12 @@ label scene_4:
     
     show haruto happy
     show yuura at idle
-    nd_narrator_brown "Aku menatapnya dengan keheranan, karena sepanjang tadi pagi aku terus saja mengalami kesialan membuatku curiga padanya."
+    nd_narrator_brown "Aku menatapnya dengan keheranan, karena sepanjang pagi tadi aku terus saja mengalami kesialan, membuatku curiga padanya."
     
     show haruto exhausted eff_laugh_y at speaking
     show yuura at idle
     voice voice_1_4_56_haruto
-    wd_haruto_brown "Hahaha.. pertanyaan macam apa itu Anee? tentu saja aku membantumu karena kamu selalu membantuku."
+    wd_haruto_brown "Hahaha.. pertanyaan macam apa itu Anee? tentu saja aku membantumu. Karena kamu selalu membantuku."
     
     camera:
         zoom 2.0
@@ -164,7 +164,7 @@ label scene_4:
     scene inn entrance_2 with fade
     show haruto happy none at ease_custom(offscreenright, left, 1.3)
     show yuura happy none at ease_custom(offscreenright, right, 2.0)
-    nd_narrator_brown "Haruto pun mengantarkan diriku sampai di depan gerbang penginapan" 
+    nd_narrator_brown "Haruto pun mengantarkan ku sampai di depan gerbang penginapan." 
     
     show haruto at ease_custom(left, offscreenright, 1.8)
     show yuura at center with ease

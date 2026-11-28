@@ -47,7 +47,7 @@ label scene_1:
     with dissolve
 
     show yuura at idle
-    nd_narrator_brown "Aku terbangun dari tidurku,{w} duduk sebentar sebelum benar-benar beranjak dari dari kasurku."
+    nd_narrator_brown "Aku terbangun dari tidurku,{w} duduk sebentar sebelum benar-benar beranjak dari kasurku."
     
     nd_narrator_brown "Rasanya benar-benar malas untuk beranjak dari kas-"
     
@@ -96,7 +96,7 @@ label scene_1:
     # show yuura netral none at center, idle
     nd_narrator_black "Aku meminggirkan selimut yang selama ini menutupi setengah badanku dan berdiri melihat sekitar."
     
-    nd_narrator_black "Aku melihat cermin, cermin itu memantulkan rupaku yang sama persis sebelum aku tertidur karena kelelahan."
+    nd_narrator_black "Aku melihat cermin. Cermin itu memantulkan rupaku yang sama persis sebelum aku tertidur karena kelelahan."
     
     camera:
         zoom 2.0
@@ -123,7 +123,7 @@ label scene_1:
         xalign 0.0
         ease 10.55 xalign 1.0
     with dissolve
-    nd_narrator_brown "Dekorasi jejepangan pun menghiasi dinding ruangan ini{w=5.0}{nw}"
+    nd_narrator_brown "Dekorasi jejepangan pun menghiasi dinding ruangan ini.{w=5.0}{nw}"
     
     show kamar_yuura_shoot_2:
         zoom 1.3
@@ -150,7 +150,7 @@ label scene_1:
 
     nd_narrator_brown "Aku terus keliling melihat sekitar, mana tau menemukan hal menarik."
     
-    nd_narrator_brown "Aku mendekati sebuah zirah yang terpajang gagah beserta pedang dengan sarungnya yang berwarna merah muda"
+    nd_narrator_brown "Aku mendekati sebuah zirah yang terpajang gagah beserta pedang dengan sarungnya yang berwarna merah muda."
     
     
     show yuura scared eff_exclamation_y at center, speaking with easeinright
@@ -161,11 +161,11 @@ label scene_1:
         xalign 0.60
         yalign 0.3
     show layer master at shake
-    nd_you_brown "Uh.. Kayaknya pemilik kamar ini adalah orang yang menakutkan.."
+    nd_you_brown "Uh... kayaknya pemilik kamar ini adalah orang yang menakutkan..."
     
     play sound sfx_expression_sweat
     show yuura scared eff_sweat_w at center, idle
-    nd_narrator_brown "Didekat zirah itu terdapat meja kecil yang di atasnya terdapat alat penghisap tembakau dan topeng berbentuk hewan"
+    nd_narrator_brown "Di dekat zirah itu terdapat meja kecil di mana alat penghisap tembakau dan topeng berbentuk hewan ada di atasnya."
     
     play sound sfx_expression_shocked
     show layer master at shake
@@ -202,7 +202,7 @@ label scene_1:
         ease 12.05 xalign 0.0
     with dissolve
 
-    nd_narrator_brown "Ketika kudekati, terlihat jelas foto-foto itu adalah momen kebersamaan si pemilik kamar dengan teman maupun keluarga nya.{w=6.0}{nw}"
+    nd_narrator_brown "Ketika kudekati, terlihat jelas foto-foto itu adalah momen kebersamaan si pemilik kamar dengan teman maupun keluarganya.{w=6.0}{nw}"
     
     # Zoomed into picture frame
     show cg_meja_kamar_yuura:
@@ -229,9 +229,9 @@ label scene_1:
     nd_you_brown "NIH ORANG MIRIP BANGET SAMA GUE COK!"
     
     show yuura netral none at center, idle
-    nd_narrator_brown "Aku mengamati beberapa foto lainnya. Benar saja, perempuan yang mirip denganku itu nampaknya merupakan pemilik kamar ini."
+    nd_narrator_brown "Aku mengamati beberapa foto lainnya. Benar saja, perempuan yang mirip denganku itu nampaknya pemilik kamar ini."
     
-    nd_narrator_brown "Aku meletakkan kembali foto-foto itu ke tempatnya semula"
+    nd_narrator_brown "Aku meletakkan kembali foto-foto itu ke tempat semula."
     
     camera:
         zoom 2.0
@@ -274,7 +274,7 @@ label scene_1:
         xalign 0.45
         yalign 0.3
     show yuura scared eff_exclamation_y at center, shake, speaking
-    nd_you_brown "ANJIR,TERNYATA ADA ORANG LAIN JUGA DISINI"
+    nd_you_brown "ANJIR,TERNYATA ADA ORANG LAIN JUGA DISINI!!"
     
     camera:
         zoom 1.0
@@ -298,7 +298,7 @@ label scene_1:
     play sound sfx_action_fall_down_scene5_14
     nd_narrator_brown "Tak menyadari bahwa orang yang membukakan pintu terjatuh karena ku, tapi peduli apa aku."
     
-    nd_you_brown "Argh dimana sih.. Ah ini dia!"
+    nd_you_brown "Argh di mana sih.. Ah ini dia!"
     
     nd_narrator_brown "Segera kutembakkan Grappling Gun ku dan melesat tanpa melihat ke belakang."
         # $ quick_menu = False
